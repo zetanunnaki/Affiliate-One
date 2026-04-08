@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   description:
     "Independent security guides for remote workers. Expert-tested VPN reviews, public Wi-Fi safety guides, and cybersecurity resources for working from anywhere.",
-  metadataBase: new URL("https://securework.example.com"),
+  metadataBase: new URL("https://zetanunnaki.github.io/Affiliate-One"),
   openGraph: {
     type: "website",
     siteName: "SecureWork",

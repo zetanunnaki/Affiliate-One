@@ -2,10 +2,13 @@ import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
+  output: "export",
+  basePath: "/Affiliate-One",
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   images: {
-    formats: ["image/webp"],
+    unoptimized: true,
   },
+  trailingSlash: true,
 };
 
 const withMDX = createMDX({});

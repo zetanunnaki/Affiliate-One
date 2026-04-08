@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run guardrails && next build",
+    "build": "npm run guardrails && npm run feed && npm run sitemap && next build",
+    "sitemap": "npx tsx scripts/generate-sitemap.ts",
     "build:next": "next build",
+    "feed": "npx tsx scripts/generate-feed.ts",
     "start": "next start",
     "lint": "eslint",
     "guardrails": "npx tsx scripts/guardrails.ts"

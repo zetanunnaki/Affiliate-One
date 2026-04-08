@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SecureWork — Remote Work Security Guides</title>
+    <link>https://zetanunnaki.github.io/Affiliate-One</link>
+    <description>Independent security guides for remote workers.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Apr 2026 05:29:29 GMT</lastBuildDate>
+    <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[Browser Privacy Setup Guide: Stop Being Tracked Online (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/browser-privacy-setup/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/browser-privacy-setup/</guid>
+      <description><![CDATA[Configure your browser for maximum privacy. Extensions, settings, and practices that reduce tracking across Chrome, Firefox, Safari, and Brave.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[BYOD Security Guide: Using Personal Devices for Work Safely (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/byod-security-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/byod-security-guide/</guid>
+      <description><![CDATA[Bring Your Own Device policies create security risks. Here's how to separate work and personal data, secure your device, and protect both sides.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[What to Do After a Data Breach: Step-by-Step Response Guide (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/data-breach-response/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/data-breach-response/</guid>
+      <description><![CDATA[Your accounts were compromised. Here's exactly what to do in the first hour, first day, and first week to minimize damage and prevent future breaches.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Device Encryption Guide: Protect Your Data If Your Laptop Is Lost (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/device-encryption-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/device-encryption-guide/</guid>
+      <description><![CDATA[How to enable full-disk encryption on Windows, Mac, iOS, and Android. Your data stays secure even if your device is stolen.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[The Digital Nomad Security Kit: Essential Tools & Practices (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/digital-nomad-security-kit/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/digital-nomad-security-kit/</guid>
+      <description><![CDATA[Everything you need to stay secure while working remotely from anywhere in the world. Tools, practices, and a pre-departure checklist for digital nomads.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>travel</category>
+    </item>
+    <item>
+      <title><![CDATA[Email Encryption for Remote Workers: Protect Your Communications (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/email-encryption-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/email-encryption-guide/</guid>
+      <description><![CDATA[How to encrypt your email communications. Compare ProtonMail, Tutanota, and Gmail's confidential mode. Plus PGP setup for existing accounts.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Enterprise VPN vs Consumer VPN: What Remote Workers Need to Know (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/enterprise-vpn-vs-consumer/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/enterprise-vpn-vs-consumer/</guid>
+      <description><![CDATA[Understanding the difference between your company's VPN and a personal VPN. When to use which, and why you might need both.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[Password Manager Setup Guide: From Zero to Secure in 15 Minutes (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/password-manager-setup/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/password-manager-setup/</guid>
+      <description><![CDATA[Step-by-step guide to setting up a password manager. Import passwords, create a strong master password, and start replacing weak credentials.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Remote Work Security Checklist: 15 Steps to Protect Your Data (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/remote-work-security-checklist/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/remote-work-security-checklist/</guid>
+      <description><![CDATA[A practical, actionable security checklist for remote workers. Cover your bases with these 15 essential security steps.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Home Router Security Guide: Lock Down Your Network (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/router-security-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/router-security-guide/</guid>
+      <description><![CDATA[Your router is your network's front door. Here's how to secure it: change defaults, update firmware, enable encryption, and set up a guest network.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Set Up Two-Factor Authentication on Every Account (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/two-factor-auth-setup/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/two-factor-auth-setup/</guid>
+      <description><![CDATA[Step-by-step instructions for enabling 2FA on Gmail, Microsoft, Apple, GitHub, AWS, Slack, and more. Includes backup code management.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Best VPN for Gaming: Reduce Lag, Prevent DDoS, Access More Servers (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-gaming/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-gaming/</guid>
+      <description><![CDATA[Can a VPN improve your gaming experience? We test latency, DDoS protection, and geo-unlocking for PC, console, and mobile gaming.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[10 VPN Myths Debunked: What a VPN Can and Can't Do (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-myths-debunked/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-myths-debunked/</guid>
+      <description><![CDATA[Separating VPN facts from marketing hype. What VPNs actually protect against, what they don't, and common misconceptions debunked.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN Protocols Explained: WireGuard vs OpenVPN vs IKEv2 (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-protocols-explained/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-protocols-explained/</guid>
+      <description><![CDATA[A clear comparison of VPN protocols. Learn the differences between WireGuard, OpenVPN, IKEv2, and proprietary options like NordLynx and Lightway.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[How to Set Up a VPN: Complete Beginner's Guide (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-setup-beginners/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-setup-beginners/</guid>
+      <description><![CDATA[Step-by-step guide to setting up a VPN on any device. Covers Windows, Mac, iOS, Android, and routers. No technical knowledge required.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN Slow? How to Optimize Your VPN Speed (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-speed-optimization/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-speed-optimization/</guid>
+      <description><![CDATA[Practical fixes for slow VPN connections. Server selection, protocol changes, split tunneling, and troubleshooting steps that actually work.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[Hotel & Airport Wi-Fi Security: What You Need to Know (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/wifi-security-hotel-airport/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/wifi-security-hotel-airport/</guid>
+      <description><![CDATA[How safe is hotel and airport Wi-Fi? Real threats, practical protection steps, and when to use your phone's hotspot instead.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>public-wifi</category>
+    </item>
+  </channel>
+</rss>

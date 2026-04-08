@@ -9,7 +9,6 @@ export type AnalyticsEvent =
         intent?: string;
       };
     }
-  | { name: "newsletter_signup"; params: { source: string } }
   | { name: "toc_click"; params: { heading: string; slug: string } }
   | { name: "country_page_view"; params: { countryIso2: string; countryName: string } };
 

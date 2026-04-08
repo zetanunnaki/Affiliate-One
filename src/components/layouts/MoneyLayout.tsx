@@ -1,7 +1,6 @@
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Disclosure from "@/components/ui/Disclosure";
-import Newsletter from "@/components/ui/Newsletter";
 import type { PostFrontmatter } from "@/types";
 
 interface MoneyLayoutProps {
@@ -41,11 +40,6 @@ export default function MoneyLayout({
 
       <div className="prose prose-zinc dark:prose-invert max-w-none">
         {children}
-      </div>
-
-      {/* Newsletter */}
-      <div className="my-8">
-        <Newsletter source="money-page" />
       </div>
 
       {/* Citations */}

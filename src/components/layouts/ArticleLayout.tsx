@@ -2,7 +2,6 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import ReadingProgressBar from "@/components/ui/ReadingProgressBar";
 import TableOfContents from "@/components/ui/TableOfContents";
-import Newsletter from "@/components/ui/Newsletter";
 import FeedbackWidget from "@/components/ui/FeedbackWidget";
 import InternalLinks from "@/components/ui/InternalLinks";
 import type { PostFrontmatter } from "@/types";
@@ -75,11 +74,6 @@ export default function ArticleLayout({
               [Ad Placeholder]
             </div>
           )}
-
-          {/* Newsletter */}
-          <div className="my-8">
-            <Newsletter source="article-bottom" />
-          </div>
 
           {/* Action box */}
           <InternalLinks

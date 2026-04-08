@@ -7,7 +7,6 @@ import ComparisonTable from "@/components/ui/ComparisonTable";
 import CountryContextBlock from "@/components/ui/CountryContextBlock";
 import Methodology from "@/components/ui/Methodology";
 import FAQ from "@/components/ui/FAQ";
-import Newsletter from "@/components/ui/Newsletter";
 import InternalLinks from "@/components/ui/InternalLinks";
 import CountryPageTracker from "@/components/ui/CountryPageTracker";
 import NearbyCountries from "@/components/ui/NearbyCountries";
@@ -202,11 +201,6 @@ export default function CountryBestVpnLayout({
           </div>
         ))}
       </section>
-
-      {/* Newsletter */}
-      <div className="my-8">
-        <Newsletter source={`country-${country.iso2.toLowerCase()}`} />
-      </div>
 
       {/* Section 7: FAQ */}
       <FAQ

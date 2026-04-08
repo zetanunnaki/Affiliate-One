@@ -29,7 +29,7 @@ export default function HtmlSitemapPage() {
               { label: "Country Directory", href: "/countries" }, { label: "VPN Hub", href: "/vpn" },
               { label: "Security Hub", href: "/security" }, { label: "Guides", href: "/guides" },
               { label: "Resources", href: "/resources" }, { label: "Glossary", href: "/glossary" },
-              { label: "Search", href: "/search" }, { label: "Newsletter", href: "/newsletter" },
+              { label: "Search", href: "/search" },
             ].map((l) => (
               <li key={l.href}><Link href={l.href} className="text-blue-600 hover:underline">{l.label}</Link></li>
             ))}

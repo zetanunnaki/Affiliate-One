@@ -17,10 +17,12 @@ export default function ReadingProgressBar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  if (progress < 1) return null;
+
   return (
-    <div className="fixed top-16 left-0 right-0 z-40 h-0.5 bg-zinc-200 dark:bg-zinc-800">
+    <div className="fixed top-[64px] left-0 right-0 z-40 h-[2px]">
       <div
-        className="h-full bg-blue-600 transition-[width] duration-100"
+        className="h-full bg-gradient-to-r from-blue-500 to-blue-600 transition-[width] duration-75 ease-out"
         style={{ width: `${progress}%` }}
       />
     </div>

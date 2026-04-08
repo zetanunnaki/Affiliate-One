@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 16:26:58 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 16:46:02 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -144,6 +144,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Annual Privacy Checkup: 20-Minute Audit for Your Digital Life (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/privacy-checkup-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/privacy-checkup-guide/</guid>
+      <description><![CDATA[A step-by-step annual privacy audit. Check your accounts, permissions, data broker listings, and security settings in 20 minutes.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[Privacy Laws Around the World: What Remote Workers Need to Know (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/privacy-laws-worldwide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/privacy-laws-worldwide/</guid>
@@ -212,6 +220,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</guid>
       <description><![CDATA[Are your Zoom, Teams, and Google Meet calls secure? Encryption, settings, and practices to keep your meetings private.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Secure Home Wi-Fi Setup: Step-by-Step Guide (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-wifi-setup/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-wifi-setup/</guid>
+      <description><![CDATA[Set up your home Wi-Fi for maximum security. WPA3, guest networks, hidden SSIDs, MAC filtering, and VPN integration explained.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -324,6 +340,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-speed-optimization/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-speed-optimization/</guid>
       <description><![CDATA[Practical fixes for slow VPN connections. Server selection, protocol changes, split tunneling, and troubleshooting steps that actually work.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN Troubleshooting: Fix the 10 Most Common VPN Problems (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-troubleshooting/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-troubleshooting/</guid>
+      <description><![CDATA[VPN not connecting? Slow speeds? DNS leaks? Fix the most common VPN issues with this step-by-step troubleshooting guide.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>vpn</category>
     </item>

@@ -1,0 +1,83 @@
+---
+title: "Secure Home Wi-Fi Setup: Step-by-Step Guide (2026)"
+description: "Set up your home Wi-Fi for maximum security. WPA3, guest networks, hidden SSIDs, MAC filtering, and VPN integration explained."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "CISA: Securing Your Home Network"
+  - "Wi-Fi Alliance: WPA3 Security"
+---
+
+## Why Your Home Wi-Fi Security Matters
+
+Your home Wi-Fi is your work perimeter when working remotely. Every device — laptop, phone, smart TV, IoT sensors — connects through it. An improperly secured Wi-Fi network can be accessed by neighbors, drive-by attackers, or anyone within signal range.
+
+## Step 1: WPA3 Encryption (or WPA2-AES)
+
+WPA3 is the latest Wi-Fi security standard (2018+):
+- **WPA3-Personal:** Uses SAE (Simultaneous Authentication of Equals) — resistant to offline dictionary attacks
+- **WPA3-Transition:** Allows WPA3 and WPA2 devices to connect. Use if you have older devices
+- **WPA2-AES:** Still secure if WPA3 isn't available. Avoid WPA2-TKIP
+
+**Setup:** Router admin > Wireless Security > Set to WPA3 or WPA2-AES. Choose a strong passphrase (12+ characters).
+
+## Step 2: Strong Wi-Fi Password
+
+Your Wi-Fi password should be:
+- At least 12 characters (longer is better)
+- Not your name, address, phone number, or birthday
+- Not a dictionary word
+- Shared only with people who need it
+
+**Tip:** Use a passphrase like "mountain-coffee-bicycle-rainbow" — easy to tell guests, hard to crack.
+
+## Step 3: Change Default Admin Credentials
+
+Router admin pages are accessible to anyone on the network:
+1. Log into 192.168.1.1 or 192.168.0.1
+2. Change admin username (if possible) and password
+3. Use a unique, strong password stored in your password manager
+4. This prevents anyone on your network from changing router settings
+
+## Step 4: Create a Guest Network
+
+Separate IoT and guest devices from your work devices:
+1. Enable Guest Network in router settings
+2. Set a different password than your main network
+3. Disable "Allow guests to access local network" (isolates guest from main)
+4. Connect IoT devices (smart TV, speakers, cameras) to guest network
+5. Keep work devices on the main network
+
+## Step 5: Update Router Firmware
+
+Router firmware updates fix security vulnerabilities:
+1. Check for updates in router admin > System > Firmware
+2. Enable auto-update if available
+3. Set a quarterly calendar reminder if auto-update isn't available
+4. Consider replacing routers that no longer receive firmware updates
+
+## Step 6: Disable Unnecessary Features
+
+- **WPS:** Disable (brute-force vulnerable)
+- **UPnP:** Disable (auto-opens ports)
+- **Remote management:** Disable (allows router access from internet)
+- **SSID broadcast:** Optional to hide, but provides minimal security benefit
+
+## Step 7: VPN on Router (Optional but Recommended)
+
+For maximum protection, install a VPN on your router:
+- ALL device traffic is encrypted automatically
+- Counts as 1 device connection with your VPN provider
+- Works for devices that can't install VPN apps
+- See our router VPN guide for setup instructions
+
+## Quarterly Maintenance
+
+Every 3 months:
+1. Check router firmware updates
+2. Review connected devices (remove unknowns)
+3. Verify encryption is still WPA3/WPA2-AES
+4. Check Wi-Fi password hasn't been shared too widely
+5. Run a speed test to detect potential issues

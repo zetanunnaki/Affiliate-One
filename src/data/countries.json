@@ -3827,5 +3827,198 @@
     "riskFlags": [
       "tourist-wifi"
     ]
+  },
+  {
+    "iso2": "SM",
+    "iso3": "SMR",
+    "nameEn": "San Marino",
+    "slug": "san-marino",
+    "region": "Europe",
+    "languages": [
+      "it"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/San_Marino",
+    "internetNotes": "Good infrastructure. Uses Italian telecom networks. Compact microstate with comprehensive coverage. Internet speeds in San Marino have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. Italian telecom infrastructure and regulations apply. Open internet access. Remote workers in San Marino commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments accepted. Italian payment systems work. International methods accepted online. Most international VPN providers accept payment methods commonly used in San Marino, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Covered by Italian networks. Good Wi-Fi in hotels and restaurants throughout this tiny republic. Visitors to San Marino should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "VA",
+    "iso3": "VAT",
+    "nameEn": "Vatican City",
+    "slug": "vatican-city",
+    "region": "Europe",
+    "languages": [
+      "it",
+      "la"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Vatican",
+    "internetNotes": "Uses Italian telecom infrastructure. Vatican has its own .va domain. Compact territory with good Wi-Fi in visitor areas. Internet speeds in Vatican City have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. Italian networks available. World's smallest state with comprehensive connectivity. Remote workers in Vatican City commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments accepted in Vatican Museums and shops. Italian payment infrastructure. Most international VPN providers accept payment methods commonly used in Vatican City, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Vatican Museums and St. Peter's area have Wi-Fi. Italian mobile coverage extends throughout. Visitors to Vatican City should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AG",
+    "iso3": "ATG",
+    "nameEn": "Antigua and Barbuda",
+    "slug": "antigua-and-barbuda",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "XCD",
+    "timeZonePrimary": "America/Antigua",
+    "internetNotes": "Decent for Caribbean. FLOW and Digicel provide mobile and broadband. Coverage on both islands. Growing digital nomad infrastructure. Internet speeds in Antigua and Barbuda have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. English-speaking with open internet. No restrictions on VPN use. Remote workers in Antigua and Barbuda commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XCD-based. USD accepted. Card payments in tourist areas. International payment methods work online. Most international VPN providers accept payment methods commonly used in Antigua and Barbuda, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resort hotels. Antigua better connected than Barbuda. Beach areas generally covered. Visitors to Antigua and Barbuda should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "DM",
+    "iso3": "DMA",
+    "nameEn": "Dominica",
+    "slug": "dominica",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "XCD",
+    "timeZonePrimary": "America/Dominica",
+    "internetNotes": "Basic infrastructure. FLOW and Digicel are providers. Coverage in Roseau. Mountain and rainforest areas have limited connectivity. Internet speeds in Dominica have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. Nature-focused island with open internet. No restrictions. Remote workers in Dominica commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XCD-based. Cash dominant. Card acceptance in larger establishments. International methods for online purchases. Most international VPN providers accept payment methods commonly used in Dominica, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Roseau hotels. Eco-lodges and rainforest areas may have satellite-only or no connectivity. Visitors to Dominica should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GD",
+    "iso3": "GRD",
+    "nameEn": "Grenada",
+    "slug": "grenada",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "XCD",
+    "timeZonePrimary": "America/Grenada",
+    "internetNotes": "Basic but functional. FLOW and Digicel provide coverage. St. George's and tourist areas connected. Spice island infrastructure. Internet speeds in Grenada have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. English-speaking with open internet access. No restrictions on VPN use. Remote workers in Grenada commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XCD-based. USD accepted in tourist areas. Card payments at hotels and restaurants. Most international VPN providers accept payment methods commonly used in Grenada, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in St. George's hotels and Grand Anse beach resorts. Rural areas have limited coverage. Visitors to Grenada should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "KN",
+    "iso3": "KNA",
+    "nameEn": "Saint Kitts and Nevis",
+    "slug": "saint-kitts-and-nevis",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "XCD",
+    "timeZonePrimary": "America/St_Kitts",
+    "internetNotes": "Decent for a small Caribbean nation. FLOW and Digicel are providers. Both islands have coverage. CBI program attracts tech-savvy residents. Internet speeds in Saint Kitts and Nevis have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. English-speaking with open internet. Citizenship by Investment community drives digital adoption. Remote workers in Saint Kitts and Nevis commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XCD-based. USD accepted. Card payments in tourist areas. International payment methods work. Most international VPN providers accept payment methods commonly used in Saint Kitts and Nevis, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Basseterre hotels and resorts. Both islands have decent coverage. Visitors to Saint Kitts and Nevis should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LC",
+    "iso3": "LCA",
+    "nameEn": "Saint Lucia",
+    "slug": "saint-lucia",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "XCD",
+    "timeZonePrimary": "America/St_Lucia",
+    "internetNotes": "Decent infrastructure. FLOW and Digicel are providers. Good coverage in Castries and resort areas. The Pitons area connected. Internet speeds in Saint Lucia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. Popular tourist destination with English-speaking open internet. Remote workers in Saint Lucia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XCD-based. USD accepted in tourist areas. Card payments at resorts and major businesses. Most international VPN providers accept payment methods commonly used in Saint Lucia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resort hotels. Castries and Rodney Bay well-connected. Rural areas more limited. Visitors to Saint Lucia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "VC",
+    "iso3": "VCT",
+    "nameEn": "Saint Vincent and the Grenadines",
+    "slug": "saint-vincent-grenadines",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "XCD",
+    "timeZonePrimary": "America/St_Vincent",
+    "internetNotes": "Basic infrastructure. FLOW and Digicel are providers. Coverage on St. Vincent. Grenadine islands have more limited connectivity. Internet speeds in Saint Vincent and the Grenadines have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. English-speaking with open internet. No restrictions on VPN use. Remote workers in Saint Vincent and the Grenadines commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XCD-based. Cash dominant. Card payments at larger hotels. International payment methods online. Most international VPN providers accept payment methods commonly used in Saint Vincent and the Grenadines, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Kingstown hotels. Bequia and Mustique have resort Wi-Fi. Smaller Grenadines may have limited coverage. Visitors to Saint Vincent and the Grenadines should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SX",
+    "iso3": "SXM",
+    "nameEn": "Sint Maarten",
+    "slug": "sint-maarten",
+    "region": "Americas",
+    "languages": [
+      "nl",
+      "en"
+    ],
+    "currencyCode": "ANG",
+    "timeZonePrimary": "America/Lower_Princes",
+    "internetNotes": "Good infrastructure for a small Caribbean territory. TelEm and UTS are providers. Tourist-driven economy supports good connectivity. Internet speeds in Sint Maarten have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. Dutch territory with open internet. Shared island with French Saint-Martin. Remote workers in Sint Maarten commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "ANG-based. USD widely accepted. Card payments common in tourist areas. International methods work. Most international VPN providers accept payment methods commonly used in Sint Maarten, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Philipsburg hotels and beach bars. Maho Beach area famous and well-connected. Small island with good coverage. Visitors to Sint Maarten should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MF",
+    "iso3": "MAF",
+    "nameEn": "Saint Martin",
+    "slug": "saint-martin",
+    "region": "Americas",
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "America/Marigot",
+    "internetNotes": "Good infrastructure. French side uses Orange and SFR networks. Euro-based economy. Good connectivity in Marigot and tourist areas. Internet speeds in Saint Martin have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs fully legal. French territory with open internet. French digital rights apply. Remote workers in Saint Martin commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments accepted. French payment systems work. International methods available. Most international VPN providers accept payment methods commonly used in Saint Martin, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and restaurants. French side generally well-connected. Shared island with Dutch Sint Maarten. Visitors to Saint Martin should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
   }
 ]

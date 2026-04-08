@@ -4,26 +4,39 @@ import { useEffect, useState } from "react";
 
 export default function DarkModeToggle() {
   const [dark, setDark] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem("theme");
-    if (stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-      setDark(true);
-      document.documentElement.classList.add("dark");
-    }
+    setMounted(true);
+    // Read the actual state from the DOM (set by the inline script in layout)
+    setDark(document.documentElement.classList.contains("dark"));
   }, []);
 
   function toggle() {
     const next = !dark;
     setDark(next);
-    document.documentElement.classList.toggle("dark", next);
+    if (next) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
     localStorage.setItem("theme", next ? "dark" : "light");
+  }
+
+  // Prevent hydration mismatch — render placeholder until mounted
+  if (!mounted) {
+    return (
+      <button
+        aria-label="Toggle dark mode"
+        className="p-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors w-9 h-9"
+      />
+    );
   }
 
   return (
     <button
       onClick={toggle}
-      aria-label="Toggle dark mode"
+      aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
       className="p-2 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
     >
       {dark ? (

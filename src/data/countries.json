@@ -2821,5 +2821,216 @@
       "restricted-platforms",
       "tourist-wifi"
     ]
+  },
+  {
+    "iso2": "AW",
+    "iso3": "ABW",
+    "nameEn": "Aruba",
+    "slug": "aruba",
+    "region": "Americas",
+    "languages": [
+      "nl",
+      "pap",
+      "en"
+    ],
+    "currencyCode": "AWG",
+    "timeZonePrimary": "America/Aruba",
+    "internetNotes": "Good infrastructure for a Caribbean island. SETAR is the main provider. Decent broadband in Oranjestad with growing fiber deployment. Internet speeds in Aruba have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Aruba. Dutch Caribbean territory with open internet access. No restrictions on VPN usage. Remote workers in Aruba commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "AWG-based. USD widely accepted. Card payments common in tourist areas. International payment methods work for online purchases. Most international VPN providers accept payment methods commonly used in Aruba, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and restaurants. One Happy Island has decent coverage. Beach areas generally connected. Visitors to Aruba should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BS",
+    "iso3": "BHS",
+    "nameEn": "Bahamas",
+    "slug": "bahamas",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "BSD",
+    "timeZonePrimary": "America/Nassau",
+    "internetNotes": "Decent internet for the Caribbean. BTC and Aliv are providers. Good coverage in Nassau and Paradise Island. Outer islands have limited connectivity. Internet speeds in Bahamas have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in the Bahamas. English-speaking with no internet restrictions. Used by tourists and the financial services sector. Remote workers in Bahamas commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BSD-based (pegged to USD). USD accepted everywhere. Card payments common. International payment methods work seamlessly. Most international VPN providers accept payment methods commonly used in Bahamas, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Nassau and Paradise Island hotels. Outer islands like Exuma may have limited connectivity. Resort Wi-Fi generally reliable. Visitors to Bahamas should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MR",
+    "iso3": "MRT",
+    "nameEn": "Mauritania",
+    "slug": "mauritania",
+    "region": "Africa",
+    "languages": [
+      "ar",
+      "fr"
+    ],
+    "currencyCode": "MRU",
+    "timeZonePrimary": "Africa/Nouakchott",
+    "internetNotes": "Limited internet infrastructure. Mauritel and Chinguitel are providers. Coverage concentrated in Nouakchott. Saharan regions have very limited connectivity. Internet speeds in Mauritania have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is legal but the government has restricted internet access during political events. Social media has been throttled. VPN useful for maintaining access. Remote workers in Mauritania commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MRU-based. Cash dominant. Very limited card acceptance. International payment methods needed for online VPN purchases. Prepay before visiting. Most international VPN providers accept payment methods commonly used in Mauritania, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Nouakchott hotels. Desert and remote areas have no connectivity. Saharan routes are completely offline. Download everything before departure. Visitors to Mauritania should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "ML",
+    "iso3": "MLI",
+    "nameEn": "Mali",
+    "slug": "mali",
+    "region": "Africa",
+    "languages": [
+      "fr",
+      "bm"
+    ],
+    "currencyCode": "XOF",
+    "timeZonePrimary": "Africa/Bamako",
+    "internetNotes": "Limited internet market. Orange and Malitel are providers. Coverage mainly in Bamako. Northern and rural areas have very limited connectivity. Government has imposed internet shutdowns.",
+    "vpnNotes": "VPN use is common during internet restrictions. Government has blocked social media during political events. VPN recommended for maintaining communications. Remote workers in Mali commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XOF (CFA franc) based. Cash dominant. Orange Money growing. Very limited international card acceptance. Prepay for VPN before visiting. Most international VPN providers accept payment methods commonly used in Mali, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Bamako hotels. Timbuktu and northern regions have extremely limited connectivity. Security situation affects infrastructure. Visitors to Mali should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SO",
+    "iso3": "SOM",
+    "nameEn": "Somalia",
+    "slug": "somalia",
+    "region": "Africa",
+    "languages": [
+      "so",
+      "ar"
+    ],
+    "currencyCode": "SOS",
+    "timeZonePrimary": "Africa/Mogadishu",
+    "internetNotes": "Surprisingly competitive mobile internet market despite instability. Hormuud and Somtel are carriers. Mogadishu has decent mobile coverage. Some areas have no infrastructure. Internet speeds in Somalia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and used for privacy. Internet is relatively unregulated. Some content blocked periodically. Mobile money (EVC Plus) is the primary financial system. Remote workers in Somalia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "SOS-based. Mobile money (EVC Plus via Hormuud) dominant. Cash widely used. Very limited international card acceptance. Prepay for VPN before visiting. Most international VPN providers accept payment methods commonly used in Somalia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Mobile internet in Mogadishu and major towns. Very limited infrastructure outside cities. Satellite phones common in remote areas. Visitors to Somalia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AF",
+    "iso3": "AFG",
+    "nameEn": "Afghanistan",
+    "slug": "afghanistan",
+    "region": "APAC",
+    "languages": [
+      "ps",
+      "fa"
+    ],
+    "currencyCode": "AFN",
+    "timeZonePrimary": "Asia/Kabul",
+    "internetNotes": "Growing mobile internet despite challenges. Roshan, AWCC, and MTN are carriers. Coverage in Kabul and major cities. Rural areas have very limited access. Internet speeds in Afghanistan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common in Afghanistan. The Taliban government restricts some content and has blocked social media. VPN essential for accessing blocked services and maintaining privacy.",
+    "paymentNotes": "AFN-based. Cash dominant. Mobile money growing via M-Paisa. Very limited international payment infrastructure. Prepay for VPN before entering. Most international VPN providers accept payment methods commonly used in Afghanistan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Mobile internet available in Kabul and major cities. Coverage very limited outside urban areas. Security situation significantly affects connectivity and travel. Visitors to Afghanistan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "IQ",
+    "iso3": "IRQ",
+    "nameEn": "Iraq",
+    "slug": "iraq",
+    "region": "Middle East",
+    "languages": [
+      "ar",
+      "ku"
+    ],
+    "currencyCode": "IQD",
+    "timeZonePrimary": "Asia/Baghdad",
+    "internetNotes": "Growing mobile internet. Asiacell, Zain, and Korek are carriers. Government imposes frequent internet shutdowns, especially during exams and political events. Kurdistan region generally has better connectivity.",
+    "vpnNotes": "VPN use is widespread in Iraq due to frequent government-imposed internet shutdowns and social media blocks. VPNs are essential for maintaining connectivity during blackouts. Remote workers in Iraq commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "IQD-based. Cash dominant. Zain Cash and Asia Hawala mobile money growing. Very limited international card acceptance outside major hotels. Most international VPN providers accept payment methods commonly used in Iraq, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Baghdad and Erbil hotels. Kurdistan region has better infrastructure. Southern and rural areas have limited coverage. Internet shutdowns can occur without warning. Visitors to Iraq should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LY",
+    "iso3": "LBY",
+    "nameEn": "Libya",
+    "slug": "libya",
+    "region": "Africa",
+    "languages": [
+      "ar"
+    ],
+    "currencyCode": "LYD",
+    "timeZonePrimary": "Africa/Tripoli",
+    "internetNotes": "Limited and unstable internet infrastructure. LTT and Libyana are providers. Coverage mainly in Tripoli and Benghazi. Frequent disruptions due to ongoing instability. Internet speeds in Libya have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common in Libya. Government blocks various websites and social media periodically. Infrastructure challenges affect VPN reliability. Configure before entering. Remote workers in Libya commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "LYD-based. Cash dominant due to banking challenges. Very limited international payment infrastructure. Prepay for all online services before visiting. Most international VPN providers accept payment methods commonly used in Libya, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in some Tripoli hotels. Infrastructure severely damaged in many areas. Connectivity unreliable even in major cities. Travel advisories in effect. Visitors to Libya should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SD",
+    "iso3": "SDN",
+    "nameEn": "Sudan",
+    "slug": "sudan",
+    "region": "Africa",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "currencyCode": "SDG",
+    "timeZonePrimary": "Africa/Khartoum",
+    "internetNotes": "Limited internet infrastructure. Zain, MTN, and Sudani are carriers. Government imposed extended internet shutdowns during political transitions. Connectivity severely impacted by conflict since 2023. Internet speeds in Sudan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use surged during government internet shutdowns. The ongoing conflict has severely affected telecommunications infrastructure. VPN essential but reliability depends on available infrastructure. Remote workers in Sudan commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "SDG-based. Cash dominant. Mobile money limited. International payment infrastructure very limited. Prepay for VPN and all services before entering. Most international VPN providers accept payment methods commonly used in Sudan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Connectivity severely impacted by ongoing conflict. When available, Wi-Fi exists in some Khartoum hotels. Travel advisories strongly in effect. Visitors to Sudan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "YE",
+    "iso3": "YEM",
+    "nameEn": "Yemen",
+    "slug": "yemen",
+    "region": "Middle East",
+    "languages": [
+      "ar"
+    ],
+    "currencyCode": "YER",
+    "timeZonePrimary": "Asia/Aden",
+    "internetNotes": "Severely limited internet infrastructure due to ongoing conflict. Yemen Net and MTN are carriers. Very slow speeds and frequent outages. One of the least connected countries globally.",
+    "vpnNotes": "VPN use is important in Yemen for accessing blocked content and maintaining communications. Both Houthi and internationally recognized government areas impose restrictions. Remote workers in Yemen commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "YER-based. Cash dominant. Very limited digital payment infrastructure. No international card acceptance. Prepay for everything before entering. Most international VPN providers accept payment methods commonly used in Yemen, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Internet access extremely limited and unreliable. When available, speeds are very slow. Conflict has destroyed much telecommunications infrastructure. Active travel warnings. Visitors to Yemen should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
   }
 ]

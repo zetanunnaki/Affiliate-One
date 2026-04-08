@@ -1,0 +1,59 @@
+---
+title: "Secure Messaging for Remote Teams: Signal, WhatsApp, Slack Compared (2026)"
+description: "Which messaging apps are actually secure? End-to-end encryption comparison, metadata collection, and recommendations for remote work communication."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "EFF: Secure Messaging Scorecard"
+  - "Signal Foundation: Technical Documentation"
+---
+
+## The Messaging Security Spectrum
+
+Not all "encrypted" messaging is equal. There's a huge difference between transport encryption (WhatsApp messages to Meta's servers) and end-to-end encryption (Signal where even Signal can't read messages).
+
+## Platform Comparison
+
+| Platform | E2E Encrypted | Metadata Collected | Open Source | Who Can Read Messages |
+|----------|--------------|-------------------|-------------|---------------------|
+| Signal | Always (all messages) | Minimal (phone number only) | Yes (client + server) | Only you + recipient |
+| WhatsApp | Default for personal | Extensive (contacts, groups, timing) | No | Only you + recipient (but Meta has metadata) |
+| Telegram | Only in "Secret Chats" | Moderate | Client only | Telegram can read regular chats |
+| Slack | No (enterprise key management available) | Extensive | No | Slack + your employer |
+| Microsoft Teams | In transit only | Extensive | No | Microsoft + your employer |
+| iMessage | Yes (Apple-to-Apple) | Moderate | No | Only you + recipient (Apple devices only) |
+| Discord | No | Extensive | No | Discord can read all messages |
+
+## Our Recommendations
+
+### For Sensitive Personal Communication: Signal
+Signal is the gold standard. End-to-end encrypted by default, open-source, minimal metadata, and run by a nonprofit. Use it for personal conversations, sensitive discussions, and anything you wouldn't want a third party to read.
+
+### For Team Communication: Your Company's Choice
+Use whatever your company mandates (usually Slack or Teams). These are not end-to-end encrypted, and your employer can read messages. This is by design — companies need oversight of work communications. Don't discuss personal matters on work platforms.
+
+### For International Communication: WhatsApp + VPN
+WhatsApp is end-to-end encrypted for messages and widely used internationally. The concern is Meta's metadata collection (who you talk to, when, how often). For the actual message content, it's secure. Use a VPN in countries that block WhatsApp calls.
+
+## What to Avoid
+
+- **SMS/MMS** — Unencrypted. Can be intercepted. Vulnerable to SIM swap attacks
+- **Regular phone calls** — Not encrypted in most cases. Use Signal or WhatsApp calls instead
+- **Telegram "regular chats"** — NOT end-to-end encrypted. Only "Secret Chats" are. Most people don't know this
+- **Email for sensitive content** — Standard email is not end-to-end encrypted. Use Signal or ProtonMail instead
+
+## The Metadata Problem
+
+Even with end-to-end encryption, metadata reveals a lot:
+- **Who you talk to** — Your contact patterns
+- **When you communicate** — Your schedule and habits
+- **How often** — Relationship intensity
+- **Your location** (if GPS enabled) — Where you are when messaging
+
+Signal collects the least metadata of any major platform. WhatsApp encrypts content but Meta collects extensive metadata.
+
+## How We Verified
+
+Encryption claims verified against published technical documentation. Metadata collection analyzed from privacy policies and independent research. Signal Protocol specifications reviewed. April 2026.

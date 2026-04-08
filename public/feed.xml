@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 15:36:03 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 15:45:54 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -112,6 +112,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Privacy Laws Around the World: What Remote Workers Need to Know (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/privacy-laws-worldwide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/privacy-laws-worldwide/</guid>
+      <description><![CDATA[GDPR, CCPA, LGPD, POPIA — privacy laws vary dramatically by country. Here's what matters for your data protection as a remote worker.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[Remote Work Security Checklist: 15 Steps to Protect Your Data (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/remote-work-security-checklist/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/remote-work-security-checklist/</guid>
@@ -140,6 +148,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-file-sharing/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-file-sharing/</guid>
       <description><![CDATA[How to share files securely with your remote team. Compare encrypted file sharing tools, avoid common mistakes, and protect sensitive documents.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Secure Messaging for Remote Teams: Signal, WhatsApp, Slack Compared (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-messaging-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-messaging-guide/</guid>
+      <description><![CDATA[Which messaging apps are actually secure? End-to-end encryption comparison, metadata collection, and recommendations for remote work communication.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -174,6 +190,14 @@
       <description><![CDATA[Step-by-step instructions for enabling 2FA on Gmail, Microsoft, Apple, GitHub, AWS, Slack, and more. Includes backup code management.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN for Expats: Access Home Services From Anywhere (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-expats/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-expats/</guid>
+      <description><![CDATA[How expats use VPNs to access banking, streaming, government services, and stay connected to home while living abroad.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
     </item>
     <item>
       <title><![CDATA[Best VPN for Gaming: Reduce Lag, Prevent DDoS, Access More Servers (2026)]]></title>

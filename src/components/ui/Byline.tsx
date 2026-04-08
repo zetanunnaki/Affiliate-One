@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getAuthorById } from "@/lib/data";
 
 interface BylineProps {
@@ -18,14 +19,14 @@ export default function Byline({ authorId, updatedAt }: BylineProps) {
 
   return (
     <div className="flex items-center gap-3 py-4 border-b border-zinc-200 dark:border-zinc-700 mb-6">
-      <div className="w-10 h-10 bg-zinc-200 dark:bg-zinc-700 rounded-full flex items-center justify-center">
-        <span className="text-sm font-semibold text-zinc-600 dark:text-zinc-300">
-          {author.name
-            .split(" ")
-            .map((n) => n[0])
-            .join("")}
-        </span>
-      </div>
+      <Image
+        src={author.headshot}
+        alt={`${author.name} — ${author.role}`}
+        width={40}
+        height={40}
+        className="w-10 h-10 rounded-full"
+        unoptimized
+      />
       <div>
         <Link
           href={`/authors/${author.id}`}

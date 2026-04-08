@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <title>Best VPN 2026</title>
+  <desc>Expert-tested and independently reviewed</desc>
+  <defs>
+    <linearGradient id="hbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="sg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#hbg)"/>
+  <circle cx="900" cy="200" r="180" fill="#1e40af" opacity="0.12"/>
+  <circle cx="1050" cy="420" r="120" fill="#3b82f6" opacity="0.08"/>
+  <circle cx="180" cy="480" r="100" fill="#1e40af" opacity="0.08"/>
+  <g transform="translate(520, 120) scale(2.8)">
+    <path d="M32 5L5 18V42C5 65 32 80 32 80C32 80 59 65 59 42V18L32 5Z" fill="url(#sg)" stroke="#60a5fa" stroke-width="1.2"/>
+    <path d="M20 40L29 49L46 32" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="600" y="400" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="52" font-weight="700" fill="white">BuySecureVPN</text>
+  <text x="600" y="450" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#94a3b8">Expert-tested and independently reviewed</text>
+  <g opacity="0.15" stroke="#60a5fa" stroke-width="1" fill="#60a5fa">
+    <circle cx="140" cy="140" r="3"/><circle cx="280" cy="90" r="2.5"/><circle cx="90" cy="280" r="2.5"/>
+    <circle cx="1060" cy="140" r="3"/><circle cx="1110" cy="290" r="2.5"/><circle cx="960" cy="490" r="2.5"/>
+    <line x1="140" y1="140" x2="280" y2="90" stroke="#60a5fa"/><line x1="140" y1="140" x2="90" y2="280" stroke="#60a5fa"/>
+    <line x1="1060" y1="140" x2="1110" y2="290" stroke="#60a5fa"/><line x1="1110" y1="290" x2="960" y2="490" stroke="#60a5fa"/>
+  </g>
+</svg>

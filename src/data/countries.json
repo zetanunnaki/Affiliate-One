@@ -4020,5 +4020,64 @@
     "riskFlags": [
       "tourist-wifi"
     ]
+  },
+  {
+    "iso2": "TL",
+    "iso3": "TLS",
+    "nameEn": "Timor-Leste",
+    "slug": "timor-leste",
+    "region": "APAC",
+    "languages": [
+      "pt",
+      "tet"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "Asia/Dili",
+    "internetNotes": "Limited infrastructure. Timor Telecom and Telemor are providers. Coverage in Dili. Rural areas have very limited connectivity. USD-based economy. Internet speeds in Timor-Leste have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. No significant internet restrictions. Limited internet access is the main challenge rather than censorship. Remote workers in Timor-Leste commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. Cash dominant. Very limited card acceptance. International payment methods for online purchases. Most international VPN providers accept payment methods commonly used in Timor-Leste, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Dili hotels. Very limited coverage outside the capital. One of the newer nations with developing infrastructure. Visitors to Timor-Leste should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MH",
+    "iso3": "MHL",
+    "nameEn": "Marshall Islands",
+    "slug": "marshall-islands",
+    "region": "APAC",
+    "languages": [
+      "mh",
+      "en"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "Pacific/Majuro",
+    "internetNotes": "Very limited infrastructure. NTA is the main provider. Coverage in Majuro. Remote atolls have satellite-only connectivity. Internet speeds in Marshall Islands have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. No internet restrictions. US-associated territory with open internet. Remote workers in Marshall Islands commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. Cash dominant. Very limited card acceptance. International payment methods for online services. Most international VPN providers accept payment methods commonly used in Marshall Islands, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Basic Wi-Fi in Majuro hotels. Remote atolls have very limited or no connectivity. Visitors to Marshall Islands should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "FM",
+    "iso3": "FSM",
+    "nameEn": "Micronesia",
+    "slug": "micronesia",
+    "region": "APAC",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "Pacific/Chuuk",
+    "internetNotes": "Very limited infrastructure. FSM Telecom is the main provider. Coverage varies by state. Pohnpei has the best connectivity. Internet speeds in Micronesia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. No internet restrictions. US-associated territory with open internet access. Remote workers in Micronesia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. Cash dominant. Very limited card acceptance outside Pohnpei. Most international VPN providers accept payment methods commonly used in Micronesia, including major credit cards, PayPal, and cryptocurrency options. When purchasing a VPN subscription from Micronesia, compare pricing carefully as some providers offer regional pricing or discounts for longer-term plans.",
+    "travelNotes": "Basic Wi-Fi in Pohnpei hotels. Other states have very limited connectivity. Visitors to Micronesia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
   }
 ]

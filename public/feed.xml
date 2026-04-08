@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 16:46:02 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 16:57:47 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -44,6 +44,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/coworking-security/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/coworking-security/</guid>
       <description><![CDATA[Security risks unique to co-working spaces and how to mitigate them. Network segmentation, screen privacy, physical security, and VPN usage.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Cryptocurrency Security for Remote Workers (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/cryptocurrency-security/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/cryptocurrency-security/</guid>
+      <description><![CDATA[Protect your crypto assets while working remotely. Hardware wallets, exchange security, VPN usage, and avoiding phishing attacks targeting crypto users.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -276,6 +284,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-gaming/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-gaming/</guid>
       <description><![CDATA[Can a VPN improve your gaming experience? We test latency, DDoS protection, and geo-unlocking for PC, console, and mobile gaming.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[Best VPN for iPhone & iPad: iOS Setup Guide (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-ios/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-ios/</guid>
+      <description><![CDATA[How to set up a VPN on iOS. App Store apps, IKEv2 built-in, On Demand rules, and which providers work best on iPhone and iPad.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>vpn</category>
     </item>

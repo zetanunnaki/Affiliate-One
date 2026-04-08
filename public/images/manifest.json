@@ -1,0 +1,57 @@
+[
+  {
+    "path": "/images/authors/sarah-chen.png",
+    "alt": "Sarah Chen — Lead Security Editor at BuySecureVPN",
+    "aspectRatio": "1:1"
+  },
+  {
+    "path": "/images/authors/marcus-johnson.png",
+    "alt": "Marcus Johnson — VPN & Privacy Analyst at BuySecureVPN",
+    "aspectRatio": "1:1"
+  },
+  {
+    "path": "/images/authors/elena-rodriguez.png",
+    "alt": "Elena Rodriguez — Travel Security Writer at BuySecureVPN",
+    "aspectRatio": "1:1"
+  },
+  {
+    "path": "/images/illustrations/hero-remote-work.png",
+    "alt": "Remote worker using VPN at a cafe — BuySecureVPN",
+    "aspectRatio": "16:9"
+  },
+  {
+    "path": "/images/illustrations/hero-vpn-desk.png",
+    "alt": "VPN security on laptop — BuySecureVPN workspace",
+    "aspectRatio": "16:9"
+  },
+  {
+    "path": "/images/illustrations/hero-airport-wifi.png",
+    "alt": "Using VPN on public airport WiFi — BuySecureVPN travel security",
+    "aspectRatio": "16:9"
+  },
+  {
+    "path": "/images/illustrations/hero-home-office.png",
+    "alt": "Secure home office setup — BuySecureVPN remote work security",
+    "aspectRatio": "16:9"
+  },
+  {
+    "path": "/images/illustrations/guide-hotel-wifi.png",
+    "alt": "Working from hotel room with VPN — BuySecureVPN hotel security guide",
+    "aspectRatio": "16:9"
+  },
+  {
+    "path": "/images/illustrations/guide-mobile-vpn.png",
+    "alt": "VPN connected on smartphone — BuySecureVPN mobile security",
+    "aspectRatio": "9:16"
+  },
+  {
+    "path": "/images/illustrations/guide-security-tools.png",
+    "alt": "Essential security tools for remote workers — BuySecureVPN",
+    "aspectRatio": "16:9"
+  },
+  {
+    "path": "/images/illustrations/guide-digital-nomad.png",
+    "alt": "Digital nomad working remotely with VPN protection — BuySecureVPN",
+    "aspectRatio": "16:9"
+  }
+]

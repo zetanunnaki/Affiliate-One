@@ -10,7 +10,9 @@
       "Bash(GITHUB_PAGES=true npm run build)",
       "WebFetch(domain:zetanunnaki.github.io)",
       "Bash(python scripts/generate-images.py)",
-      "Bash(where python:*)"
+      "Bash(where python:*)",
+      "Bash(curl -s \"https://generativelanguage.googleapis.com/v1beta/models?key=AIzaSyD1jtZMIbUP3QoFNcsptZhqNXzTtl76vJs\")",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('c:/Users/Issam/Affiliate-One/tmp_models.json','utf8'\\)\\);if\\(d.models\\)d.models.forEach\\(m=>{if\\(m.name.includes\\('imagen'\\)||m.name.includes\\('gemini-2'\\)||m.supportedGenerationMethods?.includes\\('generateImage'\\)\\)console.log\\(m.name,'|',m.supportedGenerationMethods?.join\\(','\\)\\)}\\);else console.log\\(JSON.stringify\\(d\\).slice\\(0,300\\)\\);\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

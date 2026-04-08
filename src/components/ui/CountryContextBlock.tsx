@@ -1,4 +1,5 @@
 import type { Country } from "@/types";
+import AutoLinkedText from "@/components/ui/AutoLinkedText";
 
 interface CountryContextBlockProps {
   country: Country;
@@ -12,6 +13,8 @@ const riskFlagLabels: Record<string, { label: string; color: string }> = {
 };
 
 export default function CountryContextBlock({ country }: CountryContextBlockProps) {
+  const currentPageHref = `/vpn/best/${country.slug}`;
+
   return (
     <section className="my-8">
       <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
@@ -41,7 +44,9 @@ export default function CountryContextBlock({ country }: CountryContextBlockProp
             Internet Infrastructure
           </h3>
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
-            {country.internetNotes}
+            <AutoLinkedText excludeHrefs={[currentPageHref]} maxLinks={2}>
+              {country.internetNotes}
+            </AutoLinkedText>
           </p>
         </div>
         <div className="p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
@@ -49,7 +54,9 @@ export default function CountryContextBlock({ country }: CountryContextBlockProp
             VPN Usage & Regulations
           </h3>
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
-            {country.vpnNotes}
+            <AutoLinkedText excludeHrefs={[currentPageHref]} maxLinks={2}>
+              {country.vpnNotes}
+            </AutoLinkedText>
           </p>
         </div>
         <div className="p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg">
@@ -65,7 +72,9 @@ export default function CountryContextBlock({ country }: CountryContextBlockProp
             Travel & Connectivity
           </h3>
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
-            {country.travelNotes}
+            <AutoLinkedText excludeHrefs={[currentPageHref]} maxLinks={2}>
+              {country.travelNotes}
+            </AutoLinkedText>
           </p>
         </div>
       </div>

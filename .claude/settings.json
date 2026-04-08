@@ -6,7 +6,8 @@
       "mcp__github__get_me",
       "Bash(gh api:*)",
       "mcp__github__list_commits",
-      "Read(//c/Users/Issam/.claude/projects/c--Users-Issam-Affiliate-One/memory/**)"
+      "Read(//c/Users/Issam/.claude/projects/c--Users-Issam-Affiliate-One/memory/**)",
+      "Bash(GITHUB_PAGES=true npm run build)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

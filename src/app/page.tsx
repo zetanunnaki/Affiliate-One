@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllCountries, getAllProviders, getAllIntents } from "@/lib/data";
+import Flag from "@/components/ui/Flag";
 
 export default function Home() {
   const countries = getAllCountries();
@@ -108,7 +109,7 @@ export default function Home() {
                 href={`/vpn/best/${country.slug}`}
                 className="flex items-center gap-3 p-4 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-lg hover:shadow-sm hover:border-blue-300 dark:hover:border-blue-700 transition-all"
               >
-                <span className="text-2xl">{getFlagEmoji(country.iso2)}</span>
+                <Flag iso2={country.iso2} name={country.nameEn} size="lg" />
                 <div>
                   <span className="font-medium text-sm text-zinc-900 dark:text-zinc-100">
                     {country.nameEn}
@@ -182,11 +183,3 @@ export default function Home() {
   );
 }
 
-function getFlagEmoji(iso2: string): string {
-  return String.fromCodePoint(
-    ...iso2
-      .toUpperCase()
-      .split("")
-      .map((c) => 0x1f1e6 - 65 + c.charCodeAt(0))
-  );
-}

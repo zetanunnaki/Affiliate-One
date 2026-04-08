@@ -2,10 +2,24 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import countriesData from "@/data/countries.json";
 import type { Country } from "@/types";
 
 const countries = countriesData as Country[];
+
+function CountryFlag({ iso2, name }: { iso2: string; name: string }) {
+  return (
+    <Image
+      src={`https://flagcdn.com/w48/${iso2.toLowerCase()}.png`}
+      alt={`${name} flag`}
+      width={24}
+      height={18}
+      className="inline-block rounded-sm object-cover"
+      unoptimized
+    />
+  );
+}
 
 function getFlagEmoji(iso2: string): string {
   return String.fromCodePoint(
@@ -118,7 +132,7 @@ export default function CountriesPage() {
                 href={`/vpn/best/${country.slug}/`}
                 className="flex items-center gap-3 p-3 border border-zinc-200 dark:border-zinc-700 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-blue-300 dark:hover:border-blue-700 transition-all"
               >
-                <span className="text-xl">{getFlagEmoji(country.iso2)}</span>
+                <CountryFlag iso2={country.iso2} name={country.nameEn} />
                 <div>
                   <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100 block">
                     {country.nameEn}

@@ -1,0 +1,112 @@
+---
+title: "VPN for Linux: Setup Guide for Ubuntu, Fedora & Arch (2026)"
+description: "How to set up a VPN on Linux. Native apps, CLI tools, WireGuard configuration, and NetworkManager integration for remote work."
+updatedAt: "2026-04-07"
+author: "marcus-johnson"
+category: "vpn"
+toc: true
+---
+
+## VPN on Linux: Better Than You Think
+
+Linux VPN support has improved dramatically. Most major providers now offer native Linux apps with GUIs, and WireGuard is built into the Linux kernel since 5.6. Whether you use Ubuntu, Fedora, or Arch, setting up a VPN takes minutes.
+
+## Option 1: Native VPN App (Easiest)
+
+### NordVPN for Linux
+NordVPN offers a CLI app for Linux:
+
+```
+# Debian/Ubuntu
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+
+# Connect
+nordvpn login
+nordvpn connect
+nordvpn set killswitch on
+nordvpn set autoconnect on
+```
+
+Supports: Ubuntu, Debian, Fedora, RHEL, openSUSE, Arch (AUR)
+
+### Proton VPN for Linux
+Proton VPN offers both CLI and full GUI app:
+
+```
+# Debian/Ubuntu
+sudo apt install protonvpn-gnome-desktop
+
+# Or CLI
+pip install protonvpn-cli
+protonvpn-cli login
+protonvpn-cli connect --fastest
+```
+
+Full open-source GUI app with Secure Core, kill switch, and split tunneling.
+
+### Mullvad for Linux
+Full GUI app available:
+
+```
+# Download from mullvad.net/download/linux
+sudo dpkg -i MullvadVPN-*.deb
+```
+
+Native WireGuard integration with full GUI.
+
+## Option 2: WireGuard (Manual, Fast)
+
+WireGuard is in the Linux kernel. You just need config files from your provider:
+
+```
+# Install WireGuard tools
+sudo apt install wireguard
+
+# Download config from your VPN provider's website
+# Place in /etc/wireguard/
+
+# Connect
+sudo wg-quick up wg0
+
+# Disconnect
+sudo wg-quick down wg0
+
+# Auto-start at boot
+sudo systemctl enable wg-quick@wg0
+```
+
+## Option 3: OpenVPN (Maximum Compatibility)
+
+```
+# Install OpenVPN
+sudo apt install openvpn
+
+# Download .ovpn config from your provider
+# Connect
+sudo openvpn --config /path/to/config.ovpn
+```
+
+## Option 4: NetworkManager Integration
+
+For desktop Linux users who prefer GUI:
+
+1. Install NetworkManager VPN plugins:
+   - `sudo apt install network-manager-openvpn-gnome` (for OpenVPN)
+   - WireGuard configs can be imported directly
+2. Import your provider's config file via NetworkManager settings
+3. Connect/disconnect from the system tray
+
+## Kill Switch on Linux
+
+Linux has the most robust kill switch options:
+
+1. **Provider app kill switch** — NordVPN, Proton VPN, Mullvad all include it
+2. **UFW firewall rules** — Block all traffic except through the VPN interface
+3. **iptables rules** — Most granular control (advanced users)
+4. **WireGuard AllowedIPs** — Set to 0.0.0.0/0 to route all traffic through VPN
+
+## Our Pick for Linux
+
+1. **Proton VPN** — Best Linux experience (full open-source GUI, CLI, Secure Core)
+2. **Mullvad** — Excellent native GUI, WireGuard-first, privacy maximum
+3. **NordVPN** — Best CLI tool, largest server network, NordLynx (WireGuard)

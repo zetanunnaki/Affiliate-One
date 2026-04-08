@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 15:45:54 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 15:57:03 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -112,6 +112,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[How to Share Passwords Safely: Stop Using Slack and Email (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/password-sharing-safely/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/password-sharing-safely/</guid>
+      <description><![CDATA[Secure methods for sharing passwords, API keys, and credentials with teammates. Password manager sharing, Bitwarden Send, and one-time links.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[Privacy Laws Around the World: What Remote Workers Need to Know (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/privacy-laws-worldwide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/privacy-laws-worldwide/</guid>
@@ -208,6 +216,14 @@
       <category>vpn</category>
     </item>
     <item>
+      <title><![CDATA[VPN for Linux: Setup Guide for Ubuntu, Fedora & Arch (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-linux/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-linux/</guid>
+      <description><![CDATA[How to set up a VPN on Linux. Native apps, CLI tools, WireGuard configuration, and NetworkManager integration for remote work.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
       <title><![CDATA[VPN Logging Policies Compared: Who Keeps What Data? (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-logging-policies/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-logging-policies/</guid>
@@ -254,6 +270,14 @@
       <description><![CDATA[How safe is hotel and airport Wi-Fi? Real threats, practical protection steps, and when to use your phone's hotspot instead.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>public-wifi</category>
+    </item>
+    <item>
+      <title><![CDATA[Working From Hotels Securely: The Complete Guide (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/work-from-hotel-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/work-from-hotel-guide/</guid>
+      <description><![CDATA[How to set up a secure, productive workspace in any hotel room. VPN, network security, ergonomics, and productivity tips for business travelers.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>travel</category>
     </item>
     <item>
       <title><![CDATA[Zero Trust Security for Remote Workers: What You Need to Know (2026)]]></title>

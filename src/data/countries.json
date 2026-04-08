@@ -3032,5 +3032,170 @@
       "restricted-platforms",
       "tourist-wifi"
     ]
+  },
+  {
+    "iso2": "BE",
+    "iso3": "BEL",
+    "nameEn": "Belgium",
+    "slug": "belgium",
+    "region": "Europe",
+    "languages": [
+      "nl",
+      "fr",
+      "de"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Brussels",
+    "internetNotes": "Excellent broadband infrastructure. Proximus, Telenet, and Orange are providers. Brussels hosts EU institutions with world-class connectivity and growing fiber deployment. Internet speeds in Belgium have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Belgium. EU capital with strong GDPR enforcement. High VPN adoption among EU institution workers, diplomats, and international community. Remote workers in Belgium commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments dominant. Bancontact is the local payment system. International payment methods widely accepted for all online services. Most international VPN providers accept payment methods commonly used in Belgium, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi in Brussels, Antwerp, and Ghent. EU quarter particularly well-connected. SNCB/NMBS trains offer Wi-Fi on IC services. Visitors to Belgium should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GQ",
+    "iso3": "GNQ",
+    "nameEn": "Equatorial Guinea",
+    "slug": "equatorial-guinea",
+    "region": "Africa",
+    "languages": [
+      "es",
+      "fr",
+      "pt"
+    ],
+    "currencyCode": "XAF",
+    "timeZonePrimary": "Africa/Malabo",
+    "internetNotes": "Limited internet infrastructure. GETESA is the main provider. Coverage concentrated in Malabo and Bata. Oil wealth hasn't translated to widespread internet access. Internet speeds in Equatorial Guinea have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal but the government monitors internet content. Limited internet freedom. VPN useful for accessing unrestricted content and communication. Remote workers in Equatorial Guinea commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XAF (CFA franc) based. Cash dominant. Very limited card acceptance. International payment methods needed for online purchases. Prepay before visiting. Most international VPN providers accept payment methods commonly used in Equatorial Guinea, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in major hotels in Malabo and Bata. Very limited coverage outside main cities. One of Africa's least connected countries despite oil wealth. Visitors to Equatorial Guinea should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CF",
+    "iso3": "CAF",
+    "nameEn": "Central African Republic",
+    "slug": "central-african-republic",
+    "region": "Africa",
+    "languages": [
+      "fr",
+      "sg"
+    ],
+    "currencyCode": "XAF",
+    "timeZonePrimary": "Africa/Bangui",
+    "internetNotes": "Extremely limited internet infrastructure. Telecel and Orange are carriers. Coverage mainly in Bangui. One of the least connected countries globally. Internet speeds in Central African Republic have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal but internet access itself is very limited. Mobile internet is the primary access method. Infrastructure challenges are more pressing than censorship. Remote workers in Central African Republic commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XAF (CFA franc) based. Cash dominant. No significant card acceptance. International payment infrastructure essentially nonexistent locally. Most international VPN providers accept payment methods commonly used in Central African Republic, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Very limited Wi-Fi even in Bangui hotels. Travel advisories in effect. Internet access should not be expected outside the capital. Visitors to Central African Republic should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "TD",
+    "iso3": "TCD",
+    "nameEn": "Chad",
+    "slug": "chad",
+    "region": "Africa",
+    "languages": [
+      "fr",
+      "ar"
+    ],
+    "currencyCode": "XAF",
+    "timeZonePrimary": "Africa/Ndjamena",
+    "internetNotes": "Very limited internet infrastructure. Tigo and Airtel are carriers. Coverage mainly in N'Djamena. Government has imposed internet shutdowns during political events. Internet speeds in Chad have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common during internet restrictions. Government has blocked social media and imposed full internet shutdowns. VPN essential during political tensions. Remote workers in Chad commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XAF (CFA franc) based. Cash dominant. No significant card acceptance outside major hotels. Prepay for all digital services before visiting. Most international VPN providers accept payment methods commonly used in Chad, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Limited Wi-Fi in N'Djamena hotels. Saharan and rural areas have no connectivity. Internet shutdowns can occur without warning during political events. Visitors to Chad should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "NE",
+    "iso3": "NER",
+    "nameEn": "Niger",
+    "slug": "niger",
+    "region": "Africa",
+    "languages": [
+      "fr"
+    ],
+    "currencyCode": "XOF",
+    "timeZonePrimary": "Africa/Niamey",
+    "internetNotes": "Limited internet market. Airtel and Orange are carriers. Coverage mainly in Niamey. Saharan and rural areas have very limited or no connectivity. Internet speeds in Niger have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal but internet access is very limited. Government has restricted social media during political events. VPN useful during restrictions. Remote workers in Niger commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XOF (CFA franc) based. Cash dominant. Mobile money growing via Airtel Money. Very limited international payment infrastructure. Most international VPN providers accept payment methods commonly used in Niger, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Limited Wi-Fi in Niamey hotels. Desert regions completely offline. One of the least connected countries in West Africa. Download everything offline. Visitors to Niger should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BF",
+    "iso3": "BFA",
+    "nameEn": "Burkina Faso",
+    "slug": "burkina-faso",
+    "region": "Africa",
+    "languages": [
+      "fr"
+    ],
+    "currencyCode": "XOF",
+    "timeZonePrimary": "Africa/Ouagadougou",
+    "internetNotes": "Limited internet market. Orange and Telecel are carriers. Coverage in Ouagadougou. Government has suspended social media during political transitions. Internet speeds in Burkina Faso have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use increased during social media suspensions. Government has blocked Facebook, WhatsApp, and other platforms. VPN essential during political tensions. Remote workers in Burkina Faso commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XOF (CFA franc) based. Orange Money growing. Cash dominant. Very limited international card acceptance. Most international VPN providers accept payment methods commonly used in Burkina Faso, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in some Ouagadougou hotels. Very limited coverage outside the capital. Security situation affects both travel and connectivity. Visitors to Burkina Faso should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SL",
+    "iso3": "SLE",
+    "nameEn": "Sierra Leone",
+    "slug": "sierra-leone",
+    "region": "Africa",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "SLE",
+    "timeZonePrimary": "Africa/Freetown",
+    "internetNotes": "Growing mobile internet market. Africell, Orange, and Sierratel are carriers. Coverage in Freetown. Rural areas have limited connectivity. Internet speeds in Sierra Leone have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Sierra Leone. Government has restricted internet access during elections. English-speaking with growing digital adoption. Remote workers in Sierra Leone commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "SLE-based. Cash dominant. Orange Money growing. Very limited international card acceptance outside Freetown hotels. Most international VPN providers accept payment methods commonly used in Sierra Leone, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Freetown hotels. Beach areas like Tokeh may have limited connectivity. Rural areas largely offline. Mobile data from Africell recommended. Visitors to Sierra Leone should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "LR",
+    "iso3": "LBR",
+    "nameEn": "Liberia",
+    "slug": "liberia",
+    "region": "Africa",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "LRD",
+    "timeZonePrimary": "Africa/Monrovia",
+    "internetNotes": "Limited internet infrastructure. Lonestar Cell MTN and Orange are carriers. Coverage in Monrovia. USD used alongside local currency due to historical ties. Internet speeds in Liberia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Liberia. No significant restrictions on internet access. English-speaking with growing mobile internet adoption. Remote workers in Liberia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "LRD and USD both used. Cash dominant. Very limited card acceptance. Mobile money growing via MTN MoMo and Orange Money. Most international VPN providers accept payment methods commonly used in Liberia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in some Monrovia hotels. Very limited coverage outside the capital. Roads and infrastructure challenges affect connectivity. Visitors to Liberia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
   }
 ]

@@ -3197,5 +3197,194 @@
     "riskFlags": [
       "tourist-wifi"
     ]
+  },
+  {
+    "iso2": "GN",
+    "iso3": "GIN",
+    "nameEn": "Guinea",
+    "slug": "guinea",
+    "region": "Africa",
+    "languages": [
+      "fr"
+    ],
+    "currencyCode": "GNF",
+    "timeZonePrimary": "Africa/Conakry",
+    "internetNotes": "Limited internet market. Orange and MTN are carriers. Coverage in Conakry. Government has imposed internet shutdowns during political events and elections. Internet speeds in Guinea have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common during internet restrictions. Government blocks social media during political tensions. VPN essential during shutdown periods. Remote workers in Guinea commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "GNF-based. Cash dominant. Orange Money growing. Very limited international card acceptance. Prepay for VPN services before visiting. Most international VPN providers accept payment methods commonly used in Guinea, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Limited Wi-Fi in Conakry hotels. Rural areas have very limited connectivity. Internet shutdowns can occur without warning. Visitors to Guinea should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GM",
+    "iso3": "GMB",
+    "nameEn": "Gambia",
+    "slug": "gambia",
+    "region": "Africa",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "GMD",
+    "timeZonePrimary": "Africa/Banjul",
+    "internetNotes": "Limited internet infrastructure. Africell, QCell, and Comium are carriers. Coverage in Banjul and main towns. Government imposed a complete internet shutdown during 2016 elections. Internet speeds in Gambia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use grew after the 2016 internet shutdown. English-speaking nation with growing mobile internet adoption. Government has restricted access during political events. Remote workers in Gambia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "GMD-based. Cash dominant. Mobile money growing. Very limited card acceptance. International payment methods needed for online VPN purchases. Most international VPN providers accept payment methods commonly used in Gambia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Banjul hotels and tourist resorts. Beach resort areas generally connected. Rural areas have limited coverage. Visitors to Gambia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "DJ",
+    "iso3": "DJI",
+    "nameEn": "Djibouti",
+    "slug": "djibouti",
+    "region": "Africa",
+    "languages": [
+      "fr",
+      "ar"
+    ],
+    "currencyCode": "DJF",
+    "timeZonePrimary": "Africa/Djibouti",
+    "internetNotes": "Limited infrastructure. Djibouti Telecom is the sole provider. Strategic location for submarine cables but domestic internet is expensive and slow. Internet speeds in Djibouti have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal but internet censorship exists. Government monitors internet activity. VPN useful for privacy and accessing unrestricted content. Remote workers in Djibouti commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "DJF-based. Cash dominant. Very limited digital payment infrastructure. International card acceptance limited to major hotels. Most international VPN providers accept payment methods commonly used in Djibouti, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Djibouti City hotels. Very limited coverage outside the capital. Internet is expensive relative to the region. Visitors to Djibouti should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "ER",
+    "iso3": "ERI",
+    "nameEn": "Eritrea",
+    "slug": "eritrea",
+    "region": "Africa",
+    "languages": [
+      "ti",
+      "ar",
+      "en"
+    ],
+    "currencyCode": "ERN",
+    "timeZonePrimary": "Africa/Asmara",
+    "internetNotes": "One of the least connected countries globally. EriTel is the sole provider. Internet penetration under 5%. Government controls all telecommunications. Internet speeds in Eritrea have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is difficult due to extremely limited internet access. The government restricts internet severely. Among the lowest internet freedom scores globally. Remote workers in Eritrea commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "ERN-based. Cash only. No digital payment infrastructure. International card acceptance nonexistent. All services must be prepaid before entering. Most international VPN providers accept payment methods commonly used in Eritrea, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Extremely limited internet access. Even Asmara has very slow and unreliable connectivity. Do not rely on internet access in Eritrea. Visitors to Eritrea should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SS",
+    "iso3": "SSD",
+    "nameEn": "South Sudan",
+    "slug": "south-sudan",
+    "region": "Africa",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "SSP",
+    "timeZonePrimary": "Africa/Juba",
+    "internetNotes": "Very limited infrastructure. Zain, Vivacell, and MTN are carriers. Coverage mainly in Juba. Ongoing conflict affects telecommunications infrastructure. Internet speeds in South Sudan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal but internet access is severely limited by infrastructure challenges. Government has restricted social media during political tensions. Remote workers in South Sudan commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "SSP-based. Cash dominant. Very limited digital payment infrastructure. International payment methods essentially unavailable locally. Most international VPN providers accept payment methods commonly used in South Sudan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Very limited Wi-Fi in Juba hotels. No coverage outside major towns. Conflict zones have no telecommunications. Active travel warnings. Visitors to South Sudan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BI",
+    "iso3": "BDI",
+    "nameEn": "Burundi",
+    "slug": "burundi",
+    "region": "Africa",
+    "languages": [
+      "fr",
+      "rn"
+    ],
+    "currencyCode": "BIF",
+    "timeZonePrimary": "Africa/Bujumbura",
+    "internetNotes": "Limited internet market. Lumitel and Econet are carriers. Coverage in Bujumbura. Government has restricted internet access during political events. Internet speeds in Burundi have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common during internet restrictions. Government has blocked social media and imposed internet shutdowns. VPN essential during political events. Remote workers in Burundi commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BIF-based. Cash dominant. Mobile money growing. Very limited international card acceptance. Most international VPN providers accept payment methods commonly used in Burundi, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Limited Wi-Fi in Bujumbura hotels. Rural areas have very limited connectivity. Internet restrictions can occur during political tensions. Visitors to Burundi should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GW",
+    "iso3": "GNB",
+    "nameEn": "Guinea-Bissau",
+    "slug": "guinea-bissau",
+    "region": "Africa",
+    "languages": [
+      "pt"
+    ],
+    "currencyCode": "XOF",
+    "timeZonePrimary": "Africa/Bissau",
+    "internetNotes": "Very limited internet infrastructure. Orange and MTN are carriers. Coverage mainly in Bissau. One of the least connected countries in West Africa. Internet speeds in Guinea-Bissau have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. Limited internet access makes VPN less relevant than basic connectivity. No significant government internet restrictions beyond infrastructure limitations. Remote workers in Guinea-Bissau commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XOF (CFA franc) based. Cash dominant. Very limited digital payment infrastructure. International card acceptance nonexistent outside major hotels. Most international VPN providers accept payment methods commonly used in Guinea-Bissau, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Very limited Wi-Fi in Bissau hotels. Rural areas and islands have no connectivity. Portuguese-speaking, similar challenges to other West African nations. Visitors to Guinea-Bissau should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "KG",
+    "iso3": "KGZ",
+    "nameEn": "Kyrgyzstan",
+    "slug": "kyrgyzstan",
+    "region": "APAC",
+    "languages": [
+      "ky",
+      "ru"
+    ],
+    "currencyCode": "KGS",
+    "timeZonePrimary": "Asia/Bishkek",
+    "internetNotes": "Decent internet in Bishkek. MegaCom, Beeline, and O! are carriers. Growing mobile internet adoption. Government has restricted internet during political events. Internet speeds in Kyrgyzstan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is legal and common. Government has blocked social media during protests. Bishkek has a growing digital nomad community attracted by visa-free access and low costs.",
+    "paymentNotes": "KGS-based. Cash dominant but card payments growing in Bishkek. Mobile banking via Mbank growing. International cards accepted at major businesses. Most international VPN providers accept payment methods commonly used in Kyrgyzstan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Bishkek hotels and cafes. Mountain and rural areas have limited coverage. Issyk-Kul lake area has basic connectivity in tourist towns. Visitors to Kyrgyzstan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "TJ",
+    "iso3": "TJK",
+    "nameEn": "Tajikistan",
+    "slug": "tajikistan",
+    "region": "APAC",
+    "languages": [
+      "tg",
+      "ru"
+    ],
+    "currencyCode": "TJS",
+    "timeZonePrimary": "Asia/Dushanbe",
+    "internetNotes": "Limited internet market. Tcell and Megafon are carriers. Government controls internet infrastructure and imposes restrictions. Facebook and YouTube have been blocked periodically. Internet speeds in Tajikistan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common to bypass government blocks. Facebook, YouTube, and various websites have been blocked. Government monitors internet activity. Configure VPN before visiting. Remote workers in Tajikistan commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "TJS-based. Cash dominant. Very limited digital payment infrastructure. International card acceptance limited to Dushanbe hotels. Most international VPN providers accept payment methods commonly used in Tajikistan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Dushanbe hotels. Pamir Highway and mountain areas have very limited connectivity. Download offline maps and content before traveling. Visitors to Tajikistan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
   }
 ]

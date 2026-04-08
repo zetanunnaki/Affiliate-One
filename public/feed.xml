@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 15:57:03 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 16:07:15 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -96,6 +96,14 @@
       <category>vpn</category>
     </item>
     <item>
+      <title><![CDATA[Home Network Security Audit: Find and Fix Vulnerabilities (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/home-network-audit/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/home-network-audit/</guid>
+      <description><![CDATA[Audit your home network in 30 minutes. Check your router, connected devices, Wi-Fi security, and IoT exposure.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[How to Audit Your Passwords: Find and Fix Your Worst Security Risks (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/password-audit-guide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/password-audit-guide/</guid>
@@ -168,6 +176,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Secure Remote Desktop Access: RDP, VNC & TeamViewer Safety Guide (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-remote-desktop/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-remote-desktop/</guid>
+      <description><![CDATA[How to securely access your computer remotely. RDP security, VNC encryption, and safer alternatives for remote workers.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[Secure Video Calls: Protect Your Meetings From Eavesdroppers (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</guid>
@@ -220,6 +236,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-linux/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-linux/</guid>
       <description><![CDATA[How to set up a VPN on Linux. Native apps, CLI tools, WireGuard configuration, and NetworkManager integration for remote work.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[Best VPN for Mac: Setup Guide & Top Picks (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-mac/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-mac/</guid>
+      <description><![CDATA[How to set up a VPN on macOS. Native apps, IKEv2 built-in, WireGuard config, and which providers work best on Mac.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>vpn</category>
     </item>

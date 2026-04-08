@@ -1,0 +1,59 @@
+---
+title: "Secure Remote Desktop Access: RDP, VNC & TeamViewer Safety Guide (2026)"
+description: "How to securely access your computer remotely. RDP security, VNC encryption, and safer alternatives for remote workers."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "CISA: Remote Desktop Protocol Best Practices"
+  - "Shodan: RDP Exposure Statistics"
+---
+
+## The Remote Desktop Security Problem
+
+Remote Desktop Protocol (RDP) is one of the most attacked services on the internet. Shodan regularly finds millions of exposed RDP endpoints. Attackers use brute force, credential stuffing, and known vulnerabilities to gain access — and RDP access often leads to ransomware deployment.
+
+If you need remote desktop access, security is non-negotiable.
+
+## Securing Microsoft RDP
+
+If you must use Windows Remote Desktop:
+
+1. **Never expose RDP directly to the internet** — Use a VPN or SSH tunnel instead
+2. **Enable NLA (Network Level Authentication)** — Requires authentication before the remote session starts
+3. **Use strong passwords + 2FA** — Windows supports Azure AD 2FA for RDP
+4. **Change the default port** — Move from 3389 to a non-standard port (security through obscurity, but helps against automated scanning)
+5. **Limit access by IP** — Windows Firewall can restrict RDP to specific IPs (use your VPN's dedicated IP)
+6. **Enable automatic lockout** — Lock accounts after 5 failed login attempts
+7. **Keep Windows updated** — RDP vulnerabilities (BlueKeep, etc.) are regularly discovered and patched
+
+## VPN + RDP: The Correct Setup
+
+The safest way to use RDP:
+1. Connect to your VPN (NordVPN, Proton VPN, etc.)
+2. RDP connects through the encrypted VPN tunnel
+3. RDP port is never exposed to the public internet
+4. Only VPN-connected users can reach the RDP service
+
+For teams: use NordVPN Meshnet to create a secure peer-to-peer connection, then RDP through that tunnel.
+
+## Safer Alternatives to RDP
+
+| Tool | Encryption | Ease of Use | Best For |
+|------|-----------|-------------|----------|
+| Tailscale | WireGuard E2E | Very Easy | Teams with multiple machines |
+| Parsec | E2E | Easy | Low-latency (gaming, design) |
+| RustDesk | E2E (self-hosted) | Moderate | Privacy-focused, open-source |
+| Chrome Remote Desktop | TLS | Very Easy | Quick personal access |
+| TeamViewer | E2E | Easy | Cross-platform support |
+| AnyDesk | TLS/E2E | Easy | Lightweight remote access |
+
+## The Golden Rules
+
+1. **Never expose remote desktop directly to the internet**
+2. **Always access through VPN or zero-trust tunnel**
+3. **Use strong passwords + 2FA**
+4. **Keep software updated**
+5. **Monitor access logs for unauthorized connections**
+6. **Disconnect when not in use**

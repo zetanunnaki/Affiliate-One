@@ -1,0 +1,80 @@
+---
+title: "Home Network Security Audit: Find and Fix Vulnerabilities (2026)"
+description: "Audit your home network in 30 minutes. Check your router, connected devices, Wi-Fi security, and IoT exposure."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+---
+
+## Why Audit Your Home Network
+
+Your home network is your remote work perimeter. Every device connected — laptop, phone, smart TV, baby monitor, robot vacuum — is a potential entry point. An audit identifies vulnerabilities before attackers do.
+
+## Step 1: Router Audit (10 minutes)
+
+### Check Admin Credentials
+1. Log into your router (usually 192.168.1.1 or 192.168.0.1)
+2. If you can log in with default credentials (admin/admin, admin/password) — change immediately
+3. Use a unique, strong password stored in your password manager
+
+### Check Firmware Version
+1. In router settings, find "Firmware" or "Software Update"
+2. Compare your version to the latest on the manufacturer's website
+3. Update if not current. Enable auto-update if available
+
+### Check Encryption
+1. Find Wireless Security settings
+2. Verify WPA3 or WPA2-AES is active
+3. If you see WEP or "Open" — change immediately
+
+### Disable Unnecessary Features
+- WPS (Wi-Fi Protected Setup) — Disable (vulnerable to brute force)
+- UPnP (Universal Plug and Play) — Disable (auto-opens ports)
+- Remote management — Disable (allows router access from internet)
+
+## Step 2: Connected Device Audit (10 minutes)
+
+### List All Connected Devices
+1. In your router's admin panel, find "Connected Devices" or "DHCP Client List"
+2. Write down every device you see
+3. Identify each one — if you can't identify a device, it might be unauthorized
+
+### Common Devices You'll Find
+- Laptops, phones, tablets (yours)
+- Smart TV, streaming sticks (Chromecast, Fire Stick)
+- Smart speakers (Alexa, Google Home)
+- IoT devices (cameras, thermostats, robot vacuums)
+- Gaming consoles
+- Smart home hubs
+
+### Segregate IoT Devices
+Put IoT devices on a separate network (guest network):
+1. Enable Guest Network in router settings
+2. Move all IoT devices to the guest network
+3. Keep work devices on the main network
+4. This way, a compromised smart device can't access your work laptop
+
+## Step 3: Wi-Fi Audit (5 minutes)
+
+### Check Signal Leakage
+1. Walk outside your home with your phone
+2. Check how far your Wi-Fi signal reaches
+3. If it's strong in public areas, consider reducing transmit power in router settings
+
+### Check for Unauthorized Networks
+1. Scan for Wi-Fi networks near your home
+2. Look for networks with similar names to yours (possible evil twin)
+3. Ensure your network name doesn't reveal personal info (address, name)
+
+## Step 4: VPN Audit (5 minutes)
+
+1. Verify VPN is installed on all work devices
+2. Check that kill switch is enabled
+3. Run a DNS leak test (dnsleaktest.com)
+4. Verify auto-connect is on for Wi-Fi networks
+5. Confirm you're using WireGuard or equivalent fast protocol
+
+## Quarterly Audit Reminder
+
+Set a calendar reminder to repeat this audit every 3 months. Network conditions change — new devices connect, firmware updates release, and new vulnerabilities are discovered.

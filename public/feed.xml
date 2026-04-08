@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 05:39:36 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 05:44:52 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Browser Privacy Setup Guide: Stop Being Tracked Online (2026)]]></title>
@@ -64,6 +64,14 @@
       <category>vpn</category>
     </item>
     <item>
+      <title><![CDATA[How to Audit Your Passwords: Find and Fix Your Worst Security Risks (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/password-audit-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/password-audit-guide/</guid>
+      <description><![CDATA[Step-by-step guide to auditing all your passwords. Find reused, weak, and breached credentials using your password manager's built-in tools.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[Password Manager Setup Guide: From Zero to Secure in 15 Minutes (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/password-manager-setup/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/password-manager-setup/</guid>
@@ -88,6 +96,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Secure File Sharing for Remote Teams: Best Tools & Practices (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-file-sharing/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-file-sharing/</guid>
+      <description><![CDATA[How to share files securely with your remote team. Compare encrypted file sharing tools, avoid common mistakes, and protect sensitive documents.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[Secure Video Calls: Protect Your Meetings From Eavesdroppers (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</guid>
@@ -100,6 +116,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/sim-swap-protection/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/sim-swap-protection/</guid>
       <description><![CDATA[SIM swap attacks let hackers hijack your phone number to bypass 2FA and access your accounts. Here's how to protect yourself.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Social Media Privacy Settings: Lock Down Every Platform (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/social-media-privacy/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/social-media-privacy/</guid>
+      <description><![CDATA[Platform-by-platform guide to tightening your social media privacy settings. Facebook, Instagram, X, LinkedIn, TikTok, and more.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>

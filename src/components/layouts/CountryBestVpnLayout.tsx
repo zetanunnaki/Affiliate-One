@@ -10,6 +10,8 @@ import FAQ from "@/components/ui/FAQ";
 import Newsletter from "@/components/ui/Newsletter";
 import InternalLinks from "@/components/ui/InternalLinks";
 import CountryPageTracker from "@/components/ui/CountryPageTracker";
+import NearbyCountries from "@/components/ui/NearbyCountries";
+import { getAllCountries } from "@/lib/data";
 
 interface CountryBestVpnLayoutProps {
   country: Country;
@@ -262,6 +264,9 @@ export default function CountryBestVpnLayout({
           },
         ]}
       />
+
+      {/* Nearby countries */}
+      <NearbyCountries current={country} allCountries={getAllCountries()} />
     </article>
   );
 }

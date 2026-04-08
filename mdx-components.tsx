@@ -1,11 +1,13 @@
 import type { MDXComponents } from "mdx/types";
 import Callout from "@/components/ui/Callout";
 import LinkCard from "@/components/ui/LinkCard";
+import ProsCons from "@/components/ui/ProsCons";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     Callout,
     LinkCard,
+    ProsCons,
     h1: ({ children }) => (
       <h1 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-4">
         {children}

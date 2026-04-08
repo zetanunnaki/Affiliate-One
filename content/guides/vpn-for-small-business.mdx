@@ -1,0 +1,67 @@
+---
+title: "VPN for Small Business: Complete Deployment Guide (2026)"
+description: "How to deploy VPN protection for your small business. Provider selection, team onboarding, policy creation, and management for 5-50 employees."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+---
+
+## Why Every Small Business Needs a VPN
+
+If your employees work remotely — even part-time — they're accessing company data from home Wi-Fi, café networks, and hotel connections. Without a VPN, this traffic is visible to ISPs and vulnerable to interception on shared networks.
+
+The cost of a VPN ($2-10/employee/month) is trivial compared to the cost of a data breach (average $4.45 million in 2025, per IBM).
+
+## Step 1: Choose Your Approach
+
+### Option A: Individual Subscriptions (2-10 employees)
+Buy individual VPN subscriptions for each employee. Simplest to manage.
+- **Best choice:** Surfshark ($2.29/user/month, unlimited devices)
+- **Alternative:** NordVPN ($3.39/user/month, 10 devices per user)
+- **Management:** Each employee manages their own VPN
+- **Billing:** Expense report or company card per subscription
+
+### Option B: Business VPN Plan (10-50 employees)
+Centralized management dashboard, team billing, dedicated IPs.
+- **Best choice:** NordVPN Teams (~$7-9/user/month)
+- **Alternative:** Proton VPN Business ($9.99/user/month, includes full Proton suite)
+- **Management:** Admin dashboard to add/remove users, enforce settings
+- **Billing:** Single company invoice
+
+### Option C: Zero Trust (50+ employees)
+Replace traditional VPN with per-application access control.
+- **Options:** Cloudflare Access, Zscaler, Tailscale
+- **Better for:** Large organizations with complex access requirements
+- **Cost:** Custom enterprise pricing
+
+## Step 2: Create a VPN Policy
+
+Document and distribute a simple VPN policy:
+
+1. **When to use:** Always when working outside the office / on any non-company network
+2. **Required settings:** Kill switch ON, auto-connect ON, WireGuard protocol
+3. **Which devices:** All devices used for work (laptop + phone minimum)
+4. **What to do if it drops:** Reconnect immediately. Don't continue working without VPN on public networks
+5. **Exceptions:** Banking apps that block VPN (use split tunneling)
+
+## Step 3: Onboard Employees
+
+Include VPN setup in your employee onboarding checklist:
+1. Provide account credentials or invite link
+2. Employee installs VPN on laptop and phone
+3. Configure: kill switch ON, auto-connect ON, WireGuard
+4. Test the connection (verify at ipleak.net)
+5. Employee confirms setup complete
+
+## Step 4: Ongoing Management
+
+Monthly:
+- Review team VPN usage (if using business plan with dashboard)
+- Remind team of VPN policy during all-hands
+- Check for VPN app updates
+
+When employees leave:
+- Revoke VPN access immediately
+- Remove from team plan / deactivate account
+- Change any shared credentials the employee had access to

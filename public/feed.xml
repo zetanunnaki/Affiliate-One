@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 17:19:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 17:27:53 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -100,6 +100,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/email-encryption-guide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/email-encryption-guide/</guid>
       <description><![CDATA[How to encrypt your email communications. Compare ProtonMail, Tutanota, and Gmail's confidential mode. Plus PGP setup for existing accounts.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Endpoint Security for Remote Workers: Beyond Antivirus (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/endpoint-security/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/endpoint-security/</guid>
+      <description><![CDATA[Your devices are endpoints in the security chain. Modern endpoint protection goes beyond antivirus — here's what you need in 2026.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -204,6 +212,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-cloud-development/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-cloud-development/</guid>
       <description><![CDATA[Security practices for remote developers using cloud services. AWS, GCP, Azure security, CI/CD pipeline security, and protecting production environments.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Secure Collaboration Tools for Remote Teams (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-collaboration-tools/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-collaboration-tools/</guid>
+      <description><![CDATA[Security comparison of Slack, Teams, Zoom, Google Workspace, and Notion. Which tools protect your data and which don't.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -350,6 +366,14 @@
       <description><![CDATA[How to set up a VPN on macOS. Native apps, IKEv2 built-in, WireGuard config, and which providers work best on Mac.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN for Small Business: Complete Deployment Guide (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-small-business/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-small-business/</guid>
+      <description><![CDATA[How to deploy VPN protection for your small business. Provider selection, team onboarding, policy creation, and management for 5-50 employees.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
     </item>
     <item>
       <title><![CDATA[Best VPN for Tablets: iPad & Android Tablet Setup (2026)]]></title>

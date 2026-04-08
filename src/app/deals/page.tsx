@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllProviders } from "@/lib/data";
-import Disclosure from "@/components/ui/Disclosure";
 import Byline from "@/components/ui/Byline";
 
 export const metadata: Metadata = {
@@ -30,7 +29,6 @@ export default function DealsPage() {
           Current VPN promotions and discount codes. We update this page weekly
           with verified deals from providers we&apos;ve tested and reviewed.
         </p>
-        <Disclosure />
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 

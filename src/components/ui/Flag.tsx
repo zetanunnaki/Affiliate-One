@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface FlagProps {
   iso2: string;
   name: string;
@@ -8,23 +6,24 @@ interface FlagProps {
 
 /**
  * Country flag using flagcdn.com (free, no API key needed).
- * Falls back to emoji flag if image fails to load.
+ * Uses plain <img> for reliable static-export / GitHub Pages support.
  */
 export default function Flag({ iso2, name, size = "md" }: FlagProps) {
-  const dimensions = size === "sm" ? 20 : size === "lg" ? 32 : 24;
+  // flagcdn only supports w20, w40, w80, w160, w320
+  const cdnWidth = size === "sm" ? 40 : size === "lg" ? 80 : 40;
+  const displayWidth = size === "sm" ? 20 : size === "lg" ? 32 : 24;
   const code = iso2.toLowerCase();
-
-  // Special cases for territories that don't have standard flag codes
   const flagCode = code === "xk" ? "xk" : code;
 
   return (
-    <Image
-      src={`https://flagcdn.com/w${dimensions * 2}/${flagCode}.png`}
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={`https://flagcdn.com/w${cdnWidth}/${flagCode}.png`}
       alt={`${name} flag`}
-      width={dimensions}
-      height={Math.round(dimensions * 0.75)}
+      width={displayWidth}
+      height={Math.round(displayWidth * 0.75)}
       className="inline-block rounded-sm object-cover"
-      unoptimized
+      loading="lazy"
     />
   );
 }

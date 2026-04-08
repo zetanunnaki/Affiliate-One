@@ -1,5 +1,4 @@
 import type { Country, Provider, FAQItem } from "@/types";
-import Disclosure from "@/components/ui/Disclosure";
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import ProviderCard from "@/components/ui/ProviderCard";
@@ -92,7 +91,6 @@ export default function CountryBestVpnLayout({
           . Here are our top picks for remote workers, travelers, and
           privacy-conscious users in {country.nameEn}.
         </p>
-        <Disclosure />
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 

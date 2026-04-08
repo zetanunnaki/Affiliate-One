@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Disclosure from "@/components/ui/Disclosure";
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
@@ -24,7 +23,6 @@ export default function BestVpnStreamingPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Best VPN for Streaming (2026)</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Not all VPNs work with streaming services. We tested each with 10 platforms to find which ones reliably unblock content.</p>
-        <Disclosure />
         <Byline authorId="marcus-johnson" updatedAt="2026-04-08" />
       </header>
 

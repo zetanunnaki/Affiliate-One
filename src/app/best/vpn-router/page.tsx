@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllProviders } from "@/lib/data";
-import Disclosure from "@/components/ui/Disclosure";
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
@@ -51,7 +50,6 @@ export default function BestVpnRouterPage() {
           setup — laptops, phones, smart TVs, gaming consoles, and IoT devices.
           Here&apos;s how to set it up and which routers and providers work best.
         </p>
-        <Disclosure />
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 

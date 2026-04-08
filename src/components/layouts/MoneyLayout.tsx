@@ -1,6 +1,5 @@
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
-import Disclosure from "@/components/ui/Disclosure";
 import type { PostFrontmatter } from "@/types";
 
 interface MoneyLayoutProps {
@@ -31,7 +30,6 @@ export default function MoneyLayout({
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">
           {frontmatter.description}
         </p>
-        <Disclosure />
         <Byline
           authorId={frontmatter.author}
           updatedAt={frontmatter.updatedAt}

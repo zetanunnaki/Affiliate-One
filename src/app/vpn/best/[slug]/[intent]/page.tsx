@@ -9,7 +9,6 @@ import {
   getProvidersForIntent,
 } from "@/lib/data";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
-import Disclosure from "@/components/ui/Disclosure";
 import Byline from "@/components/ui/Byline";
 import ProviderCard from "@/components/ui/ProviderCard";
 import CountryContextBlock from "@/components/ui/CountryContextBlock";
@@ -87,7 +86,6 @@ export default async function CountryIntentPage(props: PageProps) {
           {intentData.description} Here are our top picks specifically tested
           for {intentData.label.toLowerCase()} use in {country.nameEn}.
         </p>
-        <Disclosure />
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 

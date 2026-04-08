@@ -4,7 +4,6 @@ import Link from "next/link";
 import { getAllProviders, getProviderById, getAllCountries } from "@/lib/data";
 import { hasCountryContent } from "@/lib/country-content";
 import { getAllSlugs } from "@/lib/mdx";
-import Disclosure from "@/components/ui/Disclosure";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
@@ -78,7 +77,6 @@ export default async function ProviderPage(props: PageProps) {
           We tested {provider.name} for speed, security, privacy, and
           reliability. Here&apos;s our comprehensive, independent review.
         </p>
-        <Disclosure />
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 

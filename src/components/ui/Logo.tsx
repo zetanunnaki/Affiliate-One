@@ -2,11 +2,19 @@ import Link from "next/link";
 
 interface LogoProps {
   size?: "sm" | "md" | "lg";
+  forceDark?: boolean;
 }
 
-export default function Logo({ size = "md" }: LogoProps) {
+export default function Logo({ size = "md", forceDark = false }: LogoProps) {
   const shieldSize = size === "sm" ? "w-7 h-7" : size === "lg" ? "w-10 h-10" : "w-8 h-8";
   const textSize = size === "sm" ? "text-base" : size === "lg" ? "text-xl" : "text-lg";
+
+  const brandColor = forceDark
+    ? "text-white group-hover:text-blue-300 transition-colors"
+    : "text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors";
+  const accentColor = forceDark
+    ? "text-blue-400"
+    : "text-blue-600 dark:text-blue-400";
 
   return (
     <Link href="/" className="flex items-center gap-2 group">
@@ -33,10 +41,10 @@ export default function Logo({ size = "md" }: LogoProps) {
       </div>
       {/* Brand text */}
       <div className={`${textSize} font-bold leading-tight`}>
-        <span className="text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+        <span className={brandColor}>
           BuySecure
         </span>
-        <span className="text-blue-600 dark:text-blue-400">VPN</span>
+        <span className={accentColor}>VPN</span>
       </div>
     </Link>
   );

@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="mb-5">
-              <Logo />
+              <Logo forceDark />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-xs">
               Independent VPN reviews and security guides for remote workers.

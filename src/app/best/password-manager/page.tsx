@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Byline from "@/components/ui/Byline";
-import Disclosure from "@/components/ui/Disclosure";
 import FAQ from "@/components/ui/FAQ";
 import Methodology from "@/components/ui/Methodology";
 import InternalLinks from "@/components/ui/InternalLinks";
@@ -37,7 +36,6 @@ export default function BestPasswordManagerPage() {
           value. Here are our recommendations for remote workers, families,
           and privacy-conscious users.
         </p>
-        <Disclosure />
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
 

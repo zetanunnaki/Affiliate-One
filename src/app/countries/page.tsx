@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import countriesData from "@/data/countries.json";
 import type { Country } from "@/types";
 
@@ -10,13 +9,14 @@ const countries = countriesData as Country[];
 
 function CountryFlag({ iso2, name }: { iso2: string; name: string }) {
   return (
-    <Image
-      src={`https://flagcdn.com/w48/${iso2.toLowerCase()}.png`}
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={`https://flagcdn.com/w40/${iso2.toLowerCase()}.png`}
       alt={`${name} flag`}
       width={24}
       height={18}
       className="inline-block rounded-sm object-cover"
-      unoptimized
+      loading="lazy"
     />
   );
 }

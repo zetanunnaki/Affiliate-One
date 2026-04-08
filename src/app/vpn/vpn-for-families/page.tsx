@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
-import Disclosure from "@/components/ui/Disclosure";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 
@@ -23,7 +22,6 @@ export default function VpnForFamiliesPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Best VPN for Families (2026)</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Protect your entire household — every phone, tablet, laptop, smart TV, and gaming console — with one VPN subscription.</p>
-        <Disclosure />
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
 

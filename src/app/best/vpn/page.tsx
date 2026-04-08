@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getAllProviders } from "@/lib/data";
-import Disclosure from "@/components/ui/Disclosure";
 import Byline from "@/components/ui/Byline";
 import ProviderCard from "@/components/ui/ProviderCard";
 import ComparisonTable from "@/components/ui/ComparisonTable";
@@ -67,7 +66,6 @@ export default function BestVpnPage() {
           privacy, and value. Here are our top recommendations for remote
           workers, travelers, and privacy-conscious users.
         </p>
-        <Disclosure />
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 

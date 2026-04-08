@@ -3,7 +3,7 @@ import createMDX from "@next/mdx";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: process.env.GITHUB_PAGES === "true" ? "/Affiliate-One" : "",
+  basePath: "",
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   images: {
     unoptimized: true,

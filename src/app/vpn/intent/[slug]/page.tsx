@@ -7,7 +7,6 @@ import {
   getProvidersForIntent,
   getAllCountries,
 } from "@/lib/data";
-import Disclosure from "@/components/ui/Disclosure";
 import Byline from "@/components/ui/Byline";
 import ProviderCard from "@/components/ui/ProviderCard";
 import FAQ from "@/components/ui/FAQ";
@@ -64,7 +63,6 @@ export default async function IntentPage(props: PageProps) {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">
           {intent.description}
         </p>
-        <Disclosure />
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
 

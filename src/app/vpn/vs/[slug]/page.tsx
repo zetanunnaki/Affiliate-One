@@ -4,7 +4,6 @@ import Link from "next/link";
 import comparisons from "@/data/comparisons.json";
 import { getProviderById } from "@/lib/data";
 import type { Provider } from "@/types";
-import Disclosure from "@/components/ui/Disclosure";
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
@@ -92,7 +91,6 @@ export default async function VsPage(props: PageProps) {
           tested both for speed, security, privacy, features, and value to help
           you choose the right VPN.
         </p>
-        <Disclosure />
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 

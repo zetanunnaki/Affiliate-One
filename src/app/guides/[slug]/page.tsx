@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { getAllSlugs, getPostBySlug } from "@/lib/mdx";
 import { estimateReadingTime } from "@/lib/reading-time";
+import { customMDXComponents } from "@/lib/mdx-custom-components";
 import ArticleLayout from "@/components/layouts/ArticleLayout";
 import ReadingTime from "@/components/ui/ReadingTime";
 import ShareButtons from "@/components/ui/ShareButtons";
@@ -88,6 +89,7 @@ export default async function GuidePage(props: PageProps) {
 
   const { content: mdxContent } = await compileMDX({
     source: post.content,
+    components: customMDXComponents,
     options: { parseFrontmatter: false },
   });
 

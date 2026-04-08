@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { getAllSlugs, getPostBySlug } from "@/lib/mdx";
+import { customMDXComponents } from "@/lib/mdx-custom-components";
 import { getProviderById } from "@/lib/data";
 import MoneyLayout from "@/components/layouts/MoneyLayout";
 
@@ -32,6 +33,7 @@ export default async function ProviderReviewPage(props: PageProps) {
 
   const { content: mdxContent } = await compileMDX({
     source: post.content,
+    components: customMDXComponents,
     options: { parseFrontmatter: false },
   });
 

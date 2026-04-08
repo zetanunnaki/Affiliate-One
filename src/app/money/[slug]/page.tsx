@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { getAllSlugs, getPostBySlug } from "@/lib/mdx";
+import { customMDXComponents } from "@/lib/mdx-custom-components";
 import MoneyLayout from "@/components/layouts/MoneyLayout";
 
 type PageProps = {
@@ -29,6 +30,7 @@ export default async function MoneyPage(props: PageProps) {
 
   const { content: mdxContent } = await compileMDX({
     source: post.content,
+    components: customMDXComponents,
     options: { parseFrontmatter: false },
   });
 

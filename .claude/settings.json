@@ -15,7 +15,9 @@
       "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('c:/Users/Issam/Affiliate-One/tmp_models.json','utf8'\\)\\);if\\(d.models\\)d.models.forEach\\(m=>{if\\(m.name.includes\\('imagen'\\)||m.name.includes\\('gemini-2'\\)||m.supportedGenerationMethods?.includes\\('generateImage'\\)\\)console.log\\(m.name,'|',m.supportedGenerationMethods?.join\\(','\\)\\)}\\);else console.log\\(JSON.stringify\\(d\\).slice\\(0,300\\)\\);\")",
       "Bash(grep -r \"bg-\\\\|text-\\\\|border-\" /c/Users/Issam/Affiliate-One/src/components/ui/*.tsx)",
       "WebFetch(domain:www.forbes.com)",
-      "WebFetch(domain:nordvpn.com)"
+      "WebFetch(domain:nordvpn.com)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

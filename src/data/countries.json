@@ -550,27 +550,6 @@
     ]
   },
   {
-    "iso2": "IL",
-    "iso3": "ISR",
-    "nameEn": "Israel",
-    "slug": "israel",
-    "region": "Middle East",
-    "languages": [
-      "he",
-      "ar",
-      "en"
-    ],
-    "currencyCode": "ILS",
-    "timeZonePrimary": "Asia/Jerusalem",
-    "internetNotes": "Excellent broadband and mobile infrastructure. Bezeq, Partner, and Cellcom are major providers. Strong tech sector. Internet speeds in Israel have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
-    "vpnNotes": "VPNs are fully legal. Israel's tech-savvy population widely uses VPNs for security and privacy. Remote workers in Israel commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
-    "paymentNotes": "ILS-based. Credit cards dominant. Bit and PayBox mobile payments growing. International payments well-supported. Most international VPN providers accept payment methods commonly used in Israel, including major credit cards, PayPal, and cryptocurrency options.",
-    "travelNotes": "Good Wi-Fi in hotels, cafés, and public spaces. Ben Gurion airport has free Wi-Fi. Visitors to Israel should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
-    "riskFlags": [
-      "tourist-wifi"
-    ]
-  },
-  {
     "iso2": "AR",
     "iso3": "ARG",
     "nameEn": "Argentina",

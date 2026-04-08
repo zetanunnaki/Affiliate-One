@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 16:18:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 16:26:58 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -60,6 +60,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/device-encryption-guide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/device-encryption-guide/</guid>
       <description><![CDATA[How to enable full-disk encryption on Windows, Mac, iOS, and Android. Your data stays secure even if your device is stolen.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Digital Estate Planning: What Happens to Your Accounts When You Can't Access Them (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/digital-estate-planning/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/digital-estate-planning/</guid>
+      <description><![CDATA[Plan for the worst. Set up emergency access for your password manager, cloud accounts, crypto, and digital assets.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -230,6 +238,14 @@
       <description><![CDATA[Step-by-step instructions for enabling 2FA on Gmail, Microsoft, Apple, GitHub, AWS, Slack, and more. Includes backup code management.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Best VPN for Android: Setup Guide & Top Picks (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-android/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-android/</guid>
+      <description><![CDATA[How to set up a VPN on Android. Native apps, always-on system settings, split tunneling, and which providers offer the best Android experience.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
     </item>
     <item>
       <title><![CDATA[VPN for Expats: Access Home Services From Anywhere (2026)]]></title>

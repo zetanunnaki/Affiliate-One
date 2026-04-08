@@ -3593,5 +3593,239 @@
       "restricted-platforms",
       "tourist-wifi"
     ]
+  },
+  {
+    "iso2": "TC",
+    "iso3": "TCA",
+    "nameEn": "Turks and Caicos",
+    "slug": "turks-and-caicos",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "America/Grand_Turk",
+    "internetNotes": "Decent infrastructure for a small territory. Digicel and Flow are providers. Good coverage in Providenciales. USD-based economy. Internet speeds in Turks and Caicos have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. British Overseas Territory with open internet. Used by tourists and the financial services sector. Remote workers in Turks and Caicos commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. Card payments accepted in tourist areas. International payment methods work for online purchases. Most international VPN providers accept payment methods commonly used in Turks and Caicos, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resort hotels. Grace Bay area well-connected. Smaller islands may have limited coverage. Visitors to Turks and Caicos should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "KY",
+    "iso3": "CYM",
+    "nameEn": "Cayman Islands",
+    "slug": "cayman-islands",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "KYD",
+    "timeZonePrimary": "America/Cayman",
+    "internetNotes": "Good infrastructure. Flow and Digicel are providers. Strong connectivity driven by financial services industry. Internet speeds in Cayman Islands have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. British Overseas Territory with open internet. Major offshore financial center driving strong VPN adoption. Remote workers in Cayman Islands commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "KYD-based. USD widely accepted. Card payments common. International payment methods accepted everywhere. Most international VPN providers accept payment methods commonly used in Cayman Islands, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in George Town and Seven Mile Beach hotels. Excellent coverage for a Caribbean territory. Visitors to Cayman Islands should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BM",
+    "iso3": "BMU",
+    "nameEn": "Bermuda",
+    "slug": "bermuda",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "BMD",
+    "timeZonePrimary": "Atlantic/Bermuda",
+    "internetNotes": "Good infrastructure. One Communications and Digicel are providers. Fiber available in Hamilton. Small island with comprehensive coverage. Internet speeds in Bermuda have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. British Overseas Territory. Financial services sector drives VPN adoption. Open internet policy. Remote workers in Bermuda commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BMD-based (pegged to USD). Card payments common. International payment methods accepted for online services. Most international VPN providers accept payment methods commonly used in Bermuda, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi throughout this small island. Hotels, restaurants, and public areas well-connected. Visitors to Bermuda should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GI",
+    "iso3": "GIB",
+    "nameEn": "Gibraltar",
+    "slug": "gibraltar",
+    "region": "Europe",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "GIP",
+    "timeZonePrimary": "Europe/Gibraltar",
+    "internetNotes": "Good infrastructure for a small territory. Gibtelecom is the main provider. Compact size means comprehensive coverage. Internet speeds in Gibraltar have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. British Overseas Territory with open internet. Online gambling industry drives strong digital infrastructure. Remote workers in Gibraltar commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "GIP-based (pegged to GBP). GBP accepted. Card payments common. International payment methods work seamlessly. Most international VPN providers accept payment methods commonly used in Gibraltar, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi coverage throughout this tiny territory. Hotels and restaurants all connected. Visitors to Gibraltar should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "FO",
+    "iso3": "FRO",
+    "nameEn": "Faroe Islands",
+    "slug": "faroe-islands",
+    "region": "Europe",
+    "languages": [
+      "fo",
+      "da"
+    ],
+    "currencyCode": "DKK",
+    "timeZonePrimary": "Atlantic/Faroe",
+    "internetNotes": "Good broadband for a remote archipelago. Føroya Tele is the main provider. Fiber available in Tórshavn. Submarine cables ensure decent connectivity. Internet speeds in Faroe Islands have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Danish self-governing territory with open internet. No restrictions on VPN use. Remote workers in Faroe Islands commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "DKK-based. Card payments common. Nearly cashless like mainland Denmark. International payment methods accepted. Most international VPN providers accept payment methods commonly used in Faroe Islands, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Tórshavn hotels. Remote villages and smaller islands may have limited coverage. Beautiful but isolated. Visitors to Faroe Islands should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GL",
+    "iso3": "GRL",
+    "nameEn": "Greenland",
+    "slug": "greenland",
+    "region": "Americas",
+    "languages": [
+      "kl",
+      "da"
+    ],
+    "currencyCode": "DKK",
+    "timeZonePrimary": "America/Nuuk",
+    "internetNotes": "Limited infrastructure given vast size. TELE Greenland is the sole provider. Fiber in Nuuk. Remote communities rely on satellite connections. Internet speeds in Greenland have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Danish self-governing territory. Internet access challenged by geography more than policy. Remote workers in Greenland commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "DKK-based. Card payments in Nuuk and larger towns. Cash needed in smaller settlements. Most international VPN providers accept payment methods commonly used in Greenland, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Nuuk hotels. Remote settlements and wilderness areas have limited or no connectivity. World's largest island with minimal infrastructure. Visitors to Greenland should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "NC",
+    "iso3": "NCL",
+    "nameEn": "New Caledonia",
+    "slug": "new-caledonia",
+    "region": "APAC",
+    "languages": [
+      "fr"
+    ],
+    "currencyCode": "XPF",
+    "timeZonePrimary": "Pacific/Noumea",
+    "internetNotes": "Decent infrastructure. OPT is the main provider. Good coverage in Noumea. French overseas territory with undersea cable connections. Internet speeds in New Caledonia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. French territory with open internet. French digital rights and GDPR-adjacent protections apply. Remote workers in New Caledonia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XPF (CFP franc) based. Card payments in Noumea. Cash important outside the capital. Euro-pegged currency. Most international VPN providers accept payment methods commonly used in New Caledonia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Noumea hotels. Outer islands and rural areas have limited connectivity. French-speaking territory. Visitors to New Caledonia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "PF",
+    "iso3": "PYF",
+    "nameEn": "French Polynesia",
+    "slug": "french-polynesia",
+    "region": "APAC",
+    "languages": [
+      "fr",
+      "ty"
+    ],
+    "currencyCode": "XPF",
+    "timeZonePrimary": "Pacific/Tahiti",
+    "internetNotes": "Decent infrastructure for remote Pacific islands. VINI is the main provider. Good coverage in Papeete, Tahiti. Outer islands have limited connectivity. Internet speeds in French Polynesia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. French territory with open internet. Submarine cable connections improving speeds. Remote workers in French Polynesia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XPF (CFP franc) based. Card payments in tourist areas. Cash important on smaller islands. Most international VPN providers accept payment methods commonly used in French Polynesia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Tahiti and Bora Bora resorts. Remote atolls have satellite-only connectivity. Visitors to French Polynesia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GU",
+    "iso3": "GUM",
+    "nameEn": "Guam",
+    "slug": "guam",
+    "region": "APAC",
+    "languages": [
+      "en",
+      "ch"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "Pacific/Guam",
+    "internetNotes": "Good infrastructure as a US territory. GTA, IT&E, and Docomo Pacific are providers. US regulations and standards apply. Military presence drives infrastructure. Internet speeds in Guam have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal as a US territory. Same ISP privacy landscape as mainland US. VPN recommended for privacy. Remote workers in Guam commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. All US payment methods accepted. Card payments common. Most international VPN providers accept payment methods commonly used in Guam, including major credit cards, PayPal, and cryptocurrency options. When purchasing a VPN subscription from Guam, compare pricing carefully as some providers offer regional pricing or discounts for longer-term plans.",
+    "travelNotes": "Good Wi-Fi in Tumon Bay hotels and resorts. Compact island with decent coverage throughout. Visitors to Guam should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "VI",
+    "iso3": "VIR",
+    "nameEn": "US Virgin Islands",
+    "slug": "us-virgin-islands",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "America/Virgin",
+    "internetNotes": "Decent infrastructure. Viya and Choice are providers. Good coverage in Charlotte Amalie and resort areas. US territory standards. Internet speeds in US Virgin Islands have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal as a US territory. Same privacy landscape as mainland US. Remote workers in US Virgin Islands commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. Card payments common in tourist areas. All US payment methods accepted. Most international VPN providers accept payment methods commonly used in US Virgin Islands, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resort hotels on St. Thomas, St. Croix, and St. John. Remote beach areas may have weaker signals. Visitors to US Virgin Islands should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AS",
+    "iso3": "ASM",
+    "nameEn": "American Samoa",
+    "slug": "american-samoa",
+    "region": "APAC",
+    "languages": [
+      "sm",
+      "en"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "Pacific/Pago_Pago",
+    "internetNotes": "Limited infrastructure. ASTCA is the main provider. Coverage in Pago Pago. Remote Pacific territory with bandwidth constraints. Internet speeds in American Samoa have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal as a US territory. Limited internet bandwidth may affect VPN performance. Remote workers in American Samoa commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. Cash dominant. Limited card acceptance outside main businesses. Most international VPN providers accept payment methods commonly used in American Samoa, including major credit cards, PayPal, and cryptocurrency options. When purchasing a VPN subscription from American Samoa, compare pricing carefully as some providers offer regional pricing or discounts for longer-term plans.",
+    "travelNotes": "Basic Wi-Fi in Pago Pago hotels. Very limited coverage in outer areas. Remote Pacific territory. Visitors to American Samoa should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MP",
+    "iso3": "MNP",
+    "nameEn": "Northern Mariana Islands",
+    "slug": "northern-mariana-islands",
+    "region": "APAC",
+    "languages": [
+      "en",
+      "ch"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "Pacific/Guam",
+    "internetNotes": "Decent infrastructure. IT&E and Docomo Pacific are providers. Good coverage in Saipan. US Commonwealth with improving connectivity. Internet speeds in Northern Mariana Islands have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal as a US territory. Same privacy regulations as mainland US. Remote workers in Northern Mariana Islands commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. Card payments in tourist areas. All US payment methods accepted on Saipan. Most international VPN providers accept payment methods commonly used in Northern Mariana Islands, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Saipan hotels and resorts. Tinian and Rota have more limited connectivity. Visitors to Northern Mariana Islands should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
   }
 ]

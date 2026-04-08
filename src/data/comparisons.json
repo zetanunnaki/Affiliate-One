@@ -3,5 +3,10 @@
   {"id": "nordvpn-vs-expressvpn", "slug": "nordvpn-vs-expressvpn", "providers": ["nordvpn", "expressvpn"], "title": "NordVPN vs ExpressVPN (2026): Head-to-Head Comparison"},
   {"id": "surfshark-vs-expressvpn", "slug": "surfshark-vs-expressvpn", "providers": ["surfshark", "expressvpn"], "title": "Surfshark vs ExpressVPN (2026): Budget vs Premium"},
   {"id": "nordvpn-vs-protonvpn", "slug": "nordvpn-vs-protonvpn", "providers": ["nordvpn", "protonvpn"], "title": "NordVPN vs Proton VPN (2026): Security vs Privacy"},
-  {"id": "protonvpn-vs-mullvad", "slug": "protonvpn-vs-mullvad", "providers": ["protonvpn", "mullvad"], "title": "Proton VPN vs Mullvad (2026): Privacy Showdown"}
+  {"id": "protonvpn-vs-mullvad", "slug": "protonvpn-vs-mullvad", "providers": ["protonvpn", "mullvad"], "title": "Proton VPN vs Mullvad (2026): Privacy Showdown"},
+  {"id": "surfshark-vs-protonvpn", "slug": "surfshark-vs-protonvpn", "providers": ["surfshark", "protonvpn"], "title": "Surfshark vs Proton VPN (2026): Budget vs Privacy"},
+  {"id": "expressvpn-vs-mullvad", "slug": "expressvpn-vs-mullvad", "providers": ["expressvpn", "mullvad"], "title": "ExpressVPN vs Mullvad (2026): Travel vs Anonymity"},
+  {"id": "nordvpn-vs-mullvad", "slug": "nordvpn-vs-mullvad", "providers": ["nordvpn", "mullvad"], "title": "NordVPN vs Mullvad (2026): Features vs Privacy"},
+  {"id": "surfshark-vs-mullvad", "slug": "surfshark-vs-mullvad", "providers": ["surfshark", "mullvad"], "title": "Surfshark vs Mullvad (2026): Value vs Anonymity"},
+  {"id": "expressvpn-vs-protonvpn", "slug": "expressvpn-vs-protonvpn", "providers": ["expressvpn", "protonvpn"], "title": "ExpressVPN vs Proton VPN (2026): Travel vs Privacy"}
 ]

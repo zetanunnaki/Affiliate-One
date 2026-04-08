@@ -5,8 +5,16 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 05:46:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 05:53:10 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/api-key-security/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/api-key-security/</guid>
+      <description><![CDATA[How to manage API keys, tokens, and secrets securely. Environment variables, secret managers, .gitignore, and rotation practices.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
     <item>
       <title><![CDATA[Browser Privacy Setup Guide: Stop Being Tracked Online (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/browser-privacy-setup/</link>
@@ -20,6 +28,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/byod-security-guide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/byod-security-guide/</guid>
       <description><![CDATA[Bring Your Own Device policies create security risks. Here's how to separate work and personal data, secure your device, and protect both sides.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Cloud Storage Security: Protect Your Files in Google Drive, Dropbox & iCloud (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/cloud-storage-security/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/cloud-storage-security/</guid>
+      <description><![CDATA[How secure is your cloud storage? Encryption comparison, privacy settings, and how to add zero-knowledge encryption to any cloud provider.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -46,6 +62,14 @@
       <description><![CDATA[Everything you need to stay secure while working remotely from anywhere in the world. Tools, practices, and a pre-departure checklist for digital nomads.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>travel</category>
+    </item>
+    <item>
+      <title><![CDATA[DNS Security Guide: Stop DNS Leaks and Protect Your Privacy (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/dns-security-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/dns-security-guide/</guid>
+      <description><![CDATA[Your DNS queries reveal every website you visit. Here's how to encrypt them with DNS-over-HTTPS, DNS-over-TLS, and VPN DNS protection.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
     </item>
     <item>
       <title><![CDATA[Email Encryption for Remote Workers: Protect Your Communications (2026)]]></title>

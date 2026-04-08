@@ -1,0 +1,103 @@
+---
+title: "API Key Security for Developers: Stop Leaking Secrets (2026)"
+description: "How to manage API keys, tokens, and secrets securely. Environment variables, secret managers, .gitignore, and rotation practices."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "GitHub: Secret scanning — docs.github.com"
+  - "OWASP: API Security Top 10"
+  - "GitGuardian: State of Secrets Sprawl 2026"
+---
+
+## The $20 Billion Problem
+
+Leaked API keys and secrets are one of the most common and costly security failures. GitGuardian scans found over 10 million secrets exposed in public GitHub repositories in 2025. A single leaked AWS key can result in thousands of dollars in unauthorized charges within hours.
+
+If you're a developer working remotely, your API keys are even more at risk — you're working on shared networks, personal devices, and multiple machines.
+
+## The Cardinal Rules
+
+1. **Never commit secrets to git.** Not even "temporarily"
+2. **Never hard-code secrets in source code.** Not even for testing
+3. **Never share secrets via Slack, email, or chat.** Use a secrets manager
+4. **Always use environment variables** for configuration
+5. **Rotate keys** immediately if you suspect exposure
+
+## Setting Up .gitignore Correctly
+
+Before you write any code, ensure your `.gitignore` blocks all secret files:
+
+```
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+
+# Cloud provider credentials
+*.pem
+*.key
+credentials.json
+serviceAccountKey.json
+
+# IDE-specific
+.idea/
+.vscode/settings.json
+```
+
+## Using Environment Variables
+
+Instead of:
+```javascript
+// NEVER DO THIS
+const API_KEY = "sk-abc123...";
+```
+
+Do this:
+```javascript
+// CORRECT
+const API_KEY = process.env.API_KEY;
+```
+
+And store the actual value in `.env`:
+```
+API_KEY=sk-abc123...
+```
+
+## Secrets Managers for Teams
+
+For teams, environment variables alone aren't enough. Use a secrets manager:
+
+| Tool | Type | Best For | Price |
+|------|------|----------|-------|
+| GitHub Secrets | Built-in | GitHub Actions CI/CD | Free |
+| Doppler | SaaS | Multi-environment sync | Free tier |
+| HashiCorp Vault | Self-hosted/Cloud | Enterprise | Free (OSS) |
+| AWS Secrets Manager | Cloud | AWS workloads | $0.40/secret/month |
+| 1Password Secrets Automation | SaaS | Teams using 1Password | Included in business plan |
+
+## GitHub Secret Scanning
+
+GitHub automatically scans for known secret patterns (API keys, tokens, passwords) in your repositories. Enable push protection to block commits containing secrets:
+
+1. Repository Settings > Security > Code security and analysis
+2. Enable "Secret scanning"
+3. Enable "Push protection" — this prevents commits with detected secrets from being pushed
+
+## What to Do If a Secret Is Leaked
+
+1. **Revoke the key immediately** — don't just remove it from the code
+2. **Generate a new key** from the provider's dashboard
+3. **Update all services** using the old key
+4. **Check for unauthorized usage** in the provider's logs
+5. **Clean git history** using `git filter-repo` (not just removing from current commit)
+6. **Audit access logs** for suspicious activity during the exposure window
+
+Remember: removing a secret from the latest commit does NOT remove it from git history. The old commit still contains it.
+
+## How We Verified
+
+Practices based on OWASP API Security Top 10, GitHub security documentation, and GitGuardian research. Tools verified with current versions. April 2026.

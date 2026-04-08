@@ -1,0 +1,46 @@
+---
+title: "Secure Note-Taking for Remote Workers: Protect Your Ideas (2026)"
+description: "Your notes contain meeting minutes, passwords, ideas, and sensitive data. Which note-taking apps are secure and how to protect your digital notebooks."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+---
+
+## The Problem With Note-Taking Apps
+
+Remote workers store sensitive information in note-taking apps — meeting notes with confidential discussions, temporary passwords, client details, API keys, personal reflections. Most popular note apps are NOT end-to-end encrypted.
+
+## Note App Security Comparison
+
+| App | Encryption | E2E Option | Provider Can Read | Open Source | Best For |
+|-----|-----------|------------|-------------------|-------------|----------|
+| Apple Notes | At rest | iCloud ADP | Depends on ADP | No | Apple ecosystem |
+| Google Keep | At rest | No | Yes | No | Quick notes |
+| Notion | At rest | No | Yes | No | Team wikis |
+| Evernote | At rest | No | Yes | No | Web clipping |
+| Obsidian | Local files | Via sync plugin | No (local) | Partial | Privacy + power |
+| Standard Notes | E2E always | Yes | No | Yes | Maximum privacy |
+| Joplin | E2E option | Yes | Depends on sync | Yes | Open-source E2E |
+
+## Recommended Setup
+
+### For General Notes (Low Sensitivity)
+Use Apple Notes or Google Keep — convenient, synced, adequate encryption at rest. Don't store passwords, API keys, or highly confidential information here.
+
+### For Sensitive Notes
+- **Standard Notes** — End-to-end encrypted by default. Open-source. Free tier available. Your notes are encrypted on your device before syncing — Standard Notes can't read them.
+- **Joplin** — Open-source, supports E2E encryption with sync. More features than Standard Notes but less polished.
+- **Obsidian** — Local-first (files on your disk). No cloud sync by default. Maximum control over your data. Community E2E sync plugins available.
+
+### For Passwords and Secrets
+**NEVER store passwords in note-taking apps.** Use your password manager (Bitwarden, 1Password) for credentials, API keys, recovery codes, and sensitive strings. Password managers are purpose-built for this with zero-knowledge encryption.
+
+## Best Practices
+
+1. **Separate sensitive from casual** — Use a secure app for sensitive notes, casual app for shopping lists
+2. **Don't store passwords in notes** — Use password manager instead
+3. **Enable lock on note apps** — Face ID/fingerprint to open the app
+4. **Review shared notebooks** — Remove access when collaboration ends
+5. **Use a VPN** when syncing notes on public Wi-Fi (encrypts the sync traffic)
+6. **Enable iCloud Advanced Data Protection** if using Apple Notes for sensitive content

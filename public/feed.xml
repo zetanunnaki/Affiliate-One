@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 17:10:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 17:19:25 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -128,6 +128,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Multi-Device Security: Protect All Your Screens (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/multi-device-security/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/multi-device-security/</guid>
+      <description><![CDATA[How to secure your laptop, phone, tablet, smart TV, and wearables as a unified security strategy. One VPN, one password manager, consistent protection.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[How to Audit Your Passwords: Find and Fix Your Worst Security Risks (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/password-audit-guide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/password-audit-guide/</guid>
@@ -212,6 +220,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-messaging-guide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-messaging-guide/</guid>
       <description><![CDATA[Which messaging apps are actually secure? End-to-end encryption comparison, metadata collection, and recommendations for remote work communication.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Secure Note-Taking for Remote Workers: Protect Your Ideas (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-note-taking/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-note-taking/</guid>
+      <description><![CDATA[Your notes contain meeting minutes, passwords, ideas, and sensitive data. Which note-taking apps are secure and how to protect your digital notebooks.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -332,6 +348,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-mac/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-mac/</guid>
       <description><![CDATA[How to set up a VPN on macOS. Native apps, IKEv2 built-in, WireGuard config, and which providers work best on Mac.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[Best VPN for Tablets: iPad & Android Tablet Setup (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-tablets/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-tablets/</guid>
+      <description><![CDATA[How to set up a VPN on iPad and Android tablets. Unique tablet considerations, split-screen VPN usage, and which providers have the best tablet apps.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>vpn</category>
     </item>

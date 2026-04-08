@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 16:57:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 17:10:07 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -216,6 +216,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Secure Printing for Remote Workers: Don't Leave Sensitive Data on Printers (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-printing/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-printing/</guid>
+      <description><![CDATA[Printers are a forgotten security risk. Shared printers store your documents, network printers can be hacked, and print jobs can be intercepted.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[Secure Remote Desktop Access: RDP, VNC & TeamViewer Safety Guide (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-remote-desktop/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-remote-desktop/</guid>
@@ -256,6 +264,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Travel eSIM Guide: Secure Mobile Data in Any Country (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/travel-esim-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/travel-esim-guide/</guid>
+      <description><![CDATA[eSIMs give you instant data in 190+ countries. How to choose, set up, and use eSIMs securely alongside your VPN for travel.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>travel</category>
+    </item>
+    <item>
       <title><![CDATA[How to Set Up Two-Factor Authentication on Every Account (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/two-factor-auth-setup/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/two-factor-auth-setup/</guid>
@@ -268,6 +284,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-android/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-android/</guid>
       <description><![CDATA[How to set up a VPN on Android. Native apps, always-on system settings, split tunneling, and which providers offer the best Android experience.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[Best VPN for Chromebook: Setup Guide & Top Picks (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-chromebook/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-chromebook/</guid>
+      <description><![CDATA[How to install a VPN on Chromebook. Android apps, Linux apps, Chrome extension methods, and which VPNs work best on Chrome OS.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>vpn</category>
     </item>

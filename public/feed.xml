@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 15:20:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 15:36:03 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -124,6 +124,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/router-security-guide/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/router-security-guide/</guid>
       <description><![CDATA[Your router is your network's front door. Here's how to secure it: change defaults, update firmware, enable encryption, and set up a guest network.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Secure Backup Strategy for Remote Workers (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-backups-guide/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-backups-guide/</guid>
+      <description><![CDATA[The 3-2-1 backup rule updated for remote work. Encrypted cloud backups, local backups, and disaster recovery for your digital life.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>

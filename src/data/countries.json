@@ -2598,5 +2598,228 @@
     "riskFlags": [
       "tourist-wifi"
     ]
+  },
+  {
+    "iso2": "PR",
+    "iso3": "PRI",
+    "nameEn": "Puerto Rico",
+    "slug": "puerto-rico",
+    "region": "Americas",
+    "languages": [
+      "es",
+      "en"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "America/Puerto_Rico",
+    "internetNotes": "US territory with good broadband. Liberty, Claro, and T-Mobile are major providers. Fiber in metro San Juan with speeds up to 1 Gbps. US regulations apply.",
+    "vpnNotes": "VPNs are fully legal as a US territory. Same ISP privacy landscape as mainland US. VPN recommended for privacy and public Wi-Fi protection. Remote workers in Puerto Rico commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. All US payment methods accepted. Card payments common. Venmo, PayPal, and Apple Pay work as in the mainland United States. Most international VPN providers accept payment methods commonly used in Puerto Rico, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in San Juan hotels, cafes, and co-working spaces. Old San Juan well-connected. Rural areas and small islands may have limited connectivity. Visitors to Puerto Rico should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "NA",
+    "iso3": "NAM",
+    "nameEn": "Namibia",
+    "slug": "namibia",
+    "region": "Africa",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "NAD",
+    "timeZonePrimary": "Africa/Windhoek",
+    "internetNotes": "Growing internet market. MTC and TN Mobile are main carriers. Good coverage in Windhoek. Vast desert and rural areas have very limited connectivity. Internet speeds in Namibia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Namibia. No restrictions on internet access. Tourism and safari industries driving improved connectivity in tourist areas. Remote workers in Namibia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "NAD-based (pegged to ZAR). Cash dominant outside Windhoek. Card payments in hotels and tourist areas. International payment methods for online purchases. Most international VPN providers accept payment methods commonly used in Namibia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Windhoek hotels. Safari lodges offer satellite Wi-Fi. Etosha and Sossusvlei have limited connectivity. Download offline content before trips. Visitors to Namibia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BW",
+    "iso3": "BWA",
+    "nameEn": "Botswana",
+    "slug": "botswana",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "tn"
+    ],
+    "currencyCode": "BWP",
+    "timeZonePrimary": "Africa/Gaborone",
+    "internetNotes": "Decent coverage in Gaborone. Mascom, Orange, and beMobile are carriers. Good mobile coverage in main towns. Safari areas have very limited connectivity. Internet speeds in Botswana have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Botswana. No restrictions on internet access. Growing digital economy in Gaborone with increasing technology adoption. Remote workers in Botswana commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BWP-based. Card payments growing in Gaborone. Cash dominant in rural areas. International payment methods available for online VPN purchases. Most international VPN providers accept payment methods commonly used in Botswana, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Gaborone hotels. Okavango Delta and Chobe lodges may have satellite connectivity. Download content offline before safari trips. Visitors to Botswana should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MO",
+    "iso3": "MAC",
+    "nameEn": "Macau",
+    "slug": "macau",
+    "region": "APAC",
+    "languages": [
+      "zh",
+      "pt"
+    ],
+    "currencyCode": "MOP",
+    "timeZonePrimary": "Asia/Macau",
+    "internetNotes": "Good broadband as a Chinese SAR. CTM is the main provider. Casino hotels have excellent Wi-Fi. Internet censorship less strict than mainland China. Internet speeds in Macau have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is legal in Macau. Unlike mainland China, Macau has less censorship. Google, Facebook, and most international services work without a VPN. Remote workers in Macau commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MOP-based. HKD accepted. Card payments universal in casinos and hotels. Alipay and WeChat Pay work. International cards accepted everywhere. Most international VPN providers accept payment methods commonly used in Macau, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi in casino hotels and resorts. Good coverage in central Macau and Cotai Strip. Easy connectivity for visitors and tourists. Visitors to Macau should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "HK",
+    "iso3": "HKG",
+    "nameEn": "Hong Kong",
+    "slug": "hong-kong",
+    "region": "APAC",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "currencyCode": "HKD",
+    "timeZonePrimary": "Asia/Hong_Kong",
+    "internetNotes": "World-class infrastructure. HKT, CMHK, SmarTone are providers. Among the fastest speeds in Asia. Internet landscape changed since 2020 National Security Law. Internet speeds in Hong Kong have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use remains legal but the landscape changed post-2020. Some sites blocked under National Security Law. VPN adoption increased among privacy-conscious residents and businesses. Remote workers in Hong Kong commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "HKD-based. Octopus card, AlipayHK, and cards widely accepted. Cash declining. International payment methods work seamlessly for all services. Most international VPN providers accept payment methods commonly used in Hong Kong, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi everywhere — MTR stations, cafes, malls, hotels. One of the most connected cities globally. Free Wi-Fi.HK network in public spaces. Visitors to Hong Kong should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "CW",
+    "iso3": "CUW",
+    "nameEn": "Curacao",
+    "slug": "curacao",
+    "region": "Americas",
+    "languages": [
+      "nl",
+      "pap",
+      "en"
+    ],
+    "currencyCode": "ANG",
+    "timeZonePrimary": "America/Curacao",
+    "internetNotes": "Good infrastructure for Caribbean. UTS, Digicel, and Flow are providers. Decent broadband in Willemstad. Growing digital economy and offshore financial sector. Internet speeds in Curacao have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Curacao. Dutch Caribbean territory with open internet. Used by the online gaming and financial services industries on the island. Remote workers in Curacao commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "ANG-based. USD widely accepted. Card payments common in tourist areas. International payment methods work for online VPN and subscription purchases. Most international VPN providers accept payment methods commonly used in Curacao, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Willemstad hotels and restaurants. Beach resorts generally connected. Dutch and English widely spoken. Growing digital nomad presence. Visitors to Curacao should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LS",
+    "iso3": "LSO",
+    "nameEn": "Lesotho",
+    "slug": "lesotho",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "st"
+    ],
+    "currencyCode": "LSL",
+    "timeZonePrimary": "Africa/Maseru",
+    "internetNotes": "Limited internet infrastructure. Vodacom Lesotho and Econet Telecom are providers. Coverage mainly in Maseru and major towns. Mountain areas largely offline. Internet speeds in Lesotho have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Lesotho. No significant restrictions on internet access. Small online community with growing mobile internet adoption. Remote workers in Lesotho commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "LSL-based (pegged to ZAR). ZAR also accepted. Cash dominant. Limited card acceptance. International payment methods needed for VPN subscriptions. Most international VPN providers accept payment methods commonly used in Lesotho, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Maseru hotels. Mountain lodges have very limited or no connectivity. This mountainous kingdom has challenging terrain for infrastructure. Visitors to Lesotho should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SZ",
+    "iso3": "SWZ",
+    "nameEn": "Eswatini",
+    "slug": "eswatini",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "ss"
+    ],
+    "currencyCode": "SZL",
+    "timeZonePrimary": "Africa/Mbabane",
+    "internetNotes": "Limited internet market. MTN Eswatini is the main carrier. Coverage in Mbabane and Manzini. Rural areas have limited connectivity. Mobile internet primary access. Internet speeds in Eswatini have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Eswatini. No restrictions on internet access. Government has occasionally restricted social media during political tensions. Remote workers in Eswatini commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "SZL-based (pegged to ZAR). ZAR accepted. Cash dominant. Limited card acceptance outside major hotels. Prepay for VPN before visiting. Most international VPN providers accept payment methods commonly used in Eswatini, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Mbabane and Ezulwini Valley hotels. Game reserves may have limited satellite connectivity. Small country with concentrated infrastructure. Visitors to Eswatini should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "BJ",
+    "iso3": "BEN",
+    "nameEn": "Benin",
+    "slug": "benin",
+    "region": "Africa",
+    "languages": [
+      "fr"
+    ],
+    "currencyCode": "XOF",
+    "timeZonePrimary": "Africa/Porto-Novo",
+    "internetNotes": "Growing mobile internet market. MTN and Moov are main carriers. Good coverage in Cotonou. Government has restricted internet during political events. Internet speeds in Benin have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Benin. Government has blocked social media during elections and protests. VPN use increased during these restrictions. Remote workers in Benin commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XOF (CFA franc) based. Mobile money growing. Cash dominant. International card acceptance limited. Prepay for VPN subscriptions before visiting. Most international VPN providers accept payment methods commonly used in Benin, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Cotonou hotels. Limited connectivity in rural areas and northern regions. Mobile data from MTN or Moov recommended for visitors. Visitors to Benin should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "TG",
+    "iso3": "TGO",
+    "nameEn": "Togo",
+    "slug": "togo",
+    "region": "Africa",
+    "languages": [
+      "fr"
+    ],
+    "currencyCode": "XOF",
+    "timeZonePrimary": "Africa/Lome",
+    "internetNotes": "Growing internet market. Togocel and Moov are main carriers. Coverage in Lome and major towns. Government has imposed internet shutdowns during political unrest. Internet speeds in Togo have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal but government has blocked social media and restricted internet during protests. VPN use common during restrictions. Remote workers in Togo commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XOF (CFA franc) based. Mobile money (Flooz, T-Money) growing. Cash dominant. International card acceptance very limited. Most international VPN providers accept payment methods commonly used in Togo, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Lome hotels. Limited connectivity outside the capital. VPN recommended during politically sensitive periods. Visitors to Togo should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GA",
+    "iso3": "GAB",
+    "nameEn": "Gabon",
+    "slug": "gabon",
+    "region": "Africa",
+    "languages": [
+      "fr"
+    ],
+    "currencyCode": "XAF",
+    "timeZonePrimary": "Africa/Libreville",
+    "internetNotes": "Decent coverage in Libreville. Airtel and Gabon Telecom are providers. Growing submarine cable connections improving speeds. Rural and rainforest areas have limited connectivity. Internet speeds in Gabon have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Gabon. Government has imposed internet shutdowns during political events. VPN use increased significantly during these disruptions. Remote workers in Gabon commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XAF (CFA franc) based. Mobile money growing. Cash dominant. Limited card acceptance outside major Libreville businesses. Most international VPN providers accept payment methods commonly used in Gabon, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Libreville hotels. National parks and rainforest areas have very limited connectivity. Download offline content before venturing outside the capital. Visitors to Gabon should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
   }
 ]

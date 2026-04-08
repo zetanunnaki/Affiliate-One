@@ -5,8 +5,48 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 17:38:22 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 18:02:30 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[Secure Job Searching: Protect Your Privacy While Looking for Work (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-job-search/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-job-search/</guid>
+      <description><![CDATA[Job searching exposes your personal data to recruiters, job boards, and potential scammers. How to search safely while protecting your identity.]]></description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN for Freelancers: Protect Your Business and Client Data (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-freelancers/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-freelancers/</guid>
+      <description><![CDATA[Freelancers handle sensitive client data without an IT department. Essential VPN setup, client data protection, and security practices for independent workers.]]></description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN for Journalists: Source Protection & Secure Reporting (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-journalists/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-journalists/</guid>
+      <description><![CDATA[Journalists face state-level threats. How to protect sources, secure communications, and maintain anonymity while reporting.]]></description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN for Seniors: Simple Security for Less-Technical Users (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-seniors/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-seniors/</guid>
+      <description><![CDATA[A jargon-free VPN guide for seniors and less-technical users. Why you need one, which to choose, and how to set it up in 5 minutes.]]></description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN for Students: Campus Wi-Fi Security & Budget Picks (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-students/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-students/</guid>
+      <description><![CDATA[Protect yourself on university Wi-Fi, bypass campus restrictions, and save money with student VPN discounts and free tiers.]]></description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/api-key-security/</link>

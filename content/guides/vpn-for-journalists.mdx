@@ -1,0 +1,62 @@
+---
+title: "VPN for Journalists: Source Protection & Secure Reporting (2026)"
+description: "Journalists face state-level threats. How to protect sources, secure communications, and maintain anonymity while reporting."
+updatedAt: "2026-04-08"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "Committee to Protect Journalists (CPJ): Digital Safety Kit"
+  - "EFF: Surveillance Self-Defense for Journalists"
+  - "Reporters Without Borders: Digital Security Resources"
+---
+
+## The Journalist Threat Model
+
+Journalists face the highest threat level of any civilian profession. Your adversaries may include:
+- **Government intelligence agencies** (domestic and foreign)
+- **Law enforcement** seeking to identify sources
+- **Corporations** you're investigating
+- **Hacktivists and cybercriminals** targeting media organizations
+- **State-sponsored hackers** (Pegasus spyware, etc.)
+
+Your security stack must match this threat level.
+
+## The Journalist Security Stack
+
+### Tier 1: Essential (Everyone)
+- **VPN:** Mullvad or Proton VPN (not NordVPN — you need open-source, audited, privacy-maximum)
+- **Encrypted messaging:** Signal (only Signal — not WhatsApp, not Telegram regular chats)
+- **Encrypted email:** ProtonMail for source communication
+- **Password manager:** Bitwarden or 1Password with hardware key 2FA
+- **Full-disk encryption:** BitLocker/FileVault enabled
+- **2FA:** Hardware security keys (YubiKey) on email, cloud, and social media
+
+### Tier 2: Investigating Sensitive Topics
+- **Tor Browser:** For research that shouldn't be linked to your identity
+- **Tails OS:** Amnesic operating system that leaves no trace (boot from USB)
+- **SecureDrop:** For receiving anonymous tips (if your organization runs one)
+- **Separate devices:** Dedicated reporting device, not your personal phone
+- **VPN + Tor:** Connect VPN first, then Tor for maximum anonymity
+
+### Tier 3: Hostile Environment
+- **Travel device:** Dedicated device with minimal data for entering hostile countries
+- **Satellite communication:** Satellite phone for areas with no or compromised cellular
+- **Physical security:** Threat assessment before travel, emergency contacts, check-in protocols
+
+## VPN Selection for Journalists
+
+**Don't use:** NordVPN, Surfshark, ExpressVPN — these are consumer VPNs optimized for speed and streaming. They're fine for most people but journalists need maximum privacy guarantees.
+
+**Use instead:**
+1. **Mullvad** — No email, no name, cash payments, proven no-logs (police seizure found nothing), open-source
+2. **Proton VPN** — Swiss jurisdiction, open-source, Secure Core routing, transparency reports
+
+## Source Protection Rules
+
+1. **Never communicate with sources on regular phone/email** — Signal only
+2. **Never store source identities on connected devices** — airgapped notes or mental only
+3. **Use Tor** for researching topics linked to your sources
+4. **Assume your phone is compromised** — Pegasus-style spyware exists
+5. **Verify Signal safety numbers** in person with sources
+6. **Use disappearing messages** in Signal for sensitive conversations

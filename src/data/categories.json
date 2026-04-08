@@ -1,0 +1,6 @@
+[
+  {"id": "vpn", "label": "VPN", "slug": "vpn", "description": "VPN guides, reviews, setup tutorials, and protocol comparisons."},
+  {"id": "security", "label": "Security", "slug": "security", "description": "General cybersecurity guides for remote workers including device security, network security, and account protection."},
+  {"id": "public-wifi", "label": "Public Wi-Fi", "slug": "public-wifi", "description": "Staying safe on shared and public Wi-Fi networks at hotels, airports, cafes, and co-working spaces."},
+  {"id": "travel", "label": "Travel", "slug": "travel", "description": "Security guides for digital nomads and business travelers working internationally."}
+]

@@ -1,0 +1,108 @@
+---
+title: "Email Encryption for Remote Workers: Protect Your Communications (2026)"
+description: "How to encrypt your email communications. Compare ProtonMail, Tutanota, and Gmail's confidential mode. Plus PGP setup for existing accounts."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "EFF: Surveillance Self-Defense — Email"
+  - "ProtonMail: Security Whitepaper"
+  - "OpenPGP Standard — RFC 4880"
+---
+
+## Why Email Encryption Matters for Remote Workers
+
+Email is the most common attack vector in corporate breaches. For remote workers, email contains sensitive data — contracts, financial information, client details, passwords — traveling across potentially insecure networks.
+
+Standard email (Gmail, Outlook) encrypts in transit (TLS) but is readable by the provider. Your company, Google, or Microsoft can access your emails. End-to-end encryption ensures only you and your recipient can read the content.
+
+## Types of Email Encryption
+
+### Transport Encryption (TLS)
+- **What:** Encrypts email between mail servers during transit
+- **Who uses it:** Gmail, Outlook, Yahoo — all major providers
+- **Limitation:** Email is decrypted and stored on the provider's servers. The provider can read it
+- **Analogy:** A sealed envelope that the post office can open
+
+### End-to-End Encryption (E2EE)
+- **What:** Encrypts email on your device; only the recipient's device can decrypt it
+- **Who uses it:** ProtonMail, Tutanota, and PGP/GPG users
+- **Benefit:** Not even the email provider can read the content
+- **Analogy:** A locked box that only the recipient has the key to
+
+## Option 1: Encrypted Email Provider (Easiest)
+
+### ProtonMail (Recommended)
+ProtonMail is the most popular encrypted email service, created by CERN scientists and based in Switzerland.
+
+**How it works:**
+- Emails between ProtonMail users are automatically end-to-end encrypted
+- Emails to non-ProtonMail users can be encrypted with a password (sender shares password via another channel)
+- Zero-access encryption — even Proton can't read your emails
+- Swiss privacy laws protect against most government requests
+
+**Pricing:** Free (500MB) / Plus ($3.99/mo) / Unlimited ($9.99/mo with VPN, Drive, Calendar, Pass)
+
+**Best for:** Individuals and teams who can switch email providers or use a separate email for sensitive communications.
+
+### Tutanota (Alternative)
+German-based encrypted email with a focus on privacy. Open-source with a usable free tier.
+
+**Key differences from ProtonMail:**
+- Uses its own encryption standard (not PGP)
+- More affordable paid plans
+- Smaller user base and less feature-rich
+- Strong German/EU privacy protections
+
+## Option 2: PGP/GPG with Existing Email (Advanced)
+
+If you can't switch email providers, you can add encryption to your existing Gmail or Outlook account using PGP (Pretty Good Privacy).
+
+### Setup Steps:
+1. Install a PGP client (GPG4Win on Windows, GPGTools on Mac)
+2. Generate a key pair (public + private key)
+3. Share your public key with contacts (or upload to a key server)
+4. Import your contacts' public keys
+5. Use a compatible email client (Thunderbird with OpenPGP built-in)
+
+### The Reality of PGP
+PGP works but has significant usability challenges:
+- Both sender and recipient must have PGP set up
+- Key management is complex
+- Subject lines are NOT encrypted (only the body)
+- Attachments need separate handling
+- Most non-technical contacts won't use it
+
+**Our recommendation:** Use ProtonMail for sensitive communications instead of PGP. The usability difference is massive.
+
+## Option 3: Gmail Confidential Mode (Limited)
+
+Gmail's Confidential Mode lets you set expiration dates and prevent forwarding/downloading. However:
+- **It is NOT end-to-end encrypted** — Google can still read the email
+- It only prevents casual forwarding; screenshots still work
+- SMS passcode option adds a thin layer of access control
+- Useful for minor confidentiality but not true security
+
+## What Should Remote Workers Do?
+
+### Minimum (Everyone)
+- Ensure TLS is enabled (it usually is by default)
+- Use a VPN to encrypt email traffic on public Wi-Fi
+- Enable 2FA on your email account
+- Don't send passwords or sensitive credentials via email
+
+### Better (Handling Sensitive Data)
+- Create a ProtonMail account for sensitive communications
+- Use Signal for real-time sensitive discussions (not email)
+- Encrypt attachments before sending (use 7-Zip with AES-256)
+
+### Best (High-Security Requirements)
+- Full ProtonMail for Business setup for your team
+- PGP for communicating with external contacts who support it
+- Hardware security keys for email account access
+- Regular key rotation and security audits
+
+## How We Verified
+
+Encryption capabilities tested with current app versions in April 2026. ProtonMail and Tutanota security claims verified against published security whitepapers and third-party audits. PGP setup tested on Windows 11 and macOS Sequoia with Thunderbird 128.

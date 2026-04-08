@@ -1,0 +1,116 @@
+---
+title: "How to Set Up Two-Factor Authentication on Every Account (2026)"
+description: "Step-by-step instructions for enabling 2FA on Gmail, Microsoft, Apple, GitHub, AWS, Slack, and more. Includes backup code management."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "Google: Verification in 2 steps — support.google.com"
+  - "Microsoft: Set up multi-factor authentication — support.microsoft.com"
+  - "FIDO Alliance: Passkeys — fidoalliance.org"
+---
+
+## Before You Start
+
+Before enabling 2FA on your accounts, you'll need:
+
+1. **An authenticator app** installed on your phone. We recommend Authy (multi-device backup) or Google Authenticator (simple, free).
+2. **A secure place to store backup codes** — your password manager is ideal.
+3. **10-15 minutes** to complete the most critical accounts.
+
+> **Important:** Always save your backup/recovery codes. If you lose your phone and don't have backup codes, you may be permanently locked out of your accounts.
+
+## Priority Order
+
+Set up 2FA in this order — email first, because email is the recovery method for almost everything else:
+
+1. Email (Gmail, Outlook)
+2. Password Manager
+3. Cloud Storage (Google Drive, iCloud, Dropbox)
+4. Work Tools (Slack, GitHub, AWS)
+5. Financial Accounts
+6. Social Media
+
+## Gmail / Google Account
+
+1. Go to [myaccount.google.com/security](https://myaccount.google.com/security)
+2. Under "How you sign in to Google," click **2-Step Verification**
+3. Click **Get Started**
+4. Choose **Authenticator app**
+5. Scan the QR code with your authenticator app
+6. Enter the 6-digit code to verify
+7. **Save the backup codes** — Google gives you 10 one-time codes
+
+**Tip:** Google also supports passkeys and security keys. After setting up your authenticator app, consider adding a passkey as your primary method and keeping the app as backup.
+
+## Microsoft / Outlook
+
+1. Go to [account.microsoft.com/security](https://account.microsoft.com/security)
+2. Click **Advanced security options**
+3. Under "Additional security," click **Turn on** next to Two-step verification
+4. Follow the prompts to add the Microsoft Authenticator app
+5. Scan the QR code and verify with a test code
+6. Save the recovery code provided
+
+**Tip:** Microsoft Authenticator supports passwordless sign-in for Microsoft accounts — you approve a push notification instead of typing a password.
+
+## Apple ID / iCloud
+
+1. On iPhone/iPad: Settings > [Your Name] > Sign-In & Security > Two-Factor Authentication
+2. On Mac: System Settings > [Your Name] > Sign-In & Security > Two-Factor Authentication
+3. Follow the prompts — Apple uses your trusted devices as the second factor
+4. Add a trusted phone number as backup
+
+**Note:** Apple's 2FA sends codes to your trusted Apple devices. This is different from authenticator apps but is still effective.
+
+## GitHub
+
+1. Go to Settings > Password and authentication
+2. Under "Two-factor authentication," click **Enable**
+3. Choose **Set up using an app**
+4. Scan the QR code with your authenticator app
+5. Enter the verification code
+6. **Download and save your recovery codes**
+7. Optional: Add a security key (YubiKey) for phishing-resistant 2FA
+
+**Critical for developers:** If you lose access to your GitHub 2FA without recovery codes, you may lose access to all your repositories. Store recovery codes securely.
+
+## Slack
+
+1. Click your profile photo > **Profile**
+2. Click **More** > **Account settings** (opens browser)
+3. Under "Two-Factor Authentication," click **Expand**
+4. Click **Set Up Two-Factor Authentication**
+5. Enter your Slack password, then scan the QR code
+
+**Note:** This is per-workspace. If you're in multiple workspaces, enable it on each one.
+
+## AWS (Amazon Web Services)
+
+1. Sign in to the AWS Console
+2. Click your account name > **Security credentials**
+3. Under "Multi-factor authentication (MFA)," click **Assign MFA device**
+4. Choose **Authenticator app**
+5. Scan the QR code and enter two consecutive codes to verify
+
+**Critical:** For AWS root accounts, also consider a hardware security key. Compromised AWS accounts can result in enormous charges.
+
+## Managing Backup Codes
+
+Every service that offers 2FA provides backup codes. Here's how to manage them:
+
+1. **Store in your password manager** — Create a secure note for each service's backup codes
+2. **Print a physical copy** — Store in a safe or secure location at home
+3. **Never store in plain text** — Don't keep them in an unencrypted file or email draft
+4. **Use and replace** — When you use a backup code, generate new ones immediately
+
+## What About Passkeys?
+
+Passkeys are the future of authentication — they replace both passwords and traditional 2FA with a single cryptographic credential stored on your device. In 2026, passkeys are supported by Google, Apple, Microsoft, GitHub, and many other services.
+
+If a service offers passkeys, use them. They're more secure than passwords + authenticator app and more convenient. Keep your authenticator app as a backup method.
+
+## How We Verified
+
+All setup instructions were tested and verified on current app/service versions in April 2026. Screenshots and steps may differ slightly as services update their interfaces. Security recommendations based on NIST SP 800-63B and FIDO Alliance guidelines.

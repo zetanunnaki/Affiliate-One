@@ -1,0 +1,107 @@
+[
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "website": "https://nordvpn.com",
+    "affiliate": {
+      "network": "direct",
+      "trackingBaseUrl": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=AFFILIATE_ID&url_id={url_id}",
+      "disclosureLabel": "Affiliate link"
+    },
+    "features": {
+      "protocols": ["NordLynx", "OpenVPN", "IKEv2"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 10
+    },
+    "positioningTags": ["overall", "security", "teams"],
+    "notes": "Panama-based, audited no-logs policy, Threat Protection suite, meshnet for teams.",
+    "rating": 4.8,
+    "priceRange": "$3.39–$12.99/mo"
+  },
+  {
+    "id": "surfshark",
+    "name": "Surfshark",
+    "website": "https://surfshark.com",
+    "affiliate": {
+      "network": "direct",
+      "trackingBaseUrl": "https://get.surfshark.net/aff_c?offer_id=6&aff_id=AFFILIATE_ID&url_id={url_id}",
+      "disclosureLabel": "Affiliate link"
+    },
+    "features": {
+      "protocols": ["WireGuard", "OpenVPN", "IKEv2"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 0
+    },
+    "positioningTags": ["budget", "streaming", "travel"],
+    "notes": "Netherlands-based, unlimited simultaneous connections, CleanWeb ad-blocker, affordable plans.",
+    "rating": 4.6,
+    "priceRange": "$2.29–$15.45/mo"
+  },
+  {
+    "id": "expressvpn",
+    "name": "ExpressVPN",
+    "website": "https://expressvpn.com",
+    "affiliate": {
+      "network": "direct",
+      "trackingBaseUrl": "https://www.xvbelink.com/?offer=3monthsfree&a_fid=AFFILIATE_ID",
+      "disclosureLabel": "Affiliate link"
+    },
+    "features": {
+      "protocols": ["Lightway", "OpenVPN", "IKEv2"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 8
+    },
+    "positioningTags": ["travel", "streaming", "ease-of-use"],
+    "notes": "BVI-based, TrustedServer (RAM-only), works reliably in restrictive regions, premium pricing.",
+    "rating": 4.7,
+    "priceRange": "$6.67–$12.95/mo"
+  },
+  {
+    "id": "protonvpn",
+    "name": "Proton VPN",
+    "website": "https://protonvpn.com",
+    "affiliate": {
+      "network": "direct",
+      "trackingBaseUrl": "https://go.getproton.me/aff_c?offer_id=26&aff_id=AFFILIATE_ID",
+      "disclosureLabel": "Affiliate link"
+    },
+    "features": {
+      "protocols": ["WireGuard", "OpenVPN", "IKEv2"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 10
+    },
+    "positioningTags": ["privacy", "open-source", "free-tier"],
+    "notes": "Switzerland-based, open-source apps, Secure Core routing, free tier available.",
+    "rating": 4.5,
+    "priceRange": "Free–$9.99/mo"
+  },
+  {
+    "id": "mullvad",
+    "name": "Mullvad VPN",
+    "website": "https://mullvad.net",
+    "affiliate": {
+      "network": "none",
+      "trackingBaseUrl": "",
+      "disclosureLabel": ""
+    },
+    "features": {
+      "protocols": ["WireGuard", "OpenVPN"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 5
+    },
+    "positioningTags": ["privacy", "anonymous"],
+    "notes": "Sweden-based, anonymous accounts (no email required), flat €5/mo pricing, privacy-first.",
+    "rating": 4.4,
+    "priceRange": "€5/mo"
+  }
+]

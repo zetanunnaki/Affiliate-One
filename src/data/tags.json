@@ -1,0 +1,10 @@
+[
+  {"id": "beginner", "label": "Beginner"},
+  {"id": "advanced", "label": "Advanced"},
+  {"id": "how-to", "label": "How-To"},
+  {"id": "comparison", "label": "Comparison"},
+  {"id": "checklist", "label": "Checklist"},
+  {"id": "review", "label": "Review"},
+  {"id": "explainer", "label": "Explainer"},
+  {"id": "troubleshooting", "label": "Troubleshooting"}
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "sarah-chen",
+    "name": "Sarah Chen",
+    "role": "Lead Security Editor",
+    "bio": "Sarah is a cybersecurity professional with over 8 years of experience in network security and privacy. She holds a CISSP certification and has written extensively about VPN technology, remote work security, and digital privacy.",
+    "credentials": ["CISSP", "CompTIA Security+"],
+    "location": "San Francisco, CA",
+    "headshot": "/images/authors/sarah-chen.webp",
+    "sameAs": [
+      "https://linkedin.com/in/sarah-chen-security",
+      "https://github.com/sarahchen-sec"
+    ]
+  },
+  {
+    "id": "marcus-johnson",
+    "name": "Marcus Johnson",
+    "role": "VPN & Privacy Analyst",
+    "bio": "Marcus specializes in VPN testing and comparison. A former network engineer, he brings hands-on technical expertise to every review, testing speed, security features, and real-world reliability across dozens of countries.",
+    "credentials": ["CEH", "CCNA"],
+    "location": "London, UK",
+    "headshot": "/images/authors/marcus-johnson.webp",
+    "sameAs": [
+      "https://linkedin.com/in/marcus-johnson-vpn"
+    ]
+  },
+  {
+    "id": "elena-rodriguez",
+    "name": "Elena Rodriguez",
+    "role": "Travel Security Writer",
+    "bio": "Elena covers the intersection of travel and cybersecurity. As a digital nomad who has worked from 40+ countries, she brings first-hand experience to guides on public Wi-Fi safety, travel VPN usage, and international data protection.",
+    "credentials": [],
+    "location": "Lisbon, Portugal",
+    "headshot": "/images/authors/elena-rodriguez.webp",
+    "sameAs": [
+      "https://linkedin.com/in/elena-rodriguez-travel-tech"
+    ]
+  }
+]

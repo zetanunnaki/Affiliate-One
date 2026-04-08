@@ -1,0 +1,75 @@
+---
+title: "Hotel & Airport Wi-Fi Security: What You Need to Know (2026)"
+description: "How safe is hotel and airport Wi-Fi? Real threats, practical protection steps, and when to use your phone's hotspot instead."
+updatedAt: "2026-04-07"
+author: "elena-rodriguez"
+category: "public-wifi"
+toc: true
+citations:
+  - "CISA: Public Wi-Fi Security Tips"
+  - "OWASP: Wireless Security Testing Guide"
+---
+
+## The Reality of Hotel and Airport Wi-Fi
+
+Hotel and airport Wi-Fi networks are convenient but inherently risky. They're shared among hundreds or thousands of users, and security configurations vary widely. Here's what you need to know.
+
+## Threats You Actually Face
+
+Not every public Wi-Fi scare story is realistic. Here are the real threats, ranked by likelihood:
+
+### High Probability
+
+**Unencrypted traffic interception**: On an open (no password) network, anyone with free tools like Wireshark can capture your unencrypted traffic — including HTTP website visits, email credentials sent in plain text, and DNS queries showing which sites you visit.
+
+**Evil twin attacks**: An attacker creates a fake Wi-Fi network with a name like "Marriott_Free_WiFi" next to the real "Marriott_Guest" network. Your device might auto-connect to the stronger signal, routing all traffic through the attacker.
+
+### Medium Probability
+
+**Session hijacking**: If a website's session management is weak, an attacker on the same network could steal your session cookie and access your account without your password.
+
+**DNS spoofing**: The attacker redirects your DNS queries so that when you type "bank.com," you're sent to a convincing fake login page instead.
+
+### Lower Probability (But Still Real)
+
+**Man-in-the-middle attacks against HTTPS**: Modern browsers and HTTPS make this harder, but misconfigurations, outdated software, or accepted certificate warnings can create openings.
+
+## Your Protection Plan
+
+### Step 1: Always Use a VPN
+
+This is non-negotiable. A VPN encrypts all your traffic — not just browser traffic, but also email clients, messaging apps, and background processes. Enable the kill switch so traffic is blocked if the VPN drops.
+
+### Step 2: Verify the Network Name
+
+Ask front desk staff or check official signage for the exact network name. Don't connect to anything that looks unofficial or has "Free" in the name when there's an official network available.
+
+### Step 3: Forget Networks After Use
+
+After disconnecting, remove the network from your saved networks. This prevents your device from auto-connecting to a rogue network with the same name in the future.
+
+### Step 4: Disable Auto-Connect
+
+Turn off the setting that automatically connects to open Wi-Fi networks. On both iOS and Android, this is in Wi-Fi settings.
+
+### Step 5: Use Your Phone's Hotspot for Sensitive Tasks
+
+For banking, accessing company systems with sensitive data, or any transaction involving money, your cellular connection is safer than hotel/airport Wi-Fi. Mobile data goes directly to your carrier's network.
+
+## Hotel Wi-Fi vs. Airport Wi-Fi
+
+| Factor | Hotel Wi-Fi | Airport Wi-Fi |
+|--------|-------------|---------------|
+| Encryption | Sometimes WPA2 | Often open (no password) |
+| User density | Lower (room guests) | Very high (thousands) |
+| Evil twin risk | Medium | High |
+| Duration of use | Hours to days | Minutes to hours |
+| Recommendation | VPN required | VPN required; prefer hotspot |
+
+## The Bottom Line
+
+Hotel and airport Wi-Fi can be used safely if you take precautions. The combination of a VPN with kill switch, network verification, and common sense protects against virtually all realistic threats. For the most sensitive work, use your phone's hotspot.
+
+## How We Verified
+
+Threat assessments based on CISA advisories and OWASP wireless security testing methodology. Protection steps tested on current devices and VPN clients. Written from personal experience working remotely from hotels and airports in 20+ countries.

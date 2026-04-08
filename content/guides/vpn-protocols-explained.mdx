@@ -1,0 +1,115 @@
+---
+title: "VPN Protocols Explained: WireGuard vs OpenVPN vs IKEv2 (2026)"
+description: "A clear comparison of VPN protocols. Learn the differences between WireGuard, OpenVPN, IKEv2, and proprietary options like NordLynx and Lightway."
+updatedAt: "2026-04-07"
+author: "marcus-johnson"
+category: "vpn"
+toc: true
+citations:
+  - "WireGuard: Next Generation Kernel Network Tunnel — Jason A. Donenfeld"
+  - "OpenVPN Security Overview — OpenVPN Inc."
+  - "NIST SP 800-77 Rev.1: Guide to IPsec VPNs"
+---
+
+## What Is a VPN Protocol?
+
+A VPN protocol is the set of rules that determines how your data is encrypted and transmitted between your device and the VPN server. Think of it as the language your VPN speaks — different protocols offer different trade-offs between speed, security, and compatibility.
+
+Choosing the right protocol matters. The wrong choice can leave you with slower speeds, weaker encryption, or connection issues on certain networks.
+
+## Protocol Comparison at a Glance
+
+| Protocol | Speed | Security | Best For | Age |
+|----------|-------|----------|----------|-----|
+| WireGuard | Excellent | Excellent | Most users, mobile | 2020 |
+| OpenVPN | Good | Excellent | Maximum compatibility | 2001 |
+| IKEv2/IPSec | Very Good | Very Good | Mobile devices | 2005 |
+| NordLynx | Excellent | Excellent | NordVPN users | 2020 |
+| Lightway | Excellent | Excellent | ExpressVPN users | 2021 |
+| SSTP | Good | Good | Windows behind firewalls | 2008 |
+| L2TP/IPSec | Fair | Fair | Legacy devices only | 1999 |
+| PPTP | Fast | Poor | Never use — broken encryption | 1999 |
+
+## WireGuard: The Modern Standard
+
+WireGuard is the newest major VPN protocol and has quickly become the default recommendation. It uses state-of-the-art cryptography (ChaCha20, Poly1305, Curve25519) with a minimal codebase of roughly 4,000 lines — compared to OpenVPN's 70,000+.
+
+**Advantages:**
+- Fastest speeds of any open-source protocol
+- Extremely lightweight — excellent battery life on mobile
+- Modern, auditable codebase
+- Built into the Linux kernel since 5.6
+
+**Disadvantages:**
+- Newer, with a smaller track record
+- Assigns static internal IPs by default (some privacy concerns, mitigated by provider implementations)
+- Not all providers implement it equally
+
+**Use when:** You want the best speed/security balance. This is the right choice for most remote workers in 2026.
+
+## OpenVPN: The Proven Veteran
+
+OpenVPN has been the gold standard for over two decades. It's open-source, heavily audited, and runs on virtually every platform. It supports both UDP (faster) and TCP (more reliable on restrictive networks) modes.
+
+**Advantages:**
+- Longest track record and most security audits
+- Highly configurable
+- TCP mode works through most firewalls and restrictive networks
+- Supported by nearly every VPN provider
+
+**Disadvantages:**
+- Slower than WireGuard, especially on mobile
+- Higher battery drain
+- Complex codebase makes auditing harder
+- Can be blocked by deep packet inspection (DPI)
+
+**Use when:** You need maximum compatibility, are on a restrictive network, or your provider doesn't support WireGuard well.
+
+## IKEv2/IPSec: The Mobile Champion
+
+IKEv2 (Internet Key Exchange version 2) paired with IPSec is excellent on mobile devices thanks to its MOBIKE protocol, which handles network switches (Wi-Fi to cellular) without dropping the VPN connection.
+
+**Advantages:**
+- Seamless network switching (Wi-Fi ↔ cellular)
+- Fast connection establishment
+- Good speeds
+- Native support on iOS and macOS
+
+**Disadvantages:**
+- Not as fast as WireGuard
+- Easier to block than OpenVPN TCP
+- Fewer configuration options
+- IPSec has a large, complex codebase
+
+**Use when:** You're on a mobile device and frequently switch between Wi-Fi and cellular, especially on iOS.
+
+## Proprietary Protocols
+
+### NordLynx (NordVPN)
+Built on WireGuard with NordVPN's double NAT system to address WireGuard's static IP concern. Offers WireGuard speeds with improved privacy. Available only on NordVPN apps.
+
+### Lightway (ExpressVPN)
+ExpressVPN's custom protocol using wolfSSL for encryption. Open-source and independently audited. Designed for fast connections with small code footprint. Available only on ExpressVPN apps.
+
+Both proprietary protocols deliver excellent performance and are good choices if you use those specific providers.
+
+## Protocols to Avoid
+
+**PPTP (Point-to-Point Tunneling Protocol):** Encryption has been broken since 2012. Microsoft itself recommends against it. Never use PPTP for anything requiring actual security.
+
+**L2TP/IPSec:** While not broken, it's slower than alternatives and offers no advantages over modern protocols. Some implementations have suspected NSA backdoors.
+
+## Which Protocol Should You Choose?
+
+For most remote workers in 2026:
+
+1. **Default choice:** WireGuard (or NordLynx/Lightway on respective providers)
+2. **Restrictive networks:** OpenVPN TCP
+3. **iOS/mobile switching:** IKEv2/IPSec or WireGuard
+4. **Maximum privacy:** OpenVPN with custom configuration
+
+Most VPN apps select the optimal protocol automatically. Unless you have a specific need, the "Automatic" or "Recommended" setting is usually the best choice.
+
+## How We Verified
+
+Protocol specifications reviewed against source documentation. Speed comparisons based on controlled testing on a 1Gbps connection with servers in the same region. Security assessments based on cryptographic analysis and published audit reports. All testing conducted April 2026.

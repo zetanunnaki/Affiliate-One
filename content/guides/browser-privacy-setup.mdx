@@ -1,0 +1,91 @@
+---
+title: "Browser Privacy Setup Guide: Stop Being Tracked Online (2026)"
+description: "Configure your browser for maximum privacy. Extensions, settings, and practices that reduce tracking across Chrome, Firefox, Safari, and Brave."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "EFF: Cover Your Tracks — coveryourtracks.eff.org"
+  - "Mozilla: Enhanced Tracking Protection"
+  - "Brave: Privacy Features Overview"
+---
+
+## Why Browser Privacy Matters
+
+Even with a VPN encrypting your traffic, websites track you through cookies, fingerprinting, and tracking pixels. Your browser is the primary interface between you and the web — configuring it properly is essential for meaningful privacy.
+
+## Browser Comparison: Privacy Out of the Box
+
+| Browser | Tracking Protection | Fingerprint Resistance | Ad Blocking | Privacy Rating |
+|---------|--------------------|-----------------------|-------------|---------------|
+| Brave | Excellent | Good | Built-in | Best |
+| Firefox | Very Good | Good | With extension | Very Good |
+| Safari | Good | Good | Limited | Good |
+| Chrome | Basic | None | With extension | Fair |
+| Edge | Basic | None | With extension | Fair |
+
+## Our Recommendation
+
+- **Best for privacy:** Brave (built-in ad blocking, fingerprint protection, and Tor integration)
+- **Best for compatibility + privacy:** Firefox with uBlock Origin
+- **Best for Apple users:** Safari with content blockers enabled
+- **Avoid for privacy:** Chrome (Google's business model is based on tracking)
+
+## Firefox Privacy Setup (Recommended)
+
+### Step 1: Enhanced Tracking Protection
+1. Open Settings > Privacy & Security
+2. Set Enhanced Tracking Protection to **Strict**
+3. This blocks social media trackers, cross-site cookies, fingerprinters, and cryptominers
+
+### Step 2: Install Essential Extensions
+- **uBlock Origin** — The best ad and tracker blocker. Open-source, lightweight, highly effective
+- **HTTPS Everywhere** — Forces HTTPS connections (built into Firefox now, but the extension adds extra protection)
+- **Cookie AutoDelete** — Automatically deletes cookies when you close a tab
+
+### Step 3: Configure Settings
+- Set default search engine to **DuckDuckGo** (doesn't track searches)
+- Enable **DNS over HTTPS** (Settings > Privacy > DNS over HTTPS > Enable)
+- Disable **telemetry** (Settings > Privacy > uncheck data collection options)
+- Set cookies to **Delete cookies and site data when Firefox is closed**
+
+## Brave Privacy Setup
+
+Brave is privacy-focused by default. Additional tweaks:
+
+1. Enable **Aggressive** fingerprinting protection (Settings > Shields > Fingerprinting blocking)
+2. Enable **Strict** tracker blocking
+3. Use **Brave Search** as default (independent, privacy-focused search)
+4. Enable **HTTPS-Only mode**
+5. Consider using **Brave's built-in Tor windows** for maximum anonymity
+
+## Chrome Privacy Setup (If You Must Use Chrome)
+
+Chrome is the least private major browser, but you can improve it:
+
+1. Install **uBlock Origin** from the Chrome Web Store
+2. Settings > Privacy > disable all "improve" toggles (they send data to Google)
+3. Block third-party cookies (Settings > Privacy > Cookies > Block third-party cookies)
+4. Use **DuckDuckGo** as your default search engine
+5. Disable **Chrome sign-in sync** if you don't want browsing data in your Google account
+
+**Note:** Google's Manifest V3 changes have limited ad-blocking extension capabilities in Chrome. Firefox and Brave are better choices for privacy.
+
+## What About Incognito / Private Mode?
+
+Private browsing mode prevents your browser from saving history, cookies, and form data locally. It does **not**:
+- Hide your activity from your ISP
+- Prevent websites from tracking your IP address
+- Block fingerprinting
+- Make you anonymous
+
+Private mode + VPN is better than private mode alone, but it's not a substitute for proper privacy configuration.
+
+## Test Your Browser Privacy
+
+Visit [coveryourtracks.eff.org](https://coveryourtracks.eff.org) (EFF's tool) to see how unique your browser fingerprint is and whether your tracking protection is working. A well-configured Firefox or Brave will show strong protection.
+
+## How We Verified
+
+All browser configurations tested on current versions (April 2026). Tracking protection verified using EFF's Cover Your Tracks and Disconnect's tracker database. Extension recommendations based on open-source status, audit history, and measured effectiveness.

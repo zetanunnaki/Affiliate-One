@@ -1,0 +1,2429 @@
+[
+  {
+    "iso2": "US",
+    "iso3": "USA",
+    "nameEn": "United States",
+    "slug": "united-states",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "America/New_York",
+    "internetNotes": "High broadband and mobile penetration. Major ISPs include Comcast, AT&T, and Verizon. Net neutrality protections vary by state. Internet speeds in United States have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Popular among remote workers and privacy-conscious users. No government restrictions on VPN use. Remote workers in United States commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Credit cards, PayPal, and Apple Pay widely accepted. Most VPN providers offer USD pricing. Most international VPN providers accept payment methods commonly used in United States, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi common in hotels, airports, and coffee shops. Starbucks, McDonald's, and airports offer open networks. Visitors to United States should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GB",
+    "iso3": "GBR",
+    "nameEn": "United Kingdom",
+    "slug": "united-kingdom",
+    "region": "Europe",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "GBP",
+    "timeZonePrimary": "Europe/London",
+    "internetNotes": "Excellent broadband coverage. ISPs include BT, Virgin Media, and Sky. The Investigatory Powers Act allows government surveillance. Internet speeds in United Kingdom have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. The UK's surveillance laws (Snoopers' Charter) make VPNs popular for privacy. ISPs are required to keep browsing logs. Remote workers in United Kingdom commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "GBP and card payments dominant. Contactless widely adopted. Most VPN providers accept UK payment methods. Most international VPN providers accept payment methods commonly used in United Kingdom, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in most pubs, cafés, train stations, and London Underground. Hotel Wi-Fi generally reliable. Visitors to United Kingdom should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "DE",
+    "iso3": "DEU",
+    "nameEn": "Germany",
+    "slug": "germany",
+    "region": "Europe",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Berlin",
+    "internetNotes": "Strong broadband infrastructure. Deutsche Telekom is the largest ISP. Germany has strict data protection under GDPR and the BDSG. Internet speeds in Germany have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and widely used. Germany's strong privacy culture drives VPN adoption. Data retention laws apply to ISPs. Remote workers in Germany commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Cash still widely used alongside cards. SEPA transfers and PayPal common for online purchases. Most international VPN providers accept payment methods commonly used in Germany, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi less ubiquitous than in the US/UK but improving. Many cafés and hotels offer free Wi-Fi. Train Wi-Fi available on ICE routes. Visitors to Germany should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "FR",
+    "iso3": "FRA",
+    "nameEn": "France",
+    "slug": "france",
+    "region": "Europe",
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Paris",
+    "internetNotes": "Good broadband coverage with major providers Orange, SFR, and Free. HADOPI monitors file sharing. Strong GDPR enforcement. Internet speeds in France have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. French users value privacy. No restrictions on VPN use, but authorities can request data from ISPs. Remote workers in France commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Carte Bancaire widely used. Most international payment methods accepted online. Most international VPN providers accept payment methods commonly used in France, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in most hotels, many cafés, and Paris Metro stations. Public Wi-Fi quality varies. Visitors to France should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "JP",
+    "iso3": "JPN",
+    "nameEn": "Japan",
+    "slug": "japan",
+    "region": "APAC",
+    "languages": [
+      "ja",
+      "en"
+    ],
+    "currencyCode": "JPY",
+    "timeZonePrimary": "Asia/Tokyo",
+    "internetNotes": "World-class internet infrastructure with very fast speeds. Major ISPs include NTT, SoftBank, and KDDI. Low censorship. Internet speeds in Japan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and unrestricted. Popular for accessing geo-locked content and maintaining privacy on public Wi-Fi. Remote workers in Japan commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Yen-based. Credit cards and IC cards (Suica, Pasmo) widely accepted. Cash still important in many places. Most international VPN providers accept payment methods commonly used in Japan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi available at convenience stores, stations, and tourist spots. Japan Wi-Fi auto-connect app available for tourists. Visitors to Japan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AU",
+    "iso3": "AUS",
+    "nameEn": "Australia",
+    "slug": "australia",
+    "region": "APAC",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "AUD",
+    "timeZonePrimary": "Australia/Sydney",
+    "internetNotes": "NBN rollout improving broadband. Major ISPs include Telstra, Optus, and TPG. Data retention laws require ISPs to store metadata for 2 years. Internet speeds in Australia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. Mandatory data retention laws drive VPN adoption among privacy-conscious Australians. Remote workers in Australia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "AUD-based. Card payments dominant. BPAY and PayPal common for online subscriptions. Most international VPN providers accept payment methods commonly used in Australia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in most hotels, libraries, and many cafés. Airport and public transport Wi-Fi improving. Visitors to Australia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CA",
+    "iso3": "CAN",
+    "nameEn": "Canada",
+    "slug": "canada",
+    "region": "Americas",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "currencyCode": "CAD",
+    "timeZonePrimary": "America/Toronto",
+    "internetNotes": "Good broadband coverage in urban areas. Major ISPs include Bell, Rogers, and Telus. Prices can be high due to limited competition. Internet speeds in Canada have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and unrestricted. PIPEDA governs privacy. Five Eyes alliance member drives some VPN adoption. Remote workers in Canada commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "CAD-based. Interac, credit cards, and Apple Pay widely used. Most VPN providers accept Canadian payment methods. Most international VPN providers accept payment methods commonly used in Canada, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in Tim Hortons, Starbucks, libraries, and most hotels. Coverage sparse in rural and northern areas. Visitors to Canada should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BR",
+    "iso3": "BRA",
+    "nameEn": "Brazil",
+    "slug": "brazil",
+    "region": "Americas",
+    "languages": [
+      "pt"
+    ],
+    "currencyCode": "BRL",
+    "timeZonePrimary": "America/Sao_Paulo",
+    "internetNotes": "Growing broadband and mobile internet. Major providers include Vivo, Claro, and TIM. Marco Civil da Internet provides net neutrality. Internet speeds in Brazil have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. Brazil's LGPD (data protection law) has increased privacy awareness and VPN interest. Remote workers in Brazil commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BRL-based. Pix instant payments are dominant. Boleto bancário also common. International cards accepted online. Most international VPN providers accept payment methods commonly used in Brazil, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi common in shopping malls, hotels, and airports. Quality varies. Mobile data coverage good in cities. Visitors to Brazil should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "high-fraud"
+    ]
+  },
+  {
+    "iso2": "IN",
+    "iso3": "IND",
+    "nameEn": "India",
+    "slug": "india",
+    "region": "APAC",
+    "languages": [
+      "hi",
+      "en"
+    ],
+    "currencyCode": "INR",
+    "timeZonePrimary": "Asia/Kolkata",
+    "internetNotes": "Massive mobile-first internet market. Jio revolutionized data pricing. Broadband improving but mobile dominates. Government can order internet shutdowns. Internet speeds in India have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal but the 2022 CERT-In directive requires VPN providers to log user data. Several providers removed Indian servers in response. Remote workers in India commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "INR-based. UPI (GPay, PhonePe) dominates digital payments. International cards accepted for VPN subscriptions. Most international VPN providers accept payment methods commonly used in India, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi at major railway stations and airports (via RailTel). Café and hotel Wi-Fi common in cities. Mobile data very affordable. Visitors to India should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "CN",
+    "iso3": "CHN",
+    "nameEn": "China",
+    "slug": "china",
+    "region": "APAC",
+    "languages": [
+      "zh"
+    ],
+    "currencyCode": "CNY",
+    "timeZonePrimary": "Asia/Shanghai",
+    "internetNotes": "Extensive internet infrastructure but heavily censored (Great Firewall). Google, Facebook, Twitter, and many Western services blocked. Internet speeds in China have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use exists in a gray area. Unauthorized VPN services are banned but enforcement targets providers more than individual users. Many VPNs are blocked. Remote workers in China commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "CNY-based. WeChat Pay and Alipay dominate. International credit cards have limited acceptance. Prepaying for VPN before arrival is recommended. Most international VPN providers accept payment methods commonly used in China, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Hotel and café Wi-Fi common but subject to the Great Firewall. Purchase and configure VPN before entering China. Visitors to China should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "RU",
+    "iso3": "RUS",
+    "nameEn": "Russia",
+    "slug": "russia",
+    "region": "Europe",
+    "languages": [
+      "ru"
+    ],
+    "currencyCode": "RUB",
+    "timeZonePrimary": "Europe/Moscow",
+    "internetNotes": "Good urban coverage. Rostelecom is the largest ISP. Increasing internet censorship and the Sovereign Internet law aim to control traffic. Internet speeds in Russia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "Many VPN services are officially banned. Russia blocks non-compliant VPN providers. Using a VPN is technically not illegal for individuals, but access is restricted. Remote workers in Russia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "RUB-based. International card payments heavily restricted due to sanctions. Mir cards used domestically. Prepayment advisable. Most international VPN providers accept payment methods commonly used in Russia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafés. Many public Wi-Fi networks require phone number registration. VPN access may be unreliable. Visitors to Russia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MX",
+    "iso3": "MEX",
+    "nameEn": "Mexico",
+    "slug": "mexico",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "MXN",
+    "timeZonePrimary": "America/Mexico_City",
+    "internetNotes": "Growing internet penetration. Telcel and Telmex dominate. Mobile internet increasingly popular. Net neutrality protections exist. Internet speeds in Mexico have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal and unrestricted. Growing adoption among remote workers and digital nomads in cities like CDMX and Playa del Carmen. Remote workers in Mexico commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MXN-based. Cash still widely used. OXXO convenience store payments popular. Credit cards and PayPal accepted online. Most international VPN providers accept payment methods commonly used in Mexico, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in many cafés, co-working spaces, and hotels. OXXO stores increasingly offer Wi-Fi. Quality varies. Visitors to Mexico should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "high-fraud"
+    ]
+  },
+  {
+    "iso2": "KR",
+    "iso3": "KOR",
+    "nameEn": "South Korea",
+    "slug": "south-korea",
+    "region": "APAC",
+    "languages": [
+      "ko",
+      "en"
+    ],
+    "currencyCode": "KRW",
+    "timeZonePrimary": "Asia/Seoul",
+    "internetNotes": "Among the fastest internet speeds globally. KT, SK Broadband, and LG U+ are major ISPs. Some content filtering exists. Internet speeds in South Korea have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and unrestricted. Used for privacy and accessing content. Gaming-related VPN use is common. Remote workers in South Korea commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "KRW-based. Card payments dominant. KakaoPay and Naver Pay popular. International cards accepted. Most international VPN providers accept payment methods commonly used in South Korea, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent free Wi-Fi coverage nationwide including public transport, cafés, and tourist areas. Visitors to South Korea should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SG",
+    "iso3": "SGP",
+    "nameEn": "Singapore",
+    "slug": "singapore",
+    "region": "APAC",
+    "languages": [
+      "en",
+      "zh",
+      "ms",
+      "ta"
+    ],
+    "currencyCode": "SGD",
+    "timeZonePrimary": "Asia/Singapore",
+    "internetNotes": "World-class internet infrastructure with very high speeds. Singtel, StarHub, and M1 are main ISPs. Some content regulations exist. Internet speeds in Singapore have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. No restrictions on personal use. Singapore's position as a business hub drives VPN adoption for remote work. Remote workers in Singapore commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "SGD-based. Card payments and PayNow widely used. International payment methods well-supported. Most international VPN providers accept payment methods commonly used in Singapore, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent free Wi-Fi (Wireless@SG) available nationwide. Hotels, malls, and MRT stations covered. Visitors to Singapore should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AE",
+    "iso3": "ARE",
+    "nameEn": "United Arab Emirates",
+    "slug": "united-arab-emirates",
+    "region": "Middle East",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "currencyCode": "AED",
+    "timeZonePrimary": "Asia/Dubai",
+    "internetNotes": "Good infrastructure. Etisalat and du are the main providers. VoIP services like WhatsApp calls and FaceTime are restricted. Internet speeds in United Arab Emirates have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use for lawful purposes is permitted but using a VPN to access blocked content or commit crimes carries penalties. Many VoIP apps are blocked.",
+    "paymentNotes": "AED-based. Card payments widely accepted. Apple Pay and Samsung Pay available. International cards work. Most international VPN providers accept payment methods commonly used in United Arab Emirates, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in malls, hotels, and many public areas. VPN needed for VoIP calls. Configure before arrival. Visitors to United Arab Emirates should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "censorship",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "TH",
+    "iso3": "THA",
+    "nameEn": "Thailand",
+    "slug": "thailand",
+    "region": "APAC",
+    "languages": [
+      "th",
+      "en"
+    ],
+    "currencyCode": "THB",
+    "timeZonePrimary": "Asia/Bangkok",
+    "internetNotes": "Good mobile internet coverage. AIS, DTAC, and TRUE are major carriers. Some website blocking occurs, particularly political content. Internet speeds in Thailand have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and widely used by expats and tourists. The Computer Crime Act allows some content blocking but VPN use is not restricted. Remote workers in Thailand commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "THB-based. Cash still common. PromptPay growing. International cards accepted at major establishments. Most international VPN providers accept payment methods commonly used in Thailand, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in most hotels, cafés, and malls. 7-Eleven stores often have Wi-Fi. Tourist SIM cards affordable. Visitors to Thailand should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "NL",
+    "iso3": "NLD",
+    "nameEn": "Netherlands",
+    "slug": "netherlands",
+    "region": "Europe",
+    "languages": [
+      "nl",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Amsterdam",
+    "internetNotes": "Excellent broadband infrastructure. Major ISPs include KPN, Ziggo, and T-Mobile. Strong net neutrality laws. AMS-IX is a major internet exchange. Internet speeds in Netherlands have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. The Netherlands hosts many VPN provider headquarters due to favorable privacy laws and infrastructure. Remote workers in Netherlands commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. iDEAL is the dominant online payment method. Credit cards and PayPal also accepted. Most international VPN providers accept payment methods commonly used in Netherlands, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent free Wi-Fi coverage in cafés, libraries, trains, and public spaces. NS trains offer Wi-Fi. Visitors to Netherlands should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SE",
+    "iso3": "SWE",
+    "nameEn": "Sweden",
+    "slug": "sweden",
+    "region": "Europe",
+    "languages": [
+      "sv",
+      "en"
+    ],
+    "currencyCode": "SEK",
+    "timeZonePrimary": "Europe/Stockholm",
+    "internetNotes": "Excellent broadband and mobile coverage. Telia, Tele2, and Tre are major providers. Strong digital infrastructure. Internet speeds in Sweden have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Mullvad VPN is based here. Sweden has strong privacy traditions despite some EU data retention requirements. Remote workers in Sweden commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "SEK-based. Nearly cashless society. Swish mobile payments dominant. Cards and Apple Pay widely accepted. Most international VPN providers accept payment methods commonly used in Sweden, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent free Wi-Fi in most public places. Sweden is highly connected with widespread coverage. Visitors to Sweden should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CH",
+    "iso3": "CHE",
+    "nameEn": "Switzerland",
+    "slug": "switzerland",
+    "region": "Europe",
+    "languages": [
+      "de",
+      "fr",
+      "it",
+      "en"
+    ],
+    "currencyCode": "CHF",
+    "timeZonePrimary": "Europe/Zurich",
+    "internetNotes": "Excellent broadband infrastructure. Swisscom, Sunrise, and Salt are major ISPs. Strong data protection laws (revDSG). Not EU but GDPR-adjacent. Internet speeds in Switzerland have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Proton VPN is headquartered here. Switzerland's strong privacy reputation makes it a VPN industry hub. Remote workers in Switzerland commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "CHF-based. Cards and TWINT mobile payments popular. Cash still accepted widely. Most international VPN providers accept payment methods commonly used in Switzerland, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and cafés. Swiss Federal Railways offers Wi-Fi on trains. Coverage excellent. Visitors to Switzerland should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "ES",
+    "iso3": "ESP",
+    "nameEn": "Spain",
+    "slug": "spain",
+    "region": "Europe",
+    "languages": [
+      "es",
+      "ca",
+      "eu"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Madrid",
+    "internetNotes": "Good broadband and mobile coverage. Movistar, Vodafone, and Orange are major ISPs. Growing fiber optic deployment. Internet speeds in Spain have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Popular among remote workers and digital nomads, especially in Barcelona and the Canary Islands. Remote workers in Spain commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments widely accepted. Bizum P2P payments popular domestically. Most international VPN providers accept payment methods commonly used in Spain, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in most hotels, cafés, and tourist areas. Municipal Wi-Fi networks in major cities. Visitors to Spain should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "IT",
+    "iso3": "ITA",
+    "nameEn": "Italy",
+    "slug": "italy",
+    "region": "Europe",
+    "languages": [
+      "it"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Rome",
+    "internetNotes": "Broadband improving with fiber expansion. TIM, Vodafone, and WindTre are major providers. Some areas still have slower connections. Internet speeds in Italy have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Italian data protection authority (Garante) actively enforces GDPR. Growing privacy awareness. Remote workers in Italy commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Cash still used but card adoption growing. Satispay mobile payments gaining popularity. Most international VPN providers accept payment methods commonly used in Italy, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in many hotels and cafés. Municipal Wi-Fi in some cities. Quality can be inconsistent. Visitors to Italy should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "PL",
+    "iso3": "POL",
+    "nameEn": "Poland",
+    "slug": "poland",
+    "region": "Europe",
+    "languages": [
+      "pl"
+    ],
+    "currencyCode": "PLN",
+    "timeZonePrimary": "Europe/Warsaw",
+    "internetNotes": "Good and improving broadband infrastructure. Orange, Play, and T-Mobile are major providers. Competitive pricing. Internet speeds in Poland have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Growing tech scene and remote work culture driving adoption. Remote workers in Poland commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "PLN-based. BLIK instant payments dominant. Cards widely accepted. International payments supported. Most international VPN providers accept payment methods commonly used in Poland, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels, cafés, and shopping centers. Municipal Wi-Fi in major cities. Visitors to Poland should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "TR",
+    "iso3": "TUR",
+    "nameEn": "Turkey",
+    "slug": "turkey",
+    "region": "Middle East",
+    "languages": [
+      "tr"
+    ],
+    "currencyCode": "TRY",
+    "timeZonePrimary": "Europe/Istanbul",
+    "internetNotes": "Good urban coverage. Türk Telekom is the largest ISP. Government blocks access to various websites and social media platforms periodically. Internet speeds in Turkey have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal but many VPN websites are blocked. Users frequently use VPNs to access blocked social media. The government periodically blocks VPN services. Remote workers in Turkey commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "TRY-based. Card payments common. BKM Express and Papara growing. International cards generally accepted. Most international VPN providers accept payment methods commonly used in Turkey, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi in most hotels, restaurants, and shopping malls. Istanbul airport has free Wi-Fi. Visitors to Turkey should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "ZA",
+    "iso3": "ZAF",
+    "nameEn": "South Africa",
+    "slug": "south-africa",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "af",
+      "zu"
+    ],
+    "currencyCode": "ZAR",
+    "timeZonePrimary": "Africa/Johannesburg",
+    "internetNotes": "Good urban coverage. Telkom, Vodacom, and MTN are major providers. Data costs historically high but improving. Load shedding affects connectivity. Internet speeds in South Africa have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. POPIA (data protection law) has increased privacy awareness. Growing remote work adoption. Remote workers in South Africa commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "ZAR-based. Card payments common. SnapScan and Zapper mobile payments growing. International cards accepted. Most international VPN providers accept payment methods commonly used in South Africa, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafés. Many restaurants offer free Wi-Fi. Mobile data packages from Vodacom/MTN recommended for tourists. Visitors to South Africa should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "NG",
+    "iso3": "NGA",
+    "nameEn": "Nigeria",
+    "slug": "nigeria",
+    "region": "Africa",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "NGN",
+    "timeZonePrimary": "Africa/Lagos",
+    "internetNotes": "Mobile-first internet market. MTN, Airtel, and Glo are major carriers. Broadband limited but mobile 4G expanding. Social media taxes debated. Internet speeds in Nigeria have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. Twitter was banned in 2021 leading to massive VPN adoption. Nigerians are increasingly privacy-aware. Remote workers in Nigeria commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "NGN-based. Flutterwave, Paystack, and bank transfers common. USD pricing challenging due to exchange rate volatility. Most international VPN providers accept payment methods commonly used in Nigeria, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and restaurants in major cities. Mobile data is the primary internet access method. SIM registration required. Visitors to Nigeria should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "EG",
+    "iso3": "EGY",
+    "nameEn": "Egypt",
+    "slug": "egypt",
+    "region": "Middle East",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "currencyCode": "EGP",
+    "timeZonePrimary": "Africa/Cairo",
+    "internetNotes": "Growing internet penetration. Telecom Egypt, Vodafone, and Orange are major providers. Government monitors internet traffic and blocks some services. Internet speeds in Egypt have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common but VoIP services are blocked. The government periodically blocks VPN protocols. Some VPN websites are inaccessible. Remote workers in Egypt commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "EGP-based. Cash dominant. Fawry and Vodafone Cash growing. International card acceptance limited online. Most international VPN providers accept payment methods commonly used in Egypt, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Hotel Wi-Fi generally available. Café Wi-Fi common in Cairo and tourist areas. VPN recommended for VoIP calls. Visitors to Egypt should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "KE",
+    "iso3": "KEN",
+    "nameEn": "Kenya",
+    "slug": "kenya",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "sw"
+    ],
+    "currencyCode": "KES",
+    "timeZonePrimary": "Africa/Nairobi",
+    "internetNotes": "Growing mobile internet market. Safaricom dominates with M-Pesa. Good 4G coverage in urban areas. Fiber expanding. Internet speeds in Kenya have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and unrestricted. Growing tech hub (Silicon Savannah) drives adoption among tech workers. Remote workers in Kenya commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "KES-based. M-Pesa mobile money dominant. Card payments growing in urban areas. International cards accepted by major VPN providers. Most international VPN providers accept payment methods commonly used in Kenya, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafés in Nairobi and tourist areas. Mobile data via Safaricom recommended. Visitors to Kenya should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "IL",
+    "iso3": "ISR",
+    "nameEn": "Israel",
+    "slug": "israel",
+    "region": "Middle East",
+    "languages": [
+      "he",
+      "ar",
+      "en"
+    ],
+    "currencyCode": "ILS",
+    "timeZonePrimary": "Asia/Jerusalem",
+    "internetNotes": "Excellent broadband and mobile infrastructure. Bezeq, Partner, and Cellcom are major providers. Strong tech sector. Internet speeds in Israel have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Israel's tech-savvy population widely uses VPNs for security and privacy. Remote workers in Israel commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "ILS-based. Credit cards dominant. Bit and PayBox mobile payments growing. International payments well-supported. Most international VPN providers accept payment methods commonly used in Israel, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels, cafés, and public spaces. Ben Gurion airport has free Wi-Fi. Visitors to Israel should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AR",
+    "iso3": "ARG",
+    "nameEn": "Argentina",
+    "slug": "argentina",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "ARS",
+    "timeZonePrimary": "America/Argentina/Buenos_Aires",
+    "internetNotes": "Good urban coverage. Telecom Argentina, Claro, and Movistar are major providers. Economic instability affects pricing. Internet speeds in Argentina have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Popular among tech workers and for accessing region-locked content. Remote workers in Argentina commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "ARS-based. Currency controls make international payments complex. MercadoPago widely used. Prepaying in USD recommended. Most international VPN providers accept payment methods commonly used in Argentina, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi common in Buenos Aires cafés and hotels. BA Wi-Fi municipal network available. Visitors to Argentina should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CO",
+    "iso3": "COL",
+    "nameEn": "Colombia",
+    "slug": "colombia",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "COP",
+    "timeZonePrimary": "America/Bogota",
+    "internetNotes": "Good and improving coverage. Claro, Movistar, and Tigo are major providers. Growing fiber deployment in cities. Internet speeds in Colombia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Medellín and Bogotá have large digital nomad communities driving VPN adoption. Remote workers in Colombia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "COP-based. PSE bank transfers common. Cash still important. Nequi and Daviplata mobile payments growing. Most international VPN providers accept payment methods commonly used in Colombia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels, cafés, and co-working spaces. Digital nomad infrastructure well-developed in major cities. Visitors to Colombia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CL",
+    "iso3": "CHL",
+    "nameEn": "Chile",
+    "slug": "chile",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "CLP",
+    "timeZonePrimary": "America/Santiago",
+    "internetNotes": "Best internet infrastructure in Latin America. Movistar, Entel, and Claro are major providers. High broadband penetration. Internet speeds in Chile have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Chile has strong net neutrality laws and a tech-forward population. Remote workers in Chile commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "CLP-based. Card payments common. WebPay dominant for online payments. International cards accepted. Most international VPN providers accept payment methods commonly used in Chile, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels, cafés, and airports. Santiago has extensive Wi-Fi coverage. Visitors to Chile should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "PH",
+    "iso3": "PHL",
+    "nameEn": "Philippines",
+    "slug": "philippines",
+    "region": "APAC",
+    "languages": [
+      "fil",
+      "en"
+    ],
+    "currencyCode": "PHP",
+    "timeZonePrimary": "Asia/Manila",
+    "internetNotes": "Improving but historically slow. Globe and Smart are major providers. Mobile data widely used. Starlink expanding in rural areas. Internet speeds in Philippines have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and unrestricted. Growing BPO and remote work sector drives adoption. Remote workers in Philippines commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "PHP-based. GCash and Maya dominate mobile payments. Cash still widely used. International cards accepted online. Most international VPN providers accept payment methods commonly used in Philippines, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and malls. Café and restaurant Wi-Fi common but speeds vary. Prepaid SIM data affordable. Visitors to Philippines should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "VN",
+    "iso3": "VNM",
+    "nameEn": "Vietnam",
+    "slug": "vietnam",
+    "region": "APAC",
+    "languages": [
+      "vi"
+    ],
+    "currencyCode": "VND",
+    "timeZonePrimary": "Asia/Ho_Chi_Minh",
+    "internetNotes": "Good and improving mobile coverage. Viettel, VNPT, and Mobifone are major providers. Government monitors and censors some content. Internet speeds in Vietnam have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common despite government restrictions. Facebook and some news sites are occasionally blocked. Many VPN services work reliably. Remote workers in Vietnam commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "VND-based. Cash still dominant. MoMo and ZaloPay mobile wallets growing. International cards accepted at major outlets. Most international VPN providers accept payment methods commonly used in Vietnam, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Free Wi-Fi extremely common in cafés, hotels, and restaurants. Vietnam is popular with digital nomads. Visitors to Vietnam should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MY",
+    "iso3": "MYS",
+    "nameEn": "Malaysia",
+    "slug": "malaysia",
+    "region": "APAC",
+    "languages": [
+      "ms",
+      "en"
+    ],
+    "currencyCode": "MYR",
+    "timeZonePrimary": "Asia/Kuala_Lumpur",
+    "internetNotes": "Good broadband and mobile coverage. Maxis, Celcom, and Digi (now CelcomDigi) are major providers. Some content blocked. Internet speeds in Malaysia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal. Used to access blocked content and for privacy. No significant restrictions on VPN use. Remote workers in Malaysia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MYR-based. DuitNow, Touch 'n Go eWallet, and card payments common. International payments supported. Most international VPN providers accept payment methods commonly used in Malaysia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in malls, hotels, and cafés. Kuala Lumpur well-connected. Affordable prepaid SIM data available. Visitors to Malaysia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "ID",
+    "iso3": "IDN",
+    "nameEn": "Indonesia",
+    "slug": "indonesia",
+    "region": "APAC",
+    "languages": [
+      "id"
+    ],
+    "currencyCode": "IDR",
+    "timeZonePrimary": "Asia/Jakarta",
+    "internetNotes": "Mobile-first internet market. Telkomsel, Indosat, and XL are major carriers. Reddit, some streaming sites, and adult content blocked. Internet speeds in Indonesia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and widely used to access blocked sites. Government blocks various websites but does not restrict VPN use itself. Remote workers in Indonesia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "IDR-based. GoPay, OVO, and Dana dominate mobile payments. Cash still important in many areas. Most international VPN providers accept payment methods commonly used in Indonesia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafés, especially in Bali and Jakarta. Mobile data affordable. Coverage varies by island. Visitors to Indonesia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "TW",
+    "iso3": "TWN",
+    "nameEn": "Taiwan",
+    "slug": "taiwan",
+    "region": "APAC",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "currencyCode": "TWD",
+    "timeZonePrimary": "Asia/Taipei",
+    "internetNotes": "Excellent broadband and mobile infrastructure. Chunghwa Telecom is the largest provider. Very fast average speeds. No censorship. Internet speeds in Taiwan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal and unrestricted. Free and open internet. Some users use VPNs for international content access. Remote workers in Taiwan commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "TWD-based. LINE Pay and JKoPay growing. Credit cards and convenience store payments common. Most international VPN providers accept payment methods commonly used in Taiwan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "iTaiwan free Wi-Fi network available. Excellent coverage in cities. MRT stations and convenience stores have Wi-Fi. Visitors to Taiwan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "NZ",
+    "iso3": "NZL",
+    "nameEn": "New Zealand",
+    "slug": "new-zealand",
+    "region": "APAC",
+    "languages": [
+      "en",
+      "mi"
+    ],
+    "currencyCode": "NZD",
+    "timeZonePrimary": "Pacific/Auckland",
+    "internetNotes": "Good broadband coverage. Spark, Vodafone, and 2degrees are major providers. Fiber rollout progressing well. Internet speeds in New Zealand have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Five Eyes alliance member. Privacy-conscious users and remote workers drive adoption. Remote workers in New Zealand commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "NZD-based. Card payments dominant. Paymark and POLi common. International cards accepted. Most international VPN providers accept payment methods commonly used in New Zealand, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels, cafés, and libraries. Coverage can be limited in rural and remote areas. Visitors to New Zealand should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "PT",
+    "iso3": "PRT",
+    "nameEn": "Portugal",
+    "slug": "portugal",
+    "region": "Europe",
+    "languages": [
+      "pt"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Lisbon",
+    "internetNotes": "Good broadband and mobile coverage. MEO, NOS, and Vodafone are major providers. Popular digital nomad destination. Internet speeds in Portugal have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Lisbon's large remote work community drives VPN adoption. Strong GDPR enforcement. Remote workers in Portugal commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. MB Way dominant for mobile payments. Card payments widely accepted. Multibanco network extensive. Most international VPN providers accept payment methods commonly used in Portugal, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi in cafés, hotels, and co-working spaces. Lisbon and Porto are well-connected. Digital nomad infrastructure mature. Visitors to Portugal should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GR",
+    "iso3": "GRC",
+    "nameEn": "Greece",
+    "slug": "greece",
+    "region": "Europe",
+    "languages": [
+      "el",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Athens",
+    "internetNotes": "Improving broadband coverage. COSMOTE, Vodafone, and Nova are major providers. Island connectivity can be limited. Internet speeds in Greece have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Used by tourists and remote workers, especially on islands with less secure networks. Remote workers in Greece commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments widely accepted. Cash still common in smaller establishments and islands. Most international VPN providers accept payment methods commonly used in Greece, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in most hotels and tavernas. Island Wi-Fi quality varies. Mainland cities well-connected. Visitors to Greece should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CZ",
+    "iso3": "CZE",
+    "nameEn": "Czech Republic",
+    "slug": "czech-republic",
+    "region": "Europe",
+    "languages": [
+      "cs",
+      "en"
+    ],
+    "currencyCode": "CZK",
+    "timeZonePrimary": "Europe/Prague",
+    "internetNotes": "Good broadband and mobile coverage. O2, T-Mobile, and Vodafone are major providers. Prague has excellent connectivity. Internet speeds in Czech Republic have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Prague's tech scene and remote work community drive adoption. Remote workers in Czech Republic commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "CZK-based. Card payments widely accepted. Cash declining. International payments well-supported. Most international VPN providers accept payment methods commonly used in Czech Republic, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi in Prague cafés, hotels, and public spaces. Good coverage in other major cities. Visitors to Czech Republic should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AT",
+    "iso3": "AUT",
+    "nameEn": "Austria",
+    "slug": "austria",
+    "region": "Europe",
+    "languages": [
+      "de"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Vienna",
+    "internetNotes": "Good broadband infrastructure. A1, Magenta, and Drei are major providers. Strong data protection enforcement. Internet speeds in Austria have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Austrian users value privacy. GDPR strongly enforced. Remote workers in Austria commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments common. eps online banking transfers popular. Cash still accepted. Most international VPN providers accept payment methods commonly used in Austria, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels, cafés, and ski resorts. Vienna well-connected. Mountain areas may have limited coverage. Visitors to Austria should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "IE",
+    "iso3": "IRL",
+    "nameEn": "Ireland",
+    "slug": "ireland",
+    "region": "Europe",
+    "languages": [
+      "en",
+      "ga"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Dublin",
+    "internetNotes": "Good broadband coverage improving with fiber. Eir, Virgin Media, and Three are major providers. Major tech company HQ hub. Internet speeds in Ireland have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Ireland hosts many tech company European HQs. Strong GDPR enforcement via DPC. Remote workers in Ireland commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card and contactless payments dominant. Revolut very popular. Most international VPN providers accept payment methods commonly used in Ireland, including major credit cards, PayPal, and cryptocurrency options. When purchasing a VPN subscription from Ireland, compare pricing carefully as some providers offer regional pricing or discounts for longer-term plans.",
+    "travelNotes": "Good Wi-Fi in hotels, pubs, and cafés. Dublin well-connected. Rural areas may have slower speeds. Visitors to Ireland should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "DK",
+    "iso3": "DNK",
+    "nameEn": "Denmark",
+    "slug": "denmark",
+    "region": "Europe",
+    "languages": [
+      "da",
+      "en"
+    ],
+    "currencyCode": "DKK",
+    "timeZonePrimary": "Europe/Copenhagen",
+    "internetNotes": "Excellent broadband and mobile coverage. TDC, Telenor, and 3 are major providers. Very high digital literacy. Internet speeds in Denmark have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Denmark has strong digital infrastructure and privacy awareness. Remote workers in Denmark commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "DKK-based. MobilePay dominant. Nearly cashless. Cards and contactless widely accepted. Most international VPN providers accept payment methods commonly used in Denmark, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi coverage in public spaces, hotels, and cafés. Copenhagen extremely well-connected. Visitors to Denmark should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "FI",
+    "iso3": "FIN",
+    "nameEn": "Finland",
+    "slug": "finland",
+    "region": "Europe",
+    "languages": [
+      "fi",
+      "sv",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Helsinki",
+    "internetNotes": "Excellent broadband and mobile coverage. Elisa, DNA, and Telia are major providers. Internet access considered a legal right. Internet speeds in Finland have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Finland's strong privacy laws and tech-savvy population make VPN adoption natural. Remote workers in Finland commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card and mobile payments dominant. MobilePay and Pivo used. Very low cash usage. Most international VPN providers accept payment methods commonly used in Finland, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi coverage. Public libraries, cafés, and transport have free Wi-Fi. Helsinki very well-connected. Visitors to Finland should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "NO",
+    "iso3": "NOR",
+    "nameEn": "Norway",
+    "slug": "norway",
+    "region": "Europe",
+    "languages": [
+      "no",
+      "en"
+    ],
+    "currencyCode": "NOK",
+    "timeZonePrimary": "Europe/Oslo",
+    "internetNotes": "Excellent broadband and mobile coverage. Telenor, Telia, and Ice are major providers. High internet speeds nationwide. Internet speeds in Norway have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Strong privacy traditions. Norwegians are privacy-conscious and digitally literate. Remote workers in Norway commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "NOK-based. Vipps mobile payments dominant. Nearly cashless society. Cards and contactless widely accepted. Most international VPN providers accept payment methods commonly used in Norway, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi in hotels, cafés, and public spaces. Very well-connected even in remote areas. Visitors to Norway should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "RO",
+    "iso3": "ROU",
+    "nameEn": "Romania",
+    "slug": "romania",
+    "region": "Europe",
+    "languages": [
+      "ro",
+      "en"
+    ],
+    "currencyCode": "RON",
+    "timeZonePrimary": "Europe/Bucharest",
+    "internetNotes": "Surprisingly fast and affordable internet. Digi (RCS & RDS) offers some of Europe's fastest speeds. Orange and Vodafone also present. Internet speeds in Romania have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Romania's tech sector is growing and remote work is expanding. Remote workers in Romania commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "RON-based. Card payments growing. Cash still common. International cards accepted online. Most international VPN providers accept payment methods commonly used in Romania, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and cafés. Bucharest and Cluj-Napoca well-connected. Fast mobile data affordable. Visitors to Romania should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "HU",
+    "iso3": "HUN",
+    "nameEn": "Hungary",
+    "slug": "hungary",
+    "region": "Europe",
+    "languages": [
+      "hu"
+    ],
+    "currencyCode": "HUF",
+    "timeZonePrimary": "Europe/Budapest",
+    "internetNotes": "Good broadband coverage. Magyar Telekom, Vodafone, and Yettel are major providers. Budapest has excellent connectivity. Internet speeds in Hungary have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Growing remote work and tech community in Budapest. Remote workers in Hungary commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "HUF-based. Card payments common. Cash still used in smaller establishments. Revolut popular. Most international VPN providers accept payment methods commonly used in Hungary, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels, ruin bars, and cafés. Budapest thermal baths increasingly offer Wi-Fi. Visitors to Hungary should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SA",
+    "iso3": "SAU",
+    "nameEn": "Saudi Arabia",
+    "slug": "saudi-arabia",
+    "region": "Middle East",
+    "languages": [
+      "ar"
+    ],
+    "currencyCode": "SAR",
+    "timeZonePrimary": "Asia/Riyadh",
+    "internetNotes": "Good infrastructure. STC, Mobily, and Zain are major providers. Government filters internet content extensively. Internet speeds in Saudi Arabia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common despite content filtering. Personal VPN use is generally tolerated. Used widely for VoIP access. Remote workers in Saudi Arabia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "SAR-based. Mada card payments dominant. Apple Pay and STC Pay growing. International cards accepted. Most international VPN providers accept payment methods commonly used in Saudi Arabia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and malls. VPN useful for VoIP calls. 5G coverage expanding rapidly. Visitors to Saudi Arabia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "PK",
+    "iso3": "PAK",
+    "nameEn": "Pakistan",
+    "slug": "pakistan",
+    "region": "APAC",
+    "languages": [
+      "ur",
+      "en"
+    ],
+    "currencyCode": "PKR",
+    "timeZonePrimary": "Asia/Karachi",
+    "internetNotes": "Growing mobile internet. Jazz, Telenor, and Zong are major carriers. Government blocks content and has imposed internet shutdowns. Internet speeds in Pakistan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is widespread despite government attempts to restrict it. Used to access blocked social media and websites. Remote workers in Pakistan commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "PKR-based. JazzCash and Easypaisa mobile wallets popular. Cash dominant. International card acceptance limited. Most international VPN providers accept payment methods commonly used in Pakistan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in major cities. Mobile data coverage good in urban areas. VPN recommended. Visitors to Pakistan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BD",
+    "iso3": "BGD",
+    "nameEn": "Bangladesh",
+    "slug": "bangladesh",
+    "region": "APAC",
+    "languages": [
+      "bn",
+      "en"
+    ],
+    "currencyCode": "BDT",
+    "timeZonePrimary": "Asia/Dhaka",
+    "internetNotes": "Mobile-first market. Grameenphone, Robi, and Banglalink are major carriers. Government has imposed internet shutdowns and content blocking. Internet speeds in Bangladesh have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is legal but the government has blocked VPN services during shutdowns. Used to access blocked content. Remote workers in Bangladesh commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BDT-based. bKash and Nagad mobile money dominant. Cash widely used. International card acceptance limited online. Most international VPN providers accept payment methods commonly used in Bangladesh, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Dhaka and Chittagong. Mobile data is the primary internet access. Affordable SIM data. Visitors to Bangladesh should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "UA",
+    "iso3": "UKR",
+    "nameEn": "Ukraine",
+    "slug": "ukraine",
+    "region": "Europe",
+    "languages": [
+      "uk",
+      "en"
+    ],
+    "currencyCode": "UAH",
+    "timeZonePrimary": "Europe/Kyiv",
+    "internetNotes": "Good internet infrastructure despite ongoing conflict. Kyivstar, Vodafone, and lifecell are major providers. Some Russian services blocked. Internet speeds in Ukraine have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and widely used. Popular for security and accessing services. Conflict has increased cybersecurity awareness. Remote workers in Ukraine commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "UAH-based. Monobank and PrivatBank cards dominant. International payments affected by wartime restrictions. Most international VPN providers accept payment methods commonly used in Ukraine, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi available in areas with stable infrastructure. Connectivity disrupted in conflict zones. Starlink expanding. Visitors to Ukraine should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "PE",
+    "iso3": "PER",
+    "nameEn": "Peru",
+    "slug": "peru",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "PEN",
+    "timeZonePrimary": "America/Lima",
+    "internetNotes": "Improving coverage. Movistar, Claro, and Entel are major providers. Urban areas well-connected. Rural coverage limited. Internet speeds in Peru have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Growing remote work scene, especially in Lima and Cusco. Remote workers in Peru commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "PEN-based. Yape and Plin mobile payments growing rapidly. Cash still important. International cards accepted online. Most international VPN providers accept payment methods commonly used in Peru, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and tourist cafés. Lima and Cusco have good coverage. Mountain and jungle areas limited. Visitors to Peru should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MA",
+    "iso3": "MAR",
+    "nameEn": "Morocco",
+    "slug": "morocco",
+    "region": "Africa",
+    "languages": [
+      "ar",
+      "fr"
+    ],
+    "currencyCode": "MAD",
+    "timeZonePrimary": "Africa/Casablanca",
+    "internetNotes": "Good mobile coverage. Maroc Telecom, Orange, and Inwi are major providers. VoIP services restricted. Internet speeds in Morocco have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and commonly used to access VoIP services like WhatsApp calls which are restricted. Remote workers in Morocco commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MAD-based. Cash dominant. Card payments growing in cities. International cards accepted at major establishments. Most international VPN providers accept payment methods commonly used in Morocco, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in most riads, hotels, and cafés. Tourist areas generally well-covered. VPN useful for VoIP. Visitors to Morocco should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "HR",
+    "iso3": "HRV",
+    "nameEn": "Croatia",
+    "slug": "croatia",
+    "region": "Europe",
+    "languages": [
+      "hr",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Zagreb",
+    "internetNotes": "Good broadband and mobile coverage. Hrvatski Telekom, A1, and Telemach are major providers. Recently adopted the Euro. Internet speeds in Croatia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Growing digital nomad scene, especially along the Adriatic coast. Remote workers in Croatia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based (adopted 2023). Card payments common. Cash still used in smaller establishments. Most international VPN providers accept payment methods commonly used in Croatia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and cafés. Coastal tourist areas well-connected. Digital nomad visas available. Visitors to Croatia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BG",
+    "iso3": "BGR",
+    "nameEn": "Bulgaria",
+    "slug": "bulgaria",
+    "region": "Europe",
+    "languages": [
+      "bg",
+      "en"
+    ],
+    "currencyCode": "BGN",
+    "timeZonePrimary": "Europe/Sofia",
+    "internetNotes": "Fast and affordable internet. Vivacom, A1, and Yettel are major providers. Fiber widely available in cities. Internet speeds in Bulgaria have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Bulgaria's affordable cost of living and fast internet attract remote workers. Remote workers in Bulgaria commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BGN-based. Card payments growing. Cash still common. International cards accepted at major outlets. Most international VPN providers accept payment methods commonly used in Bulgaria, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and cafés. Sofia and seaside resorts well-connected. Fast mobile data affordable. Visitors to Bulgaria should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "RS",
+    "iso3": "SRB",
+    "nameEn": "Serbia",
+    "slug": "serbia",
+    "region": "Europe",
+    "languages": [
+      "sr",
+      "en"
+    ],
+    "currencyCode": "RSD",
+    "timeZonePrimary": "Europe/Belgrade",
+    "internetNotes": "Good internet infrastructure. SBB, MTS, and Yettel are major providers. Fast speeds at affordable prices. Internet speeds in Serbia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Belgrade's growing tech scene drives adoption. Remote workers in Serbia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "RSD-based. Card payments growing. Cash still widely used. International cards accepted online. Most international VPN providers accept payment methods commonly used in Serbia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Belgrade hotels and cafés. Novi Sad well-connected. Rural areas may have slower speeds. Visitors to Serbia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GH",
+    "iso3": "GHA",
+    "nameEn": "Ghana",
+    "slug": "ghana",
+    "region": "Africa",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "GHS",
+    "timeZonePrimary": "Africa/Accra",
+    "internetNotes": "Growing mobile internet market. MTN, Vodafone, and AirtelTigo are major carriers. Mobile data is the primary internet access. Internet speeds in Ghana have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal and unrestricted. Growing tech community in Accra drives adoption. Remote workers in Ghana commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "GHS-based. Mobile Money (MTN MoMo) dominant. Cash important. International card acceptance growing. Most international VPN providers accept payment methods commonly used in Ghana, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and some cafés in Accra. Mobile data recommended. SIM cards easily available. Visitors to Ghana should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CR",
+    "iso3": "CRI",
+    "nameEn": "Costa Rica",
+    "slug": "costa-rica",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "CRC",
+    "timeZonePrimary": "America/Costa_Rica",
+    "internetNotes": "Good internet coverage. ICE (Kolbi), Claro, and Movistar are providers. Good 4G coverage in populated areas. Internet speeds in Costa Rica have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Popular digital nomad destination with growing remote work infrastructure. Remote workers in Costa Rica commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "CRC-based. SINPE Móvil popular domestically. Cards accepted in tourist areas. Cash used in rural areas. Most international VPN providers accept payment methods commonly used in Costa Rica, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafés, especially in San José and tourist areas. Eco-lodges may have limited connectivity. Visitors to Costa Rica should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "PA",
+    "iso3": "PAN",
+    "nameEn": "Panama",
+    "slug": "panama",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "America/Panama",
+    "internetNotes": "Decent coverage. Cable & Wireless (Más Móvil) and Digicel are major providers. Panama City well-connected. Internet speeds in Panama have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Panama's banking sector and international business community drive VPN adoption. Remote workers in Panama commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based. Card payments common in Panama City. Cash important outside the capital. Most international VPN providers accept payment methods commonly used in Panama, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Panama City hotels and cafés. Coverage limited in rural and indigenous areas. Visitors to Panama should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "IS",
+    "iso3": "ISL",
+    "nameEn": "Iceland",
+    "slug": "iceland",
+    "region": "Europe",
+    "languages": [
+      "is",
+      "en"
+    ],
+    "currencyCode": "ISK",
+    "timeZonePrimary": "Atlantic/Reykjavik",
+    "internetNotes": "Excellent broadband. Síminn and Vodafone are major providers. Very high internet penetration and digital literacy. Internet speeds in Iceland have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Iceland's strong privacy laws and clean energy make it attractive for data centers. Remote workers in Iceland commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "ISK-based. Nearly cashless. Card payments universal. International cards widely accepted. Most international VPN providers accept payment methods commonly used in Iceland, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels, cafés, and gas stations. Coverage can be limited in the highlands and remote areas. Visitors to Iceland should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "EE",
+    "iso3": "EST",
+    "nameEn": "Estonia",
+    "slug": "estonia",
+    "region": "Europe",
+    "languages": [
+      "et",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Tallinn",
+    "internetNotes": "Excellent digital infrastructure. E-Residency program. Telia, Elisa, and Tele2 are major providers. Pioneer in e-governance. Internet speeds in Estonia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Estonia's digital-first culture and e-Residency program attract tech-savvy users. Remote workers in Estonia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card and mobile payments dominant. Very low cash usage. International payments well-supported. Most international VPN providers accept payment methods commonly used in Estonia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent free Wi-Fi coverage. Tallinn is one of the most connected cities in Europe. Visitors to Estonia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LT",
+    "iso3": "LTU",
+    "nameEn": "Lithuania",
+    "slug": "lithuania",
+    "region": "Europe",
+    "languages": [
+      "lt",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Vilnius",
+    "internetNotes": "Good broadband and mobile coverage. Telia, Bite, and Tele2 are major providers. Growing fintech sector. Internet speeds in Lithuania have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Growing tech and startup ecosystem drives adoption. Remote workers in Lithuania commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments common. Cash declining. International payments well-supported. Most international VPN providers accept payment methods commonly used in Lithuania, including major credit cards, PayPal, and cryptocurrency options. When purchasing a VPN subscription from Lithuania, compare pricing carefully as some providers offer regional pricing or discounts for longer-term plans.",
+    "travelNotes": "Good Wi-Fi in Vilnius hotels and cafés. Coverage good in major cities. Visitors to Lithuania should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LV",
+    "iso3": "LVA",
+    "nameEn": "Latvia",
+    "slug": "latvia",
+    "region": "Europe",
+    "languages": [
+      "lv",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Riga",
+    "internetNotes": "Good broadband infrastructure. Tet, Bite, and LMT are major providers. Affordable pricing. Internet speeds in Latvia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Growing IT sector drives adoption. Remote workers in Latvia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces. VPN adoption has grown in Latvia as awareness of online privacy and data protection has increased among both individuals and businesses.",
+    "paymentNotes": "Euro-based. Card payments common. Cash declining. International payments supported. Most international VPN providers accept payment methods commonly used in Latvia, including major credit cards, PayPal, and cryptocurrency options. When purchasing a VPN subscription from Latvia, compare pricing carefully as some providers offer regional pricing or discounts for longer-term plans.",
+    "travelNotes": "Good Wi-Fi in Riga hotels, cafés, and public areas. Free Wi-Fi in many public spaces. Visitors to Latvia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SK",
+    "iso3": "SVK",
+    "nameEn": "Slovakia",
+    "slug": "slovakia",
+    "region": "Europe",
+    "languages": [
+      "sk"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Bratislava",
+    "internetNotes": "Good broadband coverage in major cities. Slovak Telekom, Orange, and O2 are the main providers. Fiber expansion ongoing in urban areas, providing increasingly fast connections for remote workers.",
+    "vpnNotes": "VPNs are fully legal and unrestricted in Slovakia. Growing tech sector in Bratislava drives VPN adoption among developers and remote workers. No government restrictions on VPN usage.",
+    "paymentNotes": "Euro-based since 2009. Card payments widely accepted. Slovak banking apps popular domestically. Most international VPN providers accept standard European payment methods including cards and PayPal.",
+    "travelNotes": "Good Wi-Fi in hotels and cafes in Bratislava and Kosice. Coverage thinner in rural areas and mountain regions. Affordable mobile data plans available from local carriers for visitors.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SI",
+    "iso3": "SVN",
+    "nameEn": "Slovenia",
+    "slug": "slovenia",
+    "region": "Europe",
+    "languages": [
+      "sl",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Ljubljana",
+    "internetNotes": "Excellent broadband infrastructure for its size. Telekom Slovenije, A1, and T-2 are major providers. Fast fiber widely available in Ljubljana and major towns. Internet speeds in Slovenia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Slovenia. The country has strong digital infrastructure and growing remote work culture, especially in Ljubljana's tech scene. Remote workers in Slovenia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments common. International payment methods well-supported. Most VPN providers accept standard European payment options. Most international VPN providers accept payment methods commonly used in Slovenia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Ljubljana hotels, cafes, and tourist areas. Lake Bled and coastal areas generally well-connected. Mountain huts may have limited connectivity. Visitors to Slovenia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LU",
+    "iso3": "LUX",
+    "nameEn": "Luxembourg",
+    "slug": "luxembourg",
+    "region": "Europe",
+    "languages": [
+      "lb",
+      "fr",
+      "de"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Luxembourg",
+    "internetNotes": "Excellent broadband infrastructure. POST Luxembourg, Tango, and Orange are major providers. Very high internet penetration and speeds across the country. Internet speeds in Luxembourg have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal. Luxembourg hosts major tech companies and EU institutions, driving strong VPN adoption for professional and privacy use. Remote workers in Luxembourg commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments dominant. International payment methods widely accepted across all services and platforms. Most international VPN providers accept payment methods commonly used in Luxembourg, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi coverage nationwide. Hotels, cafes, and public spaces well-connected. Very small country means comprehensive mobile coverage. Visitors to Luxembourg should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MT",
+    "iso3": "MLT",
+    "nameEn": "Malta",
+    "slug": "malta",
+    "region": "Europe",
+    "languages": [
+      "mt",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Malta",
+    "internetNotes": "Good broadband coverage for a small island nation. GO, Melita, and Epic are the main providers. Growing iGaming and fintech sectors drive strong digital infrastructure.",
+    "vpnNotes": "VPNs are fully legal in Malta. The island's large iGaming industry and digital nomad community drive VPN adoption. English widely spoken makes tech support easy.",
+    "paymentNotes": "Euro-based. Card payments widely accepted. International payment methods work well for VPN subscriptions and online services. Most international VPN providers accept payment methods commonly used in Malta, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels, restaurants, and public areas. Strong mobile coverage across the main islands. Digital nomad infrastructure growing. Visitors to Malta should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CY",
+    "iso3": "CYP",
+    "nameEn": "Cyprus",
+    "slug": "cyprus",
+    "region": "Europe",
+    "languages": [
+      "el",
+      "tr",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Asia/Nicosia",
+    "internetNotes": "Good broadband coverage. CYTA, MTN, and Epic are main providers. Improving fiber deployment in main cities. Good mobile coverage island-wide. Internet speeds in Cyprus have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Cyprus. Popular among expats and remote workers. The island has a growing tech startup scene driving VPN adoption. Remote workers in Cyprus commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments common. International payment methods accepted. Some services may have different availability in northern Cyprus. Most international VPN providers accept payment methods commonly used in Cyprus, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resort hotels and cafes. Limassol and Nicosia well-connected. Beach areas and rural villages may have weaker coverage. Visitors to Cyprus should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "UY",
+    "iso3": "URY",
+    "nameEn": "Uruguay",
+    "slug": "uruguay",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "UYU",
+    "timeZonePrimary": "America/Montevideo",
+    "internetNotes": "Best internet infrastructure in Latin America alongside Chile. Antel (state-owned) provides excellent fiber coverage. High broadband penetration for the region. Internet speeds in Uruguay have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal and unrestricted. Uruguay has strong digital rights and privacy protections. Growing remote work and tech sector in Montevideo. Remote workers in Uruguay commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "UYU-based. Card payments common in Montevideo. Cash still used in smaller towns. International VPN providers accept standard payment methods. Most international VPN providers accept payment methods commonly used in Uruguay, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Montevideo hotels and cafes. Punta del Este tourist areas well-connected. Rural areas may have limited coverage. Free public Wi-Fi in many parks.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "EC",
+    "iso3": "ECU",
+    "nameEn": "Ecuador",
+    "slug": "ecuador",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "America/Guayaquil",
+    "internetNotes": "Improving internet coverage. CNT, Claro, and Movistar are major providers. USD economy makes pricing simple. Good 4G in major cities, limited in rural and jungle areas.",
+    "vpnNotes": "VPNs are fully legal in Ecuador. Growing digital nomad community in Cuenca and Quito drives VPN adoption. No government restrictions on VPN use. Remote workers in Ecuador commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based, simplifying international payments. Card payments accepted in major cities. Cash still important outside urban centers. International payment methods work well. Most international VPN providers accept payment methods commonly used in Ecuador, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and cafes in Quito, Guayaquil, and Cuenca. Galapagos has limited and expensive connectivity. Amazon region has minimal coverage. Visitors to Ecuador should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "DO",
+    "iso3": "DOM",
+    "nameEn": "Dominican Republic",
+    "slug": "dominican-republic",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "DOP",
+    "timeZonePrimary": "America/Santo_Domingo",
+    "internetNotes": "Improving broadband and mobile coverage. Claro, Altice, and Viva are major providers. Good 4G coverage in Santo Domingo and tourist areas. Rural coverage still developing.",
+    "vpnNotes": "VPNs are fully legal in the Dominican Republic. Growing remote work scene and tourism industry drive adoption. No restrictions on VPN services. Remote workers in Dominican Republic commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "DOP-based. USD also widely accepted in tourist areas. Card payments common in resorts and major cities. Cash important in local businesses. Most international VPN providers accept payment methods commonly used in Dominican Republic, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resorts and tourist hotels. Punta Cana, Santo Domingo well-connected. Local cafes may have slower connections. Affordable prepaid SIM cards available. Visitors to Dominican Republic should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GT",
+    "iso3": "GTM",
+    "nameEn": "Guatemala",
+    "slug": "guatemala",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "GTQ",
+    "timeZonePrimary": "America/Guatemala",
+    "internetNotes": "Growing mobile internet market. Tigo, Claro, and Movistar are major carriers. Good coverage in Guatemala City and tourist towns. Rural areas have limited connectivity. Internet speeds in Guatemala have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Guatemala. Used by the growing digital nomad community in Antigua and Lake Atitlan. No government restrictions. Remote workers in Guatemala commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "GTQ-based. Cash dominant. Card payments accepted in tourist areas and major businesses. International payment methods available for online purchases. Most international VPN providers accept payment methods commonly used in Guatemala, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafes in Antigua, Guatemala City, and tourist areas. Lake Atitlan has variable quality. Remote areas may have no coverage at all.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "JM",
+    "iso3": "JAM",
+    "nameEn": "Jamaica",
+    "slug": "jamaica",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "JMD",
+    "timeZonePrimary": "America/Jamaica",
+    "internetNotes": "Decent coverage in urban areas. Digicel and FLOW are the main providers. Good 4G in Kingston and tourist areas. Rural and mountain areas can have limited connectivity.",
+    "vpnNotes": "VPNs are fully legal in Jamaica. English-speaking makes support easy. Used by tourists and remote workers in Montego Bay and Kingston. Remote workers in Jamaica commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "JMD-based. USD widely accepted in tourist areas. Card payments accepted in major businesses and resorts. Cash important in local shops. Most international VPN providers accept payment methods commonly used in Jamaica, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resort hotels and major cafes. Tourist areas like Montego Bay and Negril well-connected. Rural areas may have limited or no Wi-Fi. Visitors to Jamaica should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "TT",
+    "iso3": "TTO",
+    "nameEn": "Trinidad and Tobago",
+    "slug": "trinidad-and-tobago",
+    "region": "Americas",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "TTD",
+    "timeZonePrimary": "America/Port_of_Spain",
+    "internetNotes": "Good internet infrastructure for the Caribbean. TSTT, Digicel, and bmobile are providers. Strong coverage in Port of Spain. Tobago has decent but less comprehensive coverage.",
+    "vpnNotes": "VPNs are fully legal in Trinidad and Tobago. English-speaking nation with growing tech sector. No restrictions on VPN use. Remote workers in Trinidad and Tobago commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "TTD-based. Card payments common in major businesses. International payment methods accepted online. Cash still widely used locally. Most international VPN providers accept payment methods commonly used in Trinidad and Tobago, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels in Port of Spain and Crown Point, Tobago. Beach areas generally well-connected. Rural areas may have limited coverage. Visitors to Trinidad and Tobago should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LK",
+    "iso3": "LKA",
+    "nameEn": "Sri Lanka",
+    "slug": "sri-lanka",
+    "region": "APAC",
+    "languages": [
+      "si",
+      "ta",
+      "en"
+    ],
+    "currencyCode": "LKR",
+    "timeZonePrimary": "Asia/Colombo",
+    "internetNotes": "Growing mobile internet market. Dialog, Mobitel, and Hutch are major carriers. Good 4G coverage in Colombo and tourist areas. Rural coverage improving. Government has imposed internet shutdowns during crises.",
+    "vpnNotes": "VPNs are legal in Sri Lanka. Social media was temporarily blocked during the 2022 crisis, driving massive VPN adoption. VPNs are now commonly used for privacy and accessing content.",
+    "paymentNotes": "LKR-based. Card payments accepted in tourist areas and major businesses. Cash dominant in local shops. International payment methods available online. Most international VPN providers accept payment methods commonly used in Sri Lanka, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and guesthouses in Colombo, Kandy, and southern coast. Tourist areas generally have decent coverage. Prepaid SIM data very affordable. Visitors to Sri Lanka should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "NP",
+    "iso3": "NPL",
+    "nameEn": "Nepal",
+    "slug": "nepal",
+    "region": "APAC",
+    "languages": [
+      "ne",
+      "en"
+    ],
+    "currencyCode": "NPR",
+    "timeZonePrimary": "Asia/Kathmandu",
+    "internetNotes": "Growing internet penetration, primarily mobile. Nepal Telecom and Ncell are major carriers. Good coverage in Kathmandu Valley. Mountain areas including trekking routes have limited or no connectivity.",
+    "vpnNotes": "VPNs are legal in Nepal. Used by the tech community and tourists. Government has occasionally restricted social media access. TikTok was banned in 2023-2024. Remote workers in Nepal commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "NPR-based. Cash dominant. Card payments limited to major hotels and restaurants in tourist areas. International payment methods needed for online VPN purchases. Most international VPN providers accept payment methods commonly used in Nepal, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi available in hotels and cafes in Kathmandu and Pokhara. Trekking routes have very limited connectivity. Satellite internet expanding in remote areas. Visitors to Nepal should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "KH",
+    "iso3": "KHM",
+    "nameEn": "Cambodia",
+    "slug": "cambodia",
+    "region": "APAC",
+    "languages": [
+      "km",
+      "en"
+    ],
+    "currencyCode": "KHR",
+    "timeZonePrimary": "Asia/Phnom_Penh",
+    "internetNotes": "Growing internet market, primarily mobile-first. Smart, Metfone, and Cellcard are major carriers. Good coverage in Phnom Penh and Siem Reap. Rural areas have limited connectivity.",
+    "vpnNotes": "VPNs are legal in Cambodia. Popular among the large expat and digital nomad community. Government monitors internet but VPN use is not restricted. Remote workers in Cambodia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "KHR and USD both used widely. USD dominant in tourist areas and for larger transactions. Wing and ABA Pay mobile payments growing. Cash still very important.",
+    "travelNotes": "Good Wi-Fi in hotels, hostels, and cafes in Phnom Penh and Siem Reap. Digital nomad infrastructure in major cities. Rural areas have limited coverage. Visitors to Cambodia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MM",
+    "iso3": "MMR",
+    "nameEn": "Myanmar",
+    "slug": "myanmar",
+    "region": "APAC",
+    "languages": [
+      "my"
+    ],
+    "currencyCode": "MMK",
+    "timeZonePrimary": "Asia/Yangon",
+    "internetNotes": "Internet heavily restricted since the 2021 military coup. MPT, Mytel, Ooredoo, and Telenor (sold) are carriers. Frequent shutdowns, throttling, and content blocking by the military government.",
+    "vpnNotes": "VPN use is widespread despite government attempts to block VPN services. The military regime has ordered ISPs to block VPNs. Many users rely on VPNs to access blocked social media and communication platforms.",
+    "paymentNotes": "MMK-based. International payment infrastructure severely disrupted. Cash dominant. International cards have very limited acceptance. Prepay for VPN before entering Myanmar. Most international VPN providers accept payment methods commonly used in Myanmar, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Hotel Wi-Fi available in Yangon and Mandalay but subject to restrictions and shutdowns. VPN essential but may be unreliable. Configure multiple VPN options before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "GE",
+    "iso3": "GEO",
+    "nameEn": "Georgia",
+    "slug": "georgia",
+    "region": "Europe",
+    "languages": [
+      "ka",
+      "en"
+    ],
+    "currencyCode": "GEL",
+    "timeZonePrimary": "Asia/Tbilisi",
+    "internetNotes": "Good and affordable internet. Magti, Beeline, and Geocell are major providers. Tbilisi has excellent connectivity. Georgia has become a popular digital nomad hub with competitive pricing.",
+    "vpnNotes": "VPNs are fully legal and unrestricted in Georgia. The country's growing reputation as a digital nomad destination drives VPN adoption. Free and open internet. Remote workers in Georgia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "GEL-based. Card payments widely accepted in Tbilisi. Cash important outside the capital. International payment methods work well for online purchases. Most international VPN providers accept payment methods commonly used in Georgia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi in Tbilisi hotels, cafes, and co-working spaces. Coverage good in major towns. Mountain and rural areas may have limited connectivity. Visitors to Georgia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AM",
+    "iso3": "ARM",
+    "nameEn": "Armenia",
+    "slug": "armenia",
+    "region": "Europe",
+    "languages": [
+      "hy",
+      "en"
+    ],
+    "currencyCode": "AMD",
+    "timeZonePrimary": "Asia/Yerevan",
+    "internetNotes": "Good internet infrastructure for the region. Ucom, Veon (Beeline), and Team are major providers. Yerevan has fast and affordable internet. Growing tech sector. Internet speeds in Armenia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Armenia. The country's growing tech industry and status as a regional IT hub drive adoption. No restrictions on VPN use.",
+    "paymentNotes": "AMD-based. Card payments growing in Yerevan. Cash still common. International payment methods available for online VPN subscriptions. Most international VPN providers accept payment methods commonly used in Armenia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Yerevan hotels and cafes. Coverage decent in major towns. Rural and border areas may have limited connectivity. Visitors to Armenia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AZ",
+    "iso3": "AZE",
+    "nameEn": "Azerbaijan",
+    "slug": "azerbaijan",
+    "region": "Europe",
+    "languages": [
+      "az"
+    ],
+    "currencyCode": "AZN",
+    "timeZonePrimary": "Asia/Baku",
+    "internetNotes": "Decent internet infrastructure in Baku. Azercell, Bakcell, and Nar are major carriers. Government monitors internet traffic and blocks some content periodically. Internet speeds in Azerbaijan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is legal but the government has blocked some VPN services. Social media and communication apps have been restricted during political events. Having a VPN configured before arrival is recommended.",
+    "paymentNotes": "AZN-based. Card payments growing in Baku. Cash dominant outside the capital. International card acceptance limited in smaller businesses. Most international VPN providers accept payment methods commonly used in Azerbaijan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Baku hotels and modern cafes. Coverage limited outside the capital and in rural areas. VPN recommended for accessing all services. Visitors to Azerbaijan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "QA",
+    "iso3": "QAT",
+    "nameEn": "Qatar",
+    "slug": "qatar",
+    "region": "Middle East",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "currencyCode": "QAR",
+    "timeZonePrimary": "Asia/Qatar",
+    "internetNotes": "Excellent infrastructure. Ooredoo and Vodafone Qatar are the main providers. Government filters content and blocks VoIP services. Very fast internet speeds available. Internet speeds in Qatar have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use for lawful purposes is generally tolerated. VoIP services like FaceTime and WhatsApp calls are blocked. VPNs are commonly used by expats to access VoIP and restricted content.",
+    "paymentNotes": "QAR-based. Card payments widely accepted. Apple Pay and Samsung Pay available. International payment methods work well. Most international VPN providers accept payment methods commonly used in Qatar, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Excellent Wi-Fi in hotels, malls, and the Doha Metro. VPN useful for VoIP calls. Strong 5G coverage in Doha. Configure VPN before arrival for VoIP access.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BH",
+    "iso3": "BHR",
+    "nameEn": "Bahrain",
+    "slug": "bahrain",
+    "region": "Middle East",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "currencyCode": "BHD",
+    "timeZonePrimary": "Asia/Bahrain",
+    "internetNotes": "Good internet infrastructure. Batelco, Zain, and STC are providers. Government filters some content. Generally more open than neighboring countries. Internet speeds in Bahrain have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal for personal use in Bahrain. Used to access VoIP services and some restricted content. Less restrictive than some Gulf neighbors. Remote workers in Bahrain commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BHD-based. Card payments widely accepted. International payment methods work well for online services and subscriptions. Most international VPN providers accept payment methods commonly used in Bahrain, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and modern establishments. Strong mobile coverage across the small island nation. VPN useful for VoIP services. Visitors to Bahrain should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "OM",
+    "iso3": "OMN",
+    "nameEn": "Oman",
+    "slug": "oman",
+    "region": "Middle East",
+    "languages": [
+      "ar"
+    ],
+    "currencyCode": "OMR",
+    "timeZonePrimary": "Asia/Muscat",
+    "internetNotes": "Good infrastructure. Omantel and Ooredoo are the main providers. Government filters content and blocks VoIP services. Decent speeds in major cities. Internet speeds in Oman have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is in a gray area. Personal VPN use is common but technically regulated. VoIP services are blocked. Many residents and visitors use VPNs for calls and accessing restricted content.",
+    "paymentNotes": "OMR-based. Card payments accepted in major establishments. International payment methods work for online purchases. Most international VPN providers accept payment methods commonly used in Oman, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Muscat hotels and malls. Coverage can be limited in desert and mountain areas. VPN recommended for VoIP access. Visitors to Oman should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "KW",
+    "iso3": "KWT",
+    "nameEn": "Kuwait",
+    "slug": "kuwait",
+    "region": "Middle East",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "currencyCode": "KWD",
+    "timeZonePrimary": "Asia/Kuwait",
+    "internetNotes": "Good broadband and mobile coverage. Zain, Ooredoo, and STC are major providers. Government filters some content. Strong 5G deployment. Internet speeds in Kuwait have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal for personal use in Kuwait. Used to access VoIP services and some restricted content. Government primarily targets content rather than VPN use itself.",
+    "paymentNotes": "KWD-based. Card payments widely accepted. K-Net payment system dominant locally. International payment methods work well. Most international VPN providers accept payment methods commonly used in Kuwait, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels and malls. Strong mobile coverage nationwide. VPN useful for accessing VoIP and some international services. Visitors to Kuwait should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "JO",
+    "iso3": "JOR",
+    "nameEn": "Jordan",
+    "slug": "jordan",
+    "region": "Middle East",
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "currencyCode": "JOD",
+    "timeZonePrimary": "Asia/Amman",
+    "internetNotes": "Decent internet infrastructure. Orange, Zain, and Umniah are major providers. Good coverage in Amman. Some content filtering by the government. Internet speeds in Jordan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Jordan. Used by expats and tourists. VoIP services work in Jordan, unlike some neighboring countries. Growing tech sector in Amman. Remote workers in Jordan commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "JOD-based. Card payments accepted in major establishments. Cash still widely used. International payment methods available online. Most international VPN providers accept payment methods commonly used in Jordan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Amman and Aqaba hotels. Petra and Dead Sea tourist areas generally connected. Rural areas may have limited coverage. Visitors to Jordan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LB",
+    "iso3": "LBN",
+    "nameEn": "Lebanon",
+    "slug": "lebanon",
+    "region": "Middle East",
+    "languages": [
+      "ar",
+      "fr",
+      "en"
+    ],
+    "currencyCode": "LBP",
+    "timeZonePrimary": "Asia/Beirut",
+    "internetNotes": "Internet infrastructure severely impacted by the economic crisis. Ogero and Alfa/Touch are providers. Speeds have declined. Power outages affect connectivity significantly. Internet speeds in Lebanon have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Lebanon. Used for privacy and to access content. VoIP services like WhatsApp calls are available. Infrastructure challenges may affect VPN performance.",
+    "paymentNotes": "LBP-based but highly volatile. USD widely used. International payment methods may have complications due to banking restrictions. Cash is very important. Most international VPN providers accept payment methods commonly used in Lebanon, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi available in Beirut hotels and cafes but quality varies due to infrastructure challenges. Power outages common. Having mobile data as backup recommended. Visitors to Lebanon should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "TN",
+    "iso3": "TUN",
+    "nameEn": "Tunisia",
+    "slug": "tunisia",
+    "region": "Africa",
+    "languages": [
+      "ar",
+      "fr"
+    ],
+    "currencyCode": "TND",
+    "timeZonePrimary": "Africa/Tunis",
+    "internetNotes": "Decent internet coverage. Tunisie Telecom, Ooredoo, and Orange are providers. Good mobile coverage in urban areas. Some content filtering. Internet speeds in Tunisia have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Tunisia. Used to bypass occasional content restrictions and for privacy. The country has relatively open internet compared to some regional neighbors.",
+    "paymentNotes": "TND-based. Card payments accepted in tourist areas and major businesses. Cash widely used. International payment methods available for online purchases. Most international VPN providers accept payment methods commonly used in Tunisia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels in Tunis, Sousse, and tourist areas. Coverage adequate in major cities. Rural areas may have limited connectivity. Visitors to Tunisia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SN",
+    "iso3": "SEN",
+    "nameEn": "Senegal",
+    "slug": "senegal",
+    "region": "Africa",
+    "languages": [
+      "fr",
+      "wo"
+    ],
+    "currencyCode": "XOF",
+    "timeZonePrimary": "Africa/Dakar",
+    "internetNotes": "Growing internet market. Orange, Free, and Expresso are major carriers. Good mobile coverage in Dakar and major cities. Submarine cable connections improving speeds. Internet speeds in Senegal have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Senegal. Government has occasionally restricted social media access during political events. VPN use increased during the 2023-2024 internet restrictions. Remote workers in Senegal commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XOF (CFA franc) based. Orange Money mobile payments common. Cash widely used. International card acceptance limited outside major hotels and businesses. Most international VPN providers accept payment methods commonly used in Senegal, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafes in Dakar. Tourist areas like Saint-Louis generally connected. Rural areas have limited coverage. Prepaid SIM data affordable. Visitors to Senegal should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "TZ",
+    "iso3": "TZA",
+    "nameEn": "Tanzania",
+    "slug": "tanzania",
+    "region": "Africa",
+    "languages": [
+      "sw",
+      "en"
+    ],
+    "currencyCode": "TZS",
+    "timeZonePrimary": "Africa/Dar_es_Salaam",
+    "internetNotes": "Growing mobile internet market. Vodacom, Airtel, and Tigo are major carriers. Good coverage in Dar es Salaam and major towns. Safari areas may have limited connectivity.",
+    "vpnNotes": "VPNs are legal in Tanzania. Government has imposed social media taxes and restrictions. VPN use has grown in response to content blocking and to avoid social media levies.",
+    "paymentNotes": "TZS-based. M-Pesa mobile money dominant. Cash widely used. International card acceptance limited to major hotels and tourist operators. Most international VPN providers accept payment methods commonly used in Tanzania, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Dar es Salaam and Zanzibar. Safari lodges increasingly offer Wi-Fi. Mount Kilimanjaro has no coverage. Zanzibar tourist areas generally connected. Visitors to Tanzania should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "ET",
+    "iso3": "ETH",
+    "nameEn": "Ethiopia",
+    "slug": "ethiopia",
+    "region": "Africa",
+    "languages": [
+      "am",
+      "en"
+    ],
+    "currencyCode": "ETB",
+    "timeZonePrimary": "Africa/Addis_Ababa",
+    "internetNotes": "Ethio Telecom has been the sole provider, though liberalization is underway with Safaricom entering the market. Internet speeds are among the slowest in Africa. Government imposes frequent internet shutdowns.",
+    "vpnNotes": "VPN use is common despite government restrictions. Ethiopia has a history of internet shutdowns and social media blocking. VPNs are widely used to access blocked services. Configure before arriving.",
+    "paymentNotes": "ETB-based. Cash dominant. Mobile money through Telebirr growing. International card acceptance very limited. Prepay for VPN before arrival. Most international VPN providers accept payment methods commonly used in Ethiopia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi available in hotels in Addis Ababa but speeds are often slow. Historical sites and rural areas have very limited connectivity. Internet shutdowns can occur without warning.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "UG",
+    "iso3": "UGA",
+    "nameEn": "Uganda",
+    "slug": "uganda",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "sw"
+    ],
+    "currencyCode": "UGX",
+    "timeZonePrimary": "Africa/Kampala",
+    "internetNotes": "Growing mobile internet market. MTN, Airtel, and Africell are major carriers. Government imposed an OTT (social media) tax in 2018, driving VPN adoption. Good mobile coverage in urban areas.",
+    "vpnNotes": "VPN use exploded after Uganda's social media tax. VPNs are legal and widely used to bypass the OTT tax and access social media without paying the levy. Government has not restricted VPN use itself.",
+    "paymentNotes": "UGX-based. Mobile Money (MTN MoMo) dominant. Cash widely used. International card acceptance limited to major hotels and businesses. Most international VPN providers accept payment methods commonly used in Uganda, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Kampala. Safari lodges increasingly offer connectivity. National parks have limited or no coverage. Prepaid SIM data from MTN or Airtel recommended.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "RW",
+    "iso3": "RWA",
+    "nameEn": "Rwanda",
+    "slug": "rwanda",
+    "region": "Africa",
+    "languages": [
+      "rw",
+      "en",
+      "fr"
+    ],
+    "currencyCode": "RWF",
+    "timeZonePrimary": "Africa/Kigali",
+    "internetNotes": "Ambitious digital infrastructure plans. MTN and Airtel are major carriers. 4G coverage expanding rapidly. Kigali has good connectivity. Government investing heavily in ICT development. Internet speeds in Rwanda have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Rwanda. The government monitors internet content but VPN use is not restricted. Growing tech hub status in Kigali drives adoption among professionals.",
+    "paymentNotes": "RWF-based. MTN Mobile Money dominant. Cash still widely used. Card acceptance growing in Kigali. International payment methods available for online purchases. Most international VPN providers accept payment methods commonly used in Rwanda, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Kigali hotels and cafes. Safari lodges in Volcanoes National Park increasingly offer Wi-Fi. Rural areas have growing but still limited coverage. Visitors to Rwanda should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MU",
+    "iso3": "MUS",
+    "nameEn": "Mauritius",
+    "slug": "mauritius",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "currencyCode": "MUR",
+    "timeZonePrimary": "Indian/Mauritius",
+    "internetNotes": "Good broadband infrastructure for the region. MyT (Mauritius Telecom), Emtel, and MTML are providers. Undersea cables provide decent speeds. Growing fintech and offshore sectors. Internet speeds in Mauritius have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Mauritius. The island nation has relatively open internet. Used by the financial services sector and growing remote work community. Remote workers in Mauritius commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MUR-based. Card payments accepted in tourist areas and major businesses. Juice mobile payments growing. International payment methods work well. Most international VPN providers accept payment methods commonly used in Mauritius, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resort hotels and tourist areas. Coverage generally good across the small island. Some beach areas and rural spots may have weaker signals.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "FJ",
+    "iso3": "FJI",
+    "nameEn": "Fiji",
+    "slug": "fiji",
+    "region": "APAC",
+    "languages": [
+      "en",
+      "fj",
+      "hi"
+    ],
+    "currencyCode": "FJD",
+    "timeZonePrimary": "Pacific/Fiji",
+    "internetNotes": "Decent but limited by geography. Vodafone Fiji, Digicel, and TFL are providers. Good coverage on main islands (Viti Levu, Vanua Levu). Outer islands have very limited connectivity.",
+    "vpnNotes": "VPNs are legal in Fiji. Used by tourists and the expat community. No government restrictions on VPN use. Internet access can be slow, which may affect VPN performance.",
+    "paymentNotes": "FJD-based. Card payments accepted in tourist areas and major businesses. Cash important in local markets and smaller establishments. Most international VPN providers accept payment methods commonly used in Fiji, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in resorts on main islands. Remote islands may have satellite-only internet with limited bandwidth. Download VPN apps before arriving at remote destinations. Visitors to Fiji should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MN",
+    "iso3": "MNG",
+    "nameEn": "Mongolia",
+    "slug": "mongolia",
+    "region": "APAC",
+    "languages": [
+      "mn"
+    ],
+    "currencyCode": "MNT",
+    "timeZonePrimary": "Asia/Ulaanbaatar",
+    "internetNotes": "Decent coverage in Ulaanbaatar. Mobicom, Unitel, and Skytel are providers. Vast rural and steppe areas have very limited or no connectivity. Mobile-first market in the capital.",
+    "vpnNotes": "VPNs are legal in Mongolia. No significant government restrictions on internet access. Used primarily for privacy and accessing international services. Remote workers in Mongolia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MNT-based. Card payments growing in Ulaanbaatar. Cash essential in rural areas. International payment methods available online. Most international VPN providers accept payment methods commonly used in Mongolia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Ulaanbaatar hotels and cafes. Ger camps may have limited or no connectivity. Steppe and Gobi regions are largely offline. Download everything offline before remote travel.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "UZ",
+    "iso3": "UZB",
+    "nameEn": "Uzbekistan",
+    "slug": "uzbekistan",
+    "region": "APAC",
+    "languages": [
+      "uz"
+    ],
+    "currencyCode": "UZS",
+    "timeZonePrimary": "Asia/Tashkent",
+    "internetNotes": "Improving internet infrastructure. Ucell, Beeline, and UzMobile are major carriers. Government has been gradually opening up internet access. Some content still blocked. Internet speeds in Uzbekistan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is common in Uzbekistan. The government blocks some websites and social media but VPN use is not explicitly prohibited. Internet freedom has improved in recent years.",
+    "paymentNotes": "UZS-based. Cash dominant. Card payments growing via Humo and UzCard systems. International card acceptance limited. Prepay for VPN before arrival. Most international VPN providers accept payment methods commonly used in Uzbekistan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Tashkent, Samarkand, and Bukhara. Tourist areas along the Silk Road generally have decent coverage. Rural areas have limited connectivity. Visitors to Uzbekistan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "KZ",
+    "iso3": "KAZ",
+    "nameEn": "Kazakhstan",
+    "slug": "kazakhstan",
+    "region": "APAC",
+    "languages": [
+      "kk",
+      "ru"
+    ],
+    "currencyCode": "KZT",
+    "timeZonePrimary": "Asia/Almaty",
+    "internetNotes": "Good infrastructure in major cities. Beeline, Kcell, and Tele2 are major carriers. Government monitors internet traffic and has imposed shutdowns during political events. Internet speeds in Kazakhstan have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is legal but the government has periodically blocked VPN services during political unrest. Many Kazakhstanis use VPNs regularly for privacy and accessing restricted content.",
+    "paymentNotes": "KZT-based. Kaspi Bank app dominant for payments. Card payments common in cities. International payment methods available online for VPN subscriptions. Most international VPN providers accept payment methods commonly used in Kazakhstan, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Almaty and Astana hotels and cafes. Coverage thins significantly outside major cities. Steppe regions have limited connectivity. Visitors to Kazakhstan should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SC",
+    "iso3": "SYC",
+    "nameEn": "Seychelles",
+    "slug": "seychelles",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "fr",
+      "crs"
+    ],
+    "currencyCode": "SCR",
+    "timeZonePrimary": "Indian/Mahe",
+    "internetNotes": "Decent internet for a small island nation. Cable & Wireless Seychelles and Airtel are providers. Undersea cable connections provide reasonable speeds on main islands. Outer islands have limited connectivity.",
+    "vpnNotes": "VPNs are fully legal in Seychelles. The island nation has an open internet policy. Used primarily by tourists and the offshore financial services sector for privacy and secure communications.",
+    "paymentNotes": "SCR-based. Card payments accepted in resort hotels and major businesses. Cash important in local markets and smaller establishments. International payment methods work well for online VPN purchases.",
+    "travelNotes": "Good Wi-Fi in resort hotels on Mahe, Praslin, and La Digue. Outer islands may have satellite-only internet. Beach areas generally well-covered. Download VPN apps before visiting remote islands.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BA",
+    "iso3": "BIH",
+    "nameEn": "Bosnia and Herzegovina",
+    "slug": "bosnia-and-herzegovina",
+    "region": "Europe",
+    "languages": [
+      "bs",
+      "hr",
+      "sr"
+    ],
+    "currencyCode": "BAM",
+    "timeZonePrimary": "Europe/Sarajevo",
+    "internetNotes": "Good and affordable broadband infrastructure. BH Telecom, HT Eronet, and m:tel are major providers. Internet speeds competitive for the region with fiber expanding in major cities.",
+    "vpnNotes": "VPNs are fully legal in Bosnia and Herzegovina. Growing IT sector drives VPN adoption. No government restrictions on VPN use. The country has an open and unrestricted internet environment.",
+    "paymentNotes": "BAM-based. Card payments growing in Sarajevo and major cities. Cash still widely used especially in smaller establishments. International payment methods available for online VPN purchases.",
+    "travelNotes": "Good Wi-Fi in Sarajevo and Mostar hotels and cafes. Tourist areas generally well-connected. Rural and mountain areas may have limited coverage but mobile data is affordable.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MK",
+    "iso3": "MKD",
+    "nameEn": "North Macedonia",
+    "slug": "north-macedonia",
+    "region": "Europe",
+    "languages": [
+      "mk",
+      "sq"
+    ],
+    "currencyCode": "MKD",
+    "timeZonePrimary": "Europe/Skopje",
+    "internetNotes": "Good internet coverage for the region. Makedonski Telekom, A1, and Lycamobile are major providers. Affordable pricing and decent speeds in Skopje and major towns with expanding fiber network.",
+    "vpnNotes": "VPNs are fully legal in North Macedonia. No restrictions on internet access or VPN use. The growing IT outsourcing sector drives adoption among tech professionals and remote workers.",
+    "paymentNotes": "MKD-based. Card payments growing in Skopje. Cash still common in smaller cities and rural areas. International payment methods available for online VPN and subscription purchases.",
+    "travelNotes": "Good Wi-Fi in Skopje and Ohrid hotels and cafes. Lake Ohrid tourist area well-connected. Rural and mountain areas may have limited coverage. Affordable mobile data plans available.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "AL",
+    "iso3": "ALB",
+    "nameEn": "Albania",
+    "slug": "albania",
+    "region": "Europe",
+    "languages": [
+      "sq"
+    ],
+    "currencyCode": "ALL",
+    "timeZonePrimary": "Europe/Tirane",
+    "internetNotes": "Improving broadband infrastructure with fiber expanding in Tirana and major cities. Albanian Telecom, Vodafone, and One are major providers offering increasingly competitive pricing and speeds.",
+    "vpnNotes": "VPNs are fully legal and unrestricted in Albania. The country has a relatively open internet environment with no government restrictions on VPN usage or significant content blocking.",
+    "paymentNotes": "ALL-based. Card payments growing in Tirana but cash still common elsewhere. International payment methods available online for VPN subscriptions and international services. Most international VPN providers accept payment methods commonly used in Albania, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Tirana hotels and cafes. Coastal tourist areas like Saranda and Vlora generally connected. Rural areas may have limited coverage but mobile data is affordable.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "ME",
+    "iso3": "MNE",
+    "nameEn": "Montenegro",
+    "slug": "montenegro",
+    "region": "Europe",
+    "languages": [
+      "sr",
+      "en"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Podgorica",
+    "internetNotes": "Decent broadband coverage for a small country. Crnogorski Telekom and m:tel are major providers. Internet quality good in Podgorica and coastal areas with improving fiber deployment.",
+    "vpnNotes": "VPNs are fully legal in Montenegro. No restrictions on internet access. The growing tourism and remote work scene drives VPN adoption among visitors and digital nomads.",
+    "paymentNotes": "Euro-based (unilateral adoption). Card payments common in tourist areas. Cash still important in smaller towns. International payment methods work well for online purchases. Most international VPN providers accept payment methods commonly used in Montenegro, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Budva, Kotor, and Podgorica hotels and cafes. Coastal tourist areas well-connected during summer season. Mountain areas may have limited coverage. Visitors to Montenegro should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "XK",
+    "iso3": "XKX",
+    "nameEn": "Kosovo",
+    "slug": "kosovo",
+    "region": "Europe",
+    "languages": [
+      "sq",
+      "sr"
+    ],
+    "currencyCode": "EUR",
+    "timeZonePrimary": "Europe/Belgrade",
+    "internetNotes": "Growing internet infrastructure. IPKO and Vala are major providers. Pristina has good connectivity with improving broadband speeds across the country. Internet speeds in Kosovo have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Kosovo. No restrictions on internet access. Growing IT sector in Pristina drives technology adoption including VPN usage. Remote workers in Kosovo commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "Euro-based. Card payments growing in Pristina. Cash still widely used. International payment methods available for online VPN purchases. Most international VPN providers accept payment methods commonly used in Kosovo, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Pristina hotels and cafes. Coverage adequate in major towns. Rural areas may have limited connectivity but mobile data coverage is growing. Visitors to Kosovo should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MD",
+    "iso3": "MDA",
+    "nameEn": "Moldova",
+    "slug": "moldova",
+    "region": "Europe",
+    "languages": [
+      "ro",
+      "ru"
+    ],
+    "currencyCode": "MDL",
+    "timeZonePrimary": "Europe/Chisinau",
+    "internetNotes": "Surprisingly fast and affordable internet. Moldtelecom, Orange, and Starnet are providers. Moldova has some of the cheapest broadband in Europe with competitive speeds. Internet speeds in Moldova have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in Moldova. Growing IT outsourcing sector in Chisinau drives adoption. No government restrictions on VPN use or internet access. Remote workers in Moldova commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MDL-based. Card payments growing but cash still common. International payment methods available online. Affordable internet and VPN costs. Most international VPN providers accept payment methods commonly used in Moldova, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in Chisinau hotels and cafes. Wine region tourism growing. Rural areas may have limited coverage. Very affordable mobile data plans available. Visitors to Moldova should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BY",
+    "iso3": "BLR",
+    "nameEn": "Belarus",
+    "slug": "belarus",
+    "region": "Europe",
+    "languages": [
+      "be",
+      "ru"
+    ],
+    "currencyCode": "BYN",
+    "timeZonePrimary": "Europe/Minsk",
+    "internetNotes": "Decent urban coverage through Beltelecom. Government controls internet infrastructure and has imposed shutdowns during political protests. Internet monitoring is extensive. Internet speeds in Belarus have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is legal but the government has periodically blocked VPN services during political unrest. Many Belarusians use VPNs to access independent media blocked by the government. Configure VPN before entering the country.",
+    "paymentNotes": "BYN-based. International payment methods may be restricted due to sanctions. Card payments work in major businesses but cash is important. Prepay for VPN subscriptions before visiting.",
+    "travelNotes": "Wi-Fi available in Minsk hotels and cafes. Coverage adequate in major cities. VPN recommended for accessing independent news and social media during politically sensitive periods.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BN",
+    "iso3": "BRN",
+    "nameEn": "Brunei",
+    "slug": "brunei",
+    "region": "APAC",
+    "languages": [
+      "ms",
+      "en"
+    ],
+    "currencyCode": "BND",
+    "timeZonePrimary": "Asia/Brunei",
+    "internetNotes": "Decent broadband infrastructure for a small nation. DST and Progresif are the main providers. Internet speeds improving with fiber deployment in Bandar Seri Begawan. Internet speeds in Brunei have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal for personal use in Brunei. Some content is filtered by the government including adult content and gambling sites. VPN use is common among expats and tech-savvy residents.",
+    "paymentNotes": "BND-based (pegged to SGD). Card payments accepted in major establishments. Cash still widely used. International payment methods available for online VPN purchases. Most international VPN providers accept payment methods commonly used in Brunei, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Good Wi-Fi in hotels in Bandar Seri Begawan. Coverage limited outside the capital. VPN useful for accessing some filtered content during your stay. Visitors to Brunei should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "LA",
+    "iso3": "LAO",
+    "nameEn": "Laos",
+    "slug": "laos",
+    "region": "APAC",
+    "languages": [
+      "lo"
+    ],
+    "currencyCode": "LAK",
+    "timeZonePrimary": "Asia/Vientiane",
+    "internetNotes": "Growing internet market primarily mobile-based. Unitel, ETL, and Lao Telecom are providers. Good coverage in Vientiane and Luang Prabang. Rural areas have limited connectivity. Internet speeds in Laos have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Laos. Government monitors internet content but VPN use is not restricted. Used by tourists and the growing expat community in Vientiane.",
+    "paymentNotes": "LAK-based. Cash dominant. Card payments limited to major hotels and restaurants. International payment methods needed for online VPN subscriptions. Most international VPN providers accept payment methods commonly used in Laos, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and guesthouses in Vientiane and Luang Prabang. Tourist cafes generally have Wi-Fi. Rural and remote areas have very limited connectivity. Visitors to Laos should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "PY",
+    "iso3": "PRY",
+    "nameEn": "Paraguay",
+    "slug": "paraguay",
+    "region": "Americas",
+    "languages": [
+      "es",
+      "gn"
+    ],
+    "currencyCode": "PYG",
+    "timeZonePrimary": "America/Asuncion",
+    "internetNotes": "Growing internet market. Tigo, Personal, and Claro are major carriers. Good mobile coverage in Asuncion and major cities. Rural areas have limited broadband access. Internet speeds in Paraguay have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal and unrestricted in Paraguay. Growing remote work community drives adoption. No government restrictions on VPN use or internet content. Remote workers in Paraguay commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "PYG-based. Cash dominant. Card payments growing in Asuncion. International payment methods available online for VPN and subscription purchases. Most international VPN providers accept payment methods commonly used in Paraguay, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafes in Asuncion. Coverage adequate in major cities. Rural areas and Chaco region have very limited connectivity. Visitors to Paraguay should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "BO",
+    "iso3": "BOL",
+    "nameEn": "Bolivia",
+    "slug": "bolivia",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "BOB",
+    "timeZonePrimary": "America/La_Paz",
+    "internetNotes": "Growing internet market. Entel, Tigo, and Viva are major carriers. Good coverage in La Paz, Cochabamba, and Santa Cruz. Rural and highland areas have limited connectivity.",
+    "vpnNotes": "VPNs are fully legal in Bolivia. No significant restrictions on internet access. Growing adoption among tech workers and remote professionals in major cities. Remote workers in Bolivia commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "BOB-based. Cash dominant. Card payments growing in major cities. International payment methods available online for VPN subscriptions. Most international VPN providers accept payment methods commonly used in Bolivia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in La Paz, Cochabamba, and Santa Cruz. Tourist areas generally connected. Altitude and remote areas (Salar de Uyuni) may have no connectivity.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "HN",
+    "iso3": "HND",
+    "nameEn": "Honduras",
+    "slug": "honduras",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "HNL",
+    "timeZonePrimary": "America/Tegucigalpa",
+    "internetNotes": "Growing mobile internet market. Tigo and Claro are the main carriers. Good coverage in Tegucigalpa and San Pedro Sula. Rural areas and Bay Islands have variable connectivity.",
+    "vpnNotes": "VPNs are fully legal in Honduras. No restrictions on internet access or VPN usage. Used by the growing digital community and tourists on the Bay Islands.",
+    "paymentNotes": "HNL-based. Cash widely used. Card payments accepted in larger businesses and tourist areas. International payment methods available for online purchases. Most international VPN providers accept payment methods commonly used in Honduras, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Tegucigalpa and Roatan. Bay Islands tourist areas generally connected. Rural mainland areas may have limited or no Wi-Fi coverage. Visitors to Honduras should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "SV",
+    "iso3": "SLV",
+    "nameEn": "El Salvador",
+    "slug": "el-salvador",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "USD",
+    "timeZonePrimary": "America/El_Salvador",
+    "internetNotes": "Decent coverage in urban areas. Tigo, Claro, and Movistar are providers. USD economy simplifies international transactions. Growing tech and Bitcoin adoption community. Internet speeds in El Salvador have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are fully legal in El Salvador. The country's Bitcoin adoption and tech-forward stance means VPN use is well-understood and unrestricted. Remote workers in El Salvador commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "USD-based, simplifying international payments significantly. Card payments accepted in urban areas and tourist spots. Bitcoin accepted in some establishments as legal tender. Most international VPN providers accept payment methods commonly used in El Salvador, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafes in San Salvador. El Tunco beach and tourist areas generally connected. Rural areas may have limited coverage. USD makes VPN purchases simple.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "NI",
+    "iso3": "NIC",
+    "nameEn": "Nicaragua",
+    "slug": "nicaragua",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "NIO",
+    "timeZonePrimary": "America/Managua",
+    "internetNotes": "Growing internet market. Claro and Movistar are the main carriers. Coverage improving in Managua and major cities. Rural areas and Caribbean coast have limited connectivity.",
+    "vpnNotes": "VPNs are legal in Nicaragua. Government has occasionally restricted social media access during political events but VPN use itself is not restricted. Remote workers in Nicaragua commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "NIO-based. Cash widely used. Card payments accepted in tourist areas and larger businesses. International payment methods available for online purchases. Most international VPN providers accept payment methods commonly used in Nicaragua, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Managua, Granada, and San Juan del Sur. Tourist areas generally connected. Caribbean coast and rural areas have very limited connectivity. Visitors to Nicaragua should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "CU",
+    "iso3": "CUB",
+    "nameEn": "Cuba",
+    "slug": "cuba",
+    "region": "Americas",
+    "languages": [
+      "es"
+    ],
+    "currencyCode": "CUP",
+    "timeZonePrimary": "America/Havana",
+    "internetNotes": "One of the least connected countries in the Americas. ETECSA is the sole provider. Internet access was severely restricted until recent years. Mobile data available but expensive and slow.",
+    "vpnNotes": "VPN use is common among Cubans to bypass censorship but exists in a legal gray area. The government censors content and monitors internet usage. Configure your VPN before traveling to Cuba.",
+    "paymentNotes": "CUP-based. International payment infrastructure very limited. Cash (CUP and sometimes USD/EUR) essential. Prepay for VPN before arrival as online payments are difficult within Cuba. Most international VPN providers accept payment methods commonly used in Cuba, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Hotel Wi-Fi available in major cities but slow and expensive. Public Wi-Fi hotspots exist in parks (ETECSA). Internet access is a challenge. Download everything offline before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MW",
+    "iso3": "MWI",
+    "nameEn": "Malawi",
+    "slug": "malawi",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "ny"
+    ],
+    "currencyCode": "MWK",
+    "timeZonePrimary": "Africa/Blantyre",
+    "internetNotes": "Growing mobile internet market. TNM and Airtel are the main carriers. Coverage concentrated in Lilongwe and Blantyre. Internet speeds are among the slowest in Africa.",
+    "vpnNotes": "VPNs are legal in Malawi. No significant restrictions on internet access. Government has occasionally throttled social media during elections but VPN use is not restricted.",
+    "paymentNotes": "MWK-based. Cash dominant. Mobile money through Airtel Money and TNM Mpamba growing. International card acceptance very limited. Prepay for VPN services. Most international VPN providers accept payment methods commonly used in Malawi, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Lilongwe and Blantyre. Lake Malawi lodges increasingly offer connectivity. Rural areas have very limited or no internet access. Visitors to Malawi should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "ZM",
+    "iso3": "ZMB",
+    "nameEn": "Zambia",
+    "slug": "zambia",
+    "region": "Africa",
+    "languages": [
+      "en"
+    ],
+    "currencyCode": "ZMW",
+    "timeZonePrimary": "Africa/Lusaka",
+    "internetNotes": "Growing internet market. MTN, Airtel, and Zamtel are major carriers. Good 4G coverage in Lusaka and Copperbelt. Rural areas have limited connectivity but mobile coverage expanding.",
+    "vpnNotes": "VPNs are legal in Zambia. Government has occasionally restricted social media during political events. VPN use grew during the 2021 election period when social media was throttled.",
+    "paymentNotes": "ZMW-based. Mobile money (MTN MoMo, Airtel Money) growing rapidly. Cash dominant. International card acceptance limited to major hotels and businesses. Most international VPN providers accept payment methods commonly used in Zambia, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in Lusaka hotels and lodges. Victoria Falls area has decent connectivity. National parks and safari areas have limited or satellite-only internet. Visitors to Zambia should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  },
+  {
+    "iso2": "ZW",
+    "iso3": "ZWE",
+    "nameEn": "Zimbabwe",
+    "slug": "zimbabwe",
+    "region": "Africa",
+    "languages": [
+      "en",
+      "sn",
+      "nd"
+    ],
+    "currencyCode": "ZWL",
+    "timeZonePrimary": "Africa/Harare",
+    "internetNotes": "Challenging internet landscape. Econet, NetOne, and Telecel are carriers. Government has imposed internet shutdowns during protests. Data costs are high relative to incomes. Internet speeds in Zimbabwe have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is widespread in Zimbabwe, especially during government-imposed internet shutdowns. The government has blocked social media multiple times. VPNs are commonly used to access blocked services.",
+    "paymentNotes": "Multi-currency system (USD, ZWL, ZAR). Mobile money via EcoCash dominant. Cash shortages common. International payment methods may be difficult. Prepay for VPN before visiting. Most international VPN providers accept payment methods commonly used in Zimbabwe, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Harare and Victoria Falls. Tourist lodges increasingly offer connectivity. Rural areas have very limited access. VPN recommended for accessing social media during shutdowns.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "MZ",
+    "iso3": "MOZ",
+    "nameEn": "Mozambique",
+    "slug": "mozambique",
+    "region": "Africa",
+    "languages": [
+      "pt"
+    ],
+    "currencyCode": "MZN",
+    "timeZonePrimary": "Africa/Maputo",
+    "internetNotes": "Growing mobile internet market. Vodacom, TMcel, and Movitel are carriers. Coverage concentrated in Maputo and major cities. Northern and rural areas have limited connectivity. Internet speeds in Mozambique have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Mozambique. No significant restrictions on internet access. Growing mobile internet adoption driving increased awareness of online security. Remote workers in Mozambique commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "MZN-based. Mobile money (M-Pesa via Vodacom) growing. Cash dominant. International card acceptance limited to major hotels and businesses in Maputo. Most international VPN providers accept payment methods commonly used in Mozambique, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Maputo and tourist areas. Beach resorts in Vilankulo and Tofo increasingly offer connectivity. Northern coast and interior have limited coverage. Visitors to Mozambique should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CM",
+    "iso3": "CMR",
+    "nameEn": "Cameroon",
+    "slug": "cameroon",
+    "region": "Africa",
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "currencyCode": "XAF",
+    "timeZonePrimary": "Africa/Douala",
+    "internetNotes": "Growing internet market. MTN, Orange, and Nexttel are carriers. Government has imposed internet shutdowns in English-speaking regions. Good coverage in Douala and Yaounde. Internet speeds in Cameroon have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPN use is widespread in Cameroon, especially in English-speaking regions where the government imposed a months-long internet shutdown in 2017. VPNs are commonly used for access and privacy.",
+    "paymentNotes": "XAF (CFA franc) based. Orange Money and MTN MoMo mobile payments common. Cash widely used. International card acceptance limited outside major businesses. Most international VPN providers accept payment methods commonly used in Cameroon, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels in Douala and Yaounde. Tourist areas generally connected. English-speaking regions have experienced connectivity disruptions. Mobile data affordable. Visitors to Cameroon should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "censorship",
+      "restricted-platforms",
+      "tourist-wifi"
+    ]
+  },
+  {
+    "iso2": "CI",
+    "iso3": "CIV",
+    "nameEn": "Ivory Coast",
+    "slug": "ivory-coast",
+    "region": "Africa",
+    "languages": [
+      "fr"
+    ],
+    "currencyCode": "XOF",
+    "timeZonePrimary": "Africa/Abidjan",
+    "internetNotes": "Growing internet infrastructure. MTN, Orange, and Moov are major carriers. Good mobile coverage in Abidjan with submarine cable connections improving speeds nationwide. Internet speeds in Ivory Coast have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
+    "vpnNotes": "VPNs are legal in Ivory Coast. Government has occasionally restricted social media during political events. VPN use growing among the tech-savvy population in Abidjan. Remote workers in Ivory Coast commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "paymentNotes": "XOF (CFA franc) based. Orange Money and MTN MoMo mobile payments dominant. Cash widely used. International card acceptance limited to major businesses. Most international VPN providers accept payment methods commonly used in Ivory Coast, including major credit cards, PayPal, and cryptocurrency options.",
+    "travelNotes": "Wi-Fi in hotels and cafes in Abidjan. Coverage adequate in major cities. Rural areas have limited connectivity. Prepaid mobile data SIM cards are affordable. Visitors to Ivory Coast should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
+    "riskFlags": [
+      "tourist-wifi",
+      "restricted-platforms"
+    ]
+  }
+]

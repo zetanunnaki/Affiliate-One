@@ -1,0 +1,7 @@
+[
+  {"id": "nordvpn-vs-surfshark", "slug": "nordvpn-vs-surfshark", "providers": ["nordvpn", "surfshark"], "title": "NordVPN vs Surfshark (2026): Which VPN Is Better?"},
+  {"id": "nordvpn-vs-expressvpn", "slug": "nordvpn-vs-expressvpn", "providers": ["nordvpn", "expressvpn"], "title": "NordVPN vs ExpressVPN (2026): Head-to-Head Comparison"},
+  {"id": "surfshark-vs-expressvpn", "slug": "surfshark-vs-expressvpn", "providers": ["surfshark", "expressvpn"], "title": "Surfshark vs ExpressVPN (2026): Budget vs Premium"},
+  {"id": "nordvpn-vs-protonvpn", "slug": "nordvpn-vs-protonvpn", "providers": ["nordvpn", "protonvpn"], "title": "NordVPN vs Proton VPN (2026): Security vs Privacy"},
+  {"id": "protonvpn-vs-mullvad", "slug": "protonvpn-vs-mullvad", "providers": ["protonvpn", "mullvad"], "title": "Proton VPN vs Mullvad (2026): Privacy Showdown"}
+]

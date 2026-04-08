@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 17:27:53 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 17:38:22 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -76,6 +76,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/digital-estate-planning/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/digital-estate-planning/</guid>
       <description><![CDATA[Plan for the worst. Set up emergency access for your password manager, cloud accounts, crypto, and digital assets.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Digital Minimalism for Security: Less Surface, Less Risk (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/digital-minimalism-security/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/digital-minimalism-security/</guid>
+      <description><![CDATA[Reduce your attack surface by minimizing accounts, apps, extensions, and data. The security benefits of having less to protect.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -264,6 +272,14 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Secure Screen Sharing for Remote Workers (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-screen-sharing/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-screen-sharing/</guid>
+      <description><![CDATA[Screen sharing exposes everything on your display. How to share safely in Zoom, Teams, and Google Meet without leaking sensitive data.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[Secure Video Calls: Protect Your Meetings From Eavesdroppers (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</guid>
@@ -364,6 +380,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-mac/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-mac/</guid>
       <description><![CDATA[How to set up a VPN on macOS. Native apps, IKEv2 built-in, WireGuard config, and which providers work best on Mac.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN on NAS: Protect Your Synology & QNAP Network Storage (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-nas/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-nas/</guid>
+      <description><![CDATA[How to install a VPN on your NAS for secure remote access and encrypted downloads. Synology, QNAP, and Docker-based setup guides.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>vpn</category>
     </item>

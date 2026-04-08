@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 05:53:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 15:20:06 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[API Key Security for Developers: Stop Leaking Secrets (2026)]]></title>
@@ -36,6 +36,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/cloud-storage-security/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/cloud-storage-security/</guid>
       <description><![CDATA[How secure is your cloud storage? Encryption comparison, privacy settings, and how to add zero-knowledge encryption to any cloud provider.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[Co-Working Space Security: Protect Your Data in Shared Offices (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/coworking-security/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/coworking-security/</guid>
+      <description><![CDATA[Security risks unique to co-working spaces and how to mitigate them. Network segmentation, screen privacy, physical security, and VPN usage.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>security</category>
     </item>
@@ -164,6 +172,14 @@
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-gaming/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-gaming/</guid>
       <description><![CDATA[Can a VPN improve your gaming experience? We test latency, DDoS protection, and geo-unlocking for PC, console, and mobile gaming.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>vpn</category>
+    </item>
+    <item>
+      <title><![CDATA[VPN Logging Policies Compared: Who Keeps What Data? (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-logging-policies/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/vpn-logging-policies/</guid>
+      <description><![CDATA[We analyzed the privacy policies of 5 major VPNs. Here's exactly what each provider logs, what they don't, and how to verify their claims.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>vpn</category>
     </item>

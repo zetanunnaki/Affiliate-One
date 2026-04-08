@@ -206,6 +206,16 @@
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/guinea-bissau/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/kyrgyzstan/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/tajikistan/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/papua-new-guinea/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/samoa/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/tonga/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/vanuatu/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/solomon-islands/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/turkmenistan/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/syria/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/north-korea/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/iran/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/best/venezuela/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/providers/nordvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/providers/surfshark/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/vpn/providers/expressvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -243,6 +253,7 @@
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/email-encryption-guide/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/enterprise-vpn-vs-consumer/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/home-network-audit/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/iot-security-guide/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/password-audit-guide/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/password-manager-setup/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/password-sharing-safely/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -250,6 +261,7 @@
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/remote-work-security-checklist/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/router-security-guide/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/secure-backups-guide/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/secure-cloud-development/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/secure-file-sharing/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/secure-messaging-guide/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/secure-remote-desktop/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -261,6 +273,7 @@
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-gaming/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-linux/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-mac/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-for-windows/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-logging-policies/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-myths-debunked/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://zetanunnaki.github.io/Affiliate-One/guides/vpn-protocols-explained/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>

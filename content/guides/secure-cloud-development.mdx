@@ -1,0 +1,75 @@
+---
+title: "Secure Cloud Development for Remote Developers (2026)"
+description: "Security practices for remote developers using cloud services. AWS, GCP, Azure security, CI/CD pipeline security, and protecting production environments."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "OWASP: Cloud Security Top 10"
+  - "CIS Benchmarks: Cloud Provider Security"
+---
+
+## Cloud Development Security for Remote Teams
+
+Remote developers access cloud infrastructure from various locations and networks. This increases the attack surface compared to office-based development. Here's how to secure your cloud development workflow.
+
+## 1. Secure Your Access
+
+### Use a VPN for Cloud Console Access
+When accessing AWS Console, GCP Console, or Azure Portal:
+- Always connect through your VPN first
+- Use a dedicated IP if your cloud provider supports IP whitelisting
+- Enable MFA on all cloud accounts (hardware key preferred)
+- Use SSO through your identity provider (Okta, Azure AD)
+
+### Credential Management
+- **Never hardcode credentials** in source code (see our API key security guide)
+- Use IAM roles and instance profiles instead of access keys when possible
+- Rotate access keys every 90 days
+- Use temporary credentials (STS AssumeRole) for development
+- Store secrets in your cloud provider's secrets manager (AWS Secrets Manager, GCP Secret Manager)
+
+## 2. Secure Your CI/CD Pipeline
+
+CI/CD pipelines are high-value targets — they have access to production:
+
+- **Pin dependencies** — Use lock files and hash verification
+- **Scan for secrets** — Enable GitHub secret scanning and push protection
+- **Minimal permissions** — CI/CD service accounts should have only the permissions they need
+- **Audit logs** — Enable and monitor CI/CD audit logs
+- **Signed commits** — Require GPG-signed commits for production branches
+- **Supply chain security** — Use SLSA framework and software bill of materials (SBOM)
+
+## 3. Secure Your Development Environment
+
+- **VPN always on** when accessing cloud resources
+- **Encrypted disk** — BitLocker/FileVault on your development machine
+- **Separate environments** — Never develop against production directly
+- **Environment isolation** — Use separate AWS accounts for dev/staging/prod
+- **Least privilege** — Your personal IAM user shouldn't have production write access
+- **Audit your .env files** — Ensure they're in .gitignore and never committed
+
+## 4. Infrastructure Security
+
+- **Enable CloudTrail/Audit Logs** on all cloud accounts
+- **Use Security Hub/Security Command Center** for automated security scanning
+- **Enable GuardDuty/Security Command Center** for threat detection
+- **Configure budget alerts** — Detect compromised credentials via unexpected spend
+- **Regular security reviews** — Use CIS Benchmarks for your cloud provider
+
+## The Remote Developer Security Checklist
+
+1. VPN connected before accessing any cloud console or API
+2. MFA on all cloud accounts (hardware key preferred)
+3. No secrets in code or environment files committed to git
+4. Separate dev/staging/prod environments
+5. CI/CD pipeline security reviewed quarterly
+6. Dependencies pinned and scanned for vulnerabilities
+7. Audit logs enabled and monitored
+8. Disk encryption enabled on development machine
+9. Regular security training and awareness
+
+## How We Verified
+
+Practices based on OWASP Cloud Security Top 10 and CIS Cloud Benchmarks. Tested against AWS, GCP, and Azure current security features. April 2026.

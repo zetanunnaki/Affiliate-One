@@ -1,0 +1,81 @@
+---
+title: "IoT Security for Remote Workers: Protect Your Smart Home Devices (2026)"
+description: "Your smart home devices are a security risk. Here's how to secure your IoT devices and prevent them from compromising your remote work setup."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "NIST SP 1800-21: Securing Home IoT Devices"
+  - "OWASP: IoT Security Top 10"
+---
+
+## The IoT Security Problem
+
+Your smart home devices — cameras, speakers, thermostats, robot vacuums, smart locks — share the same network as your work laptop. If any IoT device is compromised, the attacker potentially has access to everything on your network, including sensitive work data.
+
+IoT devices are notoriously insecure:
+- Many run outdated, unpatched firmware
+- Default passwords are often never changed
+- Many "phone home" to servers in unknown jurisdictions
+- Minimal or no encryption on data transmissions
+- Limited processing power means weak security implementations
+
+## The Risk for Remote Workers
+
+When your home is your office, IoT risks become work security risks:
+- A compromised camera could record your screen during sensitive work
+- A vulnerable smart speaker could be exploited for audio surveillance
+- A hacked IoT device could be used as a foothold to attack your work laptop
+- Malicious traffic from IoT devices could compromise your network
+
+## Protection Strategy
+
+### 1. Segment Your Network
+
+The single most important step: put IoT devices on a separate network.
+
+**Option A: Guest Network**
+1. Enable your router's Guest Network feature
+2. Connect ALL IoT devices to the guest network
+3. Keep work devices on the main network
+4. Guest networks typically can't communicate with the main network
+
+**Option B: VLAN (Advanced)**
+If your router supports VLANs, create a dedicated IoT VLAN with firewall rules that prevent IoT devices from reaching work device IPs.
+
+### 2. Secure Each Device
+
+For every IoT device:
+- Change the default password immediately
+- Update firmware to the latest version
+- Disable features you don't use (remote access, UPnP)
+- Disable the microphone/camera when not needed (physical switches if available)
+
+### 3. VPN on Router
+
+Installing a VPN on your router encrypts traffic for all devices — including IoT devices that can't run VPN apps. This prevents your ISP from seeing IoT device traffic and adds encryption to devices with weak security.
+
+### 4. Monitor Your Network
+
+Check your router's connected device list regularly:
+- Identify every device
+- Remove/block anything you don't recognize
+- Watch for unusual traffic patterns
+
+## Devices to Be Most Careful With
+
+| Device | Risk Level | Main Concern |
+|--------|-----------|--------------|
+| Security cameras | High | Video surveillance, network access |
+| Smart speakers (Alexa, Google) | High | Audio recording, always-listening |
+| Smart locks | High | Physical security compromise |
+| Baby monitors | High | Audio/video surveillance |
+| Robot vacuums | Medium | Room mapping data, network access |
+| Smart TVs | Medium | Viewing habits, microphone, camera |
+| Smart thermostats | Low | Usage patterns, network access |
+| Smart bulbs | Low | Network access (minimal data) |
+
+## How We Verified
+
+IoT security risks documented from NIST SP 1800-21 and OWASP IoT Top 10. Network segmentation techniques tested on ASUS, TP-Link, and Netgear routers. April 2026.

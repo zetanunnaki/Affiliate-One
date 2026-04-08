@@ -5,7 +5,7 @@ import { getAllPosts } from "@/lib/mdx";
 
 export const metadata: Metadata = {
   title: "Sitemap — All Pages",
-  description: "Complete directory of all pages on SecureWork. Browse countries, guides, reviews, and tools.",
+  description: "Complete directory of all pages on BuySecureVPN. Browse countries, guides, reviews, and tools.",
 };
 
 export default function HtmlSitemapPage() {

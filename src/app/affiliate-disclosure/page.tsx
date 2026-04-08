@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Affiliate Disclosure",
   description:
-    "How SecureWork earns revenue through affiliate partnerships and how this affects (or doesn't affect) our editorial content.",
+    "How BuySecureVPN earns revenue through affiliate partnerships and how this affects (or doesn't affect) our editorial content.",
 };
 
 export default function AffiliateDisclosurePage() {
@@ -16,7 +16,7 @@ export default function AffiliateDisclosurePage() {
 
       <div className="prose prose-zinc dark:prose-invert max-w-none space-y-4 text-zinc-700 dark:text-zinc-300">
         <p>
-          SecureWork participates in affiliate programs with VPN providers and
+          BuySecureVPN participates in affiliate programs with VPN providers and
           other security tool companies. When you click on certain links on our
           site and make a purchase, we may earn a commission at no additional
           cost to you.

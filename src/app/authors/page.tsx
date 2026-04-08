@@ -4,7 +4,7 @@ import { getAllAuthors } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Our Authors — Security Experts & Analysts",
-  description: "Meet the team behind SecureWork. Certified security professionals who test, review, and write our guides.",
+  description: "Meet the team behind BuySecureVPN. Certified security professionals who test, review, and write our guides.",
 };
 
 export default function AuthorsPage() {

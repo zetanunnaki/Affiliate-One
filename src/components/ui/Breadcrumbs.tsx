@@ -17,7 +17,7 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       "@type": "ListItem",
       position: i + 1,
       name: item.label,
-      ...(item.href ? { item: `https://securework.example.com${item.href}` } : {}),
+      ...(item.href ? { item: `https://buysecurevpn.com${item.href}` } : {}),
     })),
   };
 

@@ -6,7 +6,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const BASE_URL = "https://zetanunnaki.github.io/Affiliate-One";
+const BASE_URL = "https://buysecurevpn.com";
 const CONTENT_DIR = path.join(process.cwd(), "content", "guides");
 const OUT_DIR = path.join(process.cwd(), "public");
 
@@ -58,7 +58,7 @@ function main() {
   const feed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SecureWork — Remote Work Security Guides</title>
+    <title>BuySecureVPN — Remote Work Security Guides</title>
     <link>${BASE_URL}</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Cookie Notice",
-  description: "Information about how SecureWork uses cookies and similar technologies.",
+  description: "Information about how BuySecureVPN uses cookies and similar technologies.",
 };
 
 export default function CookiesPage() {
@@ -12,7 +12,7 @@ export default function CookiesPage() {
       <p className="text-sm text-zinc-500 mb-8">Last updated: April 7, 2026</p>
       <div className="prose prose-zinc dark:prose-invert max-w-none space-y-4 text-zinc-700 dark:text-zinc-300">
         <p>
-          This notice explains how SecureWork uses cookies and similar
+          This notice explains how BuySecureVPN uses cookies and similar
           technologies to recognize you when you visit our website.
         </p>
 

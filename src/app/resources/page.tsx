@@ -30,7 +30,7 @@ export default function ResourcesPage() {
         </h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
           Every security guide, tool, and reference in one place. Bookmark this
-          page for quick access to all SecureWork resources.
+          page for quick access to all BuySecureVPN resources.
         </p>
       </header>
 

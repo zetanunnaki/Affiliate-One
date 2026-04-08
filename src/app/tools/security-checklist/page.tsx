@@ -128,7 +128,7 @@ export default function SecurityChecklistPage() {
       </div>
 
       <div className="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-700 text-xs text-zinc-500 print:text-zinc-600">
-        <p>SecureWork Remote Work Security Checklist — securework.example.com — Updated April 2026</p>
+        <p>BuySecureVPN Remote Work Security Checklist — buysecurevpn.com — Updated April 2026</p>
         <p className="mt-1">Based on NIST Cybersecurity Framework 2.0, CISA Telework Security Guidance, and SANS Institute recommendations.</p>
       </div>
 

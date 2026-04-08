@@ -4,7 +4,7 @@ import { getAllAuthors } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Review Board",
-  description: "Meet SecureWork's editorial review board responsible for ensuring accuracy and quality.",
+  description: "Meet BuySecureVPN's editorial review board responsible for ensuring accuracy and quality.",
 };
 
 export default function ReviewBoardPage() {

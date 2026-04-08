@@ -24,7 +24,7 @@ export default function ProductSchema({ provider }: ProductSchemaProps) {
       },
       author: {
         "@type": "Organization",
-        name: "SecureWork",
+        name: "BuySecureVPN",
       },
     },
     aggregateRating: {

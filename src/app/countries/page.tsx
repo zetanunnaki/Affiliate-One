@@ -157,7 +157,7 @@ export default function CountriesPage() {
               "@type": "ListItem",
               position: i + 1,
               name: `Best VPN for ${c.nameEn}`,
-              url: `https://zetanunnaki.github.io/Affiliate-One/vpn/best/${c.slug}/`,
+              url: `https://buysecurevpn.com/vpn/best/${c.slug}/`,
             })),
           }),
         }}

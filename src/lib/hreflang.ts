@@ -10,7 +10,7 @@
 
 export const SUPPORTED_LOCALES = ["en"] as const;
 export const DEFAULT_LOCALE = "en";
-export const BASE_URL = "https://securework.example.com";
+export const BASE_URL = "https://buysecurevpn.com";
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { mainNav } from "@/lib/navigation";
 import DarkModeToggle from "@/components/ui/DarkModeToggle";
+import Logo from "@/components/ui/Logo";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,14 +15,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">SW</span>
-            </div>
-            <span className="font-bold text-lg text-zinc-900 dark:text-zinc-100">
-              SecureWork
-            </span>
-          </Link>
+          <Logo />
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-1">

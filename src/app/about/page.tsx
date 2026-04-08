@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { getAllAuthors } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "About SecureWork",
+  title: "About BuySecureVPN",
   description:
-    "SecureWork provides independent, expert-tested security guides for remote workers. Learn about our team, mission, and editorial standards.",
+    "BuySecureVPN provides independent, expert-tested security guides for remote workers. Learn about our team, mission, and editorial standards.",
 };
 
 export default function AboutPage() {
@@ -14,12 +14,12 @@ export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-6">
-        About SecureWork
+        About BuySecureVPN
       </h1>
 
       <div className="prose prose-zinc dark:prose-invert max-w-none">
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-6">
-          SecureWork is an independent publication dedicated to helping remote
+          BuySecureVPN is an independent publication dedicated to helping remote
           workers stay secure online. We test VPNs, review security tools, and
           write practical guides based on real-world experience.
         </p>

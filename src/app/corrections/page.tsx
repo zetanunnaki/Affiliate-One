@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Corrections Policy",
-  description: "How SecureWork handles errors and corrections in published content.",
+  description: "How BuySecureVPN handles errors and corrections in published content.",
 };
 
 export default function CorrectionsPage() {

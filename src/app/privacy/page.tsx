@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "SecureWork's privacy policy explains how we collect, use, and protect your personal information.",
+  description: "BuySecureVPN's privacy policy explains how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPage() {
@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-6">Privacy Policy</h1>
       <p className="text-sm text-zinc-500 mb-8">Last updated: April 7, 2026</p>
       <div className="prose prose-zinc dark:prose-invert max-w-none space-y-4 text-zinc-700 dark:text-zinc-300">
-        <p>SecureWork (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) respects your privacy. This policy explains what data we collect and how we use it.</p>
+        <p>BuySecureVPN (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) respects your privacy. This policy explains what data we collect and how we use it.</p>
 
         <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">Information We Collect</h2>
         <ul>

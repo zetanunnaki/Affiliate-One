@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Changelog — What's New on SecureWork",
-  description: "Transparency log of updates, new content, and corrections on SecureWork.",
+  title: "Changelog — What's New on BuySecureVPN",
+  description: "Transparency log of updates, new content, and corrections on BuySecureVPN.",
 };
 
 const entries = [
@@ -17,7 +17,7 @@ export default function ChangelogPage() {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">Changelog</h1>
       <p className="text-zinc-600 dark:text-zinc-400 mb-8">
-        A transparent log of updates, new content, and changes on SecureWork.
+        A transparent log of updates, new content, and changes on BuySecureVPN.
         We believe in documenting what we publish and when.
       </p>
 

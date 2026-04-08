@@ -2,8 +2,8 @@ export default function GlobalStructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "SecureWork",
-    url: "https://securework.example.com",
+    name: "BuySecureVPN",
+    url: "https://buysecurevpn.com",
     description:
       "Independent security guides for remote workers. Expert-tested VPN reviews, public Wi-Fi safety guides, and cybersecurity resources.",
     potentialAction: {
@@ -11,7 +11,7 @@ export default function GlobalStructuredData() {
       target: {
         "@type": "EntryPoint",
         urlTemplate:
-          "https://securework.example.com/search?q={search_term_string}",
+          "https://buysecurevpn.com/search?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -20,13 +20,13 @@ export default function GlobalStructuredData() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "SecureWork",
-    url: "https://securework.example.com",
-    logo: "https://securework.example.com/logo.png",
+    name: "BuySecureVPN",
+    url: "https://buysecurevpn.com",
+    logo: "https://buysecurevpn.com/logo.png",
     sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",
-      email: "hello@securework.example.com",
+      email: "hello@buysecurevpn.com",
       contactType: "customer support",
     },
   };

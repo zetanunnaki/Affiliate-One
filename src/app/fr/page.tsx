@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { getAllCountries } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "SecureWork — Guides de Sécurité pour le Travail à Distance et VPN",
+  title: "BuySecureVPN — Guides de Sécurité pour le Travail à Distance et VPN",
   description: "Guides de sécurité indépendants pour les travailleurs à distance. Avis sur les VPN, sécurité Wi-Fi public et ressources de cybersécurité.",
   alternates: { languages: { en: "/", fr: "/fr/" } },
 };

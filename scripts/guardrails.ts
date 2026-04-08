@@ -83,7 +83,7 @@ function main() {
   let errors = 0;
   let warnings = 0;
 
-  console.log("=== SecureWork Build Guardrails ===\n");
+  console.log("=== BuySecureVPN Build Guardrails ===\n");
 
   // Check providers
   console.log(`Providers: ${providers.length} found`);

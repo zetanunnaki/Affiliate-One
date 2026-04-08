@@ -6,7 +6,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const BASE_URL = "https://zetanunnaki.github.io/Affiliate-One";
+const BASE_URL = "https://buysecurevpn.com";
 const OUT_FILE = path.join(process.cwd(), "public", "sitemap.xml");
 
 function loadJson(relPath: string) {

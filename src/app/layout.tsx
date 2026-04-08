@@ -19,15 +19,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "SecureWork — Remote Work Security & VPN Guides",
-    template: "%s | SecureWork",
+    default: "BuySecureVPN — Remote Work Security & VPN Guides",
+    template: "%s | BuySecureVPN",
   },
   description:
     "Independent security guides for remote workers. Expert-tested VPN reviews, public Wi-Fi safety guides, and cybersecurity resources for working from anywhere.",
-  metadataBase: new URL("https://zetanunnaki.github.io/Affiliate-One"),
+  metadataBase: new URL("https://buysecurevpn.com"),
   openGraph: {
     type: "website",
-    siteName: "SecureWork",
+    siteName: "BuySecureVPN",
     locale: "en_US",
   },
   twitter: {

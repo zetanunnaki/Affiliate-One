@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Editorial Policy",
   description:
-    "SecureWork's editorial policy outlines our commitment to accuracy, independence, and transparency in all content.",
+    "BuySecureVPN's editorial policy outlines our commitment to accuracy, independence, and transparency in all content.",
 };
 
 export default function EditorialPolicyPage() {
@@ -20,7 +20,7 @@ export default function EditorialPolicyPage() {
             Our Commitment
           </h2>
           <p>
-            SecureWork is committed to providing accurate, independent, and
+            BuySecureVPN is committed to providing accurate, independent, and
             useful security guidance for remote workers. Our editorial content
             is never influenced by advertisers, affiliate partners, or product
             providers.
@@ -83,7 +83,7 @@ export default function EditorialPolicyPage() {
             Affiliate Disclosure
           </h2>
           <p>
-            Some links on SecureWork are affiliate links. When you purchase
+            Some links on BuySecureVPN are affiliate links. When you purchase
             through these links, we may earn a commission at no additional cost
             to you. Affiliate relationships are clearly disclosed on every page
             that contains them. Read our full{" "}

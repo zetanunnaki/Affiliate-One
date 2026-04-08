@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /_next/
 
-Sitemap: https://zetanunnaki.github.io/Affiliate-One/sitemap.xml
+Sitemap: https://buysecurevpn.com/sitemap.xml

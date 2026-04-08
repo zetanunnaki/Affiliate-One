@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with the SecureWork team. Report errors, suggest topics, or ask questions.",
+  description: "Get in touch with the BuySecureVPN team. Report errors, suggest topics, or ask questions.",
 };
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
           <h2 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-2">Editorial Inquiries</h2>
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
             For corrections, fact-checking concerns, or editorial feedback, email us at{" "}
-            <span className="font-medium text-zinc-900 dark:text-zinc-100">editorial@securework.example.com</span>
+            <span className="font-medium text-zinc-900 dark:text-zinc-100">editorial@buysecurevpn.com</span>
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function ContactPage() {
           <h2 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-2">General Questions</h2>
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
             For general questions or topic suggestions, email{" "}
-            <span className="font-medium text-zinc-900 dark:text-zinc-100">hello@securework.example.com</span>
+            <span className="font-medium text-zinc-900 dark:text-zinc-100">hello@buysecurevpn.com</span>
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function ContactPage() {
           <h2 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-2">Business & Partnerships</h2>
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
             For business inquiries, email{" "}
-            <span className="font-medium text-zinc-900 dark:text-zinc-100">partnerships@securework.example.com</span>
+            <span className="font-medium text-zinc-900 dark:text-zinc-100">partnerships@buysecurevpn.com</span>
           </p>
         </div>
       </div>

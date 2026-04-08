@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { footerNav } from "@/lib/navigation";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   return (
@@ -8,18 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">SW</span>
-              </div>
-              <span className="font-bold text-lg text-zinc-900 dark:text-zinc-100">
-                SecureWork
-              </span>
-            </Link>
+            <div className="mb-4">
+              <Logo />
+            </div>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 max-w-xs">
-              Independent security guides for remote workers. We test and review
-              VPNs, password managers, and security tools so you can work safely
-              from anywhere.
+              Independent VPN reviews and security guides for remote workers.
+              Expert-tested recommendations to help you work safely from anywhere.
             </p>
           </div>
 
@@ -83,7 +78,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-zinc-200 dark:border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-zinc-500 dark:text-zinc-500">
-            &copy; {new Date().getFullYear()} SecureWork. All rights reserved.
+            &copy; {new Date().getFullYear()} BuySecureVPN. All rights reserved.
             Some links on this site are affiliate links.
           </p>
           <p className="text-xs text-zinc-500 dark:text-zinc-500">

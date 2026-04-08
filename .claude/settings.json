@@ -3,7 +3,9 @@
     "allow": [
       "Bash(node -e ':*)",
       "Bash(git config:*)",
-      "mcp__github__get_me"
+      "mcp__github__get_me",
+      "Bash(gh api:*)",
+      "mcp__github__list_commits"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]"

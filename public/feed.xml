@@ -5,7 +5,7 @@
     <link>https://zetanunnaki.github.io/Affiliate-One</link>
     <description>Independent security guides for remote workers.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 05:29:29 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 05:39:36 GMT</lastBuildDate>
     <atom:link href="https://zetanunnaki.github.io/Affiliate-One/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title><![CDATA[Browser Privacy Setup Guide: Stop Being Tracked Online (2026)]]></title>
@@ -88,6 +88,22 @@
       <category>security</category>
     </item>
     <item>
+      <title><![CDATA[Secure Video Calls: Protect Your Meetings From Eavesdroppers (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/secure-video-calls/</guid>
+      <description><![CDATA[Are your Zoom, Teams, and Google Meet calls secure? Encryption, settings, and practices to keep your meetings private.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
+      <title><![CDATA[SIM Swap Protection: Don't Let Hackers Steal Your Phone Number (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/sim-swap-protection/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/sim-swap-protection/</guid>
+      <description><![CDATA[SIM swap attacks let hackers hijack your phone number to bypass 2FA and access your accounts. Here's how to protect yourself.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
+    </item>
+    <item>
       <title><![CDATA[How to Set Up Two-Factor Authentication on Every Account (2026)]]></title>
       <link>https://zetanunnaki.github.io/Affiliate-One/guides/two-factor-auth-setup/</link>
       <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/two-factor-auth-setup/</guid>
@@ -142,6 +158,14 @@
       <description><![CDATA[How safe is hotel and airport Wi-Fi? Real threats, practical protection steps, and when to use your phone's hotspot instead.]]></description>
       <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
       <category>public-wifi</category>
+    </item>
+    <item>
+      <title><![CDATA[Zero Trust Security for Remote Workers: What You Need to Know (2026)]]></title>
+      <link>https://zetanunnaki.github.io/Affiliate-One/guides/zero-trust-remote-work/</link>
+      <guid isPermaLink="true">https://zetanunnaki.github.io/Affiliate-One/guides/zero-trust-remote-work/</guid>
+      <description><![CDATA[Zero Trust is replacing traditional VPNs in many companies. Understand what it means for you as a remote worker and how it affects your security.]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <category>security</category>
     </item>
   </channel>
 </rss>

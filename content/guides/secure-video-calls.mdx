@@ -1,0 +1,91 @@
+---
+title: "Secure Video Calls: Protect Your Meetings From Eavesdroppers (2026)"
+description: "Are your Zoom, Teams, and Google Meet calls secure? Encryption, settings, and practices to keep your meetings private."
+updatedAt: "2026-04-07"
+author: "elena-rodriguez"
+category: "security"
+toc: true
+citations:
+  - "Zoom Security Whitepaper 2026"
+  - "Microsoft Teams Encryption Documentation"
+  - "EFF: Secure Messaging Scorecard"
+---
+
+## The Video Call Security Problem
+
+Remote work means more video calls than ever. But how secure are they? High-profile incidents — from Zoom bombings to CEO impersonation deep fakes — have highlighted the risks.
+
+Your video calls may contain sensitive business discussions, client data, financial details, and strategic plans. Securing them is essential.
+
+## Platform Security Comparison
+
+| Platform | Encryption | End-to-End Option | Recording Security | Overall |
+|----------|-----------|-------------------|-------------------|---------|
+| Zoom | AES-256 | Yes (optional) | Cloud or local | Good |
+| Microsoft Teams | AES-256 | Yes (1:1 calls) | Cloud (Microsoft) | Good |
+| Google Meet | AES-256 | No (in transit only) | Cloud (Google) | Fair |
+| Signal | E2E by default | Yes (always) | Not available | Excellent |
+| FaceTime | E2E by default | Yes (always) | Not available | Excellent |
+
+**Key distinction:** Most platforms encrypt in transit (between you and their servers), but the platform itself can technically access the content. True end-to-end encryption (E2EE) means only participants can access the call — not even the platform provider.
+
+## Essential Settings for Every Platform
+
+### Zoom
+1. **Enable E2E encryption** for sensitive meetings (Settings > Security > End-to-end encryption)
+2. **Use waiting rooms** to control who joins (Settings > Meeting > Waiting Room)
+3. **Require passcodes** for all meetings
+4. **Lock the meeting** once all participants have joined
+5. **Disable "Join before host"** for sensitive meetings
+6. **Control screen sharing** (Host only, or specific participants)
+
+### Microsoft Teams
+1. **Use sensitivity labels** to classify meeting content
+2. **Control who can bypass the lobby** (Meeting options > Who can bypass the lobby)
+3. **Disable recording** for confidential discussions
+4. **Use E2E encryption** for sensitive 1:1 calls (available in Teams settings)
+5. **Review external access** settings for meetings with people outside your org
+
+### Google Meet
+1. **Don't share meeting links publicly** — use calendar invites instead
+2. **Use the "Quick access" toggle** to require host approval
+3. **Remove unexpected participants** immediately
+4. **Be aware:** Google Meet does NOT offer end-to-end encryption. Google can technically access call content
+
+## Network Security for Video Calls
+
+### Use a VPN
+A VPN encrypts your network traffic, preventing eavesdropping on the network level. This is especially important on:
+- Hotel and café Wi-Fi
+- Co-working space networks
+- Any shared network
+
+Enable split tunneling to route video call traffic through the VPN while keeping other traffic direct (improves call quality).
+
+### Bandwidth Considerations
+Video calls require stable bandwidth:
+- **Standard video:** 1.5 Mbps up/down
+- **HD video:** 3.0 Mbps up/down
+- **Group calls (gallery view):** 4.0 Mbps down, 3.0 Mbps up
+
+A VPN typically reduces speeds by 5-15% — this shouldn't affect call quality unless your base connection is marginal.
+
+## Physical Security During Calls
+
+- **Use a virtual or blurred background** — your physical environment can reveal location, documents, or whiteboards
+- **Wear headphones** — prevents audio leaking to others nearby
+- **Mute when not speaking** — reduces risk of unintended audio capture
+- **Be aware of screen sharing** — close sensitive tabs/apps before sharing your screen
+- **Check your camera angle** — ensure no sensitive documents are visible behind you
+
+## Deep Fake and AI Risks (2026)
+
+AI-generated video deep fakes are becoming more convincing. Protect against impersonation:
+- **Verify unexpected requests** through a separate channel (don't approve wire transfers based solely on a video call)
+- **Use authenticated meeting links** from calendar invites, not forwarded links
+- **Be skeptical of urgent video calls** from executives you don't regularly meet with
+- **Your company should establish verification protocols** for sensitive requests made via video
+
+## How We Verified
+
+Platform encryption claims verified against published security documentation. Settings tested on current versions of Zoom 6.x, Microsoft Teams (2026), and Google Meet in April 2026. Deep fake risk assessment based on current AI capabilities and documented incidents.

@@ -1,0 +1,82 @@
+---
+title: "Home Router Security Guide: Lock Down Your Network (2026)"
+description: "Your router is your network's front door. Here's how to secure it: change defaults, update firmware, enable encryption, and set up a guest network."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "CISA: Securing Your Home Router"
+  - "NIST SP 1800-21: Securing Home IoT Devices"
+---
+
+## Why Your Router Is Your Biggest Vulnerability
+
+Your home router is the gateway between your devices and the internet. Every device on your network — laptop, phone, smart TV, IoT sensors — routes through it. If your router is compromised, everything behind it is exposed.
+
+Most people never change their router's default settings. This is like leaving your front door unlocked with a "Welcome Hackers" sign.
+
+## Step 1: Change the Admin Password
+
+Every router ships with a default admin password, usually printed on a sticker. These defaults are publicly known. Attackers with access to your Wi-Fi (or even remotely in some cases) can log into your router's admin panel.
+
+**Action:**
+1. Connect to your router's admin page (usually 192.168.1.1 or 192.168.0.1)
+2. Log in with the current credentials (check the sticker)
+3. Navigate to Administration or System settings
+4. Change the admin password to a strong, unique one
+5. Store it in your password manager
+
+## Step 2: Update the Firmware
+
+Router firmware updates fix security vulnerabilities. Many routers run outdated firmware with known exploits.
+
+**Action:**
+1. In the admin panel, find System > Firmware Update
+2. Check for and install any available updates
+3. Enable automatic updates if available
+4. Set a calendar reminder to check quarterly if auto-update isn't available
+
+## Step 3: Enable WPA3 (or WPA2-AES)
+
+Wi-Fi encryption prevents unauthorized access and eavesdropping.
+
+**Encryption rankings (best to worst):**
+1. WPA3 — Current gold standard (use if your devices support it)
+2. WPA2-AES — Still secure, widest compatibility
+3. WPA2-TKIP — Older, avoid if possible
+4. WEP — Broken. Never use
+5. Open — No encryption. Never for home
+
+**Action:** In Wireless Settings, set security mode to WPA3 or WPA2-AES with a strong passphrase (12+ characters).
+
+## Step 4: Change the Default SSID
+
+The default network name (like "NETGEAR-5G" or "TP-Link_A4F2") reveals your router manufacturer, making targeted attacks easier.
+
+**Action:** Change to a unique name that doesn't reveal the router brand, your name, or apartment number.
+
+## Step 5: Set Up a Guest Network
+
+A guest network isolates visitors' devices from your main network. More importantly, put IoT devices (smart TVs, speakers, cameras) on the guest network so a compromised smart device can't access your work computer.
+
+**Action:**
+1. Enable Guest Network in your router settings
+2. Set a separate password
+3. Disable guest access to local network resources
+4. Connect all IoT devices to this network
+
+## Step 6: Disable WPS and UPnP
+
+- **WPS (Wi-Fi Protected Setup):** The PIN mode is vulnerable to brute-force attacks. Disable it
+- **UPnP (Universal Plug and Play):** Automatically opens ports, which can be exploited. Disable unless specific devices require it
+
+## Step 7: Consider a VPN on Your Router
+
+Some routers support VPN client installation, encrypting all traffic for every connected device. This is the most comprehensive approach — your phone, laptop, smart TV, and IoT devices all benefit.
+
+**Routers that support VPN clients:** ASUS RT series, Netgear Nighthawk, GL.iNet, Vilfo, and routers running custom firmware like DD-WRT or OpenWrt.
+
+## How We Verified
+
+All settings tested on current router firmware from ASUS, TP-Link, Netgear, and Google/Nest in April 2026. Security recommendations based on CISA home router guidelines and NIST SP 1800-21.

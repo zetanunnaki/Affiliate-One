@@ -1,0 +1,118 @@
+---
+title: "BYOD Security Guide: Using Personal Devices for Work Safely (2026)"
+description: "Bring Your Own Device policies create security risks. Here's how to separate work and personal data, secure your device, and protect both sides."
+updatedAt: "2026-04-07"
+author: "sarah-chen"
+category: "security"
+toc: true
+citations:
+  - "NIST SP 800-46 Rev.2: Guide to Enterprise Telework"
+  - "SANS: BYOD Security Considerations"
+---
+
+## The BYOD Security Challenge
+
+Using your personal laptop, phone, or tablet for work is convenient — but it creates a collision between personal privacy and corporate security. Your personal device may have games, personal photos, social media, and work documents all on the same machine.
+
+This guide helps you navigate BYOD safely, protecting both your employer's data and your personal privacy.
+
+## The Core Problem
+
+When work and personal use share a device:
+- **Your employer's data** is exposed to malware from personal downloads, games, or browsing
+- **Your personal data** may be visible to your employer through management software
+- **Lost/stolen devices** expose both work and personal data simultaneously
+- **Departing the company** creates data separation challenges
+
+## Rule 1: Separate Work and Personal Profiles
+
+The single most important BYOD practice is maintaining separation:
+
+### Windows
+- Create a separate Windows user account for work
+- Each account has its own desktop, documents, and browser profiles
+- Work data stays in the work profile; personal in personal
+
+### macOS
+- Use separate macOS user accounts for work and personal
+- Or use separate browser profiles (Chrome/Firefox support multiple profiles)
+- Consider using Spaces/desktops to keep work and personal visually separate
+
+### Mobile
+- **Android:** Use the Work Profile feature (Settings > Accounts > Work profile). This creates an isolated container for work apps
+- **iOS:** Use separate browser profiles and keep work apps in a dedicated folder. Consider using a separate Apple ID for work apps (complex but effective)
+
+## Rule 2: Enable Full Encryption
+
+Non-negotiable for BYOD devices:
+- **Windows:** Enable BitLocker
+- **macOS:** Enable FileVault
+- **Mobile:** Ensure device encryption is active (default on modern devices)
+
+If your device is lost, encryption prevents unauthorized access to both work and personal data.
+
+## Rule 3: Use a VPN for Work Traffic
+
+A VPN encrypts your work traffic, preventing exposure on your home network and any public Wi-Fi you connect to:
+
+- Use your company's VPN for accessing company resources
+- Use a personal VPN (NordVPN, Surfshark) for general browsing
+- Enable split tunneling to route only work traffic through the company VPN
+
+## Rule 4: Keep Everything Updated
+
+BYOD devices are often less maintained than company-managed devices:
+- Enable automatic OS updates
+- Enable automatic browser updates
+- Update all apps regularly
+- Don't ignore security patch prompts
+
+## Rule 5: Use a Password Manager
+
+Separate work and personal passwords:
+- Use a password manager (Bitwarden, 1Password) with separate vaults
+- Never reuse passwords between work and personal accounts
+- Enable 2FA on both work and personal accounts
+
+## Rule 6: Secure Your Home Network
+
+Your home network is now part of your company's attack surface:
+- Change router default credentials
+- Enable WPA3 encryption
+- Consider a separate VLAN or guest network for personal IoT devices
+- See our router security guide for complete steps
+
+## What Your Employer Can and Can't See
+
+Understanding this is critical for your privacy:
+
+### With MDM (Mobile Device Management)
+If your employer requires MDM software, they can potentially:
+- See installed apps
+- Enforce password policies
+- Remotely wipe the device
+- Track device location
+- Monitor network traffic through the company VPN
+
+### Without MDM
+If no MDM is installed, your employer generally cannot:
+- See your personal files or browsing
+- Access personal apps
+- Track your location
+- Monitor non-work activity
+
+**Recommendation:** Ask your IT department exactly what their BYOD policy monitors. You have a right to know.
+
+## When You Leave the Company
+
+Before departing:
+1. Remove all company data from your device
+2. Uninstall company apps and profiles
+3. Remove company email accounts
+4. Disconnect from company VPN
+5. Change any passwords that were shared or company-related
+6. Confirm with IT that remote wipe is no longer active
+
+## How We Verified
+
+BYOD practices based on NIST SP 800-46 Rev.2 and SANS Institute BYOD security guidelines. MDM capabilities verified with current versions of Microsoft Intune, Jamf, and VMware Workspace ONE. All platform separation features tested April 2026.

@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import ReadingProgressBar from "@/components/ui/ReadingProgressBar";
 import TableOfContents from "@/components/ui/TableOfContents";
 import Newsletter from "@/components/ui/Newsletter";
+import FeedbackWidget from "@/components/ui/FeedbackWidget";
 import InternalLinks from "@/components/ui/InternalLinks";
 import type { PostFrontmatter } from "@/types";
 
@@ -64,6 +65,9 @@ export default function ArticleLayout({
           <div className="prose prose-zinc dark:prose-invert max-w-none">
             {children}
           </div>
+
+          {/* Feedback */}
+          <FeedbackWidget pageId={frontmatter.title} />
 
           {/* Ad placeholder */}
           {frontmatter.adsEnabled !== false && (

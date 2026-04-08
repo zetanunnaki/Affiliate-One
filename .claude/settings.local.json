@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -d /c/Users/Issam/Affiliate-One/src/app/security/*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsx:*)",
+      "Bash(npm run:*)",
+      "Bash(node -e ':*)"
+    ]
+  }
+}

@@ -4,10 +4,10 @@
  */
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
 
 const BASE_URL = "https://buysecurevpn.com";
 const OUT_FILE = path.join(process.cwd(), "public", "sitemap.xml");
+const APP_DIR = path.join(process.cwd(), "src", "app");
 
 function loadJson(relPath: string) {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), relPath), "utf-8"));
@@ -23,6 +23,69 @@ function entry(url: string, priority: string, changefreq: string = "weekly"): st
   return `  <url><loc>${url}</loc><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
 }
 
+/**
+ * Walk src/app/ and discover every static (non-dynamic) route by finding
+ * page.tsx files in directories that don't contain [brackets] in their path.
+ * This ensures any new VPN feature page or security page is auto-included.
+ */
+function discoverStaticRoutes(): string[] {
+  const routes: string[] = [];
+
+  function walk(dir: string, urlPath: string) {
+    if (!fs.existsSync(dir)) return;
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+    // If this directory has a page.tsx and isn't a dynamic segment, add it
+    const hasPage = entries.some((e) => e.isFile() && e.name === "page.tsx");
+    if (hasPage && !urlPath.includes("[")) {
+      routes.push(urlPath || "/");
+    }
+
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      // Skip Next.js groups, dynamic segments, and special folders
+      if (entry.name.startsWith("(") || entry.name.startsWith("[")) continue;
+      if (entry.name === "api") continue;
+      walk(path.join(dir, entry.name), `${urlPath}/${entry.name}`);
+    }
+  }
+
+  walk(APP_DIR, "");
+  return routes.sort();
+}
+
+// Per-route priority overrides — anything not listed gets 0.6
+const PRIORITY_OVERRIDES: Record<string, string> = {
+  "/": "1.0",
+  "/vpn": "0.9",
+  "/security": "0.9",
+  "/countries": "0.9",
+  "/best/vpn": "0.9",
+  "/best": "0.8",
+  "/best/password-manager": "0.8",
+  "/best/2fa-app": "0.8",
+  "/vpn/providers": "0.8",
+  "/guides": "0.8",
+  "/security/remote-work": "0.8",
+  "/security/public-wifi": "0.8",
+  "/security/2fa": "0.8",
+  "/security/password-managers": "0.8",
+  "/security/travel": "0.8",
+  "/about": "0.5",
+  "/authors": "0.5",
+  "/search": "0.5",
+  "/newsletter": "0.5",
+  "/editorial-policy": "0.4",
+  "/affiliate-disclosure": "0.4",
+  "/corrections": "0.3",
+  "/privacy": "0.3",
+  "/cookies": "0.3",
+  "/contact": "0.4",
+  "/review-board": "0.4",
+  "/changelog": "0.3",
+  "/sitemap-html": "0.3",
+};
+
 function main() {
   const countries = loadJson("src/data/countries.json");
   const providers = loadJson("src/data/providers.json");
@@ -33,25 +96,13 @@ function main() {
 
   const urls: string[] = [];
 
-  // Static pages
-  const statics = [
-    ["/", "1.0"], ["/vpn/", "0.9"], ["/security/", "0.9"], ["/countries/", "0.9"],
-    ["/best/", "0.8"], ["/best/vpn/", "0.9"], ["/best/password-manager/", "0.8"], ["/best/2fa-app/", "0.8"],
-    ["/vpn/providers/", "0.8"], ["/vpn/vs/", "0.7"], ["/vpn/compare/", "0.7"],
-    ["/vpn/protocols/", "0.7"], ["/vpn/free/", "0.7"], ["/vpn/what-is-vpn/", "0.7"],
-    ["/guides/", "0.8"], ["/resources/", "0.7"], ["/glossary/", "0.6"],
-    ["/search/", "0.5"], ["/newsletter/", "0.5"], ["/deals/", "0.7"],
-    ["/tools/wifi-audit/", "0.7"], ["/tools/security-checklist/", "0.7"],
-    ["/security/remote-work/", "0.8"], ["/security/public-wifi/", "0.8"],
-    ["/security/2fa/", "0.8"], ["/security/password-managers/", "0.8"],
-    ["/security/travel/", "0.8"], ["/security/phishing/", "0.7"],
-    ["/about/", "0.5"], ["/authors/", "0.5"], ["/editorial-policy/", "0.4"],
-    ["/affiliate-disclosure/", "0.4"], ["/corrections/", "0.3"],
-    ["/privacy/", "0.3"], ["/cookies/", "0.3"], ["/contact/", "0.4"],
-    ["/review-board/", "0.4"], ["/changelog/", "0.3"], ["/sitemap-html/", "0.3"],
-  ];
-  for (const [p, pri] of statics) {
-    urls.push(entry(`${BASE_URL}${p}`, pri));
+  // Auto-discover all static pages by walking src/app/
+  const staticRoutes = discoverStaticRoutes();
+  for (const route of staticRoutes) {
+    const priority = PRIORITY_OVERRIDES[route] || "0.6";
+    // Add trailing slash to match next.config.ts trailingSlash: true
+    const url = route === "/" ? "/" : `${route}/`;
+    urls.push(entry(`${BASE_URL}${url}`, priority));
   }
 
   // Countries

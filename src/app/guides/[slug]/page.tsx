@@ -67,6 +67,9 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { slug } = await props.params;
   const post = getPostBySlug("guides", slug);
   if (!post) return {};
+  const ogImage = post.frontmatter.category === "vpn" ? "/images/og/og-vpn.webp"
+    : post.frontmatter.category === "travel" ? "/images/og/og-travel.webp"
+    : "/images/og/og-guides.webp";
   return {
     title: post.frontmatter.title,
     description: post.frontmatter.description,
@@ -75,7 +78,9 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
       description: post.frontmatter.description,
       type: "article",
       modifiedTime: post.frontmatter.updatedAt,
+      images: [{ url: ogImage, width: 1200, height: 675, alt: post.frontmatter.title }],
     },
+    twitter: { card: "summary_large_image", images: [ogImage] },
   };
 }
 

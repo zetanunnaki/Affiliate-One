@@ -4,6 +4,7 @@ import Header from "@/components/ui/Header";
 import TopAdSlot from "@/components/ui/TopAdSlot";
 import Footer from "@/components/ui/Footer";
 import GlobalStructuredData from "@/components/seo/GlobalStructuredData";
+import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import CookieConsent from "@/components/ui/CookieConsent";
 import "./globals.css";
@@ -30,9 +31,18 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "BuySecureVPN",
     locale: "en_US",
+    images: [
+      {
+        url: "/images/og/og-default.webp",
+        width: 1200,
+        height: 675,
+        alt: "BuySecureVPN — Independent VPN reviews and security guides",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/og/og-default.webp"],
   },
   robots: {
     index: true,
@@ -66,6 +76,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         <GlobalStructuredData />
+        <GoogleAnalytics />
         <Header />
         <TopAdSlot />
         <main id="main-content" className="flex-1">{children}</main>

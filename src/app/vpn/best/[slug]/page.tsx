@@ -30,6 +30,16 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 
   const alternates = generateAlternates(`/vpn/best/${slug}`);
 
+  // Use country-specific hero if available, otherwise fall back to OG countries banner
+  const COUNTRIES_WITH_HERO = new Set([
+    "united-states","united-kingdom","germany","france","japan","australia",
+    "canada","brazil","india","mexico","spain","italy","netherlands","sweden",
+    "singapore","south-korea","switzerland","poland","turkey","argentina",
+  ]);
+  const ogImage = COUNTRIES_WITH_HERO.has(slug)
+    ? `/images/countries/${slug}.webp`
+    : "/images/og/og-countries.webp";
+
   return {
     title: `Best VPN for ${country.nameEn} (2026): Remote Work Security & Privacy`,
     description: `Compare the top VPN services for ${country.nameEn}. Expert-tested recommendations for remote work, travel, and online privacy in ${country.nameEn}.`,
@@ -41,7 +51,9 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
       title: `Best VPN for ${country.nameEn} (2026)`,
       description: `Expert-tested VPN recommendations for ${country.nameEn}. Compare NordVPN, Surfshark, ExpressVPN, and more.`,
       type: "article",
+      images: [{ url: ogImage, width: 1200, height: 675, alt: `Best VPN for ${country.nameEn}` }],
     },
+    twitter: { card: "summary_large_image", images: [ogImage] },
   };
 }
 

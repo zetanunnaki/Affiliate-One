@@ -55,5 +55,29 @@ export function generateCountryFAQs(country: Country): FAQItem[] {
     answer: `Yes, many remote workers use VPNs in ${country.nameEn} to securely access company resources and protect sensitive data. ${country.internetNotes} A VPN with split tunneling allows you to route work traffic through a secure tunnel while using local internet for general browsing.`,
   });
 
+  // FAQ 7: Streaming
+  faqs.push({
+    question: `Can I use a VPN to stream services in ${country.nameEn}?`,
+    answer: `A VPN can help you access streaming services that may be geo-restricted in ${country.nameEn}. NordVPN, Surfshark, and ExpressVPN are particularly effective at unblocking Netflix, Disney+, BBC iPlayer, and Amazon Prime libraries from other regions. Always check the terms of service of streaming providers before connecting.`,
+  });
+
+  // FAQ 8: Mobile / smartphone
+  faqs.push({
+    question: `Should I use a VPN on my phone in ${country.nameEn}?`,
+    answer: `Yes — using a VPN on your mobile device in ${country.nameEn} is just as important as on a laptop, especially when connecting to public Wi-Fi at cafes, hotels, airports, or co-working spaces. All major VPN providers offer iOS and Android apps with one-tap connection and automatic Wi-Fi protection.`,
+  });
+
+  // FAQ 9: Banking
+  faqs.push({
+    question: `Is online banking safe in ${country.nameEn} with a VPN?`,
+    answer: `A VPN adds an essential encryption layer when accessing online banking in ${country.nameEn}, especially over public networks. However, some banks may flag VPN logins as suspicious. We recommend connecting to a server in your home country when banking, and enabling two-factor authentication on all accounts.`,
+  });
+
+  // FAQ 10: Free vs paid
+  faqs.push({
+    question: `Should I use a free VPN in ${country.nameEn}?`,
+    answer: `We strongly advise against free VPNs in ${country.nameEn}. Free providers typically log user data, sell browsing history to advertisers, contain malware, and provide poor performance. Paid VPNs like NordVPN ($3.39/mo) and Surfshark ($2.29/mo) cost less than a coffee per month and offer audited no-logs policies, faster speeds, and proper security.`,
+  });
+
   return faqs;
 }

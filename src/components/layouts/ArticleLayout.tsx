@@ -12,6 +12,14 @@ interface ArticleLayoutProps {
   breadcrumbs?: { label: string; href?: string }[];
 }
 
+// Hero image by category — falls back to security
+const heroImageByCategory: Record<string, { src: string; alt: string }> = {
+  vpn: { src: "/images/illustrations/hero-vpn-desk.png", alt: "VPN security on laptop workspace" },
+  security: { src: "/images/illustrations/hero-home-office.png", alt: "Secure home office setup" },
+  travel: { src: "/images/illustrations/hero-airport-wifi.png", alt: "VPN on public airport WiFi" },
+  "public-wifi": { src: "/images/illustrations/hero-airport-wifi.png", alt: "VPN on public airport WiFi" },
+};
+
 const categoryIcons: Record<string, React.ReactNode> = {
   vpn: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>,
   security: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>,
@@ -36,6 +44,7 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs }: Ar
   };
 
   const catIcon = categoryIcons[frontmatter.category] || categoryIcons.security;
+  const heroImage = heroImageByCategory[frontmatter.category] || heroImageByCategory.security;
 
   return (
     <>
@@ -71,6 +80,19 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs }: Ar
           <div className="pt-5 border-t border-white/10 [&_a]:text-blue-300 [&_a:hover]:text-blue-200 [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
             <Byline authorId={frontmatter.author} updatedAt={frontmatter.updatedAt} />
           </div>
+        </div>
+      </div>
+
+      {/* ═══ FEATURED IMAGE — sits right under the dark hero ═══ */}
+      <div className="relative -mt-6 mb-6">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={heroImage.src}
+            alt={heroImage.alt}
+            className="w-full h-auto rounded-2xl shadow-2xl ring-1 ring-black/5 object-cover aspect-[16/9]"
+            loading="eager"
+          />
         </div>
       </div>
 

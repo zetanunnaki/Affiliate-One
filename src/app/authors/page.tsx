@@ -29,11 +29,15 @@ export default function AuthorsPage() {
             href={`/authors/${author.id}`}
             className="flex items-start gap-5 p-6 border border-zinc-200 dark:border-zinc-700 rounded-xl hover:shadow-md hover:border-blue-300 dark:hover:border-blue-700 transition-all group"
           >
-            <div className="w-16 h-16 bg-zinc-200 dark:bg-zinc-700 rounded-full flex items-center justify-center shrink-0">
-              <span className="text-xl font-bold text-zinc-500 dark:text-zinc-400">
-                {author.name.split(" ").map((n) => n[0]).join("")}
-              </span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={author.headshot}
+              alt={`${author.name} — ${author.role}`}
+              width={64}
+              height={64}
+              className="w-16 h-16 rounded-full object-cover shrink-0"
+              loading="lazy"
+            />
             <div className="flex-1">
               <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600">
                 {author.name}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/ui/Header";
+import TopAdSlot from "@/components/ui/TopAdSlot";
 import Footer from "@/components/ui/Footer";
 import GlobalStructuredData from "@/components/seo/GlobalStructuredData";
 import ScrollToTop from "@/components/ui/ScrollToTop";
@@ -66,6 +67,7 @@ export default function RootLayout({
         </a>
         <GlobalStructuredData />
         <Header />
+        <TopAdSlot />
         <main id="main-content" className="flex-1">{children}</main>
         <Footer />
         <ScrollToTop />

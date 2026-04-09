@@ -43,14 +43,14 @@ export default async function AuthorPage(props: PageProps) {
       />
 
       <div className="flex items-start gap-6 mb-8">
-        <div className="w-20 h-20 bg-zinc-200 dark:bg-zinc-700 rounded-full flex items-center justify-center shrink-0">
-          <span className="text-2xl font-bold text-zinc-500 dark:text-zinc-400">
-            {author.name
-              .split(" ")
-              .map((n) => n[0])
-              .join("")}
-          </span>
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={author.headshot}
+          alt={`${author.name} — ${author.role}`}
+          width={80}
+          height={80}
+          className="w-20 h-20 rounded-full object-cover shrink-0"
+        />
         <div>
           <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
             {author.name}

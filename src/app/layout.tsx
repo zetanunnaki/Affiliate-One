@@ -5,6 +5,7 @@ import TopAdSlot from "@/components/ui/TopAdSlot";
 import Footer from "@/components/ui/Footer";
 import GlobalStructuredData from "@/components/seo/GlobalStructuredData";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
+import AdSense from "@/components/seo/AdSense";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import CookieConsent from "@/components/ui/CookieConsent";
 import "./globals.css";
@@ -77,6 +78,7 @@ export default function RootLayout({
         </a>
         <GlobalStructuredData />
         <GoogleAnalytics />
+        <AdSense />
         <Header />
         <TopAdSlot />
         <main id="main-content" className="flex-1">{children}</main>

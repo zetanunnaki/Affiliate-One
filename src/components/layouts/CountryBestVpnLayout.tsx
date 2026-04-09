@@ -11,6 +11,14 @@ import CountryPageTracker from "@/components/ui/CountryPageTracker";
 import NearbyCountries from "@/components/ui/NearbyCountries";
 import { getAllCountries } from "@/lib/data";
 
+// Slugs that have a generated hero image in /public/images/countries/
+const COUNTRIES_WITH_HERO = new Set([
+  "united-states", "united-kingdom", "germany", "france", "japan",
+  "australia", "canada", "brazil", "india", "mexico", "spain", "italy",
+  "netherlands", "sweden", "singapore", "south-korea", "switzerland",
+  "poland", "turkey", "argentina",
+]);
+
 interface CountryBestVpnLayoutProps {
   country: Country;
   providers: {
@@ -76,6 +84,19 @@ export default function CountryBestVpnLayout({
           { label: country.nameEn },
         ]}
       />
+
+      {/* Country hero image (only if we have one generated) */}
+      {COUNTRIES_WITH_HERO.has(country.slug) && (
+        <div className="mb-8 -mx-4 sm:-mx-6 lg:-mx-8 sm:rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`/images/countries/${country.slug}.webp`}
+            alt={`${country.nameEn} — VPN guide hero image`}
+            className="w-full h-auto object-cover aspect-[16/9]"
+            loading="eager"
+          />
+        </div>
+      )}
 
       {/* Section 1: Above-the-fold summary */}
       <header className="mb-8">

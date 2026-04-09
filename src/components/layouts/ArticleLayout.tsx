@@ -23,17 +23,22 @@ const heroImageByCategory: Record<string, { src: string; alt: string }> = {
 
 // Topic-cluster image mapping — keyword fragments matched against slug+title
 // Returns the most specific match. Order matters (most specific first).
-// Only includes images that actually exist on disk.
 const TOPIC_IMAGES: Array<[RegExp, string, string]> = [
+  [/crypto/, "/images/illustrations/guide-crypto.webp", "Cryptocurrency security and hardware wallets"],
+  [/gaming|gamer/, "/images/illustrations/guide-gaming.webp", "VPN for gaming setup"],
+  [/coworking|co-working/, "/images/illustrations/guide-coworking.webp", "Coworking and shared office security"],
+  [/api[- ]?key|developer|cloud-development|endpoint|byod|note-taking/, "/images/illustrations/guide-developer.webp", "Developer security and API keys"],
   [/messaging|video[- ]?call|screen[- ]?sharing|collaboration|remote[- ]?desktop|email/, "/images/illustrations/guide-comms.webp", "Secure video calls and messaging"],
   [/browser|privacy|social-media|browsing|minimalism|estate|job-search|laws/, "/images/illustrations/guide-privacy.webp", "Browser privacy and online tracking"],
-  [/backup|cloud-storage|breach|file-sharing|encryption|api[- ]?key|developer/, "/images/illustrations/guide-data.webp", "Cloud data and backup security"],
+  [/backup|cloud-storage|breach|file-sharing|encryption/, "/images/illustrations/guide-data.webp", "Cloud data and backup security"],
   [/wifi|router|home-network|dns|iot/, "/images/illustrations/guide-router.webp", "Home network router security"],
   [/password|2fa|two-factor|sim-swap|auth/, "/images/illustrations/guide-passwords.webp", "Password manager and 2FA"],
+  [/finance|accountant|lawyer|healthcare|teacher|real-estate|senior|small-business|freelance|expat|journalist|student/, "/images/illustrations/guide-professional.webp", "Professional VPN for finance and business"],
+  [/multi-device|tablet|chromebook|nas|android|ios|mac|windows|linux/, "/images/illustrations/guide-multi-device.webp", "Multi-device VPN security"],
+  [/zero[- ]?trust|enterprise/, "/images/illustrations/guide-enterprise.webp", "Enterprise VPN and zero trust"],
   [/digital[- ]?nomad|nomad/, "/images/illustrations/guide-digital-nomad.webp", "Digital nomad working remotely"],
   [/hotel|airport|travel/, "/images/illustrations/guide-hotel-wifi.webp", "Working from hotel with VPN"],
   [/setup|beginner|mobile/, "/images/illustrations/guide-mobile-vpn.webp", "VPN connected on smartphone"],
-  [/security[- ]?tools|tools/, "/images/illustrations/guide-security-tools.webp", "Security tools flatlay"],
 ];
 
 function pickHero(slug: string | undefined, category: string, title: string): { src: string; alt: string } {

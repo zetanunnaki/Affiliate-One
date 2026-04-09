@@ -10,7 +10,8 @@ import Script from "next/script";
  * Example: NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
  */
 export default function GoogleAnalytics() {
-  const id = process.env.NEXT_PUBLIC_GA_ID;
+  // GA4 measurement IDs are public (visible in browser) — safe to hardcode
+  const id = process.env.NEXT_PUBLIC_GA_ID || "G-108NSVHEVB";
   if (!id) return null;
 
   return (

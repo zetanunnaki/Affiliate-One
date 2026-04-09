@@ -17,9 +17,29 @@ export default function ShareButtons({ title, url }: ShareButtonsProps) {
       color: "hover:text-zinc-900 dark:hover:text-white",
     },
     {
+      name: "Reddit",
+      href: `https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`,
+      color: "hover:text-orange-600",
+    },
+    {
+      name: "Pinterest",
+      href: `https://pinterest.com/pin/create/button/?url=${encodedUrl}&description=${encodedTitle}`,
+      color: "hover:text-red-600",
+    },
+    {
+      name: "Facebook",
+      href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+      color: "hover:text-blue-600",
+    },
+    {
       name: "LinkedIn",
       href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
       color: "hover:text-blue-700",
+    },
+    {
+      name: "WhatsApp",
+      href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+      color: "hover:text-green-500",
     },
     {
       name: "Email",

@@ -1,3 +1,5 @@
+import { getSocialUrls } from "@/lib/social";
+
 export default function GlobalStructuredData() {
   const websiteSchema = {
     "@context": "https://schema.org",
@@ -23,7 +25,7 @@ export default function GlobalStructuredData() {
     name: "BuySecureVPN",
     url: "https://buysecurevpn.com",
     logo: "https://buysecurevpn.com/logo.png",
-    sameAs: [],
+    sameAs: getSocialUrls(),
     contactPoint: {
       "@type": "ContactPoint",
       email: "hello@buysecurevpn.com",

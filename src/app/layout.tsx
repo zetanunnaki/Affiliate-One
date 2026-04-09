@@ -6,6 +6,7 @@ import Footer from "@/components/ui/Footer";
 import GlobalStructuredData from "@/components/seo/GlobalStructuredData";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 import AdSense from "@/components/seo/AdSense";
+import { SOCIAL } from "@/lib/social";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import CookieConsent from "@/components/ui/CookieConsent";
 import "./globals.css";
@@ -43,8 +44,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: `@${SOCIAL.twitter.handle}`,
+    creator: `@${SOCIAL.twitter.handle}`,
     images: ["/images/og/og-default.webp"],
   },
+  ...(SOCIAL.pinterest.verificationCode && {
+    other: {
+      "p:domain_verify": SOCIAL.pinterest.verificationCode,
+    },
+  }),
   robots: {
     index: true,
     follow: true,

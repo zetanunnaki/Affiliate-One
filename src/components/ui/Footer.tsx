@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { footerNav } from "@/lib/navigation";
 import Logo from "@/components/ui/Logo";
+import SocialIcons from "@/components/ui/SocialIcons";
 
 export default function Footer() {
   return (
@@ -12,10 +13,11 @@ export default function Footer() {
             <div className="mb-5">
               <Logo forceDark />
             </div>
-            <p className="text-sm text-slate-400 leading-relaxed max-w-xs">
+            <p className="text-sm text-slate-400 leading-relaxed max-w-xs mb-5">
               Independent VPN reviews and security guides for remote workers.
               Expert-tested recommendations you can trust.
             </p>
+            <SocialIcons />
           </div>
 
           {/* Resources */}

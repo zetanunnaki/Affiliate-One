@@ -10,15 +10,39 @@ interface ArticleLayoutProps {
   frontmatter: PostFrontmatter;
   children: React.ReactNode;
   breadcrumbs?: { label: string; href?: string }[];
+  slug?: string;
 }
 
 // Hero image by category — falls back to security
 const heroImageByCategory: Record<string, { src: string; alt: string }> = {
-  vpn: { src: "/images/illustrations/hero-vpn-desk.png", alt: "VPN security on laptop workspace" },
-  security: { src: "/images/illustrations/hero-home-office.png", alt: "Secure home office setup" },
-  travel: { src: "/images/illustrations/hero-airport-wifi.png", alt: "VPN on public airport WiFi" },
-  "public-wifi": { src: "/images/illustrations/hero-airport-wifi.png", alt: "VPN on public airport WiFi" },
+  vpn: { src: "/images/illustrations/hero-vpn-desk.webp", alt: "VPN security on laptop workspace" },
+  security: { src: "/images/illustrations/hero-home-office.webp", alt: "Secure home office setup" },
+  travel: { src: "/images/illustrations/hero-airport-wifi.webp", alt: "VPN on public airport WiFi" },
+  "public-wifi": { src: "/images/illustrations/hero-airport-wifi.webp", alt: "VPN on public airport WiFi" },
 };
+
+// Topic-cluster image mapping — keyword fragments matched against slug+title
+// Returns the most specific match. Order matters (most specific first).
+// Only includes images that actually exist on disk.
+const TOPIC_IMAGES: Array<[RegExp, string, string]> = [
+  [/messaging|video[- ]?call|screen[- ]?sharing|collaboration|remote[- ]?desktop|email/, "/images/illustrations/guide-comms.webp", "Secure video calls and messaging"],
+  [/browser|privacy|social-media|browsing|minimalism|estate|job-search|laws/, "/images/illustrations/guide-privacy.webp", "Browser privacy and online tracking"],
+  [/backup|cloud-storage|breach|file-sharing|encryption|api[- ]?key|developer/, "/images/illustrations/guide-data.webp", "Cloud data and backup security"],
+  [/wifi|router|home-network|dns|iot/, "/images/illustrations/guide-router.webp", "Home network router security"],
+  [/password|2fa|two-factor|sim-swap|auth/, "/images/illustrations/guide-passwords.webp", "Password manager and 2FA"],
+  [/digital[- ]?nomad|nomad/, "/images/illustrations/guide-digital-nomad.webp", "Digital nomad working remotely"],
+  [/hotel|airport|travel/, "/images/illustrations/guide-hotel-wifi.webp", "Working from hotel with VPN"],
+  [/setup|beginner|mobile/, "/images/illustrations/guide-mobile-vpn.webp", "VPN connected on smartphone"],
+  [/security[- ]?tools|tools/, "/images/illustrations/guide-security-tools.webp", "Security tools flatlay"],
+];
+
+function pickHero(slug: string | undefined, category: string, title: string): { src: string; alt: string } {
+  const haystack = `${slug || ""} ${title}`.toLowerCase();
+  for (const [pattern, src, alt] of TOPIC_IMAGES) {
+    if (pattern.test(haystack)) return { src, alt };
+  }
+  return heroImageByCategory[category] || heroImageByCategory.security;
+}
 
 const categoryIcons: Record<string, React.ReactNode> = {
   vpn: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>,
@@ -27,7 +51,7 @@ const categoryIcons: Record<string, React.ReactNode> = {
   "public-wifi": <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.858 15.355-5.858 21.213 0" /></svg>,
 };
 
-export default function ArticleLayout({ frontmatter, children, breadcrumbs }: ArticleLayoutProps) {
+export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug }: ArticleLayoutProps) {
   const defaultBreadcrumbs = breadcrumbs || [
     { label: "Home", href: "/" },
     { label: "Guides", href: "/guides" },
@@ -44,7 +68,7 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs }: Ar
   };
 
   const catIcon = categoryIcons[frontmatter.category] || categoryIcons.security;
-  const heroImage = heroImageByCategory[frontmatter.category] || heroImageByCategory.security;
+  const heroImage = pickHero(slug, frontmatter.category, frontmatter.title);
 
   return (
     <>

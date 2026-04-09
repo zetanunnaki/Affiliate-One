@@ -129,6 +129,148 @@ const jobs: ImageJob[] = [
     alt: "Digital nomad working remotely with VPN protection — BuySecureVPN",
     aspectRatio: "16:9",
   },
+
+  // ── Guides v2 — thematic, mapped to slug clusters ───────────────────────
+  {
+    category: "guides-v2",
+    prompt: `Close-up of a person's hands on a laptop, screen displaying a password manager vault with multiple credential entries blurred for privacy, a smartphone next to the laptop showing an authenticator app code, warm professional lighting. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-passwords.png",
+    alt: "Password manager and 2FA security — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `Modern home WiFi router on a wooden shelf with subtle blue LED status lights, ethernet cables neatly connected, blurred smart home in background, professional product photography. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-router.png",
+    alt: "Home network router security — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `Server racks in a clean modern data center with blue LED lights and fiber optic cables, depth of field, cinematic blue tone, professional infrastructure photography. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-data.png",
+    alt: "Cloud data and backup security — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `A person browsing the web on a laptop in a private home setting, the browser shows privacy settings and a VPN icon in the address bar, warm cozy lighting, lifestyle photography. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-privacy.png",
+    alt: "Browser privacy and online tracking — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `Two professionals on a video conference call shown on a laptop screen with end-to-end encryption indicator visible, modern home office setup, warm natural light, professional collaboration. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-comms.png",
+    alt: "Secure video calls and messaging — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `Developer working on a Mac laptop with code visible on screen including environment variables and API key syntax highlighted, dark IDE theme, mechanical keyboard, mug of coffee, focused technical workspace. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-developer.png",
+    alt: "Developer security and API keys — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `Gaming setup with mechanical keyboard, RGB mouse, gaming headphones, ultrawide monitor showing a game lobby with low ping indicator, dim ambient RGB lighting, esports atmosphere. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-gaming.png",
+    alt: "VPN for gaming setup — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `Modern professional office desk with a laptop showing financial spreadsheets, a calculator, documents, and a coffee cup, clean corporate workspace, natural daylight from window. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-professional.png",
+    alt: "Professional VPN for finance and business — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `A smartphone and tablet side by side on a wooden desk, both showing the same VPN app with connected status, clean minimalist tech flatlay photography. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-multi-device.png",
+    alt: "Multi-device VPN security — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `A modern office building lobby with people walking, blurred motion, a security badge reader visible in foreground, corporate professional environment, soft daylight. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-enterprise.png",
+    alt: "Enterprise VPN and zero trust — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `Bitcoin and Ethereum hardware wallets on a dark slate surface beside a laptop showing a crypto exchange interface, dramatic side lighting, professional cryptocurrency security photography. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-crypto.png",
+    alt: "Cryptocurrency security and hardware wallets — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v2",
+    prompt: `Modern coworking space with multiple people working on laptops at long shared tables, plants, exposed brick walls, natural light from large windows, productive collaborative atmosphere. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-coworking.png",
+    alt: "Coworking and shared office security — BuySecureVPN",
+    aspectRatio: "16:9",
+  },
+
+  // ── Country hero images (top 20) ────────────────────────────────────────
+  ...["united-states","united-kingdom","germany","france","japan","australia","canada","brazil","india","mexico","spain","italy","netherlands","sweden","singapore","south-korea","switzerland","poland","turkey","argentina"].map((slug) => {
+    const niceName = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+    return {
+      category: "countries" as const,
+      prompt: `Iconic landmark or skyline of ${niceName} at golden hour, with a subtle blue digital network overlay representing internet connectivity, cinematic travel photography, vibrant colors. ${QUALITY}`,
+      outputPath: `public/images/countries/${slug}.png`,
+      alt: `${niceName} — VPN guide hero image`,
+      aspectRatio: "16:9" as const,
+    };
+  }),
+
+  // ── OG / social share backgrounds ───────────────────────────────────────
+  {
+    category: "og",
+    prompt: `Abstract digital security background with glowing blue shield icon, subtle network grid pattern, dark navy gradient, premium tech aesthetic, no text. ${QUALITY}`,
+    outputPath: "public/images/og/og-security.png",
+    alt: "Security OG background",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "og",
+    prompt: `Abstract VPN concept background with flowing blue light streams representing encrypted tunnels, dark gradient background, futuristic premium tech look, no text. ${QUALITY}`,
+    outputPath: "public/images/og/og-vpn.png",
+    alt: "VPN OG background",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "og",
+    prompt: `Abstract world map made of blue glowing dots and lines on dark navy background, representing global VPN network coverage, premium minimalist tech design, no text. ${QUALITY}`,
+    outputPath: "public/images/og/og-countries.png",
+    alt: "Countries OG background",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "og",
+    prompt: `Modern minimalist desk with a laptop displaying a glowing blue shield icon, soft cinematic lighting, premium editorial tech photography, dark moody atmosphere, no text. ${QUALITY}`,
+    outputPath: "public/images/og/og-default.png",
+    alt: "Default OG background",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "og",
+    prompt: `Abstract travel and security concept: vintage compass and passport on dark wooden surface with subtle blue digital overlay, moody atmospheric travel photography, no text. ${QUALITY}`,
+    outputPath: "public/images/og/og-travel.png",
+    alt: "Travel OG background",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "og",
+    prompt: `Abstract guides and education concept: open laptop with code editor on screen, notebook, pen, and coffee cup on dark desk, warm focused workspace, premium editorial photography, no text. ${QUALITY}`,
+    outputPath: "public/images/og/og-guides.png",
+    alt: "Guides OG background",
+    aspectRatio: "16:9",
+  },
 ];
 
 // ── API helpers ────────────────────────────────────────────────────────────

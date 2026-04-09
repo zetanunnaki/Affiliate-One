@@ -94,7 +94,7 @@ export default async function GuidePage(props: PageProps) {
   });
 
   return (
-    <ArticleLayout frontmatter={post.frontmatter}>
+    <ArticleLayout frontmatter={post.frontmatter} slug={slug}>
       {howTo && (
         <HowToSchema
           title={post.frontmatter.title}

@@ -70,12 +70,13 @@ export default function ProviderCard({
       </div>
 
       <div className="flex gap-3">
-        <Link
-          href={`/vpn/providers/${provider.id}`}
+        <a
+          href={provider.affiliate.trackingBaseUrl}
+          rel="noopener noreferrer sponsored"
           className="flex-1 text-center px-4 py-2.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
         >
           View Deal
-        </Link>
+        </a>
         <Link
           href={`/vpn/providers/${provider.id}`}
           className="px-4 py-2.5 text-sm font-medium text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-600 hover:bg-zinc-50 dark:hover:bg-zinc-800 rounded-lg transition-colors"

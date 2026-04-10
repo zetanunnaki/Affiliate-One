@@ -6,6 +6,7 @@ interface CTABannerProps {
     id: string;
     priceRange: string;
     rating: number;
+    affiliate: { trackingBaseUrl: string };
   };
   headline?: string;
   countryName?: string;
@@ -25,12 +26,13 @@ export default function CTABanner({ provider, headline, countryName }: CTABanner
             {provider.rating}/5 rating · Starting from {provider.priceRange} · 30-day money-back guarantee
           </p>
         </div>
-        <Link
-          href={`/vpn/providers/${provider.id}`}
+        <a
+          href={provider.affiliate.trackingBaseUrl}
+          rel="noopener noreferrer sponsored"
           className="px-6 py-2.5 bg-white text-blue-700 font-semibold text-sm rounded-lg hover:bg-blue-50 transition-colors shrink-0"
         >
           View Deal
-        </Link>
+        </a>
       </div>
       <p className="text-xs text-blue-200 mt-3">
         Affiliate link — see our <Link href="/affiliate-disclosure" className="underline">disclosure</Link>

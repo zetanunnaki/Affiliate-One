@@ -5,7 +5,7 @@
     "website": "https://nordvpn.com",
     "affiliate": {
       "network": "direct",
-      "trackingBaseUrl": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=AFFILIATE_ID&url_id={url_id}",
+      "trackingBaseUrl": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=145368&url_id=902",
       "disclosureLabel": "Affiliate link"
     },
     "features": {

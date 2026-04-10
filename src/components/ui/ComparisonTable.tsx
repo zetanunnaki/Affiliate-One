@@ -70,12 +70,13 @@ export default function ComparisonTable({
                 {row.provider.priceRange}
               </td>
               <td className="px-4 py-4 text-center">
-                <Link
-                  href={`/vpn/providers/${row.provider.id}`}
+                <a
+                  href={row.provider.affiliate.trackingBaseUrl}
+                  rel="noopener noreferrer sponsored"
                   className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
                 >
                   View Deal
-                </Link>
+                </a>
               </td>
             </tr>
           ))}

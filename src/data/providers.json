@@ -103,5 +103,26 @@
     "notes": "Sweden-based, anonymous accounts (no email required), flat €5/mo pricing, privacy-first.",
     "rating": 4.4,
     "priceRange": "€5/mo"
+  },
+  {
+    "id": "fastestvpn",
+    "name": "FastestVPN",
+    "website": "https://fastestvpn.com",
+    "affiliate": {
+      "network": "direct",
+      "trackingBaseUrl": "https://fastestvpn.com/pro-lifetime-deal?a_aid=69d8177e889ed",
+      "disclosureLabel": "Affiliate link"
+    },
+    "features": {
+      "protocols": ["WireGuard", "OpenVPN", "IKEv2", "L2TP"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 10
+    },
+    "positioningTags": ["budget", "lifetime"],
+    "notes": "Cayman Islands-based, lifetime plans available, 800+ servers in 50+ countries, ad blocker included.",
+    "rating": 4.2,
+    "priceRange": "$1.11–$10/mo"
   }
 ]

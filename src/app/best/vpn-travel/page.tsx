@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function BestVpnTravelPage() {
   const faqs = [
-    { question: "Which VPN works in the most countries?", answer: "ExpressVPN works in 95% of countries we tested, including restrictive ones like China (7.5/10), UAE (9/10), and Turkey (9/10). NordVPN is a close second. Both maintain dedicated teams updating obfuscation weekly." },
+    { question: "Which VPN works in the most countries?", answer: "NordVPN works in 95% of countries we tested, including restrictive ones like China (7/10), UAE (9/10), and Turkey (9/10). FastestVPN is a strong budget-friendly alternative. Both maintain dedicated teams updating obfuscation weekly." },
     { question: "Should I download the VPN before traveling?", answer: "Yes — ALWAYS download VPN apps before entering restrictive countries. VPN provider websites are blocked in China, Russia, Turkey, UAE, and others. You can't download after arrival." },
-    { question: "Can I use a VPN to make calls in the UAE?", answer: "Yes. VoIP services (WhatsApp calls, FaceTime, Skype) are restricted in the UAE but work with a VPN. ExpressVPN is the most reliable for this purpose." },
+    { question: "Can I use a VPN to make calls in the UAE?", answer: "Yes. VoIP services (WhatsApp calls, FaceTime, Skype) are restricted in the UAE but work with a VPN. NordVPN is the most reliable for this purpose." },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function BestVpnTravelPage() {
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Our Top 3 Travel VPNs</h2>
         <div className="space-y-3">
           {[
-            { rank: "1", name: "ExpressVPN", badge: "Best for Travel", desc: "Works in 95% of countries including China, UAE, Turkey. Lightway protocol connects in under 1 second. 24/7 support across time zones. MediaStreamer for hotel TVs." },
+            { rank: "1", name: "FastestVPN", badge: "Best for Travel", desc: "Affordable lifetime plans and reliable connections in China, UAE, and Turkey. WireGuard protocol for fast speeds. 24/7 support across time zones." },
             { rank: "2", name: "NordVPN", badge: "Most Servers", desc: "6,400+ servers in 111 countries. Obfuscated servers for restrictive regions. Meshnet for traveling groups. Threat Protection blocks hotel Wi-Fi threats." },
             { rank: "3", name: "Surfshark", badge: "Best Budget Travel", desc: "Unlimited devices — phone, laptop, tablet all on one plan. NoBorders mode for restricted areas. $2.29/month for budget travelers." },
           ].map((p) => (

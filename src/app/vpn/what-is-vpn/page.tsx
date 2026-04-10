@@ -17,7 +17,7 @@ export default function WhatIsVpnPage() {
     { question: "Can I use a VPN on my phone?", answer: "Yes. All major VPN providers have apps for iOS and Android. The VPN encrypts all traffic from your phone, which is especially important when using mobile data or public Wi-Fi." },
     { question: "Do I need a VPN at home?", answer: "Yes, for privacy. Without a VPN, your ISP can see and log every website you visit. A VPN prevents this monitoring. It's also useful if you work from home with sensitive data." },
     { question: "What's the difference between a VPN and antivirus?", answer: "Different tools for different threats. Antivirus protects against malware on your device. A VPN encrypts your internet traffic and hides your IP address. You should use both for comprehensive security." },
-    { question: "Can I watch Netflix with a VPN?", answer: "Yes, but it depends on the provider. NordVPN and ExpressVPN work reliably with Netflix in our testing. A VPN also lets you access your home Netflix library while traveling abroad." },
+    { question: "Can I watch Netflix with a VPN?", answer: "Yes, but it depends on the provider. NordVPN and FastestVPN work reliably with Netflix in our testing. A VPN also lets you access your home Netflix library while traveling abroad." },
   ];
 
   return (

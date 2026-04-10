@@ -31,7 +31,7 @@ export default function IpLeakTestPage() {
           {[
             { type: "IP Leak", desc: "Your real IP address is visible to websites despite being connected to the VPN. This completely defeats the VPN's purpose.", test: "Visit ipleak.net while connected to VPN. If you see your real IP instead of the VPN server's IP, you have an IP leak.", fix: "Enable kill switch. Check that your VPN is actually connected (look for the lock icon). Try reconnecting or switching servers." },
             { type: "DNS Leak", desc: "Your DNS queries bypass the VPN and go to your ISP's DNS servers. Websites can't see your IP, but your ISP can see which domains you visit.", test: "Visit dnsleaktest.com and run the Extended test. All listed DNS servers should belong to your VPN provider, not your ISP.", fix: "Enable DNS leak protection in VPN settings. Manually set DNS to your VPN provider's servers (or 1.1.1.1/9.9.9.9). On Windows, disable 'Smart Multi-Homed Name Resolution'." },
-            { type: "WebRTC Leak", desc: "WebRTC (used for video calls) can reveal your real IP through JavaScript, even with a VPN active. This is a browser-level issue.", test: "Visit browserleaks.com/webrtc while connected to VPN. If your real local IP appears, you have a WebRTC leak.", fix: "NordVPN and ExpressVPN block WebRTC leaks in their browser extensions. In Firefox: about:config → media.peerconnection.enabled → false. In Chrome: install WebRTC Leak Prevent extension." },
+            { type: "WebRTC Leak", desc: "WebRTC (used for video calls) can reveal your real IP through JavaScript, even with a VPN active. This is a browser-level issue.", test: "Visit browserleaks.com/webrtc while connected to VPN. If your real local IP appears, you have a WebRTC leak.", fix: "NordVPN and FastestVPN block WebRTC leaks in their browser extensions. In Firefox: about:config → media.peerconnection.enabled → false. In Chrome: install WebRTC Leak Prevent extension." },
           ].map((leak) => (
             <div key={leak.type} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
               <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 mb-2">{leak.type}</h3>
@@ -81,7 +81,7 @@ export default function IpLeakTestPage() {
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
               {[
                 { name: "NordVPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
-                { name: "ExpressVPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
+                { name: "FastestVPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
                 { name: "Surfshark", ip: "0/50", dns: "0/50", webrtc: "0/50" },
                 { name: "Proton VPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
                 { name: "Mullvad", ip: "0/50", dns: "0/50", webrtc: "0/50" },

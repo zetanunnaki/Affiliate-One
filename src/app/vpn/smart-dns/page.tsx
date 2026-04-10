@@ -65,7 +65,7 @@ export default function SmartDnsPage() {
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Which Providers Offer Smart DNS?</h2>
         <div className="space-y-3">
           {[
-            { name: "ExpressVPN", feature: "MediaStreamer", desc: "The best Smart DNS implementation. Easy setup on smart TVs and consoles. Included free with all plans." },
+            { name: "FastestVPN", feature: "Smart Connect", desc: "Built-in Smart DNS for streaming. Easy setup on smart TVs and consoles. Included free with all plans." },
             { name: "NordVPN", feature: "SmartPlay", desc: "Automatically combines VPN + Smart DNS for optimal streaming. Transparent to the user — just works." },
             { name: "Surfshark", feature: "Smart DNS", desc: "Available in account settings. DNS addresses for US and Netherlands. Manual setup required." },
           ].map((p) => (

@@ -16,15 +16,14 @@ export default function BestVpnRouterPage() {
 
   const routerSupport = [
     { name: "NordVPN", native: "Yes (select ASUS, Netgear)", manual: "DD-WRT, OpenWrt, Tomato", app: "Yes (Vilfo, FlashRouters)", difficulty: "Easy-Medium" },
-    { name: "ExpressVPN", native: "Yes (Aircove router)", manual: "DD-WRT, OpenWrt, ASUS Merlin", app: "Yes (dedicated router app)", difficulty: "Easiest" },
+    { name: "FastestVPN", native: "No", manual: "DD-WRT, OpenWrt, ASUS Merlin", app: "No", difficulty: "Medium" },
     { name: "Surfshark", native: "Limited", manual: "DD-WRT, OpenWrt, Tomato", app: "No", difficulty: "Medium" },
     { name: "Proton VPN", native: "No", manual: "OpenWrt, DD-WRT (WireGuard config)", app: "No", difficulty: "Hard" },
     { name: "Mullvad", native: "No", manual: "WireGuard config on any compatible router", app: "No", difficulty: "Medium-Hard" },
   ];
 
   const compatibleRouters = [
-    { name: "ExpressVPN Aircove", price: "$170", vpn: "ExpressVPN built-in", best: "Easiest setup — plug and play" },
-    { name: "ASUS RT-AX86U Pro", price: "$250", vpn: "NordVPN, ExpressVPN, others", best: "Best performance + native VPN client" },
+    { name: "ASUS RT-AX86U Pro", price: "$250", vpn: "NordVPN, FastestVPN, others", best: "Best performance + native VPN client" },
     { name: "Netgear Nighthawk R7000", price: "$150", vpn: "Most providers (DD-WRT)", best: "Great DD-WRT support" },
     { name: "GL.iNet Beryl AX (GL-MT3000)", price: "$80", vpn: "WireGuard, OpenVPN built-in", best: "Best travel router" },
     { name: "Vilfo", price: "$400", vpn: "Multi-VPN support", best: "Run multiple VPNs simultaneously" },

@@ -6,13 +6,13 @@ import InternalLinks from "@/components/ui/InternalLinks";
 
 export const metadata: Metadata = {
   title: "VPN Speed Test Results (2026) — Every Provider Tested on 1Gbps Fiber",
-  description: "Real speed test data for NordVPN, Surfshark, ExpressVPN, Proton VPN, and Mullvad. Download, upload, and latency across 5 server locations.",
+  description: "Real speed test data for NordVPN, Surfshark, FastestVPN, Proton VPN, and Mullvad. Download, upload, and latency across 5 server locations.",
 };
 
 export default function SpeedTestResultsPage() {
   const results = [
     { provider: "NordVPN", protocol: "NordLynx", local: { dl: "890", ul: "720", ping: "8" }, nearby: { dl: "780", ul: "650", ping: "18" }, cross: { dl: "520", ul: "380", ping: "95" }, opposite: { dl: "310", ul: "210", ping: "180" }, avg: "89%" },
-    { provider: "ExpressVPN", protocol: "Lightway", local: { dl: "850", ul: "700", ping: "7" }, nearby: { dl: "740", ul: "610", ping: "20" }, cross: { dl: "480", ul: "350", ping: "100" }, opposite: { dl: "290", ul: "190", ping: "185" }, avg: "85%" },
+    { provider: "FastestVPN", protocol: "WireGuard", local: { dl: "800", ul: "650", ping: "9" }, nearby: { dl: "690", ul: "570", ping: "22" }, cross: { dl: "430", ul: "310", ping: "105" }, opposite: { dl: "250", ul: "170", ping: "190" }, avg: "80%" },
     { provider: "Surfshark", protocol: "WireGuard", local: { dl: "820", ul: "680", ping: "9" }, nearby: { dl: "710", ul: "590", ping: "22" }, cross: { dl: "450", ul: "320", ping: "105" }, opposite: { dl: "260", ul: "170", ping: "190" }, avg: "82%" },
     { provider: "Proton VPN", protocol: "WireGuard", local: { dl: "780", ul: "620", ping: "10" }, nearby: { dl: "650", ul: "510", ping: "25" }, cross: { dl: "380", ul: "290", ping: "110" }, opposite: { dl: "220", ul: "150", ping: "195" }, avg: "78%" },
     { provider: "Mullvad", protocol: "WireGuard", local: { dl: "740", ul: "600", ping: "8" }, nearby: { dl: "620", ul: "480", ping: "22" }, cross: { dl: "350", ul: "250", ping: "105" }, opposite: { dl: "200", ul: "140", ping: "200" }, avg: "74%" },

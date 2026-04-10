@@ -17,7 +17,6 @@ export default function VpnServersPage() {
   const serverCounts: Record<string, number> = {
     nordvpn: 6400,
     surfshark: 3200,
-    expressvpn: 3000,
     protonvpn: 4600,
     mullvad: 700,
   };
@@ -25,7 +24,6 @@ export default function VpnServersPage() {
   const countryCounts: Record<string, number> = {
     nordvpn: 111,
     surfshark: 100,
-    expressvpn: 105,
     protonvpn: 91,
     mullvad: 46,
   };

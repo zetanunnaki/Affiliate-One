@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function ChinaVpnPage() {
   const providers = [
-    { name: "ExpressVPN", reliability: "8/10", speed: "20-50 Mbps", protocol: "Lightway (obfuscated)", best: "Most reliable overall", notes: "Dedicated China team maintaining access. Lightway auto-obfuscation. Best for first-time China visitors." },
+    { name: "FastestVPN", reliability: "7/10", speed: "15-40 Mbps", protocol: "WireGuard (obfuscated)", best: "Best value option", notes: "Affordable with lifetime plans. WireGuard-based obfuscation works in China. Good for budget-conscious travelers." },
     { name: "NordVPN", reliability: "7/10", speed: "15-40 Mbps", protocol: "Obfuscated OpenVPN", best: "Best server network", notes: "Obfuscated servers work well. Must manually select obfuscated server category. 6,400+ servers for fallback." },
-    { name: "Surfshark", reliability: "6/10", speed: "10-30 Mbps", protocol: "NoBorders + Shadowsocks", best: "Best budget option", notes: "NoBorders mode auto-detects restrictions. Less consistent than ExpressVPN but much cheaper." },
+    { name: "Surfshark", reliability: "6/10", speed: "10-30 Mbps", protocol: "NoBorders + Shadowsocks", best: "Best budget option", notes: "NoBorders mode auto-detects restrictions. Less consistent than NordVPN but much cheaper." },
     { name: "Proton VPN", reliability: "5/10", speed: "10-25 Mbps", protocol: "Stealth protocol", best: "Open-source option", notes: "Stealth protocol improving but less tested in China. Secure Core adds extra latency." },
   ];
 

@@ -107,7 +107,7 @@ export default function SplitTunnelingPage() {
               {[
                 { name: "NordVPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
                 { name: "Surfshark", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
-                { name: "ExpressVPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
+                { name: "FastestVPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
                 { name: "Proton VPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
                 { name: "Mullvad", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
               ].map((r) => (

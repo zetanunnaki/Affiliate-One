@@ -42,27 +42,6 @@
     "priceRange": "$2.29–$15.45/mo"
   },
   {
-    "id": "expressvpn",
-    "name": "ExpressVPN",
-    "website": "https://expressvpn.com",
-    "affiliate": {
-      "network": "direct",
-      "trackingBaseUrl": "https://www.xvbelink.com/?offer=3monthsfree&a_fid=AFFILIATE_ID",
-      "disclosureLabel": "Affiliate link"
-    },
-    "features": {
-      "protocols": ["Lightway", "OpenVPN", "IKEv2"],
-      "noLogsClaim": true,
-      "killSwitch": true,
-      "splitTunneling": true,
-      "devices": 8
-    },
-    "positioningTags": ["travel", "streaming", "ease-of-use"],
-    "notes": "BVI-based, TrustedServer (RAM-only), works reliably in restrictive regions, premium pricing.",
-    "rating": 4.7,
-    "priceRange": "$6.67–$12.95/mo"
-  },
-  {
     "id": "protonvpn",
     "name": "Proton VPN",
     "website": "https://protonvpn.com",

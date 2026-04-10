@@ -15,7 +15,7 @@ export default function BrowserExtensionsPage() {
     { name: "Bitwarden", purpose: "Password auto-fill", trust: "High", reason: "Open-source, audited, from a reputable company. Only accesses password fields." },
     { name: "HTTPS Everywhere", purpose: "Force HTTPS", trust: "High", reason: "By EFF. Now redundant in most browsers but not harmful." },
     { name: "Privacy Badger", purpose: "Tracker blocking", trust: "High", reason: "By EFF. Open-source, learns tracking patterns automatically." },
-    { name: "NordVPN / ExpressVPN extension", purpose: "VPN proxy + WebRTC leak prevention", trust: "High", reason: "From reputable VPN providers. Also blocks WebRTC leaks." },
+    { name: "NordVPN / FastestVPN extension", purpose: "VPN proxy + WebRTC leak prevention", trust: "High", reason: "From reputable VPN providers. Also blocks WebRTC leaks." },
   ];
 
   const riskyExtensions = [

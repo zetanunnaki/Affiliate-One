@@ -89,7 +89,7 @@ export default function DedicatedIpPage() {
                 { name: "NordVPN", cost: "$3.69/mo", locs: "US, UK, DE, FR, NL, +5", avail: "Yes" },
                 { name: "Surfshark", cost: "$3.75/mo", locs: "US, UK, DE, NL", avail: "Yes" },
                 { name: "Proton VPN", cost: "Included in Business", locs: "Multiple", avail: "Business only" },
-                { name: "ExpressVPN", cost: "N/A", locs: "N/A", avail: "No" },
+                { name: "FastestVPN", cost: "N/A", locs: "N/A", avail: "No" },
                 { name: "Mullvad", cost: "N/A", locs: "N/A", avail: "No" },
               ].map((p) => (
                 <tr key={p.name}>

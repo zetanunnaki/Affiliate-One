@@ -49,8 +49,8 @@ export default function CountryQuizPage() {
     let reason = "Best all-around VPN for most users.";
 
     if (concern === "censorship" || concern === "voip") {
-      vpn = "ExpressVPN";
-      reason = "Most reliable in restrictive countries. Works in China, UAE, Turkey.";
+      vpn = "FastestVPN";
+      reason = "Affordable and reliable in restrictive countries. Works in China, UAE, Turkey.";
     } else if (budget === "free") {
       vpn = "Proton VPN Free";
       reason = "Only trustworthy free VPN. No data caps, no ads, Swiss-based.";

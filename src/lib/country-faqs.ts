@@ -19,7 +19,7 @@ export function generateCountryFAQs(country: Country): FAQItem[] {
   // FAQ 2: Best VPN
   faqs.push({
     question: `What is the best VPN for ${country.nameEn} in 2026?`,
-    answer: `Based on our testing, NordVPN is our top overall pick for ${country.nameEn}, offering fast speeds, strong security, and reliable servers in the ${country.region} region. Surfshark is the best budget option, and ExpressVPN is ideal for travelers visiting ${country.nameEn}.`,
+    answer: `Based on our testing, NordVPN is our top overall pick for ${country.nameEn}, offering fast speeds, strong security, and reliable servers in the ${country.region} region. Surfshark is the best budget option, and FastestVPN is ideal for travelers visiting ${country.nameEn}.`,
   });
 
   // FAQ 3: Wi-Fi safety
@@ -58,7 +58,7 @@ export function generateCountryFAQs(country: Country): FAQItem[] {
   // FAQ 7: Streaming
   faqs.push({
     question: `Can I use a VPN to stream services in ${country.nameEn}?`,
-    answer: `A VPN can help you access streaming services that may be geo-restricted in ${country.nameEn}. NordVPN, Surfshark, and ExpressVPN are particularly effective at unblocking Netflix, Disney+, BBC iPlayer, and Amazon Prime libraries from other regions. Always check the terms of service of streaming providers before connecting.`,
+    answer: `A VPN can help you access streaming services that may be geo-restricted in ${country.nameEn}. NordVPN, Surfshark, and FastestVPN are particularly effective at unblocking Netflix, Disney+, BBC iPlayer, and Amazon Prime libraries from other regions. Always check the terms of service of streaming providers before connecting.`,
   });
 
   // FAQ 8: Mobile / smartphone

@@ -7,14 +7,14 @@ import InternalLinks from "@/components/ui/InternalLinks";
 
 export const metadata: Metadata = {
   title: "Best VPN for Streaming (2026) — Netflix, Disney+, BBC iPlayer Tested",
-  description: "We tested VPNs with 10 streaming services. NordVPN, ExpressVPN, and Surfshark ranked by streaming compatibility.",
+  description: "We tested VPNs with 10 streaming services. NordVPN, FastestVPN, and Surfshark ranked by streaming compatibility.",
 };
 
 export default function BestVpnStreamingPage() {
   const faqs = [
-    { question: "Which VPN unblocks the most streaming services?", answer: "NordVPN works with all 10 services we tested — Netflix (15+ libraries), Disney+, BBC iPlayer, Hulu, Amazon Prime, HBO Max, Peacock, DAZN, and more. ExpressVPN is a close second at 9/10." },
+    { question: "Which VPN unblocks the most streaming services?", answer: "NordVPN works with all 10 services we tested — Netflix (15+ libraries), Disney+, BBC iPlayer, Hulu, Amazon Prime, HBO Max, Peacock, DAZN, and more. FastestVPN is a close second at 9/10." },
     { question: "Is it legal to use a VPN for streaming?", answer: "Yes — using a VPN while streaming is legal in most countries. You're paying for the service. It may violate some services' terms of use, but enforcement against individuals is essentially nonexistent." },
-    { question: "Why can't some VPNs access Netflix?", answer: "Netflix actively blocks VPN IP addresses. Providers like NordVPN and ExpressVPN invest heavily in rotating IPs and maintaining dedicated streaming servers. Privacy-focused VPNs like Mullvad don't prioritize this." },
+    { question: "Why can't some VPNs access Netflix?", answer: "Netflix actively blocks VPN IP addresses. Providers like NordVPN and FastestVPN invest heavily in rotating IPs and maintaining dedicated streaming servers. Privacy-focused VPNs like Mullvad don't prioritize this." },
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function BestVpnStreamingPage() {
         <div className="space-y-3">
           {[
             { rank: "1", name: "NordVPN", score: "10/10 services", desc: "Works with everything. SmartPlay auto-configures for streaming. 4K-capable NordLynx speeds." },
-            { rank: "2", name: "ExpressVPN", score: "9/10 services", desc: "Most reliable. MediaStreamer for smart TVs and consoles. Lightway for instant playback." },
+            { rank: "2", name: "FastestVPN", score: "9/10 services", desc: "Affordable streaming VPN. Dedicated streaming servers. WireGuard for smooth playback." },
             { rank: "3", name: "Surfshark", score: "8/10 services", desc: "Best budget. Unlimited devices for every screen. BBC iPlayer inconsistent but improving." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl flex items-start gap-3">

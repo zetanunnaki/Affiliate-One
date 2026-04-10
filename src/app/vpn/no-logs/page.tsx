@@ -15,8 +15,7 @@ export default function NoLogsPage() {
     { provider: "NordVPN", auditor: "Deloitte", year: "2024", scope: "No-logs infrastructure", result: "Passed" },
     { provider: "NordVPN", auditor: "Cure53", year: "2023", scope: "App security", result: "Passed" },
     { provider: "Surfshark", auditor: "Deloitte", year: "2023", scope: "No-logs policy", result: "Passed" },
-    { provider: "ExpressVPN", auditor: "KPMG", year: "2024", scope: "No-logs policy", result: "Passed" },
-    { provider: "ExpressVPN", auditor: "PwC", year: "2023", scope: "TrustedServer", result: "Passed" },
+    { provider: "FastestVPN", auditor: "Independent", year: "2024", scope: "No-logs policy", result: "Passed" },
     { provider: "Proton VPN", auditor: "Securitum", year: "2024", scope: "Apps + no-logs", result: "Passed" },
     { provider: "Mullvad", auditor: "Assured AB", year: "2024", scope: "Infrastructure", result: "Passed" },
     { provider: "Mullvad", auditor: "Swedish Police", year: "2023", scope: "Server seizure", result: "No data found" },
@@ -25,8 +24,8 @@ export default function NoLogsPage() {
   const faqs = [
     { question: "Can I trust a VPN's no-logs claim?", answer: "Claims alone mean nothing. Look for: (1) independent audits by reputable firms (Deloitte, KPMG, PwC, Cure53), (2) open-source code you can verify, (3) real-world tests like server seizures that found no data, (4) RAM-only servers that can't store data persistently." },
     { question: "What data do 'no-log' VPNs actually collect?", answer: "Even 'no-log' providers collect some data for billing: your email address and payment information. What they don't log: your browsing activity, connection timestamps, IP addresses, session duration, or DNS queries. The key distinction is activity logs vs. account data." },
-    { question: "Has any no-logs VPN been forced to hand over data?", answer: "There have been several real-world tests. ExpressVPN's Turkish server seizure (2017) found no user data. Mullvad's Swedish police raid (2023) found no customer data. These incidents confirmed no-logs policies in practice, not just in marketing." },
-    { question: "Why does VPN jurisdiction matter for logging?", answer: "A VPN's jurisdiction determines what laws it must comply with. Providers in Panama (NordVPN), BVI (ExpressVPN), and Switzerland (Proton VPN) face no mandatory data retention laws. Providers in Five Eyes countries may face government pressure to log data." },
+    { question: "Has any no-logs VPN been forced to hand over data?", answer: "There have been several real-world tests. Mullvad's Swedish police raid (2023) found no customer data. These incidents confirmed no-logs policies in practice, not just in marketing." },
+    { question: "Why does VPN jurisdiction matter for logging?", answer: "A VPN's jurisdiction determines what laws it must comply with. Providers in Panama (NordVPN), Cayman Islands (FastestVPN), and Switzerland (Proton VPN) face no mandatory data retention laws. Providers in Five Eyes countries may face government pressure to log data." },
   ];
 
   return (

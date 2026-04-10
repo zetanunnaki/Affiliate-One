@@ -6,7 +6,7 @@ import { getProviderById } from "@/lib/data";
 export const metadata: Metadata = {
   title: "VPN Comparisons — Head-to-Head Reviews",
   description:
-    "Side-by-side VPN comparisons. NordVPN vs Surfshark, ExpressVPN vs NordVPN, and more. Features, speed, and price compared.",
+    "Side-by-side VPN comparisons. NordVPN vs Surfshark, Proton VPN vs Mullvad, and more. Features, speed, and price compared.",
 };
 
 export default function VsIndexPage() {

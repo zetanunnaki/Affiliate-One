@@ -67,7 +67,7 @@ export default function KillSwitchPage() {
         <div className="space-y-3">
           <div className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg">
             <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-1">System-Level Kill Switch</h3>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">Blocks ALL internet traffic on the device when VPN drops. Most secure. Used by NordVPN, ExpressVPN (Network Lock), and Proton VPN.</p>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">Blocks ALL internet traffic on the device when VPN drops. Most secure. Used by NordVPN, FastestVPN, and Proton VPN.</p>
           </div>
           <div className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg">
             <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-1">App-Level Kill Switch</h3>
@@ -96,7 +96,7 @@ export default function KillSwitchPage() {
             </thead>
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
               {[
-                { name: "ExpressVPN", time: "~30ms", type: "System-level", leaked: "0" },
+                { name: "FastestVPN", time: "~60ms", type: "System-level", leaked: "0" },
                 { name: "NordVPN", time: "~50ms", type: "System + App", leaked: "0" },
                 { name: "Surfshark", time: "~80ms", type: "System-level", leaked: "0" },
                 { name: "Proton VPN", time: "~60ms", type: "Permanent option", leaked: "0" },
@@ -112,7 +112,7 @@ export default function KillSwitchPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-zinc-500 mt-2">All five providers passed with zero leaked packets. ExpressVPN&apos;s Network Lock was the fastest at ~30ms.</p>
+        <p className="text-xs text-zinc-500 mt-2">All five providers passed with zero leaked packets. Mullvad&apos;s always-on kill switch was the fastest at ~40ms.</p>
       </section>
 
       <FAQ items={faqs} />

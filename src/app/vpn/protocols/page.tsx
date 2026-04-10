@@ -15,7 +15,7 @@ const protocols = [
   { name: "OpenVPN (TCP)", speed: 2, security: 5, compat: 5, age: "2001", rec: "Restrictive networks", color: "border-blue-300 dark:border-blue-700" },
   { name: "IKEv2/IPSec", speed: 4, security: 4, compat: 4, age: "2005", rec: "Mobile devices", color: "border-yellow-300 dark:border-yellow-700" },
   { name: "NordLynx", speed: 5, security: 5, compat: 2, age: "2020", rec: "NordVPN users", color: "border-green-300 dark:border-green-700" },
-  { name: "Lightway", speed: 5, security: 5, compat: 2, age: "2021", rec: "ExpressVPN users", color: "border-green-300 dark:border-green-700" },
+  { name: "Lightway", speed: 5, security: 5, compat: 2, age: "2021", rec: "Speed enthusiasts", color: "border-green-300 dark:border-green-700" },
   { name: "PPTP", speed: 5, security: 1, compat: 3, age: "1999", rec: "NEVER use", color: "border-red-300 dark:border-red-700" },
 ];
 
@@ -96,7 +96,7 @@ export default function ProtocolsPage() {
           <p><strong>Restrictive network/firewall:</strong> OpenVPN TCP on port 443</p>
           <p><strong>Mobile with frequent Wi-Fi switching:</strong> IKEv2 or WireGuard</p>
           <p><strong>NordVPN user:</strong> NordLynx</p>
-          <p><strong>ExpressVPN user:</strong> Lightway</p>
+          <p><strong>Speed priority:</strong> Lightway or WireGuard</p>
           <p><strong>Maximum privacy:</strong> OpenVPN with custom configuration</p>
         </div>
       </section>

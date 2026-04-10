@@ -30,7 +30,7 @@ export default function BestVpnGamingPage() {
         <div className="space-y-3">
           {[
             { rank: "1", name: "NordVPN", extra: "+4ms avg latency", desc: "Lowest latency in our tests. NordLynx adds only 4ms. Meshnet for LAN-like gaming with friends. 6,400+ servers. DDoS protection." },
-            { rank: "2", name: "ExpressVPN", extra: "+5ms avg latency", desc: "Most consistent globally. Lightway for instant connections. MediaStreamer for console streaming. Router app for whole-network gaming VPN." },
+            { rank: "2", name: "FastestVPN", extra: "+5ms avg latency", desc: "Affordable gaming VPN. WireGuard for fast connections. Dedicated gaming servers. Great value for competitive gamers." },
             { rank: "3", name: "Surfshark", extra: "+7ms avg latency", desc: "Best budget. Unlimited devices — PC, console (via router), phone. WireGuard for competitive latency. $2.29/month." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl flex items-start gap-3">

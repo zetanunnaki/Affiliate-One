@@ -13,7 +13,7 @@ export default function VpnForIosPage() {
   const faqs = [
     { question: "Is iCloud Private Relay the same as a VPN?", answer: "No. Private Relay only covers Safari browser traffic. It doesn't protect non-Safari apps, doesn't let you choose server locations, and doesn't work in all countries. A real VPN protects ALL device traffic and lets you choose your virtual location." },
     { question: "Can I use split tunneling on iPhone?", answer: "No. Apple's iOS platform restrictions prevent VPN apps from implementing split tunneling. All traffic either goes through the VPN or none does. This is an iOS limitation, not a VPN provider limitation." },
-    { question: "Which VPN protocol is best on iPhone?", answer: "IKEv2 for best network switching (Wi-Fi to cellular transitions). WireGuard for best speed and battery life. Lightway (ExpressVPN) for fastest connections. Most apps auto-select the optimal protocol." },
+    { question: "Which VPN protocol is best on iPhone?", answer: "IKEv2 for best network switching (Wi-Fi to cellular transitions). WireGuard for best speed and battery life. Most apps auto-select the optimal protocol." },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function VpnForIosPage() {
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 3 iOS VPNs</h2>
         <div className="space-y-3">
           {[
-            { name: "ExpressVPN", badge: "Best iOS App", desc: "Most polished iOS experience. Lightway connects in under 1 second. On Demand works flawlessly. Beautiful native iOS design with widgets." },
+            { name: "FastestVPN", badge: "Best Value iOS", desc: "Affordable iOS VPN with WireGuard support. Clean native iOS design. Great value for iPhone and iPad users." },
             { name: "NordVPN", badge: "Best Features", desc: "NordLynx for top speeds. Threat Protection on iOS. Meshnet. Dark Web Monitor. The most feature-rich iOS VPN." },
             { name: "Surfshark", badge: "Best Value", desc: "Unlimited devices — iPhone, iPad, Mac all on one subscription. CleanWeb blocks Safari trackers. Most affordable." },
           ].map((p, i) => (

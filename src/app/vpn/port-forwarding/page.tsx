@@ -42,7 +42,7 @@ export default function PortForwardingPage() {
                 { name: "Proton VPN", support: "Yes", detail: "Available on all paid plans. Dynamic port assigned in the app. Works well for torrenting." },
                 { name: "Mullvad", support: "Removed", detail: "Removed in 2023 due to abuse concerns. Was a key feature for their user base." },
                 { name: "Surfshark", support: "No", detail: "Not available. Focus on consumer features over power-user tools." },
-                { name: "ExpressVPN", support: "No", detail: "Not available. Lightway protocol doesn't support it." },
+                { name: "FastestVPN", support: "No", detail: "Not available on current plans." },
               ].map((p) => (
                 <tr key={p.name}>
                   <td className="px-4 py-2 font-medium text-zinc-900 dark:text-zinc-100">{p.name}</td>

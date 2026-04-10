@@ -15,12 +15,12 @@ export default function VpnForBusinessesPage() {
   const providers = getAllProviders();
 
   const businessFeatures = [
-    { feature: "Centralized management", nordvpn: "Yes (Teams/Business)", surfshark: "Limited", expressvpn: "No", protonvpn: "Yes (Business)", mullvad: "No" },
-    { feature: "Dedicated IP", nordvpn: "$3.69/mo extra", surfshark: "$3.75/mo extra", expressvpn: "No", protonvpn: "Included (Business)", mullvad: "No" },
-    { feature: "Team accounts", nordvpn: "Yes", surfshark: "Limited", expressvpn: "No", protonvpn: "Yes", mullvad: "No" },
-    { feature: "IP whitelisting", nordvpn: "Via dedicated IP", surfshark: "Via dedicated IP", expressvpn: "No", protonvpn: "Via dedicated IP", mullvad: "No" },
-    { feature: "SSO integration", nordvpn: "Enterprise only", surfshark: "No", expressvpn: "No", protonvpn: "Business plan", mullvad: "No" },
-    { feature: "Meshnet / site-to-site", nordvpn: "Yes (Meshnet)", surfshark: "No", expressvpn: "No", protonvpn: "No", mullvad: "Via WireGuard" },
+    { feature: "Centralized management", nordvpn: "Yes (Teams/Business)", surfshark: "Limited", protonvpn: "Yes (Business)", mullvad: "No" },
+    { feature: "Dedicated IP", nordvpn: "$3.69/mo extra", surfshark: "$3.75/mo extra", protonvpn: "Included (Business)", mullvad: "No" },
+    { feature: "Team accounts", nordvpn: "Yes", surfshark: "Limited", protonvpn: "Yes", mullvad: "No" },
+    { feature: "IP whitelisting", nordvpn: "Via dedicated IP", surfshark: "Via dedicated IP", protonvpn: "Via dedicated IP", mullvad: "No" },
+    { feature: "SSO integration", nordvpn: "Enterprise only", surfshark: "No", protonvpn: "Business plan", mullvad: "No" },
+    { feature: "Meshnet / site-to-site", nordvpn: "Yes (Meshnet)", surfshark: "No", protonvpn: "No", mullvad: "Via WireGuard" },
   ];
 
   const faqs = [

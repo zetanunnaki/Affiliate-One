@@ -13,16 +13,16 @@ export const metadata: Metadata = {
 
 export default function StreamingGuidePage() {
   const services = [
-    { name: "Netflix US", nordvpn: true, expressvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
-    { name: "Netflix UK", nordvpn: true, expressvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
-    { name: "Netflix Japan", nordvpn: true, expressvpn: true, surfshark: true, protonvpn: false, mullvad: false },
-    { name: "Disney+", nordvpn: true, expressvpn: true, surfshark: true, protonvpn: false, mullvad: false },
-    { name: "BBC iPlayer", nordvpn: true, expressvpn: true, surfshark: "Partial", protonvpn: false, mullvad: false },
-    { name: "Hulu", nordvpn: true, expressvpn: true, surfshark: "Partial", protonvpn: false, mullvad: false },
-    { name: "Amazon Prime", nordvpn: true, expressvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
-    { name: "HBO Max", nordvpn: true, expressvpn: true, surfshark: true, protonvpn: false, mullvad: false },
-    { name: "DAZN", nordvpn: true, expressvpn: "Partial", surfshark: "Partial", protonvpn: false, mullvad: false },
-    { name: "Peacock", nordvpn: true, expressvpn: true, surfshark: true, protonvpn: false, mullvad: false },
+    { name: "Netflix US", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
+    { name: "Netflix UK", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
+    { name: "Netflix Japan", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: false, mullvad: false },
+    { name: "Disney+", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: false, mullvad: false },
+    { name: "BBC iPlayer", nordvpn: true, fastestvpn: true, surfshark: "Partial", protonvpn: false, mullvad: false },
+    { name: "Hulu", nordvpn: true, fastestvpn: true, surfshark: "Partial", protonvpn: false, mullvad: false },
+    { name: "Amazon Prime", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
+    { name: "HBO Max", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: false, mullvad: false },
+    { name: "DAZN", nordvpn: true, fastestvpn: "Partial", surfshark: "Partial", protonvpn: false, mullvad: false },
+    { name: "Peacock", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: false, mullvad: false },
   ];
 
   function StatusCell({ val }: { val: boolean | string }) {
@@ -33,9 +33,9 @@ export default function StreamingGuidePage() {
 
   const faqs = [
     { question: "Is it legal to use a VPN for streaming?", answer: "Yes, using a VPN to stream is legal in most countries. You're paying for the streaming service — you're just accessing it from a different location. However, it may violate some streaming services' terms of service (though enforcement against individual users is essentially nonexistent)." },
-    { question: "Why do some VPNs work with Netflix and others don't?", answer: "Netflix actively blocks VPN IP addresses. Providers like NordVPN and ExpressVPN invest heavily in rotating IP addresses and maintaining dedicated streaming servers. Privacy-focused VPNs like Mullvad don't prioritize streaming unblocking." },
+    { question: "Why do some VPNs work with Netflix and others don't?", answer: "Netflix actively blocks VPN IP addresses. Providers like NordVPN and FastestVPN invest heavily in rotating IP addresses and maintaining dedicated streaming servers. Privacy-focused VPNs like Mullvad don't prioritize streaming unblocking." },
     { question: "What speed do I need for 4K streaming?", answer: "4K streaming requires ~25 Mbps sustained. With a VPN on WireGuard protocol, you'll retain 80-95% of your base speed. So a 50 Mbps connection with a VPN easily handles 4K." },
-    { question: "Can I use a VPN on my smart TV?", answer: "Most smart TVs can't install VPN apps directly. Options: (1) Install VPN on your router (protects all devices), (2) Use Smart DNS (faster but no encryption), (3) Use ExpressVPN's MediaStreamer, (4) Cast from a VPN-connected phone/laptop." },
+    { question: "Can I use a VPN on my smart TV?", answer: "Most smart TVs can't install VPN apps directly. Options: (1) Install VPN on your router (protects all devices), (2) Use Smart DNS (faster but no encryption), (3) Use FastestVPN's MediaStreamer, (4) Cast from a VPN-connected phone/laptop." },
   ];
 
   return (
@@ -55,7 +55,7 @@ export default function StreamingGuidePage() {
               <tr>
                 <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Service</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">ExpressVPN</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Surfshark</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Mullvad</th>
@@ -66,7 +66,7 @@ export default function StreamingGuidePage() {
                 <tr key={s.name}>
                   <td className="px-3 py-2 font-medium text-zinc-900 dark:text-zinc-100">{s.name}</td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.nordvpn} /></td>
-                  <td className="px-3 py-2 text-center"><StatusCell val={s.expressvpn} /></td>
+                  <td className="px-3 py-2 text-center"><StatusCell val={s.fastestvpn} /></td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.surfshark} /></td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.protonvpn} /></td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.mullvad} /></td>
@@ -90,7 +90,7 @@ export default function StreamingGuidePage() {
           </div>
           <div className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">2. ExpressVPN — Most Reliable</h3>
+              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">2. FastestVPN — Most Reliable</h3>
               <span className="text-sm font-semibold text-green-700 dark:text-green-400">9/10 services</span>
             </div>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">Consistently works with major platforms. MediaStreamer for smart TVs and consoles. Lightway protocol for smooth playback.</p>

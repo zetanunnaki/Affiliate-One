@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function VpnForRokuPage() {
   const faqs = [
     { question: "Can I install a VPN directly on Roku?", answer: "No. Roku's operating system doesn't support VPN apps and there are no plans to add support. You need to use Smart DNS, a router VPN, or share a VPN connection from another device." },
-    { question: "What's the easiest method for Roku?", answer: "Smart DNS (ExpressVPN MediaStreamer) is the easiest — just change DNS settings on Roku. Takes 2 minutes. No encryption but zero speed impact for streaming." },
+    { question: "What's the easiest method for Roku?", answer: "Smart DNS (FastestVPN MediaStreamer) is the easiest — just change DNS settings on Roku. Takes 2 minutes. No encryption but zero speed impact for streaming." },
     { question: "Will Roku work with a router VPN?", answer: "Yes — if your router has a VPN installed, all Roku traffic goes through the VPN automatically. This is the most comprehensive method (encryption + geo-unblocking) but requires a VPN-capable router." },
   ];
 
@@ -34,7 +34,7 @@ export default function VpnForRokuPage() {
             <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 mb-2">Method 1: Smart DNS</h3>
             <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-3">Change Roku&apos;s DNS to your VPN provider&apos;s Smart DNS. No encryption but zero speed impact.</p>
             <ol className="text-sm text-zinc-700 dark:text-zinc-300 space-y-1">
-              <li>1. Get Smart DNS addresses from your VPN provider (ExpressVPN MediaStreamer is best)</li>
+              <li>1. Get Smart DNS addresses from your VPN provider (FastestVPN MediaStreamer is best)</li>
               <li>2. On Roku: Settings &gt; Network &gt; Set up connection &gt; Advanced</li>
               <li>3. Choose your network, then set DNS to Manual</li>
               <li>4. Enter the Smart DNS addresses</li>
@@ -73,7 +73,7 @@ export default function VpnForRokuPage() {
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Best VPN for Roku</h2>
         <div className="space-y-3">
           {[
-            { name: "ExpressVPN", best: "Best Smart DNS (MediaStreamer)", desc: "MediaStreamer is the easiest Roku solution. Also has the best router app for Method 2." },
+            { name: "FastestVPN", best: "Best Smart DNS (MediaStreamer)", desc: "MediaStreamer is the easiest Roku solution. Also has the best router app for Method 2." },
             { name: "NordVPN", best: "Best router support", desc: "SmartPlay combines VPN + Smart DNS. Excellent router compatibility with ASUS and others." },
             { name: "Surfshark", best: "Best budget", desc: "Smart DNS available. Unlimited devices means your Roku is covered alongside everything else." },
           ].map((p) => (

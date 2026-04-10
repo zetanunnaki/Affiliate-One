@@ -15,7 +15,7 @@ export default function ObfuscationPage() {
     { question: "What is VPN obfuscation?", answer: "Obfuscation (also called stealth mode, camouflage, or scramble) disguises VPN traffic to look like regular HTTPS web traffic. This prevents firewalls, ISPs, and censorship systems from detecting and blocking your VPN connection." },
     { question: "When do I need obfuscation?", answer: "In countries with active VPN blocking (China, Russia, Turkey, UAE, Egypt), on corporate networks that block VPNs, in schools/universities that restrict VPN access, and on any network that uses deep packet inspection (DPI) to detect VPN protocols." },
     { question: "Does obfuscation slow down my VPN?", answer: "Yes, slightly. The extra processing to disguise VPN packets adds 5-15% overhead on top of regular VPN speed loss. In restrictive countries, the alternative is no connection at all, so the trade-off is worth it." },
-    { question: "Can obfuscation be detected?", answer: "Advanced censorship systems (like China's Great Firewall) are in a constant arms race with VPN providers. Obfuscation works most of the time, but occasionally new detection methods are deployed. Top providers like ExpressVPN and NordVPN have dedicated teams updating their obfuscation technology." },
+    { question: "Can obfuscation be detected?", answer: "Advanced censorship systems (like China's Great Firewall) are in a constant arms race with VPN providers. Obfuscation works most of the time, but occasionally new detection methods are deployed. Top providers like NordVPN and FastestVPN have dedicated teams updating their obfuscation technology." },
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function ObfuscationPage() {
             </thead>
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
               {[
-                { name: "ExpressVPN", feature: "Automatic obfuscation (Lightway)", auto: "Yes", china: "8/10 — Best in class" },
+                { name: "FastestVPN", feature: "WireGuard obfuscation", auto: "Yes", china: "6/10 — Functional" },
                 { name: "NordVPN", feature: "Obfuscated Servers", auto: "Manual selection", china: "7/10 — Good" },
                 { name: "Surfshark", feature: "NoBorders Mode", auto: "Yes (auto-detects)", china: "6/10 — Functional" },
                 { name: "Proton VPN", feature: "Stealth Protocol", auto: "Yes", china: "5/10 — Improving" },

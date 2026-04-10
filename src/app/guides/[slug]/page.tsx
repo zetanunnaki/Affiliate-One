@@ -14,7 +14,7 @@ const HOW_TO_SLUGS: Record<string, { steps: { name: string; text: string }[]; to
   "vpn-setup-beginners": {
     totalTime: "PT5M",
     steps: [
-      { name: "Choose a VPN Provider", text: "Select NordVPN, Surfshark, or ExpressVPN based on your needs and budget." },
+      { name: "Choose a VPN Provider", text: "Select NordVPN, Surfshark, or FastestVPN based on your needs and budget." },
       { name: "Create an Account", text: "Visit the provider's website and sign up with a 30-day money-back guarantee." },
       { name: "Download and Install the App", text: "Download the VPN app for your OS (Windows, macOS, iOS, Android, Linux)." },
       { name: "Log In and Connect", text: "Open the app, log in, and click Connect to the fastest available server." },

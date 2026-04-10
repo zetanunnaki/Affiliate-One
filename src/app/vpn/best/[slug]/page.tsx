@@ -49,7 +49,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     },
     openGraph: {
       title: `Best VPN for ${country.nameEn} (2026)`,
-      description: `Expert-tested VPN recommendations for ${country.nameEn}. Compare NordVPN, Surfshark, ExpressVPN, and more.`,
+      description: `Expert-tested VPN recommendations for ${country.nameEn}. Compare NordVPN, Surfshark, FastestVPN, and more.`,
       type: "article",
       images: [{ url: ogImage, width: 1200, height: 675, alt: `Best VPN for ${country.nameEn}` }],
     },

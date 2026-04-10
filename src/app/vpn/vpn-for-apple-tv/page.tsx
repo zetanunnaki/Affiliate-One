@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function VpnForAppleTvPage() {
   const faqs = [
-    { question: "Does Apple TV support VPN apps now?", answer: "Starting with tvOS 17 (2023), Apple TV supports native VPN apps from the App Store. However, not all VPN providers have released Apple TV apps yet. ExpressVPN and NordVPN were among the first. Check your provider's compatibility." },
+    { question: "Does Apple TV support VPN apps now?", answer: "Starting with tvOS 17 (2023), Apple TV supports native VPN apps from the App Store. However, not all VPN providers have released Apple TV apps yet. NordVPN was among the first. Check your provider's compatibility." },
     { question: "What's the easiest method?", answer: "If your VPN has a tvOS app: install it directly (easiest). If not: Smart DNS is the next easiest (change DNS settings, no encryption). Router VPN is the most comprehensive (encrypts everything) but requires VPN-capable router." },
     { question: "Will a VPN slow down Apple TV streaming?", answer: "With Smart DNS: no speed impact. With native VPN app or router VPN: minimal impact (5-10% on WireGuard). 4K streaming requires ~25 Mbps — well within VPN capabilities on most connections." },
   ];
@@ -63,7 +63,7 @@ export default function VpnForAppleTvPage() {
           <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-3">Available since tvOS 17. Requires Apple TV 4K (2nd gen or newer).</p>
           <ol className="space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
             <li><strong>1.</strong> Open App Store on Apple TV</li>
-            <li><strong>2.</strong> Search for your VPN (ExpressVPN, NordVPN)</li>
+            <li><strong>2.</strong> Search for your VPN (NordVPN, Surfshark)</li>
             <li><strong>3.</strong> Download and install</li>
             <li><strong>4.</strong> Log in (pair via phone for easier entry)</li>
             <li><strong>5.</strong> Select server country and connect</li>
@@ -77,7 +77,7 @@ export default function VpnForAppleTvPage() {
         <div className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
           <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-3">No encryption but zero speed impact. Get DNS addresses from your VPN provider.</p>
           <ol className="space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
-            <li><strong>1.</strong> Get Smart DNS addresses from your VPN account (e.g., ExpressVPN MediaStreamer)</li>
+            <li><strong>1.</strong> Get Smart DNS addresses from your VPN account (e.g., FastestVPN Smart Connect)</li>
             <li><strong>2.</strong> On Apple TV: Settings &gt; Network &gt; Wi-Fi &gt; your network</li>
             <li><strong>3.</strong> Configure DNS &gt; Manual</li>
             <li><strong>4.</strong> Enter the DNS addresses from your provider</li>

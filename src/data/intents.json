@@ -4,14 +4,14 @@
     "label": "Remote Work",
     "slug": "remote-work",
     "description": "VPN solutions for remote workers who need secure access to company resources, protect sensitive data on shared networks, and maintain productivity while working from anywhere.",
-    "recommendedProviders": ["nordvpn", "expressvpn", "protonvpn"]
+    "recommendedProviders": ["nordvpn", "fastestvpn", "protonvpn"]
   },
   {
     "id": "travel",
     "label": "Travel",
     "slug": "travel",
     "description": "VPN solutions for frequent travelers who connect to hotel, airport, and café Wi-Fi networks and need reliable access to home-region services.",
-    "recommendedProviders": ["expressvpn", "surfshark", "nordvpn"]
+    "recommendedProviders": ["fastestvpn", "surfshark", "nordvpn"]
   },
   {
     "id": "privacy",
@@ -25,13 +25,13 @@
     "label": "Streaming",
     "slug": "streaming",
     "description": "VPN solutions for accessing geo-restricted streaming content while maintaining fast connection speeds for buffer-free viewing.",
-    "recommendedProviders": ["expressvpn", "nordvpn", "surfshark"]
+    "recommendedProviders": ["fastestvpn", "nordvpn", "surfshark"]
   },
   {
     "id": "teams",
     "label": "Teams & Business",
     "slug": "teams",
     "description": "VPN solutions for small teams and businesses that need centralized management, dedicated IPs, and secure access to shared resources.",
-    "recommendedProviders": ["nordvpn", "protonvpn", "expressvpn"]
+    "recommendedProviders": ["nordvpn", "protonvpn", "fastestvpn"]
   }
 ]

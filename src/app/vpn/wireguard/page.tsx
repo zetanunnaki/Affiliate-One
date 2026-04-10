@@ -13,8 +13,8 @@ export default function WireGuardPage() {
   const faqs = [
     { question: "Is WireGuard better than OpenVPN?", answer: "For most users, yes. WireGuard is significantly faster (often 2-3x), uses less battery on mobile, has a smaller code base (4,000 lines vs 70,000+), and uses more modern cryptography. OpenVPN's advantage is broader compatibility with legacy systems and TCP mode for restrictive networks." },
     { question: "Is WireGuard secure?", answer: "Yes. WireGuard uses state-of-the-art cryptography: ChaCha20 for encryption, Poly1305 for authentication, Curve25519 for key exchange, and BLAKE2s for hashing. It has been formally verified and is built into the Linux kernel since version 5.6." },
-    { question: "Why do some VPNs use their own protocol instead of WireGuard?", answer: "NordLynx (NordVPN) and Lightway (ExpressVPN) are built on top of WireGuard's concepts but add features like double NAT for privacy (NordLynx) or smaller code footprint (Lightway). They offer similar or better performance while addressing WireGuard's static IP assignment concern." },
-    { question: "Does WireGuard work in China?", answer: "Standard WireGuard traffic can be detected and blocked by the Great Firewall. You need obfuscation on top of WireGuard. NordVPN's obfuscated servers and ExpressVPN's Lightway provide this. Raw WireGuard alone is not sufficient for China." },
+    { question: "Why do some VPNs use their own protocol instead of WireGuard?", answer: "NordLynx (NordVPN) is built on top of WireGuard's concepts but adds features like double NAT for privacy. Lightway offers a smaller code footprint. They offer similar or better performance while addressing WireGuard's static IP assignment concern." },
+    { question: "Does WireGuard work in China?", answer: "Standard WireGuard traffic can be detected and blocked by the Great Firewall. You need obfuscation on top of WireGuard. NordVPN's obfuscated servers and FastestVPN's obfuscation provide this. Raw WireGuard alone is not sufficient for China." },
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function WireGuardPage() {
           {[
             { name: "NordVPN → NordLynx", desc: "WireGuard with double NAT system to address the static IP privacy concern. The most popular WireGuard implementation." },
             { name: "Surfshark → WireGuard", desc: "Standard WireGuard implementation with their own privacy layer. Default protocol on all platforms." },
-            { name: "ExpressVPN → Lightway", desc: "Not WireGuard, but inspired by it. Uses wolfSSL instead. Smaller codebase (~2,000 lines) and open-source." },
+            { name: "FastestVPN → WireGuard", desc: "Standard WireGuard implementation. Affordable pricing with lifetime plans available." },
             { name: "Proton VPN → WireGuard", desc: "Standard WireGuard with NAT-based privacy. Also offers Stealth protocol for obfuscation." },
             { name: "Mullvad → WireGuard", desc: "One of the first providers to adopt WireGuard. Native implementation with multihop support." },
           ].map((p) => (

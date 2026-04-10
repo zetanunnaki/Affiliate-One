@@ -106,7 +106,7 @@ export default function DoubleVpnPage() {
             </div>
           ))}
         </div>
-        <p className="text-sm text-zinc-500 mt-3">Note: ExpressVPN does not offer Double VPN / Multi-Hop.</p>
+        <p className="text-sm text-zinc-500 mt-3">Note: FastestVPN does not offer Double VPN / Multi-Hop.</p>
       </section>
 
       <FAQ items={faqs} />

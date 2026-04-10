@@ -16,8 +16,6 @@ export default function ComparePage() {
 
   const existingComparisons = [
     { slug: "nordvpn-vs-surfshark", ids: ["nordvpn", "surfshark"] },
-    { slug: "nordvpn-vs-expressvpn", ids: ["nordvpn", "expressvpn"] },
-    { slug: "surfshark-vs-expressvpn", ids: ["surfshark", "expressvpn"] },
     { slug: "nordvpn-vs-protonvpn", ids: ["nordvpn", "protonvpn"] },
     { slug: "protonvpn-vs-mullvad", ids: ["protonvpn", "mullvad"] },
   ];

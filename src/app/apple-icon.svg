@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="55%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="36" fill="url(#tile)"/>
+  <g transform="translate(45,38) scale(2.25)">
+    <path d="M 10 3 L 30 3 L 37 10 L 37 23 Q 37 25 35.8 26.5 L 21.2 41.8 Q 20 43 18.8 41.8 L 4.2 26.5 Q 3 25 3 23 L 3 10 Z"
+          fill="url(#bg)"/>
+    <path d="M 12 7 L 28 7 L 33 12 L 33 22 L 20 37 L 7 22 L 7 12 Z"
+          fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-linejoin="round"/>
+    <path d="M 12 22 L 18 28 L 29 15"
+          stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

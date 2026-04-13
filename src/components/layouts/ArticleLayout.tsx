@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import ReadingProgressBar from "@/components/ui/ReadingProgressBar";
 import TableOfContents from "@/components/ui/TableOfContents";
 import FeedbackWidget from "@/components/ui/FeedbackWidget";
-import LastReviewed from "@/components/ui/LastReviewed";
+import AuthorCard from "@/components/ui/AuthorCard";
 import type { PostFrontmatter } from "@/types";
 
 interface ArticleLayoutProps {
@@ -161,7 +161,7 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex gap-14">
           <article className="flex-1 min-w-0 max-w-3xl">
-            <LastReviewed authorId={frontmatter.author} reviewedAt={frontmatter.updatedAt} />
+            <AuthorCard authorId={frontmatter.author} updatedAt={frontmatter.updatedAt} />
             <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight">
               {children}
             </div>

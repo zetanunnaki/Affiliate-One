@@ -187,22 +187,49 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
             <div className="mt-16 space-y-10">
               <FeedbackWidget pageId={frontmatter.title} />
 
-              {/* CTA */}
-              <div className="relative overflow-hidden rounded-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800" />
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.1),transparent_60%)]" />
-                <div className="relative p-7 sm:p-8">
-                  <h2 className="text-xl font-bold text-white mb-2">Ready to Get Protected?</h2>
-                  <p className="text-blue-100 text-sm mb-6">Take the next step in securing your remote work setup.</p>
+              {/* Finished reading? → explore next */}
+              <div className="relative overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-900/50">
+                <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500" />
+                <div className="p-6 sm:p-8">
+                  <div className="flex items-center gap-3 mb-5">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-md shadow-blue-500/25">
+                      <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-blue-600 dark:text-blue-400">
+                        What&apos;s next
+                      </p>
+                      <h2 className="text-lg font-bold text-slate-900 dark:text-white">
+                        Keep exploring
+                      </h2>
+                    </div>
+                  </div>
                   <div className="grid sm:grid-cols-3 gap-3">
                     {[
-                      { label: "Best VPN 2026", href: "/best/vpn", desc: "Our top picks" },
-                      { label: "Password Manager", href: "/best/password-manager", desc: "Secure accounts" },
-                      { label: "Security Checklist", href: "/tools/security-checklist", desc: "45-item audit" },
+                      { label: "Best VPN 2026", href: "/best/vpn", desc: "Our top picks", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
+                      { label: "Password Manager", href: "/best/password-manager", desc: "Secure accounts", icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
+                      { label: "Security Checklist", href: "/tools/security-checklist", desc: "45-item audit", icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" },
                     ].map((link) => (
-                      <Link key={link.href} href={link.href} className="flex flex-col p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10 hover:bg-white/20 hover:-translate-y-0.5 transition-all duration-200">
-                        <span className="text-sm font-semibold text-white">{link.label}</span>
-                        <span className="text-xs text-blue-200">{link.desc}</span>
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="group/card flex items-start gap-3 p-4 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/50 rounded-xl hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                      >
+                        <div className="shrink-0 w-9 h-9 rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center group-hover/card:bg-blue-500 group-hover/card:text-white transition-colors">
+                          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d={link.icon} />
+                          </svg>
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="text-sm font-bold text-slate-900 dark:text-white group-hover/card:text-blue-600 dark:group-hover/card:text-blue-400 transition-colors">
+                            {link.label}
+                          </div>
+                          <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                            {link.desc}
+                          </div>
+                        </div>
                       </Link>
                     ))}
                   </div>

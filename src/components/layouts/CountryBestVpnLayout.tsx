@@ -104,8 +104,8 @@ export default function CountryBestVpnLayout({
           {/* Bottom gradient overlay for legibility */}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
 
-          {/* Floating info card */}
-          <div className="absolute inset-x-4 sm:inset-x-8 bottom-4 sm:bottom-8 flex flex-wrap items-end justify-between gap-4">
+          {/* Simplified overlay — flag + country name only */}
+          <div className="absolute inset-x-4 sm:inset-x-8 bottom-4 sm:bottom-8">
             <div className="flex items-center gap-4">
               <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white/10 backdrop-blur-xl ring-1 ring-white/20 flex items-center justify-center overflow-hidden p-1">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -123,30 +123,6 @@ export default function CountryBestVpnLayout({
                   {country.nameEn}
                 </h2>
               </div>
-            </div>
-
-            <div className="hidden sm:flex items-center gap-3">
-              <div className="px-3 py-2 rounded-xl bg-white/10 backdrop-blur-xl ring-1 ring-white/20 text-center">
-                <div className="text-[9px] font-semibold uppercase tracking-wider text-blue-200/80 mb-0.5">Region</div>
-                <div className="text-xs font-bold text-white">{country.region}</div>
-              </div>
-              {!country.riskFlags.includes("censorship") && (
-                <div className="px-3 py-2 rounded-xl bg-emerald-500/20 backdrop-blur-xl ring-1 ring-emerald-400/30 text-center">
-                  <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-200 mb-0.5">VPN Status</div>
-                  <div className="text-xs font-bold text-white flex items-center gap-1">
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    Legal
-                  </div>
-                </div>
-              )}
-              {country.riskFlags.includes("censorship") && (
-                <div className="px-3 py-2 rounded-xl bg-amber-500/20 backdrop-blur-xl ring-1 ring-amber-400/30 text-center">
-                  <div className="text-[9px] font-semibold uppercase tracking-wider text-amber-200 mb-0.5">VPN Status</div>
-                  <div className="text-xs font-bold text-white">Restricted</div>
-                </div>
-              )}
             </div>
           </div>
         </div>

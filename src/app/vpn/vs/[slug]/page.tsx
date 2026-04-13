@@ -8,6 +8,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import ComparisonHighlight from "@/components/ui/ComparisonHighlight";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -103,6 +104,13 @@ export default async function VsPage(props: PageProps) {
         </p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
+
+      {/* Head-to-head highlight (conversion widget) */}
+      <ComparisonHighlight
+        left={a}
+        right={b}
+        winnerId={a.rating >= b.rating ? a.id : b.id}
+      />
 
       {/* Quick verdict */}
       <section className="mb-10 p-6 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl">

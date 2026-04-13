@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import StickyMobileCta from "@/components/ui/StickyMobileCta";
 import GlobalStructuredData from "@/components/seo/GlobalStructuredData";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 import AdSense from "@/components/seo/AdSense";
@@ -88,8 +89,11 @@ export default function RootLayout({
         <AdSense />
         <Header />
         <main id="main-content" className="flex-1">{children}</main>
+        {/* Spacer so sticky mobile CTA doesn't cover the last bit of footer */}
+        <div className="h-20 lg:hidden" aria-hidden="true" />
         <Footer />
         <ScrollToTop />
+        <StickyMobileCta />
         <CookieConsent />
       </body>
     </html>

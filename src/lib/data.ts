@@ -38,6 +38,25 @@ export function getProvidersByTag(tag: string): Provider[] {
   return getAllProviders().filter((p) => p.positioningTags.includes(tag));
 }
 
+/**
+ * Resolve the affiliate URL for a provider, preferring country-specific
+ * overrides when the reader is on a country page. Falls back to the
+ * default trackingBaseUrl.
+ *
+ * Example: NordVPN has a dedicated Korean affiliate link that pays more
+ * for Korean traffic — this returns that link on /vpn/best/south-korea/
+ * but the global link everywhere else.
+ */
+export function getProviderAffiliateUrl(
+  provider: Provider,
+  countrySlug?: string
+): string {
+  if (countrySlug && provider.affiliate.countryOverrides?.[countrySlug]) {
+    return provider.affiliate.countryOverrides[countrySlug];
+  }
+  return provider.affiliate.trackingBaseUrl;
+}
+
 // Intents
 export function getAllIntents(): Intent[] {
   return intentsData as Intent[];

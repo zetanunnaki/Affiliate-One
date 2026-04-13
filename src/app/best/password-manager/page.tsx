@@ -67,6 +67,17 @@ const managers: Manager[] = [
     ctaLabel: "Get Proton Pass",
     isAffiliate: true,
   },
+  {
+    name: "NordPass",
+    rating: 4.6,
+    price: "Free–$2.49/mo",
+    bestFor: "NordVPN users & simplicity",
+    pros: ["XChaCha20 encryption", "Data breach scanner included", "Pairs with NordVPN ecosystem", "Clean cross-platform UI"],
+    cons: ["Fewer advanced features than 1Password", "Free tier limits to one device at a time"],
+    ctaUrl: "https://go.nordpass.io/aff_c?offer_id=488&aff_id=145368",
+    ctaLabel: "Get NordPass",
+    isAffiliate: true,
+  },
 ];
 
 export default function BestPasswordManagerPage() {

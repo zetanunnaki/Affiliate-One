@@ -1,17 +1,21 @@
 import Link from "next/link";
 import type { Provider } from "@/types";
+import { getProviderAffiliateUrl } from "@/lib/data";
 
 interface ProviderCardProps {
   provider: Provider;
   badge?: string;
   countryNotes?: string;
+  countrySlug?: string;
 }
 
 export default function ProviderCard({
   provider,
   badge,
   countryNotes,
+  countrySlug,
 }: ProviderCardProps) {
+  const affiliateUrl = getProviderAffiliateUrl(provider, countrySlug);
   return (
     <div className="group relative border border-zinc-200 dark:border-zinc-700 rounded-2xl p-6 bg-white dark:bg-zinc-900 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/20 hover:border-blue-300 dark:hover:border-blue-700 hover:-translate-y-0.5 transition-all duration-300">
       {badge && (
@@ -94,7 +98,7 @@ export default function ProviderCard({
 
       <div className="flex gap-3">
         <a
-          href={provider.affiliate.trackingBaseUrl}
+          href={affiliateUrl}
           rel="noopener noreferrer sponsored"
           className="flex-1 text-center px-4 py-2.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
         >

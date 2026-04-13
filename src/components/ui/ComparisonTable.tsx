@@ -1,14 +1,17 @@
 import Link from "next/link";
 import type { ComparisonRow } from "@/types";
+import { getProviderAffiliateUrl } from "@/lib/data";
 
 interface ComparisonTableProps {
   rows: ComparisonRow[];
   countryName?: string;
+  countrySlug?: string;
 }
 
 export default function ComparisonTable({
   rows,
   countryName,
+  countrySlug,
 }: ComparisonTableProps) {
   return (
     <div className="overflow-x-auto my-8 rounded-2xl ring-1 ring-slate-200 dark:ring-slate-800 bg-white dark:bg-slate-900">
@@ -80,7 +83,7 @@ export default function ComparisonTable({
               </td>
               <td className="px-4 py-4 text-center">
                 <a
-                  href={row.provider.affiliate.trackingBaseUrl}
+                  href={getProviderAffiliateUrl(row.provider, countrySlug)}
                   rel="noopener noreferrer sponsored"
                   className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
                 >

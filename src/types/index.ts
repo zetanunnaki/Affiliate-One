@@ -29,6 +29,8 @@ export interface Provider {
   affiliate: {
     network: string;
     trackingBaseUrl: string;
+    trackingBaseUrlThreatProtection?: string;
+    countryOverrides?: Record<string, string>;
     disclosureLabel: string;
   };
   features: {

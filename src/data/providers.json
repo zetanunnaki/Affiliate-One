@@ -6,6 +6,11 @@
     "affiliate": {
       "network": "direct",
       "trackingBaseUrl": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=145368&url_id=902",
+      "trackingBaseUrlThreatProtection": "https://go.nordvpn.net/aff_c?offer_id=725&aff_id=145368",
+      "countryOverrides": {
+        "south-korea": "https://go.nordvpn.net/aff_c?offer_id=476&aff_id=145368",
+        "china": "http://get.affiliatescn.net/aff_c?offer_id=153&aff_id=145368"
+      },
       "disclosureLabel": "Affiliate link"
     },
     "features": {

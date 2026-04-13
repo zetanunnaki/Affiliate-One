@@ -179,16 +179,19 @@ export default function CountryBestVpnLayout({
             provider={providers.overall}
             badge="Best Overall"
             countryNotes={`Top choice for ${country.nameEn} — reliable servers and fast speeds in the ${country.region} region.`}
+            countrySlug={country.slug}
           />
           <ProviderCard
             provider={providers.budget}
             badge="Best Budget"
             countryNotes={`Affordable option for ${country.nameEn} with ${providers.budget.features.devices === 0 ? "unlimited" : providers.budget.features.devices} simultaneous connections.`}
+            countrySlug={country.slug}
           />
           <ProviderCard
             provider={providers.travel}
             badge="Best for Travel"
             countryNotes={`Ideal for travelers visiting ${country.nameEn} — works reliably on hotel and airport Wi-Fi.`}
+            countrySlug={country.slug}
           />
         </div>
       </section>
@@ -198,7 +201,7 @@ export default function CountryBestVpnLayout({
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
           VPN Comparison for {country.nameEn}
         </h2>
-        <ComparisonTable rows={comparisonRows} countryName={country.nameEn} />
+        <ComparisonTable rows={comparisonRows} countryName={country.nameEn} countrySlug={country.slug} />
       </section>
 
       {/* Section 3.5: Editorial content (if available) */}

@@ -64,17 +64,48 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
     { label: frontmatter.title },
   ];
 
+  const catIcon = categoryIcons[frontmatter.category] || categoryIcons.security;
+  const heroImage = pickHero(slug, frontmatter.category, frontmatter.title);
+
+  const canonicalUrl = slug ? `https://buysecurevpn.com/guides/${slug}/` : undefined;
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: frontmatter.title,
     description: frontmatter.description,
+    datePublished: frontmatter.updatedAt,
     dateModified: frontmatter.updatedAt,
-    author: { "@type": "Person", name: frontmatter.author },
+    mainEntityOfPage: canonicalUrl
+      ? { "@type": "WebPage", "@id": canonicalUrl }
+      : undefined,
+    image: {
+      "@type": "ImageObject",
+      url: `https://buysecurevpn.com${heroImage.src}`,
+      width: 1200,
+      height: 675,
+    },
+    author: {
+      "@type": "Person",
+      name: frontmatter.author,
+      url: `https://buysecurevpn.com/authors/${frontmatter.author}/`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "BuySecureVPN",
+      url: "https://buysecurevpn.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://buysecurevpn.com/logo.svg",
+        width: 220,
+        height: 48,
+      },
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".prose p:first-of-type"],
+    },
   };
-
-  const catIcon = categoryIcons[frontmatter.category] || categoryIcons.security;
-  const heroImage = pickHero(slug, frontmatter.category, frontmatter.title);
 
   return (
     <>
@@ -137,12 +168,6 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
 
             <div className="mt-16 space-y-10">
               <FeedbackWidget pageId={frontmatter.title} />
-
-              {frontmatter.adsEnabled !== false && (
-                <div className="p-6 bg-gradient-to-r from-slate-50 to-slate-100/80 dark:from-slate-800/30 dark:to-slate-900/30 rounded-2xl border border-slate-100 dark:border-slate-800 text-center">
-                  <p className="text-[10px] text-slate-400 uppercase tracking-widest">Advertisement</p>
-                </div>
-              )}
 
               {/* CTA */}
               <div className="relative overflow-hidden rounded-2xl">

@@ -15,9 +15,19 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { id } = await props.params;
   const author = getAuthorById(id);
   if (!author) return {};
+  const title = `${author.name} — ${author.role}`;
   return {
-    title: `${author.name} — ${author.role}`,
+    title,
     description: author.bio,
+    alternates: { canonical: `/authors/${id}/` },
+    openGraph: {
+      title,
+      description: author.bio,
+      type: "profile",
+      url: `/authors/${id}/`,
+      images: [{ url: author.headshot, width: 400, height: 400, alt: `${author.name} headshot` }],
+    },
+    twitter: { card: "summary", images: [author.headshot] },
   };
 }
 

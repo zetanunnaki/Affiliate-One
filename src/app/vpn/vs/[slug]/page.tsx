@@ -21,9 +21,19 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { slug } = await props.params;
   const comp = comparisons.find((c) => c.slug === slug);
   if (!comp) return {};
+  const description = `Detailed comparison of ${comp.providers.map((id) => getProviderById(id)?.name).join(" and ")}. Speed, security, price, and features compared side by side.`;
   return {
     title: comp.title,
-    description: `Detailed comparison of ${comp.providers.map((id) => getProviderById(id)?.name).join(" and ")}. Speed, security, price, and features compared side by side.`,
+    description,
+    alternates: { canonical: `/vpn/vs/${slug}/` },
+    openGraph: {
+      title: comp.title,
+      description,
+      type: "article",
+      url: `/vpn/vs/${slug}/`,
+      images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: comp.title }],
+    },
+    twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
   };
 }
 

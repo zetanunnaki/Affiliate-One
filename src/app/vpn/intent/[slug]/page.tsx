@@ -24,9 +24,20 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { slug } = await props.params;
   const intent = getIntentBySlug(slug);
   if (!intent) return {};
+  const title = `Best VPN for ${intent.label} (2026)`;
+  const ogImage = slug === "travel" ? "/images/og/og-travel.webp" : "/images/og/og-vpn.webp";
   return {
-    title: `Best VPN for ${intent.label} (2026)`,
+    title,
     description: intent.description,
+    alternates: { canonical: `/vpn/intent/${slug}/` },
+    openGraph: {
+      title,
+      description: intent.description,
+      type: "article",
+      url: `/vpn/intent/${slug}/`,
+      images: [{ url: ogImage, width: 1200, height: 675, alt: title }],
+    },
+    twitter: { card: "summary_large_image", images: [ogImage] },
   };
 }
 

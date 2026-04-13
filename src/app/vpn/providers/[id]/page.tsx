@@ -23,9 +23,20 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { id } = await props.params;
   const provider = getProviderById(id);
   if (!provider) return {};
+  const title = `${provider.name} Review (2026) — Is It Worth It?`;
+  const description = `In-depth ${provider.name} review. We tested speed, security, privacy, and reliability. Rating: ${provider.rating}/5. Price: ${provider.priceRange}.`;
   return {
-    title: `${provider.name} Review (2026) — Is It Worth It?`,
-    description: `In-depth ${provider.name} review. We tested speed, security, privacy, and reliability. Rating: ${provider.rating}/5. Price: ${provider.priceRange}.`,
+    title,
+    description,
+    alternates: { canonical: `/vpn/providers/${id}/` },
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      url: `/vpn/providers/${id}/`,
+      images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: `${provider.name} review` }],
+    },
+    twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
   };
 }
 

@@ -10,10 +10,8 @@ export default function VpnCalculatorPage() {
 
   const providers = [
     { name: "NordVPN", m1: 12.99, m12: 4.59, m24: 3.39, maxDevices: 10, dedicatedIp: 3.69, streaming: 10, gaming: 9, privacy: 8, china: 7 },
-    { name: "Surfshark", m1: 15.45, m12: 2.99, m24: 2.29, maxDevices: Infinity, dedicatedIp: 3.75, streaming: 8, gaming: 7, privacy: 7, china: 5.5 },
-    { name: "FastestVPN", m1: 10.00, m12: 2.49, m24: 0.99, maxDevices: 10, dedicatedIp: 0, streaming: 7, gaming: 7, privacy: 7, china: 6 },
-    { name: "Proton VPN", m1: 9.99, m12: 4.99, m24: 4.99, maxDevices: 10, dedicatedIp: 0, streaming: 5, gaming: 6, privacy: 9, china: 5 },
-    { name: "Mullvad", m1: 5, m12: 5, m24: 5, maxDevices: 5, dedicatedIp: 0, streaming: 2, gaming: 5, privacy: 10, china: 4 },
+    { name: "Proton VPN", m1: 9.99, m12: 4.99, m24: 4.99, maxDevices: 10, dedicatedIp: 0, streaming: 5, gaming: 6, privacy: 10, china: 5 },
+    { name: "FastestVPN", m1: 10.00, m12: 2.49, m24: 1.11, maxDevices: 10, dedicatedIp: 0, streaming: 7, gaming: 7, privacy: 7, china: 6 },
   ];
 
   const priceKey = months >= 24 ? "m24" : months >= 12 ? "m12" : "m1";

@@ -106,10 +106,10 @@ export default function SplitTunnelingPage() {
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
               {[
                 { name: "NordVPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
-                { name: "Surfshark", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
+                { name: "FastestVPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
                 { name: "FastestVPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
                 { name: "Proton VPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
-                { name: "Mullvad", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
+                { name: "Proton VPN", win: "Yes", mac: "Yes", and: "Yes", ios: "No" },
               ].map((r) => (
                 <tr key={r.name}>
                   <td className="px-4 py-2 font-medium text-zinc-900 dark:text-zinc-100">{r.name}</td>

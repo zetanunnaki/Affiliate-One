@@ -44,6 +44,16 @@ export interface Provider {
   notes: string;
   rating: number;
   priceRange: string;
+  // New promotion fields for conversion-focused widgets
+  positioning?: "overall" | "privacy" | "budget";
+  positioningLabel?: string;
+  brandColor?: string;
+  brandColorDark?: string;
+  tagline?: string;
+  keyFeatures?: string[];
+  originalPrice?: string;
+  salePrice?: string;
+  discountBadge?: string;
 }
 
 // Intent data model

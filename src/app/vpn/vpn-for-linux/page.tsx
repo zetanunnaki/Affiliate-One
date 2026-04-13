@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function VpnForLinuxPage() {
   const faqs = [
-    { question: "Which VPN has the best Linux support?", answer: "Proton VPN — full open-source GUI app, CLI, Secure Core, and kill switch on Linux. Mullvad is a close second with a polished native GUI. NordVPN's CLI is powerful but lacks a GUI." },
+    { question: "Which VPN has the best Linux support?", answer: "Proton VPN — full open-source GUI app, CLI, Secure Core, and kill switch on Linux. Proton VPN is a close second with a polished native GUI. NordVPN's CLI is powerful but lacks a GUI." },
     { question: "Can I use WireGuard directly on Linux?", answer: "Yes — WireGuard is built into the Linux kernel since 5.6. Download config files from your VPN provider and use wg-quick to connect. This is the fastest and most lightweight option." },
     { question: "Does Linux need a VPN?", answer: "Yes. Linux is more secure than Windows against malware, but your network traffic is equally visible to ISPs and attackers on shared networks. A VPN encrypts your traffic regardless of OS." },
   ];
@@ -31,7 +31,7 @@ export default function VpnForLinuxPage() {
         <div className="space-y-3">
           {[
             { rank: "1", name: "Proton VPN", badge: "Best Linux Experience", desc: "Full open-source GUI app (GTK). CLI also available. Secure Core, kill switch, split tunneling. The most polished Linux VPN experience. Supports Ubuntu, Fedora, Arch, Debian, and more." },
-            { rank: "2", name: "Mullvad", badge: "Best Privacy on Linux", desc: "Beautiful native GUI. WireGuard-first. No account needed. Open-source. Supports Debian, Ubuntu, Fedora. The privacy purist's choice." },
+            { rank: "2", name: "Proton VPN", badge: "Best Privacy on Linux", desc: "Beautiful native GUI. WireGuard-first. No account needed. Open-source. Supports Debian, Ubuntu, Fedora. The privacy purist's choice." },
             { rank: "3", name: "NordVPN", badge: "Best CLI", desc: "Powerful CLI with NordLynx (WireGuard). Kill switch, auto-connect, Meshnet from command line. No GUI but the most feature-rich CLI. Supports Ubuntu, Debian, Fedora, RHEL, Arch (AUR)." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
@@ -63,7 +63,7 @@ export default function VpnForLinuxPage() {
             </thead>
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
               {[
-                { method: "Provider GUI App", gui: "Yes", diff: "Easy", best: "Desktop Linux users (Proton VPN, Mullvad)" },
+                { method: "Provider GUI App", gui: "Yes", diff: "Easy", best: "Desktop Linux users (Proton VPN)" },
                 { method: "Provider CLI", gui: "No", diff: "Easy", best: "Server/headless (NordVPN, Proton VPN)" },
                 { method: "WireGuard (wg-quick)", gui: "No", diff: "Medium", best: "Maximum performance, any provider" },
                 { method: "OpenVPN", gui: "Optional", diff: "Medium", best: "Maximum compatibility" },

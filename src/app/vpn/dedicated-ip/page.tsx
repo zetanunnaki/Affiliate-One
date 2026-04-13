@@ -14,7 +14,7 @@ export default function DedicatedIpPage() {
     { question: "What is a dedicated VPN IP?", answer: "A dedicated IP is a static IP address assigned exclusively to you. Unlike shared VPN IPs (used by hundreds of users), your dedicated IP is yours alone. This means websites see consistent behavior from your IP, reducing CAPTCHAs and blocks." },
     { question: "Who needs a dedicated IP?", answer: "Remote workers who access IP-whitelisted company firewalls, users tired of constant CAPTCHAs, people who need reliable access to banking sites that flag VPN IPs, and anyone running servers or services that need a fixed address." },
     { question: "Does a dedicated IP reduce privacy?", answer: "Yes, slightly. A shared IP provides more anonymity because your traffic is mixed with hundreds of other users. A dedicated IP is linked only to you. However, the VPN still encrypts your traffic and hides your real IP — the trade-off is consistency vs. crowd anonymity." },
-    { question: "How much does a dedicated IP cost?", answer: "NordVPN charges $3.69/month extra. Surfshark charges $3.75/month extra. Proton VPN includes it in their Business plan. It's an add-on on top of your regular VPN subscription." },
+    { question: "How much does a dedicated IP cost?", answer: "NordVPN charges $3.69/month extra. FastestVPN charges $3.75/month extra. Proton VPN includes it in their Business plan. It's an add-on on top of your regular VPN subscription." },
   ];
 
   return (
@@ -87,10 +87,10 @@ export default function DedicatedIpPage() {
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
               {[
                 { name: "NordVPN", cost: "$3.69/mo", locs: "US, UK, DE, FR, NL, +5", avail: "Yes" },
-                { name: "Surfshark", cost: "$3.75/mo", locs: "US, UK, DE, NL", avail: "Yes" },
+                { name: "FastestVPN", cost: "$3.75/mo", locs: "US, UK, DE, NL", avail: "Yes" },
                 { name: "Proton VPN", cost: "Included in Business", locs: "Multiple", avail: "Business only" },
                 { name: "FastestVPN", cost: "N/A", locs: "N/A", avail: "No" },
-                { name: "Mullvad", cost: "N/A", locs: "N/A", avail: "No" },
+                { name: "Proton VPN", cost: "N/A", locs: "N/A", avail: "No" },
               ].map((p) => (
                 <tr key={p.name}>
                   <td className="px-4 py-2 font-medium text-zinc-900 dark:text-zinc-100">{p.name}</td>

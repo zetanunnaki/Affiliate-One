@@ -33,7 +33,7 @@ export default function StreamingGuidePage() {
 
   const faqs = [
     { question: "Is it legal to use a VPN for streaming?", answer: "Yes, using a VPN to stream is legal in most countries. You're paying for the streaming service — you're just accessing it from a different location. However, it may violate some streaming services' terms of service (though enforcement against individual users is essentially nonexistent)." },
-    { question: "Why do some VPNs work with Netflix and others don't?", answer: "Netflix actively blocks VPN IP addresses. Providers like NordVPN and FastestVPN invest heavily in rotating IP addresses and maintaining dedicated streaming servers. Privacy-focused VPNs like Mullvad don't prioritize streaming unblocking." },
+    { question: "Why do some VPNs work with Netflix and others don't?", answer: "Netflix actively blocks VPN IP addresses. Providers like NordVPN and FastestVPN invest heavily in rotating IP addresses and maintaining dedicated streaming servers. Privacy-focused VPNs like Proton VPN don't prioritize streaming unblocking." },
     { question: "What speed do I need for 4K streaming?", answer: "4K streaming requires ~25 Mbps sustained. With a VPN on WireGuard protocol, you'll retain 80-95% of your base speed. So a 50 Mbps connection with a VPN easily handles 4K." },
     { question: "Can I use a VPN on my smart TV?", answer: "Most smart TVs can't install VPN apps directly. Options: (1) Install VPN on your router (protects all devices), (2) Use Smart DNS (faster but no encryption), (3) Use FastestVPN's MediaStreamer, (4) Cast from a VPN-connected phone/laptop." },
   ];
@@ -56,9 +56,9 @@ export default function StreamingGuidePage() {
                 <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Service</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Surfshark</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Mullvad</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
@@ -97,7 +97,7 @@ export default function StreamingGuidePage() {
           </div>
           <div className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">3. Surfshark — Best Budget</h3>
+              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">3. FastestVPN — Best Budget</h3>
               <span className="text-sm font-semibold text-yellow-600 dark:text-yellow-400">8/10 services</span>
             </div>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">Works with most services at the lowest price. Unlimited devices = every screen in your household. BBC iPlayer inconsistent.</p>

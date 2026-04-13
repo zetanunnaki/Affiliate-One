@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import { getAllProviders } from "@/lib/data";
 import Byline from "@/components/ui/Byline";
-import ProviderCard from "@/components/ui/ProviderCard";
 import ComparisonTable from "@/components/ui/ComparisonTable";
 import Methodology from "@/components/ui/Methodology";
 import PricingTable from "@/components/ui/PricingTable";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",
   description:
-    "We tested the top VPN services for speed, security, and privacy. NordVPN, Surfshark, FastestVPN, Proton VPN, and Mullvad compared.",
+    "We tested the top VPN services for speed, security, and privacy. NordVPN, Proton VPN, and FastestVPN compared.",
 };
 
 export default function BestVpnPage() {
@@ -35,7 +35,7 @@ export default function BestVpnPage() {
     {
       question: "What is the best VPN in 2026?",
       answer:
-        "Based on our testing, NordVPN is the best overall VPN in 2026, offering the best combination of speed, security, and value. Surfshark is the best budget option, and FastestVPN is best for travel.",
+        "Based on our testing, NordVPN is the best overall VPN in 2026, offering the best combination of speed, security, and value. FastestVPN is the best budget option, and Proton VPN is best for privacy-conscious users.",
     },
     {
       question: "Are free VPNs safe to use?",
@@ -94,19 +94,13 @@ export default function BestVpnPage() {
         </div>
       </div>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-      {/* Quick picks */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-          Our Top 3 Picks
-        </h2>
-        <div className="grid md:grid-cols-3 gap-4">
-          <ProviderCard provider={providers[0]} badge="Best Overall" />
-          <ProviderCard provider={providers[1]} badge="Best Budget" />
-          <ProviderCard provider={providers[2]} badge="Best for Travel" />
-        </div>
-      </section>
+      {/* Top picks — conversion widget */}
+      <TopVpnPicks
+        heading="Our Top 3 VPN Picks for 2026"
+        eyebrow="Editor's picks"
+      />
 
       <ComparisonTable rows={comparisonRows} />
       <PricingTable providers={providers} />

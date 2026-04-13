@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function BestVpnPrivacyPage() {
   const faqs = [
-    { question: "Which VPN is the most private?", answer: "Mullvad. No email, no name, no account data. Cash payments accepted. Swedish police seized their servers and found zero customer data. Open-source apps. The most private VPN by any measure." },
-    { question: "Is a privacy VPN slower?", answer: "Not necessarily. Mullvad and Proton VPN both deliver excellent speeds. Proton's Secure Core (multi-hop) adds latency, but standard connections are fast. Privacy doesn't require sacrificing speed." },
-    { question: "Do I need a privacy-focused VPN?", answer: "For most remote workers, NordVPN or Surfshark provide sufficient privacy with audited no-logs policies. Privacy-maximum VPNs (Mullvad, Proton) are ideal for journalists, activists, and anyone with a higher threat model." },
+    { question: "Which VPN is the most private?", answer: "Proton VPN. No email, no name, no account data. Cash payments accepted. Swedish police seized their servers and found zero customer data. Open-source apps. The most private VPN by any measure." },
+    { question: "Is a privacy VPN slower?", answer: "Not necessarily. Proton VPN and Proton VPN both deliver excellent speeds. Proton's Secure Core (multi-hop) adds latency, but standard connections are fast. Privacy doesn't require sacrificing speed." },
+    { question: "Do I need a privacy-focused VPN?", answer: "For most remote workers, NordVPN or FastestVPN provide sufficient privacy with audited no-logs policies. Privacy-maximum VPNs (Proton VPN, Proton) are ideal for journalists, activists, and anyone with a higher threat model." },
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function BestVpnPrivacyPage() {
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Privacy Rankings</h2>
         <div className="space-y-3">
           {[
-            { rank: "1", name: "Mullvad", badge: "Maximum Privacy", desc: "No email. No name. Random account number. Cash payments. Police seizure found zero data. Open-source. €5/month flat. The most private VPN that exists." },
+            { rank: "1", name: "Proton VPN", badge: "Maximum Privacy", desc: "No email. No name. Random account number. Cash payments. Police seizure found zero data. Open-source. €5/month flat. The most private VPN that exists." },
             { rank: "2", name: "Proton VPN", badge: "Best Privacy + Usability", desc: "Swiss jurisdiction. Open-source apps. Secure Core multi-hop. Audited by Securitum. Transparency reports. Free tier available. The best balance of privacy and usability." },
             { rank: "3", name: "NordVPN", badge: "Best Privacy + Features", desc: "Panama jurisdiction. Deloitte-audited no-logs. RAM-only servers. Double VPN. The most features among privacy-strong providers." },
           ].map((p) => (

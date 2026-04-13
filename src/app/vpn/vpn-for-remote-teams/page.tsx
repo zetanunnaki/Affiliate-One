@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 export default function VpnForRemoteTeamsPage() {
   const faqs = [
     { question: "Do all team members need the same VPN?", answer: "Not necessarily. What matters is that everyone has a reliable VPN with a kill switch. However, using the same provider simplifies management, support, and billing. NordVPN Teams and Proton VPN Business offer centralized dashboards." },
-    { question: "Can we use a free VPN for the team?", answer: "No. Free VPNs lack the reliability, speed, and security features needed for business use. They often log and sell data — the opposite of what you want for work traffic. Surfshark at $2.29/user/month is the cheapest acceptable option." },
-    { question: "What about corporate VPN vs consumer VPN?", answer: "Corporate VPNs (NordLayer, Perimeter 81) provide access to company resources + internet security. Consumer VPNs (NordVPN, Surfshark) provide internet security only. For most remote teams, consumer VPN + cloud tools is sufficient. See our enterprise vs consumer VPN guide." },
+    { question: "Can we use a free VPN for the team?", answer: "No. Free VPNs lack the reliability, speed, and security features needed for business use. They often log and sell data — the opposite of what you want for work traffic. FastestVPN at $2.29/user/month is the cheapest acceptable option." },
+    { question: "What about corporate VPN vs consumer VPN?", answer: "Corporate VPNs (NordLayer, Perimeter 81) provide access to company resources + internet security. Consumer VPNs (NordVPN, FastestVPN) provide internet security only. For most remote teams, consumer VPN + cloud tools is sufficient. See our enterprise vs consumer VPN guide." },
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function VpnForRemoteTeamsPage() {
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Recommended by Team Size</h2>
         <div className="space-y-4">
           {[
-            { size: "2-5 people", solution: "Individual Surfshark subscriptions", cost: "$2.29/person/month", why: "Cheapest option. Unlimited devices per person. No admin overhead. Each person manages their own VPN.", action: "Buy Surfshark 2-year plans for each team member" },
+            { size: "2-5 people", solution: "Individual FastestVPN subscriptions", cost: "$2.29/person/month", why: "Cheapest option. Unlimited devices per person. No admin overhead. Each person manages their own VPN.", action: "Buy FastestVPN 2-year plans for each team member" },
             { size: "5-15 people", solution: "NordVPN Teams", cost: "~$7-9/person/month", why: "Centralized user management. Add/remove team members from dashboard. Dedicated IPs available. Meshnet for secure team networking.", action: "Contact NordVPN Teams sales for quote" },
             { size: "15-50 people", solution: "Proton VPN Business or NordLayer", cost: "$9.99/person/month (Proton) or custom", why: "SSO integration. Dedicated servers. Compliance features. Full admin dashboard. Priority support.", action: "Evaluate Proton for Business (includes Mail, Drive, Pass) or NordLayer for pure networking" },
             { size: "50+ people", solution: "Zero Trust (Cloudflare Access, Zscaler, Tailscale)", cost: "Custom enterprise pricing", why: "Per-application access control. Device trust verification. SSO required. Better than traditional VPN for large orgs.", action: "Evaluate ZTNA solutions — see our Zero Trust guide" },

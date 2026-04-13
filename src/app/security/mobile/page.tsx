@@ -13,7 +13,7 @@ export default function MobileSecurityPage() {
   const faqs = [
     { question: "Is iOS or Android more secure?", answer: "Both are secure when properly configured. iOS has a more locked-down ecosystem with stricter app review. Android offers more flexibility but requires more user diligence with app permissions and sideloading. For most remote workers, either platform is fine with proper settings." },
     { question: "Do I need antivirus on my phone?", answer: "On iOS: no, Apple's sandboxing makes traditional antivirus unnecessary. On Android: a reputable security app (Bitdefender, Norton) adds value if you install apps from outside the Play Store. Most importantly, keep your OS updated — security patches matter more than antivirus." },
-    { question: "Should I use a VPN on my phone?", answer: "Yes, especially on public Wi-Fi. Mobile VPN apps from NordVPN, Surfshark, and FastestVPN are lightweight and have minimal battery impact with WireGuard protocol. Enable auto-connect for Wi-Fi networks." },
+    { question: "Should I use a VPN on my phone?", answer: "Yes, especially on public Wi-Fi. Mobile VPN apps from NordVPN, Proton VPN, and FastestVPN are lightweight and have minimal battery impact with WireGuard protocol. Enable auto-connect for Wi-Fi networks." },
     { question: "What if my phone is stolen?", answer: "If encrypted (default on modern phones with passcode) and remote wipe is enabled, your data is protected. Use Find My iPhone / Find My Device to locate, lock, or wipe. Change passwords for logged-in accounts from another device." },
   ];
 

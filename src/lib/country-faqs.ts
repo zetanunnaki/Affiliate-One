@@ -19,7 +19,7 @@ export function generateCountryFAQs(country: Country): FAQItem[] {
   // FAQ 2: Best VPN
   faqs.push({
     question: `What is the best VPN for ${country.nameEn} in 2026?`,
-    answer: `Based on our testing, NordVPN is our top overall pick for ${country.nameEn}, offering fast speeds, strong security, and reliable servers in the ${country.region} region. Surfshark is the best budget option, and FastestVPN is ideal for travelers visiting ${country.nameEn}.`,
+    answer: `Based on our testing, NordVPN is our top overall pick for ${country.nameEn}, offering fast speeds, strong security, and reliable servers in the ${country.region} region. FastestVPN is the best budget option, and Proton VPN is ideal for privacy-focused users visiting ${country.nameEn}.`,
   });
 
   // FAQ 3: Wi-Fi safety
@@ -58,7 +58,7 @@ export function generateCountryFAQs(country: Country): FAQItem[] {
   // FAQ 7: Streaming
   faqs.push({
     question: `Can I use a VPN to stream services in ${country.nameEn}?`,
-    answer: `A VPN can help you access streaming services that may be geo-restricted in ${country.nameEn}. NordVPN, Surfshark, and FastestVPN are particularly effective at unblocking Netflix, Disney+, BBC iPlayer, and Amazon Prime libraries from other regions. Always check the terms of service of streaming providers before connecting.`,
+    answer: `A VPN can help you access streaming services that may be geo-restricted in ${country.nameEn}. NordVPN, Proton VPN, and FastestVPN are particularly effective at unblocking Netflix, Disney+, BBC iPlayer, and Amazon Prime libraries from other regions. Always check the terms of service of streaming providers before connecting.`,
   });
 
   // FAQ 8: Mobile / smartphone
@@ -76,7 +76,7 @@ export function generateCountryFAQs(country: Country): FAQItem[] {
   // FAQ 10: Free vs paid
   faqs.push({
     question: `Should I use a free VPN in ${country.nameEn}?`,
-    answer: `We strongly advise against free VPNs in ${country.nameEn}. Free providers typically log user data, sell browsing history to advertisers, contain malware, and provide poor performance. Paid VPNs like NordVPN ($3.39/mo) and Surfshark ($2.29/mo) cost less than a coffee per month and offer audited no-logs policies, faster speeds, and proper security.`,
+    answer: `We strongly advise against free VPNs in ${country.nameEn}. Free providers typically log user data, sell browsing history to advertisers, contain malware, and provide poor performance. Paid VPNs like NordVPN ($3.39/mo) and FastestVPN ($2.29/mo) cost less than a coffee per month and offer audited no-logs policies, faster speeds, and proper security.`,
   });
 
   return faqs;

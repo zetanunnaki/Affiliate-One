@@ -83,19 +83,37 @@ export function getAuthorById(id: string): Author | undefined {
   return getAllAuthors().find((a) => a.id === id);
 }
 
-// Recommended providers for a country (based on risk flags + positioning)
+// Recommended providers for a country — returns our 3 monetized picks.
+// NordVPN = Best Overall, FastestVPN = Best Budget, Proton VPN = Best Privacy
 export function getRecommendedProviders(country: Country): {
   overall: Provider;
   budget: Provider;
-  travel: Provider;
+  privacy: Provider;
 } {
   const providers = getAllProviders();
   const overall =
+    providers.find((p) => p.id === "nordvpn") ||
     providers.find((p) => p.positioningTags.includes("overall")) ||
     providers[0];
   const budget =
-    providers.find((p) => p.positioningTags.includes("budget")) || providers[1];
-  const travel =
-    providers.find((p) => p.positioningTags.includes("travel")) || providers[2];
-  return { overall, budget, travel };
+    providers.find((p) => p.id === "fastestvpn") ||
+    providers.find((p) => p.positioningTags.includes("budget")) ||
+    providers[1];
+  const privacy =
+    providers.find((p) => p.id === "protonvpn") ||
+    providers.find((p) => p.positioningTags.includes("privacy")) ||
+    providers[2];
+  return { overall, budget, privacy };
+}
+
+/**
+ * Get the 3 featured (monetized) providers in canonical order.
+ * Used by TopVpnPicks and any widget promoting the earning products.
+ */
+export function getFeaturedProviders(): Provider[] {
+  const all = getAllProviders();
+  const order = ["nordvpn", "protonvpn", "fastestvpn"];
+  return order
+    .map((id) => all.find((p) => p.id === id))
+    .filter((p): p is Provider => p !== undefined);
 }

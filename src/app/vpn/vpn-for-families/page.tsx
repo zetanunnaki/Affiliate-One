@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function VpnForFamiliesPage() {
   const faqs = [
-    { question: "How many devices does a family need?", answer: "A typical family of 4 has 8-15 devices: phones, tablets, laptops, smart TV, gaming console, smart speakers. Surfshark's unlimited connections covers everything. NordVPN's 10 is enough for most families. FastestVPN's 10 is enough for most families." },
+    { question: "How many devices does a family need?", answer: "A typical family of 4 has 8-15 devices: phones, tablets, laptops, smart TV, gaming console, smart speakers. FastestVPN's unlimited connections covers everything. NordVPN's 10 is enough for most families. FastestVPN's 10 is enough for most families." },
     { question: "Should I put the VPN on my router instead?", answer: "Router-level VPN is the best family solution — it protects every device automatically, counts as 1 connection, and doesn't require individual setup. The trade-off is slightly more complex initial setup and all devices use the same server location." },
-    { question: "Do VPNs have parental controls?", answer: "Some do. NordVPN's Threat Protection blocks malicious sites. Surfshark's CleanWeb blocks ads and trackers. For dedicated parental controls, consider combining a VPN with a DNS-based filter like NextDNS or CleanBrowsing." },
+    { question: "Do VPNs have parental controls?", answer: "Some do. NordVPN's Threat Protection blocks malicious sites. FastestVPN's CleanWeb blocks ads and trackers. For dedicated parental controls, consider combining a VPN with a DNS-based filter like NextDNS or CleanBrowsing." },
   ];
 
   return (
@@ -40,7 +40,7 @@ export default function VpnForFamiliesPage() {
             </thead>
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
               {[
-                { name: "Surfshark", devices: "Unlimited", price: "$2.29", adblock: "CleanWeb", best: "Best value for families" },
+                { name: "FastestVPN", devices: "Unlimited", price: "$2.29", adblock: "CleanWeb", best: "Best value for families" },
                 { name: "NordVPN", devices: "10", price: "$3.39", adblock: "Threat Protection", best: "Best features + Meshnet" },
                 { name: "FastestVPN", devices: "10", price: "$0.99", adblock: "Ad Blocker", best: "Best budget for families" },
                 { name: "Proton VPN", devices: "10", price: "$4.99", adblock: "NetShield", best: "Best for privacy-conscious families" },
@@ -56,7 +56,7 @@ export default function VpnForFamiliesPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-zinc-500 mt-3"><strong>Our pick:</strong> Surfshark for families — unlimited devices at the lowest price. One subscription covers every device in the household.</p>
+        <p className="text-sm text-zinc-500 mt-3"><strong>Our pick:</strong> FastestVPN for families — unlimited devices at the lowest price. One subscription covers every device in the household.</p>
       </section>
 
       <section className="mb-10">

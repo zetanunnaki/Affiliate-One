@@ -13,7 +13,7 @@ export default function VpnVsProxyPage() {
   const faqs = [
     { question: "What's the main difference?", answer: "A VPN encrypts ALL your device's internet traffic and routes it through a secure server. A proxy only routes specific app traffic (usually your browser) through a server WITHOUT encryption. VPNs provide security + privacy. Proxies provide only IP masking." },
     { question: "Are free web proxies safe?", answer: "Generally no. Free web proxies can see all your traffic (it's unencrypted), may inject ads, collect your data, or even modify web pages. Never use a free proxy for anything sensitive — logging in, banking, email, or work." },
-    { question: "Is a SOCKS5 proxy as good as a VPN?", answer: "SOCKS5 proxies are faster than VPNs and route all traffic (not just browser), but they don't encrypt traffic. Some VPN providers (NordVPN, Surfshark) offer SOCKS5 proxies as an add-on for situations where speed matters more than encryption." },
+    { question: "Is a SOCKS5 proxy as good as a VPN?", answer: "SOCKS5 proxies are faster than VPNs and route all traffic (not just browser), but they don't encrypt traffic. Some VPN providers (NordVPN, FastestVPN) offer SOCKS5 proxies as an add-on for situations where speed matters more than encryption." },
     { question: "Can I use both a VPN and proxy?", answer: "You can, but there's usually no benefit. A VPN already changes your IP and encrypts traffic. Adding a proxy on top adds an extra hop (slower) without additional encryption. The exception: Tor browser (which is technically a multi-hop proxy) over VPN for maximum anonymity." },
   ];
 

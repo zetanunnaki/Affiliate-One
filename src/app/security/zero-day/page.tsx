@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ZeroDayPage() {
   const faqs = [
     { question: "What is a zero-day vulnerability?", answer: "A zero-day is a software flaw unknown to the vendor. Attackers discover and exploit it before a patch exists — the vendor has 'zero days' to fix it. These are the most dangerous vulnerabilities because there's no defense through patching." },
-    { question: "Can a VPN protect against zero-days?", answer: "A VPN can't directly prevent zero-day exploits, but it reduces your attack surface. By encrypting traffic and hiding your IP, you're harder to target. VPN providers with threat protection (NordVPN, Surfshark) can block known malicious domains that distribute exploits." },
+    { question: "Can a VPN protect against zero-days?", answer: "A VPN can't directly prevent zero-day exploits, but it reduces your attack surface. By encrypting traffic and hiding your IP, you're harder to target. VPN providers with threat protection (NordVPN, FastestVPN) can block known malicious domains that distribute exploits." },
     { question: "How can I protect myself against unknown threats?", answer: "Layer your defenses: keep software updated (patches fix known vulnerabilities, reducing overall exposure), use a VPN, enable 2FA, run endpoint protection, and be cautious with email attachments and links. No single measure stops zero-days, but layers make exploitation much harder." },
   ];
 

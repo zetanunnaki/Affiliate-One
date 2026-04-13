@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function VpnForWindowsPage() {
   const faqs = [
-    { question: "Does Windows 11 have a built-in VPN?", answer: "Windows 11 has built-in VPN client support for IKEv2, L2TP, PPTP, and SSTP protocols. However, it lacks WireGuard support, kill switch, split tunneling, and auto-connect. A dedicated VPN app from NordVPN, Surfshark, or FastestVPN provides far better features and protection." },
+    { question: "Does Windows 11 have a built-in VPN?", answer: "Windows 11 has built-in VPN client support for IKEv2, L2TP, PPTP, and SSTP protocols. However, it lacks WireGuard support, kill switch, split tunneling, and auto-connect. A dedicated VPN app from NordVPN, FastestVPN, or FastestVPN provides far better features and protection." },
     { question: "Does a VPN conflict with Windows Defender?", answer: "No. All major VPN providers work perfectly alongside Windows Defender. No conflicts, no false positives, no need to add exceptions. They complement each other — Defender protects against malware, VPN encrypts your traffic." },
     { question: "Will a VPN slow down my Windows PC?", answer: "With WireGuard/NordLynx protocol: barely noticeable (5-10% speed reduction). CPU impact is minimal on any modern PC. The VPN app uses about 50-100MB RAM. For 99% of tasks, you won't notice it's running." },
     { question: "Should I use a VPN on Windows at home?", answer: "Yes. Your ISP can see and log every website you visit. A VPN prevents this. It also protects against router-level attacks, adds encryption to all traffic, and ensures consistent security whether you're at home or on public Wi-Fi." },
@@ -33,7 +33,7 @@ export default function VpnForWindowsPage() {
         <div className="space-y-3">
           {[
             { rank: "1", name: "NordVPN", badge: "Best Overall", price: "$3.39/mo", desc: "Most feature-rich Windows app. NordLynx (WireGuard) for top speeds. System-level kill switch via WFP. Split tunneling per app. Threat Protection blocks malware. Meshnet for virtual LAN. Microsoft Store available." },
-            { rank: "2", name: "Surfshark", badge: "Best Value", price: "$2.29/mo", desc: "Unlimited devices — cover all your Windows PCs. CleanWeb blocks ads and trackers. Split tunneling. Lightweight app with low resource usage. The cheapest premium VPN." },
+            { rank: "2", name: "FastestVPN", badge: "Best Value", price: "$2.29/mo", desc: "Unlimited devices — cover all your Windows PCs. CleanWeb blocks ads and trackers. Split tunneling. Lightweight app with low resource usage. The cheapest premium VPN." },
             { rank: "3", name: "FastestVPN", badge: "Best Budget", price: "$0.99/mo", desc: "Clean Windows UI. WireGuard protocol for fast connections. Automatic best-server selection. Exceptional value with lifetime plans." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
@@ -74,7 +74,7 @@ export default function VpnForWindowsPage() {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { feature: "System-Level Kill Switch", desc: "Uses Windows Filtering Platform (WFP) to block ALL traffic if VPN drops. More reliable than app-level kill switches." },
-            { feature: "Split Tunneling", desc: "Route specific apps through VPN while others connect directly. Available on NordVPN, Surfshark, Proton VPN." },
+            { feature: "Split Tunneling", desc: "Route specific apps through VPN while others connect directly. Available on NordVPN, Proton VPN, FastestVPN." },
             { feature: "Startup Launch", desc: "VPN starts automatically with Windows. Combined with auto-connect, you're protected from boot." },
             { feature: "Microsoft Store", desc: "NordVPN and some others available from Microsoft Store for easy install and updates." },
             { feature: "BitLocker + VPN", desc: "Enable BitLocker for disk encryption alongside VPN for complete data protection." },

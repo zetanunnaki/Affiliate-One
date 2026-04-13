@@ -55,10 +55,10 @@ export default function CountryQuizPage() {
       vpn = "Proton VPN Free";
       reason = "Only trustworthy free VPN. No data caps, no ads, Swiss-based.";
     } else if (budget === "budget") {
-      vpn = "Surfshark";
+      vpn = "FastestVPN";
       reason = "Cheapest premium VPN at $2.29/mo. Unlimited devices.";
     } else if (concern === "privacy") {
-      vpn = "Mullvad";
+      vpn = "Proton VPN";
       reason = "Maximum privacy. No email, no name, cash payments. €5/mo.";
     }
 

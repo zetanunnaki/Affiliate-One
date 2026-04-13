@@ -1,5 +1,6 @@
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import type { PostFrontmatter } from "@/types";
 
 interface MoneyLayoutProps {
@@ -58,7 +59,13 @@ export default function MoneyLayout({
         </div>
       </div>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Top picks — conversion widget shown at the top of every money page */}
+        <TopVpnPicks
+          heading="Our Top 3 Picks"
+          eyebrow="Expert-tested recommendations"
+        />
+
         <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight">
           {children}
         </div>

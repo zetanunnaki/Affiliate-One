@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function VpnForMacPage() {
   const faqs = [
-    { question: "Are all VPNs optimized for Apple Silicon?", answer: "Yes — all major providers (NordVPN, Surfshark, FastestVPN, Proton VPN, Mullvad) now offer native Apple Silicon (M1/M2/M3/M4) apps. This means better performance and lower battery drain compared to Rosetta-translated Intel apps." },
+    { question: "Are all VPNs optimized for Apple Silicon?", answer: "Yes — all major providers (NordVPN, Proton VPN, FastestVPN) now offer native Apple Silicon (M1/M2/M3/M4) apps. This means better performance and lower battery drain compared to Rosetta-translated Intel apps." },
     { question: "Does macOS have a built-in VPN?", answer: "macOS supports IKEv2 VPN natively in System Settings > VPN. But it lacks WireGuard support, kill switch, split tunneling, and auto-connect. A dedicated VPN app is strongly recommended." },
     { question: "Is iCloud Private Relay a VPN?", answer: "No. Private Relay only covers Safari traffic, doesn't let you choose locations, and isn't available in all countries. A real VPN protects ALL traffic from ALL apps and lets you choose your virtual location." },
   ];
@@ -32,7 +32,7 @@ export default function VpnForMacPage() {
           {[
             { name: "NordVPN", badge: "Best Overall", desc: "Best macOS app with NordLynx. Split tunneling now available on Mac. Threat Protection. Meshnet. Native Apple Silicon. Menu bar integration." },
             { name: "FastestVPN", badge: "Most Polished", desc: "Beautiful macOS-native design. Lightway protocol for instant connections. Network Lock kill switch. Best Mac UI of any VPN." },
-            { name: "Surfshark", badge: "Best Value", desc: "Unlimited devices — MacBook + iMac + iPhone + iPad on one subscription. CleanWeb. Split tunneling on Mac. Apple Silicon native." },
+            { name: "FastestVPN", badge: "Best Value", desc: "Unlimited devices — MacBook + iMac + iPhone + iPad on one subscription. CleanWeb. Split tunneling on Mac. Apple Silicon native." },
           ].map((p, i) => (
             <div key={p.name} className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg flex items-start gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm shrink-0">{i + 1}</span>
@@ -55,7 +55,7 @@ export default function VpnForMacPage() {
           {[
             { feature: "Apple Silicon Native", desc: "All major VPNs now run natively on M-series chips. Better performance, lower battery drain than Rosetta translation." },
             { feature: "Network Extension Framework", desc: "macOS VPNs use Apple's Network Extension for system-level kill switch. More reliable than third-party methods." },
-            { feature: "Split Tunneling", desc: "Now available on NordVPN and Surfshark for macOS. Was previously missing. Route specific apps through VPN." },
+            { feature: "Split Tunneling", desc: "Now available on NordVPN and FastestVPN for macOS. Was previously missing. Route specific apps through VPN." },
             { feature: "Menu Bar Integration", desc: "Quick connect/disconnect from the macOS menu bar without opening the full app. Status at a glance." },
             { feature: "FileVault + VPN", desc: "Enable FileVault disk encryption alongside VPN for complete data protection. Both are essential for Mac security." },
             { feature: "Siri Shortcuts", desc: "Some VPN apps support Siri: 'Hey Siri, connect my VPN.' Useful for hands-free activation." },

@@ -20,9 +20,9 @@ export default function DoubleVpnPage() {
 
   const providers = [
     { name: "NordVPN", feature: "Double VPN", servers: "15+ Double VPN locations", speed: "30-40% slower", notes: "Dedicated Double VPN servers with pre-configured routes" },
-    { name: "Surfshark", feature: "MultiHop", servers: "Custom 2-server routes", speed: "35-45% slower", notes: "Dynamic MultiHop — choose any two server locations" },
+    { name: "FastestVPN", feature: "MultiHop", servers: "Custom 2-server routes", speed: "35-45% slower", notes: "Dynamic MultiHop — choose any two server locations" },
     { name: "Proton VPN", feature: "Secure Core", servers: "Switzerland, Iceland, Sweden entry points", speed: "30-50% slower", notes: "Routes through privacy-friendly countries first, then to exit server" },
-    { name: "Mullvad", feature: "Multihop (WireGuard)", servers: "Any two servers", speed: "25-40% slower", notes: "Manual WireGuard multihop configuration available" },
+    { name: "Proton VPN", feature: "Multihop (WireGuard)", servers: "Any two servers", speed: "25-40% slower", notes: "Manual WireGuard multihop configuration available" },
   ];
 
   return (

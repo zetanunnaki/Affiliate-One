@@ -47,7 +47,7 @@ export default function VpnForGamingPage() {
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">No VPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Surfshark</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
@@ -73,7 +73,7 @@ export default function VpnForGamingPage() {
           {[
             { name: "NordVPN", badge: "Best for Gaming", desc: "Lowest latency in our tests. NordLynx adds only 4-5ms. Meshnet for LAN-like gaming with friends. 6,400+ servers for optimal routing. Threat Protection blocks malicious game mods." },
             { name: "FastestVPN", badge: "Best for Console Gaming", desc: "MediaStreamer for consoles. Dedicated router app for whole-network VPN. Lightway protocol for near-instant connections. Most consistent globally." },
-            { name: "Surfshark", badge: "Best Budget Gaming VPN", desc: "Unlimited devices — cover PC, console, and phone. Cheapest premium option. WireGuard protocol for competitive latency." },
+            { name: "FastestVPN", badge: "Best Budget Gaming VPN", desc: "Unlimited devices — cover PC, console, and phone. Cheapest premium option. WireGuard protocol for competitive latency." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
               <div className="flex items-center justify-between mb-2">

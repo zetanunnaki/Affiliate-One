@@ -36,7 +36,7 @@ export default function AffiliateDisclosurePage() {
           <ul>
             <li>You never pay more by using our links.</li>
             <li>Our editorial ratings and recommendations are based solely on our testing — not on commission rates.</li>
-            <li>We review products that do not have affiliate programs (such as Mullvad VPN) with the same rigor.</li>
+            <li>We review products honestly regardless of whether they have an affiliate program — what matters is our testing, not the commission.</li>
             <li>Affiliate links are clearly identified on our site with a disclosure notice near the first commercial link on each page.</li>
           </ul>
 

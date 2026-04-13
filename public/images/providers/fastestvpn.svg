@@ -1,6 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
-  <title>FastestVPN — VPN Provider reviewed by BuySecureVPN</title>
-  <desc>FastestVPN placeholder logo. Independent VPN review on BuySecureVPN.com.</desc>
-  <g transform="translate(5,2) scale(0.56)"><path d="M50 15L15 30V55C15 80 50 95 50 95C50 95 85 80 85 55V30L50 15Z" fill="#ff8b3d" stroke="#7a3f0a" stroke-width="2"/><path d="M40 42L60 42L48 68L58 68" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
-  <text x="52" y="38" font-family="system-ui,-apple-system,sans-serif" font-size="16" font-weight="700" fill="#ff8b3d">FastestVPN</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="FastestVPN">
+  <title>FastestVPN</title>
+  <desc>FastestVPN logo representation for BuySecureVPN review. Brand colors: #FF8B3D.</desc>
+  <defs>
+    <linearGradient id="fastOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffa566"/>
+      <stop offset="100%" stop-color="#ff7a1f"/>
+    </linearGradient>
+  </defs>
+  <!-- Brand mark: rounded square with lightning bolt -->
+  <rect x="8" y="12" width="36" height="36" rx="8" fill="url(#fastOrange)"/>
+  <path d="M 28 18 L 20 32 L 26 32 L 24 42 L 32 28 L 26 28 Z" fill="white"/>
+  <!-- Wordmark -->
+  <text x="54" y="40" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="24" font-weight="800" letter-spacing="-0.8">
+    <tspan fill="#0f172a">Fastest</tspan><tspan fill="#ff7a1f">VPN</tspan>
+  </text>
 </svg>

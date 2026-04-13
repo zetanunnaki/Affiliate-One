@@ -5,7 +5,7 @@ import Byline from "@/components/ui/Byline";
 
 export const metadata: Metadata = {
   title: "VPN Deals & Coupons (April 2026) — Best Current Offers",
-  description: "Current VPN deals and discount codes. Save up to 85% on NordVPN, Surfshark, FastestVPN, and more.",
+  description: "Current VPN deals and discount codes. Save up to 85% on NordVPN, Proton VPN, FastestVPN, and more.",
 };
 
 export default function DealsPage() {
@@ -13,10 +13,8 @@ export default function DealsPage() {
 
   const deals = [
     { providerId: "nordvpn", discount: "74% off", plan: "2-year plan", price: "$3.39/mo", extra: "+ 3 months free", highlight: true },
-    { providerId: "surfshark", discount: "85% off", plan: "2-year plan", price: "$2.29/mo", extra: "+ 2 months free", highlight: false },
-    { providerId: "fastestvpn", discount: "93% off", plan: "5-year plan", price: "$0.99/mo", extra: "+ 3 months free", highlight: false },
     { providerId: "protonvpn", discount: "50% off", plan: "2-year plan", price: "$4.99/mo", extra: "Includes Proton ecosystem", highlight: false },
-    { providerId: "mullvad", discount: "Flat rate", plan: "Monthly", price: "€5/mo", extra: "No discounts, no tricks", highlight: false },
+    { providerId: "fastestvpn", discount: "93% off", plan: "5-year plan", price: "$0.99/mo", extra: "+ 3 months free", highlight: false },
   ];
 
   return (

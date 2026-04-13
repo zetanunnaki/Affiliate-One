@@ -27,7 +27,7 @@ export default function VpnForBusinessesPage() {
     { question: "Do small teams need a business VPN plan?", answer: "It depends on your needs. If you just need each team member to have a VPN for security, individual subscriptions work fine. If you need centralized management, dedicated IPs for IP whitelisting, or team billing, a business plan is worth it." },
     { question: "What's the difference between a business VPN and a consumer VPN?", answer: "Business VPN plans typically add: centralized user management (add/remove team members), dedicated static IPs, team billing, priority support, and sometimes SSO integration. The core VPN technology is the same." },
     { question: "Can we use NordVPN Meshnet instead of a corporate VPN?", answer: "For small teams, NordVPN's Meshnet can replace a traditional site-to-site VPN. It creates encrypted peer-to-peer connections between team devices, enabling LAN-like file sharing and resource access. It's free and doesn't require infrastructure." },
-    { question: "How many licenses do we need?", answer: "One license per person, not per device. NordVPN allows 10 devices per license, Surfshark allows unlimited, and Proton VPN allows 10. Most team members need just 2-3 devices (laptop, phone, maybe tablet)." },
+    { question: "How many licenses do we need?", answer: "One license per person, not per device. NordVPN allows 10 devices per license, FastestVPN allows unlimited, and Proton VPN allows 10. Most team members need just 2-3 devices (laptop, phone, maybe tablet)." },
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function VpnForBusinessesPage() {
         <div className="space-y-4">
           <div className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
             <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-1">1-5 people: Individual Subscriptions</h3>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">Buy individual VPN subscriptions. Surfshark&apos;s unlimited devices plan is ideal — one subscription per person covers all their devices. Total cost: $2-5/person/month.</p>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">Buy individual VPN subscriptions. FastestVPN&apos;s unlimited devices plan is ideal — one subscription per person covers all their devices. Total cost: $2-5/person/month.</p>
           </div>
           <div className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
             <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-1">5-25 people: NordVPN Teams or Proton VPN Business</h3>
@@ -74,7 +74,7 @@ export default function VpnForBusinessesPage() {
               <tr>
                 <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Feature</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Surfshark</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
               </tr>
             </thead>

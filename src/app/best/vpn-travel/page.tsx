@@ -32,7 +32,7 @@ export default function BestVpnTravelPage() {
           {[
             { rank: "1", name: "FastestVPN", badge: "Best for Travel", desc: "Affordable lifetime plans and reliable connections in China, UAE, and Turkey. WireGuard protocol for fast speeds. 24/7 support across time zones." },
             { rank: "2", name: "NordVPN", badge: "Most Servers", desc: "6,400+ servers in 111 countries. Obfuscated servers for restrictive regions. Meshnet for traveling groups. Threat Protection blocks hotel Wi-Fi threats." },
-            { rank: "3", name: "Surfshark", badge: "Best Budget Travel", desc: "Unlimited devices — phone, laptop, tablet all on one plan. NoBorders mode for restricted areas. $2.29/month for budget travelers." },
+            { rank: "3", name: "FastestVPN", badge: "Best Budget Travel", desc: "Unlimited devices — phone, laptop, tablet all on one plan. NoBorders mode for restricted areas. $2.29/month for budget travelers." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl flex items-start gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm shrink-0">{p.rank}</span>

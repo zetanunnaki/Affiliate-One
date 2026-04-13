@@ -11,7 +11,7 @@ const bestOfPages = [
   {
     title: "Best VPN 2026",
     href: "/best/vpn",
-    description: "We tested the top VPN services for speed, security, and privacy. NordVPN, Surfshark, FastestVPN, and more compared.",
+    description: "We tested the top VPN services for speed, security, and privacy. NordVPN, Proton VPN, FastestVPN, and more compared.",
     badge: "Most Popular",
     gradient: "from-blue-500 to-indigo-600",
     iconBg: "bg-blue-500/10",

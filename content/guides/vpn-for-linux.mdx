@@ -44,12 +44,13 @@ protonvpn-cli connect --fastest
 
 Full open-source GUI app with Secure Core, kill switch, and split tunneling.
 
-### Mullvad for Linux
+### Proton VPN for Linux
 Full GUI app available:
 
 ```
-# Download from mullvad.net/download/linux
-sudo dpkg -i MullvadVPN-*.deb
+# Download from protonvpn.com/download/linux
+sudo dpkg -i protonvpn-stable-release_*.deb
+sudo apt update && sudo apt install proton-vpn-gnome-desktop
 ```
 
 Native WireGuard integration with full GUI.
@@ -100,7 +101,7 @@ For desktop Linux users who prefer GUI:
 
 Linux has the most robust kill switch options:
 
-1. **Provider app kill switch** — NordVPN, Proton VPN, Mullvad all include it
+1. **Provider app kill switch** — NordVPN, Proton VPN, FastestVPN all include it
 2. **UFW firewall rules** — Block all traffic except through the VPN interface
 3. **iptables rules** — Most granular control (advanced users)
 4. **WireGuard AllowedIPs** — Set to 0.0.0.0/0 to route all traffic through VPN
@@ -108,5 +109,5 @@ Linux has the most robust kill switch options:
 ## Our Pick for Linux
 
 1. **Proton VPN** — Best Linux experience (full open-source GUI, CLI, Secure Core)
-2. **Mullvad** — Excellent native GUI, WireGuard-first, privacy maximum
+2. **Proton VPN** — Excellent native GUI, WireGuard-first, privacy maximum
 3. **NordVPN** — Best CLI tool, largest server network, NordLynx (WireGuard)

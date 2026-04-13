@@ -21,30 +21,18 @@
       "devices": 10
     },
     "positioningTags": ["overall", "security", "teams"],
-    "notes": "Panama-based, audited no-logs policy, Threat Protection suite, meshnet for teams.",
+    "notes": "Panama-based, audited no-logs policy, Threat Protection suite, 6000+ servers, meshnet for teams.",
     "rating": 4.8,
-    "priceRange": "$3.39–$12.99/mo"
-  },
-  {
-    "id": "surfshark",
-    "name": "Surfshark",
-    "website": "https://surfshark.com",
-    "affiliate": {
-      "network": "direct",
-      "trackingBaseUrl": "https://get.surfshark.net/aff_c?offer_id=6&aff_id=AFFILIATE_ID&url_id={url_id}",
-      "disclosureLabel": "Affiliate link"
-    },
-    "features": {
-      "protocols": ["WireGuard", "OpenVPN", "IKEv2"],
-      "noLogsClaim": true,
-      "killSwitch": true,
-      "splitTunneling": true,
-      "devices": 0
-    },
-    "positioningTags": ["budget", "streaming", "travel"],
-    "notes": "Netherlands-based, unlimited simultaneous connections, CleanWeb ad-blocker, affordable plans.",
-    "rating": 4.6,
-    "priceRange": "$2.29–$15.45/mo"
+    "priceRange": "$3.39–$12.99/mo",
+    "positioning": "overall",
+    "positioningLabel": "Best Overall",
+    "brandColor": "#4687ff",
+    "brandColorDark": "#2563eb",
+    "tagline": "Fastest speeds, audited no-logs, 6000+ servers",
+    "keyFeatures": ["Audited no-logs policy", "Threat Protection blocks malware", "10 devices per account", "30-day money-back guarantee"],
+    "originalPrice": "$12.99/mo",
+    "salePrice": "$3.39/mo",
+    "discountBadge": "Save 74%"
   },
   {
     "id": "protonvpn",
@@ -63,30 +51,18 @@
       "devices": 10
     },
     "positioningTags": ["privacy", "open-source", "free-tier"],
-    "notes": "Switzerland-based, open-source apps, Secure Core routing, free tier available.",
+    "notes": "Switzerland-based, open-source apps, Secure Core double-hop routing, free tier available.",
     "rating": 4.5,
-    "priceRange": "Free–$9.99/mo"
-  },
-  {
-    "id": "mullvad",
-    "name": "Mullvad VPN",
-    "website": "https://mullvad.net",
-    "affiliate": {
-      "network": "none",
-      "trackingBaseUrl": "",
-      "disclosureLabel": ""
-    },
-    "features": {
-      "protocols": ["WireGuard", "OpenVPN"],
-      "noLogsClaim": true,
-      "killSwitch": true,
-      "splitTunneling": true,
-      "devices": 5
-    },
-    "positioningTags": ["privacy", "anonymous"],
-    "notes": "Sweden-based, anonymous accounts (no email required), flat €5/mo pricing, privacy-first.",
-    "rating": 4.4,
-    "priceRange": "€5/mo"
+    "priceRange": "Free–$9.99/mo",
+    "positioning": "privacy",
+    "positioningLabel": "Best for Privacy",
+    "brandColor": "#6d4aff",
+    "brandColorDark": "#5b35f0",
+    "tagline": "Swiss privacy laws, open-source, free tier",
+    "keyFeatures": ["Swiss jurisdiction (no data laws)", "Open-source and audited", "Secure Core multi-hop", "Free tier available forever"],
+    "originalPrice": "$9.99/mo",
+    "salePrice": "$4.99/mo",
+    "discountBadge": "50% off"
   },
   {
     "id": "fastestvpn",
@@ -107,6 +83,15 @@
     "positioningTags": ["budget", "lifetime"],
     "notes": "Cayman Islands-based, lifetime plans available, 800+ servers in 50+ countries, ad blocker included.",
     "rating": 4.2,
-    "priceRange": "$1.11–$10/mo"
+    "priceRange": "$1.11–$10/mo",
+    "positioning": "budget",
+    "positioningLabel": "Best Budget",
+    "brandColor": "#ff7a1f",
+    "brandColorDark": "#e8660f",
+    "tagline": "Lifetime plans, 10 devices, ad blocker",
+    "keyFeatures": ["Lifetime deal available", "10 devices per account", "Built-in ad blocker", "No-logs policy"],
+    "originalPrice": "$10/mo",
+    "salePrice": "$1.11/mo",
+    "discountBadge": "Save 89%"
   }
 ]

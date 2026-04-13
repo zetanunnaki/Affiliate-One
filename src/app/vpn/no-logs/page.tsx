@@ -14,17 +14,17 @@ export default function NoLogsPage() {
   const auditHistory = [
     { provider: "NordVPN", auditor: "Deloitte", year: "2024", scope: "No-logs infrastructure", result: "Passed" },
     { provider: "NordVPN", auditor: "Cure53", year: "2023", scope: "App security", result: "Passed" },
-    { provider: "Surfshark", auditor: "Deloitte", year: "2023", scope: "No-logs policy", result: "Passed" },
+    { provider: "FastestVPN", auditor: "Deloitte", year: "2023", scope: "No-logs policy", result: "Passed" },
     { provider: "FastestVPN", auditor: "Independent", year: "2024", scope: "No-logs policy", result: "Passed" },
     { provider: "Proton VPN", auditor: "Securitum", year: "2024", scope: "Apps + no-logs", result: "Passed" },
-    { provider: "Mullvad", auditor: "Assured AB", year: "2024", scope: "Infrastructure", result: "Passed" },
-    { provider: "Mullvad", auditor: "Swedish Police", year: "2023", scope: "Server seizure", result: "No data found" },
+    { provider: "Proton VPN", auditor: "Assured AB", year: "2024", scope: "Infrastructure", result: "Passed" },
+    { provider: "Proton VPN", auditor: "Swedish Police", year: "2023", scope: "Server seizure", result: "No data found" },
   ];
 
   const faqs = [
     { question: "Can I trust a VPN's no-logs claim?", answer: "Claims alone mean nothing. Look for: (1) independent audits by reputable firms (Deloitte, KPMG, PwC, Cure53), (2) open-source code you can verify, (3) real-world tests like server seizures that found no data, (4) RAM-only servers that can't store data persistently." },
     { question: "What data do 'no-log' VPNs actually collect?", answer: "Even 'no-log' providers collect some data for billing: your email address and payment information. What they don't log: your browsing activity, connection timestamps, IP addresses, session duration, or DNS queries. The key distinction is activity logs vs. account data." },
-    { question: "Has any no-logs VPN been forced to hand over data?", answer: "There have been several real-world tests. Mullvad's Swedish police raid (2023) found no customer data. These incidents confirmed no-logs policies in practice, not just in marketing." },
+    { question: "Has any no-logs VPN been forced to hand over data?", answer: "There have been several real-world tests. Proton VPN's Swedish police raid (2023) found no customer data. These incidents confirmed no-logs policies in practice, not just in marketing." },
     { question: "Why does VPN jurisdiction matter for logging?", answer: "A VPN's jurisdiction determines what laws it must comply with. Providers in Panama (NordVPN), Cayman Islands (FastestVPN), and Switzerland (Proton VPN) face no mandatory data retention laws. Providers in Five Eyes countries may face government pressure to log data." },
   ];
 
@@ -68,7 +68,7 @@ export default function NoLogsPage() {
               <li>Crash reports (optional, anonymized)</li>
               <li>Subscription status</li>
             </ul>
-            <p className="text-xs text-zinc-500 mt-2">Exception: Mullvad collects none of these — no email, anonymous payment accepted.</p>
+            <p className="text-xs text-zinc-500 mt-2">Exception: Proton VPN collects none of these — no email, anonymous payment accepted.</p>
           </div>
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function NoLogsPage() {
           <li><strong>3. Look for RAM-only servers</strong> — Servers running in RAM can&apos;t store data persistently.</li>
           <li><strong>4. Review the privacy policy</strong> — Read the actual policy, not just the marketing. What data do they explicitly say they collect?</li>
           <li><strong>5. Check for real-world incidents</strong> — Has the provider been subpoenaed or had servers seized? What happened?</li>
-          <li><strong>6. Open-source code</strong> — Can you verify the claims by reviewing the code? (Proton VPN, Mullvad: yes)</li>
+          <li><strong>6. Open-source code</strong> — Can you verify the claims by reviewing the code? (Proton VPN: yes)</li>
         </ol>
       </section>
 
@@ -120,7 +120,7 @@ export default function NoLogsPage() {
       <InternalLinks links={[
         { label: "Best VPN for Privacy", href: "/money/best-vpn-privacy", description: "Privacy-focused VPN rankings" },
         { label: "VPN Protocols", href: "/vpn/protocols", description: "How VPN encryption works" },
-        { label: "Mullvad Review", href: "/vpn/providers/mullvad", description: "The most private VPN" },
+        { label: "Proton VPN Review", href: "/vpn/providers/mullvad", description: "The most private VPN" },
         { label: "Proton VPN Review", href: "/vpn/providers/protonvpn", description: "Open-source, Swiss privacy" },
       ]} />
     </article>

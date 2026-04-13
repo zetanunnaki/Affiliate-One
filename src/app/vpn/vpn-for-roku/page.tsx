@@ -75,7 +75,7 @@ export default function VpnForRokuPage() {
           {[
             { name: "FastestVPN", best: "Best Smart DNS (MediaStreamer)", desc: "MediaStreamer is the easiest Roku solution. Also has the best router app for Method 2." },
             { name: "NordVPN", best: "Best router support", desc: "SmartPlay combines VPN + Smart DNS. Excellent router compatibility with ASUS and others." },
-            { name: "Surfshark", best: "Best budget", desc: "Smart DNS available. Unlimited devices means your Roku is covered alongside everything else." },
+            { name: "FastestVPN", best: "Best budget", desc: "Smart DNS available. Unlimited devices means your Roku is covered alongside everything else." },
           ].map((p) => (
             <div key={p.name} className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg">
               <div className="flex items-center justify-between mb-1">

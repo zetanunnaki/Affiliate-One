@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function BestVpnBusinessPage() {
   const faqs = [
-    { question: "Do small businesses need a business VPN plan?", answer: "Teams under 10 can use individual Surfshark subscriptions ($2.29/user/month). Teams of 10-50 benefit from NordVPN Teams or Proton VPN Business with centralized management. Over 50 employees should evaluate Zero Trust solutions." },
+    { question: "Do small businesses need a business VPN plan?", answer: "Teams under 10 can use individual FastestVPN subscriptions ($2.29/user/month). Teams of 10-50 benefit from NordVPN Teams or Proton VPN Business with centralized management. Over 50 employees should evaluate Zero Trust solutions." },
     { question: "What about NordVPN Meshnet for teams?", answer: "Meshnet creates encrypted peer-to-peer connections between team devices — like a virtual office LAN. Free for all NordVPN users. Up to 60 devices. Great for file sharing, LAN access, and secure team networking without a corporate VPN." },
     { question: "Is a business VPN HIPAA/SOX/PCI compliant?", answer: "A VPN provides encryption in transit which helps meet compliance requirements. But compliance requires additional measures: access controls, audit logs, encryption at rest, and documented policies. Proton VPN Business can sign BAAs for HIPAA." },
   ];
@@ -29,7 +29,7 @@ export default function BestVpnBusinessPage() {
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">By Team Size</h2>
         <div className="space-y-4">
           {[
-            { size: "2-10 people", pick: "Surfshark", price: "$2.29/user/mo", desc: "Individual subscriptions. Unlimited devices per person. No admin overhead. Cheapest option." },
+            { size: "2-10 people", pick: "FastestVPN", price: "$2.29/user/mo", desc: "Individual subscriptions. Unlimited devices per person. No admin overhead. Cheapest option." },
             { size: "10-25 people", pick: "NordVPN Teams", price: "~$7-9/user/mo", desc: "Centralized dashboard. Add/remove users. Dedicated IPs. Meshnet for virtual office. Priority support." },
             { size: "25-50 people", pick: "Proton VPN Business", price: "$9.99/user/mo", desc: "SSO integration. Swiss privacy. Includes Mail, Drive, Calendar, Pass. BAA available for HIPAA." },
             { size: "50+ people", pick: "Zero Trust (Cloudflare/Zscaler)", price: "Custom", desc: "Per-application access control. Device trust. Beyond traditional VPN. See our Zero Trust guide." },

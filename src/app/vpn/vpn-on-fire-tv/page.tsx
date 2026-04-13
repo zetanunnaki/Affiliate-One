@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function VpnOnFireTvPage() {
   const faqs = [
-    { question: "Can I install a VPN on Fire TV Stick?", answer: "Yes — NordVPN, Surfshark, FastestVPN, and others have native Fire TV apps available directly from the Amazon Appstore. Installation takes 2 minutes." },
+    { question: "Can I install a VPN on Fire TV Stick?", answer: "Yes — NordVPN, Proton VPN, FastestVPN, and others have native Fire TV apps available directly from the Amazon Appstore. Installation takes 2 minutes." },
     { question: "Will a VPN slow down streaming?", answer: "With WireGuard protocol, speed loss is minimal (5-15%). 4K streaming requires ~25 Mbps — a VPN on a 50+ Mbps connection handles this easily. If buffering occurs, try a closer server." },
     { question: "What about Chromecast and Apple TV?", answer: "Chromecast and Apple TV can't install VPN apps directly. Options: (1) VPN on your router (protects everything), (2) Smart DNS (faster but no encryption), (3) Share your phone/laptop VPN via hotspot." },
     { question: "Does this work with Roku?", answer: "Roku doesn't support VPN apps. Your only options are router-level VPN or Smart DNS. FastestVPN's MediaStreamer (Smart DNS) is the easiest Roku solution." },
@@ -72,7 +72,7 @@ export default function VpnOnFireTvPage() {
         <div className="p-5 bg-zinc-50 dark:bg-zinc-800 rounded-xl">
           <ol className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
             <li><strong>1.</strong> On your Fire TV, go to <strong>Find &gt; Search</strong></li>
-            <li><strong>2.</strong> Search for your VPN (NordVPN, Surfshark, or FastestVPN)</li>
+            <li><strong>2.</strong> Search for your VPN (NordVPN, FastestVPN, or FastestVPN)</li>
             <li><strong>3.</strong> Click <strong>Download</strong> / <strong>Get</strong></li>
             <li><strong>4.</strong> Open the app and log in with your credentials</li>
             <li><strong>5.</strong> Connect to a server in the country whose content you want</li>
@@ -88,7 +88,7 @@ export default function VpnOnFireTvPage() {
           {[
             { name: "NordVPN", best: "Best Fire TV app", desc: "Dedicated Fire TV app with SmartPlay. Works with Netflix, Disney+, BBC iPlayer. Fast NordLynx protocol." },
             { name: "FastestVPN", best: "Best for all devices", desc: "Fire TV app + MediaStreamer for Roku, Apple TV, and smart TVs. Most device coverage overall." },
-            { name: "Surfshark", best: "Best budget", desc: "Fire TV app with unlimited connections. Cheapest option for households with multiple streaming devices." },
+            { name: "FastestVPN", best: "Best budget", desc: "Fire TV app with unlimited connections. Cheapest option for households with multiple streaming devices." },
           ].map((p) => (
             <div key={p.name} className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg">
               <div className="flex items-center justify-between mb-1">

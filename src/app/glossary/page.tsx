@@ -24,7 +24,7 @@ const terms = [
   { term: "Passkey", definition: "A passwordless authentication method using public-key cryptography. Stored on your device and verified biometrically. More secure than passwords + 2FA." },
   { term: "Phishing", definition: "A social engineering attack where an attacker impersonates a trusted entity to trick you into revealing passwords, credit card numbers, or other sensitive data." },
   { term: "Protocol", definition: "In VPN context, the set of rules determining how data is encrypted and transmitted. Common protocols: WireGuard, OpenVPN, IKEv2. Each offers different speed/security trade-offs." },
-  { term: "RAM-Only Servers", definition: "VPN servers that run entirely in RAM with no hard drives. All data is wiped on reboot. Used by NordVPN, FastestVPN, and Surfshark for enhanced privacy." },
+  { term: "RAM-Only Servers", definition: "VPN servers that run entirely in RAM with no hard drives. All data is wiped on reboot. Used by NordVPN, FastestVPN for enhanced privacy." },
   { term: "Split Tunneling", definition: "A VPN feature that routes only selected traffic through the VPN while sending the rest directly. Useful for routing work apps through VPN while allowing personal apps to connect directly." },
   { term: "TLS/SSL", definition: "Transport Layer Security / Secure Sockets Layer. The encryption behind HTTPS (the padlock icon in your browser). Encrypts data between your browser and the website." },
   { term: "Two-Factor Authentication (2FA)", definition: "A security method requiring two forms of verification: something you know (password) and something you have (authenticator app code or hardware key)." },

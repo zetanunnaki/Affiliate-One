@@ -17,9 +17,9 @@ export default function BestVpnRouterPage() {
   const routerSupport = [
     { name: "NordVPN", native: "Yes (select ASUS, Netgear)", manual: "DD-WRT, OpenWrt, Tomato", app: "Yes (Vilfo, FlashRouters)", difficulty: "Easy-Medium" },
     { name: "FastestVPN", native: "No", manual: "DD-WRT, OpenWrt, ASUS Merlin", app: "No", difficulty: "Medium" },
-    { name: "Surfshark", native: "Limited", manual: "DD-WRT, OpenWrt, Tomato", app: "No", difficulty: "Medium" },
+    { name: "FastestVPN", native: "Limited", manual: "DD-WRT, OpenWrt, Tomato", app: "No", difficulty: "Medium" },
     { name: "Proton VPN", native: "No", manual: "OpenWrt, DD-WRT (WireGuard config)", app: "No", difficulty: "Hard" },
-    { name: "Mullvad", native: "No", manual: "WireGuard config on any compatible router", app: "No", difficulty: "Medium-Hard" },
+    { name: "Proton VPN", native: "No", manual: "WireGuard config on any compatible router", app: "No", difficulty: "Medium-Hard" },
   ];
 
   const compatibleRouters = [

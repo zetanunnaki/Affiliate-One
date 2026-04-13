@@ -25,7 +25,7 @@ interface CountryBestVpnLayoutProps {
   providers: {
     overall: Provider;
     budget: Provider;
-    travel: Provider;
+    privacy: Provider;
   };
   faqs: FAQItem[];
   allProviders: Provider[];
@@ -188,9 +188,9 @@ export default function CountryBestVpnLayout({
             countrySlug={country.slug}
           />
           <ProviderCard
-            provider={providers.travel}
-            badge="Best for Travel"
-            countryNotes={`Ideal for travelers visiting ${country.nameEn} — works reliably on hotel and airport Wi-Fi.`}
+            provider={providers.privacy}
+            badge="Best for Privacy"
+            countryNotes={`Swiss-based, open-source, and audited — the privacy-first choice for users in ${country.nameEn}.`}
             countrySlug={country.slug}
           />
         </div>

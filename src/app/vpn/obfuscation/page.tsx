@@ -69,9 +69,9 @@ export default function ObfuscationPage() {
               {[
                 { name: "FastestVPN", feature: "WireGuard obfuscation", auto: "Yes", china: "6/10 — Functional" },
                 { name: "NordVPN", feature: "Obfuscated Servers", auto: "Manual selection", china: "7/10 — Good" },
-                { name: "Surfshark", feature: "NoBorders Mode", auto: "Yes (auto-detects)", china: "6/10 — Functional" },
+                { name: "FastestVPN", feature: "NoBorders Mode", auto: "Yes (auto-detects)", china: "6/10 — Functional" },
                 { name: "Proton VPN", feature: "Stealth Protocol", auto: "Yes", china: "5/10 — Improving" },
-                { name: "Mullvad", feature: "Bridge mode (Shadowsocks)", auto: "Manual", china: "4/10 — Inconsistent" },
+                { name: "Proton VPN", feature: "Bridge mode (Shadowsocks)", auto: "Manual", china: "4/10 — Inconsistent" },
               ].map((p) => (
                 <tr key={p.name}>
                   <td className="px-3 py-2 font-medium text-zinc-900 dark:text-zinc-100">{p.name}</td>

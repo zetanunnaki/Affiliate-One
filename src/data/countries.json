@@ -357,7 +357,7 @@
     "currencyCode": "SEK",
     "timeZonePrimary": "Europe/Stockholm",
     "internetNotes": "Excellent broadband and mobile coverage. Telia, Tele2, and Tre are major providers. Strong digital infrastructure. Internet speeds in Sweden have been steadily improving year over year, with both fixed broadband and mobile networks expanding coverage.",
-    "vpnNotes": "VPNs are fully legal. Mullvad VPN is based here. Sweden has strong privacy traditions despite some EU data retention requirements. Remote workers in Sweden commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
+    "vpnNotes": "VPNs are fully legal. Sweden has strong privacy traditions despite some EU data retention requirements. Remote workers in Sweden commonly use VPNs to secure their connections, especially when working from public locations like cafes and co-working spaces.",
     "paymentNotes": "SEK-based. Nearly cashless society. Swish mobile payments dominant. Cards and Apple Pay widely accepted. Most international VPN providers accept payment methods commonly used in Sweden, including major credit cards, PayPal, and cryptocurrency options.",
     "travelNotes": "Excellent free Wi-Fi in most public places. Sweden is highly connected with widespread coverage. Visitors to Sweden should plan their connectivity needs in advance, including downloading VPN apps and purchasing data plans or local SIM cards before arrival.",
     "riskFlags": [

@@ -31,7 +31,7 @@ export default function BestVpnGamingPage() {
           {[
             { rank: "1", name: "NordVPN", extra: "+4ms avg latency", desc: "Lowest latency in our tests. NordLynx adds only 4ms. Meshnet for LAN-like gaming with friends. 6,400+ servers. DDoS protection." },
             { rank: "2", name: "FastestVPN", extra: "+5ms avg latency", desc: "Affordable gaming VPN. WireGuard for fast connections. Dedicated gaming servers. Great value for competitive gamers." },
-            { rank: "3", name: "Surfshark", extra: "+7ms avg latency", desc: "Best budget. Unlimited devices — PC, console (via router), phone. WireGuard for competitive latency. $2.29/month." },
+            { rank: "3", name: "FastestVPN", extra: "+7ms avg latency", desc: "Best budget. Unlimited devices — PC, console (via router), phone. WireGuard for competitive latency. $2.29/month." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl flex items-start gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm shrink-0">{p.rank}</span>

@@ -1,6 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
-  <title>NordVPN — VPN Provider reviewed by BuySecureVPN</title>
-  <desc>NordVPN logo. Independent VPN review on BuySecureVPN.com.</desc>
-  <g transform="translate(5,2) scale(0.56)"><path d="M50 15L15 30V55C15 80 50 95 50 95C50 95 85 80 85 55V30L50 15Z" fill="#4687ff" stroke="#1a3a6b" stroke-width="2"/><path d="M38 52L47 61L65 43" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
-  <text x="52" y="38" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="700" fill="#4687ff">NordVPN</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="NordVPN">
+  <title>NordVPN</title>
+  <desc>NordVPN logo representation for BuySecureVPN review. Brand colors: #4687FF.</desc>
+  <defs>
+    <linearGradient id="nordBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#4687ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Brand mark: rounded square with white N -->
+  <rect x="8" y="12" width="36" height="36" rx="8" fill="url(#nordBlue)"/>
+  <text x="26" y="40" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="26" font-weight="900" fill="white" letter-spacing="-1">N</text>
+  <!-- Wordmark -->
+  <text x="54" y="40" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="26" font-weight="800" letter-spacing="-0.8">
+    <tspan fill="#0f172a">Nord</tspan><tspan fill="#4687ff">VPN</tspan>
+  </text>
 </svg>

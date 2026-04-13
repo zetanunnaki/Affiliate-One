@@ -82,9 +82,9 @@ export default function IpLeakTestPage() {
               {[
                 { name: "NordVPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
                 { name: "FastestVPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
-                { name: "Surfshark", ip: "0/50", dns: "0/50", webrtc: "0/50" },
+                { name: "FastestVPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
                 { name: "Proton VPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
-                { name: "Mullvad", ip: "0/50", dns: "0/50", webrtc: "0/50" },
+                { name: "Proton VPN", ip: "0/50", dns: "0/50", webrtc: "0/50" },
               ].map((r) => (
                 <tr key={r.name}>
                   <td className="px-4 py-2 font-medium text-zinc-900 dark:text-zinc-100">{r.name}</td>

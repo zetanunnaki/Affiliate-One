@@ -11,21 +11,21 @@
     "label": "Travel",
     "slug": "travel",
     "description": "VPN solutions for frequent travelers who connect to hotel, airport, and café Wi-Fi networks and need reliable access to home-region services.",
-    "recommendedProviders": ["fastestvpn", "surfshark", "nordvpn"]
+    "recommendedProviders": ["fastestvpn", "nordvpn", "protonvpn"]
   },
   {
     "id": "privacy",
     "label": "Privacy",
     "slug": "privacy",
     "description": "VPN solutions for privacy-conscious users who want to minimize data collection, avoid tracking, and maintain anonymity online.",
-    "recommendedProviders": ["mullvad", "protonvpn", "nordvpn"]
+    "recommendedProviders": ["protonvpn", "nordvpn", "fastestvpn"]
   },
   {
     "id": "streaming",
     "label": "Streaming",
     "slug": "streaming",
     "description": "VPN solutions for accessing geo-restricted streaming content while maintaining fast connection speeds for buffer-free viewing.",
-    "recommendedProviders": ["fastestvpn", "nordvpn", "surfshark"]
+    "recommendedProviders": ["nordvpn", "fastestvpn", "protonvpn"]
   },
   {
     "id": "teams",

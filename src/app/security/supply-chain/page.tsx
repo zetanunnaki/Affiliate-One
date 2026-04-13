@@ -52,7 +52,7 @@ export default function SupplyChainPage() {
         <div className="grid sm:grid-cols-2 gap-4">
           {[
             { title: "Minimize Your Tool Surface", items: ["Use fewer browser extensions", "Audit installed apps quarterly", "Remove unused software", "Prefer built-in OS tools when possible"] },
-            { title: "Prefer Audited & Open-Source", items: ["VPN: Proton VPN, Mullvad (open-source)", "Password manager: Bitwarden (open-source)", "Messaging: Signal (open-source)", "Browser: Firefox (open-source)"] },
+            { title: "Prefer Audited & Open-Source", items: ["VPN: Proton VPN (open-source)", "Password manager: Bitwarden (open-source)", "Messaging: Signal (open-source)", "Browser: Firefox (open-source)"] },
             { title: "Monitor & Detect", items: ["Enable OS security notifications", "Watch for unusual app behavior", "Check for unauthorized network connections", "Subscribe to security advisories for tools you use"] },
             { title: "Limit Blast Radius", items: ["Use separate accounts for work and personal", "Don't run as admin for daily work", "Encrypt your disk", "Keep 3-2-1 backups current"] },
           ].map((col) => (

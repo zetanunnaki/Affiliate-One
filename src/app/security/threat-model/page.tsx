@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function ThreatModelPage() {
   const profiles = [
-    { name: "Standard Remote Worker", risk: "Medium", threats: "ISP monitoring, public Wi-Fi attacks, phishing, weak passwords", stack: "VPN (NordVPN/Surfshark), password manager, 2FA (authenticator app), software updates", overkill: "Tor, Tails OS, hardware security keys for every account" },
+    { name: "Standard Remote Worker", risk: "Medium", threats: "ISP monitoring, public Wi-Fi attacks, phishing, weak passwords", stack: "VPN (NordVPN/FastestVPN), password manager, 2FA (authenticator app), software updates", overkill: "Tor, Tails OS, hardware security keys for every account" },
     { name: "Freelancer Handling Client Data", risk: "Medium-High", threats: "Data breaches exposing client info, insecure file sharing, phishing targeting invoices", stack: "VPN, password manager, 2FA, encrypted file sharing (Proton Drive), client data encryption, cyber insurance", overkill: "Air-gapped computers, Faraday bags" },
     { name: "Executive / Decision Maker", risk: "High", threats: "Spear phishing, CEO fraud, business email compromise, targeted attacks, deep fakes", stack: "VPN with dedicated IP, hardware security keys (YubiKey), encrypted communications (Signal), executive protection training", overkill: "Tor for daily browsing (too slow for work)" },
-    { name: "Journalist / Activist", risk: "Very High", threats: "State surveillance, targeted hacking, device seizure at borders, source protection", stack: "VPN (Mullvad/Proton), Tor Browser, Signal, full-disk encryption, hardware keys, Tails OS for sensitive work, travel devices", overkill: "Nothing is overkill at this threat level" },
+    { name: "Journalist / Activist", risk: "Very High", threats: "State surveillance, targeted hacking, device seizure at borders, source protection", stack: "VPN (Proton VPN/Proton), Tor Browser, Signal, full-disk encryption, hardware keys, Tails OS for sensitive work, travel devices", overkill: "Nothing is overkill at this threat level" },
     { name: "Developer with Production Access", risk: "High", threats: "Supply chain attacks, credential theft, compromised CI/CD, insider threats", stack: "VPN, hardware security keys, signed commits, secrets manager, least-privilege IAM, endpoint detection", overkill: "Disconnecting from internet entirely" },
   ];
 

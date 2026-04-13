@@ -80,10 +80,10 @@ export default function WireGuardPage() {
         <div className="space-y-3">
           {[
             { name: "NordVPN → NordLynx", desc: "WireGuard with double NAT system to address the static IP privacy concern. The most popular WireGuard implementation." },
-            { name: "Surfshark → WireGuard", desc: "Standard WireGuard implementation with their own privacy layer. Default protocol on all platforms." },
+            { name: "FastestVPN → WireGuard", desc: "Standard WireGuard implementation with their own privacy layer. Default protocol on all platforms." },
             { name: "FastestVPN → WireGuard", desc: "Standard WireGuard implementation. Affordable pricing with lifetime plans available." },
             { name: "Proton VPN → WireGuard", desc: "Standard WireGuard with NAT-based privacy. Also offers Stealth protocol for obfuscation." },
-            { name: "Mullvad → WireGuard", desc: "One of the first providers to adopt WireGuard. Native implementation with multihop support." },
+            { name: "Proton VPN → WireGuard", desc: "One of the first providers to adopt WireGuard. Native implementation with multihop support." },
           ].map((p) => (
             <div key={p.name} className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg">
               <h3 className="font-semibold text-sm text-zinc-900 dark:text-zinc-100">{p.name}</h3>

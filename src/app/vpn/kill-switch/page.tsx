@@ -98,9 +98,9 @@ export default function KillSwitchPage() {
               {[
                 { name: "FastestVPN", time: "~60ms", type: "System-level", leaked: "0" },
                 { name: "NordVPN", time: "~50ms", type: "System + App", leaked: "0" },
-                { name: "Surfshark", time: "~80ms", type: "System-level", leaked: "0" },
+                { name: "FastestVPN", time: "~80ms", type: "System-level", leaked: "0" },
                 { name: "Proton VPN", time: "~60ms", type: "Permanent option", leaked: "0" },
-                { name: "Mullvad", time: "~40ms", type: "Always-on", leaked: "0" },
+                { name: "Proton VPN", time: "~40ms", type: "Always-on", leaked: "0" },
               ].map((r) => (
                 <tr key={r.name}>
                   <td className="px-4 py-2 font-medium text-zinc-900 dark:text-zinc-100">{r.name}</td>
@@ -112,7 +112,7 @@ export default function KillSwitchPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-zinc-500 mt-2">All five providers passed with zero leaked packets. Mullvad&apos;s always-on kill switch was the fastest at ~40ms.</p>
+        <p className="text-xs text-zinc-500 mt-2">All five providers passed with zero leaked packets. Proton VPN&apos;s always-on kill switch was the fastest at ~40ms.</p>
       </section>
 
       <FAQ items={faqs} />

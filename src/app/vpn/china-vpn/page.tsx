@@ -14,7 +14,7 @@ export default function ChinaVpnPage() {
   const providers = [
     { name: "FastestVPN", reliability: "7/10", speed: "15-40 Mbps", protocol: "WireGuard (obfuscated)", best: "Best value option", notes: "Affordable with lifetime plans. WireGuard-based obfuscation works in China. Good for budget-conscious travelers." },
     { name: "NordVPN", reliability: "7/10", speed: "15-40 Mbps", protocol: "Obfuscated OpenVPN", best: "Best server network", notes: "Obfuscated servers work well. Must manually select obfuscated server category. 6,400+ servers for fallback." },
-    { name: "Surfshark", reliability: "6/10", speed: "10-30 Mbps", protocol: "NoBorders + Shadowsocks", best: "Best budget option", notes: "NoBorders mode auto-detects restrictions. Less consistent than NordVPN but much cheaper." },
+    { name: "FastestVPN", reliability: "6/10", speed: "10-30 Mbps", protocol: "NoBorders + Shadowsocks", best: "Best budget option", notes: "NoBorders mode auto-detects restrictions. Less consistent than NordVPN but much cheaper." },
     { name: "Proton VPN", reliability: "5/10", speed: "10-25 Mbps", protocol: "Stealth protocol", best: "Open-source option", notes: "Stealth protocol improving but less tested in China. Secure Core adds extra latency." },
   ];
 
@@ -66,7 +66,7 @@ export default function ChinaVpnPage() {
             </div>
           ))}
         </div>
-        <p className="text-sm text-zinc-500 mt-3">Mullvad is not recommended for China — it doesn&apos;t prioritize obfuscation and has low reliability behind the GFW.</p>
+        <p className="text-sm text-zinc-500 mt-3">Proton VPN is not recommended for China — it doesn&apos;t prioritize obfuscation and has low reliability behind the GFW.</p>
       </section>
 
       {/* What to expect */}

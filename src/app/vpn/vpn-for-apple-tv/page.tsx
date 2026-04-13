@@ -63,7 +63,7 @@ export default function VpnForAppleTvPage() {
           <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-3">Available since tvOS 17. Requires Apple TV 4K (2nd gen or newer).</p>
           <ol className="space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
             <li><strong>1.</strong> Open App Store on Apple TV</li>
-            <li><strong>2.</strong> Search for your VPN (NordVPN, Surfshark)</li>
+            <li><strong>2.</strong> Search for your VPN (NordVPN, FastestVPN)</li>
             <li><strong>3.</strong> Download and install</li>
             <li><strong>4.</strong> Log in (pair via phone for easier entry)</li>
             <li><strong>5.</strong> Select server country and connect</li>

@@ -8,20 +8,20 @@ import InternalLinks from "@/components/ui/InternalLinks";
 
 export const metadata: Metadata = {
   title: "VPN Free Trials & Money-Back Guarantees (2026) — Try Before You Buy",
-  description: "Every VPN free trial and money-back guarantee in one place. Test NordVPN, Surfshark, FastestVPN risk-free for 30 days.",
+  description: "Every VPN free trial and money-back guarantee in one place. Test NordVPN, Proton VPN, FastestVPN risk-free for 30 days.",
 };
 
 export default function VpnFreeTrialPage() {
   const trials = [
     { name: "NordVPN", trial: "No free trial", guarantee: "30-day money-back", free: "No", notes: "Full refund within 30 days, no questions asked. Contact support via live chat for fastest refund." },
-    { name: "Surfshark", trial: "7-day free trial (mobile only)", guarantee: "30-day money-back", free: "No", notes: "Free trial available on iOS and Android only. Desktop requires purchase with 30-day guarantee." },
+    { name: "FastestVPN", trial: "7-day free trial (mobile only)", guarantee: "30-day money-back", free: "No", notes: "Free trial available on iOS and Android only. Desktop requires purchase with 30-day guarantee." },
     { name: "FastestVPN", trial: "No free trial", guarantee: "31-day money-back", free: "No", notes: "Lifetime plans available. All plans include 31-day money-back guarantee." },
     { name: "Proton VPN", trial: "Unlimited free tier", guarantee: "30-day money-back (paid plans)", free: "Yes", notes: "Genuine free tier with no data caps. 3 countries, 1 device. Upgrade to Plus for full features." },
-    { name: "Mullvad", trial: "No free trial", guarantee: "30-day money-back", free: "No", notes: "€5/month flat rate. Refund available within 30 days via support." },
+    { name: "Proton VPN", trial: "No free trial", guarantee: "30-day money-back", free: "No", notes: "€5/month flat rate. Refund available within 30 days via support." },
   ];
 
   const faqs = [
-    { question: "Which VPN has the best free trial?", answer: "Proton VPN offers the only truly free VPN tier from a reputable provider — no data caps, no speed throttle, no time limit. For paid VPN trials, Surfshark offers a 7-day free trial on mobile. FastestVPN offers a 31-day money-back guarantee." },
+    { question: "Which VPN has the best free trial?", answer: "Proton VPN offers the only truly free VPN tier from a reputable provider — no data caps, no speed throttle, no time limit. For paid VPN trials, FastestVPN offers a 7-day free trial on mobile. FastestVPN offers a 31-day money-back guarantee." },
     { question: "How do money-back guarantees work?", answer: "Sign up, use the VPN for up to 30 days. If unsatisfied, contact support before day 30 for a full refund. All major providers honor this without hassle. The fastest method is usually live chat." },
     { question: "Can I use the free trial and then the money-back guarantee?", answer: "Yes — on mobile, use the 7-day free trial first. If you want to continue, subscribe and you still get the 30-day guarantee. That's effectively 37 days of risk-free testing." },
   ];
@@ -80,7 +80,7 @@ export default function VpnFreeTrialPage() {
         <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">Our Recommended Testing Strategy</h2>
         <ol className="text-sm text-zinc-700 dark:text-zinc-300 space-y-2">
           <li><strong>1.</strong> Start with <strong>Proton VPN Free</strong> — no cost, no commitment. Test basic VPN features.</li>
-          <li><strong>2.</strong> Try <strong>Surfshark 7-day trial</strong> on mobile — test premium features for free.</li>
+          <li><strong>2.</strong> Try <strong>FastestVPN 7-day trial</strong> on mobile — test premium features for free.</li>
           <li><strong>3.</strong> Subscribe to your preferred VPN with the <strong>30-day money-back guarantee</strong>.</li>
           <li><strong>4.</strong> Test thoroughly: speed, kill switch, streaming, video calls, your specific use case.</li>
           <li><strong>5.</strong> If satisfied, keep it. If not, request a refund before day 30.</li>

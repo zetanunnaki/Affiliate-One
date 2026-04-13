@@ -6,6 +6,7 @@ import TableOfContents from "@/components/ui/TableOfContents";
 import FeedbackWidget from "@/components/ui/FeedbackWidget";
 import AuthorCard from "@/components/ui/AuthorCard";
 import SaveToPinterest from "@/components/ui/SaveToPinterest";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import type { PostFrontmatter } from "@/types";
 
 interface ArticleLayoutProps {
@@ -177,6 +178,12 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
             </div>
 
             <div className="mt-16 space-y-10">
+              {/* ═══ Top picks — conversion widget ═══ */}
+              <TopVpnPicks
+                heading="Our Recommended VPNs"
+                eyebrow="Editor's picks"
+              />
+
               <FeedbackWidget pageId={frontmatter.title} />
 
               {/* CTA */}

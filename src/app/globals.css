@@ -110,3 +110,66 @@ article > div > *:nth-child(5) { animation-delay: 160ms; }
 .animate-pulse-dot {
   animation: pulse-dot 2s ease-in-out infinite;
 }
+
+/* ── Subtle glow for headings on guide pages ── */
+.prose h2 {
+  scroll-margin-top: 5rem;
+}
+.prose h3 {
+  scroll-margin-top: 5rem;
+}
+
+/* ── Link hover underline draw (for prose links) ── */
+.prose a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 250ms ease-out;
+  text-decoration: none;
+}
+.prose a:hover {
+  background-size: 100% 1px;
+}
+
+/* ── Better mobile tap feedback ── */
+@media (hover: none) {
+  .hover-glow:active {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.25);
+  }
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Floating animation (used by hero orbs) ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ── Shimmer (for loading skeletons and accent elements) ── */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.08) 50%,
+    rgba(255,255,255,0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2.5s ease-in-out infinite;
+}

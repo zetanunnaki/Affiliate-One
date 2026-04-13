@@ -50,17 +50,36 @@ export default function WifiAuditPage() {
   const missedQuestions = questions.filter((q) => answers[q.id] !== true);
 
   return (
+    <div>
+      {/* ═══ HERO ═══ */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div
+          className="absolute inset-0 opacity-[0.035]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+          }}
+        />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-full text-[13px] text-blue-200 mb-5">
+            <svg className="w-3.5 h-3.5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.858 15.355-5.858 21.213 0" />
+            </svg>
+            Interactive · 3 min · {totalQuestions} questions
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-5 leading-[1.05]">
+            Public Wi-Fi Risk Self-Audit
+          </h1>
+          <p className="text-lg text-slate-300 leading-relaxed">
+            Answer {totalQuestions} questions to assess your public Wi-Fi security
+            posture and get personalized recommendations.
+          </p>
+        </div>
+      </section>
+
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <header className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
-          Public Wi-Fi Risk Self-Audit
-        </h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400">
-          Answer these {totalQuestions} questions to assess your security posture
-          on public Wi-Fi networks. Get personalized recommendations to close
-          any gaps.
-        </p>
-      </header>
 
       {!showResults ? (
         <div>
@@ -228,6 +247,7 @@ export default function WifiAuditPage() {
           </button>
         </div>
       )}
+    </div>
     </div>
   );
 }

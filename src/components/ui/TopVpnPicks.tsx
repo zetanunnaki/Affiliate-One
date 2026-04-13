@@ -160,7 +160,7 @@ export default function TopVpnPicks({
                   )}
                   {p.originalPrice && p.salePrice && (
                     <div className="text-center md:text-right">
-                      <div className="text-[10px] text-slate-400 line-through">{p.originalPrice}</div>
+                      <div className="text-[10px] text-slate-500 dark:text-slate-400 line-through">{p.originalPrice}</div>
                       <div className="text-xl font-black text-slate-900 dark:text-white leading-tight">
                         {p.salePrice}
                       </div>
@@ -198,7 +198,7 @@ export default function TopVpnPicks({
         Affiliate disclosure: We may earn a commission when you click &ldquo;Get&rdquo; buttons
         at no extra cost to you.{" "}
         <Link href="/affiliate-disclosure" className="underline hover:text-blue-600 dark:hover:text-blue-400">
-          Learn more
+          Read our affiliate disclosure
         </Link>
       </p>
     </section>

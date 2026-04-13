@@ -36,46 +36,75 @@ const terms = [
 
 export default function GlossaryPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">
-          Security & VPN Glossary
-        </h1>
-        <p className="text-zinc-600 dark:text-zinc-400">
-          {terms.length} terms defined in plain language. Bookmark this page for
-          quick reference while reading our guides.
-        </p>
-      </header>
+    <div>
+      {/* ═══ HERO ═══ */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div
+          className="absolute inset-0 opacity-[0.035]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+          }}
+        />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-full text-[13px] text-blue-200 mb-5">
+            <svg className="w-3.5 h-3.5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            {terms.length} terms
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-5 leading-[1.05]">
+            Security & VPN Glossary
+          </h1>
+          <p className="text-lg text-slate-300 leading-relaxed">
+            Plain-language definitions of {terms.length} security and privacy terms.
+            Bookmark this page for quick reference.
+          </p>
+        </div>
+      </section>
 
-      {/* Alphabet nav */}
-      <nav className="flex flex-wrap gap-1 mb-8">
-        {Array.from(new Set(terms.map((t) => t.term[0].toUpperCase()))).sort().map((letter) => (
-          <a key={letter} href={`#${letter}`} className="px-2 py-1 text-sm text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 rounded">
-            {letter}
-          </a>
-        ))}
-      </nav>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Alphabet nav */}
+        <nav className="flex flex-wrap justify-center gap-1.5 mb-10 p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 sticky top-20 z-20 backdrop-blur-sm">
+          {Array.from(new Set(terms.map((t) => t.term[0].toUpperCase()))).sort().map((letter) => (
+            <a
+              key={letter}
+              href={`#${letter}`}
+              className="w-8 h-8 flex items-center justify-center text-xs font-bold text-slate-500 dark:text-slate-400 hover:text-white hover:bg-blue-600 rounded-lg transition-colors"
+            >
+              {letter}
+            </a>
+          ))}
+        </nav>
 
-      <div className="space-y-4">
-        {terms.map((t, i) => {
-          const showHeader = i === 0 || t.term[0].toUpperCase() !== terms[i - 1].term[0].toUpperCase();
-          return (
-            <div key={t.term}>
-              {showHeader && (
-                <h2
-                  id={t.term[0].toUpperCase()}
-                  className="text-lg font-bold text-zinc-900 dark:text-zinc-100 mt-6 mb-2 pb-1 border-b border-zinc-200 dark:border-zinc-700"
-                >
-                  {t.term[0].toUpperCase()}
-                </h2>
-              )}
-              <div className="p-3 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/50 transition-colors">
-                <dt className="font-semibold text-zinc-900 dark:text-zinc-100 text-sm">{t.term}</dt>
-                <dd className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{t.definition}</dd>
+        <div>
+          {terms.map((t, i) => {
+            const showHeader = i === 0 || t.term[0].toUpperCase() !== terms[i - 1].term[0].toUpperCase();
+            const letter = t.term[0].toUpperCase();
+            return (
+              <div key={t.term}>
+                {showHeader && (
+                  <div id={letter} className="flex items-center gap-3 mt-10 mb-4 first:mt-0 scroll-mt-32">
+                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-black text-lg shadow-md shadow-blue-500/25">
+                      {letter}
+                    </div>
+                    <div className="flex-1 h-px bg-gradient-to-r from-slate-200 dark:from-slate-800 to-transparent" />
+                  </div>
+                )}
+                <div className="group p-4 mb-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md transition-all">
+                  <dt className="font-bold text-slate-900 dark:text-white text-base mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {t.term}
+                  </dt>
+                  <dd className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                    {t.definition}
+                  </dd>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );

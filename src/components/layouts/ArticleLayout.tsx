@@ -5,6 +5,7 @@ import ReadingProgressBar from "@/components/ui/ReadingProgressBar";
 import TableOfContents from "@/components/ui/TableOfContents";
 import FeedbackWidget from "@/components/ui/FeedbackWidget";
 import AuthorCard from "@/components/ui/AuthorCard";
+import SaveToPinterest from "@/components/ui/SaveToPinterest";
 import type { PostFrontmatter } from "@/types";
 
 interface ArticleLayoutProps {
@@ -147,13 +148,22 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
       {/* ═══ FEATURED IMAGE — sits right under the dark hero ═══ */}
       <div className="relative -mt-6 mb-6">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={heroImage.src}
-            alt={heroImage.alt}
-            className="w-full h-auto rounded-2xl shadow-2xl ring-1 ring-black/5 object-cover aspect-[16/9]"
-            loading="eager"
-          />
+          <div className="relative group overflow-hidden rounded-2xl shadow-2xl ring-1 ring-black/5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={heroImage.src}
+              alt={heroImage.alt}
+              className="w-full h-auto object-cover aspect-[16/9]"
+              loading="eager"
+            />
+            {canonicalUrl && (
+              <SaveToPinterest
+                imageSrc={heroImage.src}
+                pageUrl={canonicalUrl}
+                description={frontmatter.title}
+              />
+            )}
+          </div>
         </div>
       </div>
 

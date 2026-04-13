@@ -10,6 +10,7 @@ import InternalLinks from "@/components/ui/InternalLinks";
 import CountryPageTracker from "@/components/ui/CountryPageTracker";
 import NearbyCountries from "@/components/ui/NearbyCountries";
 import { getAllCountries } from "@/lib/data";
+import SaveToPinterest from "@/components/ui/SaveToPinterest";
 
 // Slugs that have a generated hero image in /public/images/countries/
 const COUNTRIES_WITH_HERO = new Set([
@@ -87,13 +88,18 @@ export default function CountryBestVpnLayout({
 
       {/* Country hero image (only if we have one generated) */}
       {COUNTRIES_WITH_HERO.has(country.slug) && (
-        <div className="relative mb-10 -mx-4 sm:-mx-6 lg:-mx-8 sm:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
+        <div className="relative group mb-10 -mx-4 sm:-mx-6 lg:-mx-8 sm:rounded-3xl overflow-hidden shadow-2xl ring-1 ring-black/5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`/images/countries/${country.slug}.webp`}
             alt={`${country.nameEn} — VPN guide hero image`}
             className="w-full h-auto object-cover aspect-[16/9]"
             loading="eager"
+          />
+          <SaveToPinterest
+            imageSrc={`/images/countries/${country.slug}.webp`}
+            pageUrl={`https://buysecurevpn.com/vpn/best/${country.slug}/`}
+            description={`Best VPN for ${country.nameEn} (2026)`}
           />
           {/* Bottom gradient overlay for legibility */}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />

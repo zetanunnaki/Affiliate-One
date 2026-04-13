@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllCountries, getAllProviders, getAllIntents } from "@/lib/data";
 import Flag from "@/components/ui/Flag";
+import SaveToPinterest from "@/components/ui/SaveToPinterest";
 
 // Countries with hero images — rendered with photo background
 const COUNTRIES_WITH_HERO = new Set([
@@ -122,7 +123,7 @@ export default function Home() {
               <div className="absolute -inset-8 bg-gradient-to-br from-blue-500/20 via-indigo-500/10 to-transparent rounded-3xl blur-2xl" />
 
               {/* Main hero image card */}
-              <div className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-blue-950/50">
+              <div className="relative group rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-blue-950/50">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/illustrations/hero-remote-work.webp"
@@ -133,7 +134,12 @@ export default function Home() {
                   width={1280}
                   height={800}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
+                <SaveToPinterest
+                  imageSrc="/images/illustrations/hero-remote-work.webp"
+                  pageUrl="https://buysecurevpn.com/"
+                  description="Best VPN 2026 — Expert-tested & independently reviewed"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none" />
 
                 {/* Overlay: top pick card */}
                 <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 p-4 sm:p-5 rounded-xl bg-white/10 backdrop-blur-xl border border-white/20">

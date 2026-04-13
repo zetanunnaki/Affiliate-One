@@ -173,17 +173,18 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
         <div className="flex gap-14">
           <article className="flex-1 min-w-0 max-w-3xl">
             <AuthorCard authorId={frontmatter.author} updatedAt={frontmatter.updatedAt} />
-            <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight">
+
+            {/* ═══ Top picks — conversion widget shown ABOVE article ═══ */}
+            <TopVpnPicks
+              heading="Our Recommended VPNs"
+              eyebrow="Editor's picks"
+            />
+
+            <div className="prose prose-editorial prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight">
               {children}
             </div>
 
             <div className="mt-16 space-y-10">
-              {/* ═══ Top picks — conversion widget ═══ */}
-              <TopVpnPicks
-                heading="Our Recommended VPNs"
-                eyebrow="Editor's picks"
-              />
-
               <FeedbackWidget pageId={frontmatter.title} />
 
               {/* CTA */}

@@ -111,12 +111,44 @@ article > div > *:nth-child(5) { animation-delay: 160ms; }
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
-/* ── Subtle glow for headings on guide pages ── */
+/* ── Heading scroll offset for sticky header ── */
 .prose h2 {
   scroll-margin-top: 5rem;
 }
 .prose h3 {
   scroll-margin-top: 5rem;
+}
+
+/* ── Editorial drop cap on first paragraph ── */
+.prose-editorial > p:first-of-type::first-letter {
+  float: left;
+  font-size: 4rem;
+  line-height: 0.85;
+  font-weight: 800;
+  margin: 0.35rem 0.65rem 0 0;
+  color: rgb(37 99 235);
+  font-family: Georgia, "Times New Roman", serif;
+}
+.dark .prose-editorial > p:first-of-type::first-letter {
+  color: rgb(96 165 250);
+}
+.prose-editorial > p:first-of-type {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: rgb(51 65 85);
+}
+.dark .prose-editorial > p:first-of-type {
+  color: rgb(203 213 225);
+}
+
+/* ── Text selection in prose ── */
+.prose ::selection {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+/* ── Pretty tab size for code ── */
+.prose pre {
+  tab-size: 2;
 }
 
 /* ── Link hover underline draw (for prose links) ── */

@@ -89,25 +89,49 @@ export default function SecurityChecklistPage() {
   const totalItems = sections.reduce((sum, s) => sum + s.items.length, 0);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">
-          Remote Work Security Checklist
-        </h1>
-        <p className="text-zinc-600 dark:text-zinc-400 mb-4">
-          {totalItems} items across {sections.length} categories. Print this page
-          or save it as PDF for offline reference.
-        </p>
-        <div className="flex gap-3 print:hidden">
+    <div>
+      {/* ═══ HERO ═══ */}
+      <section className="relative overflow-hidden print:hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div
+          className="absolute inset-0 opacity-[0.035]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+          }}
+        />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-full text-[13px] text-blue-200 mb-5">
+            <svg className="w-3.5 h-3.5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+            Printable · {totalItems} items
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-5 leading-[1.05]">
+            Remote Work Security Checklist
+          </h1>
+          <p className="text-lg text-slate-300 leading-relaxed">
+            {totalItems} items across {sections.length} categories. Print or save
+            as PDF for offline reference.
+          </p>
+        </div>
+      </section>
+
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <header className="mb-8 print:block hidden">
+          <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Remote Work Security Checklist</h1>
+          <p className="text-sm text-slate-600">{totalItems} items across {sections.length} categories.</p>
+        </header>
+        <div className="flex gap-3 mb-8 print:hidden">
           <PrintButton />
           <Link
             href="/security/remote-work"
-            className="px-4 py-2 text-sm font-medium text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-600 hover:bg-zinc-50 dark:hover:bg-zinc-800 rounded-lg transition-colors"
+            className="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-xl transition-colors"
           >
             Read Full Guide
           </Link>
         </div>
-      </header>
 
       <div className="space-y-8">
         {sections.map((section) => (
@@ -142,6 +166,7 @@ export default function SecurityChecklistPage() {
           li { page-break-inside: avoid; }
         }
       `}</style>
+      </div>
     </div>
   );
 }

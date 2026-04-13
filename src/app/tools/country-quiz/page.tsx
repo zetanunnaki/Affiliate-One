@@ -71,11 +71,24 @@ export default function CountryQuizPage() {
   const rec = isComplete ? getRecommendation() : null;
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <header className="mb-8 text-center">
-        <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">Find Your Perfect VPN</h1>
-        <p className="text-zinc-600 dark:text-zinc-400">Answer 4 quick questions and we&apos;ll recommend the best VPN for your specific situation.</p>
-      </header>
+    <div>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-full text-[13px] text-blue-200 mb-5">
+            <svg className="w-3.5 h-3.5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Quiz · 2 min
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-5 leading-[1.05]">Find Your Perfect VPN</h1>
+          <p className="text-lg text-slate-300 leading-relaxed">
+            Answer 4 quick questions and we&apos;ll recommend the best VPN for your specific situation.
+          </p>
+        </div>
+      </section>
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
       {!isComplete ? (
         <div>
@@ -147,6 +160,7 @@ export default function CountryQuizPage() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

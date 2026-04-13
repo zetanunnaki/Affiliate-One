@@ -38,11 +38,24 @@ export default function VpnCalculatorPage() {
   }).sort((a, b) => b.score - a.score);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <header className="mb-8 text-center">
-        <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">VPN Cost Calculator</h1>
-        <p className="text-zinc-600 dark:text-zinc-400">Compare real costs based on your devices, plan length, and needs. Get a personalized recommendation.</p>
-      </header>
+    <div>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-full text-[13px] text-blue-200 mb-5">
+            <svg className="w-3.5 h-3.5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+            Interactive · 1 min
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-5 leading-[1.05]">VPN Cost Calculator</h1>
+          <p className="text-lg text-slate-300 leading-relaxed">
+            Compare real costs based on your devices, plan length, and needs.
+          </p>
+        </div>
+      </section>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
       {/* Inputs */}
       <div className="p-6 bg-zinc-50 dark:bg-zinc-800 rounded-xl mb-8">
@@ -109,6 +122,7 @@ export default function VpnCalculatorPage() {
         Prices based on published rates as of April 2026. Actual pricing may vary.{" "}
         <Link href="/deals" className="text-blue-600 hover:underline">Current deals</Link>
       </p>
+    </div>
     </div>
   );
 }

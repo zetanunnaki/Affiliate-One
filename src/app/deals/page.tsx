@@ -12,9 +12,9 @@ export default function DealsPage() {
   const providers = getAllProviders();
 
   const deals = [
-    { providerId: "nordvpn", discount: "74% off", plan: "2-year plan", price: "$3.39/mo", extra: "+ 3 months free", highlight: true },
-    { providerId: "protonvpn", discount: "50% off", plan: "2-year plan", price: "$4.99/mo", extra: "Includes Proton ecosystem", highlight: false },
-    { providerId: "fastestvpn", discount: "93% off", plan: "5-year plan", price: "$0.99/mo", extra: "+ 3 months free", highlight: false },
+    { providerId: "nordvpn", discount: "Save 74%", plan: "2-year plan", price: "$3.39/mo", wasPrice: "$12.99/mo", extra: "+ 3 months free · 30-day refund", highlight: true },
+    { providerId: "protonvpn", discount: "50% off", plan: "2-year plan", price: "$4.99/mo", wasPrice: "$9.99/mo", extra: "Includes Proton ecosystem · 30-day refund", highlight: false },
+    { providerId: "fastestvpn", discount: "Save 89%", plan: "Lifetime deal", price: "$1.11/mo", wasPrice: "$10.00/mo", extra: "31-day refund · 15 devices", highlight: false },
   ];
 
   return (
@@ -94,22 +94,25 @@ export default function DealsPage() {
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="inline-flex items-baseline gap-2">
-                        <div className="text-2xl sm:text-3xl font-black text-emerald-600 dark:text-emerald-400">
-                          {deal.discount}
-                        </div>
+                      <div className="inline-flex items-center px-2.5 py-1 text-[11px] font-bold text-white rounded-full shadow-sm" style={{ background: `linear-gradient(135deg, ${provider.brandColor}, ${provider.brandColorDark})` }}>
+                        {deal.discount}
                       </div>
-                      <div className="text-lg font-bold text-slate-900 dark:text-white mt-0.5">
-                        {deal.price}
+                      <div className="mt-1.5 flex items-baseline justify-end gap-2">
+                        <span className="text-sm font-semibold text-slate-500 dark:text-slate-400 line-through">{deal.wasPrice}</span>
+                        <span className="text-2xl font-black text-slate-900 dark:text-white">{deal.price}</span>
                       </div>
-                      <div className="text-[11px] text-slate-500 dark:text-slate-400">{deal.extra}</div>
+                      <div className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">{deal.extra}</div>
                     </div>
                   </div>
                   <div className="flex gap-3 mt-5 pt-5 border-t border-slate-100 dark:border-slate-800">
                     <a
                       href={provider.affiliate.trackingBaseUrl}
                       rel="noopener noreferrer sponsored"
-                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 rounded-xl shadow-md shadow-blue-600/25 transition-all hover:-translate-y-0.5"
+                      className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-3 text-sm font-semibold text-white rounded-xl shadow-md transition-all hover:-translate-y-0.5 hover:brightness-110"
+                      style={{
+                        background: `linear-gradient(135deg, ${provider.brandColor}, ${provider.brandColorDark})`,
+                        boxShadow: `0 8px 24px -8px ${provider.brandColor}66`,
+                      }}
                     >
                       Get This Deal
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

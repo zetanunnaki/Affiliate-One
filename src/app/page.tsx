@@ -195,6 +195,14 @@ export default function Home() {
         <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-white dark:from-slate-950 to-transparent pointer-events-none" />
       </section>
 
+      {/* ═══════════════ TOP PICKS (above the fold) ═══════════════ */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-4 -mt-8 relative z-10">
+        <TopVpnPicks
+          heading="Our Top 3 VPN Picks for 2026"
+          eyebrow="Expert-tested & independently reviewed"
+        />
+      </section>
+
       {/* ═══════════════ TOPICS ═══════════════ */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-12">
@@ -405,16 +413,6 @@ export default function Home() {
               </p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ═══════════════ TOP PROVIDERS (money widget) ═══════════════ */}
-      <section className="bg-slate-50 dark:bg-slate-900/50 py-20 border-y border-slate-100 dark:border-slate-800">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <TopVpnPicks
-            heading="Our Top 3 VPN Picks for 2026"
-            eyebrow="Expert-tested & independently reviewed"
-          />
         </div>
       </section>
 

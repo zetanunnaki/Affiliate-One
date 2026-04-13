@@ -28,20 +28,29 @@ const heroImageByCategory: Record<string, { src: string; alt: string }> = {
 // Topic-cluster image mapping — keyword fragments matched against slug+title
 // Returns the most specific match. Order matters (most specific first).
 const TOPIC_IMAGES: Array<[RegExp, string, string]> = [
+  // Highest-specificity topics first
   [/crypto/, "/images/illustrations/guide-crypto.webp", "Cryptocurrency security and hardware wallets"],
   [/gaming|gamer/, "/images/illustrations/guide-gaming.webp", "VPN for gaming setup"],
   [/coworking|co-working/, "/images/illustrations/guide-coworking.webp", "Coworking and shared office security"],
-  [/api[- ]?key|developer|cloud-development|endpoint|byod|note-taking/, "/images/illustrations/guide-developer.webp", "Developer security and API keys"],
-  [/messaging|video[- ]?call|screen[- ]?sharing|collaboration|remote[- ]?desktop|email/, "/images/illustrations/guide-comms.webp", "Secure video calls and messaging"],
-  [/browser|privacy|social-media|browsing|minimalism|estate|job-search|laws/, "/images/illustrations/guide-privacy.webp", "Browser privacy and online tracking"],
-  [/backup|cloud-storage|breach|file-sharing|encryption/, "/images/illustrations/guide-data.webp", "Cloud data and backup security"],
-  [/wifi|router|home-network|dns|iot/, "/images/illustrations/guide-router.webp", "Home network router security"],
+  [/api[- ]?key|developer|cloud-development|endpoint|byod/, "/images/illustrations/guide-developer.webp", "Developer security and API keys"],
+  // Professional verticals — each gets its own image where possible
+  [/finance|banking|accountant/, "/images/illustrations/guide-finance.webp", "Finance and banking VPN"],
+  [/healthcare|hipaa|medical|doctor/, "/images/illustrations/guide-healthcare.webp", "Healthcare VPN and HIPAA"],
+  [/student|teacher|education|university/, "/images/illustrations/guide-student.webp", "Student and education VPN"],
+  [/lawyer|real-estate|senior|small-business|freelance|expat|journalist/, "/images/illustrations/guide-professional.webp", "Professional VPN for business"],
+  // Content-type topics
+  [/email|encryption-guide|pgp/, "/images/illustrations/guide-email.webp", "Secure email encryption"],
+  [/messaging|video[- ]?call|screen[- ]?sharing|collaboration|remote[- ]?desktop/, "/images/illustrations/guide-comms.webp", "Secure video calls and messaging"],
+  [/browser|privacy|social-media|browsing|minimalism|estate|job-search|laws/, "/images/illustrations/guide-browser.webp", "Browser privacy and tracking protection"],
+  [/backup|cloud-storage|breach|file-sharing/, "/images/illustrations/guide-backup.webp", "Data backup and cloud storage"],
+  [/device-encrypt|disk-encrypt|full-disk/, "/images/illustrations/guide-device-encrypt.webp", "Device encryption"],
+  [/iot|smart-home|router|home-network|dns|wifi-setup|wifi$/, "/images/illustrations/guide-iot.webp", "Smart home and IoT security"],
+  [/speed|bandwidth|optimization|internet-speed/, "/images/illustrations/guide-speed-test.webp", "Internet speed test"],
   [/password|2fa|two-factor|sim-swap|auth/, "/images/illustrations/guide-passwords.webp", "Password manager and 2FA"],
-  [/finance|accountant|lawyer|healthcare|teacher|real-estate|senior|small-business|freelance|expat|journalist|student/, "/images/illustrations/guide-professional.webp", "Professional VPN for finance and business"],
   [/multi-device|tablet|chromebook|nas|android|ios|mac|windows|linux/, "/images/illustrations/guide-multi-device.webp", "Multi-device VPN security"],
   [/zero[- ]?trust|enterprise/, "/images/illustrations/guide-enterprise.webp", "Enterprise VPN and zero trust"],
   [/digital[- ]?nomad|nomad/, "/images/illustrations/guide-digital-nomad.webp", "Digital nomad working remotely"],
-  [/hotel|airport|travel/, "/images/illustrations/guide-hotel-wifi.webp", "Working from hotel with VPN"],
+  [/hotel|airport|travel|wifi/, "/images/illustrations/guide-hotel-wifi.webp", "Working from hotel with VPN"],
   [/setup|beginner|mobile/, "/images/illustrations/guide-mobile-vpn.webp", "VPN connected on smartphone"],
 ];
 

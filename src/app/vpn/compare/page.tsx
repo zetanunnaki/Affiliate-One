@@ -31,15 +31,35 @@ export default function ComparePage() {
   const compSlug = findComparisonSlug();
 
   return (
+    <div>
+      {/* ═══ HERO ═══ */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div
+          className="absolute inset-0 opacity-[0.035]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+          }}
+        />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-full text-[13px] text-blue-200 mb-5">
+            <svg className="w-3.5 h-3.5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+            Interactive · 1 min
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight mb-5 leading-[1.05]">
+            Compare VPN Providers
+          </h1>
+          <p className="text-lg text-slate-300 leading-relaxed">
+            Select two providers to see a side-by-side comparison.
+          </p>
+        </div>
+      </section>
+
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <header className="mb-8 text-center">
-        <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">
-          Compare VPN Providers
-        </h1>
-        <p className="text-zinc-600 dark:text-zinc-400">
-          Select two providers to see a side-by-side comparison.
-        </p>
-      </header>
 
       {/* Selector */}
       <div className="grid sm:grid-cols-2 gap-4 mb-8">
@@ -135,6 +155,7 @@ export default function ComparePage() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

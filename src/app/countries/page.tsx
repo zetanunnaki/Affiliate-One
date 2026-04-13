@@ -59,34 +59,62 @@ export default function CountriesPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <header className="mb-8 text-center">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
-          Best VPN by Country
-        </h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-          Expert-tested VPN recommendations for {countries.length} countries.
-          Each guide includes local internet context, VPN legality, payment
-          options, and travel advice.
-        </p>
-      </header>
-
-      {/* Filters */}
-      <div className="flex flex-col sm:flex-row gap-3 mb-8">
-        <input
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search countries..."
-          className="flex-1 px-4 py-2.5 border border-zinc-300 dark:border-zinc-600 rounded-lg bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+    <div>
+      {/* ═══ HERO ═══ */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div
+          className="absolute inset-0 opacity-[0.035]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+          }}
         />
-        <div className="flex flex-wrap gap-2">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-full text-[13px] text-blue-200 mb-5">
+            <svg className="w-3.5 h-3.5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            Global coverage
+          </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-5 leading-[1.05]">
+            Best VPN by Country
+          </h1>
+          <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+            Expert-tested VPN recommendations for {countries.length} countries. Each
+            guide covers local internet context, VPN legality, payment options, and
+            travel advice.
+          </p>
+
+          {/* Hero search */}
+          <div className="max-w-2xl mx-auto">
+            <div className="relative">
+              <input
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search 202 countries..."
+                aria-label="Search countries"
+                className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white/95 dark:bg-slate-100 text-slate-900 placeholder:text-slate-400 border border-white/10 ring-1 ring-black/5 focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-2xl"
+              />
+              <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Region filter chips */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
           <button
             onClick={() => setRegionFilter("all")}
-            className={`px-3 py-2 text-sm rounded-lg transition-colors ${
+            className={`px-4 py-2 text-sm font-semibold rounded-full transition-all ${
               regionFilter === "all"
-                ? "bg-blue-600 text-white"
-                : "bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+                ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25"
+                : "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
             }`}
           >
             All ({countries.length})
@@ -97,10 +125,10 @@ export default function CountriesPage() {
               <button
                 key={region}
                 onClick={() => setRegionFilter(region)}
-                className={`px-3 py-2 text-sm rounded-lg transition-colors ${
+                className={`px-4 py-2 text-sm font-semibold rounded-full transition-all ${
                   regionFilter === region
-                    ? "bg-blue-600 text-white"
-                    : "bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25"
+                    : "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
                 }`}
               >
                 {region} ({count})
@@ -108,54 +136,68 @@ export default function CountriesPage() {
             );
           })}
         </div>
-      </div>
 
-      {/* Results count */}
-      <p className="text-sm text-zinc-500 mb-4">
-        Showing {filtered.length} of {countries.length} countries
-        {search.length >= 2 && ` matching "${search}"`}
-      </p>
+        {/* Results count */}
+        <p className="text-sm text-slate-500 dark:text-slate-400 mb-6 text-center">
+          Showing <span className="font-semibold text-slate-700 dark:text-slate-300">{filtered.length}</span> of {countries.length} countries
+          {search.length >= 2 && <> matching &ldquo;<span className="font-semibold text-slate-700 dark:text-slate-300">{search}</span>&rdquo;</>}
+        </p>
 
-      {/* Country grid */}
-      {Object.entries(groupedByRegion).map(([region, regionCountries]) => (
-        <section key={region} className="mb-10">
-          <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4 pb-2 border-b border-zinc-200 dark:border-zinc-700">
-            {region}{" "}
-            <span className="text-sm font-normal text-zinc-500">
-              ({regionCountries.length} countries)
-            </span>
-          </h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-            {regionCountries.map((country) => (
-              <Link
-                key={country.iso2}
-                href={`/vpn/best/${country.slug}/`}
-                className="flex items-center gap-3 p-3 border border-zinc-200 dark:border-zinc-700 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-blue-300 dark:hover:border-blue-700 transition-all"
-              >
-                <CountryFlag iso2={country.iso2} name={country.nameEn} />
-                <div>
-                  <span className="text-sm font-medium text-zinc-900 dark:text-zinc-100 block">
-                    {country.nameEn}
-                  </span>
-                  <span className="text-xs text-zinc-500">
-                    {country.riskFlags.length > 0
-                      ? country.riskFlags
-                          .map((f) => riskLabels[f] || f)
-                          .join(" \u00B7 ")
-                      : "Open internet"}
-                  </span>
-                </div>
-              </Link>
-            ))}
+        {/* Country grid */}
+        {Object.entries(groupedByRegion).map(([region, regionCountries]) => (
+          <section key={region} className="mb-12">
+            <div className="flex items-center gap-3 mb-5">
+              <div className="h-px flex-1 bg-gradient-to-r from-slate-200 dark:from-slate-800 to-transparent" />
+              <h2 className="text-lg font-bold text-slate-900 dark:text-white uppercase tracking-wider">
+                {region}
+              </h2>
+              <span className="text-xs font-semibold px-2 py-0.5 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">
+                {regionCountries.length}
+              </span>
+              <div className="h-px flex-1 bg-gradient-to-l from-slate-200 dark:from-slate-800 to-transparent" />
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+              {regionCountries.map((country) => (
+                <Link
+                  key={country.iso2}
+                  href={`/vpn/best/${country.slug}/`}
+                  className="group flex items-center gap-3 p-3.5 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  <div className="shrink-0 p-1.5 bg-slate-50 dark:bg-slate-800 rounded-md ring-1 ring-slate-200 dark:ring-slate-700">
+                    <CountryFlag iso2={country.iso2} name={country.nameEn} />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <span className="text-sm font-semibold text-slate-900 dark:text-slate-100 block truncate group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      {country.nameEn}
+                    </span>
+                    <span className="text-[11px] text-slate-500 dark:text-slate-400 block truncate">
+                      {country.riskFlags.length > 0
+                        ? country.riskFlags
+                            .map((f) => riskLabels[f] || f)
+                            .join(" \u00B7 ")
+                        : "Open internet"}
+                    </span>
+                  </div>
+                  <svg className="w-4 h-4 text-slate-300 dark:text-slate-600 group-hover:text-blue-500 group-hover:translate-x-0.5 transition-all shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))}
+
+        {filtered.length === 0 && (
+          <div className="text-center py-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 mb-4">
+              <svg className="w-7 h-7 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-1">No countries found</h3>
+            <p className="text-sm text-slate-500 dark:text-slate-400">Try a different search term or browse by region.</p>
           </div>
-        </section>
-      ))}
-
-      {filtered.length === 0 && (
-        <div className="text-center py-12 text-zinc-500">
-          No countries match your search. Try a different term.
-        </div>
-      )}
+        )}
 
       {/* Schema */}
       <script
@@ -176,6 +218,7 @@ export default function CountriesPage() {
           }),
         }}
       />
+      </div>
     </div>
   );
 }

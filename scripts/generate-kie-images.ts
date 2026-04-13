@@ -31,7 +31,9 @@ if (!API_KEY) {
 }
 
 const ROOT = process.cwd();
-const MODEL = "google/imagen4-fast"; // cheapest text-to-image tier
+// Allow overriding via env (MODEL=...). Imagen4-fast was flaky on 2026-04-13,
+// seedream-5-lite is a working alternative with similar quality.
+const MODEL = process.env.KIE_MODEL || "seedream/5-lite-text-to-image";
 const CREATE_URL = "https://api.kie.ai/api/v1/jobs/createTask";
 const STATUS_URL = "https://api.kie.ai/api/v1/jobs/recordInfo";
 
@@ -216,12 +218,12 @@ const jobs: ImageJob[] = [
     aspectRatio: "16:9",
   },
 
-  // ── Country hero images (top 20) ────────────────────────────────────────
+  // ── Country hero images (top 20) — clean editorial travel photography ──
   ...["united-states","united-kingdom","germany","france","japan","australia","canada","brazil","india","mexico","spain","italy","netherlands","sweden","singapore","south-korea","switzerland","poland","turkey","argentina"].map((slug) => {
     const niceName = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
     return {
       category: "countries" as const,
-      prompt: `Iconic landmark or skyline of ${niceName} at golden hour, with a subtle blue digital network overlay representing internet connectivity, cinematic travel photography, vibrant colors. ${QUALITY}`,
+      prompt: `Iconic landmark or skyline of ${niceName} at golden hour, clean editorial travel photography, natural warm colors, no text, no overlays, no digital effects. ${QUALITY}`,
       outputPath: `public/images/countries/${slug}.png`,
       alt: `${niceName} — VPN guide hero image`,
       aspectRatio: "16:9" as const,
@@ -271,24 +273,100 @@ const jobs: ImageJob[] = [
     alt: "Guides OG background",
     aspectRatio: "16:9",
   },
+
+  // ── Guides v3 — clean editorial photography, no digital overlays ───────
+  {
+    category: "guides-v3",
+    prompt: `A smartphone in a person's hand showing a clean authenticator app interface, a laptop with a login page blurred in the background, warm natural desk lighting, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-2fa.png",
+    alt: "Two-factor authentication setup",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `A modern laptop on a wooden desk with a web browser open on screen, a coffee cup and notebook beside it, natural window lighting, clean minimalist home office, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-browser.png",
+    alt: "Browser privacy and tracking protection",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `Overhead view of two external hard drives on a clean wooden desk beside a laptop, organized cables, a small potted plant, warm natural lighting, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-backup.png",
+    alt: "Data backup and cloud storage security",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `A laptop on a desk showing an email inbox interface, a coffee mug beside it, a pen and notebook, soft warm window lighting, clean home office setting, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-email.png",
+    alt: "Secure email encryption",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `A modern living room with a smart speaker on a side table, a smart thermostat on the wall, a robot vacuum in soft focus background, natural daylight, clean minimalist interior, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-iot.png",
+    alt: "IoT and smart home security",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `A laptop on a clean desk showing an internet speed test results page on screen, a router visible in soft background, warm natural lighting, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-speed-test.png",
+    alt: "Internet speed test and VPN optimization",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `A laptop on a minimalist wooden desk with a closed padlock resting beside it, natural window light, clean home office scene, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-device-encrypt.png",
+    alt: "Device encryption and disk security",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `A clean professional office desk with a laptop, a financial newspaper, a pen and calculator, a cup of coffee, natural daylight from a window, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-finance.png",
+    alt: "Finance and banking VPN security",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `A doctor's desk with a laptop, a stethoscope resting beside it, a small clipboard, clean bright hospital office lighting, realistic medical photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-healthcare.png",
+    alt: "Healthcare VPN and HIPAA security",
+    aspectRatio: "16:9",
+  },
+  {
+    category: "guides-v3",
+    prompt: `A student studying on a laptop at a wooden library table with stacked books, an open notebook, a pencil, warm ambient library lighting, realistic photograph. ${QUALITY}`,
+    outputPath: "public/images/illustrations/guide-student.png",
+    alt: "Student and education VPN",
+    aspectRatio: "16:9",
+  },
 ];
 
 // ── API helpers ────────────────────────────────────────────────────────────
 async function createTask(job: ImageJob): Promise<string> {
+  // Model-specific input payload — seedream uses `quality`, imagen uses `num_images`
+  const input: Record<string, unknown> = {
+    prompt: job.prompt,
+    aspect_ratio: job.aspectRatio,
+  };
+  if (MODEL.startsWith("seedream/")) {
+    input.quality = "basic"; // 2K; use "high" for 4K
+  } else {
+    input.num_images = "1";
+  }
+
   const res = await fetch(CREATE_URL, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${API_KEY}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      model: MODEL,
-      input: {
-        prompt: job.prompt,
-        aspect_ratio: job.aspectRatio,
-        num_images: "1",
-      },
-    }),
+    body: JSON.stringify({ model: MODEL, input }),
   });
 
   if (!res.ok) throw new Error(`createTask HTTP ${res.status}: ${await res.text()}`);

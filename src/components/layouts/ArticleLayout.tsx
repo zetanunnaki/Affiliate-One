@@ -7,6 +7,7 @@ import FeedbackWidget from "@/components/ui/FeedbackWidget";
 import AuthorCard from "@/components/ui/AuthorCard";
 import SaveToPinterest from "@/components/ui/SaveToPinterest";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import MobileStickyTOC from "@/components/ui/MobileStickyTOC";
 import type { PostFrontmatter } from "@/types";
 
 interface ArticleLayoutProps {
@@ -259,6 +260,9 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
           {frontmatter.toc !== false && <TableOfContents />}
         </div>
       </div>
+
+      {/* Mobile sticky section nav — hidden on xl+ where sidebar TOC is visible */}
+      {frontmatter.toc !== false && <MobileStickyTOC />}
     </>
   );
 }

@@ -47,7 +47,7 @@
     "website": "https://protonvpn.com",
     "affiliate": {
       "network": "direct",
-      "trackingBaseUrl": "https://go.getproton.me/aff_c?offer_id=26&aff_id=AFFILIATE_ID",
+      "trackingBaseUrl": "https://go.getproton.me/aff_c?offer_id=26&aff_id=17279",
       "disclosureLabel": "Affiliate link"
     },
     "features": {

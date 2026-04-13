@@ -1,99 +1,165 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { getAllProviders } from "@/lib/data";
 import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Free Trials & Money-Back Guarantees (2026) — Try Before You Buy",
-  description: "Every VPN free trial and money-back guarantee in one place. Test NordVPN, Proton VPN, FastestVPN risk-free for 30 days.",
+  description: "Every VPN free trial and money-back guarantee in one place. Test NordVPN, Proton VPN, and FastestVPN risk-free.",
 };
 
 export default function VpnFreeTrialPage() {
   const trials = [
-    { name: "NordVPN", trial: "No free trial", guarantee: "30-day money-back", free: "No", notes: "Full refund within 30 days, no questions asked. Contact support via live chat for fastest refund." },
-    { name: "FastestVPN", trial: "7-day free trial (mobile only)", guarantee: "30-day money-back", free: "No", notes: "Free trial available on iOS and Android only. Desktop requires purchase with 30-day guarantee." },
-    { name: "FastestVPN", trial: "No free trial", guarantee: "31-day money-back", free: "No", notes: "Lifetime plans available. All plans include 31-day money-back guarantee." },
-    { name: "Proton VPN", trial: "Unlimited free tier", guarantee: "30-day money-back (paid plans)", free: "Yes", notes: "Genuine free tier with no data caps. 3 countries, 1 device. Upgrade to Plus for full features." },
-    { name: "Proton VPN", trial: "No free trial", guarantee: "30-day money-back", free: "No", notes: "€5/month flat rate. Refund available within 30 days via support." },
+    {
+      name: "NordVPN",
+      trial: "No free trial",
+      guarantee: "30-day money-back",
+      free: "No",
+      notes: "Full refund within 30 days, no questions asked. Contact support via live chat for fastest refund.",
+    },
+    {
+      name: "Proton VPN",
+      trial: "Unlimited free tier",
+      guarantee: "30-day money-back (paid plans)",
+      free: "Yes",
+      notes: "Genuine free tier with no data caps. 3 countries, 1 device. Upgrade to Plus for full features.",
+    },
+    {
+      name: "FastestVPN",
+      trial: "No free trial",
+      guarantee: "31-day money-back",
+      free: "No",
+      notes: "Lifetime plans available. All plans include 31-day money-back guarantee.",
+    },
   ];
 
   const faqs = [
-    { question: "Which VPN has the best free trial?", answer: "Proton VPN offers the only truly free VPN tier from a reputable provider — no data caps, no speed throttle, no time limit. For paid VPN trials, FastestVPN offers a 7-day free trial on mobile. FastestVPN offers a 31-day money-back guarantee." },
-    { question: "How do money-back guarantees work?", answer: "Sign up, use the VPN for up to 30 days. If unsatisfied, contact support before day 30 for a full refund. All major providers honor this without hassle. The fastest method is usually live chat." },
-    { question: "Can I use the free trial and then the money-back guarantee?", answer: "Yes — on mobile, use the 7-day free trial first. If you want to continue, subscribe and you still get the 30-day guarantee. That's effectively 37 days of risk-free testing." },
+    {
+      question: "Which VPN has the best free trial?",
+      answer: "Proton VPN offers the only truly free VPN tier from a reputable provider — no data caps, no speed throttle, no time limit. For paid VPN trials, all three of our top picks offer a 30-day money-back guarantee that works as a risk-free trial.",
+    },
+    {
+      question: "How do money-back guarantees work?",
+      answer: "Sign up, use the VPN for up to 30 days. If unsatisfied, contact support before day 30 for a full refund. All major providers honor this without hassle. The fastest method is usually live chat.",
+    },
+    {
+      question: "Can I test a VPN before committing?",
+      answer: "Yes. Start with Proton VPN's free tier for zero-commitment testing, then use the 30-day money-back guarantee on your preferred paid VPN for unrestricted full-feature testing.",
+    },
   ];
 
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Free Trials" }]} />
-      <header className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">VPN Free Trials & Money-Back Guarantees (2026)</h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Don&apos;t commit before you test. Every major VPN offers either a free trial or a 30-day money-back guarantee — here&apos;s how to take advantage.</p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
-      </header>
-
-      {/* Comparison table */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Free Trial & Guarantee Comparison</h2>
-        <div className="overflow-x-auto">
-          <table className="min-w-full divide-y divide-zinc-200 dark:divide-zinc-700 border border-zinc-200 dark:border-zinc-700 rounded-lg overflow-hidden text-sm">
-            <thead className="bg-zinc-50 dark:bg-zinc-800">
-              <tr>
-                <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Provider</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Free Trial</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Money-Back</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Free Tier</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
-              {trials.map((t) => (
-                <tr key={t.name}>
-                  <td className="px-3 py-2 font-medium text-zinc-900 dark:text-zinc-100">{t.name}</td>
-                  <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{t.trial}</td>
-                  <td className="px-3 py-2 text-center text-green-600 dark:text-green-400 font-semibold">{t.guarantee}</td>
-                  <td className="px-3 py-2 text-center">{t.free === "Yes" ? <span className="text-green-600 dark:text-green-400 font-bold">Yes</span> : <span className="text-zinc-500">No</span>}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+    <>
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div className="absolute inset-0 opacity-[0.035]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")" }} />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
+          <div className="[&_nav]:text-slate-400 [&_a]:text-slate-400 [&_a:hover]:text-white [&_span]:text-slate-500">
+            <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Free Trials" }]} />
+          </div>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 mt-5 mb-5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-semibold tracking-wider uppercase">
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            Risk-free testing
+          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-white leading-[1.1] mb-5">VPN Free Trials & Money-Back Guarantees (2026)</h1>
+          <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mb-6">
+            Don&apos;t commit before you test. Every major VPN offers a free trial or a 30-day money-back guarantee — here&apos;s how to take advantage.
+          </p>
+          <div className="pt-5 border-t border-white/10 [&_a]:text-blue-300 [&_a:hover]:text-blue-200 [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
+            <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+          </div>
         </div>
-      </section>
+      </div>
 
-      {/* Details */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Provider Details</h2>
-        <div className="space-y-3">
-          {trials.map((t) => (
-            <div key={t.name} className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg">
-              <h3 className="font-semibold text-zinc-900 dark:text-zinc-100 mb-1">{t.name}</h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">{t.notes}</p>
+      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <TopVpnPicks heading="Try These 3 VPNs Risk-Free" eyebrow="Money-back guaranteed" />
+
+        {/* Comparison table */}
+        <section className="mb-10">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-md shadow-emerald-500/25">
+              <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
             </div>
-          ))}
-        </div>
-      </section>
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-emerald-600 dark:text-emerald-400">Side-by-side</p>
+              <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">Free Trial & Guarantee Comparison</h2>
+            </div>
+          </div>
+          <div className="overflow-x-auto rounded-2xl ring-1 ring-slate-200 dark:ring-slate-800 bg-white dark:bg-slate-900">
+            <table className="min-w-full text-sm">
+              <thead>
+                <tr className="bg-gradient-to-r from-slate-50 to-white dark:from-slate-900 dark:to-slate-900/50 border-b border-slate-200 dark:border-slate-800">
+                  <th className="px-5 py-4 text-left text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Provider</th>
+                  <th className="px-5 py-4 text-center text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Free Trial</th>
+                  <th className="px-5 py-4 text-center text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Money-Back</th>
+                  <th className="px-5 py-4 text-center text-[11px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider">Free Tier</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                {trials.map((t) => (
+                  <tr key={t.name}>
+                    <td className="px-5 py-4 font-bold text-slate-900 dark:text-white">{t.name}</td>
+                    <td className="px-5 py-4 text-center text-slate-700 dark:text-slate-300">{t.trial}</td>
+                    <td className="px-5 py-4 text-center text-emerald-600 dark:text-emerald-400 font-semibold">{t.guarantee}</td>
+                    <td className="px-5 py-4 text-center">
+                      {t.free === "Yes" ? (
+                        <span className="inline-flex items-center gap-1 px-2 py-0.5 text-xs font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-900/30 rounded-full">✓ Yes</span>
+                      ) : (
+                        <span className="text-slate-400">—</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-      {/* Best strategy */}
-      <section className="mb-10 p-6 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-xl">
-        <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-3">Our Recommended Testing Strategy</h2>
-        <ol className="text-sm text-zinc-700 dark:text-zinc-300 space-y-2">
-          <li><strong>1.</strong> Start with <strong>Proton VPN Free</strong> — no cost, no commitment. Test basic VPN features.</li>
-          <li><strong>2.</strong> Try <strong>FastestVPN 7-day trial</strong> on mobile — test premium features for free.</li>
-          <li><strong>3.</strong> Subscribe to your preferred VPN with the <strong>30-day money-back guarantee</strong>.</li>
-          <li><strong>4.</strong> Test thoroughly: speed, kill switch, streaming, video calls, your specific use case.</li>
-          <li><strong>5.</strong> If satisfied, keep it. If not, request a refund before day 30.</li>
-        </ol>
-      </section>
+        {/* Best strategy */}
+        <section className="mb-10 p-6 rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50/60 dark:from-blue-950/30 dark:to-indigo-950/20 border border-blue-200/60 dark:border-blue-900/40">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-md shadow-blue-500/25">
+              <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <h2 className="text-xl font-bold text-slate-900 dark:text-white">Our Recommended Testing Strategy</h2>
+          </div>
+          <ol className="text-sm text-slate-700 dark:text-slate-300 space-y-2.5">
+            <li className="flex items-start gap-3">
+              <span className="shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-black flex items-center justify-center">1</span>
+              <span>Start with <strong>Proton VPN Free</strong> — no cost, no commitment. Test basic VPN features.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-black flex items-center justify-center">2</span>
+              <span>Subscribe to your preferred paid VPN with the <strong>30-day money-back guarantee</strong>.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-black flex items-center justify-center">3</span>
+              <span>Test thoroughly: speed, kill switch, streaming, video calls, your specific use case.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-black flex items-center justify-center">4</span>
+              <span>If satisfied, keep it. If not, request a refund before day 30.</span>
+            </li>
+          </ol>
+        </section>
 
-      <FAQ items={faqs} />
-      <InternalLinks links={[
-        { label: "Free VPN Analysis", href: "/vpn/free", description: "Are free VPNs safe?" },
-        { label: "Best VPN 2026", href: "/best/vpn", description: "Our top picks" },
-        { label: "VPN Deals", href: "/deals", description: "Current promotions" },
-        { label: "Proton VPN Review", href: "/vpn/providers/protonvpn", description: "Best free tier" },
-      ]} />
-    </article>
+        <FAQ items={faqs} />
+        <InternalLinks links={[
+          { label: "Free VPN Analysis", href: "/vpn/free", description: "Are free VPNs safe?" },
+          { label: "Best VPN 2026", href: "/best/vpn", description: "Our top picks" },
+          { label: "VPN Deals", href: "/deals", description: "Current promotions" },
+          { label: "Proton VPN Review", href: "/vpn/providers/protonvpn", description: "Best free tier" },
+        ]} />
+      </article>
+    </>
   );
 }

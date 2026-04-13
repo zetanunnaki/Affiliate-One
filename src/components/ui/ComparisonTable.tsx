@@ -45,6 +45,15 @@ export default function ComparisonTable({
             >
               <td className="px-4 py-4">
                 <div className="flex items-center gap-3">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`/images/providers/${row.provider.id}.svg`}
+                    alt={`${row.provider.name} logo`}
+                    width={32}
+                    height={32}
+                    className="w-8 h-8 shrink-0 rounded-md object-contain bg-white p-1 ring-1 ring-zinc-200"
+                    loading="lazy"
+                  />
                   <div>
                     <div className="font-semibold text-sm text-zinc-900 dark:text-zinc-100">
                       {row.provider.name}

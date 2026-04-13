@@ -70,9 +70,19 @@ export default async function ProviderPage(props: PageProps) {
       />
 
       <header className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
-          {provider.name} Review (2026): Is It Worth It?
-        </h1>
+        <div className="flex items-center gap-4 mb-4">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`/images/providers/${provider.id}.svg`}
+            alt={`${provider.name} logo`}
+            width={64}
+            height={64}
+            className="w-16 h-16 shrink-0 rounded-xl object-contain bg-white p-2 ring-1 ring-zinc-200 dark:ring-zinc-700 shadow-sm"
+          />
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+            {provider.name} Review (2026): Is It Worth It?
+          </h1>
+        </div>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">
           We tested {provider.name} for speed, security, privacy, and
           reliability. Here&apos;s our comprehensive, independent review.

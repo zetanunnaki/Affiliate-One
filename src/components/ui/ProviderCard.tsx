@@ -19,14 +19,25 @@ export default function ProviderCard({
           {badge}
         </span>
       )}
-      <div className="flex items-start justify-between mb-4">
-        <div>
-          <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
-            {provider.name}
-          </h3>
-          <p className="text-sm text-zinc-500">{provider.priceRange}</p>
+      <div className="flex items-start justify-between mb-4 gap-3">
+        <div className="flex items-center gap-3 min-w-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`/images/providers/${provider.id}.svg`}
+            alt={`${provider.name} logo`}
+            width={40}
+            height={40}
+            className="w-10 h-10 shrink-0 rounded-lg object-contain bg-white dark:bg-white p-1 ring-1 ring-zinc-200 dark:ring-zinc-700"
+            loading="lazy"
+          />
+          <div className="min-w-0">
+            <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100 truncate">
+              {provider.name}
+            </h3>
+            <p className="text-sm text-zinc-500 truncate">{provider.priceRange}</p>
+          </div>
         </div>
-        <div className="flex items-center gap-1 px-2 py-1 bg-green-50 dark:bg-green-900/20 rounded-lg">
+        <div className="shrink-0 flex items-center gap-1 px-2 py-1 bg-green-50 dark:bg-green-900/20 rounded-lg">
           <span className="text-sm font-bold text-green-700 dark:text-green-400">
             {provider.rating}
           </span>

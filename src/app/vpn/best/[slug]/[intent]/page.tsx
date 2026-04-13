@@ -69,32 +69,68 @@ export default async function CountryIntentPage(props: PageProps) {
   ];
 
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <Breadcrumbs
-        items={[
-          { label: "Home", href: "/" },
-          { label: country.nameEn, href: `/vpn/best/${country.slug}` },
-          { label: intentData.label },
-        ]}
-      />
+    <>
+      {/* ═══ DARK HERO ═══ */}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div
+          className="absolute inset-0 opacity-[0.035]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+          }}
+        />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
+          <div className="[&_nav]:text-slate-400 [&_a]:text-slate-400 [&_a:hover]:text-white [&_span]:text-slate-500">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: country.nameEn, href: `/vpn/best/${country.slug}` },
+                { label: intentData.label },
+              ]}
+            />
+          </div>
 
-      <header className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
-          Best VPN for {intentData.label} in {country.nameEn} (2026)
-        </h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">
-          {intentData.description} Here are our top picks specifically tested
-          for {intentData.label.toLowerCase()} use in {country.nameEn}.
-        </p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
-      </header>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 mt-5 mb-5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-semibold tracking-wider uppercase">
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            {country.nameEn} · {intentData.label}
+          </div>
 
+          <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-white leading-[1.1] mb-5">
+            Best VPN for {intentData.label} in {country.nameEn} (2026)
+          </h1>
+          <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mb-6">
+            {intentData.description} Here are our top picks specifically tested
+            for {intentData.label.toLowerCase()} use in {country.nameEn}.
+          </p>
+          <div className="pt-5 border-t border-white/10 [&_a]:text-blue-300 [&_a:hover]:text-blue-200 [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
+            <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+          </div>
+        </div>
+      </div>
+
+    <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Provider picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-          Top {providers.length} VPNs for {intentData.label} in {country.nameEn}
-        </h2>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="flex items-center gap-3 mb-5">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center shadow-md shadow-blue-500/25">
+            <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-blue-600 dark:text-blue-400">
+              Tested & ranked
+            </p>
+            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              Top {providers.length} VPNs for {intentData.label} in {country.nameEn}
+            </h2>
+          </div>
+        </div>
+        <div className="grid md:grid-cols-3 gap-5">
           {providers.map((provider, i) => (
             <ProviderCard
               key={provider.id}
@@ -105,6 +141,7 @@ export default async function CountryIntentPage(props: PageProps) {
                   ? "Works against local restrictions."
                   : "No known issues."
               }`}
+              countrySlug={country.slug}
             />
           ))}
         </div>
@@ -155,5 +192,6 @@ export default async function CountryIntentPage(props: PageProps) {
         ]}
       />
     </article>
+    </>
   );
 }

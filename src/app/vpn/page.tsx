@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllProviders, getAllIntents, getAllCountries } from "@/lib/data";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Hub — Guides, Reviews & Comparisons",
@@ -42,6 +43,10 @@ export default function VpnHubPage() {
           </p>
         </div>
       </section>
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 -mt-8 relative z-10">
+        <TopVpnPicks heading="Top VPN Picks for 2026" eyebrow="Our editor's choices" />
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
         {/* By use case */}

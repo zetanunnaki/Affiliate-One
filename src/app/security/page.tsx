@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Security Hub — Remote Work Security Guides",
@@ -94,6 +95,11 @@ export default function SecurityHubPage() {
           </p>
         </div>
       </section>
+
+      {/* ═══ TOP PICKS ═══ */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 -mt-8 relative z-10">
+        <TopVpnPicks heading="Our Top VPN Picks" eyebrow="Start with the essentials" />
+      </div>
 
       {/* ═══ TOPIC CARDS ═══ */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

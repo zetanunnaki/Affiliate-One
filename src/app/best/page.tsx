@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Best Of 2026 — Top Security Tools Compared",
@@ -70,6 +71,11 @@ export default function BestOfPage() {
           </p>
         </div>
       </section>
+
+      {/* ═══ TOP PICKS (above fold) ═══ */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 -mt-8 relative z-10">
+        <TopVpnPicks heading="Our Top 3 VPN Picks" eyebrow="Editor's choice" />
+      </div>
 
       {/* ═══ CARD GRID ═══ */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Byline from "@/components/ui/Byline";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Best Free VPNs (2026) — Are They Safe? Honest Analysis",
@@ -18,18 +20,33 @@ export default function FreeVpnPage() {
   ];
 
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <header className="mb-8">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
-          Free VPNs: Are They Safe? (2026 Analysis)
-        </h1>
-        <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">
-          Free VPNs are tempting but often dangerous. We analyzed the revenue
-          models, privacy policies, and security of popular free VPNs to find
-          the few that are actually trustworthy.
-        </p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
-      </header>
+    <>
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.15),transparent_60%)]" />
+        <div className="absolute inset-0 opacity-[0.035]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")" }} />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
+          <div className="[&_nav]:text-slate-400 [&_a]:text-slate-400 [&_a:hover]:text-white [&_span]:text-slate-500">
+            <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "VPN", href: "/vpn" }, { label: "Free VPNs" }]} />
+          </div>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 mt-5 mb-5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold tracking-wider uppercase">
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            Honest analysis
+          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-white leading-[1.1] mb-5">Free VPNs: Are They Safe? (2026)</h1>
+          <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mb-6">
+            Free VPNs are tempting but often dangerous. We analyzed revenue models, privacy policies, and security to find the few that are actually trustworthy.
+          </p>
+          <div className="pt-5 border-t border-white/10 [&_a]:text-blue-300 [&_a:hover]:text-blue-200 [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
+            <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+          </div>
+        </div>
+      </div>
+
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <TopVpnPicks heading="Safer Than Any Free VPN" eyebrow="Paid options from $1.11/mo" />
 
       {/* The problem */}
       <section className="mb-10">
@@ -136,6 +153,7 @@ export default function FreeVpnPage() {
         { label: "Proton VPN Review", href: "/vpn/providers/protonvpn", description: "Detailed review" },
         { label: "VPN Myths Debunked", href: "/guides/vpn-myths-debunked", description: "Common misconceptions" },
       ]} />
-    </article>
+      </article>
+    </>
   );
 }

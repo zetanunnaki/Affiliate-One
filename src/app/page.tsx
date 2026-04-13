@@ -129,6 +129,9 @@ export default function Home() {
                   alt="Remote worker using VPN at a cafe"
                   className="w-full h-auto aspect-[16/10] object-cover"
                   loading="eager"
+                  fetchPriority="high"
+                  width={1280}
+                  height={800}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
 
@@ -145,7 +148,7 @@ export default function Home() {
                       4.8 / 5
                     </div>
                   </div>
-                  <h3 className="text-white font-bold text-lg mb-0.5">NordVPN</h3>
+                  <div className="text-white font-bold text-lg mb-0.5">NordVPN</div>
                   <p className="text-xs sm:text-sm text-slate-200/90">
                     Fastest servers, audited no-logs, 10 devices
                   </p>

@@ -92,20 +92,20 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-slate-800/60">
-            <p className="text-xs text-slate-500">
+            <p className="text-xs text-slate-400">
               &copy; {new Date().getFullYear()} BuySecureVPN. All rights reserved.
               Some links are affiliate links.
             </p>
-            <div className="flex items-center gap-4 text-xs text-slate-500">
-              <Link href="/affiliate-disclosure" className="hover:text-slate-300 transition-colors">
+            <div className="flex items-center gap-4 text-xs text-slate-400">
+              <Link href="/affiliate-disclosure" className="hover:text-white transition-colors">
                 Affiliate Disclosure
               </Link>
-              <span className="text-slate-700">&middot;</span>
-              <Link href="/privacy" className="hover:text-slate-300 transition-colors">
+              <span className="text-slate-600">&middot;</span>
+              <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy
               </Link>
-              <span className="text-slate-700">&middot;</span>
-              <Link href="/sitemap-html" className="hover:text-slate-300 transition-colors">
+              <span className="text-slate-600">&middot;</span>
+              <Link href="/sitemap-html" className="hover:text-white transition-colors">
                 Sitemap
               </Link>
             </div>

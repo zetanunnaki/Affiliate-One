@@ -120,8 +120,8 @@ export default function NoLogsPage() {
       <InternalLinks links={[
         { label: "Best VPN for Privacy", href: "/money/best-vpn-privacy", description: "Privacy-focused VPN rankings" },
         { label: "VPN Protocols", href: "/vpn/protocols", description: "How VPN encryption works" },
-        { label: "Proton VPN Review", href: "/vpn/providers/mullvad", description: "The most private VPN" },
         { label: "Proton VPN Review", href: "/vpn/providers/protonvpn", description: "Open-source, Swiss privacy" },
+        { label: "NordVPN Review", href: "/vpn/providers/nordvpn", description: "Audited no-logs since 2018" },
       ]} />
     </article>
   );

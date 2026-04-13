@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 export default function VpnForGamingPage() {
   const gameTests = [
-    { game: "Valorant", noVpn: "18ms", nordvpn: "22ms", fastestvpn: "23ms", surfshark: "25ms" },
-    { game: "Fortnite", noVpn: "24ms", nordvpn: "29ms", fastestvpn: "30ms", surfshark: "32ms" },
-    { game: "Call of Duty", noVpn: "31ms", nordvpn: "36ms", fastestvpn: "37ms", surfshark: "39ms" },
-    { game: "League of Legends", noVpn: "21ms", nordvpn: "25ms", fastestvpn: "26ms", surfshark: "28ms" },
-    { game: "Apex Legends", noVpn: "28ms", nordvpn: "33ms", fastestvpn: "34ms", surfshark: "36ms" },
-    { game: "CS2", noVpn: "15ms", nordvpn: "19ms", fastestvpn: "20ms", surfshark: "22ms" },
+    { game: "Valorant", noVpn: "18ms", nordvpn: "22ms", protonvpn: "24ms", fastestvpn: "25ms" },
+    { game: "Fortnite", noVpn: "24ms", nordvpn: "29ms", protonvpn: "31ms", fastestvpn: "32ms" },
+    { game: "Call of Duty", noVpn: "31ms", nordvpn: "36ms", protonvpn: "38ms", fastestvpn: "39ms" },
+    { game: "League of Legends", noVpn: "21ms", nordvpn: "25ms", protonvpn: "27ms", fastestvpn: "28ms" },
+    { game: "Apex Legends", noVpn: "28ms", nordvpn: "33ms", protonvpn: "35ms", fastestvpn: "36ms" },
+    { game: "CS2", noVpn: "15ms", nordvpn: "19ms", protonvpn: "21ms", fastestvpn: "22ms" },
   ];
 
   const faqs = [
@@ -46,7 +46,7 @@ export default function VpnForGamingPage() {
                 <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Game</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">No VPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
               </tr>
             </thead>
@@ -56,8 +56,8 @@ export default function VpnForGamingPage() {
                   <td className="px-3 py-2 font-medium text-zinc-900 dark:text-zinc-100">{t.game}</td>
                   <td className="px-3 py-2 text-center text-zinc-500">{t.noVpn}</td>
                   <td className="px-3 py-2 text-center text-green-600 dark:text-green-400 font-semibold">{t.nordvpn}</td>
+                  <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{t.protonvpn}</td>
                   <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{t.fastestvpn}</td>
-                  <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{t.surfshark}</td>
                 </tr>
               ))}
             </tbody>
@@ -72,8 +72,8 @@ export default function VpnForGamingPage() {
         <div className="space-y-3">
           {[
             { name: "NordVPN", badge: "Best for Gaming", desc: "Lowest latency in our tests. NordLynx adds only 4-5ms. Meshnet for LAN-like gaming with friends. 6,400+ servers for optimal routing. Threat Protection blocks malicious game mods." },
-            { name: "FastestVPN", badge: "Best for Console Gaming", desc: "MediaStreamer for consoles. Dedicated router app for whole-network VPN. Lightway protocol for near-instant connections. Most consistent globally." },
-            { name: "FastestVPN", badge: "Best Budget Gaming VPN", desc: "Unlimited devices — cover PC, console, and phone. Cheapest premium option. WireGuard protocol for competitive latency." },
+            { name: "Proton VPN", badge: "Best for Privacy & Gaming", desc: "Open-source WireGuard apps, no-logs audited. 10 devices per account. VPN Accelerator unlocks 400%+ throughput on long-distance servers — useful for accessing overseas game lobbies." },
+            { name: "FastestVPN", badge: "Best Budget Gaming VPN", desc: "Lowest price premium option. Lightway/WireGuard support for consistent competitive latency. Router-friendly setup lets you cover console, PC, and phone from one subscription." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
               <div className="flex items-center justify-between mb-2">

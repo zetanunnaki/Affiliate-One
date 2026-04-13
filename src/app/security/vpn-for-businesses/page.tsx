@@ -15,12 +15,12 @@ export default function VpnForBusinessesPage() {
   const providers = getAllProviders();
 
   const businessFeatures = [
-    { feature: "Centralized management", nordvpn: "Yes (Teams/Business)", surfshark: "Limited", protonvpn: "Yes (Business)", mullvad: "No" },
-    { feature: "Dedicated IP", nordvpn: "$3.69/mo extra", surfshark: "$3.75/mo extra", protonvpn: "Included (Business)", mullvad: "No" },
-    { feature: "Team accounts", nordvpn: "Yes", surfshark: "Limited", protonvpn: "Yes", mullvad: "No" },
-    { feature: "IP whitelisting", nordvpn: "Via dedicated IP", surfshark: "Via dedicated IP", protonvpn: "Via dedicated IP", mullvad: "No" },
-    { feature: "SSO integration", nordvpn: "Enterprise only", surfshark: "No", protonvpn: "Business plan", mullvad: "No" },
-    { feature: "Meshnet / site-to-site", nordvpn: "Yes (Meshnet)", surfshark: "No", protonvpn: "No", mullvad: "Via WireGuard" },
+    { feature: "Centralized management", nordvpn: "Yes (Teams/Business)", protonvpn: "Yes (Business)", fastestvpn: "Limited" },
+    { feature: "Dedicated IP", nordvpn: "$3.69/mo extra", protonvpn: "Included (Business)", fastestvpn: "$1.66/mo extra" },
+    { feature: "Team accounts", nordvpn: "Yes", protonvpn: "Yes", fastestvpn: "No" },
+    { feature: "IP whitelisting", nordvpn: "Via dedicated IP", protonvpn: "Via dedicated IP", fastestvpn: "Via dedicated IP" },
+    { feature: "SSO integration", nordvpn: "Enterprise only", protonvpn: "Business plan", fastestvpn: "No" },
+    { feature: "Meshnet / site-to-site", nordvpn: "Yes (Meshnet)", protonvpn: "No", fastestvpn: "No" },
   ];
 
   const faqs = [
@@ -74,8 +74,8 @@ export default function VpnForBusinessesPage() {
               <tr>
                 <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Feature</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
@@ -83,8 +83,8 @@ export default function VpnForBusinessesPage() {
                 <tr key={row.feature}>
                   <td className="px-3 py-2 font-medium text-zinc-900 dark:text-zinc-100">{row.feature}</td>
                   <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{row.nordvpn}</td>
-                  <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{row.surfshark}</td>
                   <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{row.protonvpn}</td>
+                  <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{row.fastestvpn}</td>
                 </tr>
               ))}
             </tbody>

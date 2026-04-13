@@ -13,16 +13,16 @@ export const metadata: Metadata = {
 
 export default function StreamingGuidePage() {
   const services = [
-    { name: "Netflix US", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
-    { name: "Netflix UK", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
-    { name: "Netflix Japan", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: false, mullvad: false },
-    { name: "Disney+", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: false, mullvad: false },
-    { name: "BBC iPlayer", nordvpn: true, fastestvpn: true, surfshark: "Partial", protonvpn: false, mullvad: false },
-    { name: "Hulu", nordvpn: true, fastestvpn: true, surfshark: "Partial", protonvpn: false, mullvad: false },
-    { name: "Amazon Prime", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: "Partial", mullvad: false },
-    { name: "HBO Max", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: false, mullvad: false },
-    { name: "DAZN", nordvpn: true, fastestvpn: "Partial", surfshark: "Partial", protonvpn: false, mullvad: false },
-    { name: "Peacock", nordvpn: true, fastestvpn: true, surfshark: true, protonvpn: false, mullvad: false },
+    { name: "Netflix US", nordvpn: true, protonvpn: "Partial", fastestvpn: true },
+    { name: "Netflix UK", nordvpn: true, protonvpn: "Partial", fastestvpn: true },
+    { name: "Netflix Japan", nordvpn: true, protonvpn: false, fastestvpn: true },
+    { name: "Disney+", nordvpn: true, protonvpn: false, fastestvpn: true },
+    { name: "BBC iPlayer", nordvpn: true, protonvpn: false, fastestvpn: "Partial" },
+    { name: "Hulu", nordvpn: true, protonvpn: false, fastestvpn: "Partial" },
+    { name: "Amazon Prime", nordvpn: true, protonvpn: "Partial", fastestvpn: true },
+    { name: "HBO Max", nordvpn: true, protonvpn: false, fastestvpn: true },
+    { name: "DAZN", nordvpn: true, protonvpn: false, fastestvpn: "Partial" },
+    { name: "Peacock", nordvpn: true, protonvpn: false, fastestvpn: true },
   ];
 
   function StatusCell({ val }: { val: boolean | string }) {
@@ -55,10 +55,8 @@ export default function StreamingGuidePage() {
               <tr>
                 <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Service</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
-                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
@@ -66,10 +64,8 @@ export default function StreamingGuidePage() {
                 <tr key={s.name}>
                   <td className="px-3 py-2 font-medium text-zinc-900 dark:text-zinc-100">{s.name}</td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.nordvpn} /></td>
-                  <td className="px-3 py-2 text-center"><StatusCell val={s.fastestvpn} /></td>
-                  <td className="px-3 py-2 text-center"><StatusCell val={s.surfshark} /></td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.protonvpn} /></td>
-                  <td className="px-3 py-2 text-center"><StatusCell val={s.mullvad} /></td>
+                  <td className="px-3 py-2 text-center"><StatusCell val={s.fastestvpn} /></td>
                 </tr>
               ))}
             </tbody>
@@ -90,17 +86,17 @@ export default function StreamingGuidePage() {
           </div>
           <div className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">2. FastestVPN — Most Reliable</h3>
+              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">2. FastestVPN — Best Budget</h3>
               <span className="text-sm font-semibold text-green-700 dark:text-green-400">9/10 services</span>
             </div>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">Consistently works with major platforms. MediaStreamer for smart TVs and consoles. Lightway protocol for smooth playback.</p>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">Works with most major platforms at the lowest price. Unlimited devices cover every screen in your household. BBC iPlayer inconsistent.</p>
           </div>
           <div className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">3. FastestVPN — Best Budget</h3>
-              <span className="text-sm font-semibold text-yellow-600 dark:text-yellow-400">8/10 services</span>
+              <h3 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">3. Proton VPN — Best for Privacy</h3>
+              <span className="text-sm font-semibold text-yellow-600 dark:text-yellow-400">4/10 services</span>
             </div>
-            <p className="text-sm text-zinc-600 dark:text-zinc-400">Works with most services at the lowest price. Unlimited devices = every screen in your household. BBC iPlayer inconsistent.</p>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">Plus plan unblocks major Netflix libraries and Amazon Prime. Open-source apps and Swiss jurisdiction prioritize privacy over streaming reach.</p>
           </div>
         </div>
       </section>

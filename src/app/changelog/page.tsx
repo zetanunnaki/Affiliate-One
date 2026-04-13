@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const entries = [
-  { date: "2026-04-07", title: "Site Launch", items: ["Published 101 country VPN pages with unique editorial content", "Launched 14 in-depth guides across VPN, security, and travel categories", "Added 5 provider MDX reviews (NordVPN, Surfshark, ExpressVPN, Proton VPN, Mullvad)", "Created 5 head-to-head VPN comparison pages", "Published Wi-Fi Risk Self-Audit tool and printable security checklist", "Launched glossary with 26 security terms"] },
+  { date: "2026-04-07", title: "Site Launch", items: ["Published 101 country VPN pages with unique editorial content", "Launched 14 in-depth guides across VPN, security, and travel categories", "Added 3 provider MDX reviews (NordVPN, Proton VPN, FastestVPN)", "Created 5 head-to-head VPN comparison pages", "Published Wi-Fi Risk Self-Audit tool and printable security checklist", "Launched glossary with 26 security terms"] },
   { date: "2026-04-07", title: "Country Intent Pages", items: ["Added 100 country + intent variant pages for top 20 countries", "Each page provides intent-specific recommendations (remote work, travel, privacy, streaming, teams)"] },
   { date: "2026-04-07", title: "E-E-A-T Pages", items: ["Published Editorial Policy, Corrections Policy, Affiliate Disclosure", "Created Review Board page with editorial process details", "Added author pages with credentials and professional links"] },
   { date: "2026-04-07", title: "Technical Infrastructure", items: ["Build-time guardrails prevent thin content from being published", "Dynamic OG images for all country pages", "RSS feed for guide articles", "JSON-LD structured data: Article, FAQ, Product, BreadcrumbList, WebSite, Organization"] },

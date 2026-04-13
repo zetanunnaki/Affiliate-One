@@ -15,9 +15,9 @@ export default function ComparePage() {
   const provB = b ? providers.find((p) => p.id === b) : null;
 
   const existingComparisons = [
-    { slug: "nordvpn-vs-surfshark", ids: ["nordvpn", "surfshark"] },
     { slug: "nordvpn-vs-protonvpn", ids: ["nordvpn", "protonvpn"] },
-    { slug: "protonvpn-vs-mullvad", ids: ["protonvpn", "mullvad"] },
+    { slug: "nordvpn-vs-fastestvpn", ids: ["nordvpn", "fastestvpn"] },
+    { slug: "protonvpn-vs-fastestvpn", ids: ["protonvpn", "fastestvpn"] },
   ];
 
   function findComparisonSlug(): string | null {

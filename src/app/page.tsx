@@ -26,173 +26,173 @@ export default function Home() {
 
   return (
     <div>
-      {/* ═══════════════ HERO ═══════════════ */}
-      <section className="relative overflow-hidden">
-        {/* Layered background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-blue-950/90 to-slate-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_600px_400px_at_15%_20%,rgba(59,130,246,0.25),transparent_65%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_800px_500px_at_85%_80%,rgba(99,102,241,0.18),transparent_65%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_400px_300px_at_50%_50%,rgba(14,165,233,0.08),transparent_70%)]" />
-        {/* Grid pattern */}
+      {/* ═══════════════ EDITORIAL HERO ═══════════════ */}
+      <section className="relative overflow-hidden bg-slate-950 text-white">
+        {/* Layered background: deep navy + warm amber accent */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_1100px_700px_at_75%_30%,rgba(245,158,11,0.12),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_600px_at_10%_80%,rgba(37,99,235,0.18),transparent_65%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(2,6,23,0.6)_100%)]" />
+        {/* Grain */}
         <div
-          className="absolute inset-0 opacity-[0.035]"
+          className="absolute inset-0 opacity-[0.055] mix-blend-overlay pointer-events-none"
           style={{
             backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
           }}
         />
-        {/* Animated glow orbs */}
-        <div className="absolute -top-32 -left-32 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
+        {/* Faint grid */}
         <div
-          className="absolute -bottom-32 -right-32 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"
-          style={{ animationDelay: "1.5s" }}
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80 0H0v80' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+          }}
         />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 sm:pt-24 sm:pb-32">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* ── Left: headline + CTA ── */}
-            <div>
-              {/* Trust pill */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/[0.06] backdrop-blur-sm border border-white/10 rounded-full text-[13px] text-blue-200 mb-7">
-                <span className="relative flex w-2 h-2">
-                  <span className="absolute inline-flex w-full h-full bg-green-400 rounded-full opacity-75 animate-ping" />
-                  <span className="relative inline-flex w-2 h-2 bg-green-400 rounded-full" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pt-20 sm:pb-28">
+          {/* Masthead-style top strip */}
+          <div className="flex items-center justify-between gap-4 pb-8 mb-10 border-b border-white/10">
+            <div className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">
+              <span className="inline-flex items-center gap-2">
+                <span className="relative flex w-1.5 h-1.5">
+                  <span className="absolute inline-flex w-full h-full bg-emerald-400 rounded-full opacity-75 animate-ping" />
+                  <span className="relative inline-flex w-1.5 h-1.5 bg-emerald-400 rounded-full" />
                 </span>
-                Independently tested &middot; Updated weekly
+                Live · April 2026
+              </span>
+              <span className="text-slate-700">|</span>
+              <span className="hidden sm:inline">Issue 04 · Remote Security Quarterly</span>
+            </div>
+            <div className="hidden md:flex items-center gap-4 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+              <span>Independently audited</span>
+              <span className="text-slate-700">·</span>
+              <span>50k+ readers / mo</span>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+            {/* ── Left: Oversized editorial headline (8 cols) ── */}
+            <div className="lg:col-span-8">
+              {/* Rubric */}
+              <div className="inline-flex items-center gap-2.5 mb-6">
+                <span className="h-px w-10 bg-amber-400" />
+                <span className="text-[11px] font-black uppercase tracking-[0.22em] text-amber-400">
+                  The 2026 VPN Report
+                </span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-[3.75rem] xl:text-[4.25rem] font-extrabold text-white leading-[1.05] tracking-tight mb-6">
-                Find the Best VPN
-                <br />
-                <span className="bg-gradient-to-r from-blue-300 via-sky-300 to-cyan-200 bg-clip-text text-transparent">
-                  for Your Needs
+              {/* The headline — oversized, tight, mixed weights */}
+              <h1 className="font-black tracking-[-0.03em] leading-[0.92] text-[44px] sm:text-[72px] lg:text-[96px] xl:text-[112px]">
+                <span className="block text-white">The best</span>
+                <span className="block italic font-serif text-amber-300 -mt-1 lg:-mt-3">
+                  VPNs we&apos;ve
                 </span>
+                <span className="block text-white">ever tested.</span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-slate-300 max-w-xl mb-10 leading-relaxed">
-                Expert-tested VPN reviews, security guides, and country-specific
-                recommendations. We help remote workers stay protected —
-                everywhere.
+              {/* Lede */}
+              <p className="mt-8 max-w-2xl text-lg sm:text-xl text-slate-300 leading-[1.55]">
+                We bought every major VPN at retail, tested them across six continents, and put the results through a brutal 47-point rubric. Here are the three that actually earned their rank.
               </p>
 
-              {/* CTA buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10">
+              {/* CTAs */}
+              <div className="mt-10 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/best/vpn"
-                  className="group inline-flex items-center justify-center px-7 py-3.5 text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl transition-all duration-200 shadow-xl shadow-blue-600/30 hover:shadow-blue-500/40 hover:-translate-y-0.5"
+                  className="group relative inline-flex items-center justify-center px-7 py-4 text-sm font-black tracking-wide uppercase text-slate-950 bg-amber-400 rounded-full shadow-[0_20px_40px_-15px_rgba(245,158,11,0.55)] hover:bg-amber-300 hover:-translate-y-0.5 transition-all"
                 >
-                  Best VPN 2026
-                  <svg
-                    className="ml-2 w-4 h-4 group-hover:translate-x-0.5 transition-transform"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  Read the full ranking
+                  <svg className="ml-2 w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Link>
                 <Link
                   href="/countries"
-                  className="inline-flex items-center justify-center px-7 py-3.5 text-base font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/15 rounded-xl transition-all duration-200 backdrop-blur-sm"
+                  className="inline-flex items-center justify-center px-7 py-4 text-sm font-black tracking-wide uppercase text-white bg-white/[0.04] hover:bg-white/10 border border-white/15 rounded-full backdrop-blur-sm transition-all"
                 >
-                  Find Your Country
+                  Browse by country
                 </Link>
               </div>
 
-              {/* Live stats strip */}
-              <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-white/10 max-w-lg">
-                {[
-                  { value: `${countries.length}+`, label: "Countries covered" },
-                  { value: "75", label: "Security guides" },
-                  { value: `${providers.length}`, label: "VPNs tested" },
-                ].map((stat) => (
-                  <div key={stat.label}>
-                    <div className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-br from-white to-blue-200 bg-clip-text text-transparent">
-                      {stat.value}
-                    </div>
-                    <div className="text-[11px] sm:text-xs text-slate-400 uppercase tracking-wider mt-0.5">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
+              {/* Byline + metric strip */}
+              <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
+                <span className="inline-flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-amber-400" />
+                  By the BuySecureVPN editorial team
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-amber-400" />
+                  Updated weekly
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-amber-400" />
+                  CISSP · CEH · CompTIA
+                </span>
               </div>
             </div>
 
-            {/* ── Right: visual showcase ── */}
-            <div className="relative lg:pl-8">
-              {/* Decorative glow */}
-              <div className="absolute -inset-8 bg-gradient-to-br from-blue-500/20 via-indigo-500/10 to-transparent rounded-3xl blur-2xl" />
+            {/* ── Right: editorial visual card (4 cols) ── */}
+            <aside className="lg:col-span-4 lg:pt-2">
+              <div className="relative">
+                {/* Amber accent frame */}
+                <div className="absolute -inset-2 bg-gradient-to-br from-amber-400/30 via-transparent to-blue-500/20 rounded-[28px] blur-2xl" aria-hidden />
 
-              {/* Main hero image card */}
-              <div className="relative group rounded-2xl overflow-hidden ring-1 ring-white/10 shadow-2xl shadow-blue-950/50">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/illustrations/hero-remote-work.webp"
-                  alt="Remote worker using VPN at a cafe"
-                  className="w-full h-auto aspect-[16/10] object-cover"
-                  loading="eager"
-                  fetchPriority="high"
-                  width={1280}
-                  height={800}
-                />
-                <SaveToPinterest
-                  imageSrc="/images/illustrations/hero-remote-work.webp"
-                  pageUrl="https://buysecurevpn.com/"
-                  description="Best VPN 2026 — Expert-tested & independently reviewed"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none" />
+                <div className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 bg-slate-900/60 backdrop-blur-sm">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/illustrations/hero-remote-work.webp"
+                    alt="Editorial: the 2026 VPN report"
+                    className="w-full h-auto aspect-[4/5] object-cover"
+                    loading="eager"
+                    fetchPriority="high"
+                    width={800}
+                    height={1000}
+                  />
+                  <SaveToPinterest
+                    imageSrc="/images/illustrations/hero-remote-work.webp"
+                    pageUrl="https://buysecurevpn.com/"
+                    description="Best VPN 2026 — Expert-tested & independently reviewed"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent pointer-events-none" />
 
-                {/* Overlay: top pick card */}
-                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 p-4 sm:p-5 rounded-xl bg-white/10 backdrop-blur-xl border border-white/20">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-emerald-300 bg-emerald-500/20 border border-emerald-400/30 rounded-full">
-                      Editor&apos;s pick
-                    </span>
-                    <div className="flex items-center gap-1 text-xs text-yellow-300">
-                      <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                      4.8 / 5
+                  {/* Editorial caption */}
+                  <div className="absolute inset-x-0 bottom-0 p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="h-px w-6 bg-amber-400" />
+                      <span className="text-[10px] font-black uppercase tracking-[0.2em] text-amber-300">
+                        Editor&apos;s pick
+                      </span>
+                    </div>
+                    <div className="font-serif italic text-[28px] leading-[1.05] text-white">
+                      NordVPN
+                    </div>
+                    <div className="mt-2 flex items-center gap-2">
+                      <div className="flex items-center gap-0.5">
+                        {Array.from({ length: 5 }).map((_, i) => (
+                          <svg key={i} className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        ))}
+                      </div>
+                      <span className="text-xs font-black text-white">4.8</span>
+                      <span className="text-xs text-slate-400">Fastest servers · Audited no-logs</span>
                     </div>
                   </div>
-                  <div className="text-white font-bold text-lg mb-0.5">NordVPN</div>
-                  <p className="text-xs sm:text-sm text-slate-200/90">
-                    Fastest servers, audited no-logs, 10 devices
-                  </p>
                 </div>
-              </div>
 
-              {/* Floating badge — Bottom-left */}
-              <div className="hidden sm:flex absolute -bottom-4 -left-4 items-center gap-2 px-4 py-2.5 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm rounded-xl shadow-xl ring-1 ring-slate-900/5 dark:ring-white/10">
-                <div className="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/40 flex items-center justify-center shrink-0">
-                  <svg className="w-4 h-4 text-green-600 dark:text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <div className="leading-tight">
-                  <div className="text-[11px] font-semibold text-slate-900 dark:text-white">100% Independent</div>
-                  <div className="text-[10px] text-slate-500">No pay-for-play</div>
+                {/* Floating numbers callout */}
+                <div className="absolute -left-6 -bottom-8 hidden md:flex flex-col items-start gap-1 px-5 py-4 bg-white text-slate-950 rounded-2xl shadow-2xl rotate-[-3deg]">
+                  <div className="text-[10px] font-black uppercase tracking-[0.15em] text-amber-600">Stat of the year</div>
+                  <div className="font-black text-3xl leading-none">47pt</div>
+                  <div className="text-[11px] font-semibold text-slate-600 leading-tight">testing rubric<br/>per provider</div>
                 </div>
               </div>
-
-              {/* Floating badge — Top-right */}
-              <div className="hidden sm:flex absolute -top-4 -right-2 items-center gap-2 px-4 py-2.5 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm rounded-xl shadow-xl ring-1 ring-slate-900/5 dark:ring-white/10">
-                <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center shrink-0">
-                  <svg className="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div className="leading-tight">
-                  <div className="text-[11px] font-semibold text-slate-900 dark:text-white">Expert tested</div>
-                  <div className="text-[10px] text-slate-500">By certified pros</div>
-                </div>
-              </div>
-            </div>
+            </aside>
           </div>
         </div>
 
         {/* Bottom fade */}
-        <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-white dark:from-slate-950 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-white dark:from-slate-950 to-transparent pointer-events-none" />
       </section>
 
       {/* ═══════════════ SOCIAL PROOF STRIP ═══════════════ */}

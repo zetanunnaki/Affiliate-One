@@ -93,5 +93,35 @@
     "originalPrice": "$10/mo",
     "salePrice": "$1.11/mo",
     "discountBadge": "Save 89%"
+  },
+  {
+    "id": "surfshark",
+    "name": "Surfshark",
+    "website": "https://surfshark.com",
+    "affiliate": {
+      "network": "direct",
+      "trackingBaseUrl": "https://get.surfshark.net/aff_c?offer_id=926&aff_id=46126",
+      "disclosureLabel": "Affiliate link"
+    },
+    "features": {
+      "protocols": ["WireGuard", "OpenVPN", "IKEv2"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 0
+    },
+    "positioningTags": ["unlimited-devices", "families", "budget"],
+    "notes": "Netherlands-based, unlimited simultaneous devices, RAM-only servers, CleanWeb ad + malware blocker, audited no-logs policy, 3200+ servers in 100+ countries.",
+    "rating": 4.6,
+    "priceRange": "$1.99–$15.45/mo",
+    "positioning": "families",
+    "positioningLabel": "Best for Unlimited Devices",
+    "brandColor": "#1EBFBF",
+    "brandColorDark": "#0E9898",
+    "tagline": "Unlimited devices, CleanWeb blocker, 100+ countries",
+    "keyFeatures": ["Unlimited simultaneous devices", "CleanWeb ad & malware blocker", "RAM-only server network", "30-day money-back guarantee"],
+    "originalPrice": "$15.45/mo",
+    "salePrice": "$1.99/mo",
+    "discountBadge": "Save 87%"
   }
 ]

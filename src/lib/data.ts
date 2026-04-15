@@ -107,12 +107,13 @@ export function getRecommendedProviders(country: Country): {
 }
 
 /**
- * Get the 3 featured (monetized) providers in canonical order.
+ * Get the monetized providers in canonical ranking order.
  * Used by TopVpnPicks and any widget promoting the earning products.
+ * Order: NordVPN (overall) → Surfshark (unlimited devices) → Proton VPN (privacy) → FastestVPN (budget)
  */
 export function getFeaturedProviders(): Provider[] {
   const all = getAllProviders();
-  const order = ["nordvpn", "protonvpn", "fastestvpn"];
+  const order = ["nordvpn", "surfshark", "protonvpn", "fastestvpn"];
   return order
     .map((id) => all.find((p) => p.id === id))
     .filter((p): p is Provider => p !== undefined);

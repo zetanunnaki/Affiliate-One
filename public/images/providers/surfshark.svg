@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60" role="img" aria-label="Surfshark">
+  <title>Surfshark</title>
+  <desc>Surfshark logo representation for BuySecureVPN review. Brand colors: #1EBFBF.</desc>
+  <defs>
+    <linearGradient id="sharkTeal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2FD4D4"/>
+      <stop offset="100%" stop-color="#0E9898"/>
+    </linearGradient>
+  </defs>
+  <!-- Brand mark: rounded square with stylized shark fin -->
+  <rect x="8" y="12" width="36" height="36" rx="10" fill="url(#sharkTeal)"/>
+  <!-- Shark-fin-inspired mark in white -->
+  <path d="M17 40 Q26 18 36 40 Z" fill="white"/>
+  <circle cx="29" cy="24" r="2" fill="white" opacity="0.9"/>
+  <!-- Wordmark -->
+  <text x="54" y="40" font-family="system-ui,-apple-system,'Segoe UI',sans-serif" font-size="26" font-weight="800" letter-spacing="-0.8">
+    <tspan fill="#0f172a">Surf</tspan><tspan fill="#1EBFBF">shark</tspan>
+  </text>
+</svg>

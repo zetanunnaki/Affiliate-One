@@ -30,7 +30,7 @@ export default function BestVpnTravelPage() {
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <TopVpnPicks heading="Top 3 Travel VPNs" eyebrow="Worldwide tested" />
+        <TopVpnPicks heading="Top Travel VPNs" eyebrow="Worldwide tested" />
 
         <FAQ items={faqs} />
         <InternalLinks links={[

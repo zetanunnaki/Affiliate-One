@@ -52,7 +52,9 @@
       "Bash(curl -s https://buysecurevpn.com/sitemap.xml)",
       "Bash(curl -s https://buysecurevpn.com/)",
       "Bash(curl -s https://buysecurevpn.com/ads.txt)",
-      "Bash(node -e \"console.log\\(Object.keys\\(require\\('./src/data/authors.json'\\)[0]\\)\\);\")"
+      "Bash(node -e \"console.log\\(Object.keys\\(require\\('./src/data/authors.json'\\)[0]\\)\\);\")",
+      "Bash(node -e \"const p=require\\('./src/data/providers.json'\\);console.log\\('count:',p.length\\);console.log\\(JSON.stringify\\(p[0],null,2\\)\\);\")",
+      "Bash(node -e \"const p=require\\('./src/data/providers.json'\\);p.forEach\\(x=>console.log\\(x.id,'|',x.positioningLabel,'|',x.brandColor\\)\\);\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

@@ -63,7 +63,7 @@ export default function VpnFreeTrialPage() {
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <TopVpnPicks heading="Try These 3 VPNs Risk-Free" eyebrow="Money-back guaranteed" />
+        <TopVpnPicks heading="Try These VPNs Risk-Free" eyebrow="Money-back guaranteed" />
 
         {/* Comparison table */}
         <section className="mb-10">

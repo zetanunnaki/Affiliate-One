@@ -30,7 +30,7 @@ export default function BestVpnGamingPage() {
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <TopVpnPicks heading="Top 3 Gaming VPNs" eyebrow="Latency-tested" />
+        <TopVpnPicks heading="Top Gaming VPNs" eyebrow="Latency-tested" />
 
         <FAQ items={faqs} />
         <InternalLinks links={[

@@ -157,7 +157,7 @@ export default function BestVpnPage() {
 
           {/* Lede */}
           <p className="mt-10 max-w-3xl text-lg sm:text-xl text-slate-300 leading-[1.55]">
-            After 47 data points across speed, privacy, streaming reach, and customer support, only three providers survived. Here is the short list — the rest didn&apos;t make it.
+            After 47 data points across speed, privacy, streaming reach, and customer support, four providers made the cut. Here is the short list — the rest didn&apos;t make it.
           </p>
 
           {/* Byline */}
@@ -171,7 +171,7 @@ export default function BestVpnPage() {
 
       {/* Top picks — conversion widget */}
       <TopVpnPicks
-        heading="Our Top 3 VPN Picks for 2026"
+        heading="Our Top VPN Picks for 2026"
         eyebrow="Editor's picks"
       />
 

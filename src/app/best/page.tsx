@@ -83,7 +83,7 @@ export default function BestOfPage() {
 
       {/* ═══ TOP PICKS (above fold) ═══ */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 -mt-8 relative z-10">
-        <TopVpnPicks heading="Our Top 3 VPN Picks" eyebrow="Editor's choice" />
+        <TopVpnPicks heading="Our Top VPN Picks" eyebrow="Editor's choice" />
       </div>
 
       {/* ═══ CARD GRID ═══ */}

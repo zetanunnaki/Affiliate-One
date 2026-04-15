@@ -8,11 +8,11 @@ interface TopVpnPicksProps {
   compact?: boolean;
 }
 
-const RANK_WORDS = ["Best Overall", "Runner-Up", "Best Value"];
+const RANK_WORDS = ["Best Overall", "Runner-Up", "Also Great", "Best Value"];
 
 export default function TopVpnPicks({
   countrySlug,
-  heading = "Our Top 3 VPN Picks",
+  heading = "Our Top VPN Picks",
   eyebrow = "Expert-tested",
   compact = false,
 }: TopVpnPicksProps) {

@@ -225,7 +225,7 @@ export default function Home() {
       {/* ═══════════════ TOP PICKS (above the fold) ═══════════════ */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-4 relative z-10">
         <TopVpnPicks
-          heading="Our Top 3 VPN Picks for 2026"
+          heading="Our Top VPN Picks for 2026"
           eyebrow="Expert-tested & independently reviewed"
         />
       </section>

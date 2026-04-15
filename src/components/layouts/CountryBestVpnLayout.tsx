@@ -196,8 +196,8 @@ export default function CountryBestVpnLayout({
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 
-      {/* Section 2: Quick picks */}
-      <section className="mb-10">
+      {/* Section 2: Quick picks — breaks out to max-w-6xl so 4 cards have room */}
+      <section className="mb-10 relative lg:-mx-24 xl:-mx-40">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
           Our Top 4 Picks for {country.nameEn}
         </h2>

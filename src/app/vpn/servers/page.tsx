@@ -16,12 +16,14 @@ export default function VpnServersPage() {
 
   const serverCounts: Record<string, number> = {
     nordvpn: 6400,
+    surfshark: 3200,
     protonvpn: 4600,
     fastestvpn: 600,
   };
 
   const countryCounts: Record<string, number> = {
     nordvpn: 111,
+    surfshark: 100,
     protonvpn: 91,
     fastestvpn: 52,
   };

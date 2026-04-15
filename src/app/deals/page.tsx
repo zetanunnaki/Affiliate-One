@@ -22,6 +22,7 @@ export default function DealsPage() {
 
   const deals = [
     { providerId: "nordvpn", discount: "Save 74%", plan: "2-year plan", price: "$3.39/mo", wasPrice: "$12.99/mo", extra: "+ 3 months free · 30-day refund", highlight: true },
+    { providerId: "surfshark", discount: "Save 87%", plan: "2-year plan", price: "$1.99/mo", wasPrice: "$15.45/mo", extra: "Unlimited devices · 30-day refund", highlight: false },
     { providerId: "protonvpn", discount: "50% off", plan: "2-year plan", price: "$4.99/mo", wasPrice: "$9.99/mo", extra: "Includes Proton ecosystem · 30-day refund", highlight: false },
     { providerId: "fastestvpn", discount: "Save 89%", plan: "Lifetime deal", price: "$1.11/mo", wasPrice: "$10.00/mo", extra: "31-day refund · 15 devices", highlight: false },
   ];

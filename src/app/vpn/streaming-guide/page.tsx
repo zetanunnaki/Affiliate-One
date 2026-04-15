@@ -13,16 +13,16 @@ export const metadata: Metadata = {
 
 export default function StreamingGuidePage() {
   const services = [
-    { name: "Netflix US", nordvpn: true, protonvpn: "Partial", fastestvpn: true },
-    { name: "Netflix UK", nordvpn: true, protonvpn: "Partial", fastestvpn: true },
-    { name: "Netflix Japan", nordvpn: true, protonvpn: false, fastestvpn: true },
-    { name: "Disney+", nordvpn: true, protonvpn: false, fastestvpn: true },
-    { name: "BBC iPlayer", nordvpn: true, protonvpn: false, fastestvpn: "Partial" },
-    { name: "Hulu", nordvpn: true, protonvpn: false, fastestvpn: "Partial" },
-    { name: "Amazon Prime", nordvpn: true, protonvpn: "Partial", fastestvpn: true },
-    { name: "HBO Max", nordvpn: true, protonvpn: false, fastestvpn: true },
-    { name: "DAZN", nordvpn: true, protonvpn: false, fastestvpn: "Partial" },
-    { name: "Peacock", nordvpn: true, protonvpn: false, fastestvpn: true },
+    { name: "Netflix US", nordvpn: true, surfshark: true, protonvpn: "Partial", fastestvpn: true },
+    { name: "Netflix UK", nordvpn: true, surfshark: true, protonvpn: "Partial", fastestvpn: true },
+    { name: "Netflix Japan", nordvpn: true, surfshark: true, protonvpn: false, fastestvpn: true },
+    { name: "Disney+", nordvpn: true, surfshark: true, protonvpn: false, fastestvpn: true },
+    { name: "BBC iPlayer", nordvpn: true, surfshark: "Partial", protonvpn: false, fastestvpn: "Partial" },
+    { name: "Hulu", nordvpn: true, surfshark: "Partial", protonvpn: false, fastestvpn: "Partial" },
+    { name: "Amazon Prime", nordvpn: true, surfshark: true, protonvpn: "Partial", fastestvpn: true },
+    { name: "HBO Max", nordvpn: true, surfshark: true, protonvpn: false, fastestvpn: true },
+    { name: "DAZN", nordvpn: true, surfshark: "Partial", protonvpn: false, fastestvpn: "Partial" },
+    { name: "Peacock", nordvpn: true, surfshark: true, protonvpn: false, fastestvpn: true },
   ];
 
   function StatusCell({ val }: { val: boolean | string }) {
@@ -55,6 +55,7 @@ export default function StreamingGuidePage() {
               <tr>
                 <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Service</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Surfshark</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
               </tr>
@@ -64,6 +65,7 @@ export default function StreamingGuidePage() {
                 <tr key={s.name}>
                   <td className="px-3 py-2 font-medium text-zinc-900 dark:text-zinc-100">{s.name}</td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.nordvpn} /></td>
+                  <td className="px-3 py-2 text-center"><StatusCell val={s.surfshark} /></td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.protonvpn} /></td>
                   <td className="px-3 py-2 text-center"><StatusCell val={s.fastestvpn} /></td>
                 </tr>

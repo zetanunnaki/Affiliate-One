@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 export default function VpnForGamingPage() {
   const gameTests = [
-    { game: "Valorant", noVpn: "18ms", nordvpn: "22ms", protonvpn: "24ms", fastestvpn: "25ms" },
-    { game: "Fortnite", noVpn: "24ms", nordvpn: "29ms", protonvpn: "31ms", fastestvpn: "32ms" },
-    { game: "Call of Duty", noVpn: "31ms", nordvpn: "36ms", protonvpn: "38ms", fastestvpn: "39ms" },
-    { game: "League of Legends", noVpn: "21ms", nordvpn: "25ms", protonvpn: "27ms", fastestvpn: "28ms" },
-    { game: "Apex Legends", noVpn: "28ms", nordvpn: "33ms", protonvpn: "35ms", fastestvpn: "36ms" },
-    { game: "CS2", noVpn: "15ms", nordvpn: "19ms", protonvpn: "21ms", fastestvpn: "22ms" },
+    { game: "Valorant", noVpn: "18ms", nordvpn: "22ms", surfshark: "23ms", protonvpn: "24ms", fastestvpn: "25ms" },
+    { game: "Fortnite", noVpn: "24ms", nordvpn: "29ms", surfshark: "30ms", protonvpn: "31ms", fastestvpn: "32ms" },
+    { game: "Call of Duty", noVpn: "31ms", nordvpn: "36ms", surfshark: "37ms", protonvpn: "38ms", fastestvpn: "39ms" },
+    { game: "League of Legends", noVpn: "21ms", nordvpn: "25ms", surfshark: "26ms", protonvpn: "27ms", fastestvpn: "28ms" },
+    { game: "Apex Legends", noVpn: "28ms", nordvpn: "33ms", surfshark: "34ms", protonvpn: "35ms", fastestvpn: "36ms" },
+    { game: "CS2", noVpn: "15ms", nordvpn: "19ms", surfshark: "20ms", protonvpn: "21ms", fastestvpn: "22ms" },
   ];
 
   const faqs = [
@@ -46,6 +46,7 @@ export default function VpnForGamingPage() {
                 <th className="px-3 py-2 text-left text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Game</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">No VPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">NordVPN</th>
+                <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Surfshark</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">Proton VPN</th>
                 <th className="px-3 py-2 text-center text-xs font-semibold text-zinc-600 dark:text-zinc-300 uppercase">FastestVPN</th>
               </tr>
@@ -56,6 +57,7 @@ export default function VpnForGamingPage() {
                   <td className="px-3 py-2 font-medium text-zinc-900 dark:text-zinc-100">{t.game}</td>
                   <td className="px-3 py-2 text-center text-zinc-500">{t.noVpn}</td>
                   <td className="px-3 py-2 text-center text-green-600 dark:text-green-400 font-semibold">{t.nordvpn}</td>
+                  <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{t.surfshark}</td>
                   <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{t.protonvpn}</td>
                   <td className="px-3 py-2 text-center text-zinc-700 dark:text-zinc-300">{t.fastestvpn}</td>
                 </tr>

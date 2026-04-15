@@ -1,5 +1,8 @@
 [
   {"id": "nordvpn-vs-protonvpn", "slug": "nordvpn-vs-protonvpn", "providers": ["nordvpn", "protonvpn"], "title": "NordVPN vs Proton VPN (2026): Security vs Privacy"},
   {"id": "nordvpn-vs-fastestvpn", "slug": "nordvpn-vs-fastestvpn", "providers": ["nordvpn", "fastestvpn"], "title": "NordVPN vs FastestVPN (2026): Premium vs Budget"},
-  {"id": "protonvpn-vs-fastestvpn", "slug": "protonvpn-vs-fastestvpn", "providers": ["protonvpn", "fastestvpn"], "title": "Proton VPN vs FastestVPN (2026): Privacy vs Price"}
+  {"id": "protonvpn-vs-fastestvpn", "slug": "protonvpn-vs-fastestvpn", "providers": ["protonvpn", "fastestvpn"], "title": "Proton VPN vs FastestVPN (2026): Privacy vs Price"},
+  {"id": "nordvpn-vs-surfshark", "slug": "nordvpn-vs-surfshark", "providers": ["nordvpn", "surfshark"], "title": "NordVPN vs Surfshark (2026): Speed vs Unlimited Devices"},
+  {"id": "surfshark-vs-protonvpn", "slug": "surfshark-vs-protonvpn", "providers": ["surfshark", "protonvpn"], "title": "Surfshark vs Proton VPN (2026): Devices vs Privacy"},
+  {"id": "surfshark-vs-fastestvpn", "slug": "surfshark-vs-fastestvpn", "providers": ["surfshark", "fastestvpn"], "title": "Surfshark vs FastestVPN (2026): Unlimited Devices vs Lifetime Deal"}
 ]

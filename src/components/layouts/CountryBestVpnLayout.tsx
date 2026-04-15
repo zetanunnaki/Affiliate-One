@@ -201,7 +201,7 @@ export default function CountryBestVpnLayout({
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
           Our Top 4 Picks for {country.nameEn}
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
           <ProviderCard
             provider={providers.overall}
             badge="Best Overall"

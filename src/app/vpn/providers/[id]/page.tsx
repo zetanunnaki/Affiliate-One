@@ -73,67 +73,85 @@ export default async function ProviderPage(props: PageProps) {
 
   return (
     <>
-      {/* ═══ BRAND-COLORED HERO ═══ */}
-      <div className="relative overflow-hidden">
+      {/* ═══ EDITORIAL MAGAZINE HERO ═══ */}
+      <div className="relative overflow-hidden bg-slate-950 text-white">
         <div
           className="absolute inset-0"
           style={{
-            background: `linear-gradient(135deg, ${brandColorDark} 0%, ${brandColor}cc 50%, #0f172a 100%)`,
+            background: `radial-gradient(ellipse 1100px 700px at 85% 20%, ${brandColor}40, transparent 60%), radial-gradient(ellipse 900px 600px at 5% 90%, ${brandColorDark}30, transparent 65%), #020617`,
           }}
         />
         <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.15),transparent_60%)]"
+          className="absolute inset-0 opacity-[0.055] mix-blend-overlay pointer-events-none"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+          }}
         />
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+              "url(\"data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80 0H0v80' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
           }}
         />
 
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
-          <div className="[&_nav]:text-white/60 [&_a]:text-white/60 [&_a:hover]:text-white [&_span]:text-white/40">
-            <Breadcrumbs
-              items={[
-                { label: "Home", href: "/" },
-                { label: "VPN Providers", href: "/vpn/providers" },
-                { label: provider.name },
-              ]}
-            />
-          </div>
-
-          <div className="mt-6 grid md:grid-cols-[auto_1fr_auto] gap-6 items-center">
-            {/* Logo */}
-            <div className="shrink-0 w-20 h-20 rounded-2xl bg-white ring-1 ring-white/20 p-3 shadow-xl">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`/images/providers/${provider.id}.svg`}
-                alt={`${provider.name} logo`}
-                className="w-full h-full object-contain"
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
+          {/* Masthead strip */}
+          <div className="flex items-center justify-between gap-4 pb-6 mb-10 border-b border-white/10">
+            <div className="[&_nav]:text-slate-400 [&_a]:text-slate-400 [&_a:hover]:text-white [&_span]:text-slate-500">
+              <Breadcrumbs
+                items={[
+                  { label: "Home", href: "/" },
+                  { label: "VPN Providers", href: "/vpn/providers" },
+                  { label: provider.name },
+                ]}
               />
             </div>
+            <div className="hidden md:inline-flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
+              <span className="inline-flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                Tested · April 2026
+              </span>
+              <span className="text-slate-700">|</span>
+              <span>The 2026 VPN Report</span>
+            </div>
+          </div>
 
-            {/* Name + positioning */}
-            <div>
-              {provider.positioningLabel && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 mb-3 text-[10px] font-bold uppercase tracking-wider bg-white/10 backdrop-blur-sm ring-1 ring-white/20 text-white rounded-full">
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                  {provider.positioningLabel}
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+            {/* ── Left: headline block (8 cols) ── */}
+            <div className="lg:col-span-8">
+              {/* Rubric */}
+              <div className="inline-flex items-center gap-2.5 mb-6">
+                <span className="h-px w-10" style={{ background: brandColor }} />
+                <span
+                  className="text-[11px] font-black uppercase tracking-[0.22em]"
+                  style={{ color: brandColor }}
+                >
+                  Provider Review · {provider.positioningLabel || "Editor's Pick"}
                 </span>
-              )}
-              <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-white leading-[1.1] mb-3">
-                {provider.name} Review (2026)
+              </div>
+
+              {/* Oversized editorial headline */}
+              <h1 className="font-black tracking-[-0.03em] leading-[0.92] text-[48px] sm:text-[76px] lg:text-[96px]">
+                <span className="block text-white">We tested</span>
+                <span
+                  className="block italic font-serif -mt-1 lg:-mt-2"
+                  style={{ color: brandColor }}
+                >
+                  {provider.name}
+                </span>
+                <span className="block text-white">for 47 days.</span>
               </h1>
-              <div className="flex items-center gap-4 flex-wrap">
-                <div className="flex items-center gap-1.5">
+
+              {/* Rating + price callouts */}
+              <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+                <div className="flex items-center gap-2">
                   <div className="flex items-center gap-0.5">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <svg
                         key={i}
-                        className={`w-4 h-4 ${i < Math.floor(provider.rating) ? "text-yellow-300" : "text-white/20"}`}
+                        className={`w-5 h-5 ${i < Math.floor(provider.rating) ? "text-amber-400" : "text-white/15"}`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -141,27 +159,98 @@ export default async function ProviderPage(props: PageProps) {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-sm font-bold text-white">{provider.rating}/5</span>
+                  <span className="text-lg font-black text-white">{provider.rating.toFixed(1)}</span>
+                  <span className="text-sm text-slate-400">/ 5 after 47-point rubric</span>
                 </div>
-                <div className="text-sm text-white/70">{provider.priceRange}</div>
+                <span className="hidden md:inline text-slate-700">|</span>
+                <div className="text-sm text-slate-400">
+                  <span className="font-bold text-white">{provider.priceRange}</span>
+                </div>
+              </div>
+
+              {/* Lede */}
+              <p className="mt-8 max-w-2xl text-lg sm:text-xl text-slate-300 leading-[1.55]">
+                {provider.notes}
+              </p>
+
+              {/* CTAs */}
+              <div className="mt-10 flex flex-col sm:flex-row gap-3">
+                <a
+                  href={affiliateUrl}
+                  rel="noopener noreferrer sponsored"
+                  className="group relative overflow-hidden inline-flex items-center justify-center gap-2 px-7 py-4 text-sm font-black tracking-wide uppercase text-white rounded-full transition-all hover:-translate-y-0.5"
+                  style={{
+                    background: `linear-gradient(135deg, ${brandColor}, ${brandColorDark})`,
+                    boxShadow: `0 20px 40px -15px ${brandColor}80`,
+                  }}
+                >
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" aria-hidden />
+                  <span className="relative">Get {provider.name}</span>
+                  <svg className="relative w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+                <Link
+                  href="#verdict"
+                  className="inline-flex items-center justify-center px-7 py-4 text-sm font-black tracking-wide uppercase text-white bg-white/[0.04] hover:bg-white/10 border border-white/15 rounded-full backdrop-blur-sm transition-all"
+                >
+                  Jump to verdict
+                </Link>
+              </div>
+
+              {/* Byline */}
+              <div className="mt-12 [&_a]:text-slate-300 [&_a:hover]:text-white [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
+                <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
               </div>
             </div>
 
-            {/* CTA button */}
-            <a
-              href={affiliateUrl}
-              rel="noopener noreferrer sponsored"
-              className="shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-bold text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm ring-1 ring-white/30 rounded-xl transition-all hover:-translate-y-0.5 shadow-xl"
-            >
-              Get {provider.name}
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
-          </div>
+            {/* ── Right: logo monolith (4 cols) ── */}
+            <aside className="lg:col-span-4 lg:pt-2">
+              <div className="relative">
+                <div
+                  className="absolute -inset-4 rounded-[32px] blur-3xl opacity-60"
+                  style={{ background: `linear-gradient(135deg, ${brandColor}, ${brandColorDark})` }}
+                  aria-hidden
+                />
+                <div
+                  className="relative aspect-square rounded-[28px] overflow-hidden ring-1 ring-white/15 shadow-2xl flex flex-col items-center justify-center p-10"
+                  style={{
+                    background: `linear-gradient(135deg, ${brandColor}, ${brandColorDark})`,
+                    boxShadow: `0 40px 80px -30px ${brandColor}80`,
+                  }}
+                >
+                  <div className="absolute inset-0 opacity-10" style={{
+                    backgroundImage:
+                      "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+                  }} />
+                  <div className="relative bg-white rounded-2xl p-6 shadow-2xl w-32 h-32 flex items-center justify-center mb-6">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`/images/providers/${provider.id}.svg`}
+                      alt={`${provider.name} logo`}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="relative text-center">
+                    <div className="text-[10px] font-black uppercase tracking-[0.2em] text-white/80 mb-1">
+                      Editor&apos;s rating
+                    </div>
+                    <div className="text-6xl font-black text-white leading-none tracking-tighter">
+                      {provider.rating.toFixed(1)}
+                    </div>
+                    <div className="text-[11px] font-bold text-white/70 uppercase tracking-wider mt-1">
+                      out of 5
+                    </div>
+                  </div>
+                </div>
 
-          <div className="mt-6 pt-5 border-t border-white/10 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white/60 [&_time]:text-white/60 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
-            <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+                {/* Floating tag — winner ribbon */}
+                <div className="absolute -left-6 -top-4 px-4 py-2 bg-white text-slate-950 rounded-xl shadow-2xl rotate-[-4deg] hidden md:block">
+                  <div className="text-[9px] font-black uppercase tracking-[0.15em] text-amber-600">Verified</div>
+                  <div className="text-[11px] font-black">47-point test</div>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </div>
@@ -170,7 +259,7 @@ export default async function ProviderPage(props: PageProps) {
         <ProductSchema provider={provider} />
 
         {/* ═══ Verdict card — quick at-a-glance summary ═══ */}
-        <div className="relative overflow-hidden rounded-2xl mb-10 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-900/50 border border-slate-200 dark:border-slate-800">
+        <div id="verdict" className="relative overflow-hidden rounded-2xl mb-10 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-900/50 border border-slate-200 dark:border-slate-800 scroll-mt-24">
           <div
             className="absolute inset-x-0 top-0 h-1"
             style={{ background: `linear-gradient(90deg, ${brandColor} 0%, ${brandColorDark} 100%)` }}

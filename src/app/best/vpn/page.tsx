@@ -105,39 +105,63 @@ export default function BestVpnPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
-      {/* ═══ DARK HERO ═══ */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.15),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(99,102,241,0.1),transparent_60%)]" />
+      {/* ═══ EDITORIAL HERO ═══ */}
+      <div className="relative overflow-hidden bg-slate-950 text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_1100px_700px_at_80%_25%,rgba(245,158,11,0.13),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_600px_at_5%_85%,rgba(37,99,235,0.22),transparent_65%)]" />
         <div
-          className="absolute inset-0 opacity-[0.035]"
+          className="absolute inset-0 opacity-[0.055] mix-blend-overlay pointer-events-none"
           style={{
             backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
           }}
         />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">
-          <div className="[&_nav]:text-slate-400 [&_a]:text-slate-400 [&_a:hover]:text-white [&_span]:text-slate-500">
-            <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Best VPN 2026" }]} />
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80 0H0v80' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
+          }}
+        />
+
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20">
+          {/* Masthead */}
+          <div className="flex items-center justify-between gap-4 pb-6 mb-12 border-b border-white/10">
+            <div className="[&_nav]:text-slate-400 [&_a]:text-slate-400 [&_a:hover]:text-white [&_span]:text-slate-500">
+              <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Best VPN 2026" }]} />
+            </div>
+            <div className="hidden md:inline-flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
+              <span className="inline-flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                Updated weekly
+              </span>
+              <span className="text-slate-700">|</span>
+              <span>The 2026 VPN Report</span>
+            </div>
           </div>
 
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 mt-5 mb-5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-semibold tracking-wider uppercase">
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-            Editor&apos;s picks
+          {/* Rubric */}
+          <div className="inline-flex items-center gap-2.5 mb-6">
+            <span className="h-px w-10 bg-amber-400" />
+            <span className="text-[11px] font-black uppercase tracking-[0.22em] text-amber-400">
+              Cover Story · {providers.length} VPNs tested
+            </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-white leading-[1.1] mb-5">
-            Best VPN 2026: Expert-Tested &amp; Independently Reviewed
+          {/* Oversized editorial headline */}
+          <h1 className="font-black tracking-[-0.03em] leading-[0.92] text-[48px] sm:text-[80px] lg:text-[104px] max-w-5xl">
+            <span className="block text-white">The only VPNs</span>
+            <span className="block italic font-serif text-amber-300 -mt-1 lg:-mt-2">that actually</span>
+            <span className="block text-white">earned our stars.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mb-8">
-            We tested {providers.length} VPN services for speed, security, privacy, and value. Here are our top recommendations for remote workers, travelers, and privacy-conscious users.
+          {/* Lede */}
+          <p className="mt-10 max-w-3xl text-lg sm:text-xl text-slate-300 leading-[1.55]">
+            After 47 data points across speed, privacy, streaming reach, and customer support, only three providers survived. Here is the short list — the rest didn&apos;t make it.
           </p>
 
-          <div className="pt-5 border-t border-white/10 [&_a]:text-blue-300 [&_a:hover]:text-blue-200 [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
+          {/* Byline */}
+          <div className="mt-12 [&_a]:text-slate-300 [&_a:hover]:text-white [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
             <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
           </div>
         </div>

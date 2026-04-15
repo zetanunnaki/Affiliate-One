@@ -27,14 +27,15 @@ export default function VpnForWindowsPage() {
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
 
-      {/* Top 3 picks */}
+      {/* Top 4 picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Our Top 3 Windows VPN Picks</h2>
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Our Top 4 Windows VPN Picks</h2>
         <div className="space-y-3">
           {[
             { rank: "1", name: "NordVPN", badge: "Best Overall", price: "$3.39/mo", desc: "Most feature-rich Windows app. NordLynx (WireGuard) for top speeds. System-level kill switch via WFP. Split tunneling per app. Threat Protection blocks malware. Meshnet for virtual LAN. Microsoft Store available." },
-            { rank: "2", name: "FastestVPN", badge: "Best Value", price: "$2.29/mo", desc: "Unlimited devices — cover all your Windows PCs. CleanWeb blocks ads and trackers. Split tunneling. Lightweight app with low resource usage. The cheapest premium VPN." },
-            { rank: "3", name: "FastestVPN", badge: "Best Budget", price: "$0.99/mo", desc: "Clean Windows UI. WireGuard protocol for fast connections. Automatic best-server selection. Exceptional value with lifetime plans." },
+            { rank: "2", name: "Surfshark", badge: "Unlimited Devices", price: "$1.99/mo", desc: "Unlimited simultaneous connections — cover every Windows PC in the house. CleanWeb blocks ads and malware at DNS level. Bypasser split tunneling. RAM-only servers. Microsoft Store available." },
+            { rank: "3", name: "Proton VPN", badge: "Best for Privacy", price: "$4.99/mo", desc: "Open-source Windows client, audited no-logs, Swiss jurisdiction. Secure Core multi-hop routing. Kill switch enforced at the adapter level. Full WireGuard and OpenVPN support." },
+            { rank: "4", name: "FastestVPN", badge: "Best Budget", price: "$1.11/mo", desc: "Clean Windows UI. WireGuard protocol for fast connections. Automatic best-server selection. Exceptional value with lifetime plans available." },
           ].map((p) => (
             <div key={p.name} className="p-5 border border-zinc-200 dark:border-zinc-700 rounded-xl">
               <div className="flex items-start justify-between mb-2">

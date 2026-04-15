@@ -199,7 +199,7 @@ export default function CountryBestVpnLayout({
       {/* Section 2: Quick picks */}
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-          Our Top Picks for {country.nameEn}
+          Our Top 4 Picks for {country.nameEn}
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <ProviderCard

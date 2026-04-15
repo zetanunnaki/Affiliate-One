@@ -24,8 +24,9 @@ interface CountryBestVpnLayoutProps {
   country: Country;
   providers: {
     overall: Provider;
-    budget: Provider;
+    families: Provider;
     privacy: Provider;
+    budget: Provider;
   };
   faqs: FAQItem[];
   allProviders: Provider[];
@@ -198,9 +199,9 @@ export default function CountryBestVpnLayout({
       {/* Section 2: Quick picks */}
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-          Our Top 3 Picks for {country.nameEn}
+          Our Top Picks for {country.nameEn}
         </h2>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <ProviderCard
             provider={providers.overall}
             badge="Best Overall"
@@ -208,15 +209,21 @@ export default function CountryBestVpnLayout({
             countrySlug={country.slug}
           />
           <ProviderCard
-            provider={providers.budget}
-            badge="Best Budget"
-            countryNotes={`Affordable option for ${country.nameEn} with ${providers.budget.features.devices === 0 ? "unlimited" : providers.budget.features.devices} simultaneous connections.`}
+            provider={providers.families}
+            badge="Unlimited Devices"
+            countryNotes={`Best for households and digital nomads in ${country.nameEn}. One subscription covers every device you own.`}
             countrySlug={country.slug}
           />
           <ProviderCard
             provider={providers.privacy}
             badge="Best for Privacy"
             countryNotes={`Swiss-based, open-source, and audited — the privacy-first choice for users in ${country.nameEn}.`}
+            countrySlug={country.slug}
+          />
+          <ProviderCard
+            provider={providers.budget}
+            badge="Best Budget"
+            countryNotes={`Lowest-cost option for ${country.nameEn} with ${providers.budget.features.devices === 0 ? "unlimited" : providers.budget.features.devices} simultaneous connections.`}
             countrySlug={country.slug}
           />
         </div>

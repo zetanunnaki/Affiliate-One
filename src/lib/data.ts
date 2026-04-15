@@ -83,27 +83,33 @@ export function getAuthorById(id: string): Author | undefined {
   return getAllAuthors().find((a) => a.id === id);
 }
 
-// Recommended providers for a country — returns our 3 monetized picks.
-// NordVPN = Best Overall, FastestVPN = Best Budget, Proton VPN = Best Privacy
+// Recommended providers for a country — returns the 4 monetized picks.
+// NordVPN = Best Overall, Surfshark = Unlimited Devices,
+// Proton VPN = Best Privacy, FastestVPN = Best Budget
 export function getRecommendedProviders(country: Country): {
   overall: Provider;
-  budget: Provider;
+  families: Provider;
   privacy: Provider;
+  budget: Provider;
 } {
   const providers = getAllProviders();
   const overall =
     providers.find((p) => p.id === "nordvpn") ||
     providers.find((p) => p.positioningTags.includes("overall")) ||
     providers[0];
-  const budget =
-    providers.find((p) => p.id === "fastestvpn") ||
-    providers.find((p) => p.positioningTags.includes("budget")) ||
+  const families =
+    providers.find((p) => p.id === "surfshark") ||
+    providers.find((p) => p.positioningTags.includes("unlimited-devices")) ||
     providers[1];
   const privacy =
     providers.find((p) => p.id === "protonvpn") ||
     providers.find((p) => p.positioningTags.includes("privacy")) ||
     providers[2];
-  return { overall, budget, privacy };
+  const budget =
+    providers.find((p) => p.id === "fastestvpn") ||
+    providers.find((p) => p.positioningTags.includes("budget")) ||
+    providers[3];
+  return { overall, families, privacy, budget };
 }
 
 /**

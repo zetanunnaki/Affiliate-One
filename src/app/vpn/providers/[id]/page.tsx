@@ -205,7 +205,7 @@ export default async function ProviderPage(props: PageProps) {
             </div>
 
             {/* ── Right: logo monolith (4 cols) ── */}
-            <aside className="lg:col-span-4 lg:pt-2">
+            <aside className="lg:col-span-4 lg:pt-2 max-w-xs mx-auto lg:max-w-none w-full">
               <div className="relative">
                 <div
                   className="absolute -inset-4 rounded-[32px] blur-3xl opacity-60"

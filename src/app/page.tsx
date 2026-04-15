@@ -132,7 +132,7 @@ export default function Home() {
             </div>
 
             {/* ── Right: editorial visual card (4 cols) ── */}
-            <aside className="lg:col-span-4 lg:pt-2">
+            <aside className="lg:col-span-4 lg:pt-2 max-w-sm mx-auto lg:max-w-none w-full">
               <div className="relative">
                 {/* Amber accent frame */}
                 <div className="absolute -inset-2 bg-gradient-to-br from-amber-400/30 via-transparent to-blue-500/20 rounded-[28px] blur-2xl" aria-hidden />

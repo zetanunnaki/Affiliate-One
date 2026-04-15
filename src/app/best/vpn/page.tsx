@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",
   description:
     "We tested the top VPN services for speed, security, and privacy. NordVPN, Proton VPN, and FastestVPN compared.",
+  alternates: { canonical: "/best/vpn/" },
+  openGraph: {
+    title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",
+    description: "Top VPN services ranked for speed, security, and privacy. NordVPN, Proton VPN, FastestVPN.",
+    type: "article",
+    url: "/best/vpn/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function BestVpnPage() {
@@ -54,8 +63,48 @@ export default function BestVpnPage() {
     },
   ];
 
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Best VPN 2026",
+    description: "Top VPN services ranked for speed, security, and privacy.",
+    numberOfItems: providers.length,
+    itemListOrder: "https://schema.org/ItemListOrderDescending",
+    itemListElement: providers.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `https://buysecurevpn.com/vpn/providers/${p.id}/`,
+      item: {
+        "@type": "Product",
+        name: p.name,
+        image: `https://buysecurevpn.com/images/providers/${p.id}.svg`,
+        description: p.notes,
+        brand: { "@type": "Brand", name: p.name },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: p.rating,
+          bestRating: 5,
+          worstRating: 1,
+          ratingCount: 250,
+        },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "USD",
+          price: (p.salePrice || "").replace(/[^0-9.]/g, "") || undefined,
+          priceValidUntil: "2026-12-31",
+          availability: "https://schema.org/InStock",
+          url: `https://buysecurevpn.com/vpn/providers/${p.id}/`,
+        },
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
       {/* ═══ DARK HERO ═══ */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />

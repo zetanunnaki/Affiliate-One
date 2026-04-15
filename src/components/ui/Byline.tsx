@@ -16,8 +16,24 @@ export default function Byline({ authorId, updatedAt }: BylineProps) {
     day: "numeric",
   });
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: author.name,
+    jobTitle: author.role,
+    description: author.bio,
+    image: `https://buysecurevpn.com${author.headshot}`,
+    url: `https://buysecurevpn.com/authors/${author.id}/`,
+    sameAs: author.sameAs || [],
+    knowsAbout: author.credentials || [],
+  };
+
   return (
     <div className="flex items-center gap-3 py-4 border-b border-zinc-200 dark:border-zinc-700 mb-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
       <Link href={`/authors/${author.id}`} className="shrink-0 group/av">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

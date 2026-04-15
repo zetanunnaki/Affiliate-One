@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /_next/
-
-Sitemap: https://buysecurevpn.com/sitemap.xml

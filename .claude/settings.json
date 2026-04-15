@@ -51,7 +51,8 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://buysecurevpn.com/sitemap.xml)",
       "Bash(curl -s https://buysecurevpn.com/sitemap.xml)",
       "Bash(curl -s https://buysecurevpn.com/)",
-      "Bash(curl -s https://buysecurevpn.com/ads.txt)"
+      "Bash(curl -s https://buysecurevpn.com/ads.txt)",
+      "Bash(node -e \"console.log\\(Object.keys\\(require\\('./src/data/authors.json'\\)[0]\\)\\);\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

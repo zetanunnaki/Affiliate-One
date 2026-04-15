@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   title: "Security Hub — Remote Work Security Guides",
   description:
     "Comprehensive security guides for remote workers. Learn about VPNs, public Wi-Fi safety, 2FA, password managers, and more.",
+  alternates: { canonical: "/security/" },
+  openGraph: {
+    title: "Security Hub — Remote Work Security Guides | BuySecureVPN",
+    description: "Expert security guides: VPNs, public Wi-Fi, 2FA, password managers, and more.",
+    type: "website",
+    url: "/security/",
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "BuySecureVPN — Security Hub" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 const topics = [

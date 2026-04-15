@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   title: "VPN Hub — Guides, Reviews & Comparisons",
   description:
     "Everything you need to know about VPNs. Expert guides, provider reviews, country-specific recommendations, and use-case comparisons.",
+  alternates: { canonical: "/vpn/" },
+  openGraph: {
+    title: "VPN Hub — Guides, Reviews & Comparisons | BuySecureVPN",
+    description: "Expert VPN guides, reviews, and country-specific recommendations.",
+    type: "website",
+    url: "/vpn/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "BuySecureVPN — VPN Hub" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnHubPage() {

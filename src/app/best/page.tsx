@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   title: "Best Of 2026 — Top Security Tools Compared",
   description:
     "Expert-tested comparisons of the best VPNs, password managers, and 2FA apps for remote workers in 2026.",
+  alternates: { canonical: "/best/" },
+  openGraph: {
+    title: "Best Of 2026 — Top Security Tools Compared | BuySecureVPN",
+    description: "Independent comparisons of the best VPNs, password managers, and 2FA apps.",
+    type: "website",
+    url: "/best/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best Of 2026 — BuySecureVPN" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 const bestOfPages = [

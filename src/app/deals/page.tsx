@@ -5,7 +5,16 @@ import Byline from "@/components/ui/Byline";
 
 export const metadata: Metadata = {
   title: "VPN Deals & Coupons (April 2026) — Best Current Offers",
-  description: "Current VPN deals and discount codes. Save up to 85% on NordVPN, Proton VPN, FastestVPN, and more.",
+  description: "Current VPN deals and discount codes. Save up to 89% on NordVPN, Proton VPN, and FastestVPN.",
+  alternates: { canonical: "/deals/" },
+  openGraph: {
+    title: "VPN Deals & Coupons (2026) | BuySecureVPN",
+    description: "Verified VPN discounts updated weekly. Save up to 89% on NordVPN, Proton VPN, and FastestVPN.",
+    type: "website",
+    url: "/deals/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Deals & Coupons" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function DealsPage() {

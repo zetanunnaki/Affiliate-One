@@ -64,7 +64,11 @@
       "Bash(grep -c \"<Byline\" src/app/security/*/page.tsx src/app/tools/*/page.tsx)",
       "Bash(grep -v \":0$\")",
       "Bash(node -e ' *)",
-      "Bash(node scripts/inject-picks.mjs)"
+      "Bash(node scripts/inject-picks.mjs)",
+      "Bash(grep -rn \"updatedAt.*2026\" src/app/security/*/page.tsx src/app/vpn/*/page.tsx src/app/best/*/page.tsx src/app/deals/page.tsx src/app/tools/*/page.tsx)",
+      "Bash(node scripts/shuffle-dates.mjs)",
+      "Bash(node scripts/shuffle-mdx-dates.mjs)",
+      "Bash(node scripts/reshuffle-all-dates.mjs)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

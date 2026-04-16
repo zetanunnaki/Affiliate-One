@@ -55,7 +55,7 @@ export default function PublicWifiPage() {
           at a hotel, airport, café, or co-working space, here&apos;s how to
           protect your data on shared networks.
         </p>
-        <Byline authorId="elena-rodriguez" updatedAt="2026-04-07" />
+        <Byline authorId="elena-rodriguez" updatedAt="2026-01-03" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

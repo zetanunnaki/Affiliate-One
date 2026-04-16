@@ -39,7 +39,7 @@ export default function BestVpnPrivacyPage() {
         headlineBottom="your secrets."
         lede="VPNs ranked by privacy metrics — not speed or streaming. Audited no-logs policies, jurisdictions, open-source code, and real-world anonymity compared."
         authorId="sarah-chen"
-        updatedAt="2026-04-08"
+        updatedAt="2026-02-14"
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -56,7 +56,7 @@ export default function DealsPage() {
             with verified deals from providers we&apos;ve tested and reviewed.
           </p>
           <div className="pt-5 border-t border-white/10 [&_a]:text-blue-300 [&_a:hover]:text-blue-200 [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
-            <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+            <Byline authorId="marcus-johnson" updatedAt="2026-01-01" />
           </div>
         </div>
       </section>

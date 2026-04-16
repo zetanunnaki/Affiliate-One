@@ -33,7 +33,7 @@ export default function VpnForGamingPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Best VPN for Gaming (2026)</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">For gamers, latency matters more than download speed. We tested VPNs with real games to measure actual ping impact — not just speed test numbers.</p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-03-12" />
       </header>
 
       {/* Latency tests */}

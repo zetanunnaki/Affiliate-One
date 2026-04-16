@@ -23,7 +23,7 @@ export default function PhysicalSecurityPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Physical Security for Remote Workers</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">All your VPN encryption and 2FA is useless if someone walks off with your laptop at a café. Physical security is the foundation that digital security builds on.</p>
-        <Byline authorId="elena-rodriguez" updatedAt="2026-04-07" />
+        <Byline authorId="elena-rodriguez" updatedAt="2026-03-16" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

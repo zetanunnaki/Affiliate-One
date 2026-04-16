@@ -23,7 +23,7 @@ export default function DedicatedIpPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">VPN Dedicated IP Explained</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">A dedicated VPN IP gives you a fixed, static address that only you use. Here&apos;s when it&apos;s worth the extra cost and when shared IPs are better.</p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-01-03" />
       </header>
 
       <section className="mb-10">

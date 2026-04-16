@@ -59,7 +59,7 @@ export default function VpnFreeTrialPage() {
         headlineBottom="that earns it."
         lede="Every major VPN offers a free trial or 30-day money-back guarantee. Here's every loophole, refund window, and free-tier gotcha — organized so you can test risk-free."
         authorId="marcus-johnson"
-        updatedAt="2026-04-07"
+        updatedAt="2026-02-16"
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

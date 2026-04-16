@@ -32,7 +32,7 @@ export default function SocialEngineeringPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Social Engineering Attacks: Complete Guide</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Social engineering bypasses technical security by exploiting human psychology. It&apos;s the most common attack vector and the hardest to defend against with technology alone.</p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-01-15" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

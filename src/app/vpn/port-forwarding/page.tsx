@@ -22,7 +22,7 @@ export default function PortForwardingPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">VPN Port Forwarding Explained</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Most VPN users never need port forwarding. But for P2P users, gamers hosting servers, and self-hosters, it&apos;s essential. Here&apos;s what it is and which providers support it.</p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-03-22" />
       </header>
 
       <section className="mb-10">

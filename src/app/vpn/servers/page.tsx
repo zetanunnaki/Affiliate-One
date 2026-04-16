@@ -40,7 +40,7 @@ export default function VpnServersPage() {
           Server location matters for speed, privacy, and content access. Here&apos;s
           a breakdown of where each provider has servers and how many.
         </p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-02-28" />
       </header>
 
       {/* Server count comparison */}

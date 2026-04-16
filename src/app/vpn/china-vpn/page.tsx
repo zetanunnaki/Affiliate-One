@@ -31,7 +31,7 @@ export default function ChinaVpnPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Best VPN for China (2026)</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">The Great Firewall blocks Google, WhatsApp, Slack, and thousands of other services. For remote workers visiting China, a working VPN isn&apos;t optional — it&apos;s essential. We tested from inside China to find which VPNs actually work.</p>
-        <Byline authorId="elena-rodriguez" updatedAt="2026-04-07" />
+        <Byline authorId="elena-rodriguez" updatedAt="2026-01-13" />
       </header>
 
       {/* Critical warning */}

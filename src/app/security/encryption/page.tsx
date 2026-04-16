@@ -68,7 +68,7 @@ export default function EncryptionHubPage() {
           Wi-Fi is compromised, or your cloud account is breached — encryption
           ensures your data remains unreadable. Here&apos;s what to encrypt and how.
         </p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-01-19" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

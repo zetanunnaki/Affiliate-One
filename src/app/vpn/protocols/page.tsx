@@ -47,7 +47,7 @@ export default function ProtocolsPage() {
           Your VPN protocol determines your speed, security, and compatibility.
           Here&apos;s everything you need to know to choose the right one.
         </p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-03-22" />
       </header>
 
       {/* Protocol cards */}

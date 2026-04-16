@@ -30,7 +30,7 @@ export default function ObfuscationPage() {
           Obfuscation technology disguises your VPN traffic so it can&apos;t be
           detected or blocked. Essential for travel to restrictive countries.
         </p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-03-26" />
       </header>
 
       {/* How DPI works */}

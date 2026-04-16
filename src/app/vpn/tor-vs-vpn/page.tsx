@@ -28,7 +28,7 @@ export default function TorVsVpnPage() {
           Both Tor and VPNs protect your privacy, but they work very
           differently and serve different purposes. Here&apos;s a clear comparison.
         </p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-03-18" />
       </header>
 
       {/* Comparison table */}

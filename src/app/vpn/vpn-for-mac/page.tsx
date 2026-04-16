@@ -22,7 +22,7 @@ export default function VpnForMacPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Best VPN for Mac (2026)</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Native Apple Silicon apps, macOS Sequoia tested, and FileVault + VPN for complete protection. Here are our top picks for Mac users.</p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-02-02" />
       </header>
 
       {/* Top picks */}

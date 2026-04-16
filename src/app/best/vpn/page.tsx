@@ -163,7 +163,7 @@ export default function BestVpnPage() {
 
           {/* Byline */}
           <div className="mt-12 [&_a]:text-slate-300 [&_a:hover]:text-white [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
-            <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+            <Byline authorId="marcus-johnson" updatedAt="2026-04-05" />
           </div>
         </div>
       </div>

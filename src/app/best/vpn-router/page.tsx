@@ -40,7 +40,7 @@ export default function BestVpnRouterPage() {
         headlineBottom="One router."
         lede="A VPN on your router protects every device on your network with one setup — laptops, phones, smart TVs, gaming consoles, and IoT. Tested firmware, compatible routers, and provider picks."
         authorId="marcus-johnson"
-        updatedAt="2026-04-07"
+        updatedAt="2026-02-24"
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

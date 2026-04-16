@@ -31,7 +31,7 @@ export default function SupplyChainPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Supply Chain Attacks Explained</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Instead of attacking you directly, sophisticated attackers compromise trusted software you already use. Here&apos;s how supply chain attacks work and how to defend against them.</p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-02-16" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

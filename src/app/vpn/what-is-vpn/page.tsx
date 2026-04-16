@@ -32,7 +32,7 @@ export default function WhatIsVpnPage() {
           No jargon. No technical background needed. Here&apos;s what a VPN
           actually does, how it works, and whether you need one.
         </p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-01-13" />
       </header>
 
       {/* Simple explanation */}

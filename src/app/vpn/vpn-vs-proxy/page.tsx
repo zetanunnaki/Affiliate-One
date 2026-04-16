@@ -23,7 +23,7 @@ export default function VpnVsProxyPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">VPN vs Proxy: What&apos;s the Difference?</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">VPNs and proxies both mask your IP address, but the similarities end there. Here&apos;s why remote workers should always choose a VPN.</p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-03-20" />
       </header>
 
       <section className="mb-10">

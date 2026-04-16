@@ -38,7 +38,7 @@ export default function AIThreatsPage() {
           harder to detect. Here&apos;s what remote workers need to know about
           the evolving threat landscape and how to stay protected.
         </p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-01-17" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

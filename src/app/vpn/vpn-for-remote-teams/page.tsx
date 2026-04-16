@@ -23,7 +23,7 @@ export default function VpnForRemoteTeamsPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">VPN for Remote Teams</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Every remote team member should use a VPN. Here&apos;s how to deploy VPN protection across your team — from 2-person startups to 50-person companies.</p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-02-26" />
       </header>
 
       {/* Team size recommendations */}

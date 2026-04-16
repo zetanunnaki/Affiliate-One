@@ -37,7 +37,7 @@ export default function DoubleVpnPage() {
           through two servers. Here&apos;s when it&apos;s worth the speed trade-off
           and when single-hop is better.
         </p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-01-13" />
       </header>
 
       {/* How it works */}

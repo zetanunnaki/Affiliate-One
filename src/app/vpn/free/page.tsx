@@ -40,7 +40,7 @@ export default function FreeVpnPage() {
             Free VPNs are tempting but often dangerous. We analyzed revenue models, privacy policies, and security to find the few that are actually trustworthy.
           </p>
           <div className="pt-5 border-t border-white/10 [&_a]:text-blue-300 [&_a:hover]:text-blue-200 [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
-            <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+            <Byline authorId="sarah-chen" updatedAt="2026-03-08" />
           </div>
         </div>
       </div>

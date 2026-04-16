@@ -23,7 +23,7 @@ export default function ZeroDayPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Zero-Day Vulnerabilities Explained</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Zero-day exploits are the cybersecurity equivalent of an invisible enemy. You can&apos;t patch what you don&apos;t know is broken. Here&apos;s what they are, why they matter, and how to minimize your risk.</p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-03-12" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

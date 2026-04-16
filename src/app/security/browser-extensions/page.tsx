@@ -40,7 +40,7 @@ export default function BrowserExtensionsPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Browser Extension Security</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Browser extensions can read everything you do online — passwords, banking, emails, private messages. Most people have extensions they don&apos;t need from developers they don&apos;t trust. Time for an audit.</p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-03-04" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

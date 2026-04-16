@@ -22,7 +22,7 @@ export default function VpnForLinuxPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Best VPN for Linux (2026)</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Linux has the best VPN support of any OS — WireGuard in the kernel, native apps from top providers, and full CLI control. Here are our picks.</p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-04-15" />
       </header>
 
       {/* Top picks */}

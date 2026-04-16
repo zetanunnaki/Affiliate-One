@@ -26,7 +26,7 @@ export default function BestVpnTravelPage() {
         headlineBottom="Works everywhere."
         lede="Tested from hotels, airports, and cafes in 30+ countries. These VPNs work behind every restrictive network we threw at them — including the ones that rotate blocks weekly."
         authorId="elena-rodriguez"
-        updatedAt="2026-04-08"
+        updatedAt="2026-03-02"
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -33,7 +33,7 @@ export default function DataPrivacyPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Data Privacy Guide for Remote Workers</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Your personal data is collected by ISPs, tech companies, advertisers, and data brokers. Here&apos;s how to take back control layer by layer.</p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-04-13" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

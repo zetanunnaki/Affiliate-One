@@ -36,7 +36,7 @@ export default function BestVpnStreamingPage() {
         headlineBottom="— unlocked."
         lede="Not all VPNs work with streaming services. We tested each with Netflix (15+ libraries), Disney+, BBC iPlayer, Hulu, Amazon Prime, HBO Max, and more to find the ones that actually unblock content."
         authorId="marcus-johnson"
-        updatedAt="2026-04-08"
+        updatedAt="2026-04-07"
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -26,7 +26,7 @@ export default function BestVpnGamingPage() {
         headlineBottom="No excuses."
         lede="For gamers, every millisecond counts. We tested VPNs with Valorant, CS2, Fortnite, Apex, and more — not just speed tests — to find the ones that won't ruin your K/D."
         authorId="marcus-johnson"
-        updatedAt="2026-04-08"
+        updatedAt="2026-01-19"
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

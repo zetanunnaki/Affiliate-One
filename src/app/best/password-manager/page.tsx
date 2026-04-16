@@ -99,7 +99,7 @@ export default function BestPasswordManagerPage() {
           value. Here are our recommendations for remote workers, families,
           and privacy-conscious users.
         </p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-03-20" />
       </header>
 
       {/* Quick picks */}

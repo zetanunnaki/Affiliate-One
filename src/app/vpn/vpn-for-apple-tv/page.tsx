@@ -22,7 +22,7 @@ export default function VpnForAppleTvPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">VPN on Apple TV</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Three ways to use a VPN on Apple TV: native tvOS app (new!), Smart DNS, or router VPN. Here&apos;s how to set up each method.</p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-04-13" />
       </header>
 
       <section className="mb-10">

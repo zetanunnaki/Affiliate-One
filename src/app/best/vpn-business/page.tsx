@@ -26,7 +26,7 @@ export default function BestVpnBusinessPage() {
         headlineBottom="person teams."
         lede="Individual subscriptions, managed business plans, and Zero Trust alternatives — the right VPN architecture for every team size. Compliance-aware picks included."
         authorId="sarah-chen"
-        updatedAt="2026-04-08"
+        updatedAt="2026-04-01"
       />
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

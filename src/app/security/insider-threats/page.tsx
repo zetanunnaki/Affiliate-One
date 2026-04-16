@@ -23,7 +23,7 @@ export default function InsiderThreatsPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Insider Threats for Remote Teams</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">The biggest security risk may not be a hacker — it could be a disgruntled employee, a careless contractor, or a compromised credential. Insider threats are the hardest to detect and the most damaging.</p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-02-16" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

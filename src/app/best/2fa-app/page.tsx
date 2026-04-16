@@ -36,7 +36,7 @@ export default function Best2FAAppPage() {
           We compared the top authenticator apps and hardware keys for
           security, backup options, and ease of use. Here are our picks.
         </p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-02-16" />
       </header>
 
       {/* Comparison */}

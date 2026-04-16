@@ -40,7 +40,7 @@ export default function NoLogsPage() {
           Every VPN claims &quot;no logs.&quot; But what does that actually mean? Which
           providers have proven it? And what data do they still collect?
         </p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-02-10" />
       </header>
 
       {/* What no-logs means */}

@@ -31,7 +31,7 @@ export default function KillSwitchPage() {
           encryption itself. Here&apos;s what it does, why it matters, and how
           each provider implements it.
         </p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-04-05" />
       </header>
 
       {/* How it works */}

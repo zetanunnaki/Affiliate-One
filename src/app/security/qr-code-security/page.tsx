@@ -23,7 +23,7 @@ export default function QrCodeSecurityPage() {
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">QR Code Security: The Quishing Threat</h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">QR codes are everywhere — menus, payments, Wi-Fi, boarding passes. But they can also be attack vectors. &quot;Quishing&quot; attacks are rising as attackers exploit QR code trust.</p>
-        <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
+        <Byline authorId="sarah-chen" updatedAt="2026-02-14" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

@@ -48,7 +48,7 @@ export default function TravelSecurityPage() {
           worker, international travel introduces unique security risks.
           Follow this checklist to protect your devices, data, and accounts.
         </p>
-        <Byline authorId="elena-rodriguez" updatedAt="2026-04-07" />
+        <Byline authorId="elena-rodriguez" updatedAt="2026-02-04" />
       </header>
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />

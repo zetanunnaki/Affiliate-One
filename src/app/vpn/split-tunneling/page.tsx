@@ -30,7 +30,7 @@ export default function SplitTunnelingPage() {
           VPN. It&apos;s the best way to balance security and performance for
           remote work.
         </p>
-        <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+        <Byline authorId="marcus-johnson" updatedAt="2026-02-24" />
       </header>
 
       {/* Visual comparison */}

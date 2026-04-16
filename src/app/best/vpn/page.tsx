@@ -14,7 +14,10 @@ export const metadata: Metadata = {
   title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",
   description:
     "We tested the top VPN services for speed, security, and privacy. NordVPN, Proton VPN, and FastestVPN compared.",
-  alternates: { canonical: "/best/vpn/" },
+  alternates: {
+    canonical: "/best/vpn/",
+    languages: { "x-default": "https://buysecurevpn.com/best/vpn/", en: "https://buysecurevpn.com/best/vpn/", fr: "https://buysecurevpn.com/fr/best/vpn/", es: "https://buysecurevpn.com/es/best/vpn/", pt: "https://buysecurevpn.com/pt/best/vpn/" },
+  },
   openGraph: {
     title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",
     description: "Top VPN services ranked for speed, security, and privacy. NordVPN, Proton VPN, FastestVPN.",

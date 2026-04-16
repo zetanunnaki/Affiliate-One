@@ -126,8 +126,21 @@ export default async function LocalizedGuidePage(props: PageProps) {
     options: { parseFrontmatter: false },
   });
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    inLanguage: locale === "pt" ? "pt-BR" : locale,
+    url: `https://buysecurevpn.com/${locale}/guides/${slug}/`,
+    dateModified: post.frontmatter.updatedAt || "2026-03-15",
+    author: { "@type": "Person", name: "Marcus Johnson", url: "https://buysecurevpn.com/authors/marcus-johnson/" },
+    publisher: { "@type": "Organization", name: "BuySecureVPN", url: "https://buysecurevpn.com/" },
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <div className="relative overflow-hidden bg-slate-950 text-white">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.15),transparent_60%)]" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12">

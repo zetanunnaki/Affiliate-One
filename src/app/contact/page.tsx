@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us",
-  description: "Get in touch with the BuySecureVPN team. Report errors, suggest topics, or ask questions.",
+  description: "Get in touch with the BuySecureVPN editorial team. Report factual errors, suggest new guide topics, request corrections, or ask security questions. We typically respond within 48 hours.",
 };
 
 const contacts = [

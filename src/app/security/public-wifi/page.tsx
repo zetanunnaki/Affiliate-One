@@ -6,7 +6,7 @@ import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
-  title: "Public Wi-Fi Safety Guide (2026) — How to Stay Secure on Shared Networks",
+  title: "Public Wi-Fi Safety (2026) — Stay Secure on Any Network",
   description:
     "Learn how to protect yourself on public Wi-Fi at hotels, airports, cafés, and co-working spaces. Practical security steps every remote worker should follow.",
 };

@@ -1,42 +1,81 @@
 /**
  * hreflang infrastructure for multi-language support.
  *
- * Currently English-only but structured for future expansion.
- * When adding a new language:
- * 1. Add the locale to SUPPORTED_LOCALES
- * 2. Create content in the locale's subdirectory (e.g., /es/...)
- * 3. Use generateAlternates() in page metadata
+ * Supported locales: en (default), fr, es, pt.
+ * Use generateAlternates() in generateMetadata() for each page
+ * to emit proper hreflang alternate links.
  */
 
-export const SUPPORTED_LOCALES = ["en"] as const;
+import { TOP_COUNTRIES } from "@/lib/i18n";
+
+export const SUPPORTED_LOCALES = ["en", "fr", "es", "pt"] as const;
 export const DEFAULT_LOCALE = "en";
 export const BASE_URL = "https://buysecurevpn.com";
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
-export interface AlternateLink {
-  hrefLang: string;
-  href: string;
+/** Pages that exist in all locales */
+const UNIVERSAL_PATHS = ["/best/vpn/", "/deals/", "/guides/"];
+
+/** Top guide slugs available in all locales */
+const I18N_GUIDE_SLUGS = new Set([
+  "vpn-setup-beginners", "vpn-protocols-explained", "vpn-speed-optimization",
+  "vpn-logging-policies", "digital-nomad-security-kit", "vpn-for-gamers-advanced",
+  "travel-esim-guide", "multi-device-security", "password-manager-setup",
+  "data-breach-response",
+]);
+
+/**
+ * Check if a given path has a localized variant for a specific locale.
+ */
+function hasLocalizedVariant(path: string, locale: SupportedLocale): boolean {
+  if (locale === DEFAULT_LOCALE) return true;
+
+  // Universal pages (best/vpn, deals, guides hub)
+  if (UNIVERSAL_PATHS.some((p) => path === p || path === p.slice(0, -1))) return true;
+
+  // Country pages: /vpn/best/{slug}/ → /{locale}/vpn/{slug}/
+  const countryMatch = path.match(/^\/vpn\/best\/([^/]+)/);
+  if (countryMatch) {
+    const slug = countryMatch[1];
+    return (TOP_COUNTRIES[locale] || []).includes(slug);
+  }
+
+  // Guide pages: /guides/{slug}/ → /{locale}/guides/{slug}/
+  const guideMatch = path.match(/^\/guides\/([^/]+)/);
+  if (guideMatch) {
+    return I18N_GUIDE_SLUGS.has(guideMatch[1]);
+  }
+
+  return false;
 }
 
 /**
- * Generate hreflang alternate links for a given path.
- * Used in generateMetadata() for each page.
+ * Generate hreflang alternate links for a given English path.
  */
 export function generateAlternates(path: string): {
   canonical: string;
   languages: Record<string, string>;
 } {
-  const canonical = `${BASE_URL}${path}`;
+  const cleanPath = path.endsWith("/") ? path : `${path}/`;
+  const canonical = `${BASE_URL}${cleanPath}`;
   const languages: Record<string, string> = {
     "x-default": canonical,
+    en: canonical,
   };
 
   for (const locale of SUPPORTED_LOCALES) {
-    if (locale === DEFAULT_LOCALE) {
-      languages[locale] = canonical;
-    } else {
-      languages[locale] = `${BASE_URL}/${locale}${path}`;
+    if (locale === DEFAULT_LOCALE) continue;
+    if (hasLocalizedVariant(cleanPath, locale)) {
+      // Map English path to locale path structure
+      let localePath: string;
+      const countryMatch = cleanPath.match(/^\/vpn\/best\/([^/]+)\//);
+      if (countryMatch) {
+        localePath = `/${locale}/vpn/${countryMatch[1]}/`;
+      } else {
+        localePath = `/${locale}${cleanPath}`;
+      }
+      languages[locale] = `${BASE_URL}${localePath}`;
     }
   }
 

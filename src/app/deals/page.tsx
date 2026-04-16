@@ -5,8 +5,11 @@ import Byline from "@/components/ui/Byline";
 
 export const metadata: Metadata = {
   title: "VPN Deals & Coupons (April 2026) — Best Current Offers",
-  description: "Current VPN deals and discount codes. Save up to 89% on NordVPN, Proton VPN, and FastestVPN.",
-  alternates: { canonical: "/deals/" },
+  description: "Current VPN deals and discount codes for April 2026. Save up to 89% on NordVPN, Surfshark, Proton VPN, and FastestVPN. Verified weekly — all deals include 30-day money-back guarantees.",
+  alternates: {
+    canonical: "/deals/",
+    languages: { "x-default": "https://buysecurevpn.com/deals/", en: "https://buysecurevpn.com/deals/", fr: "https://buysecurevpn.com/fr/deals/", es: "https://buysecurevpn.com/es/deals/", pt: "https://buysecurevpn.com/pt/deals/" },
+  },
   openGraph: {
     title: "VPN Deals & Coupons (2026) | BuySecureVPN",
     description: "Verified VPN discounts updated weekly. Save up to 89% on NordVPN, Proton VPN, and FastestVPN.",

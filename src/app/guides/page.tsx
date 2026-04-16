@@ -4,9 +4,9 @@ import { getAllPosts } from "@/lib/mdx";
 import { getAuthorById } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Security Guides — Expert-Written Remote Work Security Resources",
+  title: "Security Guides — VPN, Privacy & Remote Work (2026)",
   description:
-    "In-depth security guides for remote workers. VPN setup, public Wi-Fi safety, 2FA, password management, and more.",
+    "In-depth security guides for remote workers. VPN setup, public Wi-Fi safety, 2FA, password management, and more. Written by CISSP-certified professionals, updated monthly.",
 };
 
 const categoryColors: Record<string, { bg: string; text: string; icon: string }> = {

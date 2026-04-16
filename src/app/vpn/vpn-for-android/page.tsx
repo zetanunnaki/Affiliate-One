@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Best VPN for Android (2026) — Apps, Setup & System-Level Protection",
@@ -24,6 +25,9 @@ export default function VpnForAndroidPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Android is the best mobile platform for VPN users. System-level always-on, true split tunneling, and the ability to block non-VPN traffic natively.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-26" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Why Android is best for VPN */}
       <section className="mb-10">

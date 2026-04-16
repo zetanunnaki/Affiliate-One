@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "WireGuard VPN Protocol: Everything You Need to Know (2026)",
@@ -25,6 +26,9 @@ export default function WireGuardPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">WireGuard has become the default VPN protocol for good reason — it&apos;s faster, simpler, and more secure than its predecessors. Here&apos;s everything you need to know.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-18" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Why WireGuard Matters</h2>

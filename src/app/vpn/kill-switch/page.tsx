@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Kill Switch Explained (2026) — Why It's Essential",
@@ -33,6 +34,9 @@ export default function KillSwitchPage() {
         </p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-05" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* How it works */}
       <section className="mb-10">

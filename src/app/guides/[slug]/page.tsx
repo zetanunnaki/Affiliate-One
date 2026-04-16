@@ -9,6 +9,7 @@ import ReadingTime from "@/components/ui/ReadingTime";
 import ShareButtons from "@/components/ui/ShareButtons";
 import RelatedPosts from "@/components/ui/RelatedPosts";
 import HowToSchema from "@/components/seo/HowToSchema";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 const HOW_TO_SLUGS: Record<string, { steps: { name: string; text: string }[]; totalTime: string }> = {
   "vpn-setup-beginners": {

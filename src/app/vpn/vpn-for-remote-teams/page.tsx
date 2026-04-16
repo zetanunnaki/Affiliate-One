@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN for Remote Teams (2026) — Deploy VPN Protection Across Your Workforce",
@@ -25,6 +26,9 @@ export default function VpnForRemoteTeamsPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Every remote team member should use a VPN. Here&apos;s how to deploy VPN protection across your team — from 2-person startups to 50-person companies.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-02-26" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Team size recommendations */}
       <section className="mb-10">

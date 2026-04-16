@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Double VPN (Multi-Hop) Explained (2026) — Is It Worth the Speed Trade-Off?",
@@ -39,6 +40,9 @@ export default function DoubleVpnPage() {
         </p>
         <Byline authorId="marcus-johnson" updatedAt="2026-01-13" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* How it works */}
       <section className="mb-10">

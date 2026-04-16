@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Best VPN for China (2026) — VPNs That Actually Work Behind the Great Firewall",
@@ -12,10 +13,10 @@ export const metadata: Metadata = {
 
 export default function ChinaVpnPage() {
   const providers = [
-    { name: "FastestVPN", reliability: "7/10", speed: "15-40 Mbps", protocol: "WireGuard (obfuscated)", best: "Best value option", notes: "Affordable with lifetime plans. WireGuard-based obfuscation works in China. Good for budget-conscious travelers." },
     { name: "NordVPN", reliability: "7/10", speed: "15-40 Mbps", protocol: "Obfuscated OpenVPN", best: "Best server network", notes: "Obfuscated servers work well. Must manually select obfuscated server category. 6,400+ servers for fallback." },
-    { name: "FastestVPN", reliability: "6/10", speed: "10-30 Mbps", protocol: "NoBorders + Shadowsocks", best: "Best budget option", notes: "NoBorders mode auto-detects restrictions. Less consistent than NordVPN but much cheaper." },
+    { name: "Surfshark", reliability: "6/10", speed: "10-30 Mbps", protocol: "NoBorders + Camouflage", best: "Best for families", notes: "NoBorders mode auto-detects restrictions. Camouflage mode disguises VPN traffic. Unlimited devices — one subscription for the whole family." },
     { name: "Proton VPN", reliability: "5/10", speed: "10-25 Mbps", protocol: "Stealth protocol", best: "Open-source option", notes: "Stealth protocol improving but less tested in China. Secure Core adds extra latency." },
+    { name: "FastestVPN", reliability: "6/10", speed: "10-30 Mbps", protocol: "WireGuard (obfuscated)", best: "Best budget option", notes: "Affordable with lifetime plans. WireGuard-based obfuscation works in China. Good for budget-conscious travelers." },
   ];
 
   const faqs = [
@@ -33,6 +34,9 @@ export default function ChinaVpnPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">The Great Firewall blocks Google, WhatsApp, Slack, and thousands of other services. For remote workers visiting China, a working VPN isn&apos;t optional — it&apos;s essential. We tested from inside China to find which VPNs actually work.</p>
         <Byline authorId="elena-rodriguez" updatedAt="2026-01-13" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Critical warning */}
       <div className="mb-8 p-5 bg-red-50 dark:bg-red-900/20 border-2 border-red-300 dark:border-red-700 rounded-xl">

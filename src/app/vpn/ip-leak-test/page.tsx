@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Leak Test Guide (2026) — Check for IP, DNS & WebRTC Leaks",
@@ -24,6 +25,9 @@ export default function IpLeakTestPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">A VPN that leaks your real IP or DNS queries provides a false sense of security. Here&apos;s how to test for the three most common types of leaks and fix them.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-03-24" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Three Types of VPN Leaks</h2>

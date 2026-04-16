@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Best VPN for Windows 11 (2026) — Download, Setup & Top Picks",
@@ -26,6 +27,9 @@ export default function VpnForWindowsPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Windows is the #1 platform for VPN usage — and the #1 target for cyberattacks. Here&apos;s how to set up a VPN on Windows 11 and which providers offer the best experience.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-24" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Top 4 picks */}
       <section className="mb-10">

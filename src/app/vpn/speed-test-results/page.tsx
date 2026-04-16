@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Speed Test Results (2026) — Every Provider Tested on 1Gbps Fiber",
@@ -33,6 +34,9 @@ export default function SpeedTestResultsPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">We tested every major VPN on a 1Gbps fiber connection across 4 server distances. Here are the real numbers — no cherry-picked results.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-15" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Methodology */}
       <section className="mb-6 p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg text-sm text-zinc-600 dark:text-zinc-400">

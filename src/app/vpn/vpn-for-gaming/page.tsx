@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Best VPN for Gaming (2026) — Reduce Lag, Stop DDoS, Access More Servers",
@@ -35,6 +36,9 @@ export default function VpnForGamingPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">For gamers, latency matters more than download speed. We tested VPNs with real games to measure actual ping impact — not just speed test numbers.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-03-12" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Latency tests */}
       <section className="mb-10">

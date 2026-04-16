@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Split Tunneling Explained (2026) — Route Only What Matters",
@@ -32,6 +33,9 @@ export default function SplitTunnelingPage() {
         </p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-24" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Visual comparison */}
       <section className="mb-10">

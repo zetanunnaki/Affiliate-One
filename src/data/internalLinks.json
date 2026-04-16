@@ -12,6 +12,7 @@
   {"keyword": "phishing", "href": "/security/phishing", "context": "general"},
   {"keyword": "NordVPN", "href": "/vpn/providers/nordvpn", "context": "provider"},
   {"keyword": "Proton VPN", "href": "/vpn/providers/protonvpn", "context": "provider"},
+  {"keyword": "Surfshark", "href": "/vpn/providers/surfshark", "context": "provider"},
   {"keyword": "FastestVPN", "href": "/vpn/providers/fastestvpn", "context": "provider"},
   {"keyword": "Wi-Fi audit", "href": "/tools/wifi-audit", "context": "tool"},
   {"keyword": "VPN protocols", "href": "/guides/vpn-protocols-explained", "context": "guide"},

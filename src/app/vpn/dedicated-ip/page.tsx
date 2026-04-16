@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Dedicated IP Explained (2026) — When You Need a Static IP Address",
@@ -25,6 +26,9 @@ export default function DedicatedIpPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">A dedicated VPN IP gives you a fixed, static address that only you use. Here&apos;s when it&apos;s worth the extra cost and when shared IPs are better.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-01-03" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Shared IP vs Dedicated IP</h2>

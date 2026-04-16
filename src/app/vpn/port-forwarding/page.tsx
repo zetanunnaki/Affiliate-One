@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Port Forwarding Explained (2026) — When You Need It",
@@ -24,6 +25,9 @@ export default function PortForwardingPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Most VPN users never need port forwarding. But for P2P users, gamers hosting servers, and self-hosters, it&apos;s essential. Here&apos;s what it is and which providers support it.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-03-22" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Provider Support</h2>

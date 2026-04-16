@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Best VPN for iPhone & iOS (2026) — Setup, Features & Top Picks",
@@ -24,6 +25,9 @@ export default function VpnForIosPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">iOS VPN apps are polished but face Apple platform restrictions. Here&apos;s what works, what doesn&apos;t, and which providers offer the best iPhone experience.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Top picks */}
       <section className="mb-10">

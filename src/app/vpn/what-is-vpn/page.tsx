@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "What Is a VPN? Simple Explanation for Non-Technical Users (2026)",
@@ -34,6 +35,9 @@ export default function WhatIsVpnPage() {
         </p>
         <Byline authorId="sarah-chen" updatedAt="2026-01-13" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+
 
       {/* Simple explanation */}
       <section className="mb-10">

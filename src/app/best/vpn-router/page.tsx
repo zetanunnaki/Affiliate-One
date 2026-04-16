@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export default function BestVpnRouterPage() {
   const routerSupport = [
     { name: "NordVPN", native: "Yes (select ASUS, Netgear)", manual: "DD-WRT, OpenWrt, Tomato", difficulty: "Easy-Medium" },
+    { name: "Surfshark", native: "No", manual: "DD-WRT, OpenWrt, ASUS Merlin, pfSense", difficulty: "Medium" },
     { name: "Proton VPN", native: "No", manual: "OpenWrt, DD-WRT (WireGuard config)", difficulty: "Medium-Hard" },
     { name: "FastestVPN", native: "No", manual: "DD-WRT, OpenWrt, ASUS Merlin", difficulty: "Medium" },
   ];

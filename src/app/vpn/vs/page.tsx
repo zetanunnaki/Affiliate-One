@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import comparisons from "@/data/comparisons.json";
 import { getProviderById } from "@/lib/data";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN Comparisons — Head-to-Head Reviews",

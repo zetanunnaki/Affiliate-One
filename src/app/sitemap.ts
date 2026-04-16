@@ -109,6 +109,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
       });
     }
+    for (const slug of ["vpn-setup-beginners","vpn-protocols-explained","vpn-speed-optimization","vpn-logging-policies","digital-nomad-security-kit","vpn-for-gamers-advanced","travel-esim-guide","multi-device-security","password-manager-setup","data-breach-response"]) {
+      localeEntries.push({
+        url: `${BASE}/${locale}/guides/${slug}/`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.7,
+      });
+    }
   }
 
   return [

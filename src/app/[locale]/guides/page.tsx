@@ -37,7 +37,12 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
 export default async function LocalizedGuidesPage(props: PageProps) {
   const { locale } = await props.params;
   const tr = t(locale as Locale);
-  const slugs = getAllSlugs("guides").slice(0, 10);
+  const topSlugs = [
+    "vpn-setup-beginners", "vpn-protocols-explained", "vpn-speed-optimization",
+    "vpn-logging-policies", "digital-nomad-security-kit", "vpn-for-gamers-advanced",
+    "travel-esim-guide", "multi-device-security", "password-manager-setup", "data-breach-response",
+  ];
+  const slugs = topSlugs;
   const titles: Record<string, string> = { fr: "Guides de Sécurité", es: "Guías de Seguridad", pt: "Guias de Segurança" };
 
   return (
@@ -65,7 +70,7 @@ export default async function LocalizedGuidesPage(props: PageProps) {
               const localTitle = GUIDE_TITLES[slug]?.[locale];
               const title = localTitle || post?.frontmatter?.title || slug;
               return (
-                <Link key={slug} href={`/guides/${slug}`} className="group p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl hover:shadow-lg hover:border-blue-300 dark:hover:border-blue-700 transition-all">
+                <Link key={slug} href={`/${locale}/guides/${slug}`} className="group p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl hover:shadow-lg hover:border-blue-300 dark:hover:border-blue-700 transition-all">
                   <h3 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-1">{title}</h3>
                   {post?.frontmatter?.description && (
                     <p className="text-sm text-slate-500 dark:text-slate-400 line-clamp-2">{post.frontmatter.description}</p>

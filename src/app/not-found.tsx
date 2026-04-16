@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -101,6 +102,11 @@ export default function NotFound() {
             </Link>
           </div>
         </div>
+      </div>
+
+      {/* ═══ Top VPN Picks — capture lost traffic ═══ */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+        <TopVpnPicks heading="While You're Here — Our Top VPN Picks" eyebrow="Don't leave empty-handed" />
       </div>
 
       {/* ═══ Popular pages ═══ */}

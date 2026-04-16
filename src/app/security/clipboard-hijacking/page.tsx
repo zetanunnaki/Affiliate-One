@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Clipboard Hijacking Attacks (2026) — How Malware Steals What You Copy",
@@ -24,6 +25,9 @@ export default function ClipboardHijackingPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Clipboard hijacking silently replaces what you copy — crypto addresses, passwords, and bank details. It&apos;s invisible, automatic, and has cost millions in stolen cryptocurrency.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">How It Works</h2>

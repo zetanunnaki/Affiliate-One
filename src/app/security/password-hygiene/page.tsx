@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Password Hygiene Guide (2026) — The Complete Password Security Playbook",
@@ -26,6 +27,9 @@ export default function PasswordHygienePage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Passwords are the keys to your digital life. This guide covers everything: creation, storage, sharing, rotation, breach response, and the passwordless future.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* The password hierarchy */}
       <section className="mb-10">

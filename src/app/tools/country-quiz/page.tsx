@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import countriesData from "@/data/countries.json";
 import type { Country } from "@/types";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 const countries = countriesData as Country[];
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 interface Question {
   id: string;

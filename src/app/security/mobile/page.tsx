@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Mobile Security Guide for Remote Workers (2026)",
@@ -31,6 +32,9 @@ export default function MobileSecurityPage() {
         </p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* iOS settings */}
       <section className="mb-10">

@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Webcam Security for Remote Workers (2026) — Prevent Camera Hacking",
@@ -24,6 +25,9 @@ export default function WebcamSecurityPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Your webcam is a window into your home office. Hackers have been exploiting webcams for years through malware. Here&apos;s how to secure yours — from $2 physical covers to OS-level permissions.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* How webcam hacking works */}
       <section className="mb-10">

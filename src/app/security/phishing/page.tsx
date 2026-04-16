@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Phishing & Social Engineering Guide (2026) — Recognize & Avoid Attacks",
@@ -40,6 +41,9 @@ export default function PhishingPage() {
         </p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* Red flags */}
       <section className="mb-10">

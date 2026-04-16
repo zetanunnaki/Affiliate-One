@@ -3,6 +3,7 @@ import Link from "next/link";
 import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Remote Work Security Guide (2026) — Protect Your Digital Workspace",
@@ -47,6 +48,9 @@ export default function RemoteWorkSecurityPage() {
         </p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* Core security layers */}
       <section className="mb-10">

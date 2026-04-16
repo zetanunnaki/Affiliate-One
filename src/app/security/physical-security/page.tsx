@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Physical Security for Remote Workers (2026) — Protect Your Devices IRL",
@@ -24,6 +25,9 @@ export default function PhysicalSecurityPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">All your VPN encryption and 2FA is useless if someone walks off with your laptop at a café. Physical security is the foundation that digital security builds on.</p>
         <Byline authorId="elena-rodriguez" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* By location */}
       <section className="mb-10">

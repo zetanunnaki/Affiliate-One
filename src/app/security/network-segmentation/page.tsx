@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Home Network Segmentation (2026) — Separate Work, IoT & Personal Devices",
@@ -24,6 +25,9 @@ export default function NetworkSegmentationPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Your smart TV, robot vacuum, and work laptop shouldn&apos;t be on the same network. Here&apos;s how to segment your home network to protect your remote work setup.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* Why segment */}
       <section className="mb-10">

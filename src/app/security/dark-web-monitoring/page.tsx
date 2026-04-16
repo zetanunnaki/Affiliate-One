@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Dark Web Monitoring for Remote Workers (2026) — Is Your Data For Sale?",
@@ -33,6 +34,9 @@ export default function DarkWebMonitoringPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Your credentials may already be for sale on the dark web. Here&apos;s how to check, what to do about it, and how to prevent future exposure.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* Tools */}
       <section className="mb-10">

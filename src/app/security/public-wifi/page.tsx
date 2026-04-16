@@ -3,6 +3,7 @@ import Link from "next/link";
 import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Public Wi-Fi Safety Guide (2026) — How to Stay Secure on Shared Networks",
@@ -56,6 +57,9 @@ export default function PublicWifiPage() {
         </p>
         <Byline authorId="elena-rodriguez" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* Threat table */}
       <section className="mb-10">

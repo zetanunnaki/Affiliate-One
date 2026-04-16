@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Wi-Fi Pineapple & Evil Twin Attacks (2026) — How Fake Networks Steal Your Data",
@@ -24,6 +25,9 @@ export default function WifiPineapplePage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Attackers create fake Wi-Fi networks that look identical to real ones. When you connect, they see everything. Here&apos;s how it works and why a VPN is your primary defense.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       {/* How it works */}
       <section className="mb-10">

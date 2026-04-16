@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "USB Security Guide (2026) — Juice Jacking, BadUSB & Safe Practices",
@@ -24,6 +25,9 @@ export default function UsbSecurityPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">USB ports are attack vectors. From juice jacking at airports to malicious USB drives at conferences, here&apos;s how to protect yourself.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">USB Threats</h2>

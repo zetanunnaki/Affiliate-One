@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Threat Modeling for Remote Workers (2026) — Assess Your Real Risks",
@@ -32,6 +33,9 @@ export default function ThreatModelPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Not everyone needs the same level of security. A freelance writer and an investigative journalist face very different threats. Here&apos;s how to assess your actual risk level and build the right security stack.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
+      {/* Our Top 4 Picks */}
+      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Security Profiles</h2>

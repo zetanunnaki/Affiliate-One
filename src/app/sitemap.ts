@@ -6,6 +6,7 @@ import {
 } from "@/lib/data";
 import { getAllSlugs } from "@/lib/mdx";
 import comparisons from "@/data/comparisons.json";
+import { TOP_COUNTRIES } from "@/lib/i18n";
 
 export const dynamic = "force-static";
 
@@ -91,6 +92,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // i18n locale pages (fr, es, pt)
+  const localeEntries: MetadataRoute.Sitemap = [];
+  for (const locale of ["fr", "es", "pt"] as const) {
+    localeEntries.push(
+      { url: `${BASE}/${locale}/`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+      { url: `${BASE}/${locale}/best/vpn/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+      { url: `${BASE}/${locale}/deals/`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
+      { url: `${BASE}/${locale}/guides/`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
+    );
+    for (const slug of TOP_COUNTRIES[locale]) {
+      localeEntries.push({
+        url: `${BASE}/${locale}/vpn/${slug}/`,
+        lastModified: now,
+        changeFrequency: "weekly",
+        priority: 0.8,
+      });
+    }
+  }
+
   return [
     ...staticEntries,
     ...providerEntries,
@@ -98,5 +118,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...countryEntries,
     ...intentEntries,
     ...guideEntries,
+    ...localeEntries,
   ];
 }

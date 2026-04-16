@@ -47,7 +47,7 @@ export default function PricingTable({ providers }: PricingTableProps) {
                       alt={`${p.name} logo`}
                       width={32}
                       height={32}
-                      className="w-8 h-8 shrink-0 rounded-md object-contain bg-white p-1 ring-1 ring-slate-200"
+                      className="w-8 h-8 shrink-0 rounded-md object-contain bg-white dark:bg-slate-800 p-1 ring-1 ring-slate-200 dark:ring-slate-700"
                     />
                     <span className="font-bold text-sm text-slate-900 dark:text-white">{p.name}</span>
                   </div>

@@ -54,14 +54,14 @@ export default function ComparisonTable({
                     alt={`${row.provider.name} logo`}
                     width={32}
                     height={32}
-                    className="w-8 h-8 shrink-0 rounded-md object-contain bg-white p-1 ring-1 ring-zinc-200"
+                    className="w-8 h-8 shrink-0 rounded-md object-contain bg-white dark:bg-slate-800 p-1 ring-1 ring-zinc-200 dark:ring-slate-700"
                     loading="lazy"
                   />
                   <div>
                     <div className="font-semibold text-sm text-zinc-900 dark:text-zinc-100">
                       {row.provider.name}
                     </div>
-                    <div className="text-xs text-zinc-500">
+                    <div className="text-xs text-zinc-500 dark:text-slate-400">
                       Rating: {row.provider.rating}/5
                     </div>
                   </div>

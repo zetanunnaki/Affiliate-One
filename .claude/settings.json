@@ -74,7 +74,8 @@
       "Bash(xargs grep *)",
       "Bash(grep -l \"\\\\.name.*NordVPN\\\\|\\\\.name.*Surfshark\\\\|\\\\.name.*Proton\" /c/Users/Issam/Affiliate-One/src/app/vpn/**/page.tsx)",
       "Bash(node scripts/inject-vpn-picks.mjs)",
-      "Bash(ls content/money/*.mdx)"
+      "Bash(ls content/money/*.mdx)",
+      "Bash(npx tsc *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

@@ -55,12 +55,13 @@ export default function VpnForAndroidPage() {
 
       {/* Top picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 3 Android VPNs</h2>
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 4 Android VPNs</h2>
         <div className="space-y-3">
           {[
             { name: "NordVPN", badge: "Best Overall", desc: "NordLynx for top speeds. Split tunneling. Threat Protection blocks malicious apps. Meshnet. Dark Mode. Widget support." },
-            { name: "FastestVPN", badge: "Best Value", desc: "Unlimited devices. CleanWeb. Split tunneling (Bypasser). Cheapest premium option. GPS spoofing on Android." },
-            { name: "FastestVPN", badge: "Most Affordable", desc: "WireGuard protocol. Clean Material Design UI. Automatic best-server. Great value." },
+            { name: "Surfshark", badge: "Unlimited Devices", desc: "Unlimited devices. CleanWeb ad blocker. GPS spoofing on Android. Bypasser split tunneling. RAM-only servers." },
+            { name: "Proton VPN", badge: "Best for Privacy", desc: "Open-source Android app. Audited no-logs. Swiss jurisdiction. Secure Core multi-hop. Free tier available." },
+            { name: "FastestVPN", badge: "Best Budget", desc: "WireGuard protocol. Clean Material Design UI. Automatic best-server. Lifetime deals available." },
           ].map((p, i) => (
             <div key={p.name} className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg flex items-start gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm shrink-0">{i + 1}</span>

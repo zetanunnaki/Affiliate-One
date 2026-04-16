@@ -68,7 +68,9 @@
       "Bash(grep -rn \"updatedAt.*2026\" src/app/security/*/page.tsx src/app/vpn/*/page.tsx src/app/best/*/page.tsx src/app/deals/page.tsx src/app/tools/*/page.tsx)",
       "Bash(node scripts/shuffle-dates.mjs)",
       "Bash(node scripts/shuffle-mdx-dates.mjs)",
-      "Bash(node scripts/reshuffle-all-dates.mjs)"
+      "Bash(node scripts/reshuffle-all-dates.mjs)",
+      "Bash(node -e \"const p=require\\('./src/data/providers.json'\\);console.log\\(p.map\\(x=>x.id\\).join\\(', '\\)\\);console.log\\('count:',p.length\\)\")",
+      "Bash(node -e \"const c=require\\('./src/data/comparisons.json'\\);console.log\\(c.map\\(x=>x.slug\\).join\\(', '\\)\\);console.log\\('count:',c.length\\)\")"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

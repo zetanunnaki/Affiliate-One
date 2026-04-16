@@ -27,12 +27,13 @@ export default function VpnForIosPage() {
 
       {/* Top picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 3 iOS VPNs</h2>
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 4 iOS VPNs</h2>
         <div className="space-y-3">
           {[
-            { name: "FastestVPN", badge: "Best Value iOS", desc: "Affordable iOS VPN with WireGuard support. Clean native iOS design. Great value for iPhone and iPad users." },
-            { name: "NordVPN", badge: "Best Features", desc: "NordLynx for top speeds. Threat Protection on iOS. Meshnet. Dark Web Monitor. The most feature-rich iOS VPN." },
-            { name: "FastestVPN", badge: "Best Value", desc: "Unlimited devices — iPhone, iPad, Mac all on one subscription. CleanWeb blocks Safari trackers. Most affordable." },
+            { name: "NordVPN", badge: "Best Overall", desc: "NordLynx for top speeds. Threat Protection on iOS. Meshnet. Dark Web Monitor. The most feature-rich iOS VPN." },
+            { name: "Surfshark", badge: "Unlimited Devices", desc: "Unlimited devices — iPhone, iPad, Mac all on one subscription. CleanWeb blocks Safari trackers. RAM-only servers." },
+            { name: "Proton VPN", badge: "Best for Privacy", desc: "Open-source iOS app. Swiss jurisdiction. Secure Core routing. Free tier with no data caps for basic iOS use." },
+            { name: "FastestVPN", badge: "Best Budget", desc: "Affordable iOS VPN with WireGuard support. Clean native iOS design. Lifetime deals available." },
           ].map((p, i) => (
             <div key={p.name} className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg flex items-start gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm shrink-0">{i + 1}</span>

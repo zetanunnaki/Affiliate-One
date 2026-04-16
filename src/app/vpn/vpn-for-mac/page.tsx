@@ -27,12 +27,13 @@ export default function VpnForMacPage() {
 
       {/* Top picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 3 Mac VPNs</h2>
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 4 Mac VPNs</h2>
         <div className="space-y-3">
           {[
             { name: "NordVPN", badge: "Best Overall", desc: "Best macOS app with NordLynx. Split tunneling now available on Mac. Threat Protection. Meshnet. Native Apple Silicon. Menu bar integration." },
-            { name: "FastestVPN", badge: "Most Polished", desc: "Beautiful macOS-native design. Lightway protocol for instant connections. Network Lock kill switch. Best Mac UI of any VPN." },
-            { name: "FastestVPN", badge: "Best Value", desc: "Unlimited devices — MacBook + iMac + iPhone + iPad on one subscription. CleanWeb. Split tunneling on Mac. Apple Silicon native." },
+            { name: "Surfshark", badge: "Unlimited Devices", desc: "Unlimited devices — MacBook + iMac + iPhone + iPad on one subscription. CleanWeb. Split tunneling on Mac. Apple Silicon native." },
+            { name: "Proton VPN", badge: "Best for Privacy", desc: "Open-source macOS app. Swiss jurisdiction. Secure Core routing. WireGuard + OpenVPN. VPN Accelerator for long-distance servers." },
+            { name: "FastestVPN", badge: "Best Budget", desc: "Clean macOS-native design. WireGuard protocol. Automatic best-server. Lifetime deals available." },
           ].map((p, i) => (
             <div key={p.name} className="p-4 border border-zinc-200 dark:border-zinc-700 rounded-lg flex items-start gap-3">
               <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm shrink-0">{i + 1}</span>

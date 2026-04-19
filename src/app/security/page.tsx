@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import FAQ from "@/components/ui/FAQ";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Security Hub — Remote Work Security Guides",
@@ -105,6 +107,10 @@ export default function SecurityHubPage() {
         </div>
       </section>
 
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 [&_nav]:text-slate-500">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Security Hub" }]} />
+      </div>
+
       {/* ═══ TOP PICKS ═══ */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 -mt-8 relative z-10">
         <TopVpnPicks heading="Our Top VPN Picks" eyebrow="Start with the essentials" />
@@ -139,6 +145,19 @@ export default function SecurityHubPage() {
               </div>
             </Link>
           ))}
+        </div>
+
+        {/* FAQ */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <FAQ
+            items={[
+              { question: "What are the biggest security risks for remote workers?", answer: "The top risks are unsecured public Wi-Fi (man-in-the-middle attacks), phishing emails targeting remote employees, weak or reused passwords, unencrypted file sharing, and outdated software with known vulnerabilities. A layered approach using a VPN, password manager, and 2FA addresses most of these." },
+              { question: "Do I need a VPN if I work from home?", answer: "Yes. A VPN encrypts your connection even on your home network, preventing your ISP from tracking your browsing, protecting sensitive work data, and securing video calls. It's especially important if you handle client data, access company resources, or work in a regulated industry." },
+              { question: "What is two-factor authentication and why is it important?", answer: "Two-factor authentication (2FA) requires a second verification step beyond your password — typically a code from an authenticator app or a hardware key. It blocks 99.9% of automated attacks according to Microsoft. We recommend enabling it on email, cloud storage, and any work-related accounts first." },
+              { question: "How do I secure my home Wi-Fi for remote work?", answer: "Change the default router admin password, use WPA3 encryption (or WPA2 at minimum), create a separate network for work devices, enable your router's firewall, keep firmware updated, and disable WPS. Our Wi-Fi audit tool can identify specific vulnerabilities in your setup." },
+              { question: "Are password managers safe to use?", answer: "Yes — reputable password managers like Bitwarden, 1Password, and Proton Pass use zero-knowledge encryption, meaning even the company can't see your passwords. They're far safer than reusing passwords or storing them in browsers, which are common targets for malware." },
+            ]}
+          />
         </div>
       </div>
     </div>

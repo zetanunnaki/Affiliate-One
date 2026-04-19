@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllProviders, getAllIntents, getAllCountries } from "@/lib/data";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import FAQ from "@/components/ui/FAQ";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "VPN Hub — Guides, Reviews & Comparisons",
@@ -58,6 +60,10 @@ export default function VpnHubPage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+        <div className="max-w-4xl mx-auto -mt-4 mb-4 [&_nav]:text-slate-500">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "VPN Hub" }]} />
+        </div>
+
         {/* By use case */}
         <section>
           <div className="flex items-end justify-between mb-6">
@@ -201,6 +207,20 @@ export default function VpnHubPage() {
             ))}
           </div>
         </section>
+
+        {/* FAQ */}
+        <div className="max-w-4xl mx-auto">
+          <FAQ
+            items={[
+              { question: "What is a VPN and why do I need one?", answer: "A VPN (Virtual Private Network) encrypts your internet traffic and routes it through a secure server, hiding your IP address and location. You need one to protect your data on public Wi-Fi, bypass geo-restrictions, prevent ISP tracking, and secure remote work connections." },
+              { question: "Are VPNs legal?", answer: "VPNs are legal in most countries including the US, UK, Canada, Australia, and most of Europe. A few countries restrict or ban VPN use, including China, Russia, Iran, and North Korea. Always check local laws before traveling." },
+              { question: "How much does a VPN cost?", answer: "Quality VPNs range from $1.11/month (FastestVPN lifetime) to $12.99/month (NordVPN monthly). Most providers offer steep discounts on 1-2 year plans. All our recommended VPNs include 30-day money-back guarantees." },
+              { question: "Will a VPN slow down my internet?", answer: "Modern VPNs using WireGuard or NordLynx protocols typically reduce speeds by only 5-15%. In our testing, NordVPN averaged 92% of base speed, while Surfshark and Proton VPN both exceeded 85%. Older protocols like OpenVPN may cause more noticeable slowdowns." },
+              { question: "Can I use a free VPN?", answer: "Free VPNs come with significant trade-offs: data caps (usually 500MB-10GB/month), fewer servers, slower speeds, and some sell your browsing data. Proton VPN offers the best free tier with no data limits, but paid plans provide better performance and more features." },
+              { question: "How do I choose the right VPN?", answer: "Consider your primary use case: NordVPN is best overall for speed and security, Surfshark for unlimited devices and families, Proton VPN for maximum privacy, and FastestVPN for budget users. Our comparison tool and country-specific guides can help you decide." },
+            ]}
+          />
+        </div>
       </div>
     </div>
   );

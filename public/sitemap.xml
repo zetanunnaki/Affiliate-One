@@ -27,6 +27,7 @@
   <url><loc>https://buysecurevpn.com/glossary/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://buysecurevpn.com/guides/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://buysecurevpn.com/privacy/</loc><changefreq>weekly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://buysecurevpn.com/pt/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://buysecurevpn.com/resources/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://buysecurevpn.com/review-board/</loc><changefreq>weekly</changefreq><priority>0.4</priority></url>
   <url><loc>https://buysecurevpn.com/search/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
@@ -405,6 +406,7 @@
   <url><loc>https://buysecurevpn.com/money/best-vpn-iphone/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/best-vpn-linux/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/best-vpn-mac/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/money/best-vpn-netflix/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/best-vpn-privacy/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/best-vpn-remote-work/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/best-vpn-small-business/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -414,8 +416,10 @@
   <url><loc>https://buysecurevpn.com/money/best-vpn-torrenting/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/best-vpn-travel/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/best-vpn-windows/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/money/fastestvpn-review/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/is-nordvpn-worth-it/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/nordvpn-coupon/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/money/proton-vpn-review/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/money/surfshark-deal/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/guides/category/vpn/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://buysecurevpn.com/guides/category/security/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>

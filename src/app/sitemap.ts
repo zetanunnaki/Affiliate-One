@@ -94,7 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // i18n locale pages (fr, es, pt)
   const localeEntries: MetadataRoute.Sitemap = [];
-  for (const locale of ["fr", "es"] as const) {
+  for (const locale of ["fr", "es", "pt"] as const) {
     localeEntries.push(
       { url: `${BASE}/${locale}/`, lastModified: now, changeFrequency: "weekly", priority: 0.85 },
       { url: `${BASE}/${locale}/best/vpn/`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },

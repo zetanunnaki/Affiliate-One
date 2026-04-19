@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/mdx";
 import { getAuthorById } from "@/lib/data";
+import FAQ from "@/components/ui/FAQ";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Security Guides — VPN, Privacy & Remote Work (2026)",
@@ -64,6 +66,10 @@ export default function GuidesPage() {
           </p>
         </div>
       </section>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 [&_nav]:text-slate-500">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Security Guides" }]} />
+      </div>
 
       {/* ═══ GUIDES GRID ═══ */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -134,6 +140,19 @@ export default function GuidesPage() {
               </Link>
             );
           })}
+        </div>
+
+        {/* FAQ */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <FAQ
+            items={[
+              { question: "Who writes these security guides?", answer: "Our guides are written by CISSP and CEH-certified cybersecurity professionals with 8+ years of experience. Every guide is fact-checked against primary sources like NIST publications, EFF recommendations, and vendor documentation." },
+              { question: "How often are guides updated?", answer: "We review and update guides monthly. Major updates happen when VPN providers change features, pricing, or policies. Each guide shows a 'Last updated' date so you always know how current the information is." },
+              { question: "Are these guides beginner-friendly?", answer: "Yes. We write for a range of skill levels. Beginner guides (like VPN Setup and Password Manager Setup) include step-by-step screenshots. Advanced guides (like Zero Trust Remote Work) assume some technical background but still explain key concepts." },
+              { question: "Do you recommend specific products in your guides?", answer: "When relevant, we recommend products we've independently tested. Our VPN recommendations focus on NordVPN, Surfshark, Proton VPN, and FastestVPN — all verified through our 47-point testing rubric. We earn affiliate commissions on some links, disclosed on every page." },
+              { question: "Can I use these guides for my team or organization?", answer: "Absolutely. Many of our guides — especially Remote Work Security Checklist, BYOD Security, and Zero Trust Remote Work — are designed for teams. The Security Checklist tool is printable and can be distributed to employees as part of security training." },
+            ]}
+          />
         </div>
       </div>
     </div>

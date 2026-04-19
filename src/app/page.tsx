@@ -1,8 +1,33 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllCountries, getAllProviders, getAllIntents } from "@/lib/data";
 import Flag from "@/components/ui/Flag";
 import SaveToPinterest from "@/components/ui/SaveToPinterest";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+
+export const metadata: Metadata = {
+  title: "BuySecureVPN — Best VPN Reviews & Security Guides 2026",
+  description:
+    "Expert-tested VPN reviews, 202-country coverage, and security guides. Compare NordVPN, Surfshark, Proton VPN & FastestVPN with our 47-point rubric.",
+  alternates: {
+    canonical: "https://buysecurevpn.com/",
+    languages: {
+      "x-default": "https://buysecurevpn.com/",
+      en: "https://buysecurevpn.com/",
+      fr: "https://buysecurevpn.com/fr/",
+      es: "https://buysecurevpn.com/es/",
+    },
+  },
+  openGraph: {
+    title: "BuySecureVPN — Best VPN Reviews & Security Guides 2026",
+    description:
+      "Expert-tested VPN reviews, 202-country coverage, and security guides. Compare NordVPN, Surfshark, Proton VPN & FastestVPN.",
+    url: "https://buysecurevpn.com/",
+    type: "website",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "BuySecureVPN — Best VPN Reviews 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+};
 
 // Countries with hero images — rendered with photo background
 const COUNTRIES_WITH_HERO = new Set([

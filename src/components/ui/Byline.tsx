@@ -53,6 +53,16 @@ export default function Byline({ authorId, updatedAt }: BylineProps) {
           >
             {author.name}
           </Link>
+          {author.credentials && author.credentials.length > 0 && (
+            <>
+              <span className="text-zinc-300 dark:text-zinc-600">&middot;</span>
+              {author.credentials.map((cred) => (
+                <span key={cred} className="inline-flex items-center px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 rounded">
+                  {cred}
+                </span>
+              ))}
+            </>
+          )}
           <span className="text-zinc-300 dark:text-zinc-600">&middot;</span>
           <span className="text-sm text-zinc-500 dark:text-zinc-400 truncate">{author.role}</span>
         </div>

@@ -8,7 +8,7 @@
 
 import { TOP_COUNTRIES } from "@/lib/i18n";
 
-export const SUPPORTED_LOCALES = ["en", "fr", "es", "pt"] as const;
+export const SUPPORTED_LOCALES = ["en", "fr", "es"] as const;
 export const DEFAULT_LOCALE = "en";
 export const BASE_URL = "https://buysecurevpn.com";
 

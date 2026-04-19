@@ -74,11 +74,15 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   return {
     title: post.frontmatter.title,
     description: post.frontmatter.description,
+    alternates: { canonical: `https://buysecurevpn.com/guides/${slug}/` },
     openGraph: {
       title: post.frontmatter.title,
       description: post.frontmatter.description,
       type: "article",
+      publishedTime: post.frontmatter.updatedAt,
       modifiedTime: post.frontmatter.updatedAt,
+      authors: [post.frontmatter.author],
+      url: `https://buysecurevpn.com/guides/${slug}/`,
       images: [{ url: ogImage, width: 1200, height: 675, alt: post.frontmatter.title }],
     },
     twitter: { card: "summary_large_image", images: [ogImage] },

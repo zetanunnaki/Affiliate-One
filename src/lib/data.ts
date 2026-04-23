@@ -27,11 +27,11 @@ export function getAllRegions(): string[] {
 
 // Providers
 export function getAllProviders(): Provider[] {
-  return providersData as Provider[];
+  return (providersData as Provider[]).filter((p) => p.monetized !== false);
 }
 
 export function getProviderById(id: string): Provider | undefined {
-  return getAllProviders().find((p) => p.id === id);
+  return (providersData as Provider[]).find((p) => p.id === id);
 }
 
 export function getProvidersByTag(tag: string): Provider[] {

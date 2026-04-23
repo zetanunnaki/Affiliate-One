@@ -38,6 +38,14 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
+function providerHref(p: Provider): string {
+  return p.monetized === false ? "/best/vpn" : `/vpn/providers/${p.id}`;
+}
+
+function providerReviewLabel(p: Provider): string {
+  return p.monetized === false ? "See Our Top Picks" : `${p.name} Full Review`;
+}
+
 function FeatureCheck({ value }: { value: boolean | number | string }) {
   if (typeof value === "boolean") {
     return value ? (
@@ -230,16 +238,16 @@ export default async function VsPage(props: PageProps) {
         </p>
         <div className="flex gap-3">
           <Link
-            href={`/vpn/providers/${a.id}`}
+            href={providerHref(a)}
             className="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
           >
-            View {a.name}
+            {a.monetized === false ? "See Our Top Picks" : `View ${a.name}`}
           </Link>
           <Link
-            href={`/vpn/providers/${b.id}`}
+            href={providerHref(b)}
             className="px-4 py-2 text-sm font-medium text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-lg transition-colors"
           >
-            View {b.name}
+            {b.monetized === false ? "See Our Top Picks" : `View ${b.name}`}
           </Link>
         </div>
       </section>
@@ -249,8 +257,8 @@ export default async function VsPage(props: PageProps) {
       <InternalLinks
         links={[
           { label: "Best VPN 2026", href: "/best/vpn", description: "See all our top picks" },
-          { label: `${a.name} Full Review`, href: `/vpn/providers/${a.id}`, description: "In-depth review" },
-          { label: `${b.name} Full Review`, href: `/vpn/providers/${b.id}`, description: "In-depth review" },
+          { label: providerReviewLabel(a), href: providerHref(a), description: a.monetized === false ? "Our recommended alternatives" : "In-depth review" },
+          { label: providerReviewLabel(b), href: providerHref(b), description: b.monetized === false ? "Our recommended alternatives" : "In-depth review" },
           { label: "All Comparisons", href: "/vpn/vs", description: "More VPN comparisons" },
         ]}
       />

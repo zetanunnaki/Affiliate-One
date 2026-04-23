@@ -123,5 +123,57 @@
     "originalPrice": "$15.45/mo",
     "salePrice": "$1.99/mo",
     "discountBadge": "Save 87%"
+  },
+  {
+    "id": "expressvpn",
+    "name": "ExpressVPN",
+    "website": "https://expressvpn.com",
+    "affiliate": {
+      "network": "none",
+      "trackingBaseUrl": "https://expressvpn.com",
+      "disclosureLabel": "Non-affiliate link"
+    },
+    "features": {
+      "protocols": ["Lightway", "OpenVPN", "IKEv2"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 8
+    },
+    "positioningTags": ["ease-of-use", "streaming"],
+    "notes": "BVI-based, Lightway protocol, audited no-logs, TrustedServer RAM-only. Premium pricing with strong brand recognition.",
+    "rating": 4.5,
+    "priceRange": "$6.67–$12.95/mo",
+    "positioning": "overall",
+    "positioningLabel": "Popular Choice",
+    "brandColor": "#da3940",
+    "brandColorDark": "#b52d33",
+    "monetized": false
+  },
+  {
+    "id": "cyberghost",
+    "name": "CyberGhost",
+    "website": "https://cyberghostvpn.com",
+    "affiliate": {
+      "network": "none",
+      "trackingBaseUrl": "https://cyberghostvpn.com",
+      "disclosureLabel": "Non-affiliate link"
+    },
+    "features": {
+      "protocols": ["WireGuard", "OpenVPN", "IKEv2"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 7
+    },
+    "positioningTags": ["streaming", "beginner-friendly"],
+    "notes": "Romania-based, 9,700+ servers in 91 countries, dedicated streaming/gaming profiles, 45-day money-back guarantee on long plans.",
+    "rating": 4.3,
+    "priceRange": "$2.19–$12.99/mo",
+    "positioning": "budget",
+    "positioningLabel": "Streaming Focused",
+    "brandColor": "#fdcb02",
+    "brandColorDark": "#d4a900",
+    "monetized": false
   }
 ]

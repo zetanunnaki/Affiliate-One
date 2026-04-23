@@ -54,6 +54,7 @@ export interface Provider {
   originalPrice?: string;
   salePrice?: string;
   discountBadge?: string;
+  monetized?: boolean;
 }
 
 // Intent data model

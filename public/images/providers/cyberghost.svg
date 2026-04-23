@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="24" fill="#fdcb02"/>
+  <circle cx="60" cy="52" r="20" stroke="#1a1a2e" stroke-width="5" fill="none"/>
+  <circle cx="52" cy="48" r="3" fill="#1a1a2e"/>
+  <circle cx="68" cy="48" r="3" fill="#1a1a2e"/>
+  <path d="M50 58q10 8 20 0" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+  <text x="60" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="10" fill="#1a1a2e">CyberGhost</text>
+</svg>

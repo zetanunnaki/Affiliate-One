@@ -3,9 +3,14 @@ import Link from "next/link";
 import { getAllProviders } from "@/lib/data";
 import Byline from "@/components/ui/Byline";
 
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const NOW = new Date();
+const CURRENT_MONTH = MONTHS[NOW.getMonth()];
+const CURRENT_YEAR = NOW.getFullYear();
+
 export const metadata: Metadata = {
-  title: "VPN Deals & Coupons (April 2026) — Best Current Offers",
-  description: "Current VPN deals and discount codes for April 2026. Save up to 89% on NordVPN, Surfshark, Proton VPN, and FastestVPN. Verified weekly — all deals include 30-day money-back guarantees.",
+  title: `VPN Deals & Coupons (${CURRENT_MONTH} ${CURRENT_YEAR}) — Best Current Offers`,
+  description: `Current VPN deals and discount codes for ${CURRENT_MONTH} ${CURRENT_YEAR}. Save up to 89% on NordVPN, Surfshark, Proton VPN, and FastestVPN. Verified weekly — all deals include 30-day money-back guarantees.`,
   alternates: {
     canonical: "/deals/",
     languages: { "x-default": "https://buysecurevpn.com/deals/", en: "https://buysecurevpn.com/deals/", fr: "https://buysecurevpn.com/fr/deals/", es: "https://buysecurevpn.com/es/deals/" },
@@ -53,13 +58,16 @@ export default function DealsPage() {
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-5 leading-[1.05]">
             VPN Deals & Coupons
+            <span className="block text-2xl sm:text-3xl lg:text-4xl text-blue-300 font-bold mt-2">
+              {CURRENT_MONTH} {CURRENT_YEAR}
+            </span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl mb-6">
             Current VPN promotions and discount codes. We update this page weekly
             with verified deals from providers we&apos;ve tested and reviewed.
           </p>
           <div className="pt-5 border-t border-white/10 [&_a]:text-blue-300 [&_a:hover]:text-blue-200 [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
-            <Byline authorId="marcus-johnson" updatedAt="2026-01-01" />
+            <Byline authorId="marcus-johnson" updatedAt={NOW.toISOString().slice(0, 10)} />
           </div>
         </div>
       </section>
@@ -192,7 +200,7 @@ export default function DealsPage() {
         </section>
 
         <p className="text-xs text-slate-500 dark:text-slate-400 italic text-center">
-          Deals and pricing last verified: April 7, 2026. Prices may change without notice.
+          Deals and pricing last verified: {CURRENT_MONTH} {CURRENT_YEAR}. Prices may change without notice.
           This page contains affiliate links. See our{" "}
           <Link href="/affiliate-disclosure" className="underline hover:text-blue-600 dark:hover:text-blue-400">affiliate disclosure</Link>.
         </p>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="24" fill="#da3940"/>
+  <path d="M30 60h15l10-18 10 18h15" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="60" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="11" fill="#fff">ExpressVPN</text>
+</svg>

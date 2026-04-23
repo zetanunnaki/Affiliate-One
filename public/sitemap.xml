@@ -309,6 +309,8 @@
   <url><loc>https://buysecurevpn.com/vpn/providers/protonvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/vpn/providers/fastestvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/vpn/providers/surfshark/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/vpn/providers/expressvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/vpn/providers/cyberghost/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/vpn/providers/nordvpn/review/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/vpn/providers/protonvpn/review/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/vpn/providers/surfshark/review/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -323,6 +325,11 @@
   <url><loc>https://buysecurevpn.com/vpn/vs/nordvpn-vs-surfshark/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/vpn/vs/surfshark-vs-protonvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/vpn/vs/surfshark-vs-fastestvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/vpn/vs/nordvpn-vs-expressvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/vpn/vs/surfshark-vs-expressvpn/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/vpn/vs/nordvpn-vs-cyberghost/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/vpn/vs/surfshark-vs-cyberghost/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buysecurevpn.com/vpn/vs/expressvpn-vs-cyberghost/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/guides/api-key-security/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/guides/browser-privacy-setup/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://buysecurevpn.com/guides/byod-security-guide/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>

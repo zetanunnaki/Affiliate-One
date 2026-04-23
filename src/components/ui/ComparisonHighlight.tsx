@@ -138,26 +138,44 @@ export default function ComparisonHighlight({
           )}
 
           {/* CTA button */}
-          <a
-            href={affiliateUrl}
-            rel="noopener noreferrer sponsored"
-            className="flex items-center justify-center gap-1.5 w-full px-4 py-3 text-sm font-bold text-white rounded-xl shadow-lg transition-all hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-            style={{
-              background: `linear-gradient(135deg, ${brandColor} 0%, ${brandColorDark} 100%)`,
-              boxShadow: `0 8px 20px -6px ${brandColor}60`,
-            }}
-          >
-            Get {p.name}
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
-          <Link
-            href={`/vpn/providers/${p.id}`}
-            className="block text-center mt-2 text-[11px] font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            Read full review →
-          </Link>
+          {p.monetized === false ? (
+            <Link
+              href="/best/vpn"
+              className="flex items-center justify-center gap-1.5 w-full px-4 py-3 text-sm font-bold text-white rounded-xl shadow-lg transition-all hover:-translate-y-0.5"
+              style={{
+                background: `linear-gradient(135deg, ${brandColor} 0%, ${brandColorDark} 100%)`,
+                boxShadow: `0 8px 20px -6px ${brandColor}60`,
+              }}
+            >
+              See Our Top Picks
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          ) : (
+            <>
+              <a
+                href={affiliateUrl}
+                rel="noopener noreferrer sponsored"
+                className="flex items-center justify-center gap-1.5 w-full px-4 py-3 text-sm font-bold text-white rounded-xl shadow-lg transition-all hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                style={{
+                  background: `linear-gradient(135deg, ${brandColor} 0%, ${brandColorDark} 100%)`,
+                  boxShadow: `0 8px 20px -6px ${brandColor}60`,
+                }}
+              >
+                Get {p.name}
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              <Link
+                href={`/vpn/providers/${p.id}`}
+                className="block text-center mt-2 text-[11px] font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              >
+                Read full review →
+              </Link>
+            </>
+          )}
         </div>
       </article>
     );

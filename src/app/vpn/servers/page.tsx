@@ -4,6 +4,7 @@ import { getAllProviders, getAllCountries, getAllRegions } from "@/lib/data";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Byline from "@/components/ui/Byline";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ServerMap from "@/components/ui/ServerMap";
 
 export const metadata: Metadata = {
   title: "VPN Server Locations Worldwide (2026) — Coverage Map",
@@ -43,9 +44,19 @@ export default function VpnServersPage() {
         </p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-28" />
       </header>
+      {/* Interactive server map */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
+          Interactive Server Map
+        </h2>
+        <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+          Hover or tap a region to see how many servers each provider operates there.
+        </p>
+        <ServerMap />
+      </section>
+
       {/* Our Top 4 Picks */}
       <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
-
 
       {/* Server count comparison */}
       <section className="mb-10">

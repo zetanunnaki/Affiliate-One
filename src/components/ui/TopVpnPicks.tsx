@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getFeaturedProviders, getProviderAffiliateUrl } from "@/lib/data";
+import ABTestCta from "@/components/ui/ABTestCta";
 
 interface TopVpnPicksProps {
   countrySlug?: string;
@@ -200,22 +201,13 @@ export default function TopVpnPicks({
                       </div>
                     )}
 
-                    {/* CTA */}
-                    <a
+                    {/* CTA — A/B tested text variant */}
+                    <ABTestCta
                       href={affiliateUrl}
-                      rel="noopener noreferrer sponsored"
-                      className="group/cta relative overflow-hidden inline-flex w-full items-center justify-center gap-2 px-5 py-3.5 sm:py-4 text-sm font-black tracking-wide text-white rounded-xl sm:rounded-2xl shadow-xl transition-all hover:-translate-y-0.5 hover:shadow-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 uppercase"
-                      style={{
-                        background: `linear-gradient(135deg, ${p.brandColor} 0%, ${p.brandColorDark} 100%)`,
-                        boxShadow: `0 14px 30px -12px ${p.brandColor}66, 0 6px 12px -4px ${p.brandColor}40`,
-                      }}
-                    >
-                      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover/cta:translate-x-full transition-transform duration-700" aria-hidden />
-                      <span className="relative">Get {p.name}</span>
-                      <svg className="relative w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
+                      providerName={p.name}
+                      brandColor={p.brandColor || "#3b82f6"}
+                      brandColorDark={p.brandColorDark || "#1d4ed8"}
+                    />
 
                     {/* Trust line */}
                     <div className="flex items-center justify-center gap-1.5 text-[10px] font-semibold text-slate-500 dark:text-slate-400">

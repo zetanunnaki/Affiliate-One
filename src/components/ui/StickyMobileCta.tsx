@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { getFeaturedProviders, getProviderAffiliateUrl } from "@/lib/data";
+import { getVariant, trackConversion } from "@/lib/ab-test";
 
 /**
  * Sticky mobile bottom CTA — conversion booster for mobile traffic.
@@ -33,8 +34,9 @@ export default function StickyMobileCta() {
       /* session storage unavailable (private browsing) — just show it */
     }
 
+    const scrollThreshold = parseInt(getVariant("stickyDelay"), 10) || 600;
     function onScroll() {
-      setVisible(window.scrollY > 600);
+      setVisible(window.scrollY > scrollThreshold);
     }
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
@@ -123,6 +125,7 @@ export default function StickyMobileCta() {
           <a
             href={affiliateUrl}
             rel="noopener noreferrer sponsored"
+            onClick={() => trackConversion("stickyDelay", "sticky_cta_click")}
             className="shrink-0 inline-flex items-center gap-1 px-4 py-3 text-sm font-bold text-white rounded-xl transition-transform active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
             style={{
               background: `linear-gradient(135deg, ${brandColor} 0%, ${brandColorDark} 100%)`,

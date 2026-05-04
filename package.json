@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run guardrails && npm run feed && npm run sitemap && next build",
+    "build": "npm run guardrails && npm run feed && npm run sitemap && node scripts/generate-responsive-images.mjs && next build",
     "sitemap": "npx tsx scripts/generate-sitemap.ts",
     "build:next": "next build",
     "feed": "npx tsx scripts/generate-feed.ts",

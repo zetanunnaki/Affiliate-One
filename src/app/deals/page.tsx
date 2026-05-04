@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: `Current VPN deals and discount codes for ${CURRENT_MONTH} ${CURRENT_YEAR}. Save up to 89% on NordVPN, Surfshark, Proton VPN, and FastestVPN. Verified weekly — all deals include 30-day money-back guarantees.`,
   alternates: {
     canonical: "/deals/",
-    languages: { "x-default": "https://buysecurevpn.com/deals/", en: "https://buysecurevpn.com/deals/", fr: "https://buysecurevpn.com/fr/deals/", es: "https://buysecurevpn.com/es/deals/" },
+    languages: { "x-default": "/deals/", en: "/deals/", fr: "/fr/deals/", es: "/es/deals/", pt: "/pt/deals/" },
   },
   openGraph: {
     title: "VPN Deals & Coupons (2026) | BuySecureVPN",

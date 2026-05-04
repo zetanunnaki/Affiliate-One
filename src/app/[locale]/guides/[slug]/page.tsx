@@ -100,7 +100,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     description,
     alternates: {
       canonical: `/${locale}/guides/${slug}/`,
-      languages: { en: `/guides/${slug}/` },
+      languages: { "x-default": `/guides/${slug}/`, en: `/guides/${slug}/`, fr: `/fr/guides/${slug}/`, es: `/es/guides/${slug}/`, pt: `/pt/guides/${slug}/` },
     },
     openGraph: {
       title,

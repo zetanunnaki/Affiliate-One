@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "We tested the top VPN services for 47 days across speed, security, and privacy. NordVPN, Surfshark, Proton VPN & FastestVPN ranked side by side. Find your perfect match.",
   alternates: {
     canonical: "/best/vpn/",
-    languages: { "x-default": "https://buysecurevpn.com/best/vpn/", en: "https://buysecurevpn.com/best/vpn/", fr: "https://buysecurevpn.com/fr/best/vpn/", es: "https://buysecurevpn.com/es/best/vpn/", pt: "https://buysecurevpn.com/pt/best/vpn/" },
+    languages: { "x-default": "/best/vpn/", en: "/best/vpn/", fr: "/fr/best/vpn/", es: "/es/best/vpn/", pt: "/pt/best/vpn/" },
   },
   openGraph: {
     title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",

@@ -30,7 +30,10 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   return {
     title: `${titles[locale] || "VPN Security Guides"} | BuySecureVPN`,
     description: tr.bestVpn.description,
-    alternates: { canonical: `/${locale}/guides/` },
+    alternates: {
+      canonical: `/${locale}/guides/`,
+      languages: { "x-default": "/guides/", en: "/guides/", fr: "/fr/guides/", es: "/es/guides/", pt: "/pt/guides/" },
+    },
   };
 }
 

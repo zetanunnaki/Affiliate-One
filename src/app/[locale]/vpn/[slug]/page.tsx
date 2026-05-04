@@ -60,7 +60,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     description: `${title}. ${tr.bestVpn.description}`,
     alternates: {
       canonical: `/${locale}/vpn/${slug}/`,
-      languages: { en: `/vpn/best/${slug}/` },
+      languages: { "x-default": `/vpn/best/${slug}/`, en: `/vpn/best/${slug}/`, fr: `/fr/vpn/${slug}/`, es: `/es/vpn/${slug}/`, pt: `/pt/vpn/${slug}/` },
     },
     openGraph: {
       title,

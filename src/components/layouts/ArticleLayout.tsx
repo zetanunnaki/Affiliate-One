@@ -163,6 +163,7 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={heroImage.src}
+              srcSet={`${heroImage.src.replace(".webp", "-640w.webp")} 640w, ${heroImage.src.replace(".webp", "-1024w.webp")} 1024w, ${heroImage.src} 1408w`}
               alt={heroImage.alt}
               width={1200}
               height={675}

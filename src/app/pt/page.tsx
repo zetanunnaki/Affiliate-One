@@ -5,7 +5,10 @@ import { getAllCountries } from "@/lib/data";
 export const metadata: Metadata = {
   title: "BuySecureVPN — As Melhores VPNs Testadas por Especialistas",
   description: "Guias de segurança independentes para trabalhadores remotos. Análises de VPN, segurança de Wi-Fi público e recursos de cibersegurança.",
-  alternates: { languages: { en: "/", pt: "/pt/" } },
+  alternates: {
+    canonical: "/pt/",
+    languages: { "x-default": "/", en: "/", fr: "/fr/", es: "/es/", pt: "/pt/" },
+  },
 };
 
 export default function PortugueseHomePage() {

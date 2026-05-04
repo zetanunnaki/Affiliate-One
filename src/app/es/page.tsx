@@ -5,7 +5,10 @@ import { getAllCountries } from "@/lib/data";
 export const metadata: Metadata = {
   title: "BuySecureVPN — Guías de Seguridad para Trabajo Remoto y VPN",
   description: "Guías independientes de seguridad para trabajadores remotos. Reseñas de VPN, seguridad Wi-Fi pública y recursos de ciberseguridad para trabajar desde cualquier lugar.",
-  alternates: { languages: { en: "/", es: "/es/" } },
+  alternates: {
+    canonical: "/es/",
+    languages: { "x-default": "/", en: "/", fr: "/fr/", es: "/es/", pt: "/pt/" },
+  },
 };
 
 export default function SpanishHomePage() {

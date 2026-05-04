@@ -94,6 +94,8 @@ export default function CountryBestVpnLayout({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`/images/countries/${country.slug}.webp`}
+            srcSet={`/images/countries/${country.slug}-640w.webp 640w, /images/countries/${country.slug}-1024w.webp 1024w, /images/countries/${country.slug}.webp 2848w`}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
             alt={`${country.nameEn} — VPN guide hero image`}
             className="w-full h-auto object-cover aspect-[16/9]"
             loading="eager"

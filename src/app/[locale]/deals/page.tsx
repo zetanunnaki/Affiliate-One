@@ -18,7 +18,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     description: tr.deals.description,
     alternates: {
       canonical: `/${locale}/deals/`,
-      languages: { en: "/deals/", fr: "/fr/deals/", es: "/es/deals/", pt: "/pt/deals/" },
+      languages: { "x-default": "/deals/", en: "/deals/", fr: "/fr/deals/", es: "/es/deals/", pt: "/pt/deals/" },
     },
   };
 }

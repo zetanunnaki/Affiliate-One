@@ -204,6 +204,7 @@ export default function Home() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src="/images/illustrations/hero-remote-work.webp"
+                    srcSet="/images/illustrations/hero-remote-work-640w.webp 640w, /images/illustrations/hero-remote-work-1024w.webp 1024w, /images/illustrations/hero-remote-work.webp 1408w"
                     alt="Editorial: the 2026 VPN report"
                     className="w-full h-auto aspect-[4/5] object-cover"
                     loading="eager"
@@ -417,6 +418,7 @@ export default function Home() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={`/images/countries/${country.slug}.webp`}
+                  srcSet={`/images/countries/${country.slug}-640w.webp 640w, /images/countries/${country.slug}-1024w.webp 1024w, /images/countries/${country.slug}.webp 2848w`}
                   alt={`${country.nameEn} landmark`}
                   width={400}
                   height={500}

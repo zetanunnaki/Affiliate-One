@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: "Security Guides — VPN, Privacy & Remote Work (2026)",
   description:
     "In-depth security guides for remote workers. VPN setup, public Wi-Fi safety, 2FA, password management, and more. Written by CISSP-certified professionals, updated monthly.",
+  alternates: {
+    canonical: "/guides/",
+    languages: { "x-default": "/guides/", en: "/guides/", fr: "/fr/guides/", es: "/es/guides/", pt: "/pt/guides/" },
+  },
 };
 
 const categoryColors: Record<string, { bg: string; text: string; icon: string }> = {

@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "Clipboard hijacking malware replaces copied data — crypto addresses, passwords, bank details. How it works and how to protect yourself.",
     type: "article",
     url: "/security/clipboard-hijacking/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Clipboard Hijacking Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Clipboard Hijacking Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function ClipboardHijackingPage() {

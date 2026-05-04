@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "How USB devices can compromise your security. Juice jacking at airports, BadUSB attacks, and safe USB practices for remote workers.",
     type: "article",
     url: "/security/usb-security/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Usb Security Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Usb Security Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function UsbSecurityPage() {

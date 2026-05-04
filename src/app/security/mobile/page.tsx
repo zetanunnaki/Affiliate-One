@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "Secure your phone for remote work. iOS and Android settings, VPN setup, app permissions, and protection against theft and SIM swaps.",
     type: "article",
     url: "/security/mobile/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Mobile Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Mobile Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function MobileSecurityPage() {

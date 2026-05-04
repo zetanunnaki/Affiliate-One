@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "How to check if your credentials are on the dark web. Free and paid monitoring tools, what to do if you're exposed, and prevention strategies.",
     type: "article",
     url: "/security/dark-web-monitoring/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Dark Web Monitoring Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Dark Web Monitoring Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function DarkWebMonitoringPage() {

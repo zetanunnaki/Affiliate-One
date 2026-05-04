@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "Not everyone faces the same threats. Learn how to assess your personal risk level and build a security stack that matches your actual needs.",
     type: "article",
     url: "/security/threat-model/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Threat Model Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Threat Model Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function ThreatModelPage() {

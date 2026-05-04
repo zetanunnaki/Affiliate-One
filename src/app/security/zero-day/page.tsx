@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "What are zero-day exploits, why they matter, and how to minimize your risk even against unknown vulnerabilities.",
     type: "article",
     url: "/security/zero-day/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Zero Day Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Zero Day Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function ZeroDayPage() {

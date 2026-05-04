@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "Complete guide to securing your remote work setup. Learn about VPNs, encrypted communications, device security, and best practices for working from anywhere.",
     type: "article",
     url: "/security/remote-work/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Remote Work Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Remote Work Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function RemoteWorkSecurityPage() {

@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "How hackers access your webcam, how to tell if yours is compromised, and practical steps to secure your camera for remote work.",
     type: "article",
     url: "/security/webcam-security/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Webcam Security Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Webcam Security Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function WebcamSecurityPage() {

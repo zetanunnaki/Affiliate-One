@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "Step-by-step incident response plan for remote teams. Compromised accounts, data breaches, lost devices, and phishing attacks handled.",
     type: "article",
     url: "/security/incident-response/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Incident Response Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Incident Response Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function IncidentResponsePage() {

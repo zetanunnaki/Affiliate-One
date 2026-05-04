@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllCountries, getAllProviders, getAllIntents } from "@/lib/data";
-import Flag from "@/components/ui/Flag";
+import { getAllCountries } from "@/lib/data";
 import SaveToPinterest from "@/components/ui/SaveToPinterest";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import FAQ from "@/components/ui/FAQ";
+import LazyIntents from "@/components/ui/LazyIntents";
+import LazyCountryGrid from "@/components/ui/LazyCountryGrid";
 import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
@@ -31,14 +32,6 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
-
-// Countries with hero images — rendered with photo background
-const COUNTRIES_WITH_HERO = new Set([
-  "united-states", "united-kingdom", "germany", "france", "japan",
-  "australia", "canada", "brazil", "india", "mexico", "spain", "italy",
-  "netherlands", "sweden", "singapore", "south-korea", "switzerland",
-  "poland", "turkey", "argentina",
-]);
 
 const homeFaqs = [
   {
@@ -77,43 +70,16 @@ const homeFaqs = [
 
 export default function Home() {
   const countries = getAllCountries();
-  const providers = getAllProviders();
-  const intents = getAllIntents();
-
-  // Prefer countries with hero photos for the showcase
-  const featuredCountries = countries
-    .filter((c) => COUNTRIES_WITH_HERO.has(c.slug))
-    .slice(0, 8);
-
-  const topProviders = providers.slice(0, 3);
 
   return (
     <div>
       {/* ═══════════════ EDITORIAL HERO ═══════════════ */}
       <section className="relative overflow-hidden bg-slate-950 text-white">
-        {/* Layered background: deep navy + warm amber accent */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_1100px_700px_at_75%_30%,rgba(245,158,11,0.12),transparent_60%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_900px_600px_at_10%_80%,rgba(37,99,235,0.18),transparent_65%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,rgba(2,6,23,0.6)_100%)]" />
-        {/* Grain */}
-        <div
-          className="absolute inset-0 opacity-[0.055] mix-blend-overlay pointer-events-none"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
-          }}
-        />
-        {/* Faint grid */}
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M80 0H0v80' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
-          }}
-        />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 sm:pt-20 sm:pb-28">
-          {/* Masthead-style top strip */}
           <div className="flex items-center justify-between gap-4 pb-8 mb-10 border-b border-white/10">
             <div className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400">
               <span className="inline-flex items-center gap-2">
@@ -134,9 +100,7 @@ export default function Home() {
           </div>
 
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-            {/* ── Left: Oversized editorial headline (8 cols) ── */}
             <div className="lg:col-span-8">
-              {/* Rubric */}
               <div className="inline-flex items-center gap-2.5 mb-6">
                 <span className="h-px w-10 bg-amber-400" />
                 <span className="text-[11px] font-black uppercase tracking-[0.22em] text-amber-400">
@@ -144,7 +108,6 @@ export default function Home() {
                 </span>
               </div>
 
-              {/* The headline — oversized, tight, mixed weights */}
               <h1 className="font-black tracking-[-0.03em] leading-[0.92] text-[44px] sm:text-[72px] lg:text-[96px] xl:text-[112px]">
                 <span className="block text-white">The best</span>
                 <span className="block italic font-serif text-amber-300 -mt-1 lg:-mt-3">
@@ -153,12 +116,10 @@ export default function Home() {
                 <span className="block text-white">ever tested.</span>
               </h1>
 
-              {/* Lede */}
               <p className="mt-8 max-w-2xl text-lg sm:text-xl text-slate-300 leading-[1.55]">
                 We bought every major VPN at retail, tested them across six continents, and put the results through a brutal 47-point rubric. Here are the three that actually earned their rank.
               </p>
 
-              {/* CTAs */}
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/best/vpn"
@@ -177,7 +138,6 @@ export default function Home() {
                 </Link>
               </div>
 
-              {/* Byline + metric strip */}
               <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-[11px] text-slate-400 font-semibold uppercase tracking-wider">
                 <span className="inline-flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-amber-400" />
@@ -194,12 +154,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ── Right: editorial visual card (4 cols) ── */}
             <aside className="lg:col-span-4 lg:pt-2 max-w-sm mx-auto lg:max-w-none w-full">
               <div className="relative">
-                {/* Amber accent frame */}
                 <div className="absolute -inset-2 bg-gradient-to-br from-amber-400/30 via-transparent to-blue-500/20 rounded-[28px] blur-2xl" aria-hidden />
-
                 <div className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 bg-slate-900/60 backdrop-blur-sm">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
@@ -219,8 +176,6 @@ export default function Home() {
                     description="Best VPN 2026 — Expert-tested & independently reviewed"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent pointer-events-none" />
-
-                  {/* Editorial caption */}
                   <div className="absolute inset-x-0 bottom-0 p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="h-px w-6 bg-amber-400" />
@@ -232,20 +187,13 @@ export default function Home() {
                       NordVPN
                     </div>
                     <div className="mt-2 flex items-center gap-2">
-                      <div className="flex items-center gap-0.5">
-                        {Array.from({ length: 5 }).map((_, i) => (
-                          <svg key={i} className="w-3 h-3 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                        ))}
-                      </div>
+                      <span className="text-xs font-black text-amber-400">★★★★★</span>
                       <span className="text-xs font-black text-white">4.8</span>
                       <span className="text-xs text-slate-400">Fastest servers · Audited no-logs</span>
                     </div>
                   </div>
                 </div>
 
-                {/* Floating numbers callout */}
                 <div className="absolute -left-6 -bottom-8 hidden md:flex flex-col items-start gap-1 px-5 py-4 bg-white text-slate-950 rounded-2xl shadow-2xl rotate-[-3deg]">
                   <div className="text-[10px] font-black uppercase tracking-[0.15em] text-amber-600">Stat of the year</div>
                   <div className="font-black text-3xl leading-none">47pt</div>
@@ -256,33 +204,32 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Bottom fade */}
         <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-white dark:from-slate-950 to-transparent pointer-events-none" />
       </section>
 
       {/* ═══════════════ SOCIAL PROOF STRIP ═══════════════ */}
       <section className="bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-center">
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-center text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+            <span className="flex items-center gap-2">
               <svg className="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
               Independently audited
-            </div>
-            <div className="hidden sm:block w-px h-6 bg-slate-200 dark:bg-slate-800" />
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+            </span>
+            <span className="hidden sm:block w-px h-6 bg-slate-200 dark:bg-slate-800" />
+            <span className="flex items-center gap-2">
               <svg className="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
               50,000+ readers monthly
-            </div>
-            <div className="hidden sm:block w-px h-6 bg-slate-200 dark:bg-slate-800" />
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+            </span>
+            <span className="hidden sm:block w-px h-6 bg-slate-200 dark:bg-slate-800" />
+            <span className="flex items-center gap-2">
               <svg className="w-4 h-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" /></svg>
               CISSP · CEH · CompTIA
-            </div>
-            <div className="hidden sm:block w-px h-6 bg-slate-200 dark:bg-slate-800" />
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+            </span>
+            <span className="hidden sm:block w-px h-6 bg-slate-200 dark:bg-slate-800" />
+            <span className="flex items-center gap-2">
               <svg className="w-4 h-4 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               202 countries covered
-            </div>
+            </span>
           </div>
         </div>
       </section>
@@ -310,60 +257,21 @@ export default function Home() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
-            {
-              title: "VPN Guides",
-              desc: "Compare providers, learn setup, understand protocols",
-              href: "/vpn",
-              color: "blue",
-              icon: (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              ),
-            },
-            {
-              title: "Public Wi-Fi",
-              desc: "Stay safe on hotel, airport, and cafe networks",
-              href: "/security/public-wifi",
-              color: "cyan",
-              icon: (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.858 15.355-5.858 21.213 0" />
-                </svg>
-              ),
-            },
-            {
-              title: "2FA & Accounts",
-              desc: "Protect your accounts with two-factor auth",
-              href: "/security/2fa",
-              color: "indigo",
-              icon: (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                </svg>
-              ),
-            },
-            {
-              title: "Password Managers",
-              desc: "Never reuse a password again",
-              href: "/security/password-managers",
-              color: "violet",
-              icon: (
-                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              ),
-            },
+            { title: "VPN Guides", desc: "Compare providers, learn setup, understand protocols", href: "/vpn", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
+            { title: "Public Wi-Fi", desc: "Stay safe on hotel, airport, and cafe networks", href: "/security/public-wifi", icon: "M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.858 15.355-5.858 21.213 0" },
+            { title: "2FA & Accounts", desc: "Protect your accounts with two-factor auth", href: "/security/2fa", icon: "M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" },
+            { title: "Password Managers", desc: "Never reuse a password again", href: "/security/password-managers", icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
           ].map((hub) => (
             <Link
               key={hub.href}
               href={hub.href}
               className="group relative overflow-hidden p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/20 hover:border-blue-200 dark:hover:border-blue-800 hover:-translate-y-1 transition-all duration-300"
             >
-              {/* Gradient accent on hover */}
               <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 mb-4 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/50 group-hover:scale-110 transition-all duration-300">
-                {hub.icon}
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d={hub.icon} />
+                </svg>
               </div>
               <h3 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-1.5">
                 {hub.title}
@@ -371,18 +279,18 @@ export default function Home() {
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                 {hub.desc}
               </p>
-              <div className="mt-4 inline-flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="mt-4 inline-flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
                 Explore
                 <svg className="ml-1 w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </div>
+              </span>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* ═══════════════ COUNTRIES with hero images ═══════════════ */}
+      {/* ═══════════════ COUNTRIES ═══════════════ */}
       <section className="relative bg-slate-50 dark:bg-slate-900/50 py-20 border-y border-slate-100 dark:border-slate-800 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-end justify-between mb-10 gap-4">
@@ -402,51 +310,13 @@ export default function Home() {
               className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/40 rounded-full transition-colors shrink-0"
             >
               View all
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </Link>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {featuredCountries.map((country) => (
-              <Link
-                key={country.iso2}
-                href={`/vpn/best/${country.slug}`}
-                className="group relative overflow-hidden rounded-2xl aspect-[4/5] ring-1 ring-slate-200 dark:ring-slate-700/60 hover:ring-blue-400 dark:hover:ring-blue-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-1 transition-all duration-300"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`/images/countries/${country.slug}.webp`}
-                  srcSet={`/images/countries/${country.slug}-640w.webp 640w, /images/countries/${country.slug}-1024w.webp 1024w, /images/countries/${country.slug}.webp 2848w`}
-                  alt={`${country.nameEn} landmark`}
-                  width={400}
-                  height={500}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Flag iso2={country.iso2} name={country.nameEn} size="sm" />
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-blue-200">
-                      Best VPN 2026
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-1">
-                    {country.nameEn}
-                  </h3>
-                  <div className="flex items-center text-sm text-blue-200 font-semibold opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
-                    View guide
-                    <svg className="ml-1 w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <LazyCountryGrid />
 
           <div className="mt-8 text-center sm:hidden">
             <Link
@@ -466,40 +336,18 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {[
-            {
-              title: "100% Independent",
-              desc: "We buy every VPN at retail price and test it ourselves. No pay-for-play, no sponsored rankings.",
-              icon: (
-                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              ),
-            },
-            {
-              title: "Real-world tests",
-              desc: "Speed-tested across 6 continents, streaming services, and restrictive networks. Results you can verify.",
-              icon: (
-                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              ),
-            },
-            {
-              title: "Certified experts",
-              desc: "Written and fact-checked by CISSP, CEH, and CompTIA-certified security professionals with hands-on experience.",
-              icon: (
-                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                </svg>
-              ),
-            },
+            { title: "100% Independent", desc: "We buy every VPN at retail price and test it ourselves. No pay-for-play, no sponsored rankings.", icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" },
+            { title: "Real-world tests", desc: "Speed-tested across 6 continents, streaming services, and restrictive networks. Results you can verify.", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
+            { title: "Certified experts", desc: "Written and fact-checked by CISSP, CEH, and CompTIA-certified security professionals with hands-on experience.", icon: "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" },
           ].map((item) => (
             <div
               key={item.title}
               className="p-8 bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-2xl hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/20 transition-all duration-300"
             >
               <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/25 mb-5">
-                {item.icon}
+                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
+                </svg>
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
                 {item.title}
@@ -522,31 +370,7 @@ export default function Home() {
             Find the Right VPN for Your Needs
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {intents.map((intent) => (
-            <Link
-              key={intent.id}
-              href={`/vpn/intent/${intent.slug}`}
-              className="group relative overflow-hidden p-6 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl hover:shadow-lg hover:border-blue-200 dark:hover:border-blue-800 hover:-translate-y-0.5 transition-all duration-300"
-            >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/5 to-indigo-500/5 rounded-full blur-2xl group-hover:from-blue-500/10 group-hover:to-indigo-500/10 transition-colors" />
-              <div className="relative">
-                <h3 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2">
-                  VPN for {intent.label}
-                </h3>
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                  {intent.description}
-                </p>
-                <div className="inline-flex items-center text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform">
-                  Explore guide
-                  <svg className="ml-1 w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <LazyIntents />
       </section>
 
       {/* ═══════════════ FAQ ═══════════════ */}
@@ -558,15 +382,6 @@ export default function Home() {
       <section className="relative overflow-hidden py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-700 dark:from-blue-700 dark:via-blue-800 dark:to-indigo-900" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.15),transparent_70%)]" />
-        <div
-          className="absolute inset-0 opacity-[0.08]"
-          style={{
-            backgroundImage:
-              "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0H0v60' fill='none' stroke='white' stroke-width='0.5'/%3E%3C/svg%3E\")",
-          }}
-        />
-        <div className="absolute -top-20 -left-20 w-72 h-72 bg-cyan-400/20 rounded-full blur-3xl" />
-        <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-indigo-400/20 rounded-full blur-3xl" />
 
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">

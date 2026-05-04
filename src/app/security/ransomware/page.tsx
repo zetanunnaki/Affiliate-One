@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "How to prevent, detect, and recover from ransomware attacks. Backup strategies, security practices, and what to do if you're hit.",
     type: "article",
     url: "/security/ransomware/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Ransomware Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Ransomware Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function RansomwarePage() {

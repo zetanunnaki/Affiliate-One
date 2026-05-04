@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     description: "How to choose and deploy a VPN for your small team. Compare business VPN features, pricing, and management tools.",
     type: "article",
     url: "/security/vpn-for-businesses/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Vpn For Businesses Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Vpn For Businesses Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function VpnForBusinessesPage() {

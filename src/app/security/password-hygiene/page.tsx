@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     description: "Everything about password security: creation, storage, sharing, rotation, and breach response. The definitive guide for remote workers.",
     type: "article",
     url: "/security/password-hygiene/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Password Hygiene Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Password Hygiene Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function PasswordHygienePage() {

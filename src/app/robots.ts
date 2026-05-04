@@ -17,7 +17,10 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "PerplexityBot", allow: "/" },
       { userAgent: "Google-Extended", allow: "/" },
     ],
-    sitemap: "https://buysecurevpn.com/sitemap.xml",
+    sitemap: [
+      "https://buysecurevpn.com/sitemap.xml",
+      "https://buysecurevpn.com/image-sitemap.xml",
+    ],
     host: "https://buysecurevpn.com",
   };
 }

@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     description: "Deep comparison of every multi-factor authentication method. Security ratings, phishing resistance, recovery options, and recommendations by use case.",
     type: "article",
     url: "/security/multi-factor-comparison/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Multi Factor Comparison Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Multi Factor Comparison Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function MultiFactorComparisonPage() {

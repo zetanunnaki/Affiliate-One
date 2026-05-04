@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "QR codes can send you to phishing sites, install malware, or steal credentials. How 'quishing' works and how to protect yourself.",
     type: "article",
     url: "/security/qr-code-security/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Qr Code Security Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Qr Code Security Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function QrCodeSecurityPage() {

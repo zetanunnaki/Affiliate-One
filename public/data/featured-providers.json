@@ -1,0 +1,58 @@
+[
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "rating": 4.8,
+    "brandColor": "#4687ff",
+    "brandColorDark": "#2563eb",
+    "tagline": "Fastest speeds, audited no-logs, 6000+ servers",
+    "keyFeatures": ["Audited no-logs policy", "Threat Protection blocks malware", "10 devices per account", "30-day money-back guarantee"],
+    "originalPrice": "$12.99/mo",
+    "salePrice": "$3.39/mo",
+    "discountBadge": "Save 74%",
+    "positioningLabel": "Best Overall",
+    "affiliateUrl": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=145368&url_id=902"
+  },
+  {
+    "id": "surfshark",
+    "name": "Surfshark",
+    "rating": 4.6,
+    "brandColor": "#1EBFBF",
+    "brandColorDark": "#0E9898",
+    "tagline": "Unlimited devices, CleanWeb blocker, 100+ countries",
+    "keyFeatures": ["Unlimited simultaneous devices", "CleanWeb ad & malware blocker", "RAM-only server network", "30-day money-back guarantee"],
+    "originalPrice": "$15.45/mo",
+    "salePrice": "$1.99/mo",
+    "discountBadge": "Save 87%",
+    "positioningLabel": "Best for Unlimited Devices",
+    "affiliateUrl": "https://get.surfshark.net/aff_c?offer_id=926&aff_id=46126"
+  },
+  {
+    "id": "protonvpn",
+    "name": "Proton VPN",
+    "rating": 4.5,
+    "brandColor": "#6d4aff",
+    "brandColorDark": "#5b35f0",
+    "tagline": "Swiss privacy laws, open-source, free tier",
+    "keyFeatures": ["Swiss jurisdiction (no data laws)", "Open-source and audited", "Secure Core multi-hop", "Free tier available forever"],
+    "originalPrice": "$9.99/mo",
+    "salePrice": "$4.99/mo",
+    "discountBadge": "50% off",
+    "positioningLabel": "Best for Privacy",
+    "affiliateUrl": "https://go.getproton.me/aff_c?offer_id=26&aff_id=17279"
+  },
+  {
+    "id": "fastestvpn",
+    "name": "FastestVPN",
+    "rating": 4.2,
+    "brandColor": "#ff7a1f",
+    "brandColorDark": "#e8660f",
+    "tagline": "Lifetime plans, 10 devices, ad blocker",
+    "keyFeatures": ["Lifetime deal available", "10 devices per account", "Built-in ad blocker", "No-logs policy"],
+    "originalPrice": "$10/mo",
+    "salePrice": "$1.11/mo",
+    "discountBadge": "Save 89%",
+    "positioningLabel": "Best Budget",
+    "affiliateUrl": "https://fastestvpn.com/pro-lifetime-deal?a_aid=69d8177e889ed"
+  }
+]

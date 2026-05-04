@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "How to segment your home network for remote work security. VLANs, guest networks, and keeping IoT devices away from your work laptop.",
     type: "article",
     url: "/security/network-segmentation/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Network Segmentation Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Network Segmentation Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function NetworkSegmentationPage() {

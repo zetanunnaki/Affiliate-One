@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "Deepfakes, AI phishing, voice cloning, and automated attacks. How AI is changing the threat landscape and how to protect yourself.",
     type: "article",
     url: "/security/ai-threats/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Ai Threats Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Ai Threats Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function AIThreatsPage() {

@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     description: "Learn how to protect yourself on public Wi-Fi at hotels, airports, cafés, and co-working spaces. Practical security steps every remote worker should follow.",
     type: "article",
     url: "/security/public-wifi/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Public Wi-Fi Safety Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Public Wi-Fi Safety Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function PublicWifiPage() {

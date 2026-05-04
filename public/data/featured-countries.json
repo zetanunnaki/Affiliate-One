@@ -1,0 +1,10 @@
+[
+  {"iso2":"US","nameEn":"United States","slug":"united-states"},
+  {"iso2":"GB","nameEn":"United Kingdom","slug":"united-kingdom"},
+  {"iso2":"DE","nameEn":"Germany","slug":"germany"},
+  {"iso2":"FR","nameEn":"France","slug":"france"},
+  {"iso2":"JP","nameEn":"Japan","slug":"japan"},
+  {"iso2":"AU","nameEn":"Australia","slug":"australia"},
+  {"iso2":"CA","nameEn":"Canada","slug":"canada"},
+  {"iso2":"BR","nameEn":"Brazil","slug":"brazil"}
+]

@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     description: "Everything you need to know about password managers. How they work, which to choose, and how to set one up in under 10 minutes.",
     type: "article",
     url: "/security/password-managers/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Password Managers Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Password Managers Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function PasswordManagersPage() {

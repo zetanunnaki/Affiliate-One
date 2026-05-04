@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     canonical: "/guides/",
     languages: { "x-default": "/guides/", en: "/guides/", fr: "/fr/guides/", es: "/es/guides/", pt: "/pt/guides/" },
   },
+  openGraph: {
+    title: "Security Guides — VPN, Privacy & Remote Work (2026)",
+    description: "In-depth security guides for remote workers. Written by CISSP-certified professionals.",
+    type: "website",
+    images: [{ url: "/images/og/og-guides.webp", width: 1200, height: 675, alt: "BuySecureVPN Guides" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-guides.webp"] },
 };
 
 const categoryColors: Record<string, { bg: string; text: string; icon: string }> = {

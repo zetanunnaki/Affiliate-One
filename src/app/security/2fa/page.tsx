@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "Learn how to set up two-factor authentication (2FA) on all your accounts. Compare authenticator apps, hardware keys, and SMS verification.",
     type: "article",
     url: "/security/2fa/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "2fa Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "2fa Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function TwoFactorAuthPage() {

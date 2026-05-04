@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     description: "How to protect your personal data while working remotely. Data minimization, privacy tools, and reducing your digital footprint.",
     type: "article",
     url: "/security/data-privacy/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Data Privacy Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Data Privacy Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function DataPrivacyPage() {

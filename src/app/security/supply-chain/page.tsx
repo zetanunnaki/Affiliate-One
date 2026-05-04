@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "Supply chain attacks compromise trusted software to reach thousands of victims. SolarWinds, Codecov, and beyond — what remote workers need to know.",
     type: "article",
     url: "/security/supply-chain/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Supply Chain Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Supply Chain Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function SupplyChainPage() {

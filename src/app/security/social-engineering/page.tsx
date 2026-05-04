@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "How social engineering works, why remote workers are prime targets, and specific defenses against pretexting, baiting, tailgating, and quid pro quo attacks.",
     type: "article",
     url: "/security/social-engineering/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Social Engineering Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Social Engineering Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function SocialEngineeringPage() {

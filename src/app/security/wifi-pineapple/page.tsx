@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     description: "How attackers create fake Wi-Fi networks to intercept your traffic. Evil twin attacks, Wi-Fi Pineapple devices, and VPN as your primary defense.",
     type: "article",
     url: "/security/wifi-pineapple/",
-    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Wifi Pineapple Guide" }],
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Wifi Pineapple Guide" }],
   },
-  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function WifiPineapplePage() {

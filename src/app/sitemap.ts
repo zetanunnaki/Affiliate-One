@@ -3,9 +3,11 @@ import {
   getAllProviders,
   getAllIntents,
   getAllCountries,
+  getAllAuthors,
 } from "@/lib/data";
 import { getAllSlugs } from "@/lib/mdx";
 import comparisons from "@/data/comparisons.json";
+import categoriesData from "@/data/categories.json";
 import { TOP_COUNTRIES } from "@/lib/i18n";
 
 export const dynamic = "force-static";
@@ -56,24 +58,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const providers = getAllProviders();
   const countries = getAllCountries();
   const intents = getAllIntents();
+  const authors = getAllAuthors();
   const guideSlugs = getAllSlugs("guides");
   const moneySlugs = getAllSlugs("money");
 
   const entries: MetadataRoute.Sitemap = [];
 
-  // ── TIER 1: Revenue pages (priority 0.9-1.0) ─────────────────────
+  // ── TIER 1: Revenue pages ────────────────────────────────────────
   entries.push(
-    { url: `${BASE}/`, lastModified: daysBefore(0), changeFrequency: "daily", priority: 1.0 },
-    { url: `${BASE}/best/vpn/`, lastModified: daysBefore(0), changeFrequency: "weekly", priority: 1.0 },
-    { url: `${BASE}/deals/`, lastModified: daysBefore(0), changeFrequency: "daily", priority: 0.95 },
+    { url: `${BASE}/`, lastModified: daysBefore(0) },
+    { url: `${BASE}/best/vpn/`, lastModified: daysBefore(0) },
+    { url: `${BASE}/deals/`, lastModified: daysBefore(0) },
   );
 
   moneySlugs.forEach((slug, i) => {
     entries.push({
       url: `${BASE}/money/${slug}/`,
       lastModified: daysBefore(1 + (i % 7)),
-      changeFrequency: "weekly",
-      priority: 0.9,
     });
   });
 
@@ -81,8 +82,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: `${BASE}/vpn/providers/${p.id}/`,
       lastModified: daysBefore(1 + i * 2),
-      changeFrequency: "weekly",
-      priority: 0.9,
     });
   });
 
@@ -90,8 +89,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: `${BASE}/vpn/vs/${c.slug}/`,
       lastModified: daysBefore(2 + (i % 5)),
-      changeFrequency: "weekly",
-      priority: 0.85,
     });
   });
 
@@ -103,23 +100,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: `${BASE}/best/${slug}/`,
       lastModified: daysBefore(3),
-      changeFrequency: "weekly",
-      priority: 0.85,
     });
   }
 
-  // ── TIER 2: High-value content (0.7-0.85) ────────────────────────
+  // ── TIER 2: High-value content ───────────────────────────────────
   for (const h of [
-    { path: "/vpn/", p: 0.9 }, { path: "/best/", p: 0.9 },
-    { path: "/security/", p: 0.85 }, { path: "/guides/", p: 0.85 },
-    { path: "/countries/", p: 0.8 }, { path: "/vpn/providers/", p: 0.8 },
-    { path: "/vpn/vs/", p: 0.8 }, { path: "/vpn/compare/", p: 0.75 },
+    "/vpn/", "/best/", "/security/", "/guides/",
+    "/countries/", "/vpn/providers/", "/vpn/vs/", "/vpn/compare/",
   ]) {
     entries.push({
-      url: `${BASE}${h.path}`,
+      url: `${BASE}${h}`,
       lastModified: daysBefore(2),
-      changeFrequency: "weekly",
-      priority: h.p,
     });
   }
 
@@ -132,16 +123,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push({
         url: `${BASE}/vpn/best/${c.slug}/`,
         lastModified: daysBefore(5 + (i % 10)),
-        changeFrequency: "weekly",
-        priority: 0.8,
       });
       if (intentCountrySet.has(c.slug)) {
         for (const intent of INTENT_SLUGS) {
           entries.push({
             url: `${BASE}/vpn/best/${c.slug}/${intent}/`,
             lastModified: daysBefore(7 + (i % 12)),
-            changeFrequency: "weekly",
-            priority: 0.75,
           });
         }
       }
@@ -151,8 +138,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: `${BASE}/vpn/intent/${intent.slug}/`,
       lastModified: daysBefore(5 + i),
-      changeFrequency: "weekly",
-      priority: 0.75,
     });
   });
 
@@ -160,27 +145,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: `${BASE}/vpn/${slug}/`,
       lastModified: daysBefore(8 + (i % 14)),
-      changeFrequency: "monthly",
-      priority: 0.7,
     });
   });
 
-  // ── TIER 3: Supporting content (0.5-0.7) ──────────────────────────
+  // ── TIER 3: Supporting content ───────────────────────────────────
   guideSlugs.forEach((slug, i) => {
     entries.push({
       url: `${BASE}/guides/${slug}/`,
       lastModified: daysBefore(5 + (i % 20)),
-      changeFrequency: "monthly",
-      priority: 0.7,
     });
   });
+
+  for (const cat of categoriesData) {
+    entries.push({
+      url: `${BASE}/guides/category/${cat.slug}/`,
+      lastModified: daysBefore(10),
+    });
+  }
 
   SECURITY_SLUGS.forEach((slug, i) => {
     entries.push({
       url: `${BASE}/security/${slug}/`,
       lastModified: daysBefore(10 + (i % 15)),
-      changeFrequency: "monthly",
-      priority: 0.65,
     });
   });
 
@@ -188,24 +174,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entries.push({
       url: `${BASE}/tools/${slug}/`,
       lastModified: daysBefore(15),
-      changeFrequency: "monthly",
-      priority: 0.6,
     });
   }
 
+  entries.push({ url: `${BASE}/tools/`, lastModified: daysBefore(10) });
+
+  // ── Author profiles (E-E-A-T) ───────────────────────────────────
+  for (const author of authors) {
+    entries.push({
+      url: `${BASE}/authors/${author.id}/`,
+      lastModified: daysBefore(10),
+    });
+  }
+
+  // ── i18n locales ─────────────────────────────────────────────────
   for (const locale of ["fr", "es", "pt"] as const) {
     entries.push(
-      { url: `${BASE}/${locale}/`, lastModified: daysBefore(3), changeFrequency: "weekly", priority: 0.8 },
-      { url: `${BASE}/${locale}/best/vpn/`, lastModified: daysBefore(3), changeFrequency: "weekly", priority: 0.85 },
-      { url: `${BASE}/${locale}/deals/`, lastModified: daysBefore(4), changeFrequency: "weekly", priority: 0.8 },
-      { url: `${BASE}/${locale}/guides/`, lastModified: daysBefore(5), changeFrequency: "weekly", priority: 0.65 },
+      { url: `${BASE}/${locale}/`, lastModified: daysBefore(3) },
+      { url: `${BASE}/${locale}/best/vpn/`, lastModified: daysBefore(3) },
+      { url: `${BASE}/${locale}/deals/`, lastModified: daysBefore(4) },
+      { url: `${BASE}/${locale}/guides/`, lastModified: daysBefore(5) },
     );
     for (const slug of TOP_COUNTRIES[locale]) {
       entries.push({
         url: `${BASE}/${locale}/vpn/${slug}/`,
         lastModified: daysBefore(7),
-        changeFrequency: "weekly",
-        priority: 0.75,
       });
     }
     for (const slug of [
@@ -216,25 +209,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entries.push({
         url: `${BASE}/${locale}/guides/${slug}/`,
         lastModified: daysBefore(10),
-        changeFrequency: "monthly",
-        priority: 0.65,
       });
     }
   }
 
+  // ── Trust & legal pages ──────────────────────────────────────────
   for (const p of [
-    { path: "/about/", p: 0.5 }, { path: "/authors/", p: 0.5 },
-    { path: "/review-board/", p: 0.5 }, { path: "/editorial-policy/", p: 0.4 },
-    { path: "/affiliate-disclosure/", p: 0.4 }, { path: "/corrections/", p: 0.4 },
-    { path: "/glossary/", p: 0.5 }, { path: "/resources/", p: 0.5 },
-    { path: "/contact/", p: 0.3 }, { path: "/privacy/", p: 0.3 },
-    { path: "/terms/", p: 0.3 }, { path: "/cookies/", p: 0.3 },
+    "/about/", "/authors/", "/review-board/", "/editorial-policy/",
+    "/affiliate-disclosure/", "/corrections/", "/glossary/", "/resources/",
+    "/contact/", "/privacy/", "/terms/", "/cookies/",
+    "/changelog/", "/sitemap-html/",
   ]) {
     entries.push({
-      url: `${BASE}${p.path}`,
+      url: `${BASE}${p}`,
       lastModified: daysBefore(20),
-      changeFrequency: "yearly",
-      priority: p.p,
     });
   }
 

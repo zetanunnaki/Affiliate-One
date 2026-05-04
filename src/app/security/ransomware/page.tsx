@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Ransomware Protection for Remote Workers (2026)",
-  description: "How to prevent, detect, and recover from ransomware attacks. Backup strategies, security practices, and what to do if you're hit.",
+  description:
+    "How to prevent, detect, and recover from ransomware attacks. Backup strategies, security practices, and what to do if you're hit.",
+  alternates: { canonical: "/security/ransomware/" },
+  openGraph: {
+    title: "Ransomware Protection for Remote Workers (2026)",
+    description: "How to prevent, detect, and recover from ransomware attacks. Backup strategies, security practices, and what to do if you're hit.",
+    type: "article",
+    url: "/security/ransomware/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Ransomware Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function RansomwarePage() {

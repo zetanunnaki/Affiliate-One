@@ -4,6 +4,15 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Security Tools — Interactive Audits & Checklists",
   description: "Free interactive security tools for remote workers. Wi-Fi audit, security checklist, VPN comparison, and more.",
+  alternates: { canonical: "/tools/" },
+  openGraph: {
+    title: "Security Tools — Interactive Audits & Checklists",
+    description: "Free interactive security tools for remote workers. Wi-Fi audit, security checklist, VPN comparison, and more.",
+    type: "website",
+    url: "/tools/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Security Tools" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 const tools = [

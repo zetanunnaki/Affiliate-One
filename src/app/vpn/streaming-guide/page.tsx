@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "VPN Streaming Guide (2026) — Unblock Netflix, Disney+, BBC iPlayer & More",
@@ -81,7 +82,7 @@ export default function StreamingGuidePage() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-zinc-500 mt-2">Tested April 2026. &quot;Partial&quot; = works sometimes but inconsistent. Results change as services update their blocking.</p>
+        <p className="text-xs text-zinc-500 mt-2">Tested {BUILD_MONTH_YEAR}. &quot;Partial&quot; = works sometimes but inconsistent. Results change as services update their blocking.</p>
       </section>
 
       <section className="mb-10">

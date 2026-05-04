@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Threat Modeling for Remote Workers (2026) — Assess Your Real Risks",
-  description: "Not everyone faces the same threats. Learn how to assess your personal risk level and build a security stack that matches your actual needs.",
+  description:
+    "Not everyone faces the same threats. Learn how to assess your personal risk level and build a security stack that matches your actual needs.",
+  alternates: { canonical: "/security/threat-model/" },
+  openGraph: {
+    title: "Threat Modeling for Remote Workers (2026) — Assess Your Real Risks",
+    description: "Not everyone faces the same threats. Learn how to assess your personal risk level and build a security stack that matches your actual needs.",
+    type: "article",
+    url: "/security/threat-model/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Threat Model Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function ThreatModelPage() {

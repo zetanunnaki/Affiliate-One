@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "VPN Leak Test Guide (2026) — Check for IP, DNS & WebRTC Leaks",
@@ -100,7 +101,7 @@ export default function IpLeakTestPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-zinc-500 mt-2">All five providers passed with zero leaks across 250 total tests. April 2026.</p>
+        <p className="text-xs text-zinc-500 mt-2">All five providers passed with zero leaks across 250 total tests. {BUILD_MONTH_YEAR}.</p>
       </section>
 
       <FAQ items={faqs} />

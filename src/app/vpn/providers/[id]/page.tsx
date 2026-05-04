@@ -9,6 +9,7 @@ import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import ProductSchema from "@/components/seo/ProductSchema";
 import CTABanner from "@/components/ui/CTABanner";
+import { BUILD_MONTH_YEAR, BUILD_DATE_ISO } from "@/lib/dates";
 
 type PageProps = {
   params: Promise<{ id: string }>;
@@ -156,7 +157,7 @@ export default async function ProviderPage(props: PageProps) {
             <div className="hidden md:inline-flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
               <span className="inline-flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                Tested · April 2026
+                Tested · {BUILD_MONTH_YEAR}
               </span>
               <span className="text-slate-700">|</span>
               <span>The 2026 VPN Report</span>
@@ -245,7 +246,7 @@ export default async function ProviderPage(props: PageProps) {
 
               {/* Byline */}
               <div className="mt-12 [&_a]:text-slate-300 [&_a:hover]:text-white [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
-                <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
+                <Byline authorId="marcus-johnson" updatedAt={BUILD_DATE_ISO} />
               </div>
             </div>
 

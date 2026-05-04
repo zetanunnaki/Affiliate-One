@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Clipboard Hijacking Attacks (2026) — How Malware Steals What You Copy",
-  description: "Clipboard hijacking malware replaces copied data — crypto addresses, passwords, bank details. How it works and how to protect yourself.",
+  description:
+    "Clipboard hijacking malware replaces copied data — crypto addresses, passwords, bank details. How it works and how to protect yourself.",
+  alternates: { canonical: "/security/clipboard-hijacking/" },
+  openGraph: {
+    title: "Clipboard Hijacking Attacks (2026) — How Malware Steals What You Copy",
+    description: "Clipboard hijacking malware replaces copied data — crypto addresses, passwords, bank details. How it works and how to protect yourself.",
+    type: "article",
+    url: "/security/clipboard-hijacking/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Clipboard Hijacking Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function ClipboardHijackingPage() {

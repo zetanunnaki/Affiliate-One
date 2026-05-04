@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   title: "Phishing & Social Engineering Guide (2026) — Recognize & Avoid Attacks",
   description:
     "Learn how to recognize phishing emails, social engineering attacks, and scams targeting remote workers. Practical examples and prevention steps.",
+  alternates: { canonical: "/security/phishing/" },
+  openGraph: {
+    title: "Phishing & Social Engineering Guide (2026) — Recognize & Avoid Attacks",
+    description: "Learn how to recognize phishing emails, social engineering attacks, and scams targeting remote workers. Practical examples and prevention steps.",
+    type: "article",
+    url: "/security/phishing/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Phishing Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function PhishingPage() {

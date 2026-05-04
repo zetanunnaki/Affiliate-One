@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   title: "Password Manager Guide (2026) — Stop Reusing Passwords",
   description:
     "Everything you need to know about password managers. How they work, which to choose, and how to set one up in under 10 minutes.",
+  alternates: { canonical: "/security/password-managers/" },
+  openGraph: {
+    title: "Password Manager Guide (2026) — Stop Reusing Passwords",
+    description: "Everything you need to know about password managers. How they work, which to choose, and how to set one up in under 10 minutes.",
+    type: "article",
+    url: "/security/password-managers/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Password Managers Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function PasswordManagersPage() {

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllAuthors, getAuthorById } from "@/lib/data";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 type PageProps = {
   params: Promise<{ id: string }>;
@@ -172,7 +173,7 @@ export default async function AuthorPage(props: PageProps) {
               Best VPN 2026: Expert-Tested & Independently Reviewed
             </span>
             <span className="block text-sm text-zinc-500 mt-1">
-              Updated April 2026
+              Updated {BUILD_MONTH_YEAR}
             </span>
           </Link>
           <Link
@@ -183,7 +184,7 @@ export default async function AuthorPage(props: PageProps) {
               VPN Provider Reviews
             </span>
             <span className="block text-sm text-zinc-500 mt-1">
-              Updated April 2026
+              Updated {BUILD_MONTH_YEAR}
             </span>
           </Link>
         </div>

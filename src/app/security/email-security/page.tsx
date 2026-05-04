@@ -8,7 +8,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Email Security for Remote Workers (2026) — Protect Your Inbox",
-  description: "Comprehensive email security guide. Phishing defense, encrypted email, email forwarding rules, and protecting your most important account.",
+  description:
+    "Comprehensive email security guide. Phishing defense, encrypted email, email forwarding rules, and protecting your most important account.",
+  alternates: { canonical: "/security/email-security/" },
+  openGraph: {
+    title: "Email Security for Remote Workers (2026) — Protect Your Inbox",
+    description: "Comprehensive email security guide. Phishing defense, encrypted email, email forwarding rules, and protecting your most important account.",
+    type: "article",
+    url: "/security/email-security/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Email Security Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function EmailSecurityPage() {

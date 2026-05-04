@@ -8,6 +8,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
+import { BUILD_DATE_ISO } from "@/lib/dates";
 
 type PageProps = { params: Promise<{ locale: string; slug: string }> };
 
@@ -133,7 +134,7 @@ export default async function LocalizedGuidePage(props: PageProps) {
     description,
     inLanguage: locale === "pt" ? "pt-BR" : locale,
     url: `https://buysecurevpn.com/${locale}/guides/${slug}/`,
-    dateModified: post.frontmatter.updatedAt || "2026-03-15",
+    dateModified: post.frontmatter.updatedAt || BUILD_DATE_ISO,
     author: { "@type": "Person", name: "Marcus Johnson", url: "https://buysecurevpn.com/authors/marcus-johnson/" },
     publisher: { "@type": "Organization", name: "BuySecureVPN", url: "https://buysecurevpn.com/" },
   };
@@ -150,7 +151,7 @@ export default async function LocalizedGuidePage(props: PageProps) {
           <h1 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1]">{title}</h1>
           {description && <p className="mt-4 text-lg text-slate-300 leading-relaxed max-w-3xl">{description}</p>}
           <div className="mt-6 pt-5 border-t border-white/10 [&_a]:text-slate-300 [&_a:hover]:text-white [&_span]:text-slate-400 [&_time]:text-slate-400 [&>div]:border-0 [&>div]:mb-0 [&>div]:pb-0">
-            <Byline authorId={post.frontmatter.author || "marcus-johnson"} updatedAt={post.frontmatter.updatedAt || "2026-03-15"} />
+            <Byline authorId={post.frontmatter.author || "marcus-johnson"} updatedAt={post.frontmatter.updatedAt || BUILD_DATE_ISO} />
           </div>
         </div>
       </div>

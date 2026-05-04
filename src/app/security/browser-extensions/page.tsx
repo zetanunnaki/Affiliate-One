@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Browser Extension Security (2026) — Which Extensions Are Safe?",
-  description: "Browser extensions can read all your data. Here's how to audit your extensions, which ones to trust, and which to remove immediately.",
+  description:
+    "Browser extensions can read all your data. Here's how to audit your extensions, which ones to trust, and which to remove immediately.",
+  alternates: { canonical: "/security/browser-extensions/" },
+  openGraph: {
+    title: "Browser Extension Security (2026) — Which Extensions Are Safe?",
+    description: "Browser extensions can read all your data. Here's how to audit your extensions, which ones to trust, and which to remove immediately.",
+    type: "article",
+    url: "/security/browser-extensions/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Browser Extensions Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function BrowserExtensionsPage() {

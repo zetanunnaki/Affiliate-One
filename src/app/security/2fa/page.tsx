@@ -3,11 +3,21 @@ import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "Two-Factor Authentication Guide (2026) — Secure Your Accounts",
   description:
     "Learn how to set up two-factor authentication (2FA) on all your accounts. Compare authenticator apps, hardware keys, and SMS verification.",
+  alternates: { canonical: "/security/2fa/" },
+  openGraph: {
+    title: "Two-Factor Authentication Guide (2026) — Secure Your Accounts",
+    description: "Learn how to set up two-factor authentication (2FA) on all your accounts. Compare authenticator apps, hardware keys, and SMS verification.",
+    type: "article",
+    url: "/security/2fa/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "2fa Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function TwoFactorAuthPage() {
@@ -130,7 +140,7 @@ export default function TwoFactorAuthPage() {
         <strong>How we verified:</strong> Security ratings based on NIST SP
         800-63B authentication guidelines and FIDO Alliance standards.
         Convenience ratings based on user testing across iOS, Android, Windows,
-        and macOS (April 2026).
+        and macOS ({BUILD_MONTH_YEAR}).
       </div>
 
       <FAQ items={faqs} />

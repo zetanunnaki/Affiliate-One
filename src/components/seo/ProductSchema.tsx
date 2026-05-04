@@ -1,5 +1,6 @@
 import type { Provider } from "@/types";
 import { getProviderAffiliateUrl } from "@/lib/data";
+import { BUILD_DATE_ISO, BUILD_YEAR } from "@/lib/dates";
 
 interface ProductSchemaProps {
   provider: Provider;
@@ -31,7 +32,7 @@ export default function ProductSchema({ provider }: ProductSchemaProps) {
         "@type": "Organization",
         name: "BuySecureVPN",
       },
-      datePublished: "2026-04-07",
+      datePublished: BUILD_DATE_ISO,
     },
     ...(saleAmount && {
       offers: {
@@ -39,7 +40,7 @@ export default function ProductSchema({ provider }: ProductSchemaProps) {
         url: affiliateUrl,
         priceCurrency: "USD",
         price: saleAmount,
-        priceValidUntil: "2026-12-31",
+        priceValidUntil: `${BUILD_YEAR}-12-31`,
         availability: "https://schema.org/InStock",
         seller: {
           "@type": "Organization",

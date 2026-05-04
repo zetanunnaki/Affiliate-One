@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "QR Code Security (2026) — Quishing Attacks & How to Stay Safe",
-  description: "QR codes can send you to phishing sites, install malware, or steal credentials. How 'quishing' works and how to protect yourself.",
+  description:
+    "QR codes can send you to phishing sites, install malware, or steal credentials. How 'quishing' works and how to protect yourself.",
+  alternates: { canonical: "/security/qr-code-security/" },
+  openGraph: {
+    title: "QR Code Security (2026) — Quishing Attacks & How to Stay Safe",
+    description: "QR codes can send you to phishing sites, install malware, or steal credentials. How 'quishing' works and how to protect yourself.",
+    type: "article",
+    url: "/security/qr-code-security/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Qr Code Security Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function QrCodeSecurityPage() {

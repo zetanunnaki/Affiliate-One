@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Wi-Fi Pineapple & Evil Twin Attacks (2026) — How Fake Networks Steal Your Data",
-  description: "How attackers create fake Wi-Fi networks to intercept your traffic. Evil twin attacks, Wi-Fi Pineapple devices, and VPN as your primary defense.",
+  description:
+    "How attackers create fake Wi-Fi networks to intercept your traffic. Evil twin attacks, Wi-Fi Pineapple devices, and VPN as your primary defense.",
+  alternates: { canonical: "/security/wifi-pineapple/" },
+  openGraph: {
+    title: "Wi-Fi Pineapple & Evil Twin Attacks (2026) — How Fake Networks Steal Your Data",
+    description: "How attackers create fake Wi-Fi networks to intercept your traffic. Evil twin attacks, Wi-Fi Pineapple devices, and VPN as your primary defense.",
+    type: "article",
+    url: "/security/wifi-pineapple/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Wifi Pineapple Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function WifiPineapplePage() {

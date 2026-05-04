@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export default function VpnCalculatorPage() {
   const [devices, setDevices] = useState(3);
@@ -118,7 +119,7 @@ export default function VpnCalculatorPage() {
       </div>
 
       <p className="text-xs text-zinc-500 mt-4 text-center">
-        Prices based on published rates as of April 2026. Actual pricing may vary.{" "}
+        Prices based on published rates as of {BUILD_MONTH_YEAR}. Actual pricing may vary.{" "}
         <Link href="/deals" className="text-blue-600 hover:underline">Current deals</Link>
       </p>
     </div>

@@ -4,6 +4,7 @@ import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "Public Wi-Fi Safety (2026) — Stay Secure on Any Network",
@@ -160,7 +161,7 @@ export default function PublicWifiPage() {
         <strong>How we verified:</strong> Threat descriptions are based on
         documented attack vectors from OWASP, NIST, and CISA advisories.
         Mitigations were tested on Windows 11, macOS Sequoia, iOS 19, and
-        Android 16 with current VPN clients (April 2026).
+        Android 16 with current VPN clients ({BUILD_MONTH_YEAR}).
       </div>
 
       <FAQ items={faqs} />

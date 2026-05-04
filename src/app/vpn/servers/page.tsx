@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Byline from "@/components/ui/Byline";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import ServerMap from "@/components/ui/ServerMap";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "VPN Server Locations Worldwide (2026) — Coverage Map",
@@ -97,7 +98,7 @@ export default function VpnServersPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-zinc-500 mt-2">Server counts are approximate and change frequently. Last verified April 2026.</p>
+        <p className="text-xs text-zinc-500 mt-2">Server counts are approximate and change frequently. Last verified {BUILD_MONTH_YEAR}.</p>
       </section>
 
       {/* Why location matters */}

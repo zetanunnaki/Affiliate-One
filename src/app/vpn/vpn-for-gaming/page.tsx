@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "Best VPN for Gaming (2026) — Reduce Lag, Stop DDoS, Access More Servers",
@@ -69,7 +70,7 @@ export default function VpnForGamingPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-zinc-500 mt-2">Tested on 1Gbps fiber. WireGuard/NordLynx protocol. Nearest VPN server. April 2026.</p>
+        <p className="text-xs text-zinc-500 mt-2">Tested on 1Gbps fiber. WireGuard/NordLynx protocol. Nearest VPN server. {BUILD_MONTH_YEAR}.</p>
       </section>
 
       {/* Top picks */}

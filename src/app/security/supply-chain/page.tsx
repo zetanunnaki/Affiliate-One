@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Supply Chain Attacks Explained (2026) — How They Work & How to Defend",
-  description: "Supply chain attacks compromise trusted software to reach thousands of victims. SolarWinds, Codecov, and beyond — what remote workers need to know.",
+  description:
+    "Supply chain attacks compromise trusted software to reach thousands of victims. SolarWinds, Codecov, and beyond — what remote workers need to know.",
+  alternates: { canonical: "/security/supply-chain/" },
+  openGraph: {
+    title: "Supply Chain Attacks Explained (2026) — How They Work & How to Defend",
+    description: "Supply chain attacks compromise trusted software to reach thousands of victims. SolarWinds, Codecov, and beyond — what remote workers need to know.",
+    type: "article",
+    url: "/security/supply-chain/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Supply Chain Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function SupplyChainPage() {

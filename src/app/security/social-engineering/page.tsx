@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Social Engineering Attacks: The Complete Guide for Remote Workers (2026)",
-  description: "How social engineering works, why remote workers are prime targets, and specific defenses against pretexting, baiting, tailgating, and quid pro quo attacks.",
+  description:
+    "How social engineering works, why remote workers are prime targets, and specific defenses against pretexting, baiting, tailgating, and quid pro quo attacks.",
+  alternates: { canonical: "/security/social-engineering/" },
+  openGraph: {
+    title: "Social Engineering Attacks: The Complete Guide for Remote Workers (2026)",
+    description: "How social engineering works, why remote workers are prime targets, and specific defenses against pretexting, baiting, tailgating, and quid pro quo attacks.",
+    type: "article",
+    url: "/security/social-engineering/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Social Engineering Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function SocialEngineeringPage() {

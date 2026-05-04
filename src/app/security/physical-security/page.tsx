@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Physical Security for Remote Workers (2026) — Protect Your Devices IRL",
-  description: "Digital security is useless if someone steals your laptop. Physical security practices for home offices, co-working spaces, cafés, and travel.",
+  description:
+    "Digital security is useless if someone steals your laptop. Physical security practices for home offices, co-working spaces, cafés, and travel.",
+  alternates: { canonical: "/security/physical-security/" },
+  openGraph: {
+    title: "Physical Security for Remote Workers (2026) — Protect Your Devices IRL",
+    description: "Digital security is useless if someone steals your laptop. Physical security practices for home offices, co-working spaces, cafés, and travel.",
+    type: "article",
+    url: "/security/physical-security/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Physical Security Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function PhysicalSecurityPage() {

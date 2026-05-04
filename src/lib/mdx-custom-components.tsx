@@ -135,7 +135,9 @@ export const customMDXComponents: MDXComponents = {
       <img
         src={src}
         alt={alt || ""}
-        className="w-full rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 group-hover:shadow-2xl group-hover:scale-[1.01] transition-all duration-500"
+        width={1200}
+        height={675}
+        className="w-full h-auto rounded-2xl shadow-xl border border-slate-200 dark:border-slate-700 group-hover:shadow-2xl group-hover:scale-[1.01] transition-all duration-500"
         loading="lazy"
       />
       {alt && (

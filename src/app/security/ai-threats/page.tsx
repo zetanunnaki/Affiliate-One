@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "AI-Powered Cyber Threats: What Remote Workers Need to Know (2026)",
-  description: "Deepfakes, AI phishing, voice cloning, and automated attacks. How AI is changing the threat landscape and how to protect yourself.",
+  description:
+    "Deepfakes, AI phishing, voice cloning, and automated attacks. How AI is changing the threat landscape and how to protect yourself.",
+  alternates: { canonical: "/security/ai-threats/" },
+  openGraph: {
+    title: "AI-Powered Cyber Threats: What Remote Workers Need to Know (2026)",
+    description: "Deepfakes, AI phishing, voice cloning, and automated attacks. How AI is changing the threat landscape and how to protect yourself.",
+    type: "article",
+    url: "/security/ai-threats/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Ai Threats Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function AIThreatsPage() {

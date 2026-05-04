@@ -9,6 +9,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import ComparisonHighlight from "@/components/ui/ComparisonHighlight";
+import { BUILD_DATE_ISO } from "@/lib/dates";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -128,8 +129,8 @@ export default async function VsPage(props: PageProps) {
     "@type": "Article",
     headline: comp.title,
     description: `Detailed comparison of ${a.name} and ${b.name}. Speed, security, price, and features compared side by side.`,
-    datePublished: "2026-03-15",
-    dateModified: "2026-04-07",
+    datePublished: BUILD_DATE_ISO,
+    dateModified: BUILD_DATE_ISO,
     author: { "@type": "Person", name: "Marcus Johnson", url: "https://buysecurevpn.com/authors/marcus-johnson/" },
     publisher: { "@type": "Organization", name: "BuySecureVPN", logo: { "@type": "ImageObject", url: "https://buysecurevpn.com/logo.svg" } },
     mainEntityOfPage: `https://buysecurevpn.com/vpn/vs/${slug}/`,

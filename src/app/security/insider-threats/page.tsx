@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Insider Threats for Remote Teams (2026) — Prevention & Detection",
-  description: "Insider threats are harder to detect in remote teams. How to prevent data theft, detect suspicious behavior, and build a security-aware culture.",
+  description:
+    "Insider threats are harder to detect in remote teams. How to prevent data theft, detect suspicious behavior, and build a security-aware culture.",
+  alternates: { canonical: "/security/insider-threats/" },
+  openGraph: {
+    title: "Insider Threats for Remote Teams (2026) — Prevention & Detection",
+    description: "Insider threats are harder to detect in remote teams. How to prevent data theft, detect suspicious behavior, and build a security-aware culture.",
+    type: "article",
+    url: "/security/insider-threats/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Insider Threats Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function InsiderThreatsPage() {

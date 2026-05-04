@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Incident Response for Remote Teams (2026) — What to Do When Things Go Wrong",
-  description: "Step-by-step incident response plan for remote teams. Compromised accounts, data breaches, lost devices, and phishing attacks handled.",
+  description:
+    "Step-by-step incident response plan for remote teams. Compromised accounts, data breaches, lost devices, and phishing attacks handled.",
+  alternates: { canonical: "/security/incident-response/" },
+  openGraph: {
+    title: "Incident Response for Remote Teams (2026) — What to Do When Things Go Wrong",
+    description: "Step-by-step incident response plan for remote teams. Compromised accounts, data breaches, lost devices, and phishing attacks handled.",
+    type: "article",
+    url: "/security/incident-response/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Incident Response Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function IncidentResponsePage() {

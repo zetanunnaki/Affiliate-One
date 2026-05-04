@@ -5,6 +5,7 @@ import Flag from "@/components/ui/Flag";
 import SaveToPinterest from "@/components/ui/SaveToPinterest";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import FAQ from "@/components/ui/FAQ";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "BuySecureVPN — Best VPN Reviews & Security Guides 2026",
@@ -120,7 +121,7 @@ export default function Home() {
                   <span className="absolute inline-flex w-full h-full bg-emerald-400 rounded-full opacity-75 animate-ping" />
                   <span className="relative inline-flex w-1.5 h-1.5 bg-emerald-400 rounded-full" />
                 </span>
-                Live · April 2026
+                Live · {BUILD_MONTH_YEAR}
               </span>
               <span className="text-slate-700">|</span>
               <span className="hidden sm:inline">Issue 04 · Remote Security Quarterly</span>

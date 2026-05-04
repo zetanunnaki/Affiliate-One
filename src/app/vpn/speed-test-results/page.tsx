@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "VPN Speed Test Results (2026) — Every Provider Tested on 1Gbps Fiber",
@@ -40,7 +41,7 @@ export default function SpeedTestResultsPage() {
 
       {/* Methodology */}
       <section className="mb-6 p-4 bg-zinc-50 dark:bg-zinc-800 rounded-lg text-sm text-zinc-600 dark:text-zinc-400">
-        <strong>Methodology:</strong> Base connection: 1Gbps fiber. Each configuration tested 10 times, averaged. Protocol: fastest available (WireGuard/NordLynx/Lightway). Tested April 2026 on Windows 11 and macOS Sequoia.
+        <strong>Methodology:</strong> Base connection: 1Gbps fiber. Each configuration tested 10 times, averaged. Protocol: fastest available (WireGuard/NordLynx/Lightway). Tested {BUILD_MONTH_YEAR} on Windows 11 and macOS Sequoia.
       </section>
 
       {/* Results by provider */}

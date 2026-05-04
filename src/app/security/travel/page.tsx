@@ -10,6 +10,15 @@ export const metadata: Metadata = {
   title: "Travel Security Checklist (2026) — Digital Nomad & Business Travel Guide",
   description:
     "Security checklist for digital nomads and business travelers. Protect your devices, data, and accounts while traveling internationally.",
+  alternates: { canonical: "/security/travel/" },
+  openGraph: {
+    title: "Travel Security Checklist (2026) — Digital Nomad & Business Travel Guide",
+    description: "Security checklist for digital nomads and business travelers. Protect your devices, data, and accounts while traveling internationally.",
+    type: "article",
+    url: "/security/travel/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Travel Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function TravelSecurityPage() {

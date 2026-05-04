@@ -8,7 +8,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "MFA Methods Compared: Passkeys vs Authenticator vs SMS vs Hardware Keys (2026)",
-  description: "Deep comparison of every multi-factor authentication method. Security ratings, phishing resistance, recovery options, and recommendations by use case.",
+  description:
+    "Deep comparison of every multi-factor authentication method. Security ratings, phishing resistance, recovery options, and recommendations by use case.",
+  alternates: { canonical: "/security/multi-factor-comparison/" },
+  openGraph: {
+    title: "MFA Methods Compared: Passkeys vs Authenticator vs SMS vs Hardware Keys (2026)",
+    description: "Deep comparison of every multi-factor authentication method. Security ratings, phishing resistance, recovery options, and recommendations by use case.",
+    type: "article",
+    url: "/security/multi-factor-comparison/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Multi Factor Comparison Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function MultiFactorComparisonPage() {

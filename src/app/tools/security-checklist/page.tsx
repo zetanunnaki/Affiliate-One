@@ -2,10 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PrintButton from "@/components/ui/PrintButton";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 export const metadata: Metadata = {
   title: "Printable Remote Work Security Checklist (2026)",
   description: "A comprehensive, printable security checklist for remote workers. Cover all the essentials: VPN, 2FA, passwords, devices, and network security.",
+  alternates: { canonical: "/tools/security-checklist/" },
+  openGraph: {
+    title: "Printable Remote Work Security Checklist (2026)",
+    description: "A comprehensive, printable security checklist for remote workers. Cover all the essentials: VPN, 2FA, passwords, devices, and network security.",
+    type: "website",
+    url: "/tools/security-checklist/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Security Checklist" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 const sections = [
@@ -156,7 +166,7 @@ export default function SecurityChecklistPage() {
       </div>
 
       <div className="mt-10 pt-6 border-t border-zinc-200 dark:border-zinc-700 text-xs text-zinc-500 print:text-zinc-600">
-        <p>BuySecureVPN Remote Work Security Checklist — buysecurevpn.com — Updated April 2026</p>
+        <p>BuySecureVPN Remote Work Security Checklist — buysecurevpn.com — Updated {BUILD_MONTH_YEAR}</p>
         <p className="mt-1">Based on NIST Cybersecurity Framework 2.0, CISA Telework Security Guidance, and SANS Institute recommendations.</p>
       </div>
 

@@ -8,7 +8,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Password Hygiene Guide (2026) — The Complete Password Security Playbook",
-  description: "Everything about password security: creation, storage, sharing, rotation, and breach response. The definitive guide for remote workers.",
+  description:
+    "Everything about password security: creation, storage, sharing, rotation, and breach response. The definitive guide for remote workers.",
+  alternates: { canonical: "/security/password-hygiene/" },
+  openGraph: {
+    title: "Password Hygiene Guide (2026) — The Complete Password Security Playbook",
+    description: "Everything about password security: creation, storage, sharing, rotation, and breach response. The definitive guide for remote workers.",
+    type: "article",
+    url: "/security/password-hygiene/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Password Hygiene Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function PasswordHygienePage() {

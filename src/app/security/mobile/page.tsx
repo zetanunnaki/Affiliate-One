@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Mobile Security Guide for Remote Workers (2026)",
-  description: "Secure your phone for remote work. iOS and Android settings, VPN setup, app permissions, and protection against theft and SIM swaps.",
+  description:
+    "Secure your phone for remote work. iOS and Android settings, VPN setup, app permissions, and protection against theft and SIM swaps.",
+  alternates: { canonical: "/security/mobile/" },
+  openGraph: {
+    title: "Mobile Security Guide for Remote Workers (2026)",
+    description: "Secure your phone for remote work. iOS and Android settings, VPN setup, app permissions, and protection against theft and SIM swaps.",
+    type: "article",
+    url: "/security/mobile/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Mobile Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function MobileSecurityPage() {

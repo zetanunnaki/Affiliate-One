@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Encryption Guide for Remote Workers (2026)",
-  description: "Everything remote workers need to know about encryption. Device encryption, email encryption, file encryption, and VPN encryption explained.",
+  description:
+    "Everything remote workers need to know about encryption. Device encryption, email encryption, file encryption, and VPN encryption explained.",
+  alternates: { canonical: "/security/encryption/" },
+  openGraph: {
+    title: "Encryption Guide for Remote Workers (2026)",
+    description: "Everything remote workers need to know about encryption. Device encryption, email encryption, file encryption, and VPN encryption explained.",
+    type: "article",
+    url: "/security/encryption/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Encryption Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function EncryptionHubPage() {

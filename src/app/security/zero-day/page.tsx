@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Zero-Day Vulnerabilities Explained (2026) — What Remote Workers Should Know",
-  description: "What are zero-day exploits, why they matter, and how to minimize your risk even against unknown vulnerabilities.",
+  description:
+    "What are zero-day exploits, why they matter, and how to minimize your risk even against unknown vulnerabilities.",
+  alternates: { canonical: "/security/zero-day/" },
+  openGraph: {
+    title: "Zero-Day Vulnerabilities Explained (2026) — What Remote Workers Should Know",
+    description: "What are zero-day exploits, why they matter, and how to minimize your risk even against unknown vulnerabilities.",
+    type: "article",
+    url: "/security/zero-day/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Zero Day Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function ZeroDayPage() {

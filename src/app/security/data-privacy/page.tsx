@@ -8,7 +8,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Data Privacy Guide for Remote Workers (2026)",
-  description: "How to protect your personal data while working remotely. Data minimization, privacy tools, and reducing your digital footprint.",
+  description:
+    "How to protect your personal data while working remotely. Data minimization, privacy tools, and reducing your digital footprint.",
+  alternates: { canonical: "/security/data-privacy/" },
+  openGraph: {
+    title: "Data Privacy Guide for Remote Workers (2026)",
+    description: "How to protect your personal data while working remotely. Data minimization, privacy tools, and reducing your digital footprint.",
+    type: "article",
+    url: "/security/data-privacy/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Data Privacy Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function DataPrivacyPage() {

@@ -9,6 +9,15 @@ export const metadata: Metadata = {
   title: "Remote Work Security Guide (2026) — Protect Your Digital Workspace",
   description:
     "Complete guide to securing your remote work setup. Learn about VPNs, encrypted communications, device security, and best practices for working from anywhere.",
+  alternates: { canonical: "/security/remote-work/" },
+  openGraph: {
+    title: "Remote Work Security Guide (2026) — Protect Your Digital Workspace",
+    description: "Complete guide to securing your remote work setup. Learn about VPNs, encrypted communications, device security, and best practices for working from anywhere.",
+    type: "article",
+    url: "/security/remote-work/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Remote Work Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function RemoteWorkSecurityPage() {

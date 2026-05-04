@@ -1,3 +1,5 @@
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
+
 interface SpeedTestResult {
   location: string;
   download: string;
@@ -17,7 +19,7 @@ export default function SpeedTestResults({
   provider,
   protocol,
   results,
-  testDate = "April 2026",
+  testDate = BUILD_MONTH_YEAR,
 }: SpeedTestResultsProps) {
   return (
     <section className="my-8">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Provider } from "@/types";
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
 
 interface PricingTableProps {
   providers: Provider[];
@@ -95,7 +96,7 @@ export default function PricingTable({ providers }: PricingTableProps) {
         </table>
       </div>
       <p className="text-xs text-slate-500 dark:text-slate-400 mt-3 italic">
-        Prices may vary by plan length and promotional offers. Last updated April 2026.
+        Prices may vary by plan length and promotional offers. Last updated {BUILD_MONTH_YEAR}.
       </p>
     </section>
   );

@@ -9,7 +9,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "VPN for Small Teams & Businesses (2026) — Secure Your Remote Workforce",
-  description: "How to choose and deploy a VPN for your small team. Compare business VPN features, pricing, and management tools.",
+  description:
+    "How to choose and deploy a VPN for your small team. Compare business VPN features, pricing, and management tools.",
+  alternates: { canonical: "/security/vpn-for-businesses/" },
+  openGraph: {
+    title: "VPN for Small Teams & Businesses (2026) — Secure Your Remote Workforce",
+    description: "How to choose and deploy a VPN for your small team. Compare business VPN features, pricing, and management tools.",
+    type: "article",
+    url: "/security/vpn-for-businesses/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Vpn For Businesses Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForBusinessesPage() {

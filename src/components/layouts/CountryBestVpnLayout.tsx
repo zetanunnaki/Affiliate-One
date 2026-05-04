@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ui/ComparisonTable";
 import CountryContextBlock from "@/components/ui/CountryContextBlock";
 import Methodology from "@/components/ui/Methodology";
 import FAQ from "@/components/ui/FAQ";
+import { BUILD_DATE_ISO } from "@/lib/dates";
 import InternalLinks from "@/components/ui/InternalLinks";
 import CountryPageTracker from "@/components/ui/CountryPageTracker";
 import NearbyCountries from "@/components/ui/NearbyCountries";
@@ -63,7 +64,7 @@ export default function CountryBestVpnLayout({
     "@type": "Article",
     headline: `Best VPN for ${country.nameEn} (2026): Remote Work Security & Privacy`,
     description: `Compare the top VPN services for ${country.nameEn}. Expert-tested recommendations for remote work, travel, and online privacy in ${country.nameEn}.`,
-    dateModified: "2026-04-07",
+    dateModified: BUILD_DATE_ISO,
     author: {
       "@type": "Person",
       name: "Marcus Johnson",

@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "USB Security Guide (2026) — Juice Jacking, BadUSB & Safe Practices",
-  description: "How USB devices can compromise your security. Juice jacking at airports, BadUSB attacks, and safe USB practices for remote workers.",
+  description:
+    "How USB devices can compromise your security. Juice jacking at airports, BadUSB attacks, and safe USB practices for remote workers.",
+  alternates: { canonical: "/security/usb-security/" },
+  openGraph: {
+    title: "USB Security Guide (2026) — Juice Jacking, BadUSB & Safe Practices",
+    description: "How USB devices can compromise your security. Juice jacking at airports, BadUSB attacks, and safe USB practices for remote workers.",
+    type: "article",
+    url: "/security/usb-security/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Usb Security Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function UsbSecurityPage() {

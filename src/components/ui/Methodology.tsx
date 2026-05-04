@@ -1,3 +1,5 @@
+import { BUILD_MONTH_YEAR } from "@/lib/dates";
+
 interface MethodologyProps {
   countryName?: string;
 }
@@ -89,7 +91,7 @@ export default function Methodology({ countryName }: MethodologyProps) {
       </div>
 
       <p className="text-[11px] text-slate-500 dark:text-slate-500 mt-5 italic">
-        Last methodology review: April 2026. Devices tested: Windows 11, macOS
+        Last methodology review: {BUILD_MONTH_YEAR}. Devices tested: Windows 11, macOS
         Sequoia, iOS 19, Android 16.
       </p>
     </section>

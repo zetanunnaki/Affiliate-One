@@ -7,7 +7,17 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 
 export const metadata: Metadata = {
   title: "Home Network Segmentation (2026) — Separate Work, IoT & Personal Devices",
-  description: "How to segment your home network for remote work security. VLANs, guest networks, and keeping IoT devices away from your work laptop.",
+  description:
+    "How to segment your home network for remote work security. VLANs, guest networks, and keeping IoT devices away from your work laptop.",
+  alternates: { canonical: "/security/network-segmentation/" },
+  openGraph: {
+    title: "Home Network Segmentation (2026) — Separate Work, IoT & Personal Devices",
+    description: "How to segment your home network for remote work security. VLANs, guest networks, and keeping IoT devices away from your work laptop.",
+    type: "article",
+    url: "/security/network-segmentation/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Network Segmentation Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function NetworkSegmentationPage() {

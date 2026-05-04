@@ -65,7 +65,10 @@ export default function ComparisonHighlight({
               <img
                 src={`/images/providers/${p.id}.svg`}
                 alt={`${p.name} logo`}
+                width={72}
+                height={72}
                 className="w-full h-full object-contain"
+                loading="lazy"
               />
             </div>
           </div>

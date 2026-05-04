@@ -1,0 +1,87 @@
+{
+  "_comment": [
+    "Redirect map for BuySecureVPN.",
+    "GitHub Pages does NOT support server-side 301 redirects.",
+    "These redirects are handled client-side via the 404.html fallback page.",
+    "For proper 301 redirects (SEO-friendly), migrate to Vercel or Cloudflare Pages,",
+    "which support _redirects files or next.config.ts redirects natively.",
+    "Last updated: 2026-05-04"
+  ],
+  "redirects": [
+    {
+      "from": "/money/best-vpn-streaming",
+      "to": "/best/vpn-streaming/",
+      "reason": "Phase 32: money page restructured to /best/ directory"
+    },
+    {
+      "from": "/money/best-vpn-gaming",
+      "to": "/best/vpn-gaming/",
+      "reason": "Phase 32: money page restructured to /best/ directory"
+    },
+    {
+      "from": "/money/best-vpn-privacy",
+      "to": "/best/vpn-privacy/",
+      "reason": "Phase 32: money page restructured to /best/ directory"
+    },
+    {
+      "from": "/money/best-vpn-travel",
+      "to": "/best/vpn-travel/",
+      "reason": "Phase 32: money page restructured to /best/ directory"
+    },
+    {
+      "from": "/money/best-vpn-business",
+      "to": "/best/vpn-business/",
+      "reason": "Phase 32: money page restructured to /best/ directory"
+    },
+    {
+      "from": "/money/best-vpn-free-trial",
+      "to": "/best/vpn-free-trial/",
+      "reason": "Phase 32: money page restructured to /best/ directory"
+    },
+    {
+      "from": "/money/best-vpn-router",
+      "to": "/best/vpn-router/",
+      "reason": "Phase 32: money page restructured to /best/ directory"
+    },
+    {
+      "from": "/vpn/best/israel",
+      "to": "/countries/",
+      "reason": "Phase 8: Israel country page removed per user request"
+    },
+    {
+      "from": "/vpn/providers/mullvad",
+      "to": "/vpn/providers/",
+      "reason": "Phase 32: Mullvad VPN removed (not monetized, replaced by Surfshark)"
+    },
+    {
+      "from": "/vpn/vs/nordvpn-vs-mullvad",
+      "to": "/vpn/vs/",
+      "reason": "Phase 32: Mullvad comparison removed"
+    },
+    {
+      "from": "/vpn/vs/protonvpn-vs-mullvad",
+      "to": "/vpn/vs/",
+      "reason": "Phase 32: Mullvad comparison removed"
+    },
+    {
+      "from": "/vpn/vs/fastestvpn-vs-mullvad",
+      "to": "/vpn/vs/",
+      "reason": "Phase 32: Mullvad comparison removed"
+    },
+    {
+      "from": "/newsletter",
+      "to": "/",
+      "reason": "Phase 29.5: Newsletter page removed per user request"
+    },
+    {
+      "from": "/vpn/providers/expressvpn",
+      "to": "/vpn/providers/",
+      "reason": "Phase 37: ExpressVPN set to non-monetized, no dedicated review page"
+    },
+    {
+      "from": "/vpn/providers/cyberghost",
+      "to": "/vpn/providers/",
+      "reason": "Phase 37: CyberGhost set to non-monetized, no dedicated review page"
+    }
+  ]
+}

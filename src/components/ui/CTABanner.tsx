@@ -42,6 +42,7 @@ export default function CTABanner({ provider, headline, countryName }: CTABanner
               width={56}
               height={56}
               className="w-14 h-14 shrink-0 rounded-xl object-contain bg-white p-2 ring-1 ring-white/20 shadow-lg"
+              loading="lazy"
             />
             <div>
               <h3 className="text-lg sm:text-xl font-bold mb-1">

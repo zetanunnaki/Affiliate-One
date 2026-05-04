@@ -104,6 +104,7 @@ export default function DealsPage() {
                         width={56}
                         height={56}
                         className="w-14 h-14 shrink-0 rounded-xl object-contain bg-white p-2 ring-1 ring-slate-200 dark:ring-slate-700 shadow-sm"
+                        loading="lazy"
                       />
                       <div>
                         <h2 className="text-xl font-bold text-slate-900 dark:text-white">

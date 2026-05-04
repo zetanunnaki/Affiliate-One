@@ -96,6 +96,7 @@ export default function CountryBestVpnLayout({
             alt={`${country.nameEn} — VPN guide hero image`}
             className="w-full h-auto object-cover aspect-[16/9]"
             loading="eager"
+            fetchPriority="high"
           />
           <SaveToPinterest
             imageSrc={`/images/countries/${country.slug}.webp`}
@@ -114,6 +115,7 @@ export default function CountryBestVpnLayout({
                   src={`https://flagcdn.com/w80/${country.iso2.toLowerCase()}.png`}
                   alt={`${country.nameEn} flag`}
                   className="w-full h-full object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
               <div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ClientRedirect from "@/components/ui/ClientRedirect";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -41,6 +42,8 @@ const POPULAR_PAGES: Array<{ category: string; items: { label: string; href: str
 export default function NotFound() {
   return (
     <>
+      {/* Client-side redirect for known URL changes (GitHub Pages has no server-side 301 support) */}
+      <ClientRedirect />
       {/* ═══ Hero ═══ */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />

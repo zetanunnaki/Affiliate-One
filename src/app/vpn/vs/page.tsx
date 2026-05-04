@@ -64,6 +64,7 @@ export default function VsIndexPage() {
                       width={56}
                       height={56}
                       className="w-14 h-14 rounded-xl object-contain bg-white p-2 ring-1 ring-slate-200 dark:ring-slate-700 shadow-sm"
+                      loading="lazy"
                     />
                     <span className="text-sm font-bold text-slate-900 dark:text-white">{left.name}</span>
                     <span className="text-[10px] font-semibold text-slate-500">{left.rating}/5</span>
@@ -81,6 +82,7 @@ export default function VsIndexPage() {
                       width={56}
                       height={56}
                       className="w-14 h-14 rounded-xl object-contain bg-white p-2 ring-1 ring-slate-200 dark:ring-slate-700 shadow-sm"
+                      loading="lazy"
                     />
                     <span className="text-sm font-bold text-slate-900 dark:text-white">{right.name}</span>
                     <span className="text-[10px] font-semibold text-slate-500">{right.rating}/5</span>

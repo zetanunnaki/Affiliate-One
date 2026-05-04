@@ -93,6 +93,8 @@ export default function StickyMobileCta() {
           <img
             src={`/images/providers/${nordvpn.id}.svg`}
             alt={`${nordvpn.name} logo`}
+            width={44}
+            height={44}
             className="w-11 h-11 shrink-0 rounded-lg object-contain bg-white dark:bg-slate-800 p-1 ring-1 ring-slate-200 dark:ring-slate-700"
           />
 

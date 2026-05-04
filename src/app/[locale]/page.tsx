@@ -16,7 +16,10 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   return {
     title: `BuySecureVPN — ${tr.topPicks.heading} | ${tr.langName}`,
     description: tr.bestVpn.description,
-    alternates: { canonical: `/${locale}/` },
+    alternates: {
+      canonical: `/${locale}/`,
+      languages: { "x-default": "https://buysecurevpn.com/", en: "https://buysecurevpn.com/", fr: "https://buysecurevpn.com/fr/", es: "https://buysecurevpn.com/es/", pt: "https://buysecurevpn.com/pt/" },
+    },
   };
 }
 

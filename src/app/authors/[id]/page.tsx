@@ -42,7 +42,17 @@ export default async function AuthorPage(props: PageProps) {
     name: author.name,
     jobTitle: author.role,
     description: author.bio,
+    image: `https://buysecurevpn.com${author.headshot}`,
+    url: `https://buysecurevpn.com/authors/${author.id}/`,
     sameAs: author.sameAs,
+    ...(author.credentials.length > 0 && {
+      knowsAbout: author.credentials,
+      hasCredential: author.credentials.map((c) => ({
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Professional Certification",
+        name: c,
+      })),
+    }),
   };
 
   return (
@@ -60,6 +70,7 @@ export default async function AuthorPage(props: PageProps) {
           width={80}
           height={80}
           className="w-20 h-20 rounded-full object-cover shrink-0"
+          loading="lazy"
         />
         <div>
           <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
@@ -87,14 +98,36 @@ export default async function AuthorPage(props: PageProps) {
             Credentials
           </h2>
           <div className="flex flex-wrap gap-2">
-            {author.credentials.map((c) => (
-              <span
-                key={c}
-                className="px-3 py-1 text-sm bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full"
-              >
-                {c}
-              </span>
-            ))}
+            {author.credentials.map((c) => {
+              const verifyUrls: Record<string, string> = {
+                "CISSP": "https://www.isc2.org/Certifications/CISSP",
+                "CompTIA Security+": "https://www.comptia.org/certifications/security",
+                "CEH": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/",
+                "CCNA": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+              };
+              const href = verifyUrls[c];
+              return href ? (
+                <a
+                  key={c}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 text-sm bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors"
+                >
+                  {c}
+                  <svg className="w-3 h-3 opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              ) : (
+                <span
+                  key={c}
+                  className="px-3 py-1 text-sm bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full"
+                >
+                  {c}
+                </span>
+              );
+            })}
           </div>
         </div>
       )}

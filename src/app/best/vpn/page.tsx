@@ -13,14 +13,14 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",
   description:
-    "We tested the top VPN services for speed, security, and privacy. NordVPN, Proton VPN, and FastestVPN compared.",
+    "We tested the top VPN services for 47 days across speed, security, and privacy. NordVPN, Surfshark, Proton VPN & FastestVPN ranked side by side. Find your perfect match.",
   alternates: {
     canonical: "/best/vpn/",
-    languages: { "x-default": "https://buysecurevpn.com/best/vpn/", en: "https://buysecurevpn.com/best/vpn/", fr: "https://buysecurevpn.com/fr/best/vpn/", es: "https://buysecurevpn.com/es/best/vpn/" },
+    languages: { "x-default": "https://buysecurevpn.com/best/vpn/", en: "https://buysecurevpn.com/best/vpn/", fr: "https://buysecurevpn.com/fr/best/vpn/", es: "https://buysecurevpn.com/es/best/vpn/", pt: "https://buysecurevpn.com/pt/best/vpn/" },
   },
   openGraph: {
     title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",
-    description: "Top VPN services ranked for speed, security, and privacy. NordVPN, Proton VPN, FastestVPN.",
+    description: "We tested the top VPN services for 47 days across speed, security, and privacy. NordVPN, Surfshark, Proton VPN & FastestVPN ranked side by side.",
     type: "article",
     url: "/best/vpn/",
     images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN 2026" }],

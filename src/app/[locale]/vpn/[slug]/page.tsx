@@ -120,7 +120,7 @@ export default async function LocalizedCountryPage(props: PageProps) {
                   <span className="self-start px-2 py-0.5 text-[10px] font-black uppercase tracking-wider rounded-full mb-3" style={{ backgroundColor: `${brandColor}15`, color: brandColor }}>{labels[idx]}</span>
                   <div className="flex items-center gap-3 mb-3">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/images/providers/${p.id}.svg`} alt={p.name} width={40} height={40} className="w-10 h-10 rounded-xl bg-white dark:bg-slate-800 p-1 ring-1 ring-slate-200 dark:ring-slate-700 object-contain" />
+                    <img src={`/images/providers/${p.id}.svg`} alt={p.name} width={40} height={40} className="w-10 h-10 rounded-xl bg-white dark:bg-slate-800 p-1 ring-1 ring-slate-200 dark:ring-slate-700 object-contain" loading="lazy" />
                     <div>
                       <div className="font-black text-slate-900 dark:text-white">{p.name}</div>
                       <div className="text-xs font-bold text-slate-500">{p.rating.toFixed(1)}/5</div>

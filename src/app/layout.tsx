@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
-import StickyMobileCta from "@/components/ui/StickyMobileCta";
 import GlobalStructuredData from "@/components/seo/GlobalStructuredData";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 import AdSense from "@/components/seo/AdSense";
 import { SOCIAL } from "@/lib/social";
-import ScrollToTop from "@/components/ui/ScrollToTop";
-import CookieConsent from "@/components/ui/CookieConsent";
+import LazyOverlays from "@/components/ui/LazyOverlays";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -88,6 +86,13 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="preconnect" href="https://flagcdn.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://flagcdn.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+      </head>
       <body className="min-h-full flex flex-col bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
         <script
           dangerouslySetInnerHTML={{
@@ -105,9 +110,7 @@ export default function RootLayout({
         {/* Spacer so sticky mobile CTA doesn't cover the last bit of footer */}
         <div className="h-20 lg:hidden" aria-hidden="true" />
         <Footer />
-        <ScrollToTop />
-        <StickyMobileCta />
-        <CookieConsent />
+        <LazyOverlays />
       </body>
     </html>
   );

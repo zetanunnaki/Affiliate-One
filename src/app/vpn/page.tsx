@@ -139,6 +139,7 @@ export default function VpnHubPage() {
                     width={48}
                     height={48}
                     className="w-12 h-12 rounded-xl object-contain bg-white p-1.5 ring-1 ring-slate-200 dark:ring-slate-700"
+                    loading="lazy"
                   />
                   <div className="flex-1 min-w-0">
                     <h3 className="font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate">

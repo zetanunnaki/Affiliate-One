@@ -48,6 +48,7 @@ export default function PricingTable({ providers }: PricingTableProps) {
                       width={32}
                       height={32}
                       className="w-8 h-8 shrink-0 rounded-md object-contain bg-white dark:bg-slate-800 p-1 ring-1 ring-slate-200 dark:ring-slate-700"
+                      loading="lazy"
                     />
                     <span className="font-bold text-sm text-slate-900 dark:text-white">{p.name}</span>
                   </div>

@@ -4,6 +4,7 @@ import { getAllCountries, getAllProviders, getAllIntents } from "@/lib/data";
 import Flag from "@/components/ui/Flag";
 import SaveToPinterest from "@/components/ui/SaveToPinterest";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import FAQ from "@/components/ui/FAQ";
 
 export const metadata: Metadata = {
   title: "BuySecureVPN — Best VPN Reviews & Security Guides 2026",
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
       en: "https://buysecurevpn.com/",
       fr: "https://buysecurevpn.com/fr/",
       es: "https://buysecurevpn.com/es/",
+      pt: "https://buysecurevpn.com/pt/",
     },
   },
   openGraph: {
@@ -36,6 +38,41 @@ const COUNTRIES_WITH_HERO = new Set([
   "netherlands", "sweden", "singapore", "south-korea", "switzerland",
   "poland", "turkey", "argentina",
 ]);
+
+const homeFaqs = [
+  {
+    question: "What is a VPN and why do remote workers need one?",
+    answer: "A VPN (Virtual Private Network) encrypts your internet connection and masks your IP address. Remote workers need VPNs to secure company data on public Wi-Fi, access geo-restricted resources, and prevent ISP throttling during video calls.",
+  },
+  {
+    question: "How do you test and rate VPNs?",
+    answer: "We use a 47-point rubric covering speed (multi-continent tests), security (leak tests, kill switch reliability), privacy (no-logs audit verification), usability, and value. Each provider is purchased at retail and tested for a minimum of 47 days before publishing.",
+  },
+  {
+    question: "Which VPN is best for working from home in 2026?",
+    answer: "NordVPN is our top pick for remote work in 2026, scoring 4.8/5 in our tests. It offers the fastest speeds, an audited no-logs policy, Threat Protection malware blocking, and 10 simultaneous device connections — ideal for home office setups.",
+  },
+  {
+    question: "Are free VPNs safe for remote work?",
+    answer: "Most free VPNs are not suitable for remote work due to data caps, slower speeds, limited server choices, and questionable privacy practices. Proton VPN offers a reputable free tier, but for full remote-work security we recommend a paid service with verified no-logs policies.",
+  },
+  {
+    question: "How much does a good VPN cost?",
+    answer: "Quality VPNs range from $1.11–$12.99/month depending on the provider and plan length. Multi-year plans offer the biggest savings. NordVPN starts at $3.39/mo, Surfshark at $1.99/mo, and FastestVPN offers lifetime plans from $1.11/mo.",
+  },
+  {
+    question: "Can my employer see what I do on a VPN?",
+    answer: "If you use a personal VPN, your employer cannot monitor your traffic. However, if your company provides a corporate VPN, they may log activity on their network. We recommend using your employer's VPN for work tasks and a personal VPN for private browsing on the same device.",
+  },
+  {
+    question: "Do VPNs slow down internet speed?",
+    answer: "All VPNs add some overhead, but top providers like NordVPN (NordLynx protocol) and Surfshark (WireGuard) typically reduce speeds by less than 10-15%. This is imperceptible for most remote work tasks including video conferencing and file transfers.",
+  },
+  {
+    question: "How many devices can I protect with one VPN subscription?",
+    answer: "It varies by provider: Surfshark offers unlimited simultaneous connections, NordVPN and Proton VPN allow 10 devices, and FastestVPN supports 10 devices. For households with many devices, Surfshark's unlimited plan offers the best value.",
+  },
+];
 
 export default function Home() {
   const countries = getAllCountries();
@@ -172,6 +209,7 @@ export default function Home() {
                     fetchPriority="high"
                     width={800}
                     height={1000}
+                    sizes="(max-width: 1024px) 100vw, 33vw"
                   />
                   <SaveToPinterest
                     imageSrc="/images/illustrations/hero-remote-work.webp"
@@ -379,6 +417,9 @@ export default function Home() {
                 <img
                   src={`/images/countries/${country.slug}.webp`}
                   alt={`${country.nameEn} landmark`}
+                  width={400}
+                  height={500}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   loading="lazy"
                 />
@@ -503,6 +544,11 @@ export default function Home() {
             </Link>
           ))}
         </div>
+      </section>
+
+      {/* ═══════════════ FAQ ═══════════════ */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <FAQ items={homeFaqs} title="VPN Questions Answered" />
       </section>
 
       {/* ═══════════════ BOTTOM CTA ═══════════════ */}

@@ -164,8 +164,12 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
             <img
               src={heroImage.src}
               alt={heroImage.alt}
+              width={1200}
+              height={675}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 896px"
               className="w-full h-auto object-cover aspect-[16/9]"
               loading="eager"
+              fetchPriority="high"
             />
             {canonicalUrl && (
               <SaveToPinterest

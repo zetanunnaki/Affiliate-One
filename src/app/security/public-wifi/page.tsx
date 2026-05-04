@@ -9,6 +9,15 @@ export const metadata: Metadata = {
   title: "Public Wi-Fi Safety (2026) — Stay Secure on Any Network",
   description:
     "Learn how to protect yourself on public Wi-Fi at hotels, airports, cafés, and co-working spaces. Practical security steps every remote worker should follow.",
+  alternates: { canonical: "/security/public-wifi/" },
+  openGraph: {
+    title: "Public Wi-Fi Safety (2026) — Stay Secure on Any Network",
+    description: "Learn how to protect yourself on public Wi-Fi at hotels, airports, cafés, and co-working spaces. Practical security steps every remote worker should follow.",
+    type: "article",
+    url: "/security/public-wifi/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Public Wi-Fi Safety Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function PublicWifiPage() {

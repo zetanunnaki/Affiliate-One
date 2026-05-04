@@ -89,10 +89,62 @@ export default async function VsPage(props: PageProps) {
       question: `Which is better for remote work?`,
       answer: `Both are excellent for remote work. ${a.name} stands out for ${a.positioningTags.slice(0, 2).join(" and ")}, while ${b.name} excels at ${b.positioningTags.slice(0, 2).join(" and ")}. Your choice should depend on which features matter most for your workflow.`,
     },
+    {
+      question: `Which has better security, ${a.name} or ${b.name}?`,
+      answer: `Both ${a.name} and ${b.name} use AES-256 encryption and offer kill switches. ${a.name} supports ${a.features.protocols.join(", ")}, while ${b.name} uses ${b.features.protocols.join(", ")}. Both have verified no-logs policies. The security difference is marginal — choose based on other factors like speed and price.`,
+    },
+    {
+      question: `How many devices can I connect with ${a.name} vs ${b.name}?`,
+      answer: `${a.name} allows ${a.features.devices === 0 ? "unlimited" : a.features.devices} simultaneous connections, while ${b.name} supports ${b.features.devices === 0 ? "unlimited" : b.features.devices}. ${a.features.devices === 0 || b.features.devices === 0 ? "The unlimited option is great for large households." : "Both offer enough for a typical remote worker's setup."}`,
+    },
+    {
+      question: `Does ${a.name} or ${b.name} have better streaming support?`,
+      answer: `Both VPNs work with major streaming services in our tests. ${a.name} performed well with its ${a.features.protocols[0]} protocol, while ${b.name} was reliable using ${b.features.protocols[0]}. For the best streaming experience, connect to a server in the same country as the content you want to access.`,
+    },
+    {
+      question: `Which VPN has a better refund policy?`,
+      answer: `Both ${a.name} and ${b.name} offer money-back guarantees on all plans. This lets you test both services risk-free and decide which one works best for your setup before committing.`,
+    },
+    {
+      question: `Is ${a.name} or ${b.name} better for privacy?`,
+      answer: `Both providers claim verified no-logs policies. ${a.name} is based in a ${a.positioningTags.includes("privacy") ? "privacy-friendly jurisdiction" : "jurisdiction outside the 14 Eyes alliance"}, and ${b.name} operates from a ${b.positioningTags.includes("privacy") ? "privacy-first country" : "VPN-friendly jurisdiction"}. For maximum privacy, look at audit history and transparency reports.`,
+    },
+    {
+      question: `Do ${a.name} and ${b.name} support split tunneling?`,
+      answer: `${a.features.splitTunneling ? `${a.name} supports split tunneling` : `${a.name} has limited split tunneling`}, and ${b.features.splitTunneling ? `${b.name} also offers split tunneling` : `${b.name} has limited split tunneling support`}. Split tunneling lets you route only sensitive traffic through the VPN while keeping local network access for printers and smart devices.`,
+    },
+    {
+      question: `Which VPN is easier to set up?`,
+      answer: `Both ${a.name} and ${b.name} offer one-click apps for Windows, macOS, iOS, and Android. Setup takes under 5 minutes for either provider. Both also support manual configuration on Linux and routers for advanced users.`,
+    },
+    {
+      question: `Should I switch from ${a.name} to ${b.name} (or vice versa)?`,
+      answer: `Consider switching if your current VPN doesn't meet your needs for ${a.rating >= b.rating ? `speed and features (${a.name} scores ${a.rating}/5)` : `value and specific features (${b.name} scores ${b.rating}/5)`}. Use the money-back guarantee on the new provider to test it risk-free before canceling your current subscription.`,
+    },
   ];
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: comp.title,
+    description: `Detailed comparison of ${a.name} and ${b.name}. Speed, security, price, and features compared side by side.`,
+    datePublished: "2026-03-15",
+    dateModified: "2026-04-07",
+    author: { "@type": "Person", name: "Marcus Johnson", url: "https://buysecurevpn.com/authors/marcus-johnson/" },
+    publisher: { "@type": "Organization", name: "BuySecureVPN", logo: { "@type": "ImageObject", url: "https://buysecurevpn.com/logo.svg" } },
+    mainEntityOfPage: `https://buysecurevpn.com/vpn/vs/${slug}/`,
+    about: [
+      { "@type": "SoftwareApplication", name: a.name, applicationCategory: "VPN", operatingSystem: "Windows, macOS, iOS, Android, Linux", aggregateRating: { "@type": "AggregateRating", ratingValue: a.rating, bestRating: 5, worstRating: 1, reviewCount: 1 } },
+      { "@type": "SoftwareApplication", name: b.name, applicationCategory: "VPN", operatingSystem: "Windows, macOS, iOS, Android, Linux", aggregateRating: { "@type": "AggregateRating", ratingValue: b.rating, bestRating: 5, worstRating: 1, reviewCount: 1 } },
+    ],
+  };
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },

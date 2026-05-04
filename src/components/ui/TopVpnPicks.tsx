@@ -117,7 +117,10 @@ export default function TopVpnPicks({
                         <img
                           src={`/images/providers/${p.id}.svg`}
                           alt={`${p.name} logo`}
+                          width={64}
+                          height={64}
                           className="w-full h-full object-contain"
+                          loading="lazy"
                         />
                       </div>
 

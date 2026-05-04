@@ -59,7 +59,7 @@ export default async function LocalizedDealsPage(props: PageProps) {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div className="flex items-center gap-4">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={`/images/providers/${provider.id}.svg`} alt={provider.name} width={48} height={48} className="w-12 h-12 shrink-0 rounded-xl object-contain bg-white dark:bg-slate-800 p-1.5 ring-1 ring-slate-200 dark:ring-slate-700" />
+                      <img src={`/images/providers/${provider.id}.svg`} alt={provider.name} width={48} height={48} className="w-12 h-12 shrink-0 rounded-xl object-contain bg-white dark:bg-slate-800 p-1.5 ring-1 ring-slate-200 dark:ring-slate-700" loading="lazy" />
                       <div>
                         <h2 className="text-xl font-bold text-slate-900 dark:text-white">{provider.name}</h2>
                         <p className="text-sm text-slate-500">{deal.extra}</p>

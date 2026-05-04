@@ -68,6 +68,7 @@ export default function ProvidersPage() {
                   width={56}
                   height={56}
                   className="w-14 h-14 shrink-0 rounded-xl object-contain bg-white p-2 ring-1 ring-slate-200 dark:ring-slate-700 shadow-sm"
+                  loading="lazy"
                 />
                 <div className="flex-1 min-w-0">
                   <h2 className="text-2xl font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors truncate">

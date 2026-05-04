@@ -96,7 +96,7 @@ export default async function LocalizedBestVpnPage(props: PageProps) {
                 <div className="p-5 sm:p-6">
                   <div className="flex items-center gap-4 mb-4">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/images/providers/${p.id}.svg`} alt={p.name} width={44} height={44} className="w-11 h-11 shrink-0 rounded-xl object-contain bg-white dark:bg-slate-800 p-1.5 ring-1 ring-slate-200 dark:ring-slate-700" />
+                    <img src={`/images/providers/${p.id}.svg`} alt={p.name} width={44} height={44} className="w-11 h-11 shrink-0 rounded-xl object-contain bg-white dark:bg-slate-800 p-1.5 ring-1 ring-slate-200 dark:ring-slate-700" loading="lazy" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <span className="text-lg font-black text-slate-900 dark:text-white">{p.name}</span>

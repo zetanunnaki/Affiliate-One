@@ -24,7 +24,15 @@ export default function GlobalStructuredData() {
     "@type": "Organization",
     name: "BuySecureVPN",
     url: "https://buysecurevpn.com",
-    logo: "https://buysecurevpn.com/logo.png",
+    logo: "https://buysecurevpn.com/logo.svg",
+    foundingDate: "2024",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "[City]",
+      addressRegion: "[State/Region]",
+      addressCountry: "[Country]",
+      streetAddress: "[Business address]",
+    },
     sameAs: getSocialUrls(),
     contactPoint: {
       "@type": "ContactPoint",

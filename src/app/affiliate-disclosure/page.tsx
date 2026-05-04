@@ -26,35 +26,67 @@ export default function AffiliateDisclosurePage() {
 
         <div className="prose prose-slate dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight">
           <p className="lead">
-            BuySecureVPN participates in affiliate programs with VPN providers and
-            other security tool companies. When you click on certain links on our
-            site and make a purchase, we may earn a commission at no additional
-            cost to you.
+            BuySecureVPN earns revenue through affiliate partnerships with VPN
+            providers. When you click on certain links on our site and make a
+            purchase, we receive a commission at no additional cost to you. This
+            page explains exactly how our affiliate relationships work.
           </p>
 
-          <h2>What This Means for You</h2>
+          <h2>Our Affiliate Partners</h2>
+          <p>
+            We currently participate in direct affiliate programs with the
+            following providers:
+          </p>
           <ul>
-            <li>You never pay more by using our links.</li>
-            <li>Our editorial ratings and recommendations are based solely on our testing — not on commission rates.</li>
-            <li>We review products honestly regardless of whether they have an affiliate program — what matters is our testing, not the commission.</li>
-            <li>Affiliate links are clearly identified on our site with a disclosure notice near the first commercial link on each page.</li>
+            <li><strong>NordVPN</strong> — Direct affiliate program via NordVPN&apos;s partner network</li>
+            <li><strong>Surfshark</strong> — Direct affiliate program via Surfshark&apos;s partner network</li>
+            <li><strong>Proton VPN</strong> — Direct affiliate program via Proton&apos;s partner network</li>
+            <li><strong>FastestVPN</strong> — Direct affiliate program via FastestVPN&apos;s partner network</li>
+          </ul>
+          <p>
+            We also review providers with <strong>no affiliate relationship</strong>,
+            including ExpressVPN and CyberGhost. These reviews earn us zero
+            revenue — they exist because our readers deserve comprehensive
+            comparisons.
+          </p>
+
+          <h2>How Commissions Work</h2>
+          <p>
+            Affiliate commissions are paid by the VPN provider, not by you. When
+            you purchase a subscription through one of our links, the provider
+            pays us a percentage of the sale. You pay the same price as you would
+            buying directly from the provider&apos;s website.
+          </p>
+
+          <h2>Editorial Independence</h2>
+          <p>
+            Our editorial process is completely separate from our affiliate
+            relationships:
+          </p>
+          <ul>
+            <li>Ratings are determined by our <strong>47-point testing rubric</strong> before any commercial considerations.</li>
+            <li>Providers <strong>cannot pay for higher ratings</strong> or favorable placement.</li>
+            <li>Commission rates do <strong>not</strong> influence which product ranks #1.</li>
+            <li>Our team purchases every VPN at retail price for independent testing.</li>
+            <li>Non-monetized providers (ExpressVPN, CyberGhost) receive the same rigorous testing as paying partners.</li>
           </ul>
 
-          <h2>How We Select Products</h2>
+          <h2>How to Identify Affiliate Links</h2>
           <p>
-            Products are selected for review based on relevance to our audience,
-            not affiliate availability. We have reviewed and will continue to
-            review products that do not offer affiliate commissions. The presence
-            or absence of an affiliate relationship does not influence product
-            placement, rating, or recommendation status.
+            Affiliate links on our site are marked with a disclosure banner near
+            the first commercial link on every page. Links that include
+            &quot;sponsored&quot; in the <code>rel</code> attribute are affiliate
+            links. Our editorial and informational links (to NIST, EFF, or other
+            references) are never affiliate links.
           </p>
 
           <h2>Revenue Use</h2>
           <p>
-            Affiliate revenue supports our operations, including purchasing
-            products for testing, maintaining our testing infrastructure, and
-            paying our editorial team. This enables us to continue providing
-            free, high-quality security guidance.
+            Affiliate revenue directly funds our operations: purchasing VPN
+            subscriptions at retail, maintaining multi-continent speed-testing
+            infrastructure, and compensating our CISSP/CEH-certified editorial
+            team. This model allows us to provide free, independent security
+            guidance without paywalls or sponsored content.
           </p>
         </div>
       </article>

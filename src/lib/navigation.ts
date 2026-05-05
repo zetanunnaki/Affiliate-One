@@ -32,6 +32,7 @@ export const mainNav: NavItem[] = [
       { label: "Best VPN 2026", href: "/best/vpn" },
       { label: "Best Password Manager", href: "/best/password-manager" },
       { label: "Best 2FA App", href: "/best/2fa-app" },
+      { label: "VPN Deals & Coupons", href: "/deals" },
     ],
   },
   {

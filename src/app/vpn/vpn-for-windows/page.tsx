@@ -9,6 +9,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best VPN for Windows 11 (2026) — Download, Setup & Top Picks",
   description: "The definitive Windows VPN guide. Download links, setup walkthrough, Windows-specific features, and which providers have the best Windows apps.",
+  alternates: { canonical: "/vpn/vpn-for-windows/" },
+  openGraph: {
+    title: "Best VPN for Windows 11 (2026)",
+    description: "The definitive Windows VPN guide. Download links, setup walkthrough, Windows-specific features, and which providers have the best Windows apps.",
+    type: "article",
+    url: "/vpn/vpn-for-windows/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Windows 11" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForWindowsPage() {

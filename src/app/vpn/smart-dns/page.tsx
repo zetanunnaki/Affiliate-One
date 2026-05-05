@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Smart DNS vs VPN (2026) — Which Should You Use?",
   description: "Smart DNS changes your DNS to unlock geo-restricted content without encryption. When to use Smart DNS vs VPN and which providers offer it.",
+  alternates: { canonical: "/vpn/smart-dns/" },
+  openGraph: {
+    title: "Smart DNS vs VPN (2026)",
+    description: "Smart DNS changes your DNS to unlock geo-restricted content without encryption. When to use Smart DNS vs VPN and which providers offer it.",
+    type: "article",
+    url: "/vpn/smart-dns/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Smart DNS vs VPN" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function SmartDnsPage() {

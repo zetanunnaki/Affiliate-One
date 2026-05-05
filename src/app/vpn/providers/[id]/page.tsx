@@ -37,7 +37,10 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   return {
     title,
     description,
-    alternates: { canonical: `/vpn/providers/${id}/` },
+    alternates: {
+      canonical: `/vpn/providers/${id}/`,
+      languages: { "x-default": `/vpn/providers/${id}/`, en: `/vpn/providers/${id}/` },
+    },
     openGraph: {
       title,
       description,

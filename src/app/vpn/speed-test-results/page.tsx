@@ -9,6 +9,15 @@ import { BUILD_MONTH_YEAR } from "@/lib/dates";
 export const metadata: Metadata = {
   title: "VPN Speed Test Results (2026) — Every Provider Tested on 1Gbps Fiber",
   description: "Real speed test data for NordVPN, Proton VPN, FastestVPN, and Proton VPN. Download, upload, and latency across 5 server locations.",
+  alternates: { canonical: "/vpn/speed-test-results/" },
+  openGraph: {
+    title: "VPN Speed Test Results (2026)",
+    description: "Real speed test data for NordVPN, Proton VPN, FastestVPN, and Proton VPN. Download, upload, and latency across 5 server locations.",
+    type: "article",
+    url: "/vpn/speed-test-results/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Speed Test Results" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function SpeedTestResultsPage() {

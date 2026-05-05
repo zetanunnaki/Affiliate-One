@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best VPN for iPhone & iOS (2026) — Setup, Features & Top Picks",
   description: "The definitive iOS VPN guide. On Demand rules, protocol comparison, iCloud Private Relay vs VPN, and which apps work best on iPhone.",
+  alternates: { canonical: "/vpn/vpn-for-ios/" },
+  openGraph: {
+    title: "Best VPN for iPhone & iOS (2026)",
+    description: "The definitive iOS VPN guide. On Demand rules, protocol comparison, iCloud Private Relay vs VPN, and which apps work best on iPhone.",
+    type: "article",
+    url: "/vpn/vpn-for-ios/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for iPhone & iOS" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForIosPage() {

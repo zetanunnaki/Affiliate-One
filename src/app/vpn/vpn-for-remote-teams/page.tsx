@@ -9,6 +9,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN for Remote Teams (2026) — Deploy VPN Protection Across Your Workforce",
   description: "How to deploy VPN protection for remote teams of any size. Individual subscriptions, team plans, Meshnet, and Zero Trust alternatives.",
+  alternates: { canonical: "/vpn/vpn-for-remote-teams/" },
+  openGraph: {
+    title: "VPN for Remote Teams (2026)",
+    description: "How to deploy VPN protection for remote teams of any size. Individual subscriptions, team plans, Meshnet, and Zero Trust alternatives.",
+    type: "article",
+    url: "/vpn/vpn-for-remote-teams/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN for Remote Teams" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForRemoteTeamsPage() {

@@ -8,6 +8,7 @@ import AuthorCard from "@/components/ui/AuthorCard";
 import SaveToPinterest from "@/components/ui/SaveToPinterest";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import MobileStickyTOC from "@/components/ui/MobileStickyTOC";
+import { getAuthorById } from "@/lib/data";
 import type { PostFrontmatter } from "@/types";
 
 interface ArticleLayoutProps {
@@ -80,6 +81,8 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
   const heroImage = pickHero(slug, frontmatter.category, frontmatter.title);
 
   const canonicalUrl = slug ? `https://buysecurevpn.com/guides/${slug}/` : undefined;
+  const authorData = getAuthorById(frontmatter.author);
+  const authorName = authorData?.name || frontmatter.author.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -99,7 +102,7 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
     },
     author: {
       "@type": "Person",
-      name: frontmatter.author,
+      name: authorName,
       url: `https://buysecurevpn.com/authors/${frontmatter.author}/`,
     },
     publisher: {

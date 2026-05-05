@@ -11,6 +11,15 @@ import { BUILD_MONTH_YEAR } from "@/lib/dates";
 export const metadata: Metadata = {
   title: "VPN Streaming Guide (2026) — Unblock Netflix, Disney+, BBC iPlayer & More",
   description: "Which VPNs work with which streaming services? Real test results for Netflix, Disney+, Hulu, BBC iPlayer, and Amazon Prime across countries.",
+  alternates: { canonical: "/vpn/streaming-guide/" },
+  openGraph: {
+    title: "VPN Streaming Guide (2026)",
+    description: "Which VPNs work with which streaming services? Real test results for Netflix, Disney+, Hulu, BBC iPlayer, and Amazon Prime across countries.",
+    type: "article",
+    url: "/vpn/streaming-guide/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Streaming Guide" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function StreamingGuidePage() {

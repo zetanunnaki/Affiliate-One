@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best VPN for Mac (2026) — Native Apple Silicon Apps & Top Picks",
   description: "VPNs tested on macOS Sequoia with Apple Silicon. Native M-series support, split tunneling, iCloud compatibility, and which providers work best.",
+  alternates: { canonical: "/vpn/vpn-for-mac/" },
+  openGraph: {
+    title: "Best VPN for Mac (2026)",
+    description: "VPNs tested on macOS Sequoia with Apple Silicon. Native M-series support, split tunneling, iCloud compatibility, and which providers work best.",
+    type: "article",
+    url: "/vpn/vpn-for-mac/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Mac" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForMacPage() {

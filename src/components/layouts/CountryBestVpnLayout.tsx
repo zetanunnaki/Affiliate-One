@@ -144,9 +144,9 @@ export default function CountryBestVpnLayout({
                 <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-blue-200/90 mb-1">
                   Best VPN Guide
                 </p>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight drop-shadow-lg">
+                <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight drop-shadow-lg">
                   {country.nameEn}
-                </h2>
+                </p>
               </div>
             </div>
           </div>

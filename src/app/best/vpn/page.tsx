@@ -89,16 +89,18 @@ export default function BestVpnPage() {
           ratingValue: p.rating,
           bestRating: 5,
           worstRating: 1,
-          ratingCount: 250,
+          ratingCount: 1,
         },
-        offers: {
-          "@type": "Offer",
-          priceCurrency: "USD",
-          price: (p.salePrice || "").replace(/[^0-9.]/g, "") || undefined,
-          priceValidUntil: "2026-12-31",
-          availability: "https://schema.org/InStock",
-          url: `https://buysecurevpn.com/vpn/providers/${p.id}/`,
-        },
+        ...((p.salePrice || "").replace(/[^0-9.]/g, "") ? {
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "USD",
+            price: (p.salePrice || "").replace(/[^0-9.]/g, ""),
+            priceValidUntil: "2026-12-31",
+            availability: "https://schema.org/InStock",
+            url: `https://buysecurevpn.com/vpn/providers/${p.id}/`,
+          },
+        } : {}),
       },
     })),
   };

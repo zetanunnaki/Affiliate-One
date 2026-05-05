@@ -36,8 +36,41 @@ export default function DealsPage() {
     { providerId: "ipvanish", discount: "Save 83%", plan: "2-year plan", price: "$2.19/mo", wasPrice: "$12.99/mo", extra: "Unlimited devices · Streaming optimized · 30-day refund", highlight: false },
   ];
 
+  const offerCatalogSchema = {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    name: `VPN Deals & Coupons — ${CURRENT_MONTH} ${CURRENT_YEAR}`,
+    description: `Verified VPN deals updated weekly. Save up to 89% on top VPN services.`,
+    numberOfItems: deals.length,
+    itemListElement: deals.map((deal) => {
+      const provider = providers.find((p) => p.id === deal.providerId);
+      return {
+        "@type": "Offer",
+        name: `${provider?.name || deal.providerId} ${deal.plan}`,
+        description: deal.extra,
+        priceCurrency: "USD",
+        price: deal.price.replace(/[^0-9.]/g, ""),
+        availability: "https://schema.org/InStock",
+        priceValidUntil: "2026-12-31",
+        url: `https://buysecurevpn.com/vpn/providers/${deal.providerId}/`,
+        seller: { "@type": "Organization", name: provider?.name || deal.providerId },
+      };
+    }),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://buysecurevpn.com/" },
+      { "@type": "ListItem", position: 2, name: "VPN Deals & Coupons", item: "https://buysecurevpn.com/deals/" },
+    ],
+  };
+
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(offerCatalogSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* ═══ HERO ═══ */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950/90 to-slate-900" />

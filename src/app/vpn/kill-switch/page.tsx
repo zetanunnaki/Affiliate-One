@@ -9,6 +9,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN Kill Switch Explained (2026) — Why It's Essential",
   description: "What is a VPN kill switch, how does it work, and why should you never use a VPN without one? Clear explanation with testing results.",
+  alternates: { canonical: "/vpn/kill-switch/" },
+  openGraph: {
+    title: "VPN Kill Switch Explained (2026)",
+    description: "What is a VPN kill switch, how does it work, and why should you never use a VPN without one? Clear explanation with testing results.",
+    type: "article",
+    url: "/vpn/kill-switch/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Kill Switch" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function KillSwitchPage() {

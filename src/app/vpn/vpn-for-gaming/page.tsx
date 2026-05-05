@@ -10,6 +10,15 @@ import { BUILD_MONTH_YEAR } from "@/lib/dates";
 export const metadata: Metadata = {
   title: "Best VPN for Gaming (2026) — Reduce Lag, Stop DDoS, Access More Servers",
   description: "Tested for latency, not just download speed. Which VPNs actually work for gaming in 2026? PC, console, and mobile gaming compared.",
+  alternates: { canonical: "/vpn/vpn-for-gaming/" },
+  openGraph: {
+    title: "Best VPN for Gaming (2026)",
+    description: "Tested for latency, not just download speed. Which VPNs actually work for gaming in 2026? PC, console, and mobile gaming compared.",
+    type: "article",
+    url: "/vpn/vpn-for-gaming/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Gaming" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForGamingPage() {

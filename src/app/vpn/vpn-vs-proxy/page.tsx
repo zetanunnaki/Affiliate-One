@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN vs Proxy (2026) — What's the Difference & Which Should You Use?",
   description: "VPN encrypts all traffic. Proxy routes specific traffic without encryption. Clear comparison with use cases and recommendations.",
+  alternates: { canonical: "/vpn/vpn-vs-proxy/" },
+  openGraph: {
+    title: "VPN vs Proxy (2026)",
+    description: "VPN encrypts all traffic. Proxy routes specific traffic without encryption. Clear comparison with use cases and recommendations.",
+    type: "article",
+    url: "/vpn/vpn-vs-proxy/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN vs Proxy" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnVsProxyPage() {

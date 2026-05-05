@@ -10,6 +10,15 @@ import { BUILD_MONTH_YEAR } from "@/lib/dates";
 export const metadata: Metadata = {
   title: "VPN Server Locations Worldwide (2026) — Coverage Map",
   description: "Compare VPN server locations worldwide. See which providers have servers in your country and region.",
+  alternates: { canonical: "/vpn/servers/" },
+  openGraph: {
+    title: "VPN Server Locations Worldwide (2026)",
+    description: "Compare VPN server locations worldwide. See which providers have servers in your country and region.",
+    type: "article",
+    url: "/vpn/servers/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Server Locations" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnServersPage() {

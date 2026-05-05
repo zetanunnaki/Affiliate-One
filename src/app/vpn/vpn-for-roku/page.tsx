@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN on Roku (2026) — How to Unblock Streaming on Roku Devices",
   description: "Roku doesn't support VPN apps. Here are 3 methods to use a VPN with Roku: Smart DNS, router VPN, and virtual router sharing.",
+  alternates: { canonical: "/vpn/vpn-for-roku/" },
+  openGraph: {
+    title: "VPN on Roku (2026)",
+    description: "Roku doesn't support VPN apps. Here are 3 methods to use a VPN with Roku: Smart DNS, router VPN, and virtual router sharing.",
+    type: "article",
+    url: "/vpn/vpn-for-roku/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN on Roku" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForRokuPage() {

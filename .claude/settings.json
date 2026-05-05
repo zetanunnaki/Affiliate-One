@@ -160,7 +160,9 @@
       "PowerShell($files = @\\('united-states','united-kingdom','germany','india','spain','singapore','thailand','indonesia'\\); foreach \\($f in $files\\) { $content = [System.IO.File]::ReadAllText\\(\"c:\\\\Users\\\\Issam\\\\Affiliate-One\\\\content\\\\countries\\\\$f.mdx\"\\); $body = \\($content -split '---',3\\)[2]; $words = \\($body.Trim\\(\\) -split '\\\\s+'\\).Count; Write-Output \"$f : $words words\" })",
       "PowerShell($content = [System.IO.File]::ReadAllText\\(\"c:\\\\Users\\\\Issam\\\\Affiliate-One\\\\content\\\\countries\\\\france.mdx\"\\); $match = [regex]::Match\\($content, 'IPVanish.{0,20}'\\); Write-Output $match.Value)",
       "PowerShell($content = [System.IO.File]::ReadAllText\\(\"c:\\\\Users\\\\Issam\\\\Affiliate-One\\\\content\\\\countries\\\\france.mdx\"\\); $match = [regex]::Match\\($content, 'IPVanish.{0,30}'\\); Write-Output $match.Value)",
-      "PowerShell($files = Get-ChildItem -Path \"c:\\\\Users\\\\Issam\\\\Affiliate-One\\\\src\\\\app\" -Recurse -Filter \"page.tsx\" | Where-Object { \\(Get-Content $_.FullName -Raw\\) -match 'Top 4' }; $files.Count)"
+      "PowerShell($files = Get-ChildItem -Path \"c:\\\\Users\\\\Issam\\\\Affiliate-One\\\\src\\\\app\" -Recurse -Filter \"page.tsx\" | Where-Object { \\(Get-Content $_.FullName -Raw\\) -match 'Top 4' }; $files.Count)",
+      "Bash(python scripts/fetch_page.py https://buysecurevpn.com/)",
+      "Bash(python scripts/google_auth.py --check)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Issam\\Affiliate-One\\src\\app\\vpn\\best\\[slug]",

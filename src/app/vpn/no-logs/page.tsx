@@ -9,6 +9,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN No-Logs Policy Explained (2026) — What It Means & How to Verify",
   description: "What does 'no-logs' actually mean? How to verify claims, which providers have been audited, and what data VPNs actually collect.",
+  alternates: { canonical: "/vpn/no-logs/" },
+  openGraph: {
+    title: "VPN No-Logs Policy Explained (2026)",
+    description: "What does 'no-logs' actually mean? How to verify claims, which providers have been audited, and what data VPNs actually collect.",
+    type: "article",
+    url: "/vpn/no-logs/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN No-Logs Policy" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function NoLogsPage() {

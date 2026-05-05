@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Always-On VPN Setup Guide (2026) — Never Forget to Connect",
   description: "How to configure your VPN to connect automatically and stay connected. Auto-connect, kill switch, and always-on settings for every platform.",
+  alternates: { canonical: "/vpn/always-on/" },
+  openGraph: {
+    title: "Always-On VPN Setup Guide (2026)",
+    description: "How to configure your VPN to connect automatically and stay connected. Auto-connect, kill switch, and always-on settings for every platform.",
+    type: "article",
+    url: "/vpn/always-on/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Always-On VPN" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function AlwaysOnPage() {

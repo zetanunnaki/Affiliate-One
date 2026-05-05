@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN Protocols Explained (2026) — WireGuard, OpenVPN, IKEv2 & More",
   description: "Understand VPN protocols: WireGuard, OpenVPN, IKEv2, NordLynx, and Lightway compared. Which should you use?",
+  alternates: { canonical: "/vpn/protocols/" },
+  openGraph: {
+    title: "VPN Protocols Explained (2026)",
+    description: "Understand VPN protocols: WireGuard, OpenVPN, IKEv2, NordLynx, and Lightway compared. Which should you use?",
+    type: "article",
+    url: "/vpn/protocols/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Protocols" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 const protocols = [

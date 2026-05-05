@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   title: "VPN Comparisons — Head-to-Head Reviews",
   description:
     "Side-by-side VPN comparisons. NordVPN vs Proton VPN, NordVPN vs FastestVPN, and more. Features, speed, and price compared.",
+  alternates: { canonical: "/vpn/vs/" },
+  openGraph: {
+    title: "VPN Comparisons",
+    description: "Side-by-side VPN comparisons. NordVPN vs Proton VPN, NordVPN vs FastestVPN, and more. Features, speed, and price compared.",
+    type: "article",
+    url: "/vpn/vs/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Comparisons" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VsIndexPage() {

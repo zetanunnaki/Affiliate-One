@@ -10,7 +10,7 @@ import { BUILD_MONTH_YEAR } from "@/lib/dates";
 export const metadata: Metadata = {
   title: "BuySecureVPN — Best VPN Reviews & Security Guides 2026",
   description:
-    "Expert-tested VPN reviews, 202-country coverage, and security guides. Compare NordVPN, Surfshark, Proton VPN & FastestVPN with our 47-point rubric.",
+    "Expert-tested VPN reviews, 202-country coverage, and security guides. Compare NordVPN, Surfshark, Proton VPN, FastestVPN & IPVanish with our 47-point rubric.",
   alternates: {
     canonical: "https://buysecurevpn.com/",
     languages: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "BuySecureVPN — Best VPN Reviews & Security Guides 2026",
     description:
-      "Expert-tested VPN reviews, 202-country coverage, and security guides. Compare NordVPN, Surfshark, Proton VPN & FastestVPN.",
+      "Expert-tested VPN reviews, 202-country coverage, and security guides. Compare NordVPN, Surfshark, Proton VPN, FastestVPN & IPVanish.",
     url: "https://buysecurevpn.com/",
     type: "website",
     images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "BuySecureVPN — Best VPN Reviews 2026" }],

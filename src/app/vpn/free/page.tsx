@@ -9,6 +9,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best Free VPNs (2026) — Are They Safe? Honest Analysis",
   description: "Can you trust a free VPN? We analyze the risks, revenue models, and the few free VPNs that are actually safe to use.",
+  alternates: { canonical: "/vpn/free/" },
+  openGraph: {
+    title: "Best Free VPNs (2026)",
+    description: "Can you trust a free VPN? We analyze the risks, revenue models, and the few free VPNs that are actually safe to use.",
+    type: "article",
+    url: "/vpn/free/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best Free VPNs" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function FreeVpnPage() {

@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN on Fire TV Stick & Android TV (2026) — Setup Guide & Best Picks",
   description: "How to install a VPN on Amazon Fire TV Stick, Android TV, and Chromecast. Unblock streaming, protect smart TV traffic, and bypass ISP throttling.",
+  alternates: { canonical: "/vpn/vpn-on-fire-tv/" },
+  openGraph: {
+    title: "VPN on Fire TV Stick & Android TV (2026)",
+    description: "How to install a VPN on Amazon Fire TV Stick, Android TV, and Chromecast. Unblock streaming, protect smart TV traffic, and bypass ISP throttling.",
+    type: "article",
+    url: "/vpn/vpn-on-fire-tv/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN on Fire TV Stick & Android TV" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnOnFireTvPage() {

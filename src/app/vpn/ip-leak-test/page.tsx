@@ -9,6 +9,15 @@ import { BUILD_MONTH_YEAR } from "@/lib/dates";
 export const metadata: Metadata = {
   title: "VPN Leak Test Guide (2026) — Check for IP, DNS & WebRTC Leaks",
   description: "How to test your VPN for IP leaks, DNS leaks, and WebRTC leaks. Step-by-step testing guide with recommended tools.",
+  alternates: { canonical: "/vpn/ip-leak-test/" },
+  openGraph: {
+    title: "VPN Leak Test Guide (2026)",
+    description: "How to test your VPN for IP leaks, DNS leaks, and WebRTC leaks. Step-by-step testing guide with recommended tools.",
+    type: "article",
+    url: "/vpn/ip-leak-test/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Leak Test" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function IpLeakTestPage() {

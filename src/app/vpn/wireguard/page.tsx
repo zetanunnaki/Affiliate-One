@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "WireGuard VPN Protocol: Everything You Need to Know (2026)",
   description: "Deep dive into WireGuard — the fastest VPN protocol. How it works, why it's better than OpenVPN, provider implementations, and setup guide.",
+  alternates: { canonical: "/vpn/wireguard/" },
+  openGraph: {
+    title: "WireGuard VPN Protocol (2026)",
+    description: "Deep dive into WireGuard — the fastest VPN protocol. How it works, why it's better than OpenVPN, provider implementations, and setup guide.",
+    type: "article",
+    url: "/vpn/wireguard/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "WireGuard VPN Protocol" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function WireGuardPage() {

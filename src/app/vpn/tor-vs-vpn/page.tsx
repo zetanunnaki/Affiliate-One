@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Tor vs VPN (2026) — What's the Difference and Which Should You Use?",
   description: "Clear comparison of Tor and VPN. Speed, privacy, use cases, and when to use each. Plus: can you use both together?",
+  alternates: { canonical: "/vpn/tor-vs-vpn/" },
+  openGraph: {
+    title: "Tor vs VPN (2026)",
+    description: "Clear comparison of Tor and VPN. Speed, privacy, use cases, and when to use each. Plus: can you use both together?",
+    type: "article",
+    url: "/vpn/tor-vs-vpn/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Tor vs VPN" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function TorVsVpnPage() {

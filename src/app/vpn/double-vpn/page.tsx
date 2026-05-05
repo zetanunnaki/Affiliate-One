@@ -9,6 +9,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Double VPN (Multi-Hop) Explained (2026) — Is It Worth the Speed Trade-Off?",
   description: "Double VPN routes traffic through two servers for extra encryption. When it's useful, when it's overkill, and which providers support it.",
+  alternates: { canonical: "/vpn/double-vpn/" },
+  openGraph: {
+    title: "Double VPN (Multi-Hop) Explained (2026)",
+    description: "Double VPN routes traffic through two servers for extra encryption. When it's useful, when it's overkill, and which providers support it.",
+    type: "article",
+    url: "/vpn/double-vpn/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Double VPN" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function DoubleVpnPage() {

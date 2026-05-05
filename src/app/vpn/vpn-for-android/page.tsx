@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best VPN for Android (2026) — Apps, Setup & System-Level Protection",
   description: "Android has the best mobile VPN support. Always-on system VPN, split tunneling, Work Profile — setup guide and provider rankings.",
+  alternates: { canonical: "/vpn/vpn-for-android/" },
+  openGraph: {
+    title: "Best VPN for Android (2026)",
+    description: "Android has the best mobile VPN support. Always-on system VPN, split tunneling, Work Profile — setup guide and provider rankings.",
+    type: "article",
+    url: "/vpn/vpn-for-android/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Android" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForAndroidPage() {

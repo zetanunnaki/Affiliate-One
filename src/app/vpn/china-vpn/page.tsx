@@ -9,6 +9,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best VPN for China (2026) — VPNs That Actually Work Behind the Great Firewall",
   description: "Tested from inside China. Which VPNs bypass the Great Firewall in 2026? Setup, protocols, and reliability scores from real testing.",
+  alternates: { canonical: "/vpn/china-vpn/" },
+  openGraph: {
+    title: "Best VPN for China (2026)",
+    description: "Tested from inside China. Which VPNs bypass the Great Firewall in 2026? Setup, protocols, and reliability scores from real testing.",
+    type: "article",
+    url: "/vpn/china-vpn/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for China" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function ChinaVpnPage() {

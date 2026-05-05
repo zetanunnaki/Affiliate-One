@@ -9,6 +9,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN Obfuscation Explained (2026) — Bypass VPN Blocks & Censorship",
   description: "How VPN obfuscation disguises your VPN traffic as regular HTTPS. Essential for China, Russia, Turkey, UAE, and restrictive networks.",
+  alternates: { canonical: "/vpn/obfuscation/" },
+  openGraph: {
+    title: "VPN Obfuscation Explained (2026)",
+    description: "How VPN obfuscation disguises your VPN traffic as regular HTTPS. Essential for China, Russia, Turkey, UAE, and restrictive networks.",
+    type: "article",
+    url: "/vpn/obfuscation/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Obfuscation" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function ObfuscationPage() {

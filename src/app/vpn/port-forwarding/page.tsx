@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN Port Forwarding Explained (2026) — When You Need It",
   description: "What is VPN port forwarding, who needs it, and which providers support it? Gaming, torrenting, and self-hosting behind a VPN.",
+  alternates: { canonical: "/vpn/port-forwarding/" },
+  openGraph: {
+    title: "VPN Port Forwarding Explained (2026)",
+    description: "What is VPN port forwarding, who needs it, and which providers support it? Gaming, torrenting, and self-hosting behind a VPN.",
+    type: "article",
+    url: "/vpn/port-forwarding/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Port Forwarding" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function PortForwardingPage() {

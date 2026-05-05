@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best VPN for Linux (2026) — Ubuntu, Fedora, Arch & More",
   description: "Linux VPN guide with native apps, CLI tools, and WireGuard setup. Which providers have the best Linux support in 2026.",
+  alternates: { canonical: "/vpn/vpn-for-linux/" },
+  openGraph: {
+    title: "Best VPN for Linux (2026)",
+    description: "Linux VPN guide with native apps, CLI tools, and WireGuard setup. Which providers have the best Linux support in 2026.",
+    type: "article",
+    url: "/vpn/vpn-for-linux/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Linux" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForLinuxPage() {

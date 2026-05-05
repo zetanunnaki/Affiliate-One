@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "Best VPN for Families (2026) — Protect Every Device at Home",
   description: "How to protect your entire family with one VPN subscription. Device limits, router setup, and parental controls compared.",
+  alternates: { canonical: "/vpn/vpn-for-families/" },
+  openGraph: {
+    title: "Best VPN for Families (2026)",
+    description: "How to protect your entire family with one VPN subscription. Device limits, router setup, and parental controls compared.",
+    type: "article",
+    url: "/vpn/vpn-for-families/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Families" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForFamiliesPage() {

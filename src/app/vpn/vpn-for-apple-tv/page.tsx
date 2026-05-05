@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN on Apple TV (2026) — Setup Methods & Best Providers",
   description: "How to use a VPN on Apple TV 4K. Smart DNS, router VPN, and the new tvOS VPN apps. Unblock streaming from any country.",
+  alternates: { canonical: "/vpn/vpn-for-apple-tv/" },
+  openGraph: {
+    title: "VPN on Apple TV (2026)",
+    description: "How to use a VPN on Apple TV 4K. Smart DNS, router VPN, and the new tvOS VPN apps. Unblock streaming from any country.",
+    type: "article",
+    url: "/vpn/vpn-for-apple-tv/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN on Apple TV" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnForAppleTvPage() {

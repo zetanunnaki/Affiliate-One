@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN Split Tunneling Explained (2026) — Route Only What Matters",
   description: "What is split tunneling, how to set it up, and when to use it. Route work traffic through VPN while keeping personal traffic direct.",
+  alternates: { canonical: "/vpn/split-tunneling/" },
+  openGraph: {
+    title: "VPN Split Tunneling Explained (2026)",
+    description: "What is split tunneling, how to set it up, and when to use it. Route work traffic through VPN while keeping personal traffic direct.",
+    type: "article",
+    url: "/vpn/split-tunneling/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Split Tunneling" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function SplitTunnelingPage() {

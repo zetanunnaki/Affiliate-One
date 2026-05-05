@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   title: "VPN Provider Reviews — Expert-Tested Comparisons",
   description:
     "In-depth, independent VPN provider reviews. We test speed, security, privacy, and reliability so you can make an informed choice.",
+  alternates: { canonical: "/vpn/providers/" },
+  openGraph: {
+    title: "VPN Provider Reviews",
+    description: "In-depth, independent VPN provider reviews. We test speed, security, privacy, and reliability so you can make an informed choice.",
+    type: "article",
+    url: "/vpn/providers/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Provider Reviews" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function ProvidersPage() {

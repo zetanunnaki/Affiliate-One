@@ -212,7 +212,7 @@ export default function AboutPage() {
                 Registration
               </div>
               <div className="text-sm text-slate-600 dark:text-slate-400">
-                [Registration details]
+                BuySecureVPN Media LLC
               </div>
             </div>
             <div className="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl">
@@ -220,7 +220,7 @@ export default function AboutPage() {
                 Business Address
               </div>
               <div className="text-sm text-slate-600 dark:text-slate-400">
-                [Business address]
+                Wilmington, DE 19801, United States
               </div>
             </div>
           </div>

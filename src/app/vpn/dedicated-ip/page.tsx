@@ -8,6 +8,15 @@ import TopVpnPicks from "@/components/ui/TopVpnPicks";
 export const metadata: Metadata = {
   title: "VPN Dedicated IP Explained (2026) — When You Need a Static IP Address",
   description: "What is a dedicated VPN IP, who needs one, and which providers offer it? IP whitelisting, banking access, and avoiding CAPTCHAs explained.",
+  alternates: { canonical: "/vpn/dedicated-ip/" },
+  openGraph: {
+    title: "VPN Dedicated IP Explained (2026)",
+    description: "What is a dedicated VPN IP, who needs one, and which providers offer it? IP whitelisting, banking access, and avoiding CAPTCHAs explained.",
+    type: "article",
+    url: "/vpn/dedicated-ip/",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Dedicated IP" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function DedicatedIpPage() {

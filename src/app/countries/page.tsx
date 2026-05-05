@@ -107,6 +107,13 @@ export default function CountriesPage() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Intro copy */}
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+            Internet freedom varies dramatically across the globe — from heavily censored networks in China and Iran to open but surveilled connections in Five Eyes nations. Our country-specific VPN guides are based on real speed tests from local servers, analysis of government surveillance laws, and verification of streaming platform access. Select your country below for tailored recommendations.
+          </p>
+        </div>
+
         {/* Region filter chips */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
           <button

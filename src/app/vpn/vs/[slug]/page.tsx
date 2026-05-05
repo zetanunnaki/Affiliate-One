@@ -132,7 +132,7 @@ export default async function VsPage(props: PageProps) {
     datePublished: BUILD_DATE_ISO,
     dateModified: BUILD_DATE_ISO,
     author: { "@type": "Person", name: "Marcus Johnson", url: "https://buysecurevpn.com/authors/marcus-johnson/" },
-    publisher: { "@type": "Organization", name: "BuySecureVPN", logo: { "@type": "ImageObject", url: "https://buysecurevpn.com/logo.svg" } },
+    publisher: { "@type": "Organization", name: "BuySecureVPN", logo: { "@type": "ImageObject", url: "https://buysecurevpn.com/icon-512.png" } },
     mainEntityOfPage: `https://buysecurevpn.com/vpn/vs/${slug}/`,
     about: [
       { "@type": "SoftwareApplication", name: a.name, applicationCategory: "VPN", operatingSystem: "Windows, macOS, iOS, Android, Linux", aggregateRating: { "@type": "AggregateRating", ratingValue: a.rating, bestRating: 5, worstRating: 1, reviewCount: 1 } },

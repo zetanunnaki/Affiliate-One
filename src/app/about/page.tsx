@@ -51,7 +51,7 @@ export default function AboutPage() {
       "@type": "Organization",
       name: "BuySecureVPN",
       url: "https://buysecurevpn.com",
-      logo: "https://buysecurevpn.com/logo.svg",
+      logo: "https://buysecurevpn.com/icon-512.png",
       description: "Independent publication dedicated to helping remote workers stay secure online with expert-tested VPN reviews and security guides.",
       foundingDate: "2024",
       publishingPrinciples: "https://buysecurevpn.com/editorial-policy/",
@@ -190,41 +190,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Company details */}
-        <section>
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-blue-600 dark:text-blue-400 mb-3">
-            Company information
-          </p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-6">
-            Legal Details
-          </h2>
-          <div className="grid sm:grid-cols-3 gap-5">
-            <div className="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl">
-              <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
-                Founded
-              </div>
-              <div className="text-base font-bold text-slate-900 dark:text-white">
-                2024
-              </div>
-            </div>
-            <div className="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl">
-              <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
-                Registration
-              </div>
-              <div className="text-sm text-slate-600 dark:text-slate-400">
-                BuySecureVPN Media LLC
-              </div>
-            </div>
-            <div className="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl">
-              <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
-                Business Address
-              </div>
-              <div className="text-sm text-slate-600 dark:text-slate-400">
-                Wilmington, DE 19801, United States
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Call to action */}
         <div className="p-6 bg-gradient-to-br from-blue-50 to-indigo-50/60 dark:from-blue-950/30 dark:to-indigo-950/20 border border-blue-100 dark:border-blue-900/40 rounded-2xl text-center">

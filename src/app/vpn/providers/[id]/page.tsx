@@ -308,6 +308,34 @@ export default async function ProviderPage(props: PageProps) {
 
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <ProductSchema provider={provider} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: provider.name,
+            applicationCategory: "VPN",
+            operatingSystem: "Windows, macOS, iOS, Android, Linux",
+            description: provider.notes,
+            image: `https://buysecurevpn.com/images/providers/${provider.id}.svg`,
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: provider.rating,
+              bestRating: 5,
+              worstRating: 1,
+              reviewCount: 1,
+            },
+            ...((provider.salePrice || "").replace(/[^0-9.]/g, "") ? {
+              offers: {
+                "@type": "Offer",
+                priceCurrency: "USD",
+                price: (provider.salePrice || "").replace(/[^0-9.]/g, ""),
+                availability: "https://schema.org/InStock",
+                url: affiliateUrl,
+              },
+            } : {}),
+          }) }}
+        />
 
         {/* ═══ Verdict card — quick at-a-glance summary ═══ */}
         <div id="verdict" className="relative overflow-hidden rounded-2xl mb-10 bg-gradient-to-br from-slate-50 to-white dark:from-slate-900 dark:to-slate-900/50 border border-slate-200 dark:border-slate-800 scroll-mt-24">
@@ -623,6 +651,37 @@ export default async function ProviderPage(props: PageProps) {
                 </svg>
               </Link>
             ))}
+          </div>
+        </section>
+
+        {/* ═══ Compare with other VPNs ═══ */}
+        <section className="mt-16 mb-12">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+            Compare {provider.name} With Other VPNs
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {getAllProviders()
+              .filter((p) => p.id !== id)
+              .map((p) => (
+                <Link
+                  key={p.id}
+                  href={`/vpn/providers/${p.id}/`}
+                  className="flex items-center gap-3 p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-blue-300 dark:hover:border-blue-700 transition-colors"
+                >
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: (p.brandColor || '#3b82f6') + '15' }}>
+                    <span className="text-sm font-bold" style={{ color: p.brandColor || '#3b82f6' }}>{p.name.charAt(0)}</span>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-slate-900 dark:text-white">{p.name}</span>
+                    <span className="block text-xs text-slate-500">{p.rating}/5 · {p.priceRange}</span>
+                  </div>
+                </Link>
+              ))}
+          </div>
+          <div className="mt-4">
+            <Link href="/vpn/vs/" className="text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium">
+              View all VPN comparisons →
+            </Link>
           </div>
         </section>
 

@@ -38,7 +38,7 @@ export default function ArticleSchema({
       url: "https://buysecurevpn.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://buysecurevpn.com/logo.svg",
+        url: "https://buysecurevpn.com/icon-512.png",
       },
     },
     image,

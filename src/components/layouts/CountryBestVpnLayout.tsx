@@ -78,7 +78,7 @@ export default function CountryBestVpnLayout({
       url: "https://buysecurevpn.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://buysecurevpn.com/logo.svg",
+        url: "https://buysecurevpn.com/icon-512.png",
       },
     },
     image: COUNTRIES_WITH_HERO.has(country.slug)

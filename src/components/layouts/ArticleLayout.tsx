@@ -111,7 +111,7 @@ export default function ArticleLayout({ frontmatter, children, breadcrumbs, slug
       url: "https://buysecurevpn.com",
       logo: {
         "@type": "ImageObject",
-        url: "https://buysecurevpn.com/logo.svg",
+        url: "https://buysecurevpn.com/icon-512.png",
         width: 220,
         height: 48,
       },

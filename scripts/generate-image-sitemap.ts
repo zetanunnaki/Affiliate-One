@@ -31,6 +31,7 @@ interface ImageEntry {
   pageUrl: string;
   imageLoc: string;
   imageTitle: string;
+  imageCaption?: string;
 }
 
 /* ── country images → /vpn/best/{slug}/ ──────────────────────────── */
@@ -38,10 +39,12 @@ interface ImageEntry {
 function countryEntries(): ImageEntry[] {
   return listWebpImages("countries").map((file) => {
     const slug = file.replace(/\.webp$/, "");
+    const countryName = slugToTitle(slug);
     return {
       pageUrl: `${BASE_URL}/vpn/best/${slug}/`,
       imageLoc: `${BASE_URL}/images/countries/${file}`,
-      imageTitle: `Best VPN for ${slugToTitle(slug)} 2026`,
+      imageTitle: `Best VPN for ${countryName} 2026`,
+      imageCaption: `Expert-tested VPN recommendations for ${countryName} covering speed, privacy, and streaming access`,
     };
   });
 }
@@ -51,10 +54,12 @@ function countryEntries(): ImageEntry[] {
 function authorEntries(): ImageEntry[] {
   return listWebpImages("authors").map((file) => {
     const id = file.replace(/\.webp$/, "");
+    const authorName = slugToTitle(id);
     return {
       pageUrl: `${BASE_URL}/authors/${id}/`,
       imageLoc: `${BASE_URL}/images/authors/${file}`,
-      imageTitle: `${slugToTitle(id)} – VPN Security Expert`,
+      imageTitle: `${authorName} – VPN Security Expert`,
+      imageCaption: `${authorName}, cybersecurity expert and VPN reviewer at BuySecureVPN`,
     };
   });
 }
@@ -72,7 +77,7 @@ const OG_MAP: Record<string, { url: string; title: string }> = {
 
 function ogEntries(): ImageEntry[] {
   return listWebpImages("og")
-    .map((file) => {
+    .map((file): ImageEntry | null => {
       const key = file.replace(/\.webp$/, "");
       const mapping = OG_MAP[key];
       if (!mapping) return null;
@@ -80,6 +85,7 @@ function ogEntries(): ImageEntry[] {
         pageUrl: `${BASE_URL}${mapping.url}`,
         imageLoc: `${BASE_URL}/images/og/${file}`,
         imageTitle: mapping.title,
+        imageCaption: mapping.title,
       };
     })
     .filter((e): e is ImageEntry => e !== null);
@@ -99,6 +105,7 @@ function illustrationEntries(): ImageEntry[] {
         pageUrl: `${BASE_URL}/guides/`,
         imageLoc: `${BASE_URL}/images/illustrations/${file}`,
         imageTitle: `${slugToTitle(label)} – Security Guide Illustration`,
+        imageCaption: `Security guide illustration for ${slugToTitle(label)}`,
       };
     });
 }
@@ -113,10 +120,12 @@ function providerEntries(): ImageEntry[] {
     .filter((f) => f.endsWith(".svg"))
     .map((file) => {
       const id = file.replace(/\.svg$/, "");
+      const providerName = slugToTitle(id);
       return {
         pageUrl: `${BASE_URL}/vpn/providers/${id}/`,
         imageLoc: `${BASE_URL}/images/providers/${file}`,
-        imageTitle: `${slugToTitle(id)} Logo`,
+        imageTitle: `${providerName} Logo`,
+        imageCaption: `${providerName} VPN service logo`,
       };
     });
 }
@@ -140,7 +149,7 @@ const PIN_MAP: Record<string, { url: string; title: string }> = {
 
 function pinEntries(): ImageEntry[] {
   return listWebpImages("pins")
-    .map((file) => {
+    .map((file): ImageEntry | null => {
       const key = file.replace(/\.webp$/, "");
       const mapping = PIN_MAP[key];
       if (!mapping) return null;
@@ -148,6 +157,7 @@ function pinEntries(): ImageEntry[] {
         pageUrl: `${BASE_URL}${mapping.url}`,
         imageLoc: `${BASE_URL}/images/pins/${file}`,
         imageTitle: mapping.title,
+        imageCaption: mapping.title,
       };
     })
     .filter((e): e is ImageEntry => e !== null);
@@ -165,7 +175,7 @@ const SOCIAL_MAP: Record<string, { url: string; title: string }> = {
 
 function socialEntries(): ImageEntry[] {
   return listWebpImages("social")
-    .map((file) => {
+    .map((file): ImageEntry | null => {
       const key = file.replace(/\.webp$/, "");
       const mapping = SOCIAL_MAP[key];
       if (!mapping) return null;
@@ -173,6 +183,7 @@ function socialEntries(): ImageEntry[] {
         pageUrl: `${BASE_URL}${mapping.url}`,
         imageLoc: `${BASE_URL}/images/social/${file}`,
         imageTitle: mapping.title,
+        imageCaption: mapping.title,
       };
     })
     .filter((e): e is ImageEntry => e !== null);
@@ -203,7 +214,7 @@ function buildXml(entries: ImageEntry[]): string {
     const imageBlocks = images
       .map(
         (img) =>
-          `    <image:image>\n      <image:loc>${escapeXml(img.imageLoc)}</image:loc>\n      <image:title>${escapeXml(img.imageTitle)}</image:title>\n    </image:image>`
+          `    <image:image>\n      <image:loc>${escapeXml(img.imageLoc)}</image:loc>\n      <image:title>${escapeXml(img.imageTitle)}</image:title>\n      <image:caption>${escapeXml(img.imageCaption || img.imageTitle)}</image:caption>\n    </image:image>`
       )
       .join("\n");
     urlBlocks.push(

@@ -83,14 +83,15 @@ export function getAuthorById(id: string): Author | undefined {
   return getAllAuthors().find((a) => a.id === id);
 }
 
-// Recommended providers for a country — returns the 4 monetized picks.
+// Recommended providers for a country — returns the 5 monetized picks.
 // NordVPN = Best Overall, Surfshark = Unlimited Devices,
-// Proton VPN = Best Privacy, FastestVPN = Best Budget
+// Proton VPN = Best Privacy, FastestVPN = Best Budget, IPVanish = Best Streaming
 export function getRecommendedProviders(country: Country): {
   overall: Provider;
   families: Provider;
   privacy: Provider;
   budget: Provider;
+  streaming: Provider;
 } {
   const providers = getAllProviders();
   const overall =
@@ -109,17 +110,21 @@ export function getRecommendedProviders(country: Country): {
     providers.find((p) => p.id === "fastestvpn") ||
     providers.find((p) => p.positioningTags.includes("budget")) ||
     providers[3];
-  return { overall, families, privacy, budget };
+  const streaming =
+    providers.find((p) => p.id === "ipvanish") ||
+    providers.find((p) => p.positioningTags.includes("streaming")) ||
+    providers[4];
+  return { overall, families, privacy, budget, streaming };
 }
 
 /**
  * Get the monetized providers in canonical ranking order.
  * Used by TopVpnPicks and any widget promoting the earning products.
- * Order: NordVPN (overall) → Surfshark (unlimited devices) → Proton VPN (privacy) → FastestVPN (budget)
+ * Order: NordVPN (overall) → Surfshark (unlimited devices) → Proton VPN (privacy) → FastestVPN (budget) → IPVanish (streaming)
  */
 export function getFeaturedProviders(): Provider[] {
   const all = getAllProviders();
-  const order = ["nordvpn", "surfshark", "protonvpn", "fastestvpn"];
+  const order = ["nordvpn", "surfshark", "protonvpn", "fastestvpn", "ipvanish"];
   return order
     .map((id) => all.find((p) => p.id === id))
     .filter((p): p is Provider => p !== undefined);

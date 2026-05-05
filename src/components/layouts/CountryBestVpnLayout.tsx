@@ -28,6 +28,7 @@ interface CountryBestVpnLayoutProps {
     families: Provider;
     privacy: Provider;
     budget: Provider;
+    streaming: Provider;
   };
   faqs: FAQItem[];
   allProviders: Provider[];
@@ -222,9 +223,9 @@ export default function CountryBestVpnLayout({
       {/* Section 2: Quick picks — breaks out to max-w-6xl so 4 cards have room */}
       <section className="mb-10 relative lg:-mx-24 xl:-mx-40">
         <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">
-          Our Top 4 Picks for {country.nameEn}
+          Our Top 5 Picks for {country.nameEn}
         </h2>
-        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-5 gap-4">
           <ProviderCard
             provider={providers.overall}
             badge="Best Overall"
@@ -247,6 +248,12 @@ export default function CountryBestVpnLayout({
             provider={providers.budget}
             badge="Best Budget"
             countryNotes={`Lowest-cost option for ${country.nameEn} with ${providers.budget.features.devices === 0 ? "unlimited" : providers.budget.features.devices} simultaneous connections.`}
+            countrySlug={country.slug}
+          />
+          <ProviderCard
+            provider={providers.streaming}
+            badge="Best for Streaming"
+            countryNotes={`Streaming-optimized servers with unlimited devices — ideal for accessing content libraries in ${country.nameEn}.`}
             countrySlug={country.slug}
           />
         </div>
@@ -287,7 +294,7 @@ export default function CountryBestVpnLayout({
           </div>
         </div>
         <div className="space-y-5">
-          {allProviders.slice(0, 4).map((provider) => {
+          {allProviders.slice(0, 5).map((provider) => {
             const brandColor = provider.brandColor || "#3b82f6";
             const brandColorDark = provider.brandColorDark || "#1d4ed8";
             return (

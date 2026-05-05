@@ -9,7 +9,7 @@ interface TopVpnPicksProps {
   compact?: boolean;
 }
 
-const RANK_WORDS = ["Best Overall", "Unlimited Devices", "Best for Privacy", "Best Budget"];
+const RANK_WORDS = ["Best Overall", "Unlimited Devices", "Best for Privacy", "Best Budget", "Best for Streaming"];
 
 function Stars({ rating }: { rating: number }) {
   const full = Math.floor(rating);

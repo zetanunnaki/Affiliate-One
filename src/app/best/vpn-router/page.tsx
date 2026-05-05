@@ -3,10 +3,20 @@ import EditorialHero from "@/components/ui/EditorialHero";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Best VPN for Routers (2026) — Protect Every Device on Your Network",
   description: "Install a VPN on your router to protect all devices at once — laptops, phones, smart TVs, and IoT. Compatible routers, setup guides, and provider picks.",
+  alternates: { canonical: "/best/vpn-router/" },
+  openGraph: {
+    title: "Best VPN for Routers (2026) — Protect Every Device",
+    description: "Install a VPN on your router to protect all devices at once. Compatible routers, setup guides, and provider picks.",
+    url: "/best/vpn-router/",
+    type: "article",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Routers 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function BestVpnRouterPage() {
@@ -33,6 +43,14 @@ export default function BestVpnRouterPage() {
 
   return (
     <>
+      <ArticleSchema
+        title="Best VPN for Routers (2026) — Protect Every Device on Your Network"
+        description="Install a VPN on your router to protect all devices at once — laptops, phones, smart TVs, and IoT. Compatible routers, setup guides, and provider picks."
+        url="/best/vpn-router/"
+        image="https://buysecurevpn.com/images/og/og-vpn.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <EditorialHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Best VPN Router" }]}
         eyebrow="Router · Whole-home coverage"

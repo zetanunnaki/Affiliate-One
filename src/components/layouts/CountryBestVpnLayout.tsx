@@ -64,10 +64,28 @@ export default function CountryBestVpnLayout({
     "@type": "Article",
     headline: `Best VPN for ${country.nameEn} (2026): Remote Work Security & Privacy`,
     description: `Compare the top VPN services for ${country.nameEn}. Expert-tested recommendations for remote work, travel, and online privacy in ${country.nameEn}.`,
+    datePublished: "2026-01-15",
     dateModified: BUILD_DATE_ISO,
     author: {
       "@type": "Person",
       name: "Marcus Johnson",
+      url: "https://buysecurevpn.com/authors/marcus-johnson/",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "BuySecureVPN",
+      url: "https://buysecurevpn.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://buysecurevpn.com/logo.svg",
+      },
+    },
+    image: COUNTRIES_WITH_HERO.has(country.slug)
+      ? `https://buysecurevpn.com/images/countries/${country.slug}.webp`
+      : "https://buysecurevpn.com/images/og/og-countries.webp",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://buysecurevpn.com/vpn/best/${country.slug}/`,
     },
   };
 

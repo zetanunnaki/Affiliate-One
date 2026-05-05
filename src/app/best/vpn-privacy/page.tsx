@@ -3,11 +3,21 @@ import EditorialHero from "@/components/ui/EditorialHero";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Best VPN for Privacy (2026) — Maximum Anonymity & Minimum Logging",
   description:
-    "VPNs ranked by privacy, not speed. Audited no-logs policies, open-source code, and jurisdiction compared.",
+    "VPNs ranked by privacy, not speed. Audited no-logs policies, open-source code, and jurisdiction compared. Proton VPN and NordVPN lead.",
+  alternates: { canonical: "/best/vpn-privacy/" },
+  openGraph: {
+    title: "Best VPN for Privacy (2026) — Maximum Anonymity & Minimum Logging",
+    description: "VPNs ranked by privacy, not speed. Audited no-logs policies, open-source code, and jurisdiction compared.",
+    url: "/best/vpn-privacy/",
+    type: "article",
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Best VPN for Privacy 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 export default function BestVpnPrivacyPage() {
@@ -31,6 +41,14 @@ export default function BestVpnPrivacyPage() {
 
   return (
     <>
+      <ArticleSchema
+        title="Best VPN for Privacy (2026) — Maximum Anonymity & Minimum Logging"
+        description="VPNs ranked by privacy, not speed. Audited no-logs policies, open-source code, and jurisdiction compared. Proton VPN and NordVPN lead."
+        url="/best/vpn-privacy/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <EditorialHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Best VPN for Privacy" }]}
         eyebrow="Privacy Focus · Zero-logs rubric"

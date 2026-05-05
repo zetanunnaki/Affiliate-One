@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Threat Modeling for Remote Workers (2026) — Assess Your Real Risks",
@@ -37,6 +38,14 @@ export default function ThreatModelPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="Threat Modeling for Remote Workers (2026) — Assess Your Real Risks"
+        description="Not everyone faces the same threats. Learn how to assess your personal risk level and build a security stack that matches your actual needs."
+        url="/security/threat-model/"
+        authorName="Sarah Chen"
+        authorUrl="https://buysecurevpn.com/authors/sarah-chen/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+      />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Security", href: "/security" }, { label: "Threat Modeling" }]} />
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Threat Modeling for Remote Workers</h1>

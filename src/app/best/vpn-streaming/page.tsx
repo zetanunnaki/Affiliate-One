@@ -4,10 +4,20 @@ import EditorialHero from "@/components/ui/EditorialHero";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Best VPN for Streaming (2026) — Netflix, Disney+, BBC iPlayer Tested",
-  description: "We tested VPNs with 10 streaming services. NordVPN, Proton VPN, and FastestVPN ranked by streaming compatibility.",
+  description: "We tested VPNs with 10 streaming services. NordVPN, Proton VPN, and FastestVPN ranked by streaming compatibility, speed, and library access.",
+  alternates: { canonical: "/best/vpn-streaming/" },
+  openGraph: {
+    title: "Best VPN for Streaming (2026) — Netflix, Disney+, BBC iPlayer Tested",
+    description: "We tested VPNs with 10 streaming services. NordVPN, Proton VPN, and FastestVPN ranked by streaming compatibility, speed, and library access.",
+    url: "/best/vpn-streaming/",
+    type: "article",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Streaming 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function BestVpnStreamingPage() {
@@ -28,6 +38,14 @@ export default function BestVpnStreamingPage() {
 
   return (
     <>
+      <ArticleSchema
+        title="Best VPN for Streaming (2026) — Netflix, Disney+, BBC iPlayer Tested"
+        description="We tested VPNs with 10 streaming services. NordVPN, Proton VPN, and FastestVPN ranked by streaming compatibility, speed, and library access."
+        url="/best/vpn-streaming/"
+        image="https://buysecurevpn.com/images/og/og-vpn.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <EditorialHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Best VPN for Streaming" }]}
         eyebrow="Streaming · 10 platforms tested"

@@ -3,11 +3,21 @@ import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
 import Methodology from "@/components/ui/Methodology";
 import InternalLinks from "@/components/ui/InternalLinks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Best 2FA App 2026 — Authenticator App Comparison",
   description:
-    "We compared the top authenticator apps for security, backup, and ease of use. Authy, Google Authenticator, Microsoft Authenticator, and more.",
+    "We compared the top authenticator apps for security, backup, and ease of use. Authy, Google Authenticator, Microsoft Authenticator, and more ranked.",
+  alternates: { canonical: "/best/2fa-app/" },
+  openGraph: {
+    title: "Best 2FA App 2026 — Authenticator App Comparison",
+    description: "We compared the top authenticator apps for security, backup, and ease of use. Authy, Google Authenticator, Microsoft Authenticator, and more.",
+    url: "/best/2fa-app/",
+    type: "article",
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Best 2FA App 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 const apps = [
@@ -28,6 +38,14 @@ export default function Best2FAAppPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="Best 2FA App 2026 — Authenticator App Comparison"
+        description="We compared the top authenticator apps for security, backup, and ease of use. Authy, Google Authenticator, Microsoft Authenticator, and more ranked."
+        url="/best/2fa-app/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
           Best 2FA App 2026: Authenticator App Comparison

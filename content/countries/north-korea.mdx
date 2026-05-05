@@ -1,34 +1,56 @@
 ---
 title: "Best VPN for North Korea (2026)"
 description: "The world's most isolated internet environment. What visitors need to know about connectivity in the DPRK."
-updatedAt: "2026-02-04"
+updatedAt: "2026-05-04"
 author: "marcus-johnson"
 category: "vpn"
 countryIso2: "KP"
+citations:
+  - title: "Freedom on the Net 2025: North Korea (assessment)"
+    url: "https://freedomhouse.org/country/north-korea/freedom-net/2025"
+    source: "Freedom House"
+  - title: "ITU ICT Development Index: DPR Korea"
+    url: "https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx"
+    source: "International Telecommunication Union"
 ---
 
-## North Korea: The World's Most Isolated Internet
+## Internet Freedom & Privacy Landscape
 
-North Korea has the world's most restricted internet. Citizens have no access to the global internet — only a domestic intranet called Kwangmyong. Foreign visitors may get limited, monitored internet access through Koryolink 3G, but this is the exception, not the rule.
+North Korea scores **3 out of 100** on Freedom House's Freedom on the Net index — the lowest score of any country assessed. This is not merely censorship; it is the near-total absence of internet access for an entire population. The Democratic People's Republic of Korea maintains the most absolute information control system in the world, where citizens have zero access to the global internet and all digital activity exists within a hermetically sealed domestic network.
 
-## Internet Reality
+North Korean citizens access only Kwangmyong, a domestic intranet containing government-approved websites, educational materials, and a state-controlled email system. Fewer than a few thousand elites — senior party officials, select researchers, and approved institutions — have any access to the global internet, and this access is heavily monitored by the Reconnaissance General Bureau and Ministry of State Security. The country's international internet connectivity flows through a single connection to China (via China Unicom) and a secondary link via Russia, serving this tiny elite user base.
 
-- **No public internet:** North Korean citizens cannot access the global internet
-- **Kwangmyong:** Domestic intranet with government-approved content only
-- **Koryolink:** Foreign visitors can purchase 3G SIM cards (~€150 for 2 weeks) with limited internet access
-- **All traffic monitored:** Every connection is surveilled by the state
-- **Content:** Access to most global services blocked. Even Koryolink access is heavily restricted
+For foreign visitors (who can only enter through state-controlled tour groups), Koryolink provides 3G mobile service at prohibitive costs (approximately 150 EUR for a 2-week SIM with limited data). This connection provides some internet access but is comprehensively monitored. Star Joint Venture Company manages telecommunications for foreigners, and all traffic is subject to state surveillance. The country has no private ISPs, no commercial broadband, and no domestic internet ecosystem beyond the intranet.
 
-## For Visitors
+**CRITICAL WARNING: Attempting to use a VPN, share internet access with North Korean citizens, or circumvent any communications restrictions in the DPRK carries extreme legal consequences including detention, imprisonment, and potential charges of espionage. This page exists for informational purposes only. We strongly advise against any attempt to use circumvention tools in North Korea.**
 
-If visiting North Korea through a state-approved tour:
-- **Don't expect internet access** — plan for complete disconnection
-- **Koryolink SIM** may provide basic data but is monitored and expensive
-- **VPN may work** on Koryolink but is monitored — assume anything you do is visible
-- **Download everything offline** before entering — maps, translation apps, entertainment
-- **Photography and device use** are restricted in many areas
-- **All tourism is state-controlled** through approved tour operators
+## VPN Legality
 
-## The Bottom Line
+All unauthorized communication tools, including VPNs, are illegal in North Korea. Possessing circumvention software on your device, sharing internet access, or helping North Korean citizens access information can result in detention, expulsion, imprisonment, or worse. The regime treats information control as a matter of state security. Even for foreign visitors, the risk of device inspection and confiscation is real, and the consequences of being found with VPN software are unpredictable and potentially severe.
 
-North Korea is effectively offline for visitors. This is not a VPN recommendation page — it's a warning that internet access does not meaningfully exist in the DPRK. If you visit, prepare for complete digital disconnection and respect local laws regarding electronic devices.
+## Why You Might Consider a VPN in North Korea
+
+This section comes with the strongest possible caveat — the risks vastly outweigh the benefits for most visitors:
+
+- **Encrypted communication while on Koryolink** — If you have a Koryolink SIM with internet access, a VPN theoretically encrypts your traffic from monitoring; however, the act of using encrypted protocols itself may trigger alerts in a country where all foreign communications are scrutinized
+- **Protect data on your device** — North Korean authorities inspect electronic devices at entry and exit; while a VPN cannot protect stored data, some travelers use it as part of broader operational security practices
+- **Academic or journalistic necessity** — In extremely rare cases, researchers or journalists with specific operational security training may accept the elevated risk; this requires expertise far beyond installing a consumer VPN
+
+## Server Coverage & Speed Performance
+
+Koryolink's 3G service delivers speeds of approximately 1-5 Mbps for foreign users, with high latency (200-400ms) due to routing through limited international links to China. VPN overhead on these already-minimal speeds would reduce usable bandwidth to 0.5-2 Mbps at best. The only viable server locations route through China (Beijing, Shanghai) — adding further latency to an already-slow connection.
+
+Realistically, even if a VPN connection could be established on Koryolink (which is not guaranteed given the monitoring infrastructure), performance would be insufficient for anything beyond basic text messaging. Video calls, streaming, or large file transfers are impractical even without VPN overhead.
+
+## Best VPN Protocols for North Korea
+
+If — despite all warnings — one were to attempt VPN use on Koryolink, the only potentially viable approach would be heavily obfuscated traffic that appears as standard HTTPS. Standard VPN protocols would be trivially detected on a network with so few users that each connection can be individually inspected. Stealth protocols, Shadowsocks with custom configurations, or Tor with pluggable transports might technically function, but the sophistication required to avoid detection on such a closely monitored network exceeds what consumer VPN products offer.
+
+## Our Recommendations
+
+Our standard recommendation framework does not meaningfully apply to North Korea. No commercial VPN is designed for or tested against the DPRK's unique environment. However, for travelers who simply want a VPN configured on their device for use before and after their DPRK visit (in China, transit countries, etc.):
+
+- **NordVPN** — Obfuscated servers work in China, useful for transit through Beijing before/after DPRK tours; do NOT attempt to use in North Korea itself
+- **Surfshark** — NoBorders mode activates in restricted regions; configure for China transit rather than in-country DPRK use
+- **Proton VPN** — Stealth protocol for Chinese transit; Proton's security architecture protects your data if devices are inspected at DPRK borders
+- **FastestVPN** — Budget option for configuring China transit connectivity; ensure all VPN applications are removed or deeply hidden before entering DPRK if you choose not to declare them

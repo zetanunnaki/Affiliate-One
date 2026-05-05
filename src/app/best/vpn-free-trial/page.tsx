@@ -3,10 +3,20 @@ import EditorialHero from "@/components/ui/EditorialHero";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "VPN Free Trials & Money-Back Guarantees (2026) — Try Before You Buy",
-  description: "Every VPN free trial and money-back guarantee in one place. Test NordVPN, Proton VPN, and FastestVPN risk-free.",
+  description: "Every VPN free trial and money-back guarantee in one place. Test NordVPN, Proton VPN, and FastestVPN risk-free. Compared side-by-side.",
+  alternates: { canonical: "/best/vpn-free-trial/" },
+  openGraph: {
+    title: "VPN Free Trials & Money-Back Guarantees (2026)",
+    description: "Every VPN free trial and money-back guarantee in one place. Test NordVPN, Proton VPN, and FastestVPN risk-free.",
+    url: "/best/vpn-free-trial/",
+    type: "article",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Free Trials 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function VpnFreeTrialPage() {
@@ -51,6 +61,14 @@ export default function VpnFreeTrialPage() {
 
   return (
     <>
+      <ArticleSchema
+        title="VPN Free Trials & Money-Back Guarantees (2026) — Try Before You Buy"
+        description="Every VPN free trial and money-back guarantee in one place. Test NordVPN, Proton VPN, and FastestVPN risk-free. Compared side-by-side."
+        url="/best/vpn-free-trial/"
+        image="https://buysecurevpn.com/images/og/og-vpn.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <EditorialHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Free Trials" }]}
         eyebrow="Free Trials · 30-day refund rubric"

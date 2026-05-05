@@ -4,6 +4,7 @@ import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import { BUILD_MONTH_YEAR } from "@/lib/dates";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Two-Factor Authentication Guide (2026) — Secure Your Accounts",
@@ -50,6 +51,14 @@ export default function TwoFactorAuthPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="Two-Factor Authentication Guide (2026) — Secure Your Accounts"
+        description="Learn how to set up two-factor authentication (2FA) on all your accounts. Compare authenticator apps, hardware keys, and SMS verification."
+        url="/security/2fa/"
+        authorName="Sarah Chen"
+        authorUrl="https://buysecurevpn.com/authors/sarah-chen/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+      />
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
           Two-Factor Authentication Guide (2026)

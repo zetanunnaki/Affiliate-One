@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Incident Response for Remote Teams (2026) — What to Do When Things Go Wrong",
@@ -97,6 +98,14 @@ export default function IncidentResponsePage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="Incident Response for Remote Teams (2026) — What to Do When Things Go Wrong"
+        description="Step-by-step incident response plan for remote teams. Compromised accounts, data breaches, lost devices, and phishing attacks handled."
+        url="/security/incident-response/"
+        authorName="Sarah Chen"
+        authorUrl="https://buysecurevpn.com/authors/sarah-chen/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+      />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Security", href: "/security" }, { label: "Incident Response" }]} />
 
       <header className="mb-8">

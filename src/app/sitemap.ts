@@ -218,7 +218,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about/", "/authors/", "/review-board/", "/editorial-policy/",
     "/affiliate-disclosure/", "/corrections/", "/glossary/", "/resources/",
     "/contact/", "/privacy/", "/terms/", "/cookies/",
-    "/changelog/", "/sitemap-html/",
+    "/changelog/", "/sitemap-html/", "/how-we-test/",
   ]) {
     entries.push({
       url: `${BASE}${p}`,

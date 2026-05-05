@@ -3,10 +3,20 @@ import EditorialHero from "@/components/ui/EditorialHero";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Best VPN for Gaming (2026) — Lowest Latency, DDoS Protection",
-  description: "VPNs ranked by gaming latency, not download speed. Real game tests with Valorant, CS2, and Fortnite.",
+  description: "VPNs ranked by gaming latency, not download speed. Real game tests with Valorant, CS2, and Fortnite. NordVPN and Surfshark lead for ping.",
+  alternates: { canonical: "/best/vpn-gaming/" },
+  openGraph: {
+    title: "Best VPN for Gaming (2026) — Lowest Latency, DDoS Protection",
+    description: "VPNs ranked by gaming latency, not download speed. Real game tests with Valorant, CS2, and Fortnite.",
+    url: "/best/vpn-gaming/",
+    type: "article",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Gaming 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function BestVpnGamingPage() {
@@ -18,6 +28,14 @@ export default function BestVpnGamingPage() {
 
   return (
     <>
+      <ArticleSchema
+        title="Best VPN for Gaming (2026) — Lowest Latency, DDoS Protection"
+        description="VPNs ranked by gaming latency, not download speed. Real game tests with Valorant, CS2, and Fortnite. NordVPN and Surfshark lead for ping."
+        url="/best/vpn-gaming/"
+        image="https://buysecurevpn.com/images/og/og-vpn.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <EditorialHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Best VPN for Gaming" }]}
         eyebrow="Gaming · Latency rubric"

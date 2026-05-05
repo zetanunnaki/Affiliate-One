@@ -3,10 +3,20 @@ import EditorialHero from "@/components/ui/EditorialHero";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Best VPN for Travel (2026) — Tested in 30+ Countries",
-  description: "VPNs tested from hotels, airports, and cafes worldwide. Which VPNs work in China, UAE, Turkey, and other restrictive countries.",
+  description: "VPNs tested from hotels, airports, and cafes worldwide. Which VPNs work in China, UAE, Turkey, and other restrictive countries. Updated monthly.",
+  alternates: { canonical: "/best/vpn-travel/" },
+  openGraph: {
+    title: "Best VPN for Travel (2026) — Tested in 30+ Countries",
+    description: "VPNs tested from hotels, airports, and cafes worldwide. Which VPNs work in China, UAE, Turkey, and other restrictive countries.",
+    url: "/best/vpn-travel/",
+    type: "article",
+    images: [{ url: "/images/og/og-travel.webp", width: 1200, height: 675, alt: "Best VPN for Travel 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-travel.webp"] },
 };
 
 export default function BestVpnTravelPage() {
@@ -18,6 +28,14 @@ export default function BestVpnTravelPage() {
 
   return (
     <>
+      <ArticleSchema
+        title="Best VPN for Travel (2026) — Tested in 30+ Countries"
+        description="VPNs tested from hotels, airports, and cafes worldwide. Which VPNs work in China, UAE, Turkey, and other restrictive countries. Updated monthly."
+        url="/best/vpn-travel/"
+        image="https://buysecurevpn.com/images/og/og-travel.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <EditorialHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Best VPN for Travel" }]}
         eyebrow="Travel · 30+ countries verified"

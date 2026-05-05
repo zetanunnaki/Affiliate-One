@@ -54,13 +54,6 @@ export default function AboutPage() {
       logo: "https://buysecurevpn.com/logo.svg",
       description: "Independent publication dedicated to helping remote workers stay secure online with expert-tested VPN reviews and security guides.",
       foundingDate: "2024",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "[City]",
-        addressRegion: "[State/Region]",
-        addressCountry: "[Country]",
-        streetAddress: "[Business address]",
-      },
       publishingPrinciples: "https://buysecurevpn.com/editorial-policy/",
       member: authors.map((a) => ({
         "@type": "Person",

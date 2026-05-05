@@ -5,10 +5,20 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "What Is a VPN? Simple Explanation for Non-Technical Users (2026)",
-  description: "A clear, jargon-free explanation of what a VPN is, how it works, and why you might need one. Written for beginners.",
+  description: "A clear, jargon-free explanation of what a VPN is, how it works, and why you might need one. Written for beginners by security professionals.",
+  alternates: { canonical: "/vpn/what-is-vpn/" },
+  openGraph: {
+    title: "What Is a VPN? Simple Explanation for Non-Technical Users (2026)",
+    description: "A clear, jargon-free explanation of what a VPN is, how it works, and why you might need one. Written for beginners.",
+    url: "/vpn/what-is-vpn/",
+    type: "article",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "What Is a VPN — Explained Simply" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function WhatIsVpnPage() {
@@ -23,6 +33,14 @@ export default function WhatIsVpnPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="What Is a VPN? Simple Explanation for Non-Technical Users (2026)"
+        description="A clear, jargon-free explanation of what a VPN is, how it works, and why you might need one. Written for beginners by security professionals."
+        url="/vpn/what-is-vpn/"
+        image="https://buysecurevpn.com/images/og/og-vpn.webp"
+        authorName="Sarah Chen"
+        authorUrl="https://buysecurevpn.com/authors/sarah-chen/"
+      />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "VPN", href: "/vpn" }, { label: "What Is a VPN?" }]} />
 
       <header className="mb-8">

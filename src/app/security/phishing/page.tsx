@@ -3,6 +3,7 @@ import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Phishing & Social Engineering Guide (2026) — Recognize & Avoid Attacks",
@@ -39,6 +40,14 @@ export default function PhishingPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="Phishing & Social Engineering Guide (2026) — Recognize & Avoid Attacks"
+        description="Learn how to recognize phishing emails, social engineering attacks, and scams targeting remote workers. Practical examples and prevention steps."
+        url="/security/phishing/"
+        authorName="Sarah Chen"
+        authorUrl="https://buysecurevpn.com/authors/sarah-chen/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+      />
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
           Phishing & Social Engineering Guide (2026)

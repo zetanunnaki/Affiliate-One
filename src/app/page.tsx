@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllCountries } from "@/lib/data";
 import SaveToPinterest from "@/components/ui/SaveToPinterest";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
 import FAQ from "@/components/ui/FAQ";
@@ -68,9 +67,9 @@ const homeFaqs = [
   },
 ];
 
-export default function Home() {
-  const countries = getAllCountries();
+const COUNTRY_COUNT = 202;
 
+export default function Home() {
   return (
     <div>
       {/* ═══════════════ EDITORIAL HERO ═══════════════ */}
@@ -302,7 +301,7 @@ export default function Home() {
                 Best VPN by Country
               </h2>
               <p className="text-slate-500 dark:text-slate-400">
-                Expert-tested recommendations for {countries.length}+ countries
+                Expert-tested recommendations for {COUNTRY_COUNT}+ countries
               </p>
             </div>
             <Link
@@ -323,7 +322,7 @@ export default function Home() {
               href="/countries"
               className="inline-flex items-center gap-1.5 px-5 py-2.5 text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 rounded-full"
             >
-              View all {countries.length} countries
+              View all {COUNTRY_COUNT} countries
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

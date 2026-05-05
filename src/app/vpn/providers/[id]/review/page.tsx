@@ -21,6 +21,15 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   return {
     title: post.frontmatter.title,
     description: post.frontmatter.description,
+    alternates: { canonical: `/vpn/providers/${id}/review/` },
+    openGraph: {
+      title: post.frontmatter.title,
+      description: post.frontmatter.description,
+      url: `/vpn/providers/${id}/review/`,
+      type: "article",
+      images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: `${post.frontmatter.title}` }],
+    },
+    twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
   };
 }
 

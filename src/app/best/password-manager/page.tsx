@@ -3,11 +3,21 @@ import Byline from "@/components/ui/Byline";
 import FAQ from "@/components/ui/FAQ";
 import Methodology from "@/components/ui/Methodology";
 import InternalLinks from "@/components/ui/InternalLinks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Best Password Manager 2026 — Expert-Tested Comparison",
   description:
-    "We tested the top password managers for security, usability, and value. Compare 1Password, Bitwarden, Dashlane, and Proton Pass.",
+    "We tested the top password managers for security, usability, and value. Compare 1Password, Bitwarden, Dashlane, and Proton Pass side-by-side.",
+  alternates: { canonical: "/best/password-manager/" },
+  openGraph: {
+    title: "Best Password Manager 2026 — Expert-Tested Comparison",
+    description: "We tested the top password managers for security, usability, and value. Compare 1Password, Bitwarden, Dashlane, and Proton Pass.",
+    url: "/best/password-manager/",
+    type: "article",
+    images: [{ url: "/images/og/og-security.webp", width: 1200, height: 675, alt: "Best Password Manager 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-security.webp"] },
 };
 
 interface Manager {
@@ -90,6 +100,14 @@ export default function BestPasswordManagerPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="Best Password Manager 2026 — Expert-Tested Comparison"
+        description="We tested the top password managers for security, usability, and value. Compare 1Password, Bitwarden, Dashlane, and Proton Pass side-by-side."
+        url="/best/password-manager/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
           Best Password Manager 2026: Expert-Tested Comparison

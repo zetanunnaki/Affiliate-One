@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "VPN for Small Teams & Businesses (2026) — Secure Your Remote Workforce",
@@ -43,6 +44,14 @@ export default function VpnForBusinessesPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="VPN for Small Teams & Businesses (2026) — Secure Your Remote Workforce"
+        description="How to choose and deploy a VPN for your small team. Compare business VPN features, pricing, and management tools."
+        url="/security/vpn-for-businesses/"
+        authorName="Sarah Chen"
+        authorUrl="https://buysecurevpn.com/authors/sarah-chen/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+      />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Security", href: "/security" }, { label: "VPN for Businesses" }]} />
 
       <header className="mb-8">

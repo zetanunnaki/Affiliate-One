@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "MFA Methods Compared: Passkeys vs Authenticator vs SMS vs Hardware Keys (2026)",
@@ -40,6 +41,14 @@ export default function MultiFactorComparisonPage() {
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        title="MFA Methods Compared: Passkeys vs Authenticator vs SMS vs Hardware Keys (2026)"
+        description="Deep comparison of every multi-factor authentication method. Security ratings, phishing resistance, recovery options, and recommendations by use case."
+        url="/security/multi-factor-comparison/"
+        authorName="Sarah Chen"
+        authorUrl="https://buysecurevpn.com/authors/sarah-chen/"
+        image="https://buysecurevpn.com/images/og/og-security.webp"
+      />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Security", href: "/security" }, { label: "MFA Comparison" }]} />
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">Multi-Factor Authentication: Every Method Compared</h1>

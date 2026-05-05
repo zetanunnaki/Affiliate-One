@@ -3,10 +3,20 @@ import EditorialHero from "@/components/ui/EditorialHero";
 import FAQ from "@/components/ui/FAQ";
 import InternalLinks from "@/components/ui/InternalLinks";
 import TopVpnPicks from "@/components/ui/TopVpnPicks";
+import ArticleSchema from "@/components/seo/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Best VPN for Business (2026) — Team Plans & Enterprise Solutions",
-  description: "VPN solutions for businesses of all sizes. Individual subscriptions for tiny teams, managed plans for 5-50, and Zero Trust for 50+.",
+  description: "VPN solutions for businesses of all sizes. Individual subscriptions for tiny teams, managed plans for 5-50, and Zero Trust for 50+. Compared and tested.",
+  alternates: { canonical: "/best/vpn-business/" },
+  openGraph: {
+    title: "Best VPN for Business (2026) — Team Plans & Enterprise Solutions",
+    description: "VPN solutions for businesses of all sizes. Individual subscriptions for tiny teams, managed plans for 5-50, and Zero Trust for 50+.",
+    url: "/best/vpn-business/",
+    type: "article",
+    images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "Best VPN for Business 2026" }],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
 };
 
 export default function BestVpnBusinessPage() {
@@ -18,6 +28,14 @@ export default function BestVpnBusinessPage() {
 
   return (
     <>
+      <ArticleSchema
+        title="Best VPN for Business (2026) — Team Plans & Enterprise Solutions"
+        description="VPN solutions for businesses of all sizes. Individual subscriptions for tiny teams, managed plans for 5-50, and Zero Trust for 50+. Compared and tested."
+        url="/best/vpn-business/"
+        image="https://buysecurevpn.com/images/og/og-vpn.webp"
+        authorName="Marcus Johnson"
+        authorUrl="https://buysecurevpn.com/authors/marcus-johnson/"
+      />
       <EditorialHero
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Best Of", href: "/best" }, { label: "Best VPN for Business" }]}
         eyebrow="Business · Team & Enterprise"

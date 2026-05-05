@@ -125,6 +125,37 @@
     "discountBadge": "Save 87%"
   },
   {
+    "id": "ipvanish",
+    "name": "IPVanish",
+    "website": "https://ipvanish.com",
+    "affiliate": {
+      "network": "direct",
+      "trackingBaseUrl": "https://affiliate.ipvanish.com/aff_c?offer_id=1&aff_id=4885",
+      "trackingBaseUrlAlt": "https://affiliate.ipvanish.com/aff_c?offer_id=1&aff_id=4885&url_id=1468",
+      "disclosureLabel": "Affiliate link"
+    },
+    "features": {
+      "protocols": ["WireGuard", "OpenVPN", "IKEv2", "IPSec"],
+      "noLogsClaim": true,
+      "killSwitch": true,
+      "splitTunneling": true,
+      "devices": 0
+    },
+    "positioningTags": ["streaming", "unlimited-devices", "us-based"],
+    "notes": "US-based (Ziff Davis), independently audited no-logs policy, unlimited simultaneous connections, 2,400+ servers in 90+ locations, optimized for streaming and Kodi.",
+    "rating": 4.4,
+    "priceRange": "$2.49–$12.99/mo",
+    "positioning": "streaming",
+    "positioningLabel": "Best for Streaming",
+    "brandColor": "#6AB04C",
+    "brandColorDark": "#4E8B3A",
+    "tagline": "Unlimited devices, streaming-optimized, audited no-logs",
+    "keyFeatures": ["Unlimited simultaneous connections", "Audited no-logs policy", "Streaming and Kodi optimized", "SOCKS5 proxy included"],
+    "originalPrice": "$12.99/mo",
+    "salePrice": "$2.19/mo",
+    "discountBadge": "Save 83%"
+  },
+  {
     "id": "expressvpn",
     "name": "ExpressVPN",
     "website": "https://expressvpn.com",

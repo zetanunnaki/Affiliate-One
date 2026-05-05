@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="20" fill="#6AB04C"/>
+  <path d="M60 60h10v80H60V60zm20 0h10l20 50 20-50h10v80h-10V90l-18 44h-4L90 90v50H80V60z" fill="white"/>
+  <text x="100" y="165" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="18" fill="white">IPVanish</text>
+</svg>

@@ -45,8 +45,8 @@ export default function EmailSecurityPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Your email is the key to everything. If an attacker controls your email, they can reset passwords on every account you own. Here&apos;s the complete guide to securing it.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-03-16" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Protect yourself" />
 
 
       {/* Why email is critical */}

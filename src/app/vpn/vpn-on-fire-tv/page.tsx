@@ -26,8 +26,8 @@ export default function VpnOnFireTvPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Install a VPN on your Fire TV Stick in 2 minutes. Unblock streaming services, stop ISP throttling, and protect your smart TV traffic.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* Device compatibility */}

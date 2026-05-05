@@ -25,8 +25,8 @@ export default function VpnForLinuxPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Linux has the best VPN support of any OS — WireGuard in the kernel, native apps from top providers, and full CLI control. Here are our picks.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-15" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* Top picks */}

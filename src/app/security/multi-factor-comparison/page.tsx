@@ -55,8 +55,8 @@ export default function MultiFactorComparisonPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Not all MFA is equal. Passkeys are phishing-immune. SMS codes aren&apos;t. Here&apos;s a deep comparison of every authentication method available in 2026.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-02-02" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Protect yourself" />
 
 
       {/* Comparison table */}

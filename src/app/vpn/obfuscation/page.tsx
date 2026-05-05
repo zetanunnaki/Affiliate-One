@@ -33,8 +33,8 @@ export default function ObfuscationPage() {
         </p>
         <Byline authorId="marcus-johnson" updatedAt="2026-03-26" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* How DPI works */}

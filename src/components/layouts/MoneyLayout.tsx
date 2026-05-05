@@ -62,7 +62,7 @@ export default function MoneyLayout({
       <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Top picks — conversion widget shown at the top of every money page */}
         <TopVpnPicks
-          heading="Our Top 4 Picks"
+          heading="Our Top 5 Picks"
           eyebrow="Expert-tested recommendations"
         />
 

@@ -25,13 +25,13 @@ export default function VpnForIosPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">iOS VPN apps are polished but face Apple platform restrictions. Here&apos;s what works, what doesn&apos;t, and which providers offer the best iPhone experience.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-07" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* Top picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 4 iOS VPNs</h2>
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 5 iOS VPNs</h2>
         <div className="space-y-3">
           {[
             { name: "NordVPN", badge: "Best Overall", desc: "NordLynx for top speeds. Threat Protection on iOS. Meshnet. Dark Web Monitor. The most feature-rich iOS VPN." },

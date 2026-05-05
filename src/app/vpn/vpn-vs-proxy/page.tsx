@@ -26,8 +26,8 @@ export default function VpnVsProxyPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">VPNs and proxies both mask your IP address, but the similarities end there. Here&apos;s why remote workers should always choose a VPN.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-03-20" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       <section className="mb-10">

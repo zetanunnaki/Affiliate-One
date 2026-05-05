@@ -61,8 +61,8 @@ export default function BrowserExtensionsPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Browser extensions can read everything you do online — passwords, banking, emails, private messages. Most people have extensions they don&apos;t need from developers they don&apos;t trust. Time for an audit.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-03-04" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Protect yourself" />
 
 
       {/* Safe extensions */}

@@ -68,8 +68,8 @@ export default function TravelSecurityPage() {
         </p>
         <Byline authorId="elena-rodriguez" updatedAt="2026-02-04" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Protect yourself" />
 
 
       {/* Before you travel */}

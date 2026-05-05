@@ -25,13 +25,13 @@ export default function VpnForMacPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Native Apple Silicon apps, macOS Sequoia tested, and FileVault + VPN for complete protection. Here are our top picks for Mac users.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-02" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* Top picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 4 Mac VPNs</h2>
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 5 Mac VPNs</h2>
         <div className="space-y-3">
           {[
             { name: "NordVPN", badge: "Best Overall", desc: "Best macOS app with NordLynx. Split tunneling now available on Mac. Threat Protection. Meshnet. Native Apple Silicon. Menu bar integration." },

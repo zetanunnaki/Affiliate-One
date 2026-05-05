@@ -25,8 +25,8 @@ export default function VpnForAndroidPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Android is the best mobile platform for VPN users. System-level always-on, true split tunneling, and the ability to block non-VPN traffic natively.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-26" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* Why Android is best for VPN */}
@@ -59,7 +59,7 @@ export default function VpnForAndroidPage() {
 
       {/* Top picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 4 Android VPNs</h2>
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Top 5 Android VPNs</h2>
         <div className="space-y-3">
           {[
             { name: "NordVPN", badge: "Best Overall", desc: "NordLynx for top speeds. Split tunneling. Threat Protection blocks malicious apps. Meshnet. Dark Mode. Widget support." },

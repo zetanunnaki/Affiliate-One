@@ -25,8 +25,8 @@ export default function VpnForAppleTvPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Three ways to use a VPN on Apple TV: native tvOS app (new!), Smart DNS, or router VPN. Here&apos;s how to set up each method.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-13" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       <section className="mb-10">

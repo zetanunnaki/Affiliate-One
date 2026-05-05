@@ -52,8 +52,8 @@ export default function StreamingGuidePage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Not all VPNs work with streaming services. We tested each provider with 10 major platforms to find which ones actually unblock content reliably.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-06" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       <section className="mb-10">

@@ -67,7 +67,7 @@ export default function BestVpnStreamingPage() {
           <div className="text-sm text-blue-900 dark:text-blue-200">
             <strong className="font-bold">Full streaming test results:</strong>{" "}
             <Link href="/vpn/streaming-guide" className="underline font-semibold">See our complete streaming compatibility matrix</Link>{" "}
-            with 10 services × 4 providers.
+            with 10 services × 5 providers.
           </div>
         </div>
 

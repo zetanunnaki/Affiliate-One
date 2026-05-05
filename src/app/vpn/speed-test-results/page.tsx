@@ -35,8 +35,8 @@ export default function SpeedTestResultsPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">We tested every major VPN on a 1Gbps fiber connection across 4 server distances. Here are the real numbers — no cherry-picked results.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-04-15" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* Methodology */}

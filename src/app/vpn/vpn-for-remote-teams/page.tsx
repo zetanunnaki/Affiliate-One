@@ -26,8 +26,8 @@ export default function VpnForRemoteTeamsPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Every remote team member should use a VPN. Here&apos;s how to deploy VPN protection across your team — from 2-person startups to 50-person companies.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-02-26" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* Team size recommendations */}

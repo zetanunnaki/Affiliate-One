@@ -45,8 +45,8 @@ export default function RansomwarePage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Ransomware encrypts your files and demands payment. For remote workers without corporate IT backup, an attack can be devastating. Here&apos;s how to prevent, detect, and recover.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-02-22" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Protect yourself" />
 
 
       <section className="mb-10">

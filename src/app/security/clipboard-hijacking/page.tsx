@@ -44,8 +44,8 @@ export default function ClipboardHijackingPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">Clipboard hijacking silently replaces what you copy — crypto addresses, passwords, and bank details. It&apos;s invisible, automatic, and has cost millions in stolen cryptocurrency.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-04-07" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Protect yourself" />
 
 
       <section className="mb-10">

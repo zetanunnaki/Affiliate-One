@@ -1,6 +1,6 @@
 # BuySecureVPN
 
-> Independent VPN reviews and comparisons. 4 providers tested across 47 criteria including speed, security, privacy, and streaming. Published by a team of CISSP, CEH, and CCNA-certified reviewers. 202-country coverage with editorial content for 35+ high-value markets.
+> Independent VPN reviews and comparisons. 5 providers tested across 47 criteria including speed, security, privacy, and streaming. Published by a team of CISSP, CEH, and CCNA-certified reviewers. 202-country coverage with editorial content for 35+ high-value markets.
 
 ## Core Pages
 
@@ -14,6 +14,7 @@
 - [Surfshark Review](https://buysecurevpn.com/vpn/providers/surfshark/): Best for Unlimited Devices, 4.6/5
 - [Proton VPN Review](https://buysecurevpn.com/vpn/providers/protonvpn/): Best for Privacy, 4.5/5
 - [FastestVPN Review](https://buysecurevpn.com/vpn/providers/fastestvpn/): Best Budget, 4.2/5
+- [IPVanish Review](https://buysecurevpn.com/vpn/providers/ipvanish/): Best for Streaming, 4.4/5
 - [NordVPN Full Review](https://buysecurevpn.com/vpn/providers/nordvpn/review/): In-depth analysis
 - [Proton VPN Full Review](https://buysecurevpn.com/vpn/providers/protonvpn/review/): In-depth analysis
 - [Surfshark Full Review](https://buysecurevpn.com/vpn/providers/surfshark/review/): In-depth analysis
@@ -30,6 +31,10 @@
 - [Surfshark vs ExpressVPN](https://buysecurevpn.com/vpn/vs/surfshark-vs-expressvpn/): Budget vs Premium
 - [Surfshark vs CyberGhost](https://buysecurevpn.com/vpn/vs/surfshark-vs-cyberghost/): Unlimited Devices vs Streaming
 - [Proton VPN vs FastestVPN](https://buysecurevpn.com/vpn/vs/protonvpn-vs-fastestvpn/): Privacy vs Price
+- [IPVanish vs NordVPN](https://buysecurevpn.com/vpn/vs/ipvanish-vs-nordvpn/): Streaming vs Overall
+- [IPVanish vs Surfshark](https://buysecurevpn.com/vpn/vs/ipvanish-vs-surfshark/): Streaming vs Unlimited Devices
+- [IPVanish vs Proton VPN](https://buysecurevpn.com/vpn/vs/ipvanish-vs-protonvpn/): Streaming vs Privacy
+- [IPVanish vs FastestVPN](https://buysecurevpn.com/vpn/vs/ipvanish-vs-fastestvpn/): Streaming vs Budget
 - [ExpressVPN vs CyberGhost](https://buysecurevpn.com/vpn/vs/expressvpn-vs-cyberghost/): Premium vs Value
 
 ## Best-of Categories

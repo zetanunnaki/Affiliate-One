@@ -27,13 +27,13 @@ export default function VpnForWindowsPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Windows is the #1 platform for VPN usage — and the #1 target for cyberattacks. Here&apos;s how to set up a VPN on Windows 11 and which providers offer the best experience.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-24" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
-      {/* Top 4 picks */}
+      {/* Top 5 picks */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Our Top 4 Windows VPN Picks</h2>
+        <h2 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 mb-4">Our Top 5 Windows VPN Picks</h2>
         <div className="space-y-3">
           {[
             { rank: "1", name: "NordVPN", badge: "Best Overall", price: "$3.39/mo", desc: "Most feature-rich Windows app. NordLynx (WireGuard) for top speeds. System-level kill switch via WFP. Split tunneling per app. Threat Protection blocks malware. Meshnet for virtual LAN. Microsoft Store available." },

@@ -25,8 +25,8 @@ export default function VpnForFamiliesPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">Protect your entire household — every phone, tablet, laptop, smart TV, and gaming console — with one VPN subscription.</p>
         <Byline authorId="sarah-chen" updatedAt="2026-03-30" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       <section className="mb-10">

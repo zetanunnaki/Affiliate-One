@@ -89,8 +89,8 @@ export default function EncryptionHubPage() {
         </p>
         <Byline authorId="sarah-chen" updatedAt="2026-01-19" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Protect yourself" />
 
 
       {/* Types grid */}

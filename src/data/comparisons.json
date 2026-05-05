@@ -9,5 +9,9 @@
   {"id": "surfshark-vs-expressvpn", "slug": "surfshark-vs-expressvpn", "providers": ["surfshark", "expressvpn"], "title": "Surfshark vs ExpressVPN (2026): Budget vs Premium"},
   {"id": "nordvpn-vs-cyberghost", "slug": "nordvpn-vs-cyberghost", "providers": ["nordvpn", "cyberghost"], "title": "NordVPN vs CyberGhost (2026): Speed vs Server Count"},
   {"id": "surfshark-vs-cyberghost", "slug": "surfshark-vs-cyberghost", "providers": ["surfshark", "cyberghost"], "title": "Surfshark vs CyberGhost (2026): Unlimited Devices vs Streaming"},
-  {"id": "expressvpn-vs-cyberghost", "slug": "expressvpn-vs-cyberghost", "providers": ["expressvpn", "cyberghost"], "title": "ExpressVPN vs CyberGhost (2026): Premium vs Value"}
+  {"id": "expressvpn-vs-cyberghost", "slug": "expressvpn-vs-cyberghost", "providers": ["expressvpn", "cyberghost"], "title": "ExpressVPN vs CyberGhost (2026): Premium vs Value"},
+  {"id": "ipvanish-vs-nordvpn", "slug": "ipvanish-vs-nordvpn", "providers": ["ipvanish", "nordvpn"], "title": "IPVanish vs NordVPN (2026): Streaming vs Overall"},
+  {"id": "ipvanish-vs-surfshark", "slug": "ipvanish-vs-surfshark", "providers": ["ipvanish", "surfshark"], "title": "IPVanish vs Surfshark (2026): Streaming vs Unlimited Devices"},
+  {"id": "ipvanish-vs-protonvpn", "slug": "ipvanish-vs-protonvpn", "providers": ["ipvanish", "protonvpn"], "title": "IPVanish vs Proton VPN (2026): Streaming vs Privacy"},
+  {"id": "ipvanish-vs-fastestvpn", "slug": "ipvanish-vs-fastestvpn", "providers": ["ipvanish", "fastestvpn"], "title": "IPVanish vs FastestVPN (2026): Streaming vs Budget"}
 ]

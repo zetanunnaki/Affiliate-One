@@ -43,8 +43,8 @@ export default function NoLogsPage() {
         </p>
         <Byline authorId="sarah-chen" updatedAt="2026-02-10" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* What no-logs means */}

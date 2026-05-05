@@ -52,12 +52,12 @@ export const translations: Record<Locale, Translations> = {
     langName: "English",
     bestVpn: {
       title: "Best VPN 2026 — Expert-Tested & Independently Reviewed",
-      description: "We tested the top VPN services for speed, security, and privacy. NordVPN, Surfshark, Proton VPN, and FastestVPN compared.",
+      description: "We tested the top VPN services for speed, security, and privacy. NordVPN, Surfshark, Proton VPN, FastestVPN, and IPVanish compared.",
       headlineTop: "The only VPNs",
       headlineItalic: "that actually",
       headlineBottom: "earned our stars.",
-      lede: "After 47 data points across speed, privacy, streaming reach, and customer support, four providers made the cut.",
-      eyebrow: "Cover Story · 4 VPNs tested",
+      lede: "After 47 data points across speed, privacy, streaming reach, and customer support, five providers made the cut.",
+      eyebrow: "Cover Story · 5 VPNs tested",
     },
     deals: {
       title: "VPN Deals & Coupons (2026) — Best Current Offers",
@@ -77,7 +77,7 @@ export const translations: Record<Locale, Translations> = {
     },
     country: {
       titleTemplate: "Best VPN for {country} (2026)",
-      topPicks: "Our Top 4 Picks for {country}",
+      topPicks: "Our Top 5 Picks for {country}",
       comparisonTitle: "VPN Comparison for {country}",
       detailedReviews: "Detailed Provider Reviews for {country}",
       faqTitle: "VPN FAQ for {country}",
@@ -96,12 +96,12 @@ export const translations: Record<Locale, Translations> = {
     langName: "Français",
     bestVpn: {
       title: "Meilleur VPN 2026 — Testé par des Experts & Évalué Indépendamment",
-      description: "Nous avons testé les meilleurs services VPN pour la vitesse, la sécurité et la confidentialité. NordVPN, Surfshark, Proton VPN et FastestVPN comparés.",
+      description: "Nous avons testé les meilleurs services VPN pour la vitesse, la sécurité et la confidentialité. NordVPN, Surfshark, Proton VPN FastestVPN et IPVanish comparés.",
       headlineTop: "Les seuls VPN",
       headlineItalic: "qui ont vraiment",
       headlineBottom: "mérité nos étoiles.",
-      lede: "Après 47 critères couvrant la vitesse, la confidentialité, le streaming et le support client, quatre fournisseurs ont passé le test.",
-      eyebrow: "Dossier · 4 VPN testés",
+      lede: "Après 47 critères couvrant la vitesse, la confidentialité, le streaming et le support client, cinq fournisseurs ont passé le test.",
+      eyebrow: "Dossier · 5 VPN testés",
     },
     deals: {
       title: "Offres VPN & Codes Promo (2026) — Meilleures Réductions",
@@ -140,12 +140,12 @@ export const translations: Record<Locale, Translations> = {
     langName: "Español",
     bestVpn: {
       title: "Mejor VPN 2026 — Probado por Expertos & Evaluado Independientemente",
-      description: "Probamos los mejores servicios VPN en velocidad, seguridad y privacidad. NordVPN, Surfshark, Proton VPN y FastestVPN comparados.",
+      description: "Probamos los mejores servicios VPN en velocidad, seguridad y privacidad. NordVPN, Surfshark, Proton VPN FastestVPN e IPVanish comparados.",
       headlineTop: "Los únicos VPN",
       headlineItalic: "que realmente",
       headlineBottom: "se ganaron nuestras estrellas.",
-      lede: "Después de 47 criterios de velocidad, privacidad, streaming y soporte, cuatro proveedores pasaron la prueba.",
-      eyebrow: "Portada · 4 VPN probados",
+      lede: "Después de 47 criterios de velocidad, privacidad, streaming y soporte, cinco proveedores pasaron la prueba.",
+      eyebrow: "Portada · 5 VPN probados",
     },
     deals: {
       title: "Ofertas VPN & Cupones (2026) — Mejores Descuentos",
@@ -184,12 +184,12 @@ export const translations: Record<Locale, Translations> = {
     langName: "Português",
     bestVpn: {
       title: "Melhor VPN 2026 — Testado por Especialistas & Avaliado Independentemente",
-      description: "Testamos os melhores serviços VPN em velocidade, segurança e privacidade. NordVPN, Surfshark, Proton VPN e FastestVPN comparados.",
+      description: "Testamos os melhores serviços VPN em velocidade, segurança e privacidade. NordVPN, Surfshark, Proton VPN FastestVPN e IPVanish comparados.",
       headlineTop: "Os únicos VPNs",
       headlineItalic: "que realmente",
       headlineBottom: "mereceram nossas estrelas.",
-      lede: "Após 47 critérios de velocidade, privacidade, streaming e suporte, quatro provedores passaram no teste.",
-      eyebrow: "Destaque · 4 VPNs testados",
+      lede: "Após 47 critérios de velocidade, privacidade, streaming e suporte, cinco provedores passaram no teste.",
+      eyebrow: "Destaque · 5 VPNs testados",
     },
     deals: {
       title: "Ofertas VPN & Cupons (2026) — Melhores Descontos",

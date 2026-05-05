@@ -134,8 +134,8 @@ export default function SecurityChecklistPage() {
           <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Remote Work Security Checklist</h1>
           <p className="text-sm text-slate-600">{totalItems} items across {sections.length} categories.</p>
         </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Protect yourself" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Protect yourself" />
 
         <div className="flex gap-3 mb-8 print:hidden">
           <PrintButton />

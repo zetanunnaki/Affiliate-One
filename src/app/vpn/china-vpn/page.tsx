@@ -34,8 +34,8 @@ export default function ChinaVpnPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-2">The Great Firewall blocks Google, WhatsApp, Slack, and thousands of other services. For remote workers visiting China, a working VPN isn&apos;t optional — it&apos;s essential. We tested from inside China to find which VPNs actually work.</p>
         <Byline authorId="elena-rodriguez" updatedAt="2026-01-13" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       {/* Critical warning */}

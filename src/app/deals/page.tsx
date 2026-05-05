@@ -10,14 +10,14 @@ const CURRENT_YEAR = NOW.getFullYear();
 
 export const metadata: Metadata = {
   title: `VPN Deals & Coupons (${CURRENT_MONTH} ${CURRENT_YEAR}) — Best Current Offers`,
-  description: `Current VPN deals and discount codes for ${CURRENT_MONTH} ${CURRENT_YEAR}. Save up to 89% on NordVPN, Surfshark, Proton VPN, and FastestVPN. Verified weekly — all deals include 30-day money-back guarantees.`,
+  description: `Current VPN deals and discount codes for ${CURRENT_MONTH} ${CURRENT_YEAR}. Save up to 89% on NordVPN, Surfshark, Proton VPN, FastestVPN, and IPVanish. Verified weekly — all deals include 30-day money-back guarantees.`,
   alternates: {
     canonical: "/deals/",
     languages: { "x-default": "/deals/", en: "/deals/", fr: "/fr/deals/", es: "/es/deals/", pt: "/pt/deals/" },
   },
   openGraph: {
     title: "VPN Deals & Coupons (2026) | BuySecureVPN",
-    description: "Verified VPN discounts updated weekly. Save up to 89% on NordVPN, Proton VPN, and FastestVPN.",
+    description: "Verified VPN discounts updated weekly. Save up to 89% on NordVPN, Surfshark, Proton VPN, FastestVPN, and IPVanish.",
     type: "website",
     url: "/deals/",
     images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: "VPN Deals & Coupons" }],
@@ -29,10 +29,11 @@ export default function DealsPage() {
   const providers = getAllProviders();
 
   const deals = [
-    { providerId: "nordvpn", discount: "Save 74%", plan: "2-year plan", price: "$3.39/mo", wasPrice: "$12.99/mo", extra: "+ 3 months free · 30-day refund", highlight: true },
-    { providerId: "surfshark", discount: "Save 87%", plan: "2-year plan", price: "$1.99/mo", wasPrice: "$15.45/mo", extra: "Unlimited devices · 30-day refund", highlight: false },
-    { providerId: "protonvpn", discount: "50% off", plan: "2-year plan", price: "$4.99/mo", wasPrice: "$9.99/mo", extra: "Includes Proton ecosystem · 30-day refund", highlight: false },
+    { providerId: "nordvpn", discount: "Save 76%", plan: "2-year plan", price: "$3.09/mo", wasPrice: "$12.99/mo", extra: "+ 3 months free · 30-day refund", highlight: true },
+    { providerId: "surfshark", discount: "Save 73%", plan: "2-year plan", price: "$1.78/mo", wasPrice: "$6.58/mo", extra: "+ 3 months free · Unlimited devices · 30-day refund", highlight: false },
+    { providerId: "protonvpn", discount: "Save 70%", plan: "2-year plan", price: "$2.99/mo", wasPrice: "$9.99/mo", extra: "Includes Proton ecosystem · 30-day refund", highlight: false },
     { providerId: "fastestvpn", discount: "Save 89%", plan: "Lifetime deal", price: "$1.11/mo", wasPrice: "$10.00/mo", extra: "31-day refund · 15 devices", highlight: false },
+    { providerId: "ipvanish", discount: "Save 83%", plan: "2-year plan", price: "$2.19/mo", wasPrice: "$12.99/mo", extra: "Unlimited devices · Streaming optimized · 30-day refund", highlight: false },
   ];
 
   return (

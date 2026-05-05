@@ -26,8 +26,8 @@ export default function WireGuardPage() {
         <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">WireGuard has become the default VPN protocol for good reason — it&apos;s faster, simpler, and more secure than its predecessors. Here&apos;s everything you need to know.</p>
         <Byline authorId="marcus-johnson" updatedAt="2026-02-18" />
       </header>
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
 
       <section className="mb-10">

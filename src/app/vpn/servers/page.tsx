@@ -56,8 +56,8 @@ export default function VpnServersPage() {
         <ServerMap />
       </section>
 
-      {/* Our Top 4 Picks */}
-      <TopVpnPicks heading="Our Top 4 VPN Picks" eyebrow="Expert-tested" />
+      {/* Our Top 5 Picks */}
+      <TopVpnPicks heading="Our Top 5 VPN Picks" eyebrow="Expert-tested" />
 
       {/* Server count comparison */}
       <section className="mb-10">

@@ -99,7 +99,7 @@ export default function Header() {
 
         {/* Mobile nav */}
         {mobileOpen && (
-          <nav className="lg:hidden py-4 border-t border-slate-100 dark:border-white/5 animate-in slide-in-from-top-2 duration-200">
+          <nav className="lg:hidden py-4 border-t border-slate-100 dark:border-white/5 animate-in slide-in-from-top-2 duration-200 max-h-[calc(100vh-4rem)] overflow-y-auto">
             {mainNav.map((item) => (
               <div key={item.href}>
                 <Link

@@ -62,6 +62,10 @@
       <image:loc>https://buysecurevpn.com/images/countries/japan.webp</image:loc>
       <image:title>Best VPN for Japan 2026</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/best-vpn-japan.webp</image:loc>
+      <image:title>Best VPN for Japan</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://buysecurevpn.com/vpn/best/mexico/</loc>
@@ -139,6 +143,10 @@
       <image:loc>https://buysecurevpn.com/images/countries/united-states.webp</image:loc>
       <image:title>Best VPN for United States 2026</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/best-vpn-usa.webp</image:loc>
+      <image:title>Best VPN for USA</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://buysecurevpn.com/authors/elena-rodriguez/</loc>
@@ -167,12 +175,32 @@
       <image:loc>https://buysecurevpn.com/images/og/og-countries.webp</image:loc>
       <image:title>VPN by Country</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/social/cover-pinterest.webp</image:loc>
+      <image:title>BuySecureVPN – Pinterest Cover</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://buysecurevpn.com/</loc>
     <image:image>
       <image:loc>https://buysecurevpn.com/images/og/og-default.webp</image:loc>
       <image:title>BuySecureVPN – Expert VPN Reviews</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/social/cover-facebook.webp</image:loc>
+      <image:title>BuySecureVPN – Facebook Cover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/social/cover-linkedin.webp</image:loc>
+      <image:title>BuySecureVPN – LinkedIn Cover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/social/cover-twitter.webp</image:loc>
+      <image:title>BuySecureVPN – Twitter Cover</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/social/cover-youtube.webp</image:loc>
+      <image:title>BuySecureVPN – YouTube Cover</image:title>
     </image:image>
   </url>
   <url>
@@ -311,12 +339,118 @@
       <image:loc>https://buysecurevpn.com/images/og/og-travel.webp</image:loc>
       <image:title>Travel Security Guide</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/vpn-for-travel.webp</image:loc>
+      <image:title>VPN for Travel</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://buysecurevpn.com/best/vpn/</loc>
     <image:image>
       <image:loc>https://buysecurevpn.com/images/og/og-vpn.webp</image:loc>
       <image:title>Best VPN Services 2026</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/best-vpn-2026.webp</image:loc>
+      <image:title>Best VPN Services 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/vpn/providers/cyberghost/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/providers/cyberghost.svg</image:loc>
+      <image:title>Cyberghost Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/vpn/providers/expressvpn/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/providers/expressvpn.svg</image:loc>
+      <image:title>Expressvpn Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/vpn/providers/fastestvpn/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/providers/fastestvpn.svg</image:loc>
+      <image:title>Fastestvpn Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/vpn/providers/nordvpn/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/providers/nordvpn.svg</image:loc>
+      <image:title>Nordvpn Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/vpn/providers/protonvpn/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/providers/protonvpn.svg</image:loc>
+      <image:title>Protonvpn Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/vpn/providers/surfshark/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/providers/surfshark.svg</image:loc>
+      <image:title>Surfshark Logo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/guides/data-breach-response/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/data-breach-response.webp</image:loc>
+      <image:title>Data Breach Response Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/guides/digital-nomad-security-kit/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/digital-nomad-kit.webp</image:loc>
+      <image:title>Digital Nomad Security Kit</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/guides/wifi-security-hotel-airport/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/hotel-wifi-mistakes.webp</image:loc>
+      <image:title>Hotel Wi-Fi Security Mistakes</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/guides/password-manager-setup/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/password-manager-setup.webp</image:loc>
+      <image:title>Password Manager Setup Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/security/public-wifi/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/public-wifi-dangers.webp</image:loc>
+      <image:title>Public Wi-Fi Security Dangers</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/security/remote-work/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/remote-work-security.webp</image:loc>
+      <image:title>Remote Work Security Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/guides/router-security-guide/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/router-security.webp</image:loc>
+      <image:title>Router Security Guide</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://buysecurevpn.com/guides/vpn-setup-beginners/</loc>
+    <image:image>
+      <image:loc>https://buysecurevpn.com/images/pins/vpn-beginners.webp</image:loc>
+      <image:title>VPN for Beginners</image:title>
     </image:image>
   </url>
 </urlset>

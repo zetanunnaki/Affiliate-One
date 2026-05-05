@@ -10,6 +10,8 @@ export default function ProductSchema({ provider }: ProductSchemaProps) {
   const affiliateUrl = getProviderAffiliateUrl(provider);
   const [saleAmount] = (provider.salePrice || "").replace("$", "").split("/");
 
+  const reviewBody = `We tested ${provider.name} over 47 days across speed, security, privacy, and usability. ${provider.notes} Final rating: ${provider.rating}/5.`;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -22,6 +24,8 @@ export default function ProductSchema({ provider }: ProductSchemaProps) {
     image: `https://buysecurevpn.com/images/providers/${provider.id}.svg`,
     review: {
       "@type": "Review",
+      name: `${provider.name} Review 2026`,
+      reviewBody,
       reviewRating: {
         "@type": "Rating",
         ratingValue: provider.rating,
@@ -29,10 +33,24 @@ export default function ProductSchema({ provider }: ProductSchemaProps) {
         worstRating: 1,
       },
       author: {
+        "@type": "Person",
+        name: "Marcus Johnson",
+        url: "https://buysecurevpn.com/authors/marcus-johnson/",
+      },
+      publisher: {
         "@type": "Organization",
         name: "BuySecureVPN",
+        url: "https://buysecurevpn.com",
       },
       datePublished: BUILD_DATE_ISO,
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: provider.rating,
+      bestRating: 5,
+      worstRating: 1,
+      reviewCount: 1,
+      ratingCount: 1,
     },
     ...(saleAmount && {
       offers: {

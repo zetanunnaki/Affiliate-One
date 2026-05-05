@@ -103,6 +103,81 @@ function illustrationEntries(): ImageEntry[] {
     });
 }
 
+/* ── provider logos → /vpn/providers/{id}/ ─────────────────────────── */
+
+function providerEntries(): ImageEntry[] {
+  const full = path.join(IMAGES_DIR, "providers");
+  if (!fs.existsSync(full)) return [];
+  return fs
+    .readdirSync(full)
+    .filter((f) => f.endsWith(".svg"))
+    .map((file) => {
+      const id = file.replace(/\.svg$/, "");
+      return {
+        pageUrl: `${BASE_URL}/vpn/providers/${id}/`,
+        imageLoc: `${BASE_URL}/images/providers/${file}`,
+        imageTitle: `${slugToTitle(id)} Logo`,
+      };
+    });
+}
+
+/* ── pin images → mapped to relevant guide/security pages ──────────── */
+
+const PIN_MAP: Record<string, { url: string; title: string }> = {
+  "best-vpn-2026": { url: "/best/vpn/", title: "Best VPN Services 2026" },
+  "public-wifi-dangers": { url: "/security/public-wifi/", title: "Public Wi-Fi Security Dangers" },
+  "remote-work-security": { url: "/security/remote-work/", title: "Remote Work Security Guide" },
+  "hotel-wifi-mistakes": { url: "/guides/wifi-security-hotel-airport/", title: "Hotel Wi-Fi Security Mistakes" },
+  "digital-nomad-kit": { url: "/guides/digital-nomad-security-kit/", title: "Digital Nomad Security Kit" },
+  "password-manager-setup": { url: "/guides/password-manager-setup/", title: "Password Manager Setup Guide" },
+  "vpn-beginners": { url: "/guides/vpn-setup-beginners/", title: "VPN for Beginners" },
+  "best-vpn-usa": { url: "/vpn/best/united-states/", title: "Best VPN for USA" },
+  "best-vpn-japan": { url: "/vpn/best/japan/", title: "Best VPN for Japan" },
+  "router-security": { url: "/guides/router-security-guide/", title: "Router Security Guide" },
+  "data-breach-response": { url: "/guides/data-breach-response/", title: "Data Breach Response Guide" },
+  "vpn-for-travel": { url: "/security/travel/", title: "VPN for Travel" },
+};
+
+function pinEntries(): ImageEntry[] {
+  return listWebpImages("pins")
+    .map((file) => {
+      const key = file.replace(/\.webp$/, "");
+      const mapping = PIN_MAP[key];
+      if (!mapping) return null;
+      return {
+        pageUrl: `${BASE_URL}${mapping.url}`,
+        imageLoc: `${BASE_URL}/images/pins/${file}`,
+        imageTitle: mapping.title,
+      };
+    })
+    .filter((e): e is ImageEntry => e !== null);
+}
+
+/* ── social cover images → section pages ───────────────────────────── */
+
+const SOCIAL_MAP: Record<string, { url: string; title: string }> = {
+  "cover-facebook": { url: "/", title: "BuySecureVPN – Facebook Cover" },
+  "cover-twitter": { url: "/", title: "BuySecureVPN – Twitter Cover" },
+  "cover-linkedin": { url: "/", title: "BuySecureVPN – LinkedIn Cover" },
+  "cover-youtube": { url: "/", title: "BuySecureVPN – YouTube Cover" },
+  "cover-pinterest": { url: "/countries/", title: "BuySecureVPN – Pinterest Cover" },
+};
+
+function socialEntries(): ImageEntry[] {
+  return listWebpImages("social")
+    .map((file) => {
+      const key = file.replace(/\.webp$/, "");
+      const mapping = SOCIAL_MAP[key];
+      if (!mapping) return null;
+      return {
+        pageUrl: `${BASE_URL}${mapping.url}`,
+        imageLoc: `${BASE_URL}/images/social/${file}`,
+        imageTitle: mapping.title,
+      };
+    })
+    .filter((e): e is ImageEntry => e !== null);
+}
+
 /* ── build XML ───────────────────────────────────────────────────── */
 
 function escapeXml(s: string): string {
@@ -153,6 +228,9 @@ function main() {
     ...authorEntries(),
     ...ogEntries(),
     ...illustrationEntries(),
+    ...providerEntries(),
+    ...pinEntries(),
+    ...socialEntries(),
   ];
 
   const xml = buildXml(entries);
@@ -166,7 +244,7 @@ function main() {
   console.log(`Image sitemap generated: ${OUT_FILE}`);
   console.log(`  ${entries.length} images across ${grouped.size} pages`);
   console.log(
-    `  Countries: ${countryEntries().length}, Authors: ${authorEntries().length}, OG: ${ogEntries().length}, Illustrations: ${illustrationEntries().length}`
+    `  Countries: ${countryEntries().length}, Authors: ${authorEntries().length}, OG: ${ogEntries().length}, Illustrations: ${illustrationEntries().length}, Providers: ${providerEntries().length}, Pins: ${pinEntries().length}, Social: ${socialEntries().length}`
   );
 }
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { getAllSlugs, getPostBySlug } from "@/lib/mdx";
 import { customMDXComponents } from "@/lib/mdx-custom-components";
 import { getProviderById } from "@/lib/data";
@@ -43,7 +44,7 @@ export default async function ProviderReviewPage(props: PageProps) {
   const { content: mdxContent } = await compileMDX({
     source: post.content,
     components: customMDXComponents,
-    options: { parseFrontmatter: false },
+    options: { parseFrontmatter: false, mdxOptions: { remarkPlugins: [remarkGfm] } },
   });
 
   return (

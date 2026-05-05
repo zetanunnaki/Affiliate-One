@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { getAllSlugs, getPostBySlug } from "@/lib/mdx";
 import { estimateReadingTime } from "@/lib/reading-time";
 import { customMDXComponents } from "@/lib/mdx-custom-components";
@@ -53,7 +54,7 @@ export default async function GuidePage(props: PageProps) {
   const { content: mdxContent } = await compileMDX({
     source: post.content,
     components: customMDXComponents,
-    options: { parseFrontmatter: false },
+    options: { parseFrontmatter: false, mdxOptions: { remarkPlugins: [remarkGfm] } },
   });
 
   return (

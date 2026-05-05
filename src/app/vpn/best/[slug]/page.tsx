@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { customMDXComponents } from "@/lib/mdx-custom-components";
 import {
   getAllCountries,
@@ -73,7 +74,7 @@ export default async function CountryBestVpnPage(props: PageProps) {
     const { content } = await compileMDX({
       source: countryPost.content,
       components: customMDXComponents,
-      options: { parseFrontmatter: false },
+      options: { parseFrontmatter: false, mdxOptions: { remarkPlugins: [remarkGfm] } },
     });
     editorialContent = content;
   }

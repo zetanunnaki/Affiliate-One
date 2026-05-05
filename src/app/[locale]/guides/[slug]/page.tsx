@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { compileMDX } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { LOCALES, t, type Locale } from "@/lib/i18n";
 import { getPostBySlug } from "@/lib/mdx";
 import Byline from "@/components/ui/Byline";
@@ -124,7 +125,7 @@ export default async function LocalizedGuidePage(props: PageProps) {
 
   const { content } = await compileMDX({
     source: post.content,
-    options: { parseFrontmatter: false },
+    options: { parseFrontmatter: false, mdxOptions: { remarkPlugins: [remarkGfm] } },
   });
 
   const articleSchema = {

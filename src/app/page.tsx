@@ -88,12 +88,12 @@ export default function Home() {
                 </span>
                 Live · {BUILD_MONTH_YEAR}
               </span>
-              <span className="text-slate-700">|</span>
+              <span className="text-slate-500">|</span>
               <span className="hidden sm:inline">Issue 04 · Remote Security Quarterly</span>
             </div>
-            <div className="hidden md:flex items-center gap-4 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+            <div className="hidden md:flex items-center gap-4 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
               <span>Independently audited</span>
-              <span className="text-slate-700">·</span>
+              <span className="text-slate-500">·</span>
               <span>50k+ readers / mo</span>
             </div>
           </div>

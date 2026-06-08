@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getAllCountries } from "@/lib/data";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "BuySecureVPN — Guías de Seguridad para Trabajo Remoto y VPN",
   description: "Guías independientes de seguridad para trabajadores remotos. Reseñas de VPN, seguridad Wi-Fi pública y recursos de ciberseguridad para trabajar desde cualquier lugar.",
   alternates: {

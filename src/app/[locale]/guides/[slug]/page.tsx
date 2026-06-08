@@ -97,6 +97,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const title = i18n?.title || post?.frontmatter?.title || slug;
   const description = i18n?.description || post?.frontmatter?.description || "";
   return {
+    robots: { index: false, follow: true },
     title,
     description,
     alternates: {

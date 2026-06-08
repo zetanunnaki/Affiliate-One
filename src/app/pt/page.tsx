@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getAllCountries } from "@/lib/data";
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: "BuySecureVPN — As Melhores VPNs Testadas por Especialistas",
   description: "Guias de segurança independentes para trabalhadores remotos. Análises de VPN, segurança de Wi-Fi público e recursos de cibersegurança.",
   alternates: {

@@ -5,10 +5,9 @@ import {
   getAllCountries,
   getAllAuthors,
 } from "@/lib/data";
-import { getAllSlugs } from "@/lib/mdx";
+import { getAllSlugs, getIndexableSlugs } from "@/lib/mdx";
 import comparisons from "@/data/comparisons.json";
 import categoriesData from "@/data/categories.json";
-import { TOP_COUNTRIES } from "@/lib/i18n";
 
 export const dynamic = "force-static";
 
@@ -23,9 +22,6 @@ const HIGH_VALUE_COUNTRIES = [
   "nigeria", "egypt", "philippines", "vietnam", "hong-kong",
   "malaysia", "taiwan", "new-zealand", "south-africa", "colombia",
 ];
-
-const COUNTRIES_WITH_INTENTS = HIGH_VALUE_COUNTRIES.slice(0, 20);
-const INTENT_SLUGS = ["privacy", "remote-work", "streaming", "teams", "travel"];
 
 const VPN_FEATURE_SLUGS = [
   "always-on", "china-vpn", "dedicated-ip", "double-vpn", "free",
@@ -59,8 +55,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const countries = getAllCountries();
   const intents = getAllIntents();
   const authors = getAllAuthors();
-  const guideSlugs = getAllSlugs("guides");
-  const moneySlugs = getAllSlugs("money");
+  const guideSlugs = getIndexableSlugs("guides");
+  const moneySlugs = getIndexableSlugs("money");
   const providerReviewSlugs = getAllSlugs("providers");
 
   const entries: MetadataRoute.Sitemap = [];
@@ -122,7 +118,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   const highValueSet = new Set(HIGH_VALUE_COUNTRIES);
-  const intentCountrySet = new Set(COUNTRIES_WITH_INTENTS);
 
   countries
     .filter((c) => highValueSet.has(c.slug))
@@ -131,14 +126,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${BASE}/vpn/best/${c.slug}/`,
         lastModified: daysBefore(60 + (i * 7) % 90),
       });
-      if (intentCountrySet.has(c.slug)) {
-        for (const [k, intent] of INTENT_SLUGS.entries()) {
-          entries.push({
-            url: `${BASE}/vpn/best/${c.slug}/${intent}/`,
-            lastModified: daysBefore(75 + (i * 5 + k * 11) % 120),
-          });
-        }
-      }
     });
 
   intents.forEach((intent, i) => {
@@ -194,31 +181,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // ── i18n locales (2-6 months ago) ───────────────────────────────
-  for (const [li, locale] of (["fr", "es", "pt"] as const).entries()) {
-    entries.push(
-      { url: `${BASE}/${locale}/`, lastModified: daysBefore(60 + li * 20) },
-      { url: `${BASE}/${locale}/best/vpn/`, lastModified: daysBefore(65 + li * 20) },
-      { url: `${BASE}/${locale}/deals/`, lastModified: daysBefore(70 + li * 20) },
-      { url: `${BASE}/${locale}/guides/`, lastModified: daysBefore(75 + li * 20) },
-    );
-    for (const [ci, slug] of TOP_COUNTRIES[locale].entries()) {
-      entries.push({
-        url: `${BASE}/${locale}/vpn/${slug}/`,
-        lastModified: daysBefore(80 + li * 20 + ci * 10),
-      });
-    }
-    for (const [gi, slug] of [
-      "vpn-setup-beginners", "vpn-protocols-explained", "vpn-speed-optimization",
-      "vpn-logging-policies", "digital-nomad-security-kit", "vpn-for-gamers-advanced",
-      "travel-esim-guide", "multi-device-security", "password-manager-setup", "data-breach-response",
-    ].entries()) {
-      entries.push({
-        url: `${BASE}/${locale}/guides/${slug}/`,
-        lastModified: daysBefore(100 + li * 25 + gi * 12),
-      });
-    }
-  }
+  // i18n locale pages (fr/es/pt) are intentionally excluded from the
+  // sitemap and carry robots noindex while they are thin/machine-style
+  // translations (see locale route metadata).
 
   // ── Trust & legal pages (6-12 months ago) ───────────────────────
   for (const [j, p] of [

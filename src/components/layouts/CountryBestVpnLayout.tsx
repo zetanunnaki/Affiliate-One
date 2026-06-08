@@ -383,7 +383,7 @@ export default function CountryBestVpnLayout({
           ].map((intent) => (
             <a
               key={intent.slug}
-              href={`/vpn/best/${country.slug}/${intent.slug}`}
+              href={`/vpn/intent/${intent.slug}`}
               className="p-3 text-sm border border-zinc-200 dark:border-zinc-700 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800 hover:border-blue-300 dark:hover:border-blue-700 transition-all font-medium text-zinc-900 dark:text-zinc-100"
             >
               Best VPN for {intent.label} in {country.nameEn}

@@ -33,6 +33,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
       images: [{ url: "/images/og/og-vpn.webp", width: 1200, height: 675, alt: post.frontmatter.title }],
     },
     twitter: { card: "summary_large_image", images: ["/images/og/og-vpn.webp"] },
+    ...(post.frontmatter.noindex && { robots: { index: false, follow: true } }),
   };
 }
 

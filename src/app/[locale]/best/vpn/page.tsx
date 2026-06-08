@@ -15,6 +15,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const { locale } = await props.params;
   const tr = t(locale as Locale);
   return {
+    robots: { index: false, follow: true },
     title: tr.bestVpn.title,
     description: tr.bestVpn.description,
     alternates: {

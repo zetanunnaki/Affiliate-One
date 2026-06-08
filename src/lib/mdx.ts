@@ -32,6 +32,17 @@ export function getPostBySlug(
   };
 }
 
+/**
+ * Slugs whose MDX frontmatter does NOT set `noindex: true`.
+ * Used to keep noindexed (thin) pages out of the sitemap.
+ */
+export function getIndexableSlugs(subdir: string): string[] {
+  return getAllSlugs(subdir).filter((slug) => {
+    const post = getPostBySlug(subdir, slug);
+    return post ? post.frontmatter.noindex !== true : false;
+  });
+}
+
 export function getAllPosts(subdir: string): {
   slug: string;
   frontmatter: PostFrontmatter;

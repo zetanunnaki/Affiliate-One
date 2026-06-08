@@ -28,6 +28,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const tr = t(locale as Locale);
   const titles: Record<string, string> = { fr: "Guides de sécurité VPN", es: "Guías de seguridad VPN", pt: "Guias de segurança VPN" };
   return {
+    robots: { index: false, follow: true },
     title: `${titles[locale] || "VPN Security Guides"} | BuySecureVPN`,
     description: tr.bestVpn.description,
     alternates: {

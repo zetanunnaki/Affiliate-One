@@ -56,6 +56,7 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const name = getCountryName(slug, locale);
   const title = tr.country.titleTemplate.replace("{country}", name);
   return {
+    robots: { index: false, follow: true },
     title,
     description: `${title}. ${tr.bestVpn.description}`,
     alternates: {
